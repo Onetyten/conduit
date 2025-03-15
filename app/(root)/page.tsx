@@ -1,10 +1,12 @@
+import IntroSection from "../components/introSection"; 
+import SearchForm from "../components/searchForm";
+ 
  export default function Home() {
 
   return (
-   <>
-    <section className="pink_container">
-
-    </section>
-   </>
+   <div className="flex flex-col">
+    <IntroSection/>
+    <SearchForm/>
+   </div>
   );
 }

@@ -8,12 +8,13 @@ import Link from 'next/link'
 
 const Navbar = () => {
   const { data: session } = useSession()
+  console.log(session)
   return (
-    <div className='px-5 py-3 flex justify-between w-full text-sm '>
+    <div className='py-3 flex justify-between w-full text-sm '>
       <div className='flex gap-1 items-center '>
         <Image src={Logo} alt='logo' className='w-5 object-contain'/>
-        <p className='font-rowdies text-conduit text-2xl'>
-          Conduit.
+        <p className='font-rowdies text-conduit font-bold text-2xl'>
+          Conduit .
         </p>
       </div>
       <div>
