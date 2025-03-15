@@ -5,6 +5,7 @@ import Logo from '@/public/Images/Logo.png'
 import Image from 'next/image'
 import { useSession,signIn,signOut } from 'next-auth/react'
 import Link from 'next/link'
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 
 const Navbar = () => {
   const { data: session } = useSession()
@@ -35,11 +36,14 @@ const Navbar = () => {
                 </button>
               </form>
               <Link href={`/user/${session?.user?.id}`}>
-                <span>
-                  {session?.user?.name}
-                </span>
+                <Avatar>
+                    {(session?.user?.image&&<AvatarImage src ={session?.user?.image}/>)}
+                    <AvatarFallback>{session?.user?.name?.toUpperCase().slice(0,2)}</AvatarFallback>
+                </Avatar>
               
               </Link>
+              
+              
 
             </div>
             )
