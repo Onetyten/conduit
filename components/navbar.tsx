@@ -9,7 +9,6 @@ import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 
 const Navbar = () => {
   const { data: session } = useSession()
-  console.log(session)
   return (
     <div className='py-3 flex justify-between w-full text-sm '>
       <div className='flex gap-1 items-center '>

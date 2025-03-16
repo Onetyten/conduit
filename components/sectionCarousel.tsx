@@ -6,7 +6,7 @@ const carouseldata = ['Featured','Up & Coming','Salon','Personal Trainer','Plumb
 
 const SectionCarousel = () => {
   return (
-    <div className='flex overflow-x-scroll py-5 text-sm text-gray-400 gap-3 hide-scrollbar relative flex-nowrap'>
+    <div className='flex overflow-x-scroll pt-5 pb-3  text-sm text-gray-400 gap-3 hide-scrollbar relative flex-nowrap'>
         {carouseldata.map((item,index)=>{
             return(
                 <Link key={index} href="/" className='w-72 p-2 px-4 rounded-full hover:bg-gray-200 hover:text-foreground transition-all '>
