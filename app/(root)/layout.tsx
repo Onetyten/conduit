@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from '../../components/navbar'
+import NavbarAuth from '@/components/navbarauth'
 
 export default function layout({children}:{children:React.ReactNode})
 {
       
   return (
       <main className='font-inter px-7 py-3'>
-          <Navbar/>
+          <NavbarAuth/>
           {children}
       </main>
   )

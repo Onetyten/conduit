@@ -22,6 +22,14 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(root)/layout.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/(root)/layout.jsx",
+    "global.d.ts",
+    "lib/utils/connectDB.ts"
+, "app/api/seed/seedProfile.js", "models/profileSchema.js"  ],
   "exclude": ["node_modules"]
 }

@@ -9,6 +9,7 @@
 
 :root {
   --conduitblue:#373f51;
+  --softblue: #F2F4F7;
   --radius:0.625rem;
   --background:oklch(1 0 0);
   --foreground:oklch(0.145 0 0);

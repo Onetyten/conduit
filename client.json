@@ -1,0 +1,2219 @@
+[
+    {
+      
+      "firstName": "Aisha",
+      "lastName": "Adekunle",
+      "email": "aisha.adekunle@example.com",
+      "password": "hashed_password_aisha",
+      "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qR0l3HE6TpeYVDvYTZ0ZnCHcS2sQHEZmDg&s",
+      "bio": "Experienced marketing consultant with a focus on Nigerian markets.",
+      "isTalent": false,
+      "location": "Lagos, Nigeria",
+      "companyName": "Naija Marketing Solutions",
+      "companyDescription": "Driving business growth in Nigeria through effective marketing strategies."
+    },
+    {
+  
+      "firstName": "Chukwuemeka",
+      "lastName": "Okafor",
+      "email": "chukwuemeka.okafor@example.com",
+      "password": "hashed_password_chukwuemeka",
+      "profilePicture": "https://www.nairaland.com/attachments/7943871_callixobinnajr201810100004_jpegef83c268db2ea2ddf715df237e9a268a",
+      "bio": "Business analyst and tech enthusiast.",
+      "isTalent": false,
+      "location": "Abuja, Nigeria",
+      "companyDescription": "Connecting businesses with innovative tech solutions in Nigeria."
+    },
+    {
+    
+        "firstName": "Ifeoma",
+        "lastName": "Nwosu",
+        "email": "ifeoma.nwosu@example.com",
+        "password": "hashed_password_ifeoma",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS91OJSko4SaNxM7oP4Mt5lzxGXSxkJAPRJ8g&s",
+        "bio": "Just a regular person looking for someone to help with my home repairs. Love to cook and spend time with my family.",
+        "isTalent": false,
+        "location": "Benin City, Nigeria"
+      },
+      {
+    
+        "firstName": "Kabiru",
+        "lastName": "Aliyu",
+        "email": "kabiru.aliyu@example.com",
+        "password": "hashed_password_kabiru",
+        "profilePicture": "https://i.mdel.net/i/db/2023/9/2044646/2044646-270t.jpg",
+        "bio": "I work at a local market. Need some help with my garden and fixing my generator. Big fan of football!",
+        "isTalent": false,
+        "location": "Kano, Nigeria"
+      },
+      {
+    
+        "firstName": "Fatima",
+        "lastName": "Bello",
+        "email": "fatima.bello@example.com",
+        "password": "hashed_password_fatima",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX9jnLfLmpa6Uu2pCG5-AuE-Y6J7YSiUT0FA&s",
+        "bio": "A mother of three looking for someone to help with childcare and tutoring for my kids. I enjoy reading and spending time with my family.",
+        "isTalent": false,
+        "location": "Kaduna, Nigeria"
+      },
+      {
+    
+        "firstName": "Emeka",
+        "lastName": "Okoro",
+        "email": "emeka.okoro@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://www.bellanaija.com/wp-content/uploads/2016/04/IFEOMANWOBO_topnigerianmodels_bellanaija_2016_05.jpg",
+        "bio": "I'm a retiree who needs help with household chores and gardening. I love watching Nollywood movies and playing chess.",
+        "isTalent": false,
+        "location": "Enugu, Nigeria"
+      },
+      {
+    
+        "firstName": "Hassan",
+        "lastName": "Usman",
+        "email": "hassan.usman@example.com",
+        "password": "hashed_password_hassan",
+        "profilePicture": "https://t3.ftcdn.net/jpg/03/97/01/50/360_F_397015069_YvoHexqYAKLGdeKNZktvjchm7bkQEsMc.jpg",
+        "bio": "A small business owner looking for help with social media marketing and website design. I enjoy playing local music and attending cultural festivals.",
+        "isTalent": false,
+        "location": "Kano, Nigeria"
+      },
+      {
+    
+        "firstName": "Ngozi",
+        "lastName": "Okonkwo",
+        "email": "ngozi.okonkwo@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://thumbs.dreamstime.com/b/beautiful-nigerian-model-image-afro-american-glamour-32324967.jpg",
+        "bio": "I'm a student who needs help with academic tutoring and essay writing. I'm passionate about literature and creative writing.",
+        "isTalent": false,
+        "location": "Nsukka, Nigeria"
+      },
+      {
+    
+        "firstName": "Olamide",
+        "lastName": "Adebayo",
+        "email": "olamide.adebayo@example.com",
+        "password": "hashed_password_olamide",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3VrhBmA7yX779Byu6J6GW9UdOMBgIXsQL1w&s",
+        "bio": "A young professional looking for someone to help with personal training and fitness coaching. I love sports and staying active.",
+        "isTalent": false,
+        "location": "Ibadan, Nigeria"
+      },
+      {
+    
+        "firstName": "Sani",
+        "lastName": "Ibrahim",
+        "email": "sani.ibrahim@example.com",
+        "password": "hashed_password_sani",
+        "profilePicture": "https://articles.connectnigeria.com/wp-content/uploads/2018/08/Davidson_Obennebo_Pablo_Delfos_Sagaboi_Feature-1-1000x600.jpg",
+        "bio": "I'm a farmer who needs help with agricultural consulting and farm management. I'm passionate about sustainable farming practices.",
+        "isTalent": false,
+        "location": "Sokoto, Nigeria"
+      },
+      {
+    
+        "firstName": "Chinwe",
+        "lastName": "Eze",
+        "email": "chinwe.eze@example.com",
+        "password": "hashed_password_chinwe",
+        "profilePicture": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmlnZXJpYW4lMjBtYW58ZW58MHx8MHx8fDA%3D",
+        "bio": "A retired teacher looking for companionship and help with errands. I enjoy reading and attending community events.",
+        "isTalent": false,
+        "location": "Onitsha, Nigeria"
+      },
+      {
+    
+        "firstName": "Adewale",
+        "lastName": "Ogunleye",
+        "email": "adewale.ogunleye@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://www.creativefabrica.com/wp-content/uploads/2023/08/25/Nigerian-Man-Smiling-For-Facebook-Profile-Picture-77686693-1.png",
+        "bio": "A young entrepreneur looking for help with branding and logo design. I'm passionate about African art and culture.",
+        "isTalent": false,
+        "location": "Lagos, Nigeria"
+      },
+      {
+    
+        "firstName": "Amara",
+        "lastName": "Ike",
+        "email": "amara.ike@example.com",
+        "password": "hashed_password_amara",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwJGeNrsgJM99nO_LFtdwfJ8HBo7nV7VqjkQ&s",
+        "bio": "I'm a stay-at-home mom who needs help with home cleaning and laundry services. I enjoy listening to highlife music and spending time with my grandchildren.",
+        "isTalent": false,
+        "location": "Owerri, Nigeria"
+      },
+      {
+  
+        "firstName": "Emeka",
+        "lastName": "Nnaji",
+        "email": "emeka.nnaji@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://naijaplanet.com/assets/photos/profile/0/0/41/413068/b_hk17w6uatd.jpg",
+        "bio": "A retired engineer looking for assistance with computer repairs and technical support. I'm interested in science and technology.",
+        "isTalent": false,
+        "location": "Aba, Nigeria"
+      },
+      {
+  
+        "firstName": "Halima",
+        "lastName": "Yakubu",
+        "email": "halima.yakubu@example.com",
+        "password": "hashed_password_halima",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcsM_2EUbGIAMlqswqY3TMxkOUbBWTyzn0UQ&s",
+        "bio": "I'm a trader who needs help with accounting and bookkeeping. I'm passionate about my business and providing for my family.",
+        "isTalent": false,
+        "location": "Maiduguri, Nigeria"
+      },
+      {
+    
+        "firstName": "Femi",
+        "lastName": "Oladipo",
+        "email": "femi.oladipo@example.com",
+        "password": "hashed_password_femi",
+        "profilePicture": "https://www.boxmodels.ng/wp-content/uploads/2020/03/benjamin-mokelu-box-models-agency-6-400x600.jpg",
+        "bio": "A young graduate looking for help with career counseling and interview preparation. I'm eager to learn and grow professionally.",
+        "isTalent": false,
+        "location": "Akure, Nigeria"
+      },
+      {
+    
+        "firstName": "Ikenna",
+        "lastName": "Chukwu",
+        "email": "ikenna.chukwu@example.com",
+        "password": "hashed_password_ikenna",
+        "profilePicture": "https://www.bellanaija.com/?attachment_id=641031",
+        "bio": "A local artisan looking for help with online marketing and sales. I'm passionate about my craft and sharing it with the world.",
+        "isTalent": false,
+        "location": "Nnewi, Nigeria"
+      },
+      {
+    
+        "firstName": "Juliet",
+        "lastName": "Okafor",
+        "email": "juliet.okafor@example.com",
+        "password": "hashed_password_juliet",
+        "profilePicture": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5pZ2VyaWFuJTIwbWFufGVufDB8fDB8fHww",
+        "bio": "I'm a busy professional who needs help with event planning and catering for my upcoming party. I love music and dancing.",
+        "isTalent": false,
+        "location": "Port Harcourt, Nigeria"
+      },
+      {
+  
+        "firstName": "Kabiru",
+        "lastName": "Mohammed",
+        "email": "kabiru.mohammed@example.com",
+        "password": "hashed_password_kabiru",
+        "profilePicture": "https://www.bellanaija.com/wp-content/uploads/2016/04/seunlogan_topnigerianmodel_bellanaija_2016_01.jpg",
+        "bio": "A community leader looking for help with project management and fundraising for local initiatives. I'm dedicated to improving my community.",
+        "isTalent": false,
+        "location": "Zaria, Nigeria"
+      },
+      {
+    
+        "firstName": "Nkechi",
+        "lastName": "Obi",
+        "email": "nkechi.obi@example.com",
+        "password": "hashed_password_nkechi",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCo1Q_vhcrv9bRVyZA_kkHIcnQ9Ved4XaKJg&s",
+        "bio": "I'm a student preparing for exams and need help with study skills and time management. I enjoy reading and learning new things.",
+        "isTalent": false,
+        "location": "Ogbomosho, Nigeria"
+      },
+      {
+    
+        "firstName": "Oluwafemi",
+        "lastName": "Akinwande",
+        "email": "oluwafemi.akinwande@example.com",
+        "password": "hashed_password_oluwafemi",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRVoS3MJgjC5iAtLypQyWsQ_ny4wZMFnU8Qw&s",
+        "bio": "A young farmer looking for help with modern farming techniques and crop management. I'm passionate about agriculture and feeding my community.",
+        "isTalent": false,
+        "location": "Abeokuta, Nigeria"
+      },
+      {
+    
+        "firstName": "Ramatu",
+        "lastName": "Bala",
+        "email": "ramatu.bala@example.com",
+        "password": "hashed_password_ramatu",
+        "profilePicture": "https://www.elitestudio.ng/wp-content/uploads/2020/11/elite-studio-nigeria-portrait-photographer-6.jpg",
+        "bio": "A seamstress looking for help with fashion design and marketing my clothing line. I'm passionate about creating beautiful and unique designs.",
+        "isTalent": false,
+        "location": "Jos, Nigeria"
+      },
+      {
+    
+        "firstName": "Simeon",
+        "lastName": "Okon",
+        "email": "simeon.okon@example.com",
+        "password": "hashed_password_simeon",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRoLqXzGm17QSXTsm0cbgYllCKsHylJCFs5A&s",
+        "bio": "A musician looking for help with music production and promotion. I love creating and sharing my music with others.",
+        "isTalent": false,
+        "location": "Calabar, Nigeria"
+      },
+      {
+    
+        "firstName": "Titi",
+        "lastName": "Adeleke",
+        "email": "titi.adeleke@example.com",
+        "password": "hashed_password_titi",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRoLqXzGm17QSXTsm0cbgYllCKsHylJCFs5A&s",
+        "bio": "A caterer looking for help with event planning and food presentation. I'm passionate about creating delicious and memorable culinary experiences.",
+        "isTalent": false,
+        "location": "Osogbo, Nigeria"
+      },
+      {
+    
+        "firstName": "Uchenna",
+        "lastName": "Iwu",
+        "email": "uchenna.iwu@example.com",
+        "password": "hashed_password_uchenna",
+        "profilePicture": "https://thumbs.dreamstime.com/b/black-man-portrait-beard-fashion-studio-masculine-nigerian-gray-background-face-male-person-african-model-367930540.jpg",
+        "bio": "A teacher looking for help with online tutoring and curriculum development. I'm dedicated to helping students achieve their academic goals.",
+        "isTalent": false,
+        "location": "Awka, Nigeria"
+      },
+      {
+    
+        "firstName": "Yakubu",
+        "lastName": "Garba",
+        "email": "yakubu.garba@example.com",
+        "password": "hashed_password_yakubu",
+        "profilePicture": "https://static.vecteezy.com/system/resources/thumbnails/005/405/718/small/young-smiling-cheerful-handsome-african-man-wearing-formal-business-suit-in-studio-gray-isolated-background-photo.jpg",
+        "bio": "A mechanic looking for help with car repairs and maintenance. I'm passionate about fixing cars and helping people get back on the road.",
+        "isTalent": false,
+        "location": "Bauchi, Nigeria"
+      },
+      {
+    
+        "firstName": "Zainab",
+        "lastName": "Adamu",
+        "email": "zainab.adamu@example.com",
+        "password": "hashed_password_zainab",
+        "profilePicture": "https://media.licdn.com/dms/image/v2/D4E03AQH2N3yrEQr_pw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1673686127887?e=2147483647&v=beta&t=yVfaqxZm7_h89wutn73eXe5Ia-_uj-UwGEHxkXvtVj0",
+        "bio": "A baker looking for help with social media marketing and photography for my pastries. I'm passionate about creating delicious and beautiful treats.",
+        "isTalent": false,
+        "location": "Gombe, Nigeria"
+      },
+      {
+    
+        "firstName": "Victor",
+        "lastName": "Ezeani",
+        "email": "victor.ezeani@example.com",
+        "password": "hashed_password_victor",
+        "profilePicture": "https://c8.alamy.com/comp/RYY3HD/happy-handsome-smiling-light-skinned-nigerian-man-RYY3HD.jpg",
+        "bio": "A carpenter looking for help with online advertising and website design. I take pride in my craftsmanship and creating quality furniture.",
+        "isTalent": false,
+        "location": "Umuahia, Nigeria"
+      },
+      {
+    
+        "firstName": "Wuraola",
+        "lastName": "Akinyemi",
+        "email": "wuraola.akinyemi@example.com",
+        "password": "hashed_password_wuraola",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjeqf5xBMFCDeuBO6Bhc-DsWn15c_nE12Jhm7UvJABUBvYqTCttZVS-NcrmtrvPHJLfzg&usqp=CAU",
+        "bio": "A fashion designer looking for help with pattern making and sewing. I'm passionate about creating stylish and unique clothing.",
+        "isTalent": false,
+        "location": "Ilesa, Nigeria"
+      },
+      {
+    
+        "firstName": "Yahaya",
+        "lastName": "Bello",
+        "email": "yahaya.bello@example.com",
+        "password": "hashed_password_yahaya",
+        "profilePicture": "https://naijaplanet.com/assets/photos/profile/0/0/10/105294/b_pic_1.jpg",
+        "bio": "A farmer looking for help with irrigation systems and crop diversification. I'm committed to sustainable agriculture and providing for my community.",
+        "isTalent": false,
+        "location": "Katsina, Nigeria"
+      },
+      {
+    
+        "firstName": "Chika",
+        "lastName": "Okeke",
+        "email": "chika.okeke@example.com",
+        "password": "hashed_password_chika",
+        "profilePicture": "https://naijaplanet.com/assets/photos/profile/0/0/12/127368/b_hslshit4r4.jpg",
+        "bio": "A teacher looking for help with lesson planning and classroom management. I'm dedicated to providing a positive and engaging learning environment.",
+        "isTalent": false,
+        "location": "Makurdi, Nigeria"
+      },
+      {
+  
+        "firstName": "David",
+        "lastName": "Oluwole",
+        "email": "david.oluwole@example.com",
+        "password": "hashed_password_david",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5k-J4Q5eD4mbbt0OHsWCSyTF1ShTZyGNmWPZh0JsrHvmxVT_FP3V66bRGt2htD5m2ang&usqp=CAU",
+        "bio": "A software developer looking for help with website development and app design. I'm passionate about creating innovative and user-friendly digital experiences.",
+        "isTalent": false,
+        "location": "Ilorin, Nigeria"
+      },
+      {
+    
+        "firstName": "Esther",
+        "lastName": "Moses",
+        "email": "esther.moses@example.com",
+        "password": "hashed_password_esther",
+        "profilePicture": "https://www.nairaland.com/attachments/2169923_bigtimefashion4_jpeg21610ad4e9978e5c37fe9b323b9da00e",
+        "bio": "A graphic designer looking for help with branding and marketing materials. I'm committed to creating visually appealing and effective designs.",
+        "isTalent": false,
+        "location": "Yola, Nigeria"
+      },
+      {
+    
+        "firstName": "Felix",
+        "lastName": "Nwankwo",
+        "email": "felix.nwankwo@example.com",
+        "password": "hashed_password_felix",
+        "profilePicture": "https://i.pinimg.com/736x/20/12/c5/2012c5defe18189ee83cf0ac9e195391.jpg",
+        "bio": "A photographer looking for help with portrait photography and editing. I'm passionate about capturing beautiful and memorable moments.",
+        "isTalent": false,
+        "location": "Warri, Nigeria"
+      },
+      {
+    
+        "firstName": "Grace",
+        "lastName": "Okonkwo",
+        "email": "grace.okonkwo@example.com",
+        "password": "hashed_password_grace",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfMcf1ySk3JhgV8dJZ1xuAuMXWxoMt1cSWBF8xT93_22ndaLZ5xnBzkdFt5-VVKP78Ms&usqp=CAU",
+        "bio": "A tutor looking for help with online tutoring and test preparation. I'm dedicated to helping students achieve their academic goals.",
+        "isTalent": false,
+        "location": "Ondo City, Nigeria"
+      },
+      {
+    
+        "firstName": "Haruna",
+        "lastName": "Ahmed",
+        "email": "haruna.ahmed@example.com",
+        "password": "hashed_password_haruna",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLUdVk-7wI_yViNHzLHiwnhEQuo-RhhByhcg&s",
+        "bio": "A web developer looking for help with e-commerce development and SEO. I'm passionate about creating functional and user-friendly websites.",
+        "isTalent": false,
+        "location": "Sokoto, Nigeria"
+      },
+
+  {
+
+    "firstName": "Ifeanyi",
+    "lastName": "Okafor",
+    "email": "ifeanyi.okafor@example.com",
+    "password": "hashed_password_ifeanyi",
+    "profilePicture": "https://businesspost.ng/wp-content/uploads/2024/03/adaora-umeoji-profile.jpeg",
+    "bio": "A plumber looking for help with online advertising and customer management. I'm passionate about providing reliable plumbing services.",
+    "isTalent": false,
+    "location": "Awka, Nigeria"
+  },
+  {
+
+    "firstName": "Joy",
+    "lastName": "Adeyemi",
+    "email": "joy.adeyemi@example.com",
+    "password": "hashed_password_joy",                                                                                           
+    "profilePicture": "https://www.shutterstock.com/shutterstock/videos/1093091107/thumb/1.jpg?ip=x480",
+    "bio": "A hairstylist looking for help with social media marketing and appointment scheduling. I'm passionate about making people feel beautiful and confident.",
+    "isTalent": false,
+    "location": "Ibadan, Nigeria"
+  },
+    {
+
+    "firstName": "Kingsley",
+    "lastName": "Ibrahim",
+    "email": "kingsley.ibrahim@example.com",
+    "password": "hashed_password_kingsley",
+    "profilePicture": "https://images.squarespace-cdn.com/content/v1/5aee389b3c3a531e6245ae76/1627145125551-FDTFWJGOJ3QH057GFO38/OlutobiHarry_02.jpg",
+    "bio": "A tailor looking for help with fashion design and online sales. I'm passionate about creating unique and stylish clothing.",
+    "isTalent": false,
+    "location": "Kano, Nigeria"
+  },
+  {
+
+    "firstName": "Lola",
+    "lastName": "Ogunleye",
+    "email": "lola.ogunleye@example.com",
+    "password": "hashed_password_lola",
+    "profilePicture": "https://presspay.ng/news/wp-content/uploads/2024/02/Chioma-Okafor-.webp",
+    "bio": "A caterer looking for help with event planning and food presentation. I'm passionate about creating delicious and memorable culinary experiences.",
+    "isTalent": false,
+    "location": "Lagos, Nigeria"
+  },
+  {
+
+    "firstName": "Musa",
+    "lastName": "Aliyu",
+    "email": "musa.aliyu@example.com",
+    "password": "hashed_password_musa",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo_hZIIKMfQeHgIVw4fB-lWDcl_bgePB2jaADaJB9DPjPTRTSlWArg4Q6jcsxYyD9LWqg&usqp=CAU",
+    "bio": "A driver looking for help with finding clients and managing my schedule. I'm committed to providing safe and reliable transportation services.",
+    "isTalent": false,
+    "location": "Abuja, Nigeria"
+  },
+  {
+
+    "firstName": "Ngozi",
+    "lastName": "Okeke",
+    "email": "ngozi.okeke@example.com",
+    "password": "hashed_password_ngozi",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZgM3SrRIDFgqKdHFxa5rPdjMKqUgNPMpTw&s",
+    "bio": "A teacher looking for help with online tutoring and test preparation. I'm dedicated to helping students achieve their academic goals.",
+    "isTalent": false,
+    "location": "Enugu, Nigeria"
+  },
+  {
+
+    "firstName": "Obinna",
+    "lastName": "Eze",
+    "email": "obinna.eze@example.com",
+    "password": "hashed_password_obinna",
+    "profilePicture": "https://images.squarespace-cdn.com/content/v1/60b8ad021506593f7fc3793c/6f675b8b-8e21-47e5-aa2e-52a7d96753cf/actor+headshots+Los+Angeles.jpg",
+    "bio": "An electrician looking for help with online advertising and customer management. I'm passionate about providing reliable electrical services.",
+    "isTalent": false,
+    "location": "Onitsha, Nigeria"
+  },
+  {
+
+    "firstName": "Patricia",
+    "lastName": "Okon",
+    "email": "patricia.okon@example.com",
+    "password": "hashed_password_patricia",
+    "profilePicture": "https://starklegalng.com/profiles/toluwani-bamigboje.jpg",
+    "bio": "A makeup artist looking for help with social media marketing and appointment scheduling. I'm passionate about enhancing natural beauty and helping people feel confident.",
+    "isTalent": false,
+    "location": "Calabar, Nigeria"
+  },
+  {
+
+    "firstName": "Quadri",
+    "lastName": "Adebayo",
+    "email": "quadri.adebayo@example.com",
+    "password": "hashed_password_quadri",
+    "profilePicture": "https://images.squarespace-cdn.com/content/v1/60b8ad021506593f7fc3793c/d3e7f86a-4cf2-4be6-82be-f4db5ada3367/Headshots%2Blos%2BAngeles.jpg",
+    "bio": "A graphic designer looking for help with branding and logo design. I'm passionate about creating visually appealing and effective designs.",
+    "isTalent": false,
+    "location": "Osogbo, Nigeria"
+  },
+    {
+
+    "firstName": "Rukayat",
+    "lastName": "Yakubu",
+    "email": "rukayat.yakubu@example.com",
+    "password": "hashed_password_rukayat",
+    "profilePicture": "https://www.legalnuggets.com/wp-content/uploads/2021/09/Grace-Bamigboje-2nd-Place-Picture-e1631676234584.jpg",
+    "bio": "A small business owner looking for help with accounting and bookkeeping. I'm dedicated to managing my finances responsibly and growing my business.",
+    "isTalent": false,
+    "location": "Kaduna, Nigeria"
+  },
+    {
+
+    "firstName": "Sefu",
+    "lastName": "Abubakar",
+    "email": "sefu.abubakar@example.com",
+    "password": "hashed_password_sefu",
+    "profilePicture": "https://images.squarespace-cdn.com/content/v1/5c4d7e227e3c3a6ec70a5ac7/1554234457448-DKHZO0MCQP9LSDG1Z6N5/Alvester+Martin+Los+Angeles+Headshots+Rory+Lewis+Photographer+West+Hollywood",
+    "bio": "A security guard looking for help with finding clients and managing my schedule. I'm committed to providing reliable security services.",
+    "isTalent": false,
+    "location": "Sokoto, Nigeria"
+    },
+    {
+
+    "firstName": "Taiwo",
+    "lastName": "Olawale",
+    "email": "taiwo.olawale@example.com",
+    "password": "hashed_password_taiwo",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-f5VyPcnYYFbX-y9T4AUFQuTAzJiuoiQ6wPuHBhIOIShpiwkLeMjKDR2SkbOnf-HQ0LI&usqp=CAU",
+    "bio": "A web designer looking for help with finding clients and managing my projects. I'm passionate about creating beautiful and functional websites.",
+    "isTalent": false,
+    "location": "Ilorin, Nigeria"
+    },
+    {
+
+    "firstName": "Uchechi",
+    "lastName": "Ikechukwu",
+    "email": "uchechi.ikechukwu@example.com",
+    "password": "hashed_password_uchechi",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_u_myHIZ-Tk9GajAO5cAe-P08tZCkdSKL2GAeYocYaRAqSnW0ZxhNg66B-mkJlfWNSck&usqp=CAU",
+    "bio": "A nurse looking for help with finding clients and managing my schedule. I'm passionate about providing compassionate and quality healthcare.",
+    "isTalent": false,
+    "location": "Umuahia, Nigeria"
+    },
+    {
+
+    "firstName": "Vivian",
+    "lastName": "Chukwudi",
+    "email": "vivian.chukwudi@example.com",
+    "password": "hashed_password_vivian",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqAxpzmbAYJQROqzNcXvBbEDujjqeD1zX9sw&s",
+    "bio": "A personal trainer looking for help with online marketing and client scheduling. I'm passionate about helping people achieve their fitness goals.",
+    "isTalent": false,
+    "location": "Owerri, Nigeria"
+    },
+    {
+
+
+    "firstName": "Wale",
+    "lastName": "Ogunbiyi",
+    "email": "wale.ogunbiyi@example.com",
+    "password": "hashed_password_wale",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTHrNJh04c89yZqn0rSKKjvdpyNSshiZuJrAnzlLP1h4eFCKUjnLOhyp-QRVA0CoB9Zc4&usqp=CAU",
+    "bio": "A handyman looking for help with finding clients and managing my schedule. I'm committed to providing reliable home repair services.",
+    "isTalent": false,
+    "location": "Akure, Nigeria"
+    },
+    {
+
+    "firstName": "Yemi",
+    "lastName": "Akinwande",
+    "email": "yemi.akinwande@example.com",
+    "password": "hashed_password_yemi",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A caterer looking for help with menu planning and event coordination. I'm passionate about creating delicious and memorable culinary experiences.",
+    "isTalent": false,
+    "location": "Abeokuta, Nigeria"
+    },
+    {
+
+    "firstName": "Zainab",
+    "lastName": "Mohammed",
+    "email": "zainab.mohammed@example.com",
+    "password": "hashed_password_zainab",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A small business owner looking for help with accounting and bookkeeping. I'm dedicated to managing my finances responsibly and growing my business.",
+    "isTalent": false,
+    "location": "Maiduguri, Nigeria"
+    },
+    {
+
+    "firstName": "Abimbola",
+    "lastName": "Oladipo",
+    "email": "abimbola.oladipo@example.com",
+    "password": "hashed_password_abimbola",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A graduate student looking for help with research assistance and thesis editing. I'm passionate about learning and contributing to my field.",
+    "isTalent": false,
+    "location": "Nsukka, Nigeria"
+    },
+    {
+
+    "firstName": "Chidi",
+    "lastName": "Nwosu",
+    "email": "chidi.nwosu@example.com",
+    "password": "hashed_password_chidi",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A musician looking for help with music production and online promotion. I'm passionate about creating and sharing my music with the world.",
+    "isTalent": false,
+    "location": "Enugu, Nigeria"
+    },
+    {
+
+    "firstName": "Efe",
+    "lastName": "Ogbeide",
+    "email": "efe.ogbeide@example.com",
+    "password": "hashed_password_efe",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A graphic designer looking for help with logo design and branding materials. I'm passionate about creating visually appealing and effective designs.",
+    "isTalent": false,
+    "location": "Benin City, Nigeria"
+    },
+    {
+
+    "firstName": "Fatimah",
+    "lastName": "Yakubu",
+    "email": "fatimah.yakubu@example.com",
+    "password": "hashed_password_fatimah",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A small business owner looking for help with social media marketing and website design. I'm dedicated to growing my business and reaching a wider audience.",
+    "isTalent": false,
+    "location": "Katsina, Nigeria"
+    },
+    {
+
+    "firstName": "Gbenga",
+    "lastName": "Adeleke",
+    "email": "gbenga.adeleke@example.com",
+    "password": "hashed_password_gbenga",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A software developer looking for help with app development and website maintenance. I'm passionate about creating innovative and user-friendly digital solutions.",
+    "isTalent": false,
+    "location": "Ilesa, Nigeria"
+    },
+    {
+
+    "firstName": "Hadiza",
+    "lastName": "Aliyu",
+    "email": "hadiza.aliyu@example.com",
+    "password": "hashed_password_hadiza",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A tailor looking for help with fashion design and online sales. I'm passionate about creating stylish and unique clothing.",
+    "isTalent": false,
+    "location": "Zaria, Nigeria"
+    },
+    {
+    
+        "firstName": "Ibrahim",
+        "lastName": "Bala",
+        "email": "ibrahim.bala@example.com",
+        "password": "hashed_password_ibrahim",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A trader looking for help with online marketing and sales. I'm passionate about growing my business and providing for my family.",
+        "isTalent": false,
+        "location": "Jos, Nigeria"
+    },
+    {
+    
+        "firstName": "Juliet",
+        "lastName": "Okonkwo",
+        "email": "juliet.okonkwo@example.com",
+        "password": "hashed_password_juliet",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A caterer looking for help with event planning and food presentation. I love creating delicious and memorable meals for special occasions.",
+        "isTalent": false,
+        "location": "Calabar, Nigeria"
+    },
+    {
+      
+        "firstName": "Kabiru",
+        "lastName": "Aliyu",
+        "email": "kabiru.aliyu@example.com",
+        "password": "hashed_password_kabiru",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A farmer looking for help with modern farming techniques and crop management. I'm passionate about sustainable agriculture and feeding my community.",
+        "isTalent": false,
+        "location": "Sokoto, Nigeria"
+    },
+    {
+      
+        "firstName": "Nkechi",
+        "lastName": "Eze",
+        "email": "nkechi.eze@example.com",
+        "password": "hashed_password_nkechi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A teacher looking for help with online tutoring and curriculum development. I'm dedicated to helping students succeed academically.",
+        "isTalent": false,
+        "location": "Onitsha, Nigeria"
+    },
+    {
+        
+        "firstName": "Olamide",
+        "lastName": "Adebayo",
+        "email": "olamide.adebayo@example.com",
+        "password": "hashed_password_olamide",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A personal trainer looking for help with online marketing and client scheduling. I'm passionate about helping people achieve their fitness goals and live healthier lives.",
+        "isTalent": false,
+        "location": "Ibadan, Nigeria"
+    },
+    {
+      
+        "firstName": "Ramatu",
+        "lastName": "Garba",
+        "email": "ramatu.garba@example.com",
+        "password": "hashed_password_ramatu",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A seamstress looking for help with fashion design and online sales. I love creating beautiful and unique clothing for my customers.",
+        "isTalent": false,
+        "location": "Bauchi, Nigeria"
+    },
+    {
+      
+        "firstName": "Simeon",
+        "lastName": "Chukwu",
+        "email": "simeon.chukwu@example.com",
+        "password": "hashed_password_simeon",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A musician looking for help with music production and promotion. I'm passionate about sharing my music and connecting with people through my art.",
+        "isTalent": false,
+        "location": "Owerri, Nigeria"
+    },
+    {
+      
+        "firstName": "Titi",
+        "lastName": "Okafor",
+        "email": "titi.okafor@example.com",
+        "password": "hashed_password_titi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A baker looking for help with social media marketing and photography for my pastries. I enjoy creating delicious and beautiful treats for everyone to enjoy.",
+        "isTalent": false,
+        "location": "Awka, Nigeria"
+    },
+    {
+      
+        "firstName": "Uchenna",
+        "lastName": "Nwosu",
+        "email": "uchenna.nwosu@example.com",
+        "password": "hashed_password_uchenna",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A web developer looking for help with e-commerce development and SEO. I'm passionate about creating functional and user-friendly websites for businesses.",
+        "isTalent": false,
+        "location": "Umuahia, Nigeria"
+    },
+    {
+      
+        "firstName": "Victor",
+        "lastName": "Okon",
+        "email": "victor.okon@example.com",
+        "password": "hashed_password_victor",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A carpenter looking for help with online advertising and website design. I take pride in my craftsmanship and creating quality furniture for homes and businesses.",
+        "isTalent": false,
+        "location": "Calabar, Nigeria"
+    },
+    {
+      
+        "firstName": "Wuraola",
+        "lastName": "Akinyemi",
+        "email": "wuraola.akinyemi@example.com",
+        "password": "hashed_password_wuraola",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A fashion designer looking for help with pattern making and sewing. I'm dedicated to creating stylish and unique clothing that empowers my clients.",
+        "isTalent": false,
+        "location": "Osogbo, Nigeria"
+      },
+      {
+      
+        "firstName": "Yahaya",
+        "lastName": "Ahmed",
+        "email": "yahaya.ahmed@example.com",
+        "password": "hashed_password_yahaya",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A mechanic looking for help with online advertising and customer management. I'm passionate about providing reliable and affordable car repair services.",
+        "isTalent": false,
+        "location": "Katsina, Nigeria"
+      },
+      {
+      
+        "firstName": "Zainab",
+        "lastName": "Bello",
+        "email": "zainab.bello@example.com",
+        "password": "hashed_password_zainab",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A baker looking for help with photography and social media marketing for my pastries. I love creating sweet treats that bring joy to people's lives.",
+        "isTalent": false,
+        "location": "Gombe, Nigeria"
+      },
+      {
+      
+        "firstName": "Abiola",
+        "lastName": "Oluwole",
+        "email": "abiola.oluwole@example.com",
+        "password": "hashed_password_abiola",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A software developer looking for help with website design and app development. I'm passionate about creating innovative and user-friendly digital solutions.",
+        "isTalent": false,
+        "location": "Ilorin, Nigeria"
+      },
+      {
+      
+        "firstName": "Chidi",
+        "lastName": "Moses",
+        "email": "chidi.moses@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A graphic designer looking for help with branding and marketing materials. I'm committed to creating visually compelling designs that help businesses succeed.",
+        "isTalent": false,
+        "location": "Yola, Nigeria"
+      },
+      {
+      
+        "firstName": "Esther",
+        "lastName": "Nwankwo",
+        "email": "esther.nwankwo@example.com",
+        "password": "hashed_password_esther",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A photographer looking for help with portrait photography and editing. I love capturing special moments and creating lasting memories.",
+        "isTalent": false,
+        "location": "Warri, Nigeria"
+      },
+      {
+      
+        "firstName": "Felix",
+        "lastName": "Okonkwo",
+        "email": "felix.okonkwo@example.com",
+        "password": "hashed_password_felix",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A tutor looking for help with online tutoring and test preparation. I'm dedicated to helping students achieve their academic goals and build confidence.",
+        "isTalent": false,
+        "location": "Ondo City, Nigeria"
+      },
+      {
+      
+        "firstName": "Grace",
+        "lastName": "Ahmed",
+        "email": "grace.ahmed@example.com",
+        "password": "hashed_password_grace",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A web developer looking for help with e-commerce development and SEO. I'm passionate about creating functional and user-friendly websites that drive business growth.",
+        "isTalent": false,
+        "location": "Sokoto, Nigeria"
+      },
+      {
+      
+        "firstName": "Haruna",
+        "lastName": "Okafor",
+        "email": "haruna.okafor@example.com",
+        "password": "hashed_password_haruna",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A plumber looking for help with online advertising and customer management. I'm committed to providing reliable and efficient plumbing services.",
+        "isTalent": false,
+        "location": "Awka, Nigeria"
+      },
+      {
+      
+        "firstName": "Ifeanyi",
+        "lastName": "Adeyemi",
+        "email": "ifeanyi.adeyemi@example.com",
+        "password": "hashed_password_ifeanyi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A hairstylist looking for help with social media marketing and appointment scheduling. I love helping people look and feel their best.",
+        "isTalent": false,
+        "location": "Ibadan, Nigeria"
+      },
+      {
+      
+        "firstName": "Joy",
+        "lastName": "Ibrahim",
+        "email": "joy.ibrahim@example.com",
+        "password": "hashed_password_joy",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A tailor looking for help with online sales and marketing. I'm passionate about creating unique and stylish clothing for every occasion.",
+        "isTalent": false,
+        "location": "Kano, Nigeria"
+      },
+      {
+      
+        "firstName": "Kingsley",
+        "lastName": "Ogunleye",
+        "email": "kingsley.ogunleye@example.com",
+        "password": "hashed_password_kingsley",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A caterer looking for help with menu planning and event coordination. I enjoy creating delicious and memorable culinary experiences for my clients.",
+        "isTalent": false,
+        "location": "Lagos, Nigeria"
+      },
+      {
+      
+        "firstName": "Lola",
+        "lastName": "Aliyu",
+        "email": "lola.aliyu@example.com",
+        "password": "hashed_password_lola",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A driver looking for help with finding clients and managing my schedule. I'm committed to providing safe and reliable transportation services.",
+        "isTalent": false,
+        "location": "Abuja, Nigeria"
+      },
+      {
+    
+        "firstName": "Musa",
+        "lastName": "Okeke",
+        "email": "musa.okeke@example.com",
+        "password": "hashed_password_musa",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A teacher looking for help with online tutoring and lesson planning. I'm dedicated to helping students achieve their full potential.",
+        "isTalent": false,
+        "location": "Enugu, Nigeria"
+      },
+      {
+      
+        "firstName": "Ngozi",
+        "lastName": "Eze",
+        "email": "ngozi.eze@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "An electrician looking for help with online advertising and customer management. I'm passionate about providing safe and reliable electrical solutions.",
+        "isTalent": false,
+        "location": "Onitsha, Nigeria"
+      },
+      {
+      
+        "firstName": "Obinna",
+        "lastName": "Okon",
+        "email": "obinna.okon@example.com",
+        "password": "hashed_password_obinna",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A makeup artist looking for help with social media marketing and appointment scheduling. I love helping people feel confident and beautiful.",
+        "isTalent": false,
+        "location": "Calabar, Nigeria"
+      },
+      {
+      
+        "firstName": "Patricia",
+        "lastName": "Adebayo",
+        "email": "patricia.adebayo@example.com",
+        "password": "hashed_password_patricia",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A graphic designer looking for help with branding and logo design. I'm passionate about creating visually appealing and effective designs for businesses.",
+        "isTalent": false,
+        "location": "Osogbo, Nigeria"
+      },
+      {
+      
+        "firstName": "Quadri",
+        "lastName": "Yakubu",
+        "email": "quadri.yakubu@example.com",
+        "password": "hashed_password_quadri",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A small business owner looking for help with accounting and bookkeeping. I'm dedicated to managing my finances responsibly and growing my business sustainably.",
+        "isTalent": false,
+        "location": "Kaduna, Nigeria"
+      },
+      {
+      
+        "firstName": "Rukayat",
+        "lastName": "Abubakar",
+        "email": "rukayat.abubakar@example.com",
+        "password": "hashed_password_rukayat",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A security guard looking for help with finding clients and managing my schedule. I'm committed to providing reliable and professional security services.",
+        "isTalent": false,
+        "location": "Sokoto, Nigeria"
+      },
+      {
+      
+        "firstName": "Sefu",
+        "lastName": "Olawale",
+        "email": "sefu.olawale@example.com",
+        "password": "hashed_password_sefu",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A web designer looking for help with online marketing and client acquisition. I'm passionate about creating beautiful and functional websites that help businesses thrive.",
+        "isTalent": false,
+        "location": "Ilorin, Nigeria"
+      },
+      {
+      
+        "firstName": "Taiwo",
+        "lastName": "Ikechukwu",
+        "email": "taiwo.ikechukwu@example.com",
+        "password": "hashed_password_taiwo",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A nurse looking for help with client scheduling and home care referrals. I'm dedicated to providing compassionate and quality healthcare to my community.",
+        "isTalent": false,
+        "location": "Umuahia, Nigeria"
+      },
+      {
+      
+        "firstName": "Uchechi",
+        "lastName": "Chukwudi",
+        "email": "uchechi.chukwudi@example.com",
+        "password": "hashed_password_uchechi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A personal trainer looking for help with online marketing and fitness program development. I'm passionate about helping people achieve their fitness goals and improve their overall well-being.",
+        "isTalent": false,
+        "location": "Owerri, Nigeria"
+      },
+      {
+      
+        "firstName": "Vivian",
+        "lastName": "Ogunbiyi",
+        "email": "vivian.ogunbiyi@example.com",
+        "password": "hashed_password_vivian",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A handyman looking for help with online advertising and client management. I'm committed to providing reliable and efficient home repair services.",
+        "isTalent": false,
+        "location": "Akure, Nigeria"
+      },
+      {
+      
+        "firstName": "Wale",
+        "lastName": "Akinwande",
+        "email": "wale.akinwande@example.com",
+        "password": "hashed_password_wale",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A caterer looking for help with menu development and event coordination. I'm passionate about creating delicious and memorable culinary experiences for my clients.",
+        "isTalent": false,
+        "location": "Abeokuta, Nigeria"
+      },
+      {
+      
+        "firstName": "Yemi",
+        "lastName": "Mohammed",
+        "email": "yemi.mohammed@example.com",
+        "password": "hashed_password_yemi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A small business owner looking for help with financial planning and investment advice. I'm dedicated to growing my business and securing my financial future.",
+        "isTalent": false,
+        "location": "Maiduguri, Nigeria"
+      },
+      {
+      
+        "firstName": "Zainab",
+        "lastName": "Oladipo",
+        "email": "zainab.oladipo@example.com",
+        "password": "hashed_password_zainab",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A graduate student looking for help with research assistance and thesis formatting. I'm passionate about academic excellence and contributing to my field of study.",
+        "isTalent": false,
+        "location": "Nsukka, Nigeria"
+      },
+      {
+      
+        "firstName": "Abimbola",
+        "lastName": "Nwosu",
+        "email": "abimbola.nwosu@example.com",
+        "password": "hashed_password_abimbola",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A musician looking for help with music promotion and performance bookings. I'm passionate about sharing my music and connecting with audiences.",
+        "isTalent": false,
+        "location": "Enugu, Nigeria"
+      },
+      {
+      
+        "firstName": "Chidi",
+        "lastName": "Ogbeide",
+        "email": "chidi.ogbeide@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A graphic designer looking for help with website design and digital marketing. I'm passionate about creating visually stunning and effective online experiences.",
+        "isTalent": false,
+        "location": "Benin City, Nigeria"
+      },
+      {
+      
+        "firstName": "Efe",
+        "lastName": "Yakubu",
+        "email": "efe.yakubu@example.com",
+        "password": "hashed_password_efe",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A small business owner looking for help with inventory management and supply chain optimization. I'm dedicated to improving efficiency and growing my business.",
+        "isTalent": false,
+        "location": "Katsina, Nigeria"
+      },
+      {
+      
+        "firstName": "Fatimah",
+        "lastName": "Adeleke",
+        "email": "fatimah.adeleke@example.com",
+        "password": "hashed_password_fatimah",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A software developer looking for help with project management and team collaboration. I'm passionate about creating innovative and scalable software solutions.",
+        "isTalent": false,
+        "location": "Ilesa, Nigeria"
+      },
+      {
+      
+        "firstName": "Gbenga",
+        "lastName": "Aliyu",
+        "email": "gbenga.aliyu@example.com",
+        "password": "hashed_password_gbenga",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A tailor looking for help with online sales and customer engagement. I'm passionate about creating custom-made clothing that fits perfectly and reflects individual style.",
+        "isTalent": false,
+        "location": "Zaria, Nigeria"
+      },
+      {
+      
+        "firstName": "Hadiza",
+        "lastName": "Bala",
+        "email": "hadiza.bala@example.com",
+        "password": "hashed_password_hadiza",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A trader looking for help with inventory management and online marketing. I'm dedicated to providing quality products and excellent customer service.",
+        "isTalent": false,
+        "location": "Jos, Nigeria"
+      },
+      {
+      
+        "firstName": "Ibrahim",
+        "lastName": "Okonkwo",
+        "email": "ibrahim.okonkwo@example.com",
+        "password": "hashed_password_ibrahim",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A caterer looking for help with menu planning and event setup. I'm passionate about creating delicious and visually appealing food for all occasions.",
+        "isTalent": false,
+        "location": "Calabar, Nigeria"
+      },
+      {
+      
+        "firstName": "Juliet",
+        "lastName": "Aliyu",
+        "email": "juliet.aliyu@example.com",
+        "password": "hashed_password_juliet",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A farmer looking for help with irrigation system maintenance and crop disease management. I'm committed to sustainable farming practices and producing healthy crops.",
+        "isTalent": false,
+        "location": "Sokoto, Nigeria"
+      },
+      {
+      
+        "firstName": "Kabiru",
+        "lastName": "Eze",
+        "email": "kabiru.eze@example.com",
+        "password": "hashed_password_kabiru",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A teacher looking for help with online tutoring and curriculum development. I'm dedicated to providing engaging and effective learning experiences for my students.",
+        "isTalent": false,
+        "location": "Onitsha, Nigeria"
+      },
+      {
+      
+        "firstName": "Nkechi",
+        "lastName": "Adebayo",
+        "email": "nkechi.adebayo@example.com",
+        "password": "hashed_password_nkechi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A personal trainer looking for help with client motivation and fitness program customization. I'm passionate about helping people achieve their fitness goals and improve their quality of life.",
+        "isTalent": false,
+        "location": "Ibadan, Nigeria"
+      },
+      {
+      
+        "firstName": "Olamide",
+        "lastName": "Garba",
+        "email": "olamide.garba@example.com",
+        "password": "hashed_password_olamide",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A seamstress looking for help with online sales and fabric sourcing. I'm passionate about creating beautiful and unique clothing that fits perfectly.",
+        "isTalent": false,
+        "location": "Bauchi, Nigeria"
+      },
+      {
+      
+        "firstName": "Ramatu",
+        "lastName": "Chukwu",
+        "email": "ramatu.chukwu@example.com",
+        "password": "hashed_password_ramatu",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A musician looking for help with music production and online promotion. I'm passionate about creating and sharing my music with a wider audience.",
+        "isTalent": false,
+        "location": "Owerri, Nigeria"
+      },
+      {
+      
+        "firstName": "Simeon",
+        "lastName": "Okafor",
+        "email": "simeon.okafor@example.com",
+        "password": "hashed_password_simeon",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A baker looking for help with photography and social media marketing for my pastries. I'm passionate about creating delicious and visually appealing treats.",
+        "isTalent": false,
+        "location": "Awka, Nigeria"
+      },
+      {
+      
+        "firstName": "Titi",
+        "lastName": "Nwosu",
+        "email": "titi.nwosu@example.com",
+        "password": "hashed_password_titi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A web developer looking for help with website maintenance and security. I'm dedicated to providing reliable and efficient web development services.",
+        "isTalent": false,
+        "location": "Umuahia, Nigeria"
+      },
+      {
+      
+        "firstName": "Uchenna",
+        "lastName": "Okon",
+        "email": "uchenna.okon@example.com",
+        "password": "hashed_password_uchenna",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A carpenter looking for help with online advertising and customer feedback management. I'm committed to providing high-quality furniture and excellent customer service.",
+        "isTalent": false,
+        "location": "Calabar, Nigeria"
+      },
+      {
+      
+        "firstName": "Victor",
+        "lastName": "Akinyemi",
+        "email": "victor.akinyemi@example.com",
+        "password": "hashed_password_victor",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A fashion designer looking for help with pattern grading and garment construction. I'm passionate about creating stylish and well-fitting clothing for my clients.",
+        "isTalent": false,
+        "location": "Osogbo, Nigeria"
+      },
+      {
+      
+        "firstName": "Wuraola",
+        "lastName": "Ahmed",
+        "email": "wuraola.ahmed@example.com",
+        "password": "hashed_password_wuraola",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A mechanic looking for help with automotive diagnostics and repair documentation. I'm dedicated to providing reliable and efficient car repair services.",
+        "isTalent": false,
+        "location": "Katsina, Nigeria"
+      },
+      {
+      
+        "firstName": "Yahaya",
+        "lastName": "Bello",
+        "email": "yahaya.bello@example.com",
+        "password": "hashed_password_yahaya",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A baker looking for help with recipe development and food styling. I'm passionate about creating delicious and visually appealing pastries and baked goods.",
+        "isTalent": false,
+        "location": "Gombe, Nigeria"
+      },
+      {
+      
+        "firstName": "Zainab",
+        "lastName": "Oluwole",
+        "email": "zainab.oluwole@example.com",
+        "password": "hashed_password_zainab",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A software developer looking for help with software testing and quality assurance. I'm committed to delivering high-quality and reliable software solutions.",
+        "isTalent": false,
+        "location": "Ilorin, Nigeria"
+      },
+      {
+      
+        "firstName": "Abiola",
+        "lastName": "Moses",
+        "email": "abiola.moses@example.com",
+        "password": "hashed_password_abiola",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A graphic designer looking for help with print design and production management. I'm passionate about creating visually compelling and effective print materials.",
+        "isTalent": false,
+        "location": "Yola, Nigeria"
+      },
+      {
+      
+        "firstName": "Chidi",
+        "lastName": "Nwankwo",
+        "email": "chidi.nwankwo@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A photographer looking for help with event photography and photo retouching. I love capturing special moments and creating lasting memories for my clients.",
+        "isTalent": false,
+        "location": "Warri, Nigeria"
+      },
+      {
+      
+        "firstName": "Esther",
+        "lastName": "Okonkwo",
+        "email": "esther.okonkwo@example.com",
+        "password": "hashed_password_esther",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A tutor looking for help with curriculum planning and student progress tracking. I'm dedicated to providing personalized and effective tutoring services.",
+        "isTalent": false,
+        "location": "Ondo City, Nigeria"
+      },
+      {
+      
+        "firstName": "Felix",
+        "lastName": "Ahmed",
+        "email": "felix.ahmed@example.com",
+        "password": "hashed_password_felix",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A web developer looking for help with database management and website optimization. I'm passionate about creating fast and efficient websites for businesses.",
+        "isTalent": false,
+        "location": "Sokoto, Nigeria"
+      },
+      {
+      
+        "firstName": "Grace",
+        "lastName": "Okafor",
+        "email": "grace.okafor@example.com",
+        "password": "hashed_password_grace",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A plumber looking for help with project estimation and material procurement. I'm committed to providing reliable and cost-effective plumbing solutions.",
+        "isTalent": false,
+        "location": "Awka, Nigeria"
+      },
+      {
+      
+        "firstName": "Rukayat",
+        "lastName": "Olawale",
+        "email": "rukayat.olawale@example.com",
+        "password": "hashed_password_rukayat",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A web designer looking for help with user interface testing and accessibility compliance. I'm passionate about creating inclusive and user-friendly websites.",
+        "isTalent": false,
+        "location": "Ilorin, Nigeria"
+      },
+      {
+      
+        "firstName": "Sefu",
+        "lastName": "Ikechukwu",
+        "email": "sefu.ikechukwu@example.com",
+        "password": "hashed_password_sefu",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A nurse looking for help with patient education and medication management. I'm committed to providing compassionate and effective healthcare services.",
+        "isTalent": false,
+        "location": "Umuahia, Nigeria"
+      },
+      {
+      
+        "firstName": "Taiwo",
+        "lastName": "Chukwudi",
+        "email": "taiwo.chukwudi@example.com",
+        "password": "hashed_password_taiwo",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A personal trainer looking for help with client progress tracking and nutritional counseling. I'm passionate about helping people achieve their fitness and wellness goals.",
+        "isTalent": false,
+        "location": "Owerri, Nigeria"
+      },
+      {
+      
+        "firstName": "Uchechi",
+        "lastName": "Ogunbiyi",
+        "email": "uchechi.ogunbiyi@example.com",
+        "password": "hashed_password_uchechi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A handyman looking for help with project estimation and material sourcing. I'm dedicated to providing reliable and affordable home repair services.",
+        "isTalent": false,
+        "location": "Akure, Nigeria"
+      },
+      {
+      
+        "firstName": "Vivian",
+        "lastName": "Akinwande",
+        "email": "vivian.akinwande@example.com",
+        "password": "hashed_password_vivian",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A caterer looking for help with menu customization and event logistics coordination. I'm passionate about creating unique and memorable dining experiences.",
+        "isTalent": false,
+        "location": "Abeokuta, Nigeria"
+      },
+      {
+      
+        "firstName": "Wale",
+        "lastName": "Mohammed",
+        "email": "wale.mohammed@example.com",
+        "password": "hashed_password_wale",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A small business owner looking for help with cash flow management and financial forecasting. I'm committed to ensuring the long-term financial stability of my business.",
+        "isTalent": false,
+        "location": "Maiduguri, Nigeria"
+      },
+      {
+      
+        "firstName": "Yemi",
+        "lastName": "Oladipo",
+        "email": "yemi.oladipo@example.com",
+        "password": "hashed_password_yemi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A graduate student looking for help with data analysis and research paper editing. I'm passionate about academic research and contributing to my field of study.",
+        "isTalent": false,
+        "location": "Nsukka, Nigeria"
+      },
+      {
+      
+        "firstName": "Zainab",
+        "lastName": "Nwosu",
+        "email": "zainab.nwosu@example.com",
+        "password": "hashed_password_zainab",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A musician looking for help with music licensing and distribution. I'm dedicated to sharing my music with a global audience and building a successful music career.",
+        "isTalent": false,
+        "location": "Enugu, Nigeria"
+      },
+      {
+      
+        "firstName": "Abimbola",
+        "lastName": "Ogbeide",
+        "email": "abimbola.ogbeide@example.com",
+        "password": "hashed_password_abimbola",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A graphic designer looking for help with motion graphics design and video editing. I'm passionate about creating engaging and visually dynamic content.",
+        "isTalent": false,
+        "location": "Benin City, Nigeria"
+      },
+      {
+      
+        "firstName": "Chidi",
+        "lastName": "Yakubu",
+        "email": "chidi.yakubu@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A small business owner looking for help with customer relationship management and loyalty program development. I'm committed to building strong customer relationships and fostering customer loyalty.",
+        "isTalent": false,
+        "location": "Katsina, Nigeria"
+      },
+      {
+      
+        "firstName": "Efe",
+        "lastName": "Adeleke",
+        "email": "efe.adeleke@example.com",
+        "password": "hashed_password_efe",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A software developer looking for help with cloud computing solutions and cybersecurity. I'm passionate about creating secure and scalable software applications.",
+        "isTalent": false,
+        "location": "Ilesa, Nigeria"
+      },
+      {
+      
+        "firstName": "Fatimah",
+        "lastName": "Aliyu",
+        "email": "fatimah.aliyu@example.com",
+        "password": "hashed_password_fatimah",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A tailor looking for help with fashion photography and lookbook creation. I'm dedicated to showcasing my designs in a visually appealing and professional manner.",
+        "isTalent": false,
+        "location": "Zaria, Nigeria"
+      },
+      {
+      
+        "firstName": "Gbenga",
+        "lastName": "Bala",
+        "email": "gbenga.bala@example.com",
+        "password": "hashed_password_gbenga",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A trader looking for help with e-commerce platform integration and online payment solutions. I'm committed to providing a seamless and secure online shopping experience.",
+        "isTalent": false,
+        "location": "Jos, Nigeria"
+      },
+      {
+      
+        "firstName": "Hadiza",
+        "lastName": "Okonkwo",
+        "email": "hadiza.okonkwo@example.com",
+        "password": "hashed_password_hadiza",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A caterer looking for help with sustainable sourcing and waste reduction strategies. I'm passionate about creating delicious and environmentally responsible culinary experiences.",
+        "isTalent": false,
+        "location": "Calabar, Nigeria"
+      },
+      {
+      
+        "firstName": "Ibrahim",
+        "lastName": "Aliyu",
+        "email": "ibrahim.aliyu@example.com",
+        "password": "hashed_password_ibrahim",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A farmer looking for help with precision agriculture techniques and data analysis. I'm committed to optimizing crop yields and improving farm efficiency.",
+        "isTalent": false,
+        "location": "Sokoto, Nigeria"
+      },
+      {
+      
+        "firstName": "Juliet",
+        "lastName": "Eze",
+        "email": "juliet.eze@example.com",
+        "password": "hashed_password_juliet",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A teacher looking for help with personalized learning strategies and student engagement techniques. I'm dedicated to creating a dynamic and supportive learning environment.",
+        "isTalent": false,
+        "location": "Onitsha, Nigeria"
+      },
+      {
+      
+        "firstName": "Kabiru",
+        "lastName": "Adebayo",
+        "email": "kabiru.adebayo@example.com",
+        "password": "hashed_password_kabiru",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A personal trainer looking for help with online fitness challenges and community building. I'm passionate about motivating and supporting people on their fitness journeys.",
+        "isTalent": false,
+        "location": "Ibadan, Nigeria"
+      },
+      {
+      
+        "firstName": "Nkechi",
+        "lastName": "Garba",
+        "email": "nkechi.garba@example.com",
+        "password": "hashed_password_nkechi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A seamstress looking for help with online pattern sales and digital design tools. I'm passionate about empowering other creators and sharing my design expertise.",
+        "isTalent": false,
+        "location": "Bauchi, Nigeria"
+      },
+      {
+      
+        "firstName": "Olamide",
+        "lastName": "Chukwu",
+        "email": "olamide.chukwu@example.com",
+        "password": "hashed_password_olamide",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A musician looking for help with music video production and distribution. I'm dedicated to creating high-quality visual content that complements my music.",
+        "isTalent": false,
+        "location": "Owerri, Nigeria"
+      },
+      {
+      
+        "firstName": "Ramatu",
+        "lastName": "Okafor",
+        "email": "ramatu.okafor@example.com",
+        "password": "hashed_password_ramatu",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A baker looking for help with online baking classes and recipe development. I'm passionate about sharing my love of baking and empowering others to create delicious treats.",
+        "isTalent": false,
+        "location": "Awka, Nigeria"
+      },
+      {
+      
+        "firstName": "Simeon",
+        "lastName": "Nwosu",
+        "email": "simeon.nwosu@example.com",
+        "password": "hashed_password_simeon",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A web developer looking for help with user research and usability testing. I'm dedicated to creating intuitive and user-centered web experiences.",
+        "isTalent": false,
+        "location": "Umuahia, Nigeria"
+      },
+      {
+      
+        "firstName": "Titi",
+        "lastName": "Okon",
+        "email": "titi.okon@example.com",
+        "password": "hashed_password_titi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A carpenter looking for help with custom furniture design and 3D modeling. I'm passionate about creating unique and functional pieces that meet my clients' needs.",
+        "isTalent": false,
+        "location": "Calabar, Nigeria"
+      },
+      {
+      
+        "firstName": "Uchenna",
+        "lastName": "Akinyemi",
+        "email": "uchenna.akinyemi@example.com",
+        "password": "hashed_password_uchenna",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A fashion designer looking for help with sustainable fashion practices and ethical sourcing. I'm committed to creating beautiful and responsible clothing.",
+        "isTalent": false,
+        "location": "Osogbo, Nigeria"
+      },
+      {
+        
+        "firstName": "Victor",
+        "lastName": "Ahmed",
+        "email": "victor.ahmed@example.com",
+        "password": "hashed_password_victor",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A mechanic looking for help with electric vehicle maintenance and diagnostics. I'm passionate about staying up-to-date with the latest automotive technologies.",
+        "isTalent": false,
+        "location": "Katsina, Nigeria"
+      },
+      {
+        
+        "firstName": "Wuraola",
+        "lastName": "Bello",
+        "email": "wuraola.bello@example.com",
+        "password": "hashed_password_wuraola",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A baker looking for help with gluten-free baking and allergy-friendly recipes. I'm dedicated to creating delicious treats that everyone can enjoy.",
+        "isTalent": false,
+        "location": "Gombe, Nigeria"
+      },
+      {
+        
+        "firstName": "Yahaya",
+        "lastName": "Oluwole",
+        "email": "yahaya.oluwole@example.com",
+        "password": "hashed_password_yahaya",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A software developer looking for help with mobile app development and UI/UX design. I'm passionate about creating user-friendly and engaging mobile experiences.",
+        "isTalent": false,
+        "location": "Ilorin, Nigeria"
+      },
+      {
+        
+        "firstName": "Zainab",
+        "lastName": "Moses",
+        "email": "zainab.moses@example.com",
+        "password": "hashed_password_zainab",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A graphic designer looking for help with information design and data visualization. I'm committed to creating clear and effective visual communication.",
+        "isTalent": false,
+        "location": "Yola, Nigeria"
+      },
+      {
+        
+        "firstName": "Abiola",
+        "lastName": "Nwankwo",
+        "email": "abiola.nwankwo@example.com",
+        "password": "hashed_password_abiola",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A photographer looking for help with fine art photography and exhibition preparation. I'm passionate about capturing the beauty of the world through my lens.",
+        "isTalent": false,
+        "location": "Warri, Nigeria"
+      },
+      {
+        
+        "firstName": "Chidi",
+        "lastName": "Okonkwo",
+        "email": "chidi.okonkwo@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A tutor looking for help with special education and individualized learning plans. I'm dedicated to helping students with diverse needs reach their full potential.",
+        "isTalent": false,
+        "location": "Ondo City, Nigeria"
+      },
+      {
+        
+        "firstName": "Esther",
+        "lastName": "Ahmed",
+        "email": "esther.ahmed@example.com",
+        "password": "hashed_password_esther",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A web developer looking for help with web application security and penetration testing. I'm committed to building secure and robust web solutions.",
+        "isTalent": false,
+        "location": "Sokoto, Nigeria"
+      },
+      {
+        
+        "firstName": "Felix",
+        "lastName": "Okafor",
+        "email": "felix.okafor@example.com",
+        "password": "hashed_password_felix",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A plumber looking for help with green plumbing solutions and water conservation techniques. I'm passionate about providing environmentally friendly plumbing services.",
+        "isTalent": false,
+        "location": "Awka, Nigeria"
+      },
+      {
+        
+        "firstName": "Grace",
+        "lastName": "Adeyemi",
+        "email": "grace.adeyemi@example.com",
+        "password": "hashed_password_grace",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A hairstylist looking for help with natural hair care and styling techniques. I'm dedicated to promoting healthy and beautiful natural hair.",
+        "isTalent": false,
+        "location": "Ibadan, Nigeria"
+      },
+      {
+        
+        "firstName": "Haruna",
+        "lastName": "Ibrahim",
+        "email": "haruna.ibrahim@example.com",
+        "password": "hashed_password_haruna",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A tailor looking for help with upcycling and sustainable fashion design. I'm passionate about creating unique and eco-friendly garments.",
+        "isTalent": false,
+        "location": "Kano, Nigeria"
+      },
+      {
+        
+        "firstName": "Ifeanyi",
+        "lastName": "Ogunleye",
+        "email": "ifeanyi.ogunleye@example.com",
+        "password": "hashed_password_ifeanyi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A caterer looking for help with vegan and vegetarian menu development. I'm committed to providing delicious and inclusive dining options.",
+        "isTalent": false,
+        "location": "Lagos, Nigeria"
+      },
+      {
+        
+        "firstName": "Joy",
+        "lastName": "Aliyu",
+        "email": "joy.aliyu@example.com",
+        "password": "hashed_password_joy",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A driver looking for help with electric vehicle maintenance and charging station navigation. I'm passionate about promoting sustainable transportation.",
+        "isTalent": false,
+        "location": "Abuja, Nigeria"
+      },
+      {
+        
+        "firstName": "Kingsley",
+        "lastName": "Okeke",
+        "email": "kingsley.okeke@example.com",
+        "password": "hashed_password_kingsley",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A teacher looking for help with gamification and interactive learning technologies. I'm dedicated to creating engaging and dynamic classroom experiences.",
+        "isTalent": false,
+        "location": "Enugu, Nigeria"
+      },
+      {
+        
+        "firstName": "Lola",
+        "lastName": "Eze",
+        "email": "lola.eze@example.com",
+        "password": "hashed_password_lola",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "An electrician looking for help with solar panel installation and energy efficiency audits. I'm passionate about promoting renewable energy solutions.",
+        "isTalent": false,
+        "location": "Onitsha, Nigeria"
+      },
+      {
+        "user": "65f01a2b1c9d440025333333",
+        "firstName": "Musa",
+        "lastName": "Okon",
+        "email": "musa.okon@example.com",
+        "password": "hashed_password_musa",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A makeup artist looking for help with eco-friendly makeup products and sustainable beauty practices. I'm passionate about promoting clean and ethical beauty.",
+        "isTalent": false,
+        "location": "Calabar, Nigeria"
+      },
+      {
+        
+        "firstName": "Ngozi",
+        "lastName": "Adebayo",
+        "email": "ngozi.adebayo@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A graphic designer looking for help with user experience design and accessibility standards. I'm committed to creating inclusive and user-friendly digital products.",
+        "isTalent": false,
+        "location": "Osogbo, Nigeria"
+      },
+      {
+        
+        "firstName": "Obinna",
+        "lastName": "Yakubu",
+        "email": "obinna.yakubu@example.com",
+        "password": "hashed_password_obinna",
+        "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+        "bio": "A small business owner looking for help with impact investing and social entrepreneurship strategies. I'm dedicated to creating a business that makes a positive social impact.",
+        "isTalent": false,
+        "location": "Kaduna, Nigeria"
+      },
+      {
+    
+    "firstName": "Patricia",
+    "lastName": "Abubakar",
+    "email": "patricia.abubakar@example.com",
+    "password": "hashed_password_patricia",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A security guard looking for help with cybersecurity training and digital security protocols. I'm committed to providing comprehensive security solutions.",
+    "isTalent": false,
+    "location": "Sokoto, Nigeria"
+  },
+  {
+    
+    "firstName": "Quadri",
+    "lastName": "Olawale",
+    "email": "quadri.olawale@example.com",
+    "password": "hashed_password_quadri",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A web designer looking for help with progressive web app development and offline functionality. I'm passionate about creating fast and reliable web experiences.",
+    "isTalent": false,
+    "location": "Ilorin, Nigeria"
+  },
+  {
+    
+    "firstName": "Rukayat",
+    "lastName": "Ikechukwu",
+    "email": "rukayat.ikechukwu@example.com",
+    "password": "hashed_password_rukayat",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A nurse looking for help with telehealth services and remote patient monitoring. I'm dedicated to providing accessible and convenient healthcare.",
+    "isTalent": false,
+    "location": "Umuahia, Nigeria"
+  },
+  {
+    
+    "firstName": "Sefu",
+    "lastName": "Chukwudi",
+    "email": "sefu.chukwudi@example.com",
+    "password": "hashed_password_sefu",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A personal trainer looking for help with virtual reality fitness programs and immersive training experiences. I'm passionate about innovative fitness solutions.",
+    "isTalent": false,
+    "location": "Owerri, Nigeria"
+  },
+  {
+    
+    "firstName": "Taiwo",
+    "lastName": "Ogunbiyi",
+    "email": "taiwo.ogunbiyi@example.com",
+    "password": "hashed_password_taiwo",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A handyman looking for help with smart home installations and home automation systems. I'm committed to providing modern and convenient home solutions.",
+    "isTalent": false,
+    "location": "Akure, Nigeria"
+  },
+  {
+    
+    "firstName": "Uchechi",
+    "lastName": "Akinwande",
+    "email": "uchechi.akinwande@example.com",
+    "password": "hashed_password_uchechi",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A caterer looking for help with food waste management and composting systems. I'm dedicated to reducing environmental impact and promoting sustainability.",
+    "isTalent": false,
+    "location": "Abeokuta, Nigeria"
+  },
+  {
+    
+    "firstName": "Vivian",
+    "lastName": "Mohammed",
+    "email": "vivian.mohammed@example.com",
+    "password": "hashed_password_vivian",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A small business owner looking for help with blockchain technology and cryptocurrency integration. I'm interested in exploring innovative financial solutions.",
+    "isTalent": false,
+    "location": "Maiduguri, Nigeria"
+  },
+  {
+    
+    "firstName": "Wale",
+    "lastName": "Oladipo",
+    "email": "wale.oladipo@example.com",
+    "password": "hashed_password_wale",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A graduate student looking for help with artificial intelligence research and machine learning applications. I'm passionate about cutting-edge technology.",
+    "isTalent": false,
+    "location": "Nsukka, Nigeria"
+  },
+  {
+    
+    "firstName": "Yemi",
+    "lastName": "Nwosu",
+    "email": "yemi.nwosu@example.com",
+    "password": "hashed_password_yemi",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A musician looking for help with augmented reality music experiences and interactive performances. I'm dedicated to creating immersive art.",
+    "isTalent": false,
+    "location": "Enugu, Nigeria"
+  },
+  {
+    
+    "firstName": "Zainab",
+    "lastName": "Ogbeide",
+    "email": "zainab.ogbeide@example.com",
+    "password": "hashed_password_zainab",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A graphic designer looking for help with 3D animation and virtual reality design. I'm passionate about exploring new dimensions in visual communication.",
+    "isTalent": false,
+    "location": "Benin City, Nigeria"
+  },
+  {
+    
+    "firstName": "Patricia",
+    "lastName": "Abubakar",
+    "email": "patricia.abubakar@example.com",
+    "password": "hashed_password_patricia",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A security guard looking for help with cybersecurity training and digital security protocols. I'm committed to providing comprehensive security solutions.",
+    "isTalent": false,
+    "location": "Sokoto, Nigeria"
+  },
+  {
+    
+    "firstName": "Quadri",
+    "lastName": "Olawale",
+    "email": "quadri.olawale@example.com",
+    "password": "hashed_password_quadri",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A web designer looking for help with progressive web app development and offline functionality. I'm passionate about creating fast and reliable web experiences.",
+    "isTalent": false,
+    "location": "Ilorin, Nigeria"
+  },
+  {
+    
+    "firstName": "Rukayat",
+    "lastName": "Ikechukwu",
+    "email": "rukayat.ikechukwu@example.com",
+    "password": "hashed_password_rukayat",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A nurse looking for help with telehealth services and remote patient monitoring. I'm dedicated to providing accessible and convenient healthcare.",
+    "isTalent": false,
+    "location": "Umuahia, Nigeria"
+  },
+  {
+    "user": "65f01a2b1c9d440025999999",
+    "firstName": "Sefu",
+    "lastName": "Chukwudi",
+    "email": "sefu.chukwudi@example.com",
+    "password": "hashed_password_sefu",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A personal trainer looking for help with virtual reality fitness programs and immersive training experiences. I'm passionate about innovative fitness solutions.",
+    "isTalent": false,
+    "location": "Owerri, Nigeria"
+  },
+  {
+    
+    "firstName": "Taiwo",
+    "lastName": "Ogunbiyi",
+    "email": "taiwo.ogunbiyi@example.com",
+    "password": "hashed_password_taiwo",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A handyman looking for help with smart home installations and home automation systems. I'm committed to providing modern and convenient home solutions.",
+    "isTalent": false,
+    "location": "Akure, Nigeria"
+  },
+  {
+    
+    "firstName": "Uchechi",
+    "lastName": "Akinwande",
+    "email": "uchechi.akinwande@example.com",
+    "password": "hashed_password_uchechi",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A caterer looking for help with food waste management and composting systems. I'm dedicated to reducing environmental impact and promoting sustainability.",
+    "isTalent": false,
+    "location": "Abeokuta, Nigeria"
+  },
+  {
+  
+    "firstName": "Vivian",
+    "lastName": "Mohammed",
+    "email": "vivian.mohammed@example.com",
+    "password": "hashed_password_vivian",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A small business owner looking for help with blockchain technology and cryptocurrency integration. I'm interested in exploring innovative financial solutions.",
+    "isTalent": false,
+    "location": "Maiduguri, Nigeria"
+  },
+  {
+  
+    "firstName": "Wale",
+    "lastName": "Oladipo",
+    "email": "wale.oladipo@example.com",
+    "password": "hashed_password_wale",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A graduate student looking for help with artificial intelligence research and machine learning applications. I'm passionate about cutting-edge technology.",
+    "isTalent": false,
+    "location": "Nsukka, Nigeria"
+  },
+  {
+  
+    "firstName": "Yemi",
+    "lastName": "Nwosu",
+    "email": "yemi.nwosu@example.com",
+    "password": "hashed_password_yemi",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A musician looking for help with augmented reality music experiences and interactive performances. I'm dedicated to creating immersive art.",
+    "isTalent": false,
+    "location": "Enugu, Nigeria"
+  },
+  {
+  
+    "firstName": "Zainab",
+    "lastName": "Ogbeide",
+    "email": "zainab.ogbeide@example.com",
+    "password": "hashed_password_zainab",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A graphic designer looking for help with 3D animation and virtual reality design. I'm passionate about exploring new dimensions in visual communication.",
+    "isTalent": false,
+    "location": "Benin City, Nigeria"
+  },
+  {
+  
+    "firstName": "Olamide",
+    "lastName": "Okafor",
+    "email": "olamide.okafor@example.com",
+    "password": "hashed_password_olamide",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A baker looking for help with lab-grown ingredients and cellular agriculture. I'm passionate about the future of food and sustainable baking practices.",
+    "isTalent": false,
+    "location": "Awka, Nigeria"
+  },
+  {
+  
+    "firstName": "Ramatu",
+    "lastName": "Nwosu",
+    "email": "ramatu.nwosu@example.com",
+    "password": "hashed_password_ramatu",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A web developer looking for help with decentralized internet technologies and Web3 applications. I'm interested in building a more open and secure internet.",
+    "isTalent": false,
+    "location": "Umuahia, Nigeria"
+  },
+  {
+  
+    "firstName": "Simeon",
+    "lastName": "Okon",
+    "email": "simeon.okon@example.com",
+    "password": "hashed_password_simeon",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpgs",
+    "bio": "A carpenter looking for help with bio-based building materials and sustainable construction techniques. I'm passionate about eco-friendly architecture.",
+    "isTalent": false,
+    "location": "Calabar, Nigeria"
+  },
+  {
+  
+    "firstName": "Titi",
+    "lastName": "Akinyemi",
+    "email": "titi.akinyemi@example.com",
+    "password": "hashed_password_titi",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A fashion designer looking for help with bio-luminescent clothing and interactive fashion. I'm passionate about creating fashion that is both beautiful and functional.",
+    "isTalent": false,
+    "location": "Osogbo, Nigeria"
+  },
+  {
+  
+    "firstName": "Uchenna",
+    "lastName": "Ahmed",
+    "email": "uchenna.ahmed@example.com",
+    "password": "hashed_password_uchenna",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A mechanic looking for help with hydrogen fuel cell technology and alternative vehicle propulsion systems. I'm passionate about the future of transportation.",
+    "isTalent": false,
+    "location": "Katsina, Nigeria"
+  },
+  {
+  
+    "firstName": "Victor",
+    "lastName": "Bello",
+    "email": "victor.bello@example.com",
+    "password": "hashed_password_victor",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A baker looking for help with 3D printed food and personalized nutrition. I'm passionate about creating food that is both healthy and innovative.",
+    "isTalent": false,
+    "location": "Gombe, Nigeria"
+  },
+  {
+  
+    "firstName": "Wuraola",
+    "lastName": "Oluwole",
+    "email": "wuraola.oluwole@example.com",
+    "password": "hashed_password_wuraola",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A software developer looking for help with brain-computer interfaces for software development. I'm interested in the future of human-computer interaction.",
+    "isTalent": false,
+    "location": "Ilorin, Nigeria"
+  },
+  {
+  
+    "firstName": "Yahaya",
+    "lastName": "Moses",
+    "email": "yahaya.moses@example.com",
+    "password": "hashed_password_yahaya",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A graphic designer looking for help with haptic technology and tactile interfaces. I'm interested in the future of design and sensory experiences.",
+    "isTalent": false,
+    "location": "Yola, Nigeria"
+  },
+  {
+  
+    "firstName": "Zainab",
+    "lastName": "Nwankwo",
+    "email": "zainab.nwankwo@example.com",
+    "password": "hashed_password_zainab",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A photographer looking for help with computational photography and AI-enhanced image processing. I'm passionate about the future of photography.",
+    "isTalent": false,
+    "location": "Warri, Nigeria"
+  },
+  {
+  
+    "firstName": "Abiola",
+    "lastName": "Okonkwo",
+    "email": "abiola.okonkwo@example.com",
+    "password": "hashed_password_abiola",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A tutor looking for help with neurofeedback training and cognitive enhancement techniques. I'm passionate about the future of education.",
+    "isTalent": false,
+    "location": "Ondo City, Nigeria"
+  },
+  {
+  
+    "firstName": "Chidi",
+    "lastName": "Ahmed",
+    "email": "chidi.ahmed@example.com",
+    "password": "hashed_password_chidi",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A web developer looking for help with quantum-resistant cryptography and blockchain security. I'm dedicated to building secure and future-proof web applications.",
+    "isTalent": false,
+    "location": "Sokoto, Nigeria"
+  },
+  {
+  
+    "firstName": "Esther",
+    "lastName": "Okafor",
+    "email": "esther.okafor@example.com",
+    "password": "hashed_password_esther",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A plumber looking for help with self-repairing pipes and smart plumbing systems. I'm passionate about the future of home maintenance.",
+    "isTalent": false,
+    "location": "Awka, Nigeria"
+  },
+  {
+  
+    "firstName": "Felix",
+    "lastName": "Adeyemi",
+    "email": "felix.adeyemi@example.com",
+    "password": "hashed_password_felix",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A hairstylist looking for help with personalized hair growth treatments and gene therapy for hair loss. I'm passionate about the future of hair care.",
+    "isTalent": false,
+    "location": "Ibadan, Nigeria"
+  },
+  {
+  
+    "firstName": "Grace",
+    "lastName": "Ibrahim",
+    "email": "grace.ibrahim@example.com",
+    "password": "hashed_password_grace",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A tailor looking for help with programmable textiles and shape-shifting clothing. I'm passionate about the intersection of fashion and technology.",
+    "isTalent": false,
+    "location": "Kano, Nigeria"
+  },
+  {
+  
+    "firstName": "Haruna",
+    "lastName": "Ogunleye",
+    "email": "haruna.ogunleye@example.com",
+    "password": "hashed_password_haruna",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A caterer looking for help with lab-grown meat and cultured food products. I'm passionate about the future of sustainable food systems.",
+    "isTalent": false,
+    "location": "Lagos, Nigeria"
+  },
+  {
+  
+    "firstName": "Ifeanyi",
+    "lastName": "Aliyu",
+    "email": "ifeanyi.aliyu@example.com",
+    "password": "hashed_password_ifeanyi",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A driver looking for help with flying cars and autonomous aerial transportation systems. I'm passionate about the future of mobility.",
+    "isTalent": false,
+    "location": "Abuja, Nigeria"
+  },
+  {
+  
+    "firstName": "Joy",
+    "lastName": "Okeke",
+    "email": "joy.okeke@example.com",
+    "password": "hashed_password_joy",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A teacher looking for help with implantable learning devices and direct neural interfaces for education. I'm passionate about the future of learning.",
+    "isTalent": false,
+    "location": "Enugu, Nigeria"
+  },
+  {
+  
+    "firstName": "Kingsley",
+    "lastName": "Eze",
+    "email": "kingsley.eze@example.com",
+    "password": "hashed_password_kingsley",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "An electrician looking for help with wireless power transmission and energy harvesting technologies. I'm passionate about the future of energy.",
+    "isTalent": false,
+    "location": "Onitsha, Nigeria"
+  },
+  {
+  
+    "firstName": "Lola",
+    "lastName": "Okon",
+    "email": "lola.okon@example.com",
+    "password": "hashed_password_lola",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A makeup artist looking for help with personalized cosmetics and bio-engineered beauty products. I'm passionate about the future of beauty.",
+    "isTalent": false,
+    "location": "Calabar, Nigeria"
+  },
+  {
+  
+    "firstName": "Musa",
+    "lastName": "Adebayo",
+    "email": "musa.adebayo@example.com",
+    "password": "hashed_password_musa",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A graphic designer looking for help with holographic displays and volumetric imaging. I'm passionate about the future of visual communication.",
+    "isTalent": false,
+    "location": "Osogbo, Nigeria"
+  },
+  {
+  
+    "firstName": "Ngozi",
+    "lastName": "Yakubu",
+    "email": "ngozi.yakubu@example.com",
+    "password": "hashed_password_ngozi",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A small business owner looking for help with nanotechnology applications and advanced materials. I'm passionate about the future of manufacturing and technology.",
+    "isTalent": false,
+    "location": "Kaduna, Nigeria"
+  },
+  {
+  
+    "firstName": "Obinna",
+    "lastName": "Olawale",
+    "email": "obinna.olawale@example.com",
+    "password": "hashed_password_obinna",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg",
+    "bio": "A security guard looking for help with biometric identification systems and advanced surveillance technologies. I'm committed to providing cutting-edge security solutions.",
+    "isTalent": false,
+    "location": "Ilorin, Nigeria"
+  }
+
+  ]
