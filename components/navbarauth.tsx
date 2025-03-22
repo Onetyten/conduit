@@ -47,11 +47,11 @@ const NavbarAuth = () => {
             :
             (
             <div className='flex  items-center gap-2 font-semibold'>
-              <Link href="/business/create" className='bg-foreground  cursor-pointer hover:bg-conduit text-background px-5 py-2 rounded-full' >
-                Create
+              <Link href="/signup" className='bg-foreground  cursor-pointer hover:bg-conduit text-background px-5 py-2 rounded-full' >
+                Sign up
               </Link>
 
-              <Link href="/(profile)/signin"  className='hover:text-conduit cursor-pointer text-foreground px-5 py-2 rounded-full' >
+              <Link href="/signin"  className='hover:text-conduit cursor-pointer text-foreground px-5 py-2 rounded-full' >
                 Sign In
               </Link>
 

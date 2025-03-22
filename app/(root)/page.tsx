@@ -5,6 +5,7 @@ import Posts from "@/components/posts";
 
 export default function Home({searchParams}:{searchParams:{query:string}}) {
   const query  = searchParams?.query
+  
   return (
     <div className="flex flex-col">
       <IntroSection />

@@ -12,7 +12,6 @@ const QuerySlice = createSlice({
     name:  "searchQuery",
     initialState,
     reducers:{
-       
 
        
     }

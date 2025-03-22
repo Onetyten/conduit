@@ -1,10 +1,15 @@
+'use client'
 import React from 'react'
+import {Provider} from 'react-redux'
+import { store } from '@/store'
 
-export default function layout(children:React.ReactNode) {
+export default function layout({children}:{children:React.ReactNode}) {
   return (
-    <main>
-        layout
+    <Provider store={store}>
+      <main>
         {children}
-    </main>
+      </main>
+    </Provider>
+    
   )
 }

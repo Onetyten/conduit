@@ -48,6 +48,7 @@
   --breakpoint-xs:475px;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-softblue: var(--softblue);
   --color-conduit: var(--conduitblue);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

@@ -1,9 +1,9 @@
 import {configureStore} from '@reduxjs/toolkit'
-import queryReducer from './state/query/queryslice'
+import userReducer from '@/state/userInfo/userSlice'
 
 export const store = configureStore({
     reducer:{
-        searchQuery:queryReducer
+        user:userReducer
     }
 })
 
