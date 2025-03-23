@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-hooks/rules-of-hooks */
 
 "use client"
@@ -9,9 +8,10 @@ import SigninPic from '@/public/Images/SigninPic.png'
 import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux';
 import {setUser} from '@/state/userInfo/userSlice'
+import { useRouter } from 'next/navigation'
 
 export default function page() {
-
+  const router = useRouter()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const userReduxdata = useSelector((state)=>state.user.user)
@@ -35,11 +35,9 @@ export default function page() {
           alert(userData.message)
           throw new Error(`Failed to fetch user ${email}`)
         }
-      
-      
       dispatch(setUser(userData.user))
       console.log("redux data",userReduxdata)
-      console.log(userData.user,userData.message)
+      router.push('/');
     }
 
     catch (error) {
@@ -73,7 +71,11 @@ export default function page() {
         </div>
         <div className='flex gap-2 p-2 w-full justify-center items-center '>
 
-                <p onClick={()=>{ console.log("redux data",userReduxdata)}}>New to Conduit?</p>
+                <p 
+                // onClick={()=>{ console.log("redux data",userReduxdata)}}
+                >
+                  New to Conduit?
+                </p>
                 <Link href="/signup" className='p-2 border-[1px] border-foreground rounded-xl'>
                   Sign up
                 </Link>

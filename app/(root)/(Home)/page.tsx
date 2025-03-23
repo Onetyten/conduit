@@ -1,6 +1,6 @@
 import SectionCarousel from "@/components/sectionCarousel";
-import IntroSection from "../../components/introSection";
-import SearchForm from "../../components/searchForm";
+import IntroSection from "@/components/introSection";
+import SearchForm from "@/components/searchForm"
 import Posts from "@/components/posts";
 
 export default function Home({searchParams}:{searchParams:{query:string}}) {

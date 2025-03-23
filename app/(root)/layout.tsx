@@ -1,13 +1,20 @@
+'use client'
 import React from 'react'
-import NavbarAuth from '@/components/navbarauth'
+import {Provider} from 'react-redux'
+import { store,persistor } from '@/store'
+import { PersistGate } from 'redux-persist/integration/react'
 
 export default function layout({children}:{children:React.ReactNode})
 {
       
   return (
-      <main className='font-inter px-7 py-3'>
-          <NavbarAuth/>
-          {children}
-      </main>
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
+        <main className='font-inter'>
+            {children}
+        </main>
+      </PersistGate>
+
+    </Provider>
   )
 }
