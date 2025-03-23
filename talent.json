@@ -1,0 +1,4352 @@
+[
+    {
+        "firstName": "Bola",
+        "lastName": "Adamu",
+        "email": "bola.adamu@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Editing",
+            "SEO",
+            "Copywriting"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 13,
+        "portfolio": "https://portfolio.example.com/bola_adamu",
+        "companyName": "Bola Adamu Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Oyeleke",
+        "email": "bola.oyeleke@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Python",
+            "Excel",
+            "SQL"
+        ],
+        "serviceCategories": [
+            "Data Analysis"
+        ],
+        "hourlyRate": 39,
+        "portfolio": "https://portfolio.example.com/bola_oyeleke",
+        "companyName": "Bola Oyeleke Creations",
+        "companyDescription": "Providing top-notch data analysis services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ibrahim",
+        "lastName": "Udo",
+        "email": "ibrahim.udo@example.com",
+        "password": "hashed_password_ibrahim",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "HTML",
+            "Node.js",
+            "CSS"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 43,
+        "portfolio": "https://portfolio.example.com/ibrahim_udo",
+        "companyName": "Ibrahim Udo Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Segun",
+        "lastName": "Fashola",
+        "email": "segun.fashola@example.com",
+        "password": "hashed_password_segun",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Node.js",
+            "CSS",
+            "JavaScript"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 14,
+        "portfolio": "https://portfolio.example.com/segun_fashola",
+        "companyName": "Segun Fashola Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Ibadan",
+            "state": "Oyo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Adebayo",
+        "email": "tunde.adebayo@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Ethical Hacking",
+            "Penetration Testing",
+            "Network Security"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 25,
+        "portfolio": "https://portfolio.example.com/tunde_adebayo",
+        "companyName": "Tunde Adebayo Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Zainab",
+        "lastName": "Nwachukwu",
+        "email": "zainab.nwachukwu@example.com",
+        "password": "hashed_password_zainab",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "After Effects",
+            "Premiere Pro",
+            "DaVinci Resolve"
+        ],
+        "serviceCategories": [
+            "Video Editing"
+        ],
+        "hourlyRate": 32,
+        "portfolio": "https://portfolio.example.com/zainab_nwachukwu",
+        "companyName": "Zainab Nwachukwu Creations",
+        "companyDescription": "Providing top-notch video editing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chinwe",
+        "lastName": "Olowo",
+        "email": "chinwe.olowo@example.com",
+        "password": "hashed_password_chinwe",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Premiere Pro",
+            "After Effects",
+            "DaVinci Resolve"
+        ],
+        "serviceCategories": [
+            "Video Editing"
+        ],
+        "hourlyRate": 19,
+        "portfolio": "https://portfolio.example.com/chinwe_olowo",
+        "companyName": "Chinwe Olowo Creations",
+        "companyDescription": "Providing top-notch video editing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ngozi",
+        "lastName": "Yakubu",
+        "email": "ngozi.yakubu@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Python",
+            "Java",
+            "Rust"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 12,
+        "portfolio": "https://portfolio.example.com/ngozi_yakubu",
+        "companyName": "Ngozi Yakubu Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chinwe",
+        "lastName": "Nwachukwu",
+        "email": "chinwe.nwachukwu@example.com",
+        "password": "hashed_password_chinwe",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Rust",
+            "Python",
+            "C++"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 45,
+        "portfolio": "https://portfolio.example.com/chinwe_nwachukwu",
+        "companyName": "Chinwe Nwachukwu Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Ogunbiyi",
+        "email": "tunde.ogunbiyi@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Rust",
+            "Java",
+            "Python"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 12,
+        "portfolio": "https://portfolio.example.com/tunde_ogunbiyi",
+        "companyName": "Tunde Ogunbiyi Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Balogun",
+        "email": "bola.balogun@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Wireframing",
+            "User Research",
+            "Prototyping"
+        ],
+        "serviceCategories": [
+            "UI/UX Design"
+        ],
+        "hourlyRate": 14,
+        "portfolio": "https://portfolio.example.com/bola_balogun",
+        "companyName": "Bola Balogun Creations",
+        "companyDescription": "Providing top-notch ui/ux design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Osho",
+        "email": "emeka.osho@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Photoshop",
+            "Branding",
+            "Figma"
+        ],
+        "serviceCategories": [
+            "Graphic Design"
+        ],
+        "hourlyRate": 41,
+        "portfolio": "https://portfolio.example.com/emeka_osho",
+        "companyName": "Emeka Osho Creations",
+        "companyDescription": "Providing top-notch graphic design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Okonkwo",
+        "email": "adewale.okonkwo@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "DaVinci Resolve",
+            "Premiere Pro",
+            "After Effects"
+        ],
+        "serviceCategories": [
+            "Video Editing"
+        ],
+        "hourlyRate": 26,
+        "portfolio": "https://portfolio.example.com/adewale_okonkwo",
+        "companyName": "Adewale Okonkwo Creations",
+        "companyDescription": "Providing top-notch video editing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Ibrahim",
+        "email": "tunde.ibrahim@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "SEO",
+            "Social Media",
+            "Google Ads"
+        ],
+        "serviceCategories": [
+            "Marketing"
+        ],
+        "hourlyRate": 45,
+        "portfolio": "https://portfolio.example.com/tunde_ibrahim",
+        "companyName": "Tunde Ibrahim Creations",
+        "companyDescription": "Providing top-notch marketing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Folake",
+        "lastName": "Ogunbiyi",
+        "email": "folake.ogunbiyi@example.com",
+        "password": "hashed_password_folake",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Google Ads",
+            "Social Media",
+            "Brand Strategy"
+        ],
+        "serviceCategories": [
+            "Marketing"
+        ],
+        "hourlyRate": 35,
+        "portfolio": "https://portfolio.example.com/folake_ogunbiyi",
+        "companyName": "Folake Ogunbiyi Creations",
+        "companyDescription": "Providing top-notch marketing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ogechi",
+        "lastName": "Opara",
+        "email": "ogechi.opara@example.com",
+        "password": "hashed_password_ogechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Tableau",
+            "SQL",
+            "Excel"
+        ],
+        "serviceCategories": [
+            "Data Analysis"
+        ],
+        "hourlyRate": 16,
+        "portfolio": "https://portfolio.example.com/ogechi_opara",
+        "companyName": "Ogechi Opara Creations",
+        "companyDescription": "Providing top-notch data analysis services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Eze",
+        "email": "bola.eze@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "CSS",
+            "Node.js",
+            "React"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 21,
+        "portfolio": "https://portfolio.example.com/bola_eze",
+        "companyName": "Bola Eze Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ngozi",
+        "lastName": "Fashola",
+        "email": "ngozi.fashola@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Network Security",
+            "Ethical Hacking",
+            "Penetration Testing"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 18,
+        "portfolio": "https://portfolio.example.com/ngozi_fashola",
+        "companyName": "Ngozi Fashola Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Segun",
+        "lastName": "Olowo",
+        "email": "segun.olowo@example.com",
+        "password": "hashed_password_segun",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Penetration Testing",
+            "Network Security",
+            "Ethical Hacking"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 24,
+        "portfolio": "https://portfolio.example.com/segun_olowo",
+        "companyName": "Segun Olowo Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Opara",
+        "email": "adewale.opara@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Penetration Testing",
+            "Network Security",
+            "Ethical Hacking"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 32,
+        "portfolio": "https://portfolio.example.com/adewale_opara",
+        "companyName": "Adewale Opara Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Ekanem",
+        "email": "bola.ekanem@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Editing",
+            "Copywriting",
+            "SEO"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 45,
+        "portfolio": "https://portfolio.example.com/bola_ekanem",
+        "companyName": "Bola Ekanem Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chidi",
+        "lastName": "Ogundipe",
+        "email": "chidi.ogundipe@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "JavaScript",
+            "React",
+            "Node.js"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 15,
+        "portfolio": "https://portfolio.example.com/chidi_ogundipe",
+        "companyName": "Chidi Ogundipe Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Uche",
+        "lastName": "Oyeleke",
+        "email": "uche.oyeleke@example.com",
+        "password": "hashed_password_uche",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "CSS",
+            "JavaScript",
+            "Node.js"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 18,
+        "portfolio": "https://portfolio.example.com/uche_oyeleke",
+        "companyName": "Uche Oyeleke Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Zainab",
+        "lastName": "Eze",
+        "email": "zainab.eze@example.com",
+        "password": "hashed_password_zainab",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Studio Lighting",
+            "Adobe Lightroom",
+            "Portrait Photography"
+        ],
+        "serviceCategories": [
+            "Photography"
+        ],
+        "hourlyRate": 24,
+        "portfolio": "https://portfolio.example.com/zainab_eze",
+        "companyName": "Zainab Eze Creations",
+        "companyDescription": "Providing top-notch photography services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Port Harcourt",
+            "state": "Rivers",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Aisha",
+        "lastName": "Okonkwo",
+        "email": "aisha.okonkwo@example.com",
+        "password": "hashed_password_aisha",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Ethical Hacking",
+            "Penetration Testing",
+            "Network Security"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 34,
+        "portfolio": "https://portfolio.example.com/aisha_okonkwo",
+        "companyName": "Aisha Okonkwo Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Obinna",
+        "lastName": "Opara",
+        "email": "obinna.opara@example.com",
+        "password": "hashed_password_obinna",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Python",
+            "Rust",
+            "Java"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 33,
+        "portfolio": "https://portfolio.example.com/obinna_opara",
+        "companyName": "Obinna Opara Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Ibadan",
+            "state": "Oyo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ibrahim",
+        "lastName": "Adamu",
+        "email": "ibrahim.adamu@example.com",
+        "password": "hashed_password_ibrahim",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Wireframing",
+            "User Research",
+            "Prototyping"
+        ],
+        "serviceCategories": [
+            "UI/UX Design"
+        ],
+        "hourlyRate": 26,
+        "portfolio": "https://portfolio.example.com/ibrahim_adamu",
+        "companyName": "Ibrahim Adamu Creations",
+        "companyDescription": "Providing top-notch ui/ux design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ibrahim",
+        "lastName": "Fashola",
+        "email": "ibrahim.fashola@example.com",
+        "password": "hashed_password_ibrahim",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Python",
+            "SQL",
+            "Tableau"
+        ],
+        "serviceCategories": [
+            "Data Analysis"
+        ],
+        "hourlyRate": 19,
+        "portfolio": "https://portfolio.example.com/ibrahim_fashola",
+        "companyName": "Ibrahim Fashola Creations",
+        "companyDescription": "Providing top-notch data analysis services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Kelechi",
+        "lastName": "Balogun",
+        "email": "kelechi.balogun@example.com",
+        "password": "hashed_password_kelechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Python",
+            "Tableau",
+            "Excel"
+        ],
+        "serviceCategories": [
+            "Data Analysis"
+        ],
+        "hourlyRate": 41,
+        "portfolio": "https://portfolio.example.com/kelechi_balogun",
+        "companyName": "Kelechi Balogun Creations",
+        "companyDescription": "Providing top-notch data analysis services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chidi",
+        "lastName": "Olowo",
+        "email": "chidi.olowo@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "SEO",
+            "Proofreading",
+            "Editing"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 31,
+        "portfolio": "https://portfolio.example.com/chidi_olowo",
+        "companyName": "Chidi Olowo Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Oyeleke",
+        "email": "bola.oyeleke@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Studio Lighting",
+            "Adobe Lightroom",
+            "Portrait Photography"
+        ],
+        "serviceCategories": [
+            "Photography"
+        ],
+        "hourlyRate": 15,
+        "portfolio": "https://portfolio.example.com/bola_oyeleke",
+        "companyName": "Bola Oyeleke Creations",
+        "companyDescription": "Providing top-notch photography services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Obinna",
+        "lastName": "Yakubu",
+        "email": "obinna.yakubu@example.com",
+        "password": "hashed_password_obinna",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "CSS",
+            "Node.js",
+            "JavaScript"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 33,
+        "portfolio": "https://portfolio.example.com/obinna_yakubu",
+        "companyName": "Obinna Yakubu Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Aisha",
+        "lastName": "Nwachukwu",
+        "email": "aisha.nwachukwu@example.com",
+        "password": "hashed_password_aisha",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Node.js",
+            "HTML",
+            "React"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 23,
+        "portfolio": "https://portfolio.example.com/aisha_nwachukwu",
+        "companyName": "Aisha Nwachukwu Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Port Harcourt",
+            "state": "Rivers",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Aisha",
+        "lastName": "Chukwu",
+        "email": "aisha.chukwu@example.com",
+        "password": "hashed_password_aisha",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Figma",
+            "Branding",
+            "Photoshop"
+        ],
+        "serviceCategories": [
+            "Graphic Design"
+        ],
+        "hourlyRate": 46,
+        "portfolio": "https://portfolio.example.com/aisha_chukwu",
+        "companyName": "Aisha Chukwu Creations",
+        "companyDescription": "Providing top-notch graphic design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ogechi",
+        "lastName": "Chukwu",
+        "email": "ogechi.chukwu@example.com",
+        "password": "hashed_password_ogechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Google Ads",
+            "SEO",
+            "Social Media"
+        ],
+        "serviceCategories": [
+            "Marketing"
+        ],
+        "hourlyRate": 41,
+        "portfolio": "https://portfolio.example.com/ogechi_chukwu",
+        "companyName": "Ogechi Chukwu Creations",
+        "companyDescription": "Providing top-notch marketing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Segun",
+        "lastName": "Yakubu",
+        "email": "segun.yakubu@example.com",
+        "password": "hashed_password_segun",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Python",
+            "Rust",
+            "C++"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 44,
+        "portfolio": "https://portfolio.example.com/segun_yakubu",
+        "companyName": "Segun Yakubu Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ogechi",
+        "lastName": "Ogundipe",
+        "email": "ogechi.ogundipe@example.com",
+        "password": "hashed_password_ogechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Python",
+            "Tableau",
+            "SQL"
+        ],
+        "serviceCategories": [
+            "Data Analysis"
+        ],
+        "hourlyRate": 19,
+        "portfolio": "https://portfolio.example.com/ogechi_ogundipe",
+        "companyName": "Ogechi Ogundipe Creations",
+        "companyDescription": "Providing top-notch data analysis services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Uche",
+        "lastName": "Fashola",
+        "email": "uche.fashola@example.com",
+        "password": "hashed_password_uche",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Python",
+            "Java",
+            "C++"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 49,
+        "portfolio": "https://portfolio.example.com/uche_fashola",
+        "companyName": "Uche Fashola Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Fatima",
+        "lastName": "Adamu",
+        "email": "fatima.adamu@example.com",
+        "password": "hashed_password_fatima",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Network Security",
+            "Penetration Testing",
+            "Ethical Hacking"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 32,
+        "portfolio": "https://portfolio.example.com/fatima_adamu",
+        "companyName": "Fatima Adamu Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Ogunbiyi",
+        "email": "emeka.ogunbiyi@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Brand Strategy",
+            "Google Ads",
+            "SEO"
+        ],
+        "serviceCategories": [
+            "Marketing"
+        ],
+        "hourlyRate": 15,
+        "portfolio": "https://portfolio.example.com/emeka_ogunbiyi",
+        "companyName": "Emeka Ogunbiyi Creations",
+        "companyDescription": "Providing top-notch marketing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Okonkwo",
+        "email": "emeka.okonkwo@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "HTML",
+            "JavaScript",
+            "CSS"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 45,
+        "portfolio": "https://portfolio.example.com/emeka_okonkwo",
+        "companyName": "Emeka Okonkwo Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Segun",
+        "lastName": "Osho",
+        "email": "segun.osho@example.com",
+        "password": "hashed_password_segun",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Illustrator",
+            "Photoshop",
+            "Figma"
+        ],
+        "serviceCategories": [
+            "Graphic Design"
+        ],
+        "hourlyRate": 40,
+        "portfolio": "https://portfolio.example.com/segun_osho",
+        "companyName": "Segun Osho Creations",
+        "companyDescription": "Providing top-notch graphic design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Adeyemi",
+        "email": "bola.adeyemi@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "React",
+            "HTML",
+            "CSS"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 48,
+        "portfolio": "https://portfolio.example.com/bola_adeyemi",
+        "companyName": "Bola Adeyemi Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Funmi",
+        "lastName": "Ekanem",
+        "email": "funmi.ekanem@example.com",
+        "password": "hashed_password_funmi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Rust",
+            "Python",
+            "C++"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 29,
+        "portfolio": "https://portfolio.example.com/funmi_ekanem",
+        "companyName": "Funmi Ekanem Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Zainab",
+        "lastName": "Nwachukwu",
+        "email": "zainab.nwachukwu@example.com",
+        "password": "hashed_password_zainab",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "User Research",
+            "Wireframing",
+            "Prototyping"
+        ],
+        "serviceCategories": [
+            "UI/UX Design"
+        ],
+        "hourlyRate": 37,
+        "portfolio": "https://portfolio.example.com/zainab_nwachukwu",
+        "companyName": "Zainab Nwachukwu Creations",
+        "companyDescription": "Providing top-notch ui/ux design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Zainab",
+        "lastName": "Olowo",
+        "email": "zainab.olowo@example.com",
+        "password": "hashed_password_zainab",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Social Media",
+            "Brand Strategy",
+            "Google Ads"
+        ],
+        "serviceCategories": [
+            "Marketing"
+        ],
+        "hourlyRate": 50,
+        "portfolio": "https://portfolio.example.com/zainab_olowo",
+        "companyName": "Zainab Olowo Creations",
+        "companyDescription": "Providing top-notch marketing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chidi",
+        "lastName": "Eze",
+        "email": "chidi.eze@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Ethical Hacking",
+            "Penetration Testing",
+            "Network Security"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 40,
+        "portfolio": "https://portfolio.example.com/chidi_eze",
+        "companyName": "Chidi Eze Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ngozi",
+        "lastName": "Chukwu",
+        "email": "ngozi.chukwu@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Python",
+            "Rust",
+            "Java"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 50,
+        "portfolio": "https://portfolio.example.com/ngozi_chukwu",
+        "companyName": "Ngozi Chukwu Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Ibadan",
+            "state": "Oyo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Kelechi",
+        "lastName": "Yakubu",
+        "email": "kelechi.yakubu@example.com",
+        "password": "hashed_password_kelechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Adobe Lightroom",
+            "Studio Lighting",
+            "Portrait Photography"
+        ],
+        "serviceCategories": [
+            "Photography"
+        ],
+        "hourlyRate": 44,
+        "portfolio": "https://portfolio.example.com/kelechi_yakubu",
+        "companyName": "Kelechi Yakubu Creations",
+        "companyDescription": "Providing top-notch photography services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Port Harcourt",
+            "state": "Rivers",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Kelechi",
+        "lastName": "Adebayo",
+        "email": "kelechi.adebayo@example.com",
+        "password": "hashed_password_kelechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Python",
+            "Rust",
+            "Java"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 33,
+        "portfolio": "https://portfolio.example.com/kelechi_adebayo",
+        "companyName": "Kelechi Adebayo Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Segun",
+        "lastName": "Osho",
+        "email": "segun.osho@example.com",
+        "password": "hashed_password_segun",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Adobe Lightroom",
+            "Portrait Photography",
+            "Studio Lighting"
+        ],
+        "serviceCategories": [
+            "Photography"
+        ],
+        "hourlyRate": 43,
+        "portfolio": "https://portfolio.example.com/segun_osho",
+        "companyName": "Segun Osho Creations",
+        "companyDescription": "Providing top-notch photography services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Aisha",
+        "lastName": "Adeyemi",
+        "email": "aisha.adeyemi@example.com",
+        "password": "hashed_password_aisha",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Network Security",
+            "Ethical Hacking",
+            "Penetration Testing"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 22,
+        "portfolio": "https://portfolio.example.com/aisha_adeyemi",
+        "companyName": "Aisha Adeyemi Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Fashola",
+        "email": "bola.fashola@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Illustrator",
+            "Figma",
+            "Branding"
+        ],
+        "serviceCategories": [
+            "Graphic Design"
+        ],
+        "hourlyRate": 46,
+        "portfolio": "https://portfolio.example.com/bola_fashola",
+        "companyName": "Bola Fashola Creations",
+        "companyDescription": "Providing top-notch graphic design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Segun",
+        "lastName": "Ogunbiyi",
+        "email": "segun.ogunbiyi@example.com",
+        "password": "hashed_password_segun",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Editing",
+            "Copywriting",
+            "Proofreading"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 45,
+        "portfolio": "https://portfolio.example.com/segun_ogunbiyi",
+        "companyName": "Segun Ogunbiyi Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Aisha",
+        "lastName": "Opara",
+        "email": "aisha.opara@example.com",
+        "password": "hashed_password_aisha",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "C++",
+            "Rust",
+            "Java"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 31,
+        "portfolio": "https://portfolio.example.com/aisha_opara",
+        "companyName": "Aisha Opara Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ogechi",
+        "lastName": "Akinyemi",
+        "email": "ogechi.akinyemi@example.com",
+        "password": "hashed_password_ogechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Rust",
+            "C++",
+            "Python"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 23,
+        "portfolio": "https://portfolio.example.com/ogechi_akinyemi",
+        "companyName": "Ogechi Akinyemi Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Funmi",
+        "lastName": "Okonkwo",
+        "email": "funmi.okonkwo@example.com",
+        "password": "hashed_password_funmi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Copywriting",
+            "SEO",
+            "Proofreading"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 33,
+        "portfolio": "https://portfolio.example.com/funmi_okonkwo",
+        "companyName": "Funmi Okonkwo Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ibrahim",
+        "lastName": "Akinyemi",
+        "email": "ibrahim.akinyemi@example.com",
+        "password": "hashed_password_ibrahim",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Premiere Pro",
+            "DaVinci Resolve",
+            "After Effects"
+        ],
+        "serviceCategories": [
+            "Video Editing"
+        ],
+        "hourlyRate": 12,
+        "portfolio": "https://portfolio.example.com/ibrahim_akinyemi",
+        "companyName": "Ibrahim Akinyemi Creations",
+        "companyDescription": "Providing top-notch video editing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chinwe",
+        "lastName": "Ogundipe",
+        "email": "chinwe.ogundipe@example.com",
+        "password": "hashed_password_chinwe",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Photoshop",
+            "Branding",
+            "Illustrator"
+        ],
+        "serviceCategories": [
+            "Graphic Design"
+        ],
+        "hourlyRate": 28,
+        "portfolio": "https://portfolio.example.com/chinwe_ogundipe",
+        "companyName": "Chinwe Ogundipe Creations",
+        "companyDescription": "Providing top-notch graphic design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Funmi",
+        "lastName": "Fashola",
+        "email": "funmi.fashola@example.com",
+        "password": "hashed_password_funmi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Copywriting",
+            "SEO",
+            "Editing"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 41,
+        "portfolio": "https://portfolio.example.com/funmi_fashola",
+        "companyName": "Funmi Fashola Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ngozi",
+        "lastName": "Adebayo",
+        "email": "ngozi.adebayo@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Figma",
+            "Branding",
+            "Photoshop"
+        ],
+        "serviceCategories": [
+            "Graphic Design"
+        ],
+        "hourlyRate": 20,
+        "portfolio": "https://portfolio.example.com/ngozi_adebayo",
+        "companyName": "Ngozi Adebayo Creations",
+        "companyDescription": "Providing top-notch graphic design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Udo",
+        "email": "tunde.udo@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Adobe Lightroom",
+            "Studio Lighting",
+            "Portrait Photography"
+        ],
+        "serviceCategories": [
+            "Photography"
+        ],
+        "hourlyRate": 19,
+        "portfolio": "https://portfolio.example.com/tunde_udo",
+        "companyName": "Tunde Udo Creations",
+        "companyDescription": "Providing top-notch photography services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ngozi",
+        "lastName": "Fashola",
+        "email": "ngozi.fashola@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Brand Strategy",
+            "Social Media",
+            "Google Ads"
+        ],
+        "serviceCategories": [
+            "Marketing"
+        ],
+        "hourlyRate": 37,
+        "portfolio": "https://portfolio.example.com/ngozi_fashola",
+        "companyName": "Ngozi Fashola Creations",
+        "companyDescription": "Providing top-notch marketing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Port Harcourt",
+            "state": "Rivers",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Oyeleke",
+        "email": "adewale.oyeleke@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "SQL",
+            "Tableau",
+            "Excel"
+        ],
+        "serviceCategories": [
+            "Data Analysis"
+        ],
+        "hourlyRate": 43,
+        "portfolio": "https://portfolio.example.com/adewale_oyeleke",
+        "companyName": "Adewale Oyeleke Creations",
+        "companyDescription": "Providing top-notch data analysis services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Port Harcourt",
+            "state": "Rivers",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chinwe",
+        "lastName": "Opara",
+        "email": "chinwe.opara@example.com",
+        "password": "hashed_password_chinwe",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "CSS",
+            "Node.js",
+            "React"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 13,
+        "portfolio": "https://portfolio.example.com/chinwe_opara",
+        "companyName": "Chinwe Opara Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Aisha",
+        "lastName": "Chukwu",
+        "email": "aisha.chukwu@example.com",
+        "password": "hashed_password_aisha",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Prototyping",
+            "User Research",
+            "Wireframing"
+        ],
+        "serviceCategories": [
+            "UI/UX Design"
+        ],
+        "hourlyRate": 24,
+        "portfolio": "https://portfolio.example.com/aisha_chukwu",
+        "companyName": "Aisha Chukwu Creations",
+        "companyDescription": "Providing top-notch ui/ux design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Taiwo",
+        "lastName": "Akinyemi",
+        "email": "taiwo.akinyemi@example.com",
+        "password": "hashed_password_taiwo",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "User Research",
+            "Wireframing",
+            "Prototyping"
+        ],
+        "serviceCategories": [
+            "UI/UX Design"
+        ],
+        "hourlyRate": 44,
+        "portfolio": "https://portfolio.example.com/taiwo_akinyemi",
+        "companyName": "Taiwo Akinyemi Creations",
+        "companyDescription": "Providing top-notch ui/ux design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Oluwatobi",
+        "lastName": "Akinyemi",
+        "email": "oluwatobi.akinyemi@example.com",
+        "password": "hashed_password_oluwatobi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Editing",
+            "Proofreading",
+            "SEO"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 12,
+        "portfolio": "https://portfolio.example.com/oluwatobi_akinyemi",
+        "companyName": "Oluwatobi Akinyemi Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Adamu",
+        "email": "emeka.adamu@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "DaVinci Resolve",
+            "Premiere Pro",
+            "After Effects"
+        ],
+        "serviceCategories": [
+            "Video Editing"
+        ],
+        "hourlyRate": 33,
+        "portfolio": "https://portfolio.example.com/emeka_adamu",
+        "companyName": "Emeka Adamu Creations",
+        "companyDescription": "Providing top-notch video editing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Chukwu",
+        "email": "adewale.chukwu@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Proofreading",
+            "SEO",
+            "Editing"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 14,
+        "portfolio": "https://portfolio.example.com/adewale_chukwu",
+        "companyName": "Adewale Chukwu Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Osho",
+        "email": "tunde.osho@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Studio Lighting",
+            "Adobe Lightroom",
+            "Portrait Photography"
+        ],
+        "serviceCategories": [
+            "Photography"
+        ],
+        "hourlyRate": 11,
+        "portfolio": "https://portfolio.example.com/tunde_osho",
+        "companyName": "Tunde Osho Creations",
+        "companyDescription": "Providing top-notch photography services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Ekanem",
+        "email": "adewale.ekanem@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Branding",
+            "Illustrator",
+            "Photoshop"
+        ],
+        "serviceCategories": [
+            "Graphic Design"
+        ],
+        "hourlyRate": 45,
+        "portfolio": "https://portfolio.example.com/adewale_ekanem",
+        "companyName": "Adewale Ekanem Creations",
+        "companyDescription": "Providing top-notch graphic design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Ogunbiyi",
+        "email": "emeka.ogunbiyi@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Copywriting",
+            "Proofreading",
+            "SEO"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 31,
+        "portfolio": "https://portfolio.example.com/emeka_ogunbiyi",
+        "companyName": "Emeka Ogunbiyi Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Kelechi",
+        "lastName": "Adeyemi",
+        "email": "kelechi.adeyemi@example.com",
+        "password": "hashed_password_kelechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "JavaScript",
+            "CSS",
+            "React"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 15,
+        "portfolio": "https://portfolio.example.com/kelechi_adeyemi",
+        "companyName": "Kelechi Adeyemi Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ogechi",
+        "lastName": "Ekanem",
+        "email": "ogechi.ekanem@example.com",
+        "password": "hashed_password_ogechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Network Security",
+            "Ethical Hacking",
+            "Penetration Testing"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 38,
+        "portfolio": "https://portfolio.example.com/ogechi_ekanem",
+        "companyName": "Ogechi Ekanem Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Fashola",
+        "email": "emeka.fashola@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Tableau",
+            "Excel",
+            "Python"
+        ],
+        "serviceCategories": [
+            "Data Analysis"
+        ],
+        "hourlyRate": 29,
+        "portfolio": "https://portfolio.example.com/emeka_fashola",
+        "companyName": "Emeka Fashola Creations",
+        "companyDescription": "Providing top-notch data analysis services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ogechi",
+        "lastName": "Fashola",
+        "email": "ogechi.fashola@example.com",
+        "password": "hashed_password_ogechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "SEO",
+            "Editing",
+            "Copywriting"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 11,
+        "portfolio": "https://portfolio.example.com/ogechi_fashola",
+        "companyName": "Ogechi Fashola Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Aisha",
+        "lastName": "Nwachukwu",
+        "email": "aisha.nwachukwu@example.com",
+        "password": "hashed_password_aisha",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "SQL",
+            "Python",
+            "Excel"
+        ],
+        "serviceCategories": [
+            "Data Analysis"
+        ],
+        "hourlyRate": 29,
+        "portfolio": "https://portfolio.example.com/aisha_nwachukwu",
+        "companyName": "Aisha Nwachukwu Creations",
+        "companyDescription": "Providing top-notch data analysis services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Obinna",
+        "lastName": "Balogun",
+        "email": "obinna.balogun@example.com",
+        "password": "hashed_password_obinna",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "DaVinci Resolve",
+            "After Effects",
+            "Premiere Pro"
+        ],
+        "serviceCategories": [
+            "Video Editing"
+        ],
+        "hourlyRate": 25,
+        "portfolio": "https://portfolio.example.com/obinna_balogun",
+        "companyName": "Obinna Balogun Creations",
+        "companyDescription": "Providing top-notch video editing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Eze",
+        "email": "emeka.eze@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Node.js",
+            "CSS",
+            "React"
+        ],
+        "serviceCategories": [
+            "Web Development"
+        ],
+        "hourlyRate": 42,
+        "portfolio": "https://portfolio.example.com/emeka_eze",
+        "companyName": "Emeka Eze Creations",
+        "companyDescription": "Providing top-notch web development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Fatima",
+        "lastName": "Fashola",
+        "email": "fatima.fashola@example.com",
+        "password": "hashed_password_fatima",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Copywriting",
+            "SEO",
+            "Editing"
+        ],
+        "serviceCategories": [
+            "Content Writing"
+        ],
+        "hourlyRate": 12,
+        "portfolio": "https://portfolio.example.com/fatima_fashola",
+        "companyName": "Fatima Fashola Creations",
+        "companyDescription": "Providing top-notch content writing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Taiwo",
+        "lastName": "Yakubu",
+        "email": "taiwo.yakubu@example.com",
+        "password": "hashed_password_taiwo",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Wireframing",
+            "User Research",
+            "Prototyping"
+        ],
+        "serviceCategories": [
+            "UI/UX Design"
+        ],
+        "hourlyRate": 10,
+        "portfolio": "https://portfolio.example.com/taiwo_yakubu",
+        "companyName": "Taiwo Yakubu Creations",
+        "companyDescription": "Providing top-notch ui/ux design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Ibadan",
+            "state": "Oyo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ngozi",
+        "lastName": "Olowo",
+        "email": "ngozi.olowo@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Brand Strategy",
+            "Social Media",
+            "Google Ads"
+        ],
+        "serviceCategories": [
+            "Marketing"
+        ],
+        "hourlyRate": 12,
+        "portfolio": "https://portfolio.example.com/ngozi_olowo",
+        "companyName": "Ngozi Olowo Creations",
+        "companyDescription": "Providing top-notch marketing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Oyeleke",
+        "email": "bola.oyeleke@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Prototyping",
+            "User Research",
+            "Wireframing"
+        ],
+        "serviceCategories": [
+            "UI/UX Design"
+        ],
+        "hourlyRate": 12,
+        "portfolio": "https://portfolio.example.com/bola_oyeleke",
+        "companyName": "Bola Oyeleke Creations",
+        "companyDescription": "Providing top-notch ui/ux design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Segun",
+        "lastName": "Nwachukwu",
+        "email": "segun.nwachukwu@example.com",
+        "password": "hashed_password_segun",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Java",
+            "C++",
+            "Python"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 21,
+        "portfolio": "https://portfolio.example.com/segun_nwachukwu",
+        "companyName": "Segun Nwachukwu Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Kelechi",
+        "lastName": "Ogunbiyi",
+        "email": "kelechi.ogunbiyi@example.com",
+        "password": "hashed_password_kelechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Ethical Hacking",
+            "Penetration Testing",
+            "Network Security"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 37,
+        "portfolio": "https://portfolio.example.com/kelechi_ogunbiyi",
+        "companyName": "Kelechi Ogunbiyi Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chidi",
+        "lastName": "Ibrahim",
+        "email": "chidi.ibrahim@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Photoshop",
+            "Branding",
+            "Illustrator"
+        ],
+        "serviceCategories": [
+            "Graphic Design"
+        ],
+        "hourlyRate": 31,
+        "portfolio": "https://portfolio.example.com/chidi_ibrahim",
+        "companyName": "Chidi Ibrahim Creations",
+        "companyDescription": "Providing top-notch graphic design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chidi",
+        "lastName": "Nwachukwu",
+        "email": "chidi.nwachukwu@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Google Ads",
+            "Social Media",
+            "Brand Strategy"
+        ],
+        "serviceCategories": [
+            "Marketing"
+        ],
+        "hourlyRate": 46,
+        "portfolio": "https://portfolio.example.com/chidi_nwachukwu",
+        "companyName": "Chidi Nwachukwu Creations",
+        "companyDescription": "Providing top-notch marketing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Fatima",
+        "lastName": "Adamu",
+        "email": "fatima.adamu@example.com",
+        "password": "hashed_password_fatima",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Adobe Lightroom",
+            "Portrait Photography",
+            "Studio Lighting"
+        ],
+        "serviceCategories": [
+            "Photography"
+        ],
+        "hourlyRate": 11,
+        "portfolio": "https://portfolio.example.com/fatima_adamu",
+        "companyName": "Fatima Adamu Creations",
+        "companyDescription": "Providing top-notch photography services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ogechi",
+        "lastName": "Akinyemi",
+        "email": "ogechi.akinyemi@example.com",
+        "password": "hashed_password_ogechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "C++",
+            "Python",
+            "Rust"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 22,
+        "portfolio": "https://portfolio.example.com/ogechi_akinyemi",
+        "companyName": "Ogechi Akinyemi Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Fatima",
+        "lastName": "Ogunbiyi",
+        "email": "fatima.ogunbiyi@example.com",
+        "password": "hashed_password_fatima",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Illustrator",
+            "Figma",
+            "Branding"
+        ],
+        "serviceCategories": [
+            "Graphic Design"
+        ],
+        "hourlyRate": 49,
+        "portfolio": "https://portfolio.example.com/fatima_ogunbiyi",
+        "companyName": "Fatima Ogunbiyi Creations",
+        "companyDescription": "Providing top-notch graphic design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Ibadan",
+            "state": "Oyo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ngozi",
+        "lastName": "Eze",
+        "email": "ngozi.eze@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Excel",
+            "Python",
+            "Tableau"
+        ],
+        "serviceCategories": [
+            "Data Analysis"
+        ],
+        "hourlyRate": 46,
+        "portfolio": "https://portfolio.example.com/ngozi_eze",
+        "companyName": "Ngozi Eze Creations",
+        "companyDescription": "Providing top-notch data analysis services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Ekanem",
+        "email": "adewale.ekanem@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "SQL",
+            "Excel",
+            "Tableau"
+        ],
+        "serviceCategories": [
+            "Data Analysis"
+        ],
+        "hourlyRate": 45,
+        "portfolio": "https://portfolio.example.com/adewale_ekanem",
+        "companyName": "Adewale Ekanem Creations",
+        "companyDescription": "Providing top-notch data analysis services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Balogun",
+        "email": "bola.balogun@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Figma",
+            "Branding",
+            "Illustrator"
+        ],
+        "serviceCategories": [
+            "Graphic Design"
+        ],
+        "hourlyRate": 17,
+        "portfolio": "https://portfolio.example.com/bola_balogun",
+        "companyName": "Bola Balogun Creations",
+        "companyDescription": "Providing top-notch graphic design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Funmi",
+        "lastName": "Ogunbiyi",
+        "email": "funmi.ogunbiyi@example.com",
+        "password": "hashed_password_funmi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Premiere Pro",
+            "DaVinci Resolve",
+            "After Effects"
+        ],
+        "serviceCategories": [
+            "Video Editing"
+        ],
+        "hourlyRate": 47,
+        "portfolio": "https://portfolio.example.com/funmi_ogunbiyi",
+        "companyName": "Funmi Ogunbiyi Creations",
+        "companyDescription": "Providing top-notch video editing services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chidi",
+        "lastName": "Adeyemi",
+        "email": "chidi.adeyemi@example.com",
+        "password": "hashed_password_chidi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "User Research",
+            "Wireframing",
+            "Prototyping"
+        ],
+        "serviceCategories": [
+            "UI/UX Design"
+        ],
+        "hourlyRate": 46,
+        "portfolio": "https://portfolio.example.com/chidi_adeyemi",
+        "companyName": "Chidi Adeyemi Creations",
+        "companyDescription": "Providing top-notch ui/ux design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chinwe",
+        "lastName": "Opara",
+        "email": "chinwe.opara@example.com",
+        "password": "hashed_password_chinwe",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "C++",
+            "Java",
+            "Rust"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 13,
+        "portfolio": "https://portfolio.example.com/chinwe_opara",
+        "companyName": "Chinwe Opara Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Olowo",
+        "email": "adewale.olowo@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "C++",
+            "Java",
+            "Python"
+        ],
+        "serviceCategories": [
+            "Software Development"
+        ],
+        "hourlyRate": 19,
+        "portfolio": "https://portfolio.example.com/adewale_olowo",
+        "companyName": "Adewale Olowo Creations",
+        "companyDescription": "Providing top-notch software development services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Ibadan",
+            "state": "Oyo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Obinna",
+        "lastName": "Eze",
+        "email": "obinna.eze@example.com",
+        "password": "hashed_password_obinna",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Ethical Hacking",
+            "Network Security",
+            "Penetration Testing"
+        ],
+        "serviceCategories": [
+            "Cybersecurity"
+        ],
+        "hourlyRate": 48,
+        "portfolio": "https://portfolio.example.com/obinna_eze",
+        "companyName": "Obinna Eze Creations",
+        "companyDescription": "Providing top-notch cybersecurity services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Fashola",
+        "email": "emeka.fashola@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
+        "isTalent": true,
+        "skills": [
+            "Prototyping",
+            "Wireframing",
+            "User Research"
+        ],
+        "serviceCategories": [
+            "UI/UX Design"
+        ],
+        "hourlyRate": 24,
+        "portfolio": "https://portfolio.example.com/emeka_fashola",
+        "companyName": "Emeka Fashola Creations",
+        "companyDescription": "Providing top-notch ui/ux design services to clients worldwide.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Opara",
+        "email": "adewale.opara@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional plumber offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Leak Repair",
+            "Pipe Installation",
+            "Drain Cleaning"
+        ],
+        "serviceCategories": [
+            "Plumber"
+        ],
+        "hourlyRate": 40,
+        "portfolio": "https://portfolio.example.com/adewale_opara",
+        "companyName": "Adewale Opara Services",
+        "companyDescription": "Providing excellent plumber services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Okonkwo",
+        "email": "bola.okonkwo@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional moving services offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Furniture Assembly",
+            "Packing",
+            "Loading"
+        ],
+        "serviceCategories": [
+            "Moving Services"
+        ],
+        "hourlyRate": 46,
+        "portfolio": "https://portfolio.example.com/bola_okonkwo",
+        "companyName": "Bola Okonkwo Services",
+        "companyDescription": "Providing excellent moving services services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Obinna",
+        "lastName": "Adeyemi",
+        "email": "obinna.adeyemi@example.com",
+        "password": "hashed_password_obinna",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional pc builder offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Hardware Troubleshooting",
+            "Overclocking",
+            "Custom PC Assembly"
+        ],
+        "serviceCategories": [
+            "PC Builder"
+        ],
+        "hourlyRate": 15,
+        "portfolio": "https://portfolio.example.com/obinna_adeyemi",
+        "companyName": "Obinna Adeyemi Services",
+        "companyDescription": "Providing excellent pc builder services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Fatima",
+        "lastName": "Okonkwo",
+        "email": "fatima.okonkwo@example.com",
+        "password": "hashed_password_fatima",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional painter offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Spray Painting",
+            "Exterior Painting",
+            "Interior Painting"
+        ],
+        "serviceCategories": [
+            "Painter"
+        ],
+        "hourlyRate": 24,
+        "portfolio": "https://portfolio.example.com/fatima_okonkwo",
+        "companyName": "Fatima Okonkwo Services",
+        "companyDescription": "Providing excellent painter services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ibrahim",
+        "lastName": "Adebayo",
+        "email": "ibrahim.adebayo@example.com",
+        "password": "hashed_password_ibrahim",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional massage therapist offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Deep Tissue Massage",
+            "Reflexology",
+            "Sports Massage"
+        ],
+        "serviceCategories": [
+            "Massage Therapist"
+        ],
+        "hourlyRate": 34,
+        "portfolio": "https://portfolio.example.com/ibrahim_adebayo",
+        "companyName": "Ibrahim Adebayo Services",
+        "companyDescription": "Providing excellent massage therapist services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Port Harcourt",
+            "state": "Rivers",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chinwe",
+        "lastName": "Fashola",
+        "email": "chinwe.fashola@example.com",
+        "password": "hashed_password_chinwe",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional plumber offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Pipe Installation",
+            "Leak Repair",
+            "Drain Cleaning"
+        ],
+        "serviceCategories": [
+            "Plumber"
+        ],
+        "hourlyRate": 31,
+        "portfolio": "https://portfolio.example.com/chinwe_fashola",
+        "companyName": "Chinwe Fashola Services",
+        "companyDescription": "Providing excellent plumber services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Eze",
+        "email": "tunde.eze@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional salon offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Manicure",
+            "Hair Styling",
+            "Makeup"
+        ],
+        "serviceCategories": [
+            "Salon"
+        ],
+        "hourlyRate": 32,
+        "portfolio": "https://portfolio.example.com/tunde_eze",
+        "companyName": "Tunde Eze Services",
+        "companyDescription": "Providing excellent salon services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chinwe",
+        "lastName": "Nwachukwu",
+        "email": "chinwe.nwachukwu@example.com",
+        "password": "hashed_password_chinwe",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional moving services offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Packing",
+            "Loading",
+            "Furniture Assembly"
+        ],
+        "serviceCategories": [
+            "Moving Services"
+        ],
+        "hourlyRate": 46,
+        "portfolio": "https://portfolio.example.com/chinwe_nwachukwu",
+        "companyName": "Chinwe Nwachukwu Services",
+        "companyDescription": "Providing excellent moving services services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ngozi",
+        "lastName": "Fashola",
+        "email": "ngozi.fashola@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional personal trainer offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Strength Training",
+            "Fitness Coaching",
+            "Nutrition"
+        ],
+        "serviceCategories": [
+            "Personal Trainer"
+        ],
+        "hourlyRate": 30,
+        "portfolio": "https://portfolio.example.com/ngozi_fashola",
+        "companyName": "Ngozi Fashola Services",
+        "companyDescription": "Providing excellent personal trainer services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chinwe",
+        "lastName": "Nwachukwu",
+        "email": "chinwe.nwachukwu@example.com",
+        "password": "hashed_password_chinwe",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional tutor offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Mathematics",
+            "English",
+            "Science"
+        ],
+        "serviceCategories": [
+            "Tutor"
+        ],
+        "hourlyRate": 45,
+        "portfolio": "https://portfolio.example.com/chinwe_nwachukwu",
+        "companyName": "Chinwe Nwachukwu Services",
+        "companyDescription": "Providing excellent tutor services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Ibadan",
+            "state": "Oyo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Ibrahim",
+        "email": "adewale.ibrahim@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional chef offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Pastry",
+            "Catering",
+            "Menu Planning"
+        ],
+        "serviceCategories": [
+            "Chef"
+        ],
+        "hourlyRate": 11,
+        "portfolio": "https://portfolio.example.com/adewale_ibrahim",
+        "companyName": "Adewale Ibrahim Services",
+        "companyDescription": "Providing excellent chef services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ibrahim",
+        "lastName": "Yakubu",
+        "email": "ibrahim.yakubu@example.com",
+        "password": "hashed_password_ibrahim",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional painter offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Interior Painting",
+            "Exterior Painting",
+            "Spray Painting"
+        ],
+        "serviceCategories": [
+            "Painter"
+        ],
+        "hourlyRate": 36,
+        "portfolio": "https://portfolio.example.com/ibrahim_yakubu",
+        "companyName": "Ibrahim Yakubu Services",
+        "companyDescription": "Providing excellent painter services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Bola",
+        "lastName": "Adeyemi",
+        "email": "bola.adeyemi@example.com",
+        "password": "hashed_password_bola",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional moving services offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Loading",
+            "Packing",
+            "Furniture Assembly"
+        ],
+        "serviceCategories": [
+            "Moving Services"
+        ],
+        "hourlyRate": 46,
+        "portfolio": "https://portfolio.example.com/bola_adeyemi",
+        "companyName": "Bola Adeyemi Services",
+        "companyDescription": "Providing excellent moving services services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kano",
+            "state": "Kano",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Obinna",
+        "lastName": "Ogunbiyi",
+        "email": "obinna.ogunbiyi@example.com",
+        "password": "hashed_password_obinna",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional pc builder offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Overclocking",
+            "Hardware Troubleshooting",
+            "Custom PC Assembly"
+        ],
+        "serviceCategories": [
+            "PC Builder"
+        ],
+        "hourlyRate": 48,
+        "portfolio": "https://portfolio.example.com/obinna_ogunbiyi",
+        "companyName": "Obinna Ogunbiyi Services",
+        "companyDescription": "Providing excellent pc builder services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ibrahim",
+        "lastName": "Opara",
+        "email": "ibrahim.opara@example.com",
+        "password": "hashed_password_ibrahim",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional painter offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Spray Painting",
+            "Exterior Painting",
+            "Interior Painting"
+        ],
+        "serviceCategories": [
+            "Painter"
+        ],
+        "hourlyRate": 43,
+        "portfolio": "https://portfolio.example.com/ibrahim_opara",
+        "companyName": "Ibrahim Opara Services",
+        "companyDescription": "Providing excellent painter services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Nwachukwu",
+        "email": "adewale.nwachukwu@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional cleaner offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Residential Cleaning",
+            "Office Cleaning",
+            "Deep Cleaning"
+        ],
+        "serviceCategories": [
+            "Cleaner"
+        ],
+        "hourlyRate": 23,
+        "portfolio": "https://portfolio.example.com/adewale_nwachukwu",
+        "companyName": "Adewale Nwachukwu Services",
+        "companyDescription": "Providing excellent cleaner services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Osho",
+        "email": "tunde.osho@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional pc builder offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Hardware Troubleshooting",
+            "Custom PC Assembly",
+            "Overclocking"
+        ],
+        "serviceCategories": [
+            "PC Builder"
+        ],
+        "hourlyRate": 20,
+        "portfolio": "https://portfolio.example.com/tunde_osho",
+        "companyName": "Tunde Osho Services",
+        "companyDescription": "Providing excellent pc builder services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Uche",
+        "lastName": "Chukwu",
+        "email": "uche.chukwu@example.com",
+        "password": "hashed_password_uche",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional handyman offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Home Maintenance",
+            "General Repairs",
+            "Furniture Assembly"
+        ],
+        "serviceCategories": [
+            "Handyman"
+        ],
+        "hourlyRate": 47,
+        "portfolio": "https://portfolio.example.com/uche_chukwu",
+        "companyName": "Uche Chukwu Services",
+        "companyDescription": "Providing excellent handyman services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Fatima",
+        "lastName": "Adebayo",
+        "email": "fatima.adebayo@example.com",
+        "password": "hashed_password_fatima",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional carpenter offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Woodworking",
+            "Furniture Making",
+            "Cabinet Installation"
+        ],
+        "serviceCategories": [
+            "Carpenter"
+        ],
+        "hourlyRate": 42,
+        "portfolio": "https://portfolio.example.com/fatima_adebayo",
+        "companyName": "Fatima Adebayo Services",
+        "companyDescription": "Providing excellent carpenter services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Ibadan",
+            "state": "Oyo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Aisha",
+        "lastName": "Ekanem",
+        "email": "aisha.ekanem@example.com",
+        "password": "hashed_password_aisha",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional chef offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Catering",
+            "Pastry",
+            "Menu Planning"
+        ],
+        "serviceCategories": [
+            "Chef"
+        ],
+        "hourlyRate": 20,
+        "portfolio": "https://portfolio.example.com/aisha_ekanem",
+        "companyName": "Aisha Ekanem Services",
+        "companyDescription": "Providing excellent chef services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Segun",
+        "lastName": "Yakubu",
+        "email": "segun.yakubu@example.com",
+        "password": "hashed_password_segun",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional painter offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Interior Painting",
+            "Spray Painting",
+            "Exterior Painting"
+        ],
+        "serviceCategories": [
+            "Painter"
+        ],
+        "hourlyRate": 41,
+        "portfolio": "https://portfolio.example.com/segun_yakubu",
+        "companyName": "Segun Yakubu Services",
+        "companyDescription": "Providing excellent painter services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ngozi",
+        "lastName": "Oyeleke",
+        "email": "ngozi.oyeleke@example.com",
+        "password": "hashed_password_ngozi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional web developer offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "JavaScript",
+            "React",
+            "HTML"
+        ],
+        "serviceCategories": [
+            "Web Developer"
+        ],
+        "hourlyRate": 31,
+        "portfolio": "https://portfolio.example.com/ngozi_oyeleke",
+        "companyName": "Ngozi Oyeleke Services",
+        "companyDescription": "Providing excellent web developer services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Ogundipe",
+        "email": "adewale.ogundipe@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional landscaper offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Lawn Care",
+            "Garden Design",
+            "Tree Trimming"
+        ],
+        "serviceCategories": [
+            "Landscaper"
+        ],
+        "hourlyRate": 38,
+        "portfolio": "https://portfolio.example.com/adewale_ogundipe",
+        "companyName": "Adewale Ogundipe Services",
+        "companyDescription": "Providing excellent landscaper services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Obinna",
+        "lastName": "Olowo",
+        "email": "obinna.olowo@example.com",
+        "password": "hashed_password_obinna",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional plumber offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Pipe Installation",
+            "Leak Repair",
+            "Drain Cleaning"
+        ],
+        "serviceCategories": [
+            "Plumber"
+        ],
+        "hourlyRate": 50,
+        "portfolio": "https://portfolio.example.com/obinna_olowo",
+        "companyName": "Obinna Olowo Services",
+        "companyDescription": "Providing excellent plumber services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Aisha",
+        "lastName": "Opara",
+        "email": "aisha.opara@example.com",
+        "password": "hashed_password_aisha",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional web developer offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "CSS",
+            "HTML",
+            "JavaScript"
+        ],
+        "serviceCategories": [
+            "Web Developer"
+        ],
+        "hourlyRate": 22,
+        "portfolio": "https://portfolio.example.com/aisha_opara",
+        "companyName": "Aisha Opara Services",
+        "companyDescription": "Providing excellent web developer services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Ibrahim",
+        "email": "adewale.ibrahim@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional photographer offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Editing",
+            "Portrait Photography",
+            "Wedding Photography"
+        ],
+        "serviceCategories": [
+            "Photographer"
+        ],
+        "hourlyRate": 10,
+        "portfolio": "https://portfolio.example.com/adewale_ibrahim",
+        "companyName": "Adewale Ibrahim Services",
+        "companyDescription": "Providing excellent photographer services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Ibadan",
+            "state": "Oyo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Oluwatobi",
+        "lastName": "Fashola",
+        "email": "oluwatobi.fashola@example.com",
+        "password": "hashed_password_oluwatobi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional moving services offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Furniture Assembly",
+            "Loading",
+            "Packing"
+        ],
+        "serviceCategories": [
+            "Moving Services"
+        ],
+        "hourlyRate": 37,
+        "portfolio": "https://portfolio.example.com/oluwatobi_fashola",
+        "companyName": "Oluwatobi Fashola Services",
+        "companyDescription": "Providing excellent moving services services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Chinwe",
+        "lastName": "Fashola",
+        "email": "chinwe.fashola@example.com",
+        "password": "hashed_password_chinwe",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional painter offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Interior Painting",
+            "Spray Painting",
+            "Exterior Painting"
+        ],
+        "serviceCategories": [
+            "Painter"
+        ],
+        "hourlyRate": 50,
+        "portfolio": "https://portfolio.example.com/chinwe_fashola",
+        "companyName": "Chinwe Fashola Services",
+        "companyDescription": "Providing excellent painter services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Oluwatobi",
+        "lastName": "Ogunbiyi",
+        "email": "oluwatobi.ogunbiyi@example.com",
+        "password": "hashed_password_oluwatobi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional plumber offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Leak Repair",
+            "Pipe Installation",
+            "Drain Cleaning"
+        ],
+        "serviceCategories": [
+            "Plumber"
+        ],
+        "hourlyRate": 40,
+        "portfolio": "https://portfolio.example.com/oluwatobi_ogunbiyi",
+        "companyName": "Oluwatobi Ogunbiyi Services",
+        "companyDescription": "Providing excellent plumber services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Okonkwo",
+        "email": "tunde.okonkwo@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional carpenter offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Woodworking",
+            "Cabinet Installation",
+            "Furniture Making"
+        ],
+        "serviceCategories": [
+            "Carpenter"
+        ],
+        "hourlyRate": 30,
+        "portfolio": "https://portfolio.example.com/tunde_okonkwo",
+        "companyName": "Tunde Okonkwo Services",
+        "companyDescription": "Providing excellent carpenter services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Folake",
+        "lastName": "Ogundipe",
+        "email": "folake.ogundipe@example.com",
+        "password": "hashed_password_folake",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional personal trainer offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Fitness Coaching",
+            "Nutrition",
+            "Strength Training"
+        ],
+        "serviceCategories": [
+            "Personal Trainer"
+        ],
+        "hourlyRate": 25,
+        "portfolio": "https://portfolio.example.com/folake_ogundipe",
+        "companyName": "Folake Ogundipe Services",
+        "companyDescription": "Providing excellent personal trainer services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Port Harcourt",
+            "state": "Rivers",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Taiwo",
+        "lastName": "Eze",
+        "email": "taiwo.eze@example.com",
+        "password": "hashed_password_taiwo",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional web developer offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "CSS",
+            "JavaScript",
+            "React"
+        ],
+        "serviceCategories": [
+            "Web Developer"
+        ],
+        "hourlyRate": 34,
+        "portfolio": "https://portfolio.example.com/taiwo_eze",
+        "companyName": "Taiwo Eze Services",
+        "companyDescription": "Providing excellent web developer services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Balogun",
+        "email": "emeka.balogun@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional personal trainer offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Strength Training",
+            "Nutrition",
+            "Fitness Coaching"
+        ],
+        "serviceCategories": [
+            "Personal Trainer"
+        ],
+        "hourlyRate": 12,
+        "portfolio": "https://portfolio.example.com/emeka_balogun",
+        "companyName": "Emeka Balogun Services",
+        "companyDescription": "Providing excellent personal trainer services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Olowo",
+        "email": "tunde.olowo@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional mechanic offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Engine Diagnostics",
+            "Car Repair",
+            "Brake Service"
+        ],
+        "serviceCategories": [
+            "Mechanic"
+        ],
+        "hourlyRate": 14,
+        "portfolio": "https://portfolio.example.com/tunde_olowo",
+        "companyName": "Tunde Olowo Services",
+        "companyDescription": "Providing excellent mechanic services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Eze",
+        "email": "emeka.eze@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional photographer offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Editing",
+            "Wedding Photography",
+            "Portrait Photography"
+        ],
+        "serviceCategories": [
+            "Photographer"
+        ],
+        "hourlyRate": 20,
+        "portfolio": "https://portfolio.example.com/emeka_eze",
+        "companyName": "Emeka Eze Services",
+        "companyDescription": "Providing excellent photographer services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Kelechi",
+        "lastName": "Balogun",
+        "email": "kelechi.balogun@example.com",
+        "password": "hashed_password_kelechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional mechanic offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Engine Diagnostics",
+            "Car Repair",
+            "Brake Service"
+        ],
+        "serviceCategories": [
+            "Mechanic"
+        ],
+        "hourlyRate": 10,
+        "portfolio": "https://portfolio.example.com/kelechi_balogun",
+        "companyName": "Kelechi Balogun Services",
+        "companyDescription": "Providing excellent mechanic services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Uche",
+        "lastName": "Oyeleke",
+        "email": "uche.oyeleke@example.com",
+        "password": "hashed_password_uche",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional painter offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Exterior Painting",
+            "Spray Painting",
+            "Interior Painting"
+        ],
+        "serviceCategories": [
+            "Painter"
+        ],
+        "hourlyRate": 26,
+        "portfolio": "https://portfolio.example.com/uche_oyeleke",
+        "companyName": "Uche Oyeleke Services",
+        "companyDescription": "Providing excellent painter services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Taiwo",
+        "lastName": "Ogunbiyi",
+        "email": "taiwo.ogunbiyi@example.com",
+        "password": "hashed_password_taiwo",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional cleaner offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Residential Cleaning",
+            "Office Cleaning",
+            "Deep Cleaning"
+        ],
+        "serviceCategories": [
+            "Cleaner"
+        ],
+        "hourlyRate": 43,
+        "portfolio": "https://portfolio.example.com/taiwo_ogunbiyi",
+        "companyName": "Taiwo Ogunbiyi Services",
+        "companyDescription": "Providing excellent cleaner services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Adeyemi",
+        "email": "tunde.adeyemi@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional salon offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Makeup",
+            "Manicure",
+            "Hair Styling"
+        ],
+        "serviceCategories": [
+            "Salon"
+        ],
+        "hourlyRate": 13,
+        "portfolio": "https://portfolio.example.com/tunde_adeyemi",
+        "companyName": "Tunde Adeyemi Services",
+        "companyDescription": "Providing excellent salon services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Kaduna",
+            "state": "Kaduna",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Aisha",
+        "lastName": "Opara",
+        "email": "aisha.opara@example.com",
+        "password": "hashed_password_aisha",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional massage therapist offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Sports Massage",
+            "Deep Tissue Massage",
+            "Reflexology"
+        ],
+        "serviceCategories": [
+            "Massage Therapist"
+        ],
+        "hourlyRate": 32,
+        "portfolio": "https://portfolio.example.com/aisha_opara",
+        "companyName": "Aisha Opara Services",
+        "companyDescription": "Providing excellent massage therapist services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Fashola",
+        "email": "adewale.fashola@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional electrician offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Electrical Installations",
+            "Circuit Repair",
+            "Wiring"
+        ],
+        "serviceCategories": [
+            "Electrician"
+        ],
+        "hourlyRate": 48,
+        "portfolio": "https://portfolio.example.com/adewale_fashola",
+        "companyName": "Adewale Fashola Services",
+        "companyDescription": "Providing excellent electrician services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abeokuta",
+            "state": "Ogun",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Tunde",
+        "lastName": "Fashola",
+        "email": "tunde.fashola@example.com",
+        "password": "hashed_password_tunde",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional plumber offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Pipe Installation",
+            "Drain Cleaning",
+            "Leak Repair"
+        ],
+        "serviceCategories": [
+            "Plumber"
+        ],
+        "hourlyRate": 38,
+        "portfolio": "https://portfolio.example.com/tunde_fashola",
+        "companyName": "Tunde Fashola Services",
+        "companyDescription": "Providing excellent plumber services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Funmi",
+        "lastName": "Ogunbiyi",
+        "email": "funmi.ogunbiyi@example.com",
+        "password": "hashed_password_funmi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional salon offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Manicure",
+            "Hair Styling",
+            "Makeup"
+        ],
+        "serviceCategories": [
+            "Salon"
+        ],
+        "hourlyRate": 39,
+        "portfolio": "https://portfolio.example.com/funmi_ogunbiyi",
+        "companyName": "Funmi Ogunbiyi Services",
+        "companyDescription": "Providing excellent salon services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Ibadan",
+            "state": "Oyo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Ogechi",
+        "lastName": "Ibrahim",
+        "email": "ogechi.ibrahim@example.com",
+        "password": "hashed_password_ogechi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional handyman offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Furniture Assembly",
+            "General Repairs",
+            "Home Maintenance"
+        ],
+        "serviceCategories": [
+            "Handyman"
+        ],
+        "hourlyRate": 46,
+        "portfolio": "https://portfolio.example.com/ogechi_ibrahim",
+        "companyName": "Ogechi Ibrahim Services",
+        "companyDescription": "Providing excellent handyman services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Onitsha",
+            "state": "Anambra",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Uche",
+        "lastName": "Chukwu",
+        "email": "uche.chukwu@example.com",
+        "password": "hashed_password_uche",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional web developer offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "CSS",
+            "HTML",
+            "React"
+        ],
+        "serviceCategories": [
+            "Web Developer"
+        ],
+        "hourlyRate": 32,
+        "portfolio": "https://portfolio.example.com/uche_chukwu",
+        "companyName": "Uche Chukwu Services",
+        "companyDescription": "Providing excellent web developer services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Benin City",
+            "state": "Edo",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Adewale",
+        "lastName": "Adamu",
+        "email": "adewale.adamu@example.com",
+        "password": "hashed_password_adewale",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional pc builder offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Hardware Troubleshooting",
+            "Overclocking",
+            "Custom PC Assembly"
+        ],
+        "serviceCategories": [
+            "PC Builder"
+        ],
+        "hourlyRate": 23,
+        "portfolio": "https://portfolio.example.com/adewale_adamu",
+        "companyName": "Adewale Adamu Services",
+        "companyDescription": "Providing excellent pc builder services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Port Harcourt",
+            "state": "Rivers",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Emeka",
+        "lastName": "Chukwu",
+        "email": "emeka.chukwu@example.com",
+        "password": "hashed_password_emeka",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional moving services offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Packing",
+            "Furniture Assembly",
+            "Loading"
+        ],
+        "serviceCategories": [
+            "Moving Services"
+        ],
+        "hourlyRate": 38,
+        "portfolio": "https://portfolio.example.com/emeka_chukwu",
+        "companyName": "Emeka Chukwu Services",
+        "companyDescription": "Providing excellent moving services services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Abuja",
+            "state": "FCT",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Oluwatobi",
+        "lastName": "Akinyemi",
+        "email": "oluwatobi.akinyemi@example.com",
+        "password": "hashed_password_oluwatobi",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional moving services offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Furniture Assembly",
+            "Loading",
+            "Packing"
+        ],
+        "serviceCategories": [
+            "Moving Services"
+        ],
+        "hourlyRate": 34,
+        "portfolio": "https://portfolio.example.com/oluwatobi_akinyemi",
+        "companyName": "Oluwatobi Akinyemi Services",
+        "companyDescription": "Providing excellent moving services services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Uche",
+        "lastName": "Okonkwo",
+        "email": "uche.okonkwo@example.com",
+        "password": "hashed_password_uche",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional cleaner offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Residential Cleaning",
+            "Deep Cleaning",
+            "Office Cleaning"
+        ],
+        "serviceCategories": [
+            "Cleaner"
+        ],
+        "hourlyRate": 38,
+        "portfolio": "https://portfolio.example.com/uche_okonkwo",
+        "companyName": "Uche Okonkwo Services",
+        "companyDescription": "Providing excellent cleaner services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Enugu",
+            "state": "Enugu",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    },
+    {
+        "firstName": "Taiwo",
+        "lastName": "Udo",
+        "email": "taiwo.udo@example.com",
+        "password": "hashed_password_taiwo",
+        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "bio": "Professional plumber offering top-tier services.",
+        "isTalent": true,
+        "skills": [
+            "Leak Repair",
+            "Drain Cleaning",
+            "Pipe Installation"
+        ],
+        "serviceCategories": [
+            "Plumber"
+        ],
+        "hourlyRate": 45,
+        "portfolio": "https://portfolio.example.com/taiwo_udo",
+        "companyName": "Taiwo Udo Services",
+        "companyDescription": "Providing excellent plumber services with expertise.",
+        "createdAt": "2024-03-23T12:00:00Z",
+        "updatedAt": "2024-03-23T12:00:00Z",
+        "location": {
+            "city": "Lagos",
+            "state": "Lagos",
+            "country": "Nigeria"
+        },
+        "totalSpent": 0
+    }
+]
