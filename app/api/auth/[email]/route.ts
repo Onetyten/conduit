@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import mongoConnect from "@/lib/utils/connectDB";
 import Profile from "@/models/profileSchema";
 import { NextResponse } from "next/server";
@@ -7,7 +8,7 @@ interface Params {
 }
 
 export async function POST(request: Request, { params }: { params: Params }) {
-    const { email } = await params;
+    const { email } =  params;
     const { password } = await request.json(); // Ensure proper async parsing
 
     try {
@@ -21,10 +22,12 @@ export async function POST(request: Request, { params }: { params: Params }) {
         if (password !== user.password) {
             return NextResponse.json({ message: "Invalid password",success:false }, { status: 401 });
         }
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+       
         const {password:_, ...userwithoutPassword} = user.toObject()
-        NextResponse.json({message:'profile retrieved successfully',success:true,user:userwithoutPassword})
-    } catch (error) {
+        return NextResponse.json({message:'profile retrieved successfully',success:true,user:userwithoutPassword})
+    } 
+    
+    catch (error) {
         console.error("Error getting profile", error);
         return NextResponse.json({ error: "Internal server error",success:false }, { status: 500 });
     }

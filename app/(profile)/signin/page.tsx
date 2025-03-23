@@ -7,13 +7,17 @@ import Image from 'next/image'
 import Logo from '@/public/Images/Logo.png'
 import SigninPic from '@/public/Images/SigninPic.png'
 import Link from 'next/link'
+import { useDispatch, useSelector } from 'react-redux';
+import {setUser} from '@/state/userInfo/userSlice'
 
 export default function page() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [user, setUser] = useState(null);
-  const [error, setError] = useState(null);
+  const userReduxdata = useSelector((state)=>state.user.user)
+  const dispatch = useDispatch()
+
+
   const Submit = async () => {
     try {
       const response  = await fetch(`/api/auth/${email}`,{
@@ -24,25 +28,24 @@ export default function page() {
         body:JSON.stringify({password})
       })
 
+      const userData = await response.json()
       if (!response.ok)
         {
-          alert("Invalid response, check your network connection")
+          
+          alert(userData.message)
           throw new Error(`Failed to fetch user ${email}`)
         }
       
-      const userData = await response.json()
-      setUser(userData.user)
-      setError(null);
+      
+      dispatch(setUser(userData.user))
+      console.log("redux data",userReduxdata)
       console.log(userData.user,userData.message)
-    } catch (error) {
-      setError(error.message)
-      setUser(null)
+    }
+
+    catch (error) {
       console.log(error)
     }
   }
-
-
-
 
   return (
     <div className='w-full h-screen flex bg-softblue justify-center text-sm items-center'>
@@ -70,12 +73,10 @@ export default function page() {
         </div>
         <div className='flex gap-2 p-2 w-full justify-center items-center '>
 
-                <p>New to Conduit?</p>
+                <p onClick={()=>{ console.log("redux data",userReduxdata)}}>New to Conduit?</p>
                 <Link href="/signup" className='p-2 border-[1px] border-foreground rounded-xl'>
                   Sign up
                 </Link>
-                
-               
         </div>
       </div>
     </div>
