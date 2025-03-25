@@ -24,7 +24,7 @@ const profileSchema  = new mongoose.Schema({
         state:{type:String},
         country:{type:String}
     },
-    totalSpent:{type:Number,default:0},
+    totalSpent:{type:Number},
     
 
 })

@@ -4,7 +4,7 @@
         "lastName": "Adamu",
         "email": "bola.adamu@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/beautiful-african-american-woman-smiling-260nw-402466177.jpg",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -33,7 +33,7 @@
         "lastName": "Oyeleke",
         "email": "bola.oyeleke@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8SqUQHoXsdwlDm9PX9yuF-Ez5GtEsar-8DwYWOaEf4cdhmciRK9zgzaB3hbHJ9mYN-lk&usqp=CAU",
         "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -62,7 +62,7 @@
         "lastName": "Udo",
         "email": "ibrahim.udo@example.com",
         "password": "hashed_password_ibrahim",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://img.freepik.com/free-photo/close-up-upset-american-black-person_23-2148749582.jpg",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -91,7 +91,7 @@
         "lastName": "Fashola",
         "email": "segun.fashola@example.com",
         "password": "hashed_password_segun",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -120,7 +120,7 @@
         "lastName": "Adebayo",
         "email": "tunde.adebayo@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2524JuKw2qLgRdIrdN527S9PZrKbWSBCEKdVdDX6LV-DwbJXydr_qKylYa6CndTT78eQ&usqp=CAU",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -149,7 +149,7 @@
         "lastName": "Nwachukwu",
         "email": "zainab.nwachukwu@example.com",
         "password": "hashed_password_zainab",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/1300159342/photo/portrait-of-afro-business-woman-outdoors-on-the-street.jpg?s=612x612&w=is&k=20&c=ebJzJsyIlD57ohmETipR3WcM27ajuprJMVJDnICGHFA=",
         "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -178,7 +178,7 @@
         "lastName": "Olowo",
         "email": "chinwe.olowo@example.com",
         "password": "hashed_password_chinwe",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDyFyteBnAjCxrppQ5pk61_Nv1-FzboAFddYnshA4k3e2We5oL8VPlE0fMxf009fhXvP8&usqp=CAU",
         "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -207,7 +207,7 @@
         "lastName": "Yakubu",
         "email": "ngozi.yakubu@example.com",
         "password": "hashed_password_ngozi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/664734742/photo/smiling-young-black-woman-leaning-against-wall.jpg?s=612x612&w=is&k=20&c=BI5h9YNCiCqnFoNAZUZjZpY9FmSP7dsv8nfTloVvbvI=",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -236,7 +236,7 @@
         "lastName": "Nwachukwu",
         "email": "chinwe.nwachukwu@example.com",
         "password": "hashed_password_chinwe",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8dv0kC8hgIr3sEHIzkGAfwYg4V-Uw0xVLY7yOoh0C1mjF1twpxmQnEBQ5b1p-_zjhPU&usqp=CAU",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -265,7 +265,7 @@
         "lastName": "Ogunbiyi",
         "email": "tunde.ogunbiyi@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0xvZw3M8v_0szRbK8RvZvX4hWY5_38Dd97mncIMhexqP_vNp3BpM_QQRLCTyl06-xX20&usqp=CAU",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -294,7 +294,7 @@
         "lastName": "Balogun",
         "email": "bola.balogun@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu6OdrOd3SHEoPjQ1yBBPItSKoqFoDTSGWSSeQ0y5SIs_St96bgFZrm9IIUQol4cLVmv0&usqp=CAU",
         "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -323,7 +323,7 @@
         "lastName": "Osho",
         "email": "emeka.osho@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMtswdB_8tCLzLopLWIUZNi3BNGvSSw23fGw&s",
         "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -352,7 +352,7 @@
         "lastName": "Okonkwo",
         "email": "adewale.okonkwo@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwOUTYIqjfBZcMIFUknbAEFUhIMuUViNJ2n1q1PQokhNFvU_9kA5GCRNizVW_ijyM20Y&usqp=CAU",
         "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -381,7 +381,7 @@
         "lastName": "Ibrahim",
         "email": "tunde.ibrahim@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSThtP1TO2_ebYuOoTgcTHhKEeSa1NCKKiThw&s",
         "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -410,7 +410,7 @@
         "lastName": "Ogunbiyi",
         "email": "folake.ogunbiyi@example.com",
         "password": "hashed_password_folake",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
         "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -439,7 +439,7 @@
         "lastName": "Opara",
         "email": "ogechi.opara@example.com",
         "password": "hashed_password_ogechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi73nKp8DtzF8YhUk4MbqkmhVg-WR1Q4BT5oGtLn6CKsFb_hJW2YnsOW9wtgtr3cjIL6o&usqp=CAU",
         "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -468,7 +468,7 @@
         "lastName": "Eze",
         "email": "bola.eze@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7vzSsTD_Z1AvVSp6HCiHdf_HHo2bocbSFwmebu7IoRLzHwyG5jC6yPAQ0hZJG9O8OYRE&usqp=CAU",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -497,7 +497,7 @@
         "lastName": "Fashola",
         "email": "ngozi.fashola@example.com",
         "password": "hashed_password_ngozi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -526,7 +526,7 @@
         "lastName": "Olowo",
         "email": "segun.olowo@example.com",
         "password": "hashed_password_segun",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7K5vRmgACSQxKPXyCVTCqd2CPthdUNYdX7g&s",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -555,7 +555,7 @@
         "lastName": "Opara",
         "email": "adewale.opara@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvcDl6JAHuKMPYdtgBbnl10Sjq27ybBM_3mkA-lEU1UrNJeHb-czFisiijwf8iyyStkk8&usqp=CAU",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -584,7 +584,7 @@
         "lastName": "Ekanem",
         "email": "bola.ekanem@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqAbas8i2LjxXKBT1xT7x-6Z6JWzTKtJVbONsVZRKJ6WmaCRdOP3OCYFAgJe5P9rcwapU&usqp=CAU",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -613,7 +613,7 @@
         "lastName": "Ogundipe",
         "email": "chidi.ogundipe@example.com",
         "password": "hashed_password_chidi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3cfjym5lUTiEE7IjL9b0hdDsy5wHUYNZ5KdCjE6zQXauNhOfS9c2PtTQzq1KE8BNumyw&usqp=CAU",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -642,7 +642,7 @@
         "lastName": "Oyeleke",
         "email": "uche.oyeleke@example.com",
         "password": "hashed_password_uche",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUY9oIPVUrlXcSeJOnyaUdb_ga1WPA6RV4Vg&s",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -671,7 +671,7 @@
         "lastName": "Eze",
         "email": "zainab.eze@example.com",
         "password": "hashed_password_zainab",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/indoor-shot-serious-dark-skinned-260nw-1120731431.jpg",
         "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -700,7 +700,7 @@
         "lastName": "Okonkwo",
         "email": "aisha.okonkwo@example.com",
         "password": "hashed_password_aisha",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/young-african-american-woman-wearing-260nw-1538320421.jpg",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -729,7 +729,7 @@
         "lastName": "Opara",
         "email": "obinna.opara@example.com",
         "password": "hashed_password_obinna",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/beautiful-african-woman-posing-front-260nw-139285304.jpg",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -758,7 +758,7 @@
         "lastName": "Adamu",
         "email": "ibrahim.adamu@example.com",
         "password": "hashed_password_ibrahim",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8ytCWd8wXB0_9hPLQlB1qi_IeupU9ABDRw&s",
         "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -787,7 +787,7 @@
         "lastName": "Fashola",
         "email": "ibrahim.fashola@example.com",
         "password": "hashed_password_ibrahim",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrz6RCZtlvXB27MYnveTmQ9zyLhnKjhzjlg&s",
         "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -816,7 +816,7 @@
         "lastName": "Balogun",
         "email": "kelechi.balogun@example.com",
         "password": "hashed_password_kelechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAb1r5jl0fbcSTY0XUJL6_r1V-Gzn3Nh4Yw&s",
         "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -845,7 +845,7 @@
         "lastName": "Olowo",
         "email": "chidi.olowo@example.com",
         "password": "hashed_password_chidi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAb1r5jl0fbcSTY0XUJL6_r1V-Gzn3Nh4Yw&s",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -874,7 +874,7 @@
         "lastName": "Oyeleke",
         "email": "bola.oyeleke@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpC0q7Co7pMyoQLBq16DE7lEZz3PCpxcMLHZSd2yocudyUf3iiI3nvyrxV8tP-zV-MK-s&usqp=CAU",
         "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -903,7 +903,7 @@
         "lastName": "Yakubu",
         "email": "obinna.yakubu@example.com",
         "password": "hashed_password_obinna",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROzOqnnWWzeE14J5_XDm9YSq5-GO8K7YTzvSLq28BsVvjFHSnIkpTBnRLXb7xPFDvZAOM&usqp=CAU",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -932,7 +932,7 @@
         "lastName": "Nwachukwu",
         "email": "aisha.nwachukwu@example.com",
         "password": "hashed_password_aisha",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdZ02MGvw-ZQL8CK6UrH7rQtnKPERnB0K1s8SYXbLThOPazkL26CEu-AlOnjWP2mFuqRM&usqp=CAU",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -961,7 +961,7 @@
         "lastName": "Chukwu",
         "email": "aisha.chukwu@example.com",
         "password": "hashed_password_aisha",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/black-womans-portrait-closeup-260nw-390633124.jpg",
         "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -990,7 +990,7 @@
         "lastName": "Chukwu",
         "email": "ogechi.chukwu@example.com",
         "password": "hashed_password_ogechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5IVqMuF3pmI8HYyyPMbO0SZQ2COBzwbSbjuv0l0dEnR5rzV1VzXo2nzoN5JxERT0q7cU&usqp=CAU",
         "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1019,7 +1019,7 @@
         "lastName": "Yakubu",
         "email": "segun.yakubu@example.com",
         "password": "hashed_password_segun",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrz6RCZtlvXB27MYnveTmQ9zyLhnKjhzjlg&s",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1048,7 +1048,7 @@
         "lastName": "Ogundipe",
         "email": "ogechi.ogundipe@example.com",
         "password": "hashed_password_ogechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.publicdomainpictures.net/pictures/200000/nahled/central-african-man.jpg",
         "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1077,7 +1077,7 @@
         "lastName": "Fashola",
         "email": "uche.fashola@example.com",
         "password": "hashed_password_uche",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://thumbs.dreamstime.com/b/face-happy-smiling-african-man-14582933.jpg",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1106,7 +1106,7 @@
         "lastName": "Adamu",
         "email": "fatima.adamu@example.com",
         "password": "hashed_password_fatima",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH2NA7XPZSkxBNZJF-9MWuFMq81KPqiGcBHtJzcN-ViNJ65YVh-7hOcOZLUoREnaMyxHw&usqp=CAU",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1135,7 +1135,7 @@
         "lastName": "Ogunbiyi",
         "email": "emeka.ogunbiyi@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://thumbs.dreamstime.com/b/smiling-black-man-7647638.jpg",
         "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1164,7 +1164,7 @@
         "lastName": "Okonkwo",
         "email": "emeka.okonkwo@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7u52aQeXswj4W6PwXp4yhpZ1XoJOyakmoYdwfVHW9nm816fmwICW4E8u_Xj0HXI00ROw&usqp=CAU",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1193,7 +1193,7 @@
         "lastName": "Osho",
         "email": "segun.osho@example.com",
         "password": "hashed_password_segun",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://static.vecteezy.com/system/resources/thumbnails/051/675/964/small/a-smiling-middleaged-african-american-man-is-depicted-photo.jpeg",
         "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1222,7 +1222,7 @@
         "lastName": "Adeyemi",
         "email": "bola.adeyemi@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://img.freepik.com/premium-photo/african-american-studio-picture-dark-skinned-man-beige-tshirt_259150-52381.jpg?semt=ais_hybrid",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1251,7 +1251,7 @@
         "lastName": "Ekanem",
         "email": "funmi.ekanem@example.com",
         "password": "hashed_password_funmi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGdKIKgkf8XrXXiWY3JZOtBr7jm7qmU7l7rM2eZHZyfHSBAI2bLXlI3xYHW1OHyy1mnk4&usqp=CAU",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1280,7 +1280,7 @@
         "lastName": "Nwachukwu",
         "email": "zainab.nwachukwu@example.com",
         "password": "hashed_password_zainab",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/black-woman-portrait-smile-arms-260nw-2255590903.jpg",
         "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1309,7 +1309,7 @@
         "lastName": "Olowo",
         "email": "zainab.olowo@example.com",
         "password": "hashed_password_zainab",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/young-cheerful-black-woman-standing-260nw-2545869991.jpg",
         "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1338,7 +1338,7 @@
         "lastName": "Eze",
         "email": "chidi.eze@example.com",
         "password": "hashed_password_chidi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://img.freepik.com/premium-photo/african-american-with-transparent-background-high-quality_670382-102431.jpg",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1367,7 +1367,7 @@
         "lastName": "Chukwu",
         "email": "ngozi.chukwu@example.com",
         "password": "hashed_password_ngozi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/beautiful-young-african-woman-smiling-260nw-1870740352.jpg",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1396,7 +1396,7 @@
         "lastName": "Yakubu",
         "email": "kelechi.yakubu@example.com",
         "password": "hashed_password_kelechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://img.freepik.com/premium-photo/african-american-with-transparent-background-high-quality_670382-58864.jpg",
         "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1425,7 +1425,7 @@
         "lastName": "Adebayo",
         "email": "kelechi.adebayo@example.com",
         "password": "hashed_password_kelechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeYE84Syor7flhvHBX6pKEXqO68f2XN572JJFRkYPzeYtaKjPTBOL5ZAsTouDyQ-P513Y&usqp=CAU",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1454,7 +1454,7 @@
         "lastName": "Osho",
         "email": "segun.osho@example.com",
         "password": "hashed_password_segun",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeYE84Syor7flhvHBX6pKEXqO68f2XN572JJFRkYPzeYtaKjPTBOL5ZAhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQeEC-o9fx2-_cbDDlyxH58PimO30gQyuYOIwQfIm7QSoKKWCLWCjdkEBqj6K5lpWgV8E&usqp=CAUsTouDyQ-P513Y&usqp=CAU",
         "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1483,7 +1483,7 @@
         "lastName": "Adeyemi",
         "email": "aisha.adeyemi@example.com",
         "password": "hashed_password_aisha",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/black-woman-ideal-oily-shiny-260nw-439297861.jpg",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1512,7 +1512,7 @@
         "lastName": "Fashola",
         "email": "bola.fashola@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCpykmau4mfM3E0pW3kbBBrRalbUYZKPE3B4DeSC972qOHEltlSVwtfOvepTNKZfwleo&usqp=CAU",
         "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1541,7 +1541,7 @@
         "lastName": "Ogunbiyi",
         "email": "segun.ogunbiyi@example.com",
         "password": "hashed_password_segun",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCpykmau4mfM3E0pW3kbBBrRalbUYZKPE3B4DeSC972qOHEltlSVwtfOvepTNKZfwleo&usqp=CAU",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1570,7 +1570,7 @@
         "lastName": "Opara",
         "email": "aisha.opara@example.com",
         "password": "hashed_password_aisha",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://www.shutterstock.com/image-photo/beautiful-african-american-woman-face-260nw-1951091134.jpg",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1599,7 +1599,7 @@
         "lastName": "Akinyemi",
         "email": "ogechi.akinyemi@example.com",
         "password": "hashed_password_ogechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCpykmau4mfM3E0pW3kbBBrRalbUYZKPE3B4DeSC972qOHEltlSVwtfOvepTNKZfwleo&usqp=CAU",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1628,7 +1628,7 @@
         "lastName": "Okonkwo",
         "email": "funmi.okonkwo@example.com",
         "password": "hashed_password_funmi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-NV9q05F16g50huet5CWXj-AtbmH30NTR4A&s",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1657,7 +1657,7 @@
         "lastName": "Akinyemi",
         "email": "ibrahim.akinyemi@example.com",
         "password": "hashed_password_ibrahim",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCpykmau4mfM3E0pW3kbBBrRalbUYZKPE3B4DeSC972qOHEltlSVwtfOvepTNKZfwleo&usqp=CAU",
         "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1686,7 +1686,7 @@
         "lastName": "Ogundipe",
         "email": "chinwe.ogundipe@example.com",
         "password": "hashed_password_chinwe",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1715,7 +1715,7 @@
         "lastName": "Fashola",
         "email": "funmi.fashola@example.com",
         "password": "hashed_password_funmi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpakNyQG2zQkGe-HMtf6SusD9iQUN_QL4W4w&s",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1744,7 +1744,7 @@
         "lastName": "Adebayo",
         "email": "ngozi.adebayo@example.com",
         "password": "hashed_password_ngozi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://thumbs.dreamstime.com/b/beauty-woman-9116326.jpg",
         "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1773,7 +1773,7 @@
         "lastName": "Udo",
         "email": "tunde.udo@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1802,7 +1802,7 @@
         "lastName": "Fashola",
         "email": "ngozi.fashola@example.com",
         "password": "hashed_password_ngozi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzKhVTFQ-6wF8970MYLAcQGeLJaUzdqRdL5Xgj6jmz01554DMfGovxoopTMZw60sHgAlU&usqp=CAU",
         "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1831,7 +1831,7 @@
         "lastName": "Oyeleke",
         "email": "adewale.oyeleke@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1860,7 +1860,7 @@
         "lastName": "Opara",
         "email": "chinwe.opara@example.com",
         "password": "hashed_password_chinwe",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1889,7 +1889,7 @@
         "lastName": "Chukwu",
         "email": "aisha.chukwu@example.com",
         "password": "hashed_password_aisha",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ8g4L1r0oBNzwZxCKDHdL-BAn42Xyn7BZEA&s",
         "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1918,7 +1918,7 @@
         "lastName": "Akinyemi",
         "email": "taiwo.akinyemi@example.com",
         "password": "hashed_password_taiwo",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1947,7 +1947,7 @@
         "lastName": "Akinyemi",
         "email": "oluwatobi.akinyemi@example.com",
         "password": "hashed_password_oluwatobi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -1976,7 +1976,7 @@
         "lastName": "Adamu",
         "email": "emeka.adamu@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2005,7 +2005,7 @@
         "lastName": "Chukwu",
         "email": "adewale.chukwu@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2034,7 +2034,7 @@
         "lastName": "Osho",
         "email": "tunde.osho@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2063,7 +2063,7 @@
         "lastName": "Ekanem",
         "email": "adewale.ekanem@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2092,7 +2092,7 @@
         "lastName": "Ogunbiyi",
         "email": "emeka.ogunbiyi@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2121,7 +2121,7 @@
         "lastName": "Adeyemi",
         "email": "kelechi.adeyemi@example.com",
         "password": "hashed_password_kelechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2150,7 +2150,7 @@
         "lastName": "Ekanem",
         "email": "ogechi.ekanem@example.com",
         "password": "hashed_password_ogechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2179,7 +2179,7 @@
         "lastName": "Fashola",
         "email": "emeka.fashola@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2208,7 +2208,7 @@
         "lastName": "Fashola",
         "email": "ogechi.fashola@example.com",
         "password": "hashed_password_ogechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2237,7 +2237,7 @@
         "lastName": "Nwachukwu",
         "email": "aisha.nwachukwu@example.com",
         "password": "hashed_password_aisha",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv2Y-VwGqi6yafp9EKdx_zn45wD2iN2CVmWWq85gPfiPvidJjU6M5SlpoynTvxZI1gkQ4&usqp=CAU",
         "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2266,7 +2266,7 @@
         "lastName": "Balogun",
         "email": "obinna.balogun@example.com",
         "password": "hashed_password_obinna",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuu2iFgZRUz6itb-OulWeFsCsN-yWj-YA_9Tf0k28svRd-P-OcjZaK7GAF56JFBKwTjq8&usqp=CAU",
         "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2295,7 +2295,7 @@
         "lastName": "Eze",
         "email": "emeka.eze@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced web development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2324,7 +2324,7 @@
         "lastName": "Fashola",
         "email": "fatima.fashola@example.com",
         "password": "hashed_password_fatima",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://cdn.shopifycdn.net/s/files/1/0078/1451/2758/files/medium-length-black-curly-weave.jpg?v=1608690227",
         "bio": "Experienced content writing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2353,7 +2353,7 @@
         "lastName": "Yakubu",
         "email": "taiwo.yakubu@example.com",
         "password": "hashed_password_taiwo",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2382,7 +2382,7 @@
         "lastName": "Olowo",
         "email": "ngozi.olowo@example.com",
         "password": "hashed_password_ngozi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejIRPwOgY00yLCQJcRwBGCC72O_E5SBdESKWRFb1Mwy1WlBp6arbUDNB3UDGoVIb59u0&usqp=CAU=",
         "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2411,7 +2411,7 @@
         "lastName": "Oyeleke",
         "email": "bola.oyeleke@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2440,7 +2440,7 @@
         "lastName": "Nwachukwu",
         "email": "segun.nwachukwu@example.com",
         "password": "hashed_password_segun",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2469,7 +2469,7 @@
         "lastName": "Ogunbiyi",
         "email": "kelechi.ogunbiyi@example.com",
         "password": "hashed_password_kelechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2498,7 +2498,7 @@
         "lastName": "Ibrahim",
         "email": "chidi.ibrahim@example.com",
         "password": "hashed_password_chidi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2527,7 +2527,7 @@
         "lastName": "Nwachukwu",
         "email": "chidi.nwachukwu@example.com",
         "password": "hashed_password_chidi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced marketing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2556,7 +2556,7 @@
         "lastName": "Adamu",
         "email": "fatima.adamu@example.com",
         "password": "hashed_password_fatima",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced photography specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2585,7 +2585,7 @@
         "lastName": "Akinyemi",
         "email": "ogechi.akinyemi@example.com",
         "password": "hashed_password_ogechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2614,7 +2614,7 @@
         "lastName": "Ogunbiyi",
         "email": "fatima.ogunbiyi@example.com",
         "password": "hashed_password_fatima",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://i.pinimg.com/736x/c7/b9/23/c7b92365f180777ff71f303d510a7008.jpg",
         "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2643,7 +2643,7 @@
         "lastName": "Eze",
         "email": "ngozi.eze@example.com",
         "password": "hashed_password_ngozi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://i.pinimg.com/564x/fa/f9/60/faf96060abe9a57df1d81052ca56c734.jpg",
         "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2672,7 +2672,7 @@
         "lastName": "Ekanem",
         "email": "adewale.ekanem@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced data analysis specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2701,7 +2701,7 @@
         "lastName": "Balogun",
         "email": "bola.balogun@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced graphic design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2730,7 +2730,7 @@
         "lastName": "Ogunbiyi",
         "email": "funmi.ogunbiyi@example.com",
         "password": "hashed_password_funmi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_F89IKjcRwql8daqEwho-ehcYmR5K76n1nA&s",
         "bio": "Experienced video editing specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2759,7 +2759,7 @@
         "lastName": "Adeyemi",
         "email": "chidi.adeyemi@example.com",
         "password": "hashed_password_chidi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5GV9KP7tnl4kF8QuV_icG3rCngBQcanGVd2kYNC1O7zWFgj2-DbAahK3N2MmrFB6Sxqk&usqp=CAU",
         "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2788,7 +2788,7 @@
         "lastName": "Opara",
         "email": "chinwe.opara@example.com",
         "password": "hashed_password_chinwe",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2817,7 +2817,7 @@
         "lastName": "Olowo",
         "email": "adewale.olowo@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced software development specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2846,7 +2846,7 @@
         "lastName": "Eze",
         "email": "obinna.eze@example.com",
         "password": "hashed_password_obinna",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced cybersecurity specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2875,7 +2875,7 @@
         "lastName": "Fashola",
         "email": "emeka.fashola@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Experienced ui/ux design specialist with a passion for delivering high-quality services.",
         "isTalent": true,
         "skills": [
@@ -2904,7 +2904,7 @@
         "lastName": "Opara",
         "email": "adewale.opara@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional plumber offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -2933,7 +2933,7 @@
         "lastName": "Okonkwo",
         "email": "bola.okonkwo@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional moving services offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -2962,7 +2962,7 @@
         "lastName": "Adeyemi",
         "email": "obinna.adeyemi@example.com",
         "password": "hashed_password_obinna",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional pc builder offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -2991,8 +2991,7 @@
         "lastName": "Okonkwo",
         "email": "fatima.okonkwo@example.com",
         "password": "hashed_password_fatima",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-        "bio": "Professional painter offering top-tier services.",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdfDCjUsLNZMST437JvLCzzJNgLybQi8z-rFifUfnuesp2JSbPKI1Ck4a5xrXbc5ekxo&usqp=CAUices.",
         "isTalent": true,
         "skills": [
             "Spray Painting",
@@ -3020,7 +3019,7 @@
         "lastName": "Adebayo",
         "email": "ibrahim.adebayo@example.com",
         "password": "hashed_password_ibrahim",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional massage therapist offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3049,7 +3048,7 @@
         "lastName": "Fashola",
         "email": "chinwe.fashola@example.com",
         "password": "hashed_password_chinwe",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZhuCBZn8HnJSfEnVpOwH9Dc7ipkYrE5pC0XHrDf6rK9COhELjFNYt2OIWnK2dFq0JGy4&usqp=CAU",
         "bio": "Professional plumber offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3078,7 +3077,7 @@
         "lastName": "Eze",
         "email": "tunde.eze@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional salon offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3107,7 +3106,7 @@
         "lastName": "Nwachukwu",
         "email": "chinwe.nwachukwu@example.com",
         "password": "hashed_password_chinwe",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional moving services offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3136,7 +3135,7 @@
         "lastName": "Fashola",
         "email": "ngozi.fashola@example.com",
         "password": "hashed_password_ngozi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_QGdvQxvwsqHpJRflb_bEuuF0TB81Q0s1aJFLCn9qdSnmGt7r2YCaYreZgzNF__2fSIE&usqp=CAU",
         "bio": "Professional personal trainer offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3165,7 +3164,7 @@
         "lastName": "Nwachukwu",
         "email": "chinwe.nwachukwu@example.com",
         "password": "hashed_password_chinwe",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional tutor offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3194,7 +3193,7 @@
         "lastName": "Ibrahim",
         "email": "adewale.ibrahim@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional chef offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3223,7 +3222,7 @@
         "lastName": "Yakubu",
         "email": "ibrahim.yakubu@example.com",
         "password": "hashed_password_ibrahim",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional painter offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3252,7 +3251,7 @@
         "lastName": "Adeyemi",
         "email": "bola.adeyemi@example.com",
         "password": "hashed_password_bola",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional moving services offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3281,7 +3280,7 @@
         "lastName": "Ogunbiyi",
         "email": "obinna.ogunbiyi@example.com",
         "password": "hashed_password_obinna",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional pc builder offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3310,7 +3309,7 @@
         "lastName": "Opara",
         "email": "ibrahim.opara@example.com",
         "password": "hashed_password_ibrahim",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional painter offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3339,7 +3338,7 @@
         "lastName": "Nwachukwu",
         "email": "adewale.nwachukwu@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional cleaner offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3368,7 +3367,7 @@
         "lastName": "Osho",
         "email": "tunde.osho@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional pc builder offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3397,7 +3396,7 @@
         "lastName": "Chukwu",
         "email": "uche.chukwu@example.com",
         "password": "hashed_password_uche",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional handyman offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3426,7 +3425,7 @@
         "lastName": "Adebayo",
         "email": "fatima.adebayo@example.com",
         "password": "hashed_password_fatima",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbv7yQhG97MI7e_7l8IW1GLdoPns11jJg6H2n9VxiilASSZjzhkVlhDccizDxYEeWStRk&usqp=CAU",
         "bio": "Professional carpenter offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3455,7 +3454,7 @@
         "lastName": "Ekanem",
         "email": "aisha.ekanem@example.com",
         "password": "hashed_password_aisha",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://i5.walmartimages.com/seo/Sensationnel-Bare-Luxe-Lace-Glueless-Lace-Wig-Y-Part-Genn-Color-LIGHT-ASH-BROWN_2f14de79-d1cc-42a3-badd-d595b26f3b5e.21a8b3f735d8c78c5f7f40b8f8ab6b7d.jpeg",
         "bio": "Professional chef offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3484,7 +3483,7 @@
         "lastName": "Yakubu",
         "email": "segun.yakubu@example.com",
         "password": "hashed_password_segun",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional painter offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3513,7 +3512,7 @@
         "lastName": "Oyeleke",
         "email": "ngozi.oyeleke@example.com",
         "password": "hashed_password_ngozi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7c7WXubjENWKWJ3yZZ-Vdj366dzCSWCdUIQ&s",
         "bio": "Professional web developer offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3542,7 +3541,7 @@
         "lastName": "Ogundipe",
         "email": "adewale.ogundipe@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional landscaper offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3571,7 +3570,7 @@
         "lastName": "Olowo",
         "email": "obinna.olowo@example.com",
         "password": "hashed_password_obinna",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional plumber offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3600,7 +3599,7 @@
         "lastName": "Opara",
         "email": "aisha.opara@example.com",
         "password": "hashed_password_aisha",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpNc0J97q89npsjKBplDf7-FYl1GEkBzntYtv3jNlOXKYiOfvSXAVH26DQkk1sazo2Rqk&usqp=CAU",
         "bio": "Professional web developer offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3629,7 +3628,7 @@
         "lastName": "Ibrahim",
         "email": "adewale.ibrahim@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional photographer offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3658,7 +3657,7 @@
         "lastName": "Fashola",
         "email": "oluwatobi.fashola@example.com",
         "password": "hashed_password_oluwatobi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional moving services offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3687,7 +3686,7 @@
         "lastName": "Fashola",
         "email": "chinwe.fashola@example.com",
         "password": "hashed_password_chinwe",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional painter offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3716,7 +3715,7 @@
         "lastName": "Ogunbiyi",
         "email": "oluwatobi.ogunbiyi@example.com",
         "password": "hashed_password_oluwatobi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional plumber offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3745,7 +3744,7 @@
         "lastName": "Okonkwo",
         "email": "tunde.okonkwo@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional carpenter offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3774,7 +3773,7 @@
         "lastName": "Ogundipe",
         "email": "folake.ogundipe@example.com",
         "password": "hashed_password_folake",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSr3-MgDCPAr1K38BqxnuQvl9IVxdzFJsrsvORcltEI2yG7sw4hTd6abYQcDrhz52jPXc&usqp=CAU",
         "bio": "Professional personal trainer offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3803,7 +3802,7 @@
         "lastName": "Eze",
         "email": "taiwo.eze@example.com",
         "password": "hashed_password_taiwo",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional web developer offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3832,7 +3831,7 @@
         "lastName": "Balogun",
         "email": "emeka.balogun@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional personal trainer offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3861,7 +3860,7 @@
         "lastName": "Olowo",
         "email": "tunde.olowo@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional mechanic offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3890,7 +3889,7 @@
         "lastName": "Eze",
         "email": "emeka.eze@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional photographer offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3919,7 +3918,7 @@
         "lastName": "Balogun",
         "email": "kelechi.balogun@example.com",
         "password": "hashed_password_kelechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional mechanic offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3948,7 +3947,7 @@
         "lastName": "Oyeleke",
         "email": "uche.oyeleke@example.com",
         "password": "hashed_password_uche",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional painter offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -3977,7 +3976,7 @@
         "lastName": "Ogunbiyi",
         "email": "taiwo.ogunbiyi@example.com",
         "password": "hashed_password_taiwo",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional cleaner offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4006,7 +4005,7 @@
         "lastName": "Adeyemi",
         "email": "tunde.adeyemi@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional salon offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4035,7 +4034,7 @@
         "lastName": "Opara",
         "email": "aisha.opara@example.com",
         "password": "hashed_password_aisha",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://st.depositphotos.com/1008939/2127/i/450/depositphotos_21274701-stock-photo-profile.jpg",
         "bio": "Professional massage therapist offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4064,7 +4063,7 @@
         "lastName": "Fashola",
         "email": "adewale.fashola@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional electrician offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4093,7 +4092,7 @@
         "lastName": "Fashola",
         "email": "tunde.fashola@example.com",
         "password": "hashed_password_tunde",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional plumber offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4122,7 +4121,7 @@
         "lastName": "Ogunbiyi",
         "email": "funmi.ogunbiyi@example.com",
         "password": "hashed_password_funmi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGr2p7WdG7cZILH9Xfzzs8oc_5QdSlw8aUew&s",
         "bio": "Professional salon offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4151,7 +4150,7 @@
         "lastName": "Ibrahim",
         "email": "ogechi.ibrahim@example.com",
         "password": "hashed_password_ogechi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional handyman offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4180,7 +4179,7 @@
         "lastName": "Chukwu",
         "email": "uche.chukwu@example.com",
         "password": "hashed_password_uche",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional web developer offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4209,7 +4208,7 @@
         "lastName": "Adamu",
         "email": "adewale.adamu@example.com",
         "password": "hashed_password_adewale",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional pc builder offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4238,7 +4237,7 @@
         "lastName": "Chukwu",
         "email": "emeka.chukwu@example.com",
         "password": "hashed_password_emeka",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional moving services offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4267,7 +4266,7 @@
         "lastName": "Akinyemi",
         "email": "oluwatobi.akinyemi@example.com",
         "password": "hashed_password_oluwatobi",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional moving services offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4296,7 +4295,7 @@
         "lastName": "Okonkwo",
         "email": "uche.okonkwo@example.com",
         "password": "hashed_password_uche",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional cleaner offering top-tier services.",
         "isTalent": true,
         "skills": [
@@ -4325,7 +4324,7 @@
         "lastName": "Udo",
         "email": "taiwo.udo@example.com",
         "password": "hashed_password_taiwo",
-        "profilePicture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        "profilePicture": "https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=",
         "bio": "Professional plumber offering top-tier services.",
         "isTalent": true,
         "skills": [

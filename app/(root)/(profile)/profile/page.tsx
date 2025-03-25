@@ -39,7 +39,7 @@ const page = () => {
       </Link>
       
       <div className='bg-softblue flex-1 p-5 flex justify-center items-center'>
-         <Avatar className='w-56 h-56'>
+         <Avatar className='w-56 h-56 object-cover'>
             <AvatarImage src ={userReduxData?.profilePicture}/>
             <AvatarFallback>{`${userReduxData?.lastName.slice(0,1)}${userReduxData?.firstName.slice(0,1)}`}</AvatarFallback>
           </Avatar>
