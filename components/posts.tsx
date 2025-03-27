@@ -6,6 +6,7 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import {motion} from 'framer-motion'
 import { useDispatch ,useSelector} from 'react-redux';
 import { serviceTrue } from '@/state/showServiceSlice/showServiceSlice';
+import { setService } from '@/state/viewedService/viewedService';
 
 
 export interface Post {
@@ -38,6 +39,7 @@ const Posts = () => {
 
     const dispatch = useDispatch()
     const showReduxModal = useSelector((state)=> state.showService.showService)
+    const serviceRedux = useSelector((state)=> state.service.service)
 
     const observer = useRef<IntersectionObserver|null>(null)
     const triggerRef = useRef(null)
@@ -95,7 +97,9 @@ const Posts = () => {
         console.log('showReduxModal updated:', showReduxModal);
       }, [showReduxModal]);
 
-    const showModal = ()=>{
+    const showModal = (item)=>{
+        dispatch(setService(item))
+        console.log("ServiceRedux",serviceRedux)
         dispatch(serviceTrue())
     }
 
@@ -140,7 +144,7 @@ const Posts = () => {
                     return(
                         <div key={index} className='flex gap-3 flex-col'>
                             <div className="relative w-80 h-64">
-                                <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg" fill onClick={()=>{showModal()}}/>
+                                <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg" fill onClick={()=>{showModal(item)}}/>
                                 
                                 <motion.div  initial={{height:"100%", opacity:1}} animate={{height:0,opacity:0.5}} transition={{ duration: 0.5 }} className="div top-0 left-0 absolute w-full h-0 bg-gray-400">
 
