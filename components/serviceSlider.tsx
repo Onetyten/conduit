@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
 import { IoCloseSharp } from "react-icons/io5";
@@ -12,6 +12,11 @@ const ServiceSlider = () => {
     const showReduxModal = useSelector((state)=> state.showService.showService)
     const serviceRedux = useSelector((state)=> state.service.service)
     console.log(showReduxModal)
+
+  
+
+
+
   return (
     <div>
         {showReduxModal&&(
@@ -37,9 +42,10 @@ const ServiceSlider = () => {
                                 <div className='bg-lime-500 absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10'>
                                 </div>
                             </div>
-                            <div className='flex text-sm font-semibold'>
+                            <div className='flex  flex-col text-sm font-semibold'>
                                 <p>{serviceRedux?.title}</p >
-                                <p></p >
+                                <p>{serviceRedux?.profileId}</p >
+                                
                                 
 
                             </div>

@@ -44,6 +44,42 @@ const Posts = () => {
     const observer = useRef<IntersectionObserver|null>(null)
     const triggerRef = useRef(null)
 
+
+      const getProfile = useCallback(
+        async()=>{
+            if (!serviceRedux?.profileId) {
+                console.warn("serviceRedux._id is undefined or null, cannot make the API call.");
+                return;
+              }
+              try {
+                const response  = await fetch(`/api/getserviceprofile`,{
+                    method:'POST',
+                    headers:{
+                      'Content-Type':'application/json'
+                    },
+                    body:JSON.stringify({user_id:serviceRedux?.profileId})
+                  })
+    
+                if (!response.ok){
+                    throw new Error("invalid response")
+                }
+    
+                const serviceUserData  = await response.json()
+                console.log(serviceUserData)
+    
+    
+    
+              } catch (error) {
+                console.error(error)
+              }
+        },[serviceRedux.profileId]
+      )
+
+
+      useEffect(()=>{
+        getProfile()
+      },[serviceRedux?.profileId])
+
     const fetchPost = useCallback(async (limit:number,Currentpage:number)=>{
         setLoading(true)
         try {
