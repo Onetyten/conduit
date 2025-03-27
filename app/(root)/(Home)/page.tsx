@@ -2,12 +2,13 @@ import SectionCarousel from "@/components/sectionCarousel";
 import IntroSection from "@/components/introSection";
 import SearchForm from "@/components/searchForm"
 import Posts from "@/components/posts";
+import ServiceSlider from "@/components/serviceSlider";
 
 export default function Home({searchParams}:{searchParams:{query:string}}) {
   const query  = searchParams?.query
-  
+
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col relative">
       <IntroSection />
       <SearchForm query = {query} />
       <SectionCarousel />
@@ -17,6 +18,8 @@ export default function Home({searchParams}:{searchParams:{query:string}}) {
          </p>
          <Posts/>
       </div>
+      <ServiceSlider/>
+      
       
     </div>
   );

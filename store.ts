@@ -1,5 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit'
 import userReducer from '@/state/userInfo/userSlice'
+import showServiceReducer from '@/state/showServiceSlice/showServiceSlice'
 import storage from 'redux-persist/lib/storage'
 import {persistReducer,persistStore} from 'redux-persist'
 import { combineReducers } from '@reduxjs/toolkit'
@@ -7,11 +8,13 @@ import { combineReducers } from '@reduxjs/toolkit'
 const persistConfig = {
     key:'root',
     version:1,
-    storage
+    storage,
+    blacklist: ['showService']
 }
 
 const reducer = combineReducers({
-    user:userReducer
+    user:userReducer,
+    showService:showServiceReducer
 })
 
 const persistedReducer = persistReducer(persistConfig,reducer)

@@ -81,7 +81,7 @@ const page = () => {
                 <p className='font-semibold text-base'>{`${userReduxData?.companyName}`}</p>
                 <p className=''>{`${userReduxData?.companyDescription}`}</p>
                 <p className=''>{`Hourly rate : ${userReduxData?.hourlyRate} USD`}</p>
-                <Link href={userReduxData.portfolio} className='text-blue-600'>
+                <Link href={userReduxData?.portfolio} className='text-blue-600'>
                   {userReduxData.portfolio}
                 </Link>
               </div>
