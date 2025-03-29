@@ -33,13 +33,13 @@ const page = () => {
         </div>
   )
   return (
-    <div className='w-full min-h-screen flex relative'>
+    <div className='w-full min-h-screen flex flex-col sm:flex-row  relative'>
       <Link href={'/'} className='absolute top-3 left-3 text-2xl bg-blue-100 hover:bg-blue-200 p-2 text-conduit rounded-full'>
         <MdArrowBack className=''/>
       </Link>
       
-      <div className='bg-softblue flex-1 p-5 flex justify-center items-center'>
-         <Avatar className='w-56 h-56 object-cover'>
+      <div className='bg-softblue sm:pt-0 pt-16 flex-1 p-5 flex justify-center items-center'>
+         <Avatar className='sm:w-56 sm:h-56 w-32 h-32 object-cover'>
             <AvatarImage src ={userReduxData?.profilePicture}/>
             <AvatarFallback>{`${userReduxData?.lastName.slice(0,1)}${userReduxData?.firstName.slice(0,1)}`}</AvatarFallback>
           </Avatar>
@@ -47,7 +47,7 @@ const page = () => {
       <div className='flex-1 flex flex-col p-5 justify-center items-center gap-5'>
         <div className='flex flex-col p-10 gap-5 text-xs '>
           <p className='text-3xl font-semibold'>{`${userReduxData?.lastName} ${userReduxData?.firstName}`}</p>
-          <div className='text-sm flex gap-3'>
+          <div className='sm:text-sm text-xs flex gap-3'>
             <p className='p-1.5 px-4 hover:bg-blue-100 bg-softblue rounded-md'>
               {userReduxData?.isTalent?'Talent':'Client'}
             </p>
@@ -59,7 +59,7 @@ const page = () => {
             
           </div>
           {userReduxData?.skills && userReduxData?.skills.length > 0 && (
-            <div className='text-sm gap-2 flex flex-col'>
+            <div className='sm:text-sm text-xs gap-2 flex flex-col'>
               <p className='font-semibold'>Skills </p>
               <div className='flex flex-wrap gap-3'> 
                 {userReduxData?.skills.map((item, index) => (
@@ -72,12 +72,12 @@ const page = () => {
 
 
 
-          <p className='text-sm py-3'>{`${userReduxData?.bio}`}</p>
+          <p className='text-sm py-3'>{`${userReduxData?.bio?userReduxData?.bio:'No bio'}`}</p>
 
           {userReduxData.companyName&&(
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-3 '>
               <p className='font-semibold text-sm'>Company Details</p>
-              <div className='flex flex-col p-2 gap-3 w-full border-softblue ml-3 border-2 text-sm rounded-lg'>
+              <div className='flex flex-col p-2 gap-3 w-full border-softblue sm:ml-3 border-2 sm:text-sm text-xs rounded-lg'>
                 <p className='font-semibold text-base'>{`${userReduxData?.companyName}`}</p>
                 <p className=''>{`${userReduxData?.companyDescription}`}</p>
                 <p className=''>{`Hourly rate : ${userReduxData?.hourlyRate} USD`}</p>

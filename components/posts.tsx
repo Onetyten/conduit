@@ -7,6 +7,7 @@ import {motion} from 'framer-motion'
 import { useDispatch ,useSelector} from 'react-redux';
 import { serviceTrue } from '@/state/showServiceSlice/showServiceSlice';
 import { setService } from '@/state/viewedService/viewedService';
+import { clearServiceProfile, setServiceProfile } from '@/state/serviceProfile/serviceProfile';
 
 
 export interface Post {
@@ -51,6 +52,7 @@ const Posts = () => {
                 console.warn("serviceRedux._id is undefined or null, cannot make the API call.");
                 return;
               }
+              dispatch(clearServiceProfile())
               try {
                 const response  = await fetch(`/api/getserviceprofile`,{
                     method:'POST',
@@ -65,7 +67,7 @@ const Posts = () => {
                 }
     
                 const serviceUserData  = await response.json()
-                console.log(serviceUserData)
+                dispatch(setServiceProfile(serviceUserData.user))
     
     
     
@@ -129,9 +131,6 @@ const Posts = () => {
         
     },[])
 
-    useEffect(() => {
-        console.log('showReduxModal updated:', showReduxModal);
-      }, [showReduxModal]);
 
     const showModal = (item)=>{
         dispatch(setService(item))

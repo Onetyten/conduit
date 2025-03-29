@@ -9,6 +9,7 @@ export default function Home({searchParams}:{searchParams:{query:string}}) {
 
   return (
     <div className="flex flex-col relative">
+      
       <IntroSection />
       <SearchForm query = {query} />
       <SectionCarousel />
