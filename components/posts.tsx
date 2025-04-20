@@ -6,7 +6,7 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import {motion} from 'framer-motion'
 import { useDispatch ,useSelector} from 'react-redux';
 import { serviceTrue } from '@/state/showServiceSlice/showServiceSlice';
-import { setService } from '@/state/viewedService/viewedService';
+import { setService ,addViewService} from '@/state/viewedService/viewedService';
 import { clearServiceProfile, setServiceProfile } from '@/state/serviceProfile/serviceProfile';
 
 
@@ -39,8 +39,9 @@ const Posts = () => {
     const limit = 20 
 
     const dispatch = useDispatch()
-    const showReduxModal = useSelector((state)=> state.showService.showService)
+    // const showReduxModal = useSelector((state)=> state.showService.showService)
     const serviceRedux = useSelector((state)=> state.service.service)
+    const profileDataRedux = useSelector((state)=> state.user.user)
 
     const observer = useRef<IntersectionObserver|null>(null)
     const triggerRef = useRef(null)
@@ -74,13 +75,17 @@ const Posts = () => {
               } catch (error) {
                 console.error(error)
               }
-        },[serviceRedux.profileId]
+        },[serviceRedux.profileId,dispatch]
       )
+
 
 
       useEffect(()=>{
         getProfile()
       },[serviceRedux?.profileId])
+
+
+
 
     const fetchPost = useCallback(async (limit:number,Currentpage:number)=>{
         setLoading(true)
@@ -132,10 +137,57 @@ const Posts = () => {
     },[])
 
 
-    const showModal = (item)=>{
+    const showModal = async (item,index)=>{
         dispatch(setService(item))
         console.log("ServiceRedux",serviceRedux)
         dispatch(serviceTrue())
+
+
+
+
+        if (item._id && typeof item._id === 'string' && item._id.length>0){
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/update_views`,{
+                method:"PATCH",
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body:JSON.stringify({id:item._id,user_id:profileDataRedux._id})
+            })
+
+
+
+
+            if (!response.ok){
+                const errorBody  = await response.json() 
+                console.log(errorBody)
+            }
+
+            else
+            {
+                const updatedview = await response.json()
+                console.log(updatedview)
+                console.log(profileDataRedux)
+
+                setPost((prevPosts)=>{
+                    const updatedPost  = [...prevPosts]
+                    const currentPost = updatedPost[index]
+
+                    updatedPost[index] = {...currentPost, views : (currentPost.views||0)+1}
+
+                    return updatedPost
+
+
+                })
+
+                dispatch(addViewService())
+            }
+            
+
+        }
+        else{
+            console.log("no itemid",item)
+        }
+
     }
 
 
@@ -179,7 +231,7 @@ const Posts = () => {
                     return(
                         <div key={index} className='flex gap-3 flex-col'>
                             <div className="relative w-80 h-64">
-                                <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg" fill onClick={()=>{showModal(item)}}/>
+                                <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg" fill onClick={()=>{showModal(item,index)}}/>
                                 
                                 <motion.div  initial={{height:"100%", opacity:1}} animate={{height:0,opacity:0.5}} transition={{ duration: 0.5 }} className="div top-0 left-0 absolute w-full h-0 bg-gray-400">
 
@@ -197,12 +249,12 @@ const Posts = () => {
                                 <div className='flex gap-3 text-sm items-center'>
                                     <div className='flex gap-1 items-center'>
                                         < MdOutlineRemoveRedEye/>
-                                        <p className='text-xs'>{item.likes}</p>
+                                        <p className='text-xs'>{item.views}</p>
                                     </div>
 
                                     <div className='flex gap-1 items-center'>
                                         <CiHeart/>
-                                        <p className='text-xs'>{item.views}</p>
+                                        <p className='text-xs'>{item.likes}</p>
                                     </div>
 
                                 </div>

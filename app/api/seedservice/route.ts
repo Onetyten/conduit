@@ -9,7 +9,6 @@ export async function GET() {
     await mongoConnect();
     await Service.deleteMany();
     const services = JSON.parse(fs.readFileSync('jsons/service.json', 'utf-8'));
-
     const profiles = await Profile.find();
 
     if (profiles.length === 0) {
@@ -22,11 +21,14 @@ export async function GET() {
         const serviceData = {
           ...services[i],
           profileId: profiles[i]._id,
+          viewedId:[],
+          likedId:[],
           _id: undefined,
         };
         const newService = await Service.create(serviceData);
         createdServices.push(newService);
         console.log(`Created service ${i}:`, newService);
+        console.log('Service data:', serviceData); 
 
 
       } else {

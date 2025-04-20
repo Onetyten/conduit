@@ -16,9 +16,15 @@ const serviceSlice = createSlice({
         },
         clearService :(state)=>{
             state.service = null
-        }   
+        } ,
+        addViewService:(state)=>{
+            if (state.service && typeof state.service.views == 'number'){
+                state.service.views += 1;
+            }
+        }
+         
     }
 })
 
-export const {setService,clearService} = serviceSlice.actions
+export const {setService,clearService,addViewService} = serviceSlice.actions
 export default serviceSlice.reducer
