@@ -14,6 +14,7 @@ const ServiceSlider = () => {
     const showReduxModal = useSelector((state)=> state.showService.showService)
     const serviceRedux = useSelector((state)=> state.service.service)
     const serviceProfileRedux = useSelector((state)=> state.serviceProfile.serviceProfile)
+    
   
 
 

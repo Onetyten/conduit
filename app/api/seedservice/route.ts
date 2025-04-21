@@ -28,7 +28,6 @@ export async function GET() {
         const newService = await Service.create(serviceData);
         createdServices.push(newService);
         console.log(`Created service ${i}:`, newService);
-        console.log('Service data:', serviceData); 
 
 
       } else {
