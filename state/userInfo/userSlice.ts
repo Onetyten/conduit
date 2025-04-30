@@ -1,9 +1,39 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
+interface Location {
+    city: string;
+    state: string;
+    country: string;
+  }
+  
+  interface userInterface {
+    location: Location;
+    _id: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    profilePicture: string;
+    bio: string;
+    isTalent: boolean;
+    skills: string[];
+    serviceCategories: string[];
+    hourlyRate: number;
+    portfolio?: string; // Optional property
+    companyName?: string; // Optional property
+    companyDescription?: string; // Optional property
+    createdAt: string;
+    updatedAt: string;
+    totalSpent: number;
+    __v: number;
+  }
+
+interface userState {
+    user:userInterface|null
+}
 
 
-const initialState ={
+const initialState:userState ={
     user:null
 }
 

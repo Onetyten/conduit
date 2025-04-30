@@ -1,21 +1,70 @@
 'use client'
 
 import React from 'react'
+import { RootState } from '@/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
 import { IoCloseSharp } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
-import { CiHeart } from "react-icons/ci";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { IoMdHeart } from "react-icons/io";
 import Image from 'next/image';
 import { Avatar,AvatarFallback,AvatarImage } from './ui/avatar';
+import { likeHeart,unlikeHeart } from '@/state/likedHeart/likedHeart';
+// import { profileInterface } from '@/lib/types'
+
+
+
+
 
 const ServiceSlider = () => {
     const dispatch  = useDispatch()
-    const showReduxModal = useSelector((state)=> state.showService.showService)
-    const serviceRedux = useSelector((state)=> state.service.service)
-    const serviceProfileRedux = useSelector((state)=> state.serviceProfile.serviceProfile)
+    const showReduxModal = useSelector((state:RootState)=> state.showService.showService)
+    const serviceRedux = useSelector((state:RootState)=> state.service.service)
+    const serviceProfileRedux = useSelector((state:RootState)=> state.serviceProfile.serviceProfile)
+    const profileDataRedux = useSelector((state:RootState)=> state.user.user)
+    const likedHeartRedux  = useSelector((state:RootState)=>state.heartState.heartState)
+
+
+
+async function LikePost() {
+    if (!serviceRedux || !profileDataRedux) {
+        console.error("Missing service or profile data")
+        return
+      }
+
+    const likeResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/updateLikes`,{
+        method:'PATCH',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify({id:serviceRedux._id,user_id:profileDataRedux._id})
+    })
+
+    if (!likeResponse.ok){
+        throw new Error("invalid response")
+    }
+    else{
+        if (likedHeartRedux == true){
+            dispatch(unlikeHeart())
+        }
+        else{
+            dispatch(likeHeart())
+        }
+       
+    }
+
+
+    const likeMessage = await likeResponse.json()
+
+    console.log(likeMessage)
     
-  
+    
+}
+
+
+
+
 
 
 
@@ -45,7 +94,7 @@ const ServiceSlider = () => {
                                     <AvatarFallback>PIC</AvatarFallback>
                                 </Avatar>
                             
-                                <div className={`${serviceRedux.avalability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
+                                <div className={`${serviceRedux?.avalability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
                                 </div>
                             </div>
                             <div className='flex  flex-col text-sm gap-2 font-semibold'>
@@ -77,8 +126,9 @@ const ServiceSlider = () => {
                         <div className='h-0.5 flex-1 bg-gray-400'>
                             
                         </div>
-                        <div className='border-gray-200 shadow-xl border-[1px] rounded-full p-2 mx-6'>
-                            <CiHeart className='text-pink-500 text-4xl'/>
+                        <div className='border-gray-200 shadow-xl border-[1px] rounded-full p-2 mx-6 ' onClick={()=>{LikePost()}}>
+                            {likedHeartRedux?( < IoMdHeart className='text-pink-500 text-4xl'/>):(<IoMdHeartEmpty  className='text-pink-500 text-4xl'/>)}
+                           
                         </div>
                         <div className='h-0.5 flex-1 bg-gray-400'>
                             
@@ -106,7 +156,7 @@ const ServiceSlider = () => {
                     </div>
 
                     <div className='flex items-center justify-center relative w-full '>
-                        {serviceProfileRedux?
+                        {serviceProfileRedux && serviceRedux?.galleryImages[0]?
                             <Image src={serviceRedux?.galleryImages[0]} width={1000} height={200} alt='profilepic' className=' aspect-video object-cover' />
                             :
                             <div className='w-[1000px] h-[400px] bg-gray-100'></div >}     
@@ -122,7 +172,7 @@ const ServiceSlider = () => {
                     <div className='flex flex-col items-center justify-center p-3 px-16 text-center'>
                         <p className='font-semibold'>Deliverables</p>
                         <div className='flex gap-2 my-4 text-xs'>
-                            {serviceRedux.deliverables.map((item, index) => (
+                            {serviceRedux?.deliverables.map((item, index) => (
                                 <span key={index} className='p-1.5 px-4 hover:bg-blue-100 bg-softblue rounded-md'>{item}</span>
                             ))}
                         </div>
@@ -131,7 +181,7 @@ const ServiceSlider = () => {
                     <div className='flex flex-col items-center justify-center p-3 px-16 text-center'>
                         <p className='font-semibold'>Available On</p>
                         <div className='flex justify-center flex-wrap gap-2 my-4 text-xs'>
-                            {serviceRedux.avalableOn.map((item, index) => (
+                            {serviceRedux?.avalableOn.map((item, index) => (
                                 <span key={index} className='p-1.5 px-4 hover:bg-blue-100 bg-softblue rounded-md'>{item}</span>
                             ))}
                         </div>
@@ -146,7 +196,7 @@ const ServiceSlider = () => {
                                     <AvatarFallback>PIC</AvatarFallback>
                                 </Avatar>
                             
-                                <div className={`${serviceRedux.avalability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
+                                <div className={`${serviceRedux?.avalability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
                                 </div>
                             </div>
                             {serviceProfileRedux?
@@ -154,7 +204,7 @@ const ServiceSlider = () => {
                             :
                             <div className='w-40 h-4 bg-gray-100 rounded-md'></div >}
                             <div className='flex gap-2 w-full justify-center text-xs'>
-                                {serviceRedux.tags.map((item,index)=>{
+                                {serviceRedux?.tags.map((item,index)=>{
                                     return(
                                         <span key={index}>
                                              {item} {index!=serviceRedux.tags.length-1?"|":""}
@@ -166,11 +216,11 @@ const ServiceSlider = () => {
 
 
                             <div className='flex gap-2 w-full my-3 font-semibold justify-center text-xs'>
-                                Hourly rate : {serviceRedux.price} USD
+                                Hourly rate : {serviceRedux?.price} USD
                             </div>
 
                             <div className='flex gap-2 w-full mb-3 font-semibold justify-center text-xs'>
-                                Delivery method : {serviceRedux.deliveryMethod[0]}
+                                Delivery method : {serviceRedux?.deliveryMethod[0]}
                             </div>
                             <div className='bg-conduit text-background p-2 h-9 flex items-center rounded-full text-xs'>
                                 Get in Touch
@@ -180,15 +230,15 @@ const ServiceSlider = () => {
 
                         <div className='text-xs my-6 flex w-full justify-center gap-6 '>
                           <span>
-                            {serviceRedux.amountEarned} USD   earned
+                            {serviceRedux?.amountEarned} USD   earned
                           </span>
 
                           <span>
-                            {serviceRedux.views} views
+                            {serviceRedux?.views} views
                           </span>
 
                           <span>
-                            {serviceRedux.likes} likes
+                            {serviceRedux?.likes} likes
                           </span>
                             
                         </div>
@@ -199,9 +249,9 @@ const ServiceSlider = () => {
                     <div className='flex flex-col items-center justify-center p-3 px-16 text-center'>
                         <p className='font-semibold'>Reviews</p>
                         <div className='flex gap-2 my-4 text-xs'>
-                            {serviceRedux.reviews.length>0?
+                            {serviceRedux && serviceRedux.reviews.length>0?
                             <div>
-                                {serviceRedux.reviews.map((item, index) => (
+                                {serviceRedux?.reviews.map((item, index) => (
                                     <span key={index} className='p-1.5 px-4 hover:bg-blue-100 bg-softblue rounded-md'>{item}</span>
                                 ))}
                             </div>:

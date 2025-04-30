@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { profileInterface } from "@/lib/types";
 
+interface profileState{
+    serviceProfile:profileInterface|null
+}
 
-
-
-const initialState ={
+const initialState:profileState ={
     serviceProfile:null
 }
 

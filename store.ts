@@ -3,22 +3,25 @@ import userReducer from '@/state/userInfo/userSlice'
 import showServiceReducer from '@/state/showServiceSlice/showServiceSlice'
 import servicePostReducer from '@/state/viewedService/viewedService'
 import serviceProfileReducer from '@/state/serviceProfile/serviceProfile'
+import likeHeartReducer from '@/state/likedHeart/likedHeart'
 import storage from 'redux-persist/lib/storage'
 import {persistReducer,persistStore} from 'redux-persist'
 import { combineReducers } from '@reduxjs/toolkit'
+
 
 const persistConfig = {
     key:'root',
     version:1,
     storage,
-    blacklist: ['showService']
+    blacklist: ['showService','heartState']
 }
 
 const reducer = combineReducers({
     user:userReducer,
     showService:showServiceReducer,
     service:servicePostReducer,
-    serviceProfile:serviceProfileReducer
+    serviceProfile:serviceProfileReducer,
+    heartState: likeHeartReducer,
 })
 
 const persistedReducer = persistReducer(persistConfig,reducer)

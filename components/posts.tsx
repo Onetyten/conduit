@@ -2,46 +2,28 @@
 import Image from 'next/image'
 import React, {useCallback, useEffect, useRef, useState } from 'react'
 import { CiHeart } from "react-icons/ci";
+import { RootState } from '@/store';
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import {motion} from 'framer-motion'
 import { useDispatch ,useSelector} from 'react-redux';
 import { serviceTrue } from '@/state/showServiceSlice/showServiceSlice';
+import { likeHeart,unlikeHeart } from '@/state/likedHeart/likedHeart';
 import { setService ,addViewService} from '@/state/viewedService/viewedService';
 import { clearServiceProfile, setServiceProfile } from '@/state/serviceProfile/serviceProfile';
+import { serviceInterface } from '@/lib/types';
 
 
-export interface Post {
-    _id: string;
-    title: string;
-    profileId: string;
-    galleryImages: string[];
-    description: string;
-    amountEarned: number;
-    price: number;
-    avalableOn: string[];
-    likes: number;
-    views: number;
-    reviews: string[]; 
-    avalability: boolean;
-    deliverables: string[];
-    tags: string[];
-    createdAt: string;
-    address: string;
-    deliveryMethod: string[];
-
-  }
 
 const Posts = () => {
-    const [post,setPost] = useState<Post[]>([])
+    const [post,setPost] = useState<serviceInterface[]>([])
     const [page,setPage] = useState(1)
     const [loading,setLoading] = useState(false)
     const [hasMore,setHasMore] = useState(true)
     const limit = 20 
 
     const dispatch = useDispatch()
-    // const showReduxModal = useSelector((state)=> state.showService.showService)
-    const serviceRedux = useSelector((state)=> state.service.service)
-    const profileDataRedux = useSelector((state)=> state.user.user)
+    const serviceRedux = useSelector((state:RootState)=> state.service.service)
+    const profileDataRedux = useSelector((state:RootState)=> state.user.user)
 
     const observer = useRef<IntersectionObserver|null>(null)
     const triggerRef = useRef(null)
@@ -49,9 +31,10 @@ const Posts = () => {
 
       const getProfile = useCallback(
         async()=>{
-            if (!serviceRedux?.profileId) {
-                console.warn("serviceRedux._id is undefined or null, cannot make the API call.");
-                return;
+            
+            if (!serviceRedux || !serviceRedux.profileId) {
+                console.warn("serviceRedux or profileId is missing, cannot make the API call.")
+                return
               }
               dispatch(clearServiceProfile())
               try {
@@ -75,14 +58,14 @@ const Posts = () => {
               } catch (error) {
                 console.error(error)
               }
-        },[serviceRedux.profileId,dispatch]
+        },[serviceRedux,dispatch]
       )
 
 
 
       useEffect(()=>{
         getProfile()
-      },[serviceRedux?.profileId])
+      },[getProfile])
 
 
 
@@ -134,12 +117,29 @@ const Posts = () => {
     useEffect(()=>{
         loadMorePost()
         
-    },[])
+    },[loadMorePost])
 
 
-    const showModal = async (item,index)=>{
+    const showModal = async (item:serviceInterface,index:number)=>{
+        if (!profileDataRedux) {
+            console.error("User profile is missing")
+            return
+          }
+
         dispatch(setService(item))
-        console.log("ServiceRedux",serviceRedux)
+        console.log("ProfileRedux",profileDataRedux)
+
+
+
+        if (serviceRedux && profileDataRedux) {
+            if (serviceRedux.likedId.includes(profileDataRedux._id)) {
+              dispatch(likeHeart())
+            } else {
+              dispatch(unlikeHeart())
+            }
+          }
+
+
         dispatch(serviceTrue())
 
 
@@ -227,7 +227,7 @@ const Posts = () => {
     <div className='flex justify-center w-full p-5'>
         <div className='text-xs py-6 flex gap-6 justify-center flex-wrap'>
             {post.length>0?(
-                post.map((item,index)=>{
+                post.map((item ,index)=>{
                     return(
                         <div key={index} className='flex gap-3 flex-col'>
                             <div className="relative w-80 h-64">
@@ -260,7 +260,6 @@ const Posts = () => {
                                 </div>
                             </div>
                             
-                             
                         </div>
                     )
                 })):

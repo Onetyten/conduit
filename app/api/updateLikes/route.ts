@@ -30,11 +30,13 @@ export async function PATCH(request:Request) {
                 const userIndex = post.likedId.indexOf(user_id)
                 post.likedId.splice(userIndex,1)
                 post.likes -= 1
+                post.save()
                 return NextResponse.json({message:`user has unliked this post` ,value:post.likedId},{status:200})
             }
             else{
                 post.likes+= 1
                 post.likedId.push(user_id)
+                post.save()
                 return NextResponse.json({message:`user has liked this post` ,value:post.likedId},{status:200})
 
             }

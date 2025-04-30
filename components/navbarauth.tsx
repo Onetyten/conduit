@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import Logo from '@/public/Images/Logo.png'
 
 import Image from 'next/image'
@@ -8,26 +8,11 @@ import { Avatar, AvatarFallback,AvatarImage} from './ui/avatar'
 import { useSelector,useDispatch} from 'react-redux'
 import { clearUser } from '@/state/userInfo/userSlice'
 import { RootState } from '@/store'
-import { RxHamburgerMenu } from "react-icons/rx";
-
-interface UserData {
-  user?: string;
-  firstName?: string;
-  lastName?: string;
-  email?: string;
-  profilePicture?: string;
-  bio?: string;
-  isTalent?: boolean;
-  location?: string;
-  companyName?: string;
-  companyDescription?: string;
-}
 
 
 const NavbarAuth = () => {
-  const userReduxData: UserData|null|undefined = useSelector((state:RootState)=>state.user.user)
+  const userReduxData = useSelector((state:RootState)=>state.user.user)
   const dispatch = useDispatch()
-  const [modal,setModal] = useState(false)
   return (
     <div className='py-3 flex justify-between w-full text-sm '>
       <div className='flex gap-1 items-center '>
