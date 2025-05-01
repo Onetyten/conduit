@@ -11,6 +11,8 @@ import { IoMdHeart } from "react-icons/io";
 import Image from 'next/image';
 import { Avatar,AvatarFallback,AvatarImage } from './ui/avatar';
 import { likeHeart,unlikeHeart } from '@/state/likedHeart/likedHeart';
+import { setService } from '@/state/viewedService/viewedService'
+import { updateService } from '@/state/updatedService/updatedService'
 // import { profileInterface } from '@/lib/types'
 
 
@@ -45,6 +47,11 @@ async function LikePost() {
         throw new Error("invalid response")
     }
     else{
+        const likeMessage = await likeResponse.json()
+        console.log(likeMessage.post)
+
+        dispatch(setService(likeMessage.post))
+        dispatch(updateService(likeMessage.post))
         if (likedHeartRedux == true){
             dispatch(unlikeHeart())
         }
@@ -55,9 +62,7 @@ async function LikePost() {
     }
 
 
-    const likeMessage = await likeResponse.json()
 
-    console.log(likeMessage)
     
     
 }

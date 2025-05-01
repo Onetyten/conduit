@@ -31,13 +31,13 @@ export async function PATCH(request:Request) {
                 post.likedId.splice(userIndex,1)
                 post.likes -= 1
                 post.save()
-                return NextResponse.json({message:`user has unliked this post` ,value:post.likedId},{status:200})
+                return NextResponse.json({message:`user has unliked this post`,post:post,value:post.likedId},{status:200})
             }
             else{
                 post.likes+= 1
                 post.likedId.push(user_id)
                 post.save()
-                return NextResponse.json({message:`user has liked this post` ,value:post.likedId},{status:200})
+                return NextResponse.json({message:`user has liked this post`,post:post,value:post.likedId},{status:200})
 
             }
         }

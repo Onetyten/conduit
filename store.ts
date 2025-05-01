@@ -1,6 +1,7 @@
 import {configureStore} from '@reduxjs/toolkit'
 import userReducer from '@/state/userInfo/userSlice'
 import showServiceReducer from '@/state/showServiceSlice/showServiceSlice'
+import newServiceReducer from '@/state/updatedService/updatedService'
 import servicePostReducer from '@/state/viewedService/viewedService'
 import serviceProfileReducer from '@/state/serviceProfile/serviceProfile'
 import likeHeartReducer from '@/state/likedHeart/likedHeart'
@@ -19,6 +20,7 @@ const persistConfig = {
 const reducer = combineReducers({
     user:userReducer,
     showService:showServiceReducer,
+    newservice:newServiceReducer,
     service:servicePostReducer,
     serviceProfile:serviceProfileReducer,
     heartState: likeHeartReducer,

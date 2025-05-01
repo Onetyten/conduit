@@ -24,9 +24,19 @@ const serviceSlice = createSlice({
       if (state.service && typeof state.service.views === 'number') {
         state.service.views += 1
       }
-    }
+    },
+    addLikeService: (state) => {
+      if (state.service && typeof state.service.likes === 'number') {
+        state.service.views += 1
+      }
+    },
+    subLikeService: (state) => {
+      if (state.service && typeof state.service.likes === 'number') {
+        state.service.views -= 1
+      }
+    },
   }
 })
 
-export const { setService, clearService, addViewService } = serviceSlice.actions
+export const { setService, clearService, addViewService,addLikeService,subLikeService } = serviceSlice.actions
 export default serviceSlice.reducer

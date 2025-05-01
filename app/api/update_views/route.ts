@@ -42,7 +42,7 @@ export async function PATCH(request:Request) {
             
         }
         await post.save()
-        return NextResponse.json({message:`{service views updated successfully ${post.views} \n viewersID: ${post.viewedId}}`},{status:200})
+        return NextResponse.json({message:`{service views updated successfully ${post.views} \n viewersID: ${post.viewedId}}`,post:post},{status:200})
 
         
         

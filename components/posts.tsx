@@ -8,8 +8,9 @@ import {motion} from 'framer-motion'
 import { useDispatch ,useSelector} from 'react-redux';
 import { serviceTrue } from '@/state/showServiceSlice/showServiceSlice';
 import { likeHeart,unlikeHeart } from '@/state/likedHeart/likedHeart';
-import { setService ,addViewService} from '@/state/viewedService/viewedService';
+import { setService ,} from '@/state/viewedService/viewedService';
 import { clearServiceProfile, setServiceProfile } from '@/state/serviceProfile/serviceProfile';
+import { updateService } from '@/state/updatedService/updatedService'
 import { serviceInterface } from '@/lib/types';
 
 
@@ -17,13 +18,16 @@ import { serviceInterface } from '@/lib/types';
 const Posts = () => {
     const [post,setPost] = useState<serviceInterface[]>([])
     const [page,setPage] = useState(1)
+    const [serviceIndex,setserviceIndex] = useState(0)
     const [loading,setLoading] = useState(false)
     const [hasMore,setHasMore] = useState(true)
     const limit = 20 
 
     const dispatch = useDispatch()
     const serviceRedux = useSelector((state:RootState)=> state.service.service)
+    const newServiceRedux = useSelector((state:RootState)=> state.newservice.newservice)
     const profileDataRedux = useSelector((state:RootState)=> state.user.user)
+    const serviceLikedRedux = useSelector((state:RootState)=> state.heartState.heartState)
 
     const observer = useRef<IntersectionObserver|null>(null)
     const triggerRef = useRef(null)
@@ -66,7 +70,6 @@ const Posts = () => {
       useEffect(()=>{
         getProfile()
       },[getProfile])
-
 
 
 
@@ -120,14 +123,27 @@ const Posts = () => {
     },[loadMorePost])
 
 
+    useEffect(() => {
+        if (!newServiceRedux) return;
+    
+        setPost(prev => {
+            const newPosts = [...prev];
+            newPosts[serviceIndex] = newServiceRedux;
+            return newPosts;
+        });
+    }, [newServiceRedux, serviceIndex]);
+
+
     const showModal = async (item:serviceInterface,index:number)=>{
         if (!profileDataRedux) {
             console.error("User profile is missing")
             return
           }
 
+        setserviceIndex(index)
+
         dispatch(setService(item))
-        console.log("ProfileRedux",profileDataRedux)
+        
 
 
 
@@ -138,8 +154,7 @@ const Posts = () => {
               dispatch(unlikeHeart())
             }
           }
-
-
+        console.log("Service Redux", serviceRedux,"serviceLikedRedux",serviceLikedRedux)
         dispatch(serviceTrue())
 
 
@@ -164,22 +179,11 @@ const Posts = () => {
 
             else
             {
-                const updatedview = await response.json()
-                console.log(updatedview)
-                console.log(profileDataRedux)
-
-                setPost((prevPosts)=>{
-                    const updatedPost  = [...prevPosts]
-                    const currentPost = updatedPost[index]
-
-                    updatedPost[index] = {...currentPost, views : (currentPost.views||0)+1}
-
-                    return updatedPost
-
-
-                })
-
-                dispatch(addViewService())
+                const viewMessage = await response.json()
+                console.log(viewMessage.post)
+                dispatch(setService(viewMessage.post))
+                dispatch(updateService(viewMessage.post))
+                console.log(viewMessage)
             }
             
 
@@ -189,6 +193,16 @@ const Posts = () => {
         }
 
     }
+
+    useEffect(() => {
+        if (serviceRedux && profileDataRedux) {
+            if (serviceRedux.likedId.includes(profileDataRedux._id)) {
+                dispatch(likeHeart());
+            } else {
+                dispatch(unlikeHeart());
+            }
+        }
+    }, [serviceRedux, profileDataRedux, dispatch]);
 
 
     useEffect(()=>{
