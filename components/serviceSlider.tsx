@@ -4,8 +4,6 @@ import React from 'react'
 import { RootState } from '@/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
-import { IoCloseSharp } from "react-icons/io5";
-import { GoArrowUpRight } from "react-icons/go";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { IoMdHeart } from "react-icons/io";
 import Image from 'next/image';
@@ -13,7 +11,7 @@ import { Avatar,AvatarFallback,AvatarImage } from './ui/avatar';
 import { likeHeart,unlikeHeart } from '@/state/likedHeart/likedHeart';
 import { setService } from '@/state/viewedService/viewedService'
 import { updateService } from '@/state/updatedService/updatedService'
-// import { profileInterface } from '@/lib/types'
+import ServiceModalComponent from './serviceComponents/ServiceModalComponent'
 
 
 
@@ -81,15 +79,7 @@ async function LikePost() {
 
                 </div>
                 <div className='md:w-[65%] lg:w-[50%]  sm:w-[80%] w-full h-full bg-white flex flex-col gap-2 overflow-scroll hide-scrollbar '>
-                    <div className='w-full flex justify-between items-center p-3'>
-                        <IoCloseSharp className='text-2xl' onClick={()=>{dispatch(serviceFalse())}}/>
-                        
-                        <div className='flex gap-2 items-center text-sm text-conduit'>
-                            <p>Open service on new page </p>
-                            <GoArrowUpRight className='text-xl'/>
-                        </div>
-
-                    </div>
+                    <ServiceModalComponent />
                     <div className='flex gap-1 justify-between p-3 items-center'>
                         <div className='flex items-center gap-2'>
                             <div className='relative w-12 h-12'>

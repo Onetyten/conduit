@@ -146,7 +146,8 @@ const Posts = () => {
         
 
 
-
+        // set the like and unlike state base on whether the liked id array of te services contains the id of the user profile
+        // this means that like and unlike stste will be set based on if the user has liked the post in the service redux 
         if (serviceRedux && profileDataRedux) {
             if (serviceRedux.likedId.includes(profileDataRedux._id)) {
               dispatch(likeHeart())
@@ -154,12 +155,14 @@ const Posts = () => {
               dispatch(unlikeHeart())
             }
           }
+
+        // set the show service redux
         console.log("Service Redux", serviceRedux,"serviceLikedRedux",serviceLikedRedux)
         dispatch(serviceTrue())
 
 
 
-
+        // fetch from the update views api and update the views on the backend
         if (item._id && typeof item._id === 'string' && item._id.length>0){
             const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/update_views`,{
                 method:"PATCH",
@@ -171,12 +174,13 @@ const Posts = () => {
 
 
 
-
+            // log out the error if the response is not okay meaning the views did not get updated on the backend for some reason
             if (!response.ok){
                 const errorBody  = await response.json() 
                 console.log(errorBody)
             }
 
+            // set the service redux to the updated post data sent from the backend
             else
             {
                 const viewMessage = await response.json()
@@ -188,12 +192,17 @@ const Posts = () => {
             
 
         }
+        //response if item or item id is null
         else{
             console.log("no itemid",item)
         }
 
     }
 
+    
+    // set the like and unlike state base on whether the liked id array of te services contains the id of the user profile
+    // this means that like and unlike stste will be set based on if the user has liked the post in the service redux
+    // this  is useeffect is added as a fail safe due to the asynchronous nature of redux 
     useEffect(() => {
         if (serviceRedux && profileDataRedux) {
             if (serviceRedux.likedId.includes(profileDataRedux._id)) {
