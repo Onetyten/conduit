@@ -29,7 +29,7 @@ const NavbarAuth = () => {
             (
               <div className='flex items-center  gap-2 font-semibold'>
                 <Link href="/business/create" className='bg-foreground  cursor-pointer hover:bg-conduit text-background py-1 px-2 sm:px-5 sm:py-2 rounded-full' >
-                  Create
+                  Create a service
                 </Link>
                 <form action={()=>{dispatch(clearUser())}} className='hover:text-conduit cursor-pointer text-foreground py-1 px-2 sm:px-5 sm:py-2 rounded-full'>
                   <button type='submit'>
@@ -51,9 +51,9 @@ const NavbarAuth = () => {
               :
               (
               <div className='flex  items-center justify-end w-full gap-1 sm:gap-2 font-semibold'>
-                <Link href="/signup" className='bg-foreground  cursor-pointer hover:bg-conduit text-background py-1 px-2 sm:px-5 sm:py-2 rounded-full' >
+                <button className='bg-foreground  cursor-pointer hover:bg-conduit text-background py-1 px-2 sm:px-5 sm:py-2 rounded-full' >
                   Sign up
-                </Link>
+                </button>
 
                 <Link href="/signin"  className='hover:text-conduit cursor-pointer text-foreground py-1 px-2 sm:px-5 sm:py-2rounded-full' >
                   Sign In

@@ -55,9 +55,9 @@
     skills: string[]
     serviceCategories: string[]
     hourlyRate: number
-    portfolio: string
-    companyName: string
-    companyDescription: string
+    portfolio?: string
+    companyName?: string
+    companyDescription?: string
     createdAt: string
     updatedAt: string
     totalSpent: number
@@ -66,6 +66,7 @@
       city: string
       state: string
       country: string
+
     }
   }
   

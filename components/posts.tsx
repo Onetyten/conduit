@@ -27,7 +27,7 @@ const Posts = () => {
     const serviceRedux = useSelector((state:RootState)=> state.service.service)
     const newServiceRedux = useSelector((state:RootState)=> state.newservice.newservice)
     const profileDataRedux = useSelector((state:RootState)=> state.user.user)
-    const serviceLikedRedux = useSelector((state:RootState)=> state.heartState.heartState)
+    // const serviceProfileRedux = useSelector((state:RootState)=> state.serviceProfile.serviceProfile)
 
     const observer = useRef<IntersectionObserver|null>(null)
     const triggerRef = useRef(null)
@@ -124,14 +124,14 @@ const Posts = () => {
 
 
     useEffect(() => {
-        if (!newServiceRedux) return;
-    
+        if (!newServiceRedux) return
+        if (post.length <= 0) return
         setPost(prev => {
             const newPosts = [...prev];
             newPosts[serviceIndex] = newServiceRedux;
             return newPosts;
         });
-    }, [newServiceRedux, serviceIndex]);
+    }, [newServiceRedux, serviceIndex,post.length]);
 
 
     const showModal = async (item:serviceInterface,index:number)=>{
@@ -157,7 +157,7 @@ const Posts = () => {
           }
 
         // set the show service redux
-        console.log("Service Redux", serviceRedux,"serviceLikedRedux",serviceLikedRedux)
+        // console.log("Service Redux", serviceRedux,"\nprofileDataRedux",profileDataRedux,"\nserviceProfileRedux",serviceProfileRedux)
         dispatch(serviceTrue())
 
 

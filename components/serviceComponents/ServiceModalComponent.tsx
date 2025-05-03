@@ -1,9 +1,11 @@
+"use client"
 import React from 'react'
 import { IoCloseSharp } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
 import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
 import { useDispatch} from 'react-redux'
 import {useLockBodyScroll} from '@uidotdev/usehooks'
+import Link from 'next/link'
 
 export default function ServiceModalComponent() {
     useLockBodyScroll()
@@ -14,7 +16,10 @@ export default function ServiceModalComponent() {
             <IoCloseSharp className='text-2xl' onClick={()=>{dispatch(serviceFalse())}}/>
             
             <div className='flex gap-2 items-center text-sm text-conduit'>
-                <p>Open service on new page </p>
+                <Link href="/serviceDetails">
+                    <p>Open service on new page </p>
+                </Link>
+                
                 <GoArrowUpRight className='text-xl'/>
             </div>
         </div>

@@ -14,7 +14,7 @@ const persistConfig = {
     key:'root',
     version:1,
     storage,
-    blacklist: ['showService','heartState']
+    blacklist: ['heartState']
 }
 
 const reducer = combineReducers({

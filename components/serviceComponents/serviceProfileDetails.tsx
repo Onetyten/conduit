@@ -1,0 +1,124 @@
+import React from 'react'
+import Image from 'next/image';
+import { Avatar,AvatarFallback,AvatarImage } from '@/components/ui/avatar';
+import { profileInterface,serviceInterface} from '@/lib/types';
+import Link from 'next/link';
+
+interface serviceInterfaceProp{
+    serviceProfileRedux:profileInterface|null
+    serviceRedux:serviceInterface|null
+}
+
+
+
+export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux }: serviceInterfaceProp) {
+  return (
+    <div>
+        <div className='flex items-center justify-center my-5'>
+          {serviceProfileRedux?
+          <div className='gap-3 flex flex-wrap justify-center text-xs'>
+          {serviceProfileRedux?.skills.map((item, index) => (
+                  <span key={index} className='p-1.5 px-4 hover:bg-blue-100 bg-softblue rounded-md'>{item}</span>
+              ))}
+          </div>
+          :
+          <div className='w-sm h-6 bg-gray-100 rounded-md'></div >}
+      </div>
+      <div className='flex items-center p-3 justify-center'>
+          <p className='text-2xl font-bold my-4'>
+          {serviceRedux?.title} 
+          </p>
+      </div>
+      <div className='flex items-center justify-center relative w-full '>
+          {serviceProfileRedux && serviceRedux?.galleryImages[0]?
+              <Image src={serviceRedux?.galleryImages[0]} width={1000} height={200} alt='profilepic' className=' aspect-video object-cover' />
+              :
+              <div className='w-[1000px] h-[400px] bg-gray-100'></div >}     
+      </div>
+
+      <div className='flex flex-col items-center mt-6 justify-center p-3 px-8 sm:px-16 text-justify'>
+          <p className='font-semibold'>Description</p>
+          <p className='text-sm my-4'>
+              {serviceRedux?.description} 
+          </p>
+      </div>
+
+      <div className='flex flex-col items-center justify-center p-3 px-16 text-center'>
+          <p className='font-semibold'>Deliverables</p>
+          <div className='flex gap-2 my-4 text-xs'>
+              {serviceRedux?.deliverables.map((item, index) => (
+                  <span key={index} className='p-1.5 px-4 hover:bg-blue-100 bg-softblue rounded-md'>{item}</span>
+              ))}
+          </div>
+      </div>
+
+      <div className='flex flex-col items-center justify-center p-3 px-16 text-center'>
+          <p className='font-semibold'>Available On</p>
+          <div className='flex justify-center flex-wrap gap-2 my-4 text-xs'>
+              {serviceRedux?.avalableOn.map((item, index) => (
+                  <span key={index} className='p-1.5 px-4 hover:bg-blue-100 bg-softblue rounded-md'>{item}</span>
+              ))}
+          </div>
+      </div>
+      <div className='w-full bg-gray-200 py-6 mt-10 flex justify-center items-center flex-col'>
+        <div className='flex flex-col gap-3 w-full justify-center items-center'>
+            <div className='relative w-12 h-12'>
+                <Link href={`/profile`}>
+                    <Avatar className='w-full h-full'>
+                        <AvatarImage src={serviceProfileRedux?.profilePicture}/>
+                        <AvatarFallback>PIC</AvatarFallback>
+                    </Avatar>
+                </Link>
+                
+            
+                <div className={`${serviceRedux?.avalability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
+                </div>
+            </div>
+            {serviceProfileRedux?
+            <p className='text-xs text-foreground'>{serviceProfileRedux?.firstName} {serviceProfileRedux?.lastName}</p >
+            :
+            <div className='w-40 h-4 bg-gray-100 rounded-md'></div >}
+            <div className='flex gap-2 w-full justify-center text-xs'>
+                {serviceRedux?.tags.map((item,index)=>{
+                    return(
+                        <span key={index}>
+                              {item} {index!=serviceRedux.tags.length-1?"|":""}
+                        </span>
+                    )
+
+                })}
+            </div>
+
+
+            <div className='flex gap-2 w-full my-3 font-semibold justify-center text-xs'>
+                Hourly rate : {serviceRedux?.price} USD
+            </div>
+
+            <div className='flex gap-2 w-full mb-3 font-semibold justify-center text-xs'>
+                Delivery method : {serviceRedux?.deliveryMethod[0]}
+            </div>
+            <div className='bg-conduit text-background p-2 h-9 flex items-center rounded-full text-xs'>
+                Book Service
+            </div>
+
+        </div>
+
+          <div className='text-xs my-6 flex w-full justify-center gap-6 '>
+            <span>
+              {serviceRedux?.amountEarned} USD   earned
+            </span>
+
+            <span>
+              {serviceRedux?.views} views
+            </span>
+
+            <span>
+              {serviceRedux?.likes} likes
+            </span>
+              
+          </div>
+          
+      </div>
+    </div>
+  )
+}

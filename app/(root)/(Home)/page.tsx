@@ -3,6 +3,7 @@ import IntroSection from "@/components/introSection";
 import SearchForm from "@/components/searchForm"
 import Posts from "@/components/posts";
 import ServiceSlider from "@/components/serviceSlider";
+import CreateAccount from "@/components/createAccount";
 
 export default function Home({searchParams}:{searchParams:{query:string}}) {
   const query  = searchParams?.query
@@ -20,6 +21,8 @@ export default function Home({searchParams}:{searchParams:{query:string}}) {
          <Posts/>
       </div>
       <ServiceSlider/>
+      <CreateAccount/>
+
       
       
     </div>
