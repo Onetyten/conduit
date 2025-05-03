@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { Avatar, AvatarFallback,AvatarImage} from './ui/avatar'
 import { useSelector,useDispatch} from 'react-redux'
 import { clearUser } from '@/state/userInfo/userSlice'
+import {signUpTrue} from '@/state/showSignUp/showSignUp'
 import { RootState } from '@/store'
 
 
@@ -51,7 +52,7 @@ const NavbarAuth = () => {
               :
               (
               <div className='flex  items-center justify-end w-full gap-1 sm:gap-2 font-semibold'>
-                <button className='bg-foreground  cursor-pointer hover:bg-conduit text-background py-1 px-2 sm:px-5 sm:py-2 rounded-full' >
+                <button onClick={()=>{dispatch(signUpTrue())}} className='bg-foreground  cursor-pointer hover:bg-conduit text-background py-1 px-2 sm:px-5 sm:py-2 rounded-full' >
                   Sign up
                 </button>
 

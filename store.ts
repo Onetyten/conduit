@@ -5,6 +5,7 @@ import newServiceReducer from '@/state/updatedService/updatedService'
 import servicePostReducer from '@/state/viewedService/viewedService'
 import serviceProfileReducer from '@/state/serviceProfile/serviceProfile'
 import likeHeartReducer from '@/state/likedHeart/likedHeart'
+import showSignUpReducer from '@/state/showSignUp/showSignUp'
 import storage from 'redux-persist/lib/storage'
 import {persistReducer,persistStore} from 'redux-persist'
 import { combineReducers } from '@reduxjs/toolkit'
@@ -14,7 +15,7 @@ const persistConfig = {
     key:'root',
     version:1,
     storage,
-    blacklist: ['heartState']
+    blacklist: ['heartState','showSignUp']
 }
 
 const reducer = combineReducers({
@@ -24,6 +25,7 @@ const reducer = combineReducers({
     service:servicePostReducer,
     serviceProfile:serviceProfileReducer,
     heartState: likeHeartReducer,
+    showSignUp:showSignUpReducer
 })
 
 const persistedReducer = persistReducer(persistConfig,reducer)

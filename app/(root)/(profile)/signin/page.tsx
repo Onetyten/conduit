@@ -9,12 +9,13 @@ import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux';
 import {setUser} from '@/state/userInfo/userSlice'
 import { useRouter } from 'next/navigation'
+import { RootState } from '@/store'
 
 export default function page() {
   const router = useRouter()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const userReduxdata = useSelector((state)=>state.user.user)
+  const userReduxdata = useSelector((state:RootState)=>state.user.user)
   const dispatch = useDispatch()
 
 
