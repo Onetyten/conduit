@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 const serviceSchema = new mongoose.Schema({
     title:{type:String},
     profileId: {type:mongoose.Schema.Types.ObjectId, ref: "User", required: true},
@@ -23,7 +22,7 @@ const serviceSchema = new mongoose.Schema({
     createdAt: {type: Date, default: Date.now},
     address: {type: String},
     deliveryMethod: [{type: String, enum: ['online', 'onsite', 'both']}]
-
+    
 })
 
 const Service = mongoose.models.Services || mongoose.model("Services",serviceSchema)

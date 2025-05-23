@@ -114,9 +114,20 @@ const page = () => {
           </div>):
           
           
-          (<div className='text-sm bg-red-500 w-28 text-center p-3 my-5 hover:bg-red-600 text-white rounded-lg' onClick={signOut}>
-            Sign out
-          </div>)}
+          (<div>
+              <div className='text-sm bg-red-500 text-center p-3 my-5 hover:bg-red-600 text-white rounded-lg' onClick={signOut}>
+                Sign out
+              </div> 
+              <div className='text-sm bg-red-500 text-center p-3 my-5 hover:bg-red-600 text-white rounded-lg' onClick={signOut}>
+                Delete Account
+              </div> 
+          </div>
+           
+          
+        
+        
+        
+        )}
 
           
         </div>

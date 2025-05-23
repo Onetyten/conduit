@@ -5,11 +5,11 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Logo from '@/public/Images/Logo.png'
 import SigninPic from '@/public/Images/SigninPic.png'
-import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux';
 import {setUser} from '@/state/userInfo/userSlice'
 import { useRouter } from 'next/navigation'
 import { RootState } from '@/store'
+import { signUpTrue } from '@/state/showSignUp/showSignUp'
 
 export default function page() {
   const router = useRouter()
@@ -17,6 +17,7 @@ export default function page() {
   const [password, setPassword] = useState("");
   const userReduxdata = useSelector((state:RootState)=>state.user.user)
   const dispatch = useDispatch()
+
 
 
   const Submit = async () => {
@@ -44,6 +45,11 @@ export default function page() {
     catch (error) {
       console.log(error)
     }
+  }
+
+  function SignIn(){
+    dispatch(signUpTrue())
+    router.push('/');
   }
 
   return (
@@ -77,9 +83,9 @@ export default function page() {
                 >
                   New to Conduit?
                 </p>
-                <Link href="/signup" className='lg:p-2 p-1.5 border-[1px] border-foreground lg:rounded-xl rounded-md'>
+                <button onClick={SignIn} className='lg:p-2 p-1.5 border-[1px] border-foreground lg:rounded-xl rounded-md'>
                   Sign up
-                </Link>
+                </button>
         </div>
       </div>
     </div>

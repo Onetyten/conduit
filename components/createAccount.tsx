@@ -8,6 +8,7 @@ import FinishSlide from '@/components/createProfile/finishSlide';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store'
 import CloseSlide from './serviceComponents/closeSlide';
+import CreateUser from './createProfile/createUser';
 
  
 
@@ -20,7 +21,9 @@ export default function CreateAccount() {
     const [city,setCity]= useState("")
     const [country,setCountry]= useState("")
     const [state,setState]= useState("")
+    const [profilePic,setProfilePic] = useState("https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png")
     const [slideIndex,setSlideIndex] = useState(0)
+    const [passwordCheck,setPasswordCheck] = useState('')
 
     // function Submit(e:FormEvent) {
     //     e.preventDefault()
@@ -42,21 +45,26 @@ export default function CreateAccount() {
                             {/* first carousel item */}
                             {
                                 slideIndex==0?
-                                (<WelcomeSlide email={email} setEmail={setEmail} setSlideIndex={setSlideIndex} firstname={firstname} setFirstname={setFirstname} lastname={lastname} setLastname={setLastname}/>):
+                                (<WelcomeSlide email={email} setEmail={setEmail} setSlideIndex={setSlideIndex} firstname={firstname} setFirstname={setFirstname} lastname={lastname} setLastname={setLastname} slideIndex={slideIndex} />):
                                 slideIndex==1?
                                 (   
-                                    <PasswordSlide password = {password} setPassword={setPassword} setSlideIndex={setSlideIndex}/>  
+                                    <PasswordSlide password = {password} setPassword={setPassword} setSlideIndex={setSlideIndex} slideIndex={slideIndex} passwordCheck={passwordCheck} setPasswordCheck={setPasswordCheck}/>  
                                 ):
                                 slideIndex==2?
                                 (
-                                    <PictureSlide setSlideIndex={setSlideIndex}/>
+                                    <PictureSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} profilePic={profilePic} setProfilePic={setProfilePic}/>
                                 ):
                                 slideIndex==3?
                                 (
-                                    <LocationSlide city={city} setCity={setCity} country={country} setCountry = {setCountry} state={state} setState = {setState} setSlideIndex={setSlideIndex}/>
+                                    <LocationSlide city={city} setCity={setCity} country={country} setCountry = {setCountry} state={state} setState = {setState} setSlideIndex={setSlideIndex} slideIndex={slideIndex}/>
                                 ):
+                                slideIndex==4?
                                 (
-                                    <FinishSlide setSlideIndex ={setSlideIndex}/>
+                                    <CreateUser setSlideIndex ={setSlideIndex} slideIndex={slideIndex} email={email} firstname={firstname} lastname={lastname} password={password} city={city} country={country} state={state} profilePic={profilePic}/>
+                                )
+                                :
+                                (
+                                    <FinishSlide firstname={firstname}/>
                                 )
                             }
 

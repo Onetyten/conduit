@@ -3,19 +3,22 @@ import NavigationButton from '../NavigationButton'
 
 interface propTypes{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
+    slideIndex:number
+    profilePic:string
+    setProfilePic:React.Dispatch<React.SetStateAction<string>>
 }
 
 
 
 
 export default function PictureSlide(props:propTypes) {
-    const {setSlideIndex} = props
+    const {setSlideIndex,slideIndex} = props
 
     function Next() {
-        setSlideIndex(3)
+        setSlideIndex(slideIndex+1)
     }
     function Prev() {
-        setSlideIndex(1)
+        setSlideIndex(slideIndex-1)
     }
   return (
     <div className='h-full w-full px-[10%]'>

@@ -8,7 +8,7 @@ const profileSchema  = new mongoose.Schema({
         trim:true,
         lowercase:true
     },
-    profilePicture:{type:String},
+    profilePicture:{type:String, default:'https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png'},
     bio:{type:String},
     isTalent:{type:Boolean},
     skills:[{type:String}],
@@ -24,7 +24,7 @@ const profileSchema  = new mongoose.Schema({
         state:{type:String},
         country:{type:String}
     },
-    totalSpent:{type:Number},
+    totalSpent:{type:Number,default:0},
     
 
 })
