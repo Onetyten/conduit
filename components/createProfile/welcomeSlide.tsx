@@ -49,10 +49,10 @@ export default function WelcomeSlide(props:propTypes) {
             <p className='lg:text-2xl text-lg  font-semibold '>Welcome to conduit 👋</p>
 
             <div className='flex flex-col gap-2 w-full'>
-              <input type='email' value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='example@email.com' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
+              <input type='email' value={email} onChange={(e)=>{setEmail(e.target.value.toLowerCase())}} placeholder='example@email.com' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
               {showEmailErr&&(
                 <p className='text-xs text-red-600'>
-                    The email field is empty
+                    Email is required
                 </p>
               )}
               
@@ -62,7 +62,7 @@ export default function WelcomeSlide(props:propTypes) {
                 <input type='text' value={firstname} onChange={(e)=>{setFirstname(e.target.value)}} placeholder='First Name' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
                 {showFirstNameErr&&(
                     <p className='text-xs text-red-600'>
-                        The first name field is empty
+                        First name is required
                     </p>
                 )}
                 
@@ -72,7 +72,7 @@ export default function WelcomeSlide(props:propTypes) {
                <input type='text' value={lastname} onChange={(e)=>{setLastname(e.target.value)}} placeholder='Last Name' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
                {showLastNameErr&&(
                     <p className='text-xs text-red-600'>
-                        The last name field is empty
+                        Last name is required
                     </p>
                 )}
                 

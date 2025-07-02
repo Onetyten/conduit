@@ -19,6 +19,7 @@
     "@radix-ui/react-slot": "^1.2.0",
     "@reduxjs/toolkit": "^2.6.1",
     "@uidotdev/usehooks": "^2.4.1",
+    "bcrypt": "^6.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -39,6 +40,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

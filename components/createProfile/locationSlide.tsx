@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import NavigationButton from '../NavigationButton'
 
 interface propTypes{
@@ -17,24 +17,9 @@ interface propTypes{
 
 export default function LocationSlide(props:propTypes) {
     const {setSlideIndex,city,setCity,country,setCountry,state,setState,slideIndex} = props
-    const [showCountryErr,setShowCountryErr] = useState(false)
-    const [showStateErr,setShowStateErr] = useState(false)
-    const [showCityErr,setShowCityErr] = useState(false)
 
     function Next() {
-        if (country.length<1){
-            setShowCountryErr(true)
-        }
-        if (state.length<1){
-            setShowStateErr(true)
-        }
-        if (city.length<1){
-            setShowCityErr(true)
-        }
-        
-        if(city.length>1 && country.length>1 && state.length>1){
-            setSlideIndex(slideIndex+1)
-        }
+        setSlideIndex(slideIndex+1)
         
     }
     function Prev() {
@@ -48,45 +33,30 @@ export default function LocationSlide(props:propTypes) {
 
             <div className='flex flex-col gap-2 w-full'>
                 <input type='text' value={country} onChange={(e)=>{setCountry(e.target.value)}} placeholder='Country' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
-              {showCountryErr&&(
-                <p className='text-xs text-red-600'>
-                    This field is empty
-                </p>
-              )}
               
             </div>
 
 
             <div className='flex flex-col gap-2 w-full'>
             <input type='text' value={state} onChange={(e)=>{setState(e.target.value)}} placeholder='State' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
-              {showStateErr&&(
-                <p className='text-xs text-red-600'>
-                    This field is empty
-                </p>
-              )}
-              
             </div>
 
 
             <div className='flex flex-col gap-2 w-full'>
             <input type='text' value={city} onChange={(e)=>{setCity(e.target.value)}} placeholder='City' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
-              {showCityErr&&(
-                <p className='text-xs text-red-600'>
-                    This field is empty
-                </p>
-              )}
               
             </div>
 
             
-
-            
-
-           
-
             <div className='flex gap-6'>
                 <NavigationButton direction={0} Click={Prev}/>
                 <NavigationButton direction={1} Click={Next}/>
+            </div>
+
+            <div>
+                <p className='text-gray-500'>
+                    (Optional)
+                </p>
             </div>
             
             

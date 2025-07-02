@@ -1,6 +1,8 @@
 'use client'
 import React,{useState} from 'react'
 import NavigationButton from '../NavigationButton'
+import { FaEye } from "react-icons/fa6";
+import { FaEyeSlash } from "react-icons/fa";
 
 interface propTypes{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
@@ -18,6 +20,9 @@ export default function PasswordSlide(props:propTypes) {
     const {setSlideIndex,password,setPassword,slideIndex,passwordCheck,setPasswordCheck} = props
     const [showPasswordEmpty,setShowPasswordEmpty] = useState(false)
     const [showPasswordMatchErr,setShowPasswordMatchErr] = useState(false)
+
+    const [showPassword,setShowPassword] = useState(false)
+    const [showPasswordCheck,setShowPasswordCheck] = useState(false)
 
     function Next() {
         if (password.length<1){
@@ -42,7 +47,11 @@ export default function PasswordSlide(props:propTypes) {
            
 
             <div className='flex flex-col gap-2 w-full'>
-                <input type='password' value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
+                <div className='relative w-full h-full flex justify-center items-center'>
+                    <input type ={`${showPassword?'text':'password'}`} value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
+                    {showPassword?(<FaEyeSlash className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPassword(false)}}/>):(<FaEye className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPassword(true)}}/>)}
+
+                </div>
               {showPasswordEmpty&&(
                 <p className='text-xs text-red-600'>
                     The password field is empty
@@ -53,7 +62,11 @@ export default function PasswordSlide(props:propTypes) {
 
 
             <div className='flex flex-col gap-2 w-full'>
-                <input type='password' value={passwordCheck} onChange={(e)=>{setPasswordCheck(e.target.value)}} placeholder='Confirm Password'className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
+                <div className='relative w-full h-full flex justify-center items-center'>
+                    <input type={`${showPasswordCheck?'text':'password'}`} value={passwordCheck} onChange={(e)=>{setPasswordCheck(e.target.value)}} placeholder='Confirm Password'className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />   
+                    {showPasswordCheck?(<FaEyeSlash className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPasswordCheck(false)}}/>):(<FaEye className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPasswordCheck(true)}}/>)} 
+                </div>
+
               {showPasswordMatchErr&&(
                 <p className='text-xs text-red-600'>
                     Passwords do not match
@@ -68,6 +81,7 @@ export default function PasswordSlide(props:propTypes) {
                 <NavigationButton direction={0} Click={Prev}/>
                 <NavigationButton direction={1} Click={Next}/>
             </div>
+       
             
             
         </div>  

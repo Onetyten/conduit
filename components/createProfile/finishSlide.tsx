@@ -5,6 +5,13 @@ import { useRouter } from 'next/navigation';
 
 interface propTypes{
     firstname :string
+    email :string
+    lastname :string
+    password :string
+    city :string
+    country :string
+    state :string
+    profilePic :string
 }
 
 

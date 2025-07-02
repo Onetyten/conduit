@@ -18,17 +18,14 @@ export default function CreateAccount() {
     const [firstname, setFirstname] = useState("")
     const [lastname, setLastname] = useState("")
     const [password,setPassword]= useState("")
+    const [passwordCheck,setPasswordCheck] = useState('')
     const [city,setCity]= useState("")
     const [country,setCountry]= useState("")
     const [state,setState]= useState("")
     const [profilePic,setProfilePic] = useState("https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png")
     const [slideIndex,setSlideIndex] = useState(0)
-    const [passwordCheck,setPasswordCheck] = useState('')
 
-    // function Submit(e:FormEvent) {
-    //     e.preventDefault()
-    //     console.log('Form submitted:', { firstname, lastname });
-    // }
+
 
   return (
     <div>
@@ -64,7 +61,17 @@ export default function CreateAccount() {
                                 )
                                 :
                                 (
-                                    <FinishSlide firstname={firstname}/>
+                                    <FinishSlide 
+                                        email = {email}
+                                        firstname = {firstname}
+                                        lastname = {lastname} 
+                                        password = {password}
+                                        city = {city}
+                                        country = {country}
+                                        state = {state}
+                                        profilePic = {profilePic}
+                                    />
+
                                 )
                             }
 

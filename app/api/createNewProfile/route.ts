@@ -1,9 +1,11 @@
 import mongoConnect from "@/lib/utils/connectDB";
 import Profile from "@/models/profileSchema";
 import { NextResponse } from "next/server";
+import bcrypt from 'bcrypt'
+
 
 export async function POST(request:Request){
-    const {firstName,lastName,password,email,profilePicture,city,state,country} = await  request.json()
+    const {firstName,lastName,password,email,profilePicture,city,state,country} = await request.json()
     try {
         await mongoConnect()
         const existingAccount = await Profile.findOne({email})
@@ -12,12 +14,14 @@ export async function POST(request:Request){
             return NextResponse.json({message:"Email is already taken"},{status:400})
         }
         else{
+            const salt = await bcrypt.genSalt(10)
+            const hashedPassword = await bcrypt.hash(password,salt)
 
             const newProfile  = await new Profile({
                 "firstName": firstName,
                 "lastName": lastName,
-                "email": email,
-                "password": password,
+                "email": email.toLowerCase(),
+                "password": hashedPassword,
                 "profilePicture": profilePicture,
                 "isTalent": false,
                 "location": {
@@ -32,6 +36,7 @@ export async function POST(request:Request){
             const createdProfile = await newProfile.save()
             // this is to delete the profile during testing to avoid unnecessaty database cluttering
             await Profile.findByIdAndDelete(createdProfile._id)
+            
             return NextResponse.json({message:"User created successfully",userdata:createdProfile},{status:200})
 
         }
