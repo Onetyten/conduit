@@ -9,6 +9,11 @@ if (!MONGO_URL) {
   );
 }
 
+declare global {
+  // eslint-disable-next-line no-var
+  var mongoose: { conn: typeof import("mongoose") | null; promise: Promise<typeof import("mongoose")> | null };
+}
+
 const url  = MONGO_URL as string
 
 let cached = global.mongoose;
@@ -26,9 +31,7 @@ async function mongoConnect() {
     const opts = {
       bufferCommands: false,
     };
-    cached.promise = mongoose.connect(url, opts).then((mongoose) => {
-      return mongoose;
-    });
+    cached.promise = mongoose.connect(url, opts);
   }
   cached.conn = await cached.promise;
   return cached.conn;
