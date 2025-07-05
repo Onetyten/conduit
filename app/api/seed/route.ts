@@ -22,7 +22,11 @@ export async function GET() {
     
   } catch (error) {
     console.error("error seeding profiles",error)
-    return NextResponse.json({message:error.message},{status:500})
+    let errorMessage = "An unknown error occurred";
+    if (error instanceof Error) {
+        errorMessage = error.message;
+    }
+    return NextResponse.json({message:errorMessage},{status:500})
   }
   
 }

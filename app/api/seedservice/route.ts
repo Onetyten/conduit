@@ -39,7 +39,11 @@ export async function GET() {
     return NextResponse.json({ message: 'Services seeded successfully', createdServices });
 
   } catch (error) {
-    console.error("error seeding services", error);
-    return NextResponse.json({ message: error.message }, { status: 500 });
+     console.error("error seeding services", error);
+    let errorMessage = "An unknown error occurred";
+    if (error instanceof Error) {
+        errorMessage = error.message;
+    }
+    return NextResponse.json({ message: errorMessage  }, { status: 500 });
   }
 }
