@@ -15,7 +15,7 @@ export default function Home() {
       <SectionCarousel />
       <div className="px-4">  
          <p className=" text-sm text-gray-400">
-            Search result for :All services
+            Search result for all services
          </p>
          <Posts/>
       </div>

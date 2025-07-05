@@ -42,7 +42,7 @@ export default function CreateUser(props:propTypes) {
         console.log(userData)
 
         try {
-            const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/createNewProfile`,userData)
+            const response = await axios.post(`/api/createNewProfile`,userData)
             if (response.status != 200) return
             console.log(response)
             setSlideIndex(slideIndex+1)
@@ -51,6 +51,9 @@ export default function CreateUser(props:propTypes) {
         }
         catch (error) {
              console.log(error)
+             alert("A error occured while creating your profile")
+             setUploadingProfile(false)
+
         }
         
     } 

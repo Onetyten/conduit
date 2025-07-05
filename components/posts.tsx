@@ -76,7 +76,7 @@ const Posts = () => {
     const fetchPost = useCallback(async (limit:number,Currentpage:number)=>{
         setLoading(true)
         try {
-            const Response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/posts?page=${Currentpage}&limit=${limit}`)
+            const Response = await fetch(`/api/posts?page=${Currentpage}&limit=${limit}`)
             if (!Response.ok){
                 throw new Error("Failed to get response")
             }
@@ -159,7 +159,7 @@ const Posts = () => {
         // fetch from the update views api and update the views on the backend
         if (profileDataRedux){
             if (item._id && typeof item._id === 'string' && item._id.length>0){
-                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/update_views`,{
+                const response = await fetch(`/api/update_views`,{
                     method:"PATCH",
                     headers:{
                         'Content-Type': 'application/json'

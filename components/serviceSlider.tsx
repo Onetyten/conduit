@@ -39,7 +39,7 @@ async function LikePost() {
         return
     }
 
-    const likeResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/updateLikes`,{
+    const likeResponse = await fetch(`/api/updateLikes`,{
         method:'PATCH',
         headers:{
             'Content-Type': 'application/json'
