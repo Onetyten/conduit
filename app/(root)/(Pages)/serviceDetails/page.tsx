@@ -63,7 +63,7 @@ export default function Page() {
         <div className='w-full mb-20'>
             <BackButton/>
         </div>
-        <div className='px-10'>
+        <div className=' sm:px-10'>
             <ServiceProfileSection serviceProfileRedux={serviceProfileRedux} serviceRedux={serviceRedux} />
         </div>
         <LikeComponent LikePost={LikePost}/>

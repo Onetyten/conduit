@@ -74,7 +74,7 @@ async function LikePost() {
   return (
     <div>
         {showReduxModal&&(
-            <div className='h-screen w-full flex-col sm:flex-row  right-0 bottom-0 fixed flex'>
+            <div className='h-screen w-full flex-col sm:flex-row  right-0 bottom-0 fixed flex z-20'>
                 <div className='md:w-[35%] lg:w-[50%] sm:w-[20%] sm:h-full w-full h-0 sm:bg-slate-500/50 bg-transparent  sm:backdrop-blur-xs' onClick={()=>{dispatch(serviceFalse())}}>
 
                 </div>

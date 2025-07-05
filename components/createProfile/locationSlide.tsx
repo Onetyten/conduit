@@ -28,7 +28,7 @@ export default function LocationSlide(props:propTypes) {
         setSlideIndex(slideIndex-1)
     }
   return (
-    <div className='h-full w-full px-[30%]'>
+    <div className='h-full w-full px-6 sm:px-[20%] text-xs'>
         <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
             <p className='lg:text-2xl text-lg  font-semibold '>Lets Personalise your profile</p>
 

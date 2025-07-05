@@ -24,7 +24,7 @@ const IntroSection = () => {
 
         </div>
 
-        <div className='w-md'>
+        <div className='w-full sm:w-md'>
             <HeaderSlide/>
 
 

@@ -61,7 +61,7 @@ export default function CreateUser(props:propTypes) {
     <div className='h-full w-full px-[10%]'>
         <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
             <p className='lg:text-2xl text-lg  font-semibold '>Create your conduit profile</p>
-            <button  onClick={CreateAccount}  className='rounded-lg bg-foreground text-background hover:bg-conduit p-2 px-8'>
+            <button  onClick={CreateAccount}  className='text-sm sm:text-base rounded-lg bg-foreground text-background hover:bg-conduit p-2 px-8'>
                     Create Profile
             </button>
             <div className='flex gap-6'>

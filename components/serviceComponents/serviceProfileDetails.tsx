@@ -25,7 +25,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
           <div className='w-sm h-6 bg-gray-100 rounded-md'></div >}
       </div>
       <div className='flex items-center p-3 justify-center'>
-          <p className='text-2xl font-bold my-4'>
+          <p className='text-xl text-center sm:text-2xl font-bold my-4'>
           {serviceRedux?.title} 
           </p>
       </div>
@@ -38,12 +38,12 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
 
       <div className='flex flex-col items-center mt-6 justify-center p-3 px-8 sm:px-16 text-justify'>
           <p className='font-semibold'>Description</p>
-          <p className='text-sm my-4'>
+          <p className=' text-xs sm:text-sm my-4'>
               {serviceRedux?.description} 
           </p>
       </div>
 
-      <div className='flex flex-col items-center justify-center p-3 px-16 text-center'>
+      <div className='flex flex-col items-center justify-center p-3 px-6 sm:px-16 text-center'>
           <p className='font-semibold'>Deliverables</p>
           <div className='flex gap-2 my-4 text-xs'>
               {serviceRedux?.deliverables.map((item, index) => (
@@ -52,7 +52,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
           </div>
       </div>
 
-      <div className='flex flex-col items-center justify-center p-3 px-16 text-center'>
+      <div className='flex flex-col items-center justify-center px-6 sm:px-16 text-center'>
           <p className='font-semibold'>Available On</p>
           <div className='flex justify-center flex-wrap gap-2 my-4 text-xs'>
               {serviceRedux?.avalableOn.map((item, index) => (
@@ -97,7 +97,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
             <div className='flex gap-2 w-full mb-3 font-semibold justify-center text-xs'>
                 Delivery method : {serviceRedux?.deliveryMethod[0]}
             </div>
-            <div className='bg-conduit text-background p-2 h-9 flex items-center rounded-full text-xs'>
+            <div className='bg-conduit text-background p-2 h-9 flex items-center rounded-md sm:rounded-full text-xs'>
                 Book Service
             </div>
 

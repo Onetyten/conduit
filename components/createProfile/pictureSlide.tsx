@@ -55,14 +55,14 @@ export default function PictureSlide(props:propTypes) {
 
 
   return (
-    <div className='h-full w-full px-[10%]'>
+    <div className='h-full w-full sm:px-[10%] px-6 text-xs'>
         <div className='flex flex-col justify-center items-center w-full h-full gap-6'>
             <p className='lg:text-2xl text-lg  font-semibold '>Add a profile picture</p>
             <div className='relative w-20 h-20 rounded-full overflow-hidden'>
                 <Image src={PreviewImage || profilePicUrl} alt='previewImage' className='object-cover w-full h-full aspect-square' fill/>
             </div>
             
-            <div className="w-1/2 h-48 relative">
+            <div className="w-[90%] sm:w-1/2 h-48 relative">
                 <input
                     type="file"
                     id="upload"
