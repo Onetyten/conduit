@@ -9,8 +9,8 @@ interface Params {
     email: string;
 }
 
-export async function POST(request: Request, { params }: { params: Params }) {
-    const { email } =  params;
+export async function POST(request: Request, context: { params: Params }) {
+    const { email } = context.params;
     const { password } = await request.json(); // Ensure proper async parsing
 
     try {
