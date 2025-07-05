@@ -1,10 +1,11 @@
+'use client'
 import React from 'react'
 import NavigationButton from '../NavigationButton'
 
 interface propTypes{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
-    city:string
-    setCity:React.Dispatch<React.SetStateAction<string>>
+    district:string
+    setDistrict:React.Dispatch<React.SetStateAction<string>>
     country:string
     setCountry:React.Dispatch<React.SetStateAction<string>>
     state:string
@@ -16,9 +17,10 @@ interface propTypes{
 
 
 export default function LocationSlide(props:propTypes) {
-    const {setSlideIndex,city,setCity,country,setCountry,state,setState,slideIndex} = props
+    const {setSlideIndex,country,setCountry,state,setState,district,setDistrict,slideIndex} = props
 
     function Next() {
+        console.log(country,state,district)
         setSlideIndex(slideIndex+1)
         
     }
@@ -43,8 +45,7 @@ export default function LocationSlide(props:propTypes) {
 
 
             <div className='flex flex-col gap-2 w-full'>
-            <input type='text' value={city} onChange={(e)=>{setCity(e.target.value)}} placeholder='City' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
-              
+                <input type='text' value={district} onChange={(e)=>{setDistrict(e.target.value)}} placeholder='District' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
             </div>
 
             

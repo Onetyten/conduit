@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 const DEFAULT_LIMIT = 10
 
-export async function GET(request) {
+export async function GET(request:Request) {
     const {searchParams} = new URL(request.url)
     const page = parseInt(searchParams.get('page')) || 1
     const limit = parseInt(searchParams.get('limit')) || DEFAULT_LIMIT

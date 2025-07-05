@@ -101,9 +101,9 @@ const Posts = () => {
 
 
     const loadMorePost  = useCallback(async()=>{
-        if (!hasMore||loading) return
+        if (!hasMore || loading) return
         const newPost  = await fetchPost(limit,page)
-        if (newPost.length>0){
+        if (newPost && newPost.length>0){
             setPost((prevPosts) => [...prevPosts, ...newPost])
             setPage((prevPage)=>prevPage+1)
             if (newPost.length<limit){
@@ -115,12 +115,10 @@ const Posts = () => {
         }
         
 
-    },[limit,page,fetchPost,loading,hasMore])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[loading,fetchPost,limit,hasMore])
 
-    useEffect(()=>{
-        loadMorePost()
-        
-    },[loadMorePost])
+
 
 
     useEffect(() => {
@@ -135,11 +133,7 @@ const Posts = () => {
 
 
     const showModal = async (item:serviceInterface,index:number)=>{
-        if (!profileDataRedux) {
-            console.error("User profile is missing")
-            return
-          }
-
+        if (!profileDataRedux) console.log("User profile is not logged in")
         setserviceIndex(index)
 
         dispatch(setService(item))
@@ -154,7 +148,7 @@ const Posts = () => {
             } else {
               dispatch(unlikeHeart())
             }
-          }
+        }
 
         // set the show service redux
         // console.log("Service Redux", serviceRedux,"\nprofileDataRedux",profileDataRedux,"\nserviceProfileRedux",serviceProfileRedux)
@@ -163,42 +157,44 @@ const Posts = () => {
 
 
         // fetch from the update views api and update the views on the backend
-        if (item._id && typeof item._id === 'string' && item._id.length>0){
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/update_views`,{
-                method:"PATCH",
-                headers:{
-                    'Content-Type': 'application/json'
-                },
-                body:JSON.stringify({id:item._id,user_id:profileDataRedux._id})
-            })
+        if (profileDataRedux){
+            if (item._id && typeof item._id === 'string' && item._id.length>0){
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/update_views`,{
+                    method:"PATCH",
+                    headers:{
+                        'Content-Type': 'application/json'
+                    },
+                    body:JSON.stringify({id:item._id,user_id:profileDataRedux._id})
+                })
 
 
 
-            // log out the error if the response is not okay meaning the views did not get updated on the backend for some reason
-            if (!response.ok){
-                const errorBody  = await response.json() 
-                console.log(errorBody)
+                // log out the error if the response is not okay meaning the views did not get updated on the backend for some reason
+                if (!response.ok){
+                    const errorBody  = await response.json() 
+                    console.log(errorBody)
+                }
+
+                // set the service redux to the updated post data sent from the backend
+                else
+                {
+                    const viewMessage = await response.json()
+                    console.log(viewMessage.post)
+                    dispatch(setService(viewMessage.post))
+                    dispatch(updateService(viewMessage.post))
+                    console.log(viewMessage)
+                }
+                
+
+            }
+            //response if item or item id is null
+            else{
+                console.log("no itemid",item)
             }
 
-            // set the service redux to the updated post data sent from the backend
-            else
-            {
-                const viewMessage = await response.json()
-                console.log(viewMessage.post)
-                dispatch(setService(viewMessage.post))
-                dispatch(updateService(viewMessage.post))
-                console.log(viewMessage)
-            }
-            
-
-        }
-        //response if item or item id is null
-        else{
-            console.log("no itemid",item)
         }
 
-    }
-
+        }
     
     // set the like and unlike state base on whether the liked id array of te services contains the id of the user profile
     // this means that like and unlike stste will be set based on if the user has liked the post in the service redux

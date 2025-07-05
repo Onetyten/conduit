@@ -28,10 +28,16 @@ const ServiceSlider = () => {
 
 
 async function LikePost() {
-    if (!serviceRedux || !profileDataRedux) {
-        console.error("Missing service or profile data")
+    if (!serviceRedux) {
+        console.error("Missing service")
         return
-      }
+    }
+
+    if (!profileDataRedux) {
+        console.log("User is not logged in")
+        alert("Log in to like services")
+        return
+    }
 
     const likeResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/updateLikes`,{
         method:'PATCH',

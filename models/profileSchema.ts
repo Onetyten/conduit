@@ -1,16 +1,17 @@
 import mongoose from "mongoose";
 const profileSchema  = new mongoose.Schema({
-    firstName:{type:String},
-    lastName:{type:String},
-    password:{type:String},
+    firstName:{type:String,required:true},
+    lastName:{type:String, required:true },
+    password:{type:String,required:true},
     email:{type:String,
         unique:true,
+        required:true,
         trim:true,
         lowercase:true
     },
     profilePicture:{type:String, default:'https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png'},
     bio:{type:String},
-    isTalent:{type:Boolean},
+    isTalent:{type:Boolean,default:false},
     skills:[{type:String}],
     serviceCategories: [{ type: String }],
     hourlyRate:{type:Number},
@@ -20,7 +21,7 @@ const profileSchema  = new mongoose.Schema({
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
     location:{
-        city:{type:String},
+        district:{type:String},
         state:{type:String},
         country:{type:String}
     },

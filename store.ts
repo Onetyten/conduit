@@ -6,6 +6,7 @@ import servicePostReducer from '@/state/viewedService/viewedService'
 import serviceProfileReducer from '@/state/serviceProfile/serviceProfile'
 import likeHeartReducer from '@/state/likedHeart/likedHeart'
 import showSignUpReducer from '@/state/showSignUp/showSignUp'
+import locationalDataSlice from '@/state/locationalData/locationalDataSlice'
 import storage from 'redux-persist/lib/storage'
 import {persistReducer,persistStore} from 'redux-persist'
 import { combineReducers } from '@reduxjs/toolkit'
@@ -25,7 +26,8 @@ const reducer = combineReducers({
     service:servicePostReducer,
     serviceProfile:serviceProfileReducer,
     heartState: likeHeartReducer,
-    showSignUp:showSignUpReducer
+    showSignUp:showSignUpReducer,
+    locationalData:locationalDataSlice
 })
 
 const persistedReducer = persistReducer(persistConfig,reducer)

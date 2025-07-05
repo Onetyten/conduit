@@ -1,51 +1,57 @@
 import React from 'react'
 import NavigationButton from '../NavigationButton'
+import axios from 'axios'
 
 interface propTypes{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
+    setUploadingProfile:React.Dispatch<React.SetStateAction<boolean>>
     slideIndex:number
-    email:string
     firstname :string
+    email :string
     lastname :string
     password :string
-    city :string
+    district :string
     country :string
     state :string
-    profilePic :string
+    profileImage :File | null
 }
 
 
 
 
+
 export default function CreateUser(props:propTypes) {
-    const {setSlideIndex,slideIndex,firstname,email,lastname,password,city,country,state,profilePic} = props
+    const {setSlideIndex,slideIndex,firstname,email,lastname,password,country,state,district,profileImage,setUploadingProfile} = props
 
     function Prev() {
         setSlideIndex(slideIndex-1)
     }
 
     async function CreateAccount(){
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/createNewProfile`,{
-            method:'POST',
-            headers:{
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({firstName:firstname,lastName:lastname,password:password,email:email,profilePicture:profilePic,city:city,state:state,country:country})
-        })
-        
+        setUploadingProfile(true)
+        const userData = new FormData()
+        userData.append('firstName',firstname)
+        userData.append('lastName',lastname)
+        userData.append('email',email)
+        userData.append('password',password)
+        userData.append('state',state)
+        userData.append('district',district)
+        userData.append('country',country)
+        if (profileImage) userData.append('profileImage',profileImage)
 
-        if (!response.ok){
-            const errorBody  = await response.json() 
-            console.log(errorBody)
-        }
+        console.log(userData)
 
-        else{
-            const responsedata  = await response.json()
-            console.log(responsedata.userdata)
+        try {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/createNewProfile`,userData)
+            if (response.status != 200) return
+            console.log(response)
             setSlideIndex(slideIndex+1)
-        }
+            setUploadingProfile(false)
 
-         
+        }
+        catch (error) {
+             console.log(error)
+        }
         
     } 
   return (

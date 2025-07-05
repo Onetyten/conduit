@@ -2,6 +2,8 @@
 import mongoConnect from "@/lib/utils/connectDB";
 import Profile from "@/models/profileSchema";
 import { NextResponse } from "next/server";
+import bcrypt from 'bcrypt'
+
 
 interface Params {
     email: string;
@@ -18,8 +20,10 @@ export async function POST(request: Request, { params }: { params: Params }) {
         if (!user) {
             return NextResponse.json({ message: "This profile doesn't exist",success:false }, { status: 404 });
         }
+        
+        const passwordMatch = await bcrypt.compare(password, user.password);
 
-        if (password !== user.password) {
+        if (!passwordMatch) {
             return NextResponse.json({ message: "Invalid password",success:false }, { status: 401 });
         }
        

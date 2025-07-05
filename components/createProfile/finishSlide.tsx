@@ -5,13 +5,6 @@ import { useRouter } from 'next/navigation';
 
 interface propTypes{
     firstname :string
-    email :string
-    lastname :string
-    password :string
-    city :string
-    country :string
-    state :string
-    profilePic :string
 }
 
 
@@ -34,7 +27,7 @@ export default function FinishSlide(props:propTypes) {
   return (
     <div className='h-full w-full px-[10%]'>
         <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
-            <p className='lg:text-2xl text-lg  font-semibold '>All Done 🎉</p>
+            <p className='lg:text-2xl text-lg  font-semibold '>All Done </p>
             <p>You have successfully created a conduit profile</p>
             <p>Welcome {firstname}</p>
 

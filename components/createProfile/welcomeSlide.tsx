@@ -26,27 +26,29 @@ export default function WelcomeSlide(props:propTypes) {
     const [showLastNameErr,setShowLastNameErr] = useState(false)
 
     function Next() {
-        if (email.length<1){
+        if (email.trim().length<1){
             setShowEmailErr(true)
         }
-        if (firstname.length<1){
+        if (firstname.trim().length<1){
             setShowFirstNameErr(true)
         }
-        if (lastname.length<1){
+        if (lastname.trim().length<1){
             setShowLastNameErr(true)
         }
-        if (email.length>1&&firstname.length>1&&lastname.length>1){
+        
+        if (email.trim().length>0 && firstname.trim().length>0&&lastname.trim().length>0){
             setSlideIndex(slideIndex+1)
         }
 
-
+    
         
     }
+    
     
   return (
     <div className='h-full w-full px-[20%]'>
         <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
-            <p className='lg:text-2xl text-lg  font-semibold '>Welcome to conduit 👋</p>
+            <p className='lg:text-2xl text-lg  font-semibold text-conduit'>Welcome to conduit 👋</p>
 
             <div className='flex flex-col gap-2 w-full'>
               <input type='email' value={email} onChange={(e)=>{setEmail(e.target.value.toLowerCase())}} placeholder='example@email.com' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
