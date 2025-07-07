@@ -12,6 +12,7 @@ import { setService ,} from '@/state/viewedService/viewedService';
 import { clearServiceProfile, setServiceProfile } from '@/state/serviceProfile/serviceProfile';
 import { updateService } from '@/state/updatedService/updatedService'
 import { serviceInterface } from '@/lib/types';
+import Link from 'next/link';
 
 
 
@@ -250,7 +251,11 @@ const Posts = () => {
                     return(
                         <div key={index} className='flex gap-3 flex-col'>
                             <div className="relative w-80 h-64">
-                                <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg" fill onClick={()=>{showModal(item,index)}}/>
+                                <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg hidden sm:block" fill onClick={()=>{showModal(item,index)}}/>
+                                <Link  href="/serviceDetails">
+                                    <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg block sm:hidden" fill/>
+                                </Link>
+                                
                                 
                                 <motion.div  initial={{height:"100%", opacity:1}} animate={{height:0,opacity:0.5}} transition={{ duration: 0.5 }} className="div top-0 left-0 absolute w-full h-0 bg-gray-400">
 

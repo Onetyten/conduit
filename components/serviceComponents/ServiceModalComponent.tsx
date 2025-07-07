@@ -12,7 +12,7 @@ export default function ServiceModalComponent() {
     const dispatch  = useDispatch()
 
   return (
-        <div className='w-full flex justify-between items-center p-3 pt-16 pb-6 sm:pb-3 sm:pt-3'>
+        <div className='w-full flex justify-between items-center p-3'>
             <IoCloseSharp className='text-2xl' onClick={()=>{dispatch(serviceFalse())}}/>
             
             <div className='flex gap-2 items-center text-xs sm:text-sm text-conduit'>
