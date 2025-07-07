@@ -13,8 +13,8 @@ export default function Home() {
       <IntroSection />
       <SearchForm />
       <SectionCarousel />
-      <div className="px-4">  
-         <p className=" text-sm text-gray-400">
+      <div className="sm:px-4 px-1">  
+         <p className=" text-xs sm:text-sm text-gray-400">
             Search result for all services
          </p>
          <Posts/>

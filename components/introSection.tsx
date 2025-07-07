@@ -4,7 +4,7 @@ import HeaderSlide from './headerSlide'
 
 const IntroSection = () => {
   return (
-    <div className='w-full flex sm:flex-row flex-col justify-center gap-3 items-center py-10'>
+    <div className='w-full flex sm:flex-row flex-col justify-center gap-3 items-center py-10 px-2'>
         <div className=' py-10 gap-6 flex flex-col w-full sm:w-md'>
             <h1 className='text-3xl font-medium'>Skills on Demand</h1>
             <p className='text-sm text-gray-500'>Conduit is revolutionizing service hiring by creating a seamless marketplace for connecting clients with skilled professionals.  </p>
