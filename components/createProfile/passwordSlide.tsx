@@ -3,6 +3,7 @@ import React,{useState} from 'react'
 import NavigationButton from '../NavigationButton'
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
+import { toast } from 'react-toastify';
 
 interface propTypes{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
@@ -27,9 +28,11 @@ export default function PasswordSlide(props:propTypes) {
     function Next() {
         if (password.length<1){
             setShowPasswordEmpty(true)
+            toast.error("The password field is empty",{autoClose:1000})
         }
         if (password!=passwordCheck){
             setShowPasswordMatchErr(true)
+             toast.error("Passwords do not match",{autoClose:1000})
         }
         if(password.length>1 &&password==passwordCheck){
             setSlideIndex(slideIndex+1)
@@ -48,7 +51,7 @@ export default function PasswordSlide(props:propTypes) {
 
             <div className='flex flex-col gap-2 w-full'>
                 <div className='relative w-full h-full flex justify-center items-center'>
-                    <input type ={`${showPassword?'text':'password'}`} value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
+                    <input required type ={`${showPassword?'text':'password'}`} value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
                     {showPassword?(<FaEyeSlash className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPassword(false)}}/>):(<FaEye className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPassword(true)}}/>)}
 
                 </div>
@@ -63,7 +66,7 @@ export default function PasswordSlide(props:propTypes) {
 
             <div className='flex flex-col gap-2 w-full'>
                 <div className='relative w-full h-full flex justify-center items-center'>
-                    <input type={`${showPasswordCheck?'text':'password'}`} value={passwordCheck} onChange={(e)=>{setPasswordCheck(e.target.value)}} placeholder='Confirm Password'className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />   
+                    <input required type={`${showPasswordCheck?'text':'password'}`} value={passwordCheck} onChange={(e)=>{setPasswordCheck(e.target.value)}} placeholder='Confirm Password'className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />   
                     {showPasswordCheck?(<FaEyeSlash className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPasswordCheck(false)}}/>):(<FaEye className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPasswordCheck(true)}}/>)} 
                 </div>
 

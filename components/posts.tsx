@@ -120,20 +120,24 @@ const Posts = () => {
     },[loading,fetchPost,limit,hasMore])
 
 
-
-
+    // This is the algorithm that is supposed to update views and likes on the frontend but the current implementation right now is stupid
+    // get to it later
+    // it should be relatively easy 
     useEffect(() => {
         if (!newServiceRedux) return
         if (post.length <= 0) return
-        setPost(prev => {
-            const newPosts = [...prev];
-            newPosts[serviceIndex] = newServiceRedux;
-            return newPosts;
-        });
+        // setPost(prev => {
+        //     const newPosts = [...prev];
+        //     newPosts[serviceIndex] = newServiceRedux;
+        //     return newPosts;
+        // });
     }, [newServiceRedux, serviceIndex,post.length]);
 
 
-    const showModal = async (item:serviceInterface,index:number)=>{
+    const showModal =()=>{
+        dispatch(serviceTrue())
+    }
+    const getService = async (item:serviceInterface,index:number)=>{
         if (!profileDataRedux) console.log("User profile is not logged in")
         setserviceIndex(index)
 
@@ -153,7 +157,7 @@ const Posts = () => {
 
         // set the show service redux
         // console.log("Service Redux", serviceRedux,"\nprofileDataRedux",profileDataRedux,"\nserviceProfileRedux",serviceProfileRedux)
-        dispatch(serviceTrue())
+        
 
 
 
@@ -244,15 +248,15 @@ const Posts = () => {
 
     
   return (
-    <div className='flex justify-center w-full p-5'>
-        <div className='text-xs py-6 flex gap-6 justify-center flex-wrap'>
+    <div className='flex flex-col justify-center w-full py-5'>
+        <div className='text-xs py-6 gap-6 justify-start grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full'>
             {post.length>0?(
                 post.map((item ,index)=>{
                     return(
-                        <div key={index} className='flex gap-3 flex-col'>
-                            <div className="relative w-80 h-64">
-                                <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg hidden sm:block" fill onClick={()=>{showModal(item,index)}}/>
-                                <Link  href="/serviceDetails">
+                        <div key={index} className='flex gap-3 w-full flex-col col-span-1'>
+                            <div className="relative cursor-pointer h-80 sm:h-72">
+                                <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg hidden sm:block" fill onClick={()=>{getService (item,index);showModal()}}/>
+                                <Link  href="/serviceDetails" onClick={()=>{getService (item,index)}}>
                                     <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg block sm:hidden" fill/>
                                 </Link>
                                 
@@ -265,18 +269,21 @@ const Posts = () => {
                                                             
                             <div className='flex items-center justify-between '>
                                 <div className='flex gap-2 items-center'>
-                                    <Image src={item.galleryImages[0]} alt='post cover image' className='object-cover aspect-square rounded-3xl' width={25} height={100}/> 
+                                    <Link  href="/serviceDetails" onClick={()=>{getService (item,index)}}>
+                                        <Image src={item.galleryImages[0]} alt='post  cover image' className='object-cover cursor-pointer aspect-square rounded-3xl' width={25} height={100}/> 
+                                    </Link>
+                                    
                                     <p>
                                         {item.title?.length<20?item.title:`${item.title.slice(0,18)}...`}
                                     </p>
                                 </div>
                                 <div className='flex gap-3 text-sm items-center'>
-                                    <div className='flex gap-1 items-center'>
+                                    <div className='flex gap-1 items-center cursor-pointer'>
                                         < MdOutlineRemoveRedEye/>
                                         <p className='text-xs'>{item.views}</p>
                                     </div>
 
-                                    <div className='flex gap-1 items-center'>
+                                    <div className='flex gap-1 items-center cursor-pointer'>
                                         <CiHeart/>
                                         <p className='text-xs'>{item.likes}</p>
                                     </div>
@@ -298,10 +305,11 @@ const Posts = () => {
             <div ref = {triggerRef} className='w-3 h-3'>
 
             </div>
-            {loading&&(<div className='w-full py-5 flex justify-center items-center text-base text-gray-400'>
-                <p>Loading services</p> 
-            </div>)}
+
         </div>
+        {loading&&(<div className='w-full py-5 flex justify-center items-center text-base text-gray-400'>
+                <p>Loading services</p> 
+        </div>)}
     </div>
   )
 }

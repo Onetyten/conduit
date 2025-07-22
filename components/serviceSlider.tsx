@@ -78,7 +78,7 @@ async function LikePost() {
                 <div className='md:w-[35%] lg:w-[50%] sm:w-[20%] sm:h-full w-full h-0 sm:bg-slate-500/50 bg-transparent  sm:backdrop-blur-xs' onClick={()=>{dispatch(serviceFalse())}}>
 
                 </div>
-                <div className='md:w-[65%] lg:w-[50%]  sm:w-[80%] w-full h-full bg-white flex flex-col gap-2 overflow-scroll hide-scrollbar '>
+                <div className='md:w-[65%] lg:w-[50%] sm:w-[80%] w-full h-full bg-white flex flex-col items-center gap-6 overflow-scroll hide-scrollbar '>
                     <ServiceModalComponent />
                     <ServiceProfileSection serviceProfileRedux ={serviceProfileRedux} serviceRedux={serviceRedux}/>
                     <LikeComponent LikePost={LikePost}/>

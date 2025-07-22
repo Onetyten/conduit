@@ -1,6 +1,7 @@
 "use client"
 import React,{useState} from 'react'
 import NavigationButton from '../NavigationButton'
+import { toast } from 'react-toastify'
 
 
 interface propTypes{
@@ -28,12 +29,16 @@ export default function WelcomeSlide(props:propTypes) {
     function Next() {
         if (email.trim().length<1){
             setShowEmailErr(true)
+            toast.error("Email is required",{autoClose:1000})
         }
         if (firstname.trim().length<1){
             setShowFirstNameErr(true)
+            toast.error("First name is required",{autoClose:1000})
         }
         if (lastname.trim().length<1){
             setShowLastNameErr(true)
+            toast.error("Last name is required",{autoClose:1000})
+
         }
         
         if (email.trim().length>0 && firstname.trim().length>0&&lastname.trim().length>0){
@@ -48,10 +53,10 @@ export default function WelcomeSlide(props:propTypes) {
   return (
     <div className='h-full w-full px-6 sm:px-[20%] text-xs'>
         <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
-            <p className='lg:text-2xl text-lg  font-semibold text-conduit'>Welcome to conduit 👋</p>
+            <p className='lg:text-2xl text-lg  font-semibold text-conduit'>Welcome to conduit</p>
 
             <div className='flex flex-col gap-2 w-full'>
-              <input type='email' value={email} onChange={(e)=>{setEmail(e.target.value.toLowerCase())}} placeholder='example@email.com' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
+              <input type='email' required value={email} onChange={(e)=>{setEmail(e.target.value.toLowerCase())}} placeholder='example@email.com' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
               {showEmailErr&&(
                 <p className='text-xs text-red-600'>
                     Email is required
@@ -61,7 +66,7 @@ export default function WelcomeSlide(props:propTypes) {
             </div>
             
             <div className='flex flex-col gap-2 w-full'>
-                <input type='text' value={firstname} onChange={(e)=>{setFirstname(e.target.value)}} placeholder='First Name' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
+                <input type='text' required value={firstname} onChange={(e)=>{setFirstname(e.target.value)}} placeholder='First Name' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
                 {showFirstNameErr&&(
                     <p className='text-xs text-red-600'>
                         First name is required
@@ -71,7 +76,7 @@ export default function WelcomeSlide(props:propTypes) {
             </div>
             
             <div className='flex flex-col gap-2 w-full'>
-               <input type='text' value={lastname} onChange={(e)=>{setLastname(e.target.value)}} placeholder='Last Name' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
+               <input type='text' required value={lastname} onChange={(e)=>{setLastname(e.target.value)}} placeholder='Last Name' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
                {showLastNameErr&&(
                     <p className='text-xs text-red-600'>
                         Last name is required

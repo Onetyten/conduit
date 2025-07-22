@@ -10,7 +10,7 @@ const SearchForm = () => {
   return (
     <>
       {/* //whatever the input of this form is is appended to the end of the route */}
-      <Form action="/" scroll={false} className='mt-10 '>
+      <Form action="/" scroll={false} className='mt-10 w-full '>
         <div className='relative w-full text-sm'>
 
           {/* query is set as the default value and henforth if the input of thre searchbox is changed that is logged into query you're welcome */}

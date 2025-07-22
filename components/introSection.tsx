@@ -11,12 +11,12 @@ const IntroSection = () => {
 
             <div className='sm:text-sm text-xs flex gap-3'>
                 <form className='text-background border-background border-[1px] hover:border-foreground hover:text-foreground hover:bg-background bg-foreground w-fit px-5 py-2 transition-all rounded-full'>
-                    <button>
+                    <button className='cursor-pointer'>
                         Hire service
                     </button>
                 </form>
-                <form className='hover:text-background  hover:bg-foreground text-foreground border-[1px] border-foreground transition-all  w-fit px-5 py-2 rounded-full'>
-                    <button>
+                <form className='hover:text-background  hover:bg-foreground cursor-pointer text-foreground border-[1px] border-foreground transition-all  w-fit px-5 py-2 rounded-full'>
+                    <button className='cursor-pointer'>
                         Get Hired
                     </button>
                 </form>

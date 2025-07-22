@@ -59,13 +59,13 @@ export default function Page() {
 
     
   return (
-    <div className='mt-6'>
+    <div className='mt-6 flex items-center gap-6 flex-col'>
         <div className='w-full mb-20'>
             <BackButton/>
         </div>
-        <div className=' sm:px-10'>
-            <ServiceProfileSection serviceProfileRedux={serviceProfileRedux} serviceRedux={serviceRedux} />
-        </div>
+
+        <ServiceProfileSection serviceProfileRedux={serviceProfileRedux} serviceRedux={serviceRedux} />
+
         <LikeComponent LikePost={LikePost}/>
         <ServiceProfileDetails  serviceProfileRedux ={serviceProfileRedux} serviceRedux={serviceRedux}/>
         <ReviewService  serviceRedux={serviceRedux} />

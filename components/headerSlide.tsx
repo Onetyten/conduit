@@ -59,7 +59,7 @@ const HeaderSlide = () => {
 
 
 
-            <div className='min-w-32 h-32 md:flex sm:hidden rounded-2xl overflow-hidden flex flex-col justify-between p-2 items-center bg-background absolute right-1/2 -bottom-12 translate-x-1/2  sm:-right-0 sm:top-1/2 sm:-translate-y-1/2 shadow-md'>
+            <div className='min-w-32 h-32 md:flex cursor-pointer sm:hidden rounded-2xl overflow-hidden flex flex-col justify-between p-2 items-center bg-background absolute right-1/2 -bottom-12 translate-x-1/2  sm:-right-0 sm:top-1/2 sm:-translate-y-1/2 shadow-md'>
                 <Image src={headerDetails[index]?.profileImg} width={50} height={70} alt='profile image' className='object-cover text-xs rounded-full aspect-square'/>
                 <p className='text-xs font-semibold'>{headerDetails[index].name}</p>
                 <p className='text-xs bg-gray-100 border-gray-200 py-1 px-3 border-[1px]'>{headerDetails[index].profession}</p>

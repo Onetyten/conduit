@@ -10,7 +10,7 @@ interface serviceInterfaceProp{
 
 export default function ServiceProfileSection({serviceProfileRedux,serviceRedux}:serviceInterfaceProp) {
   return (
-    <div className='flex gap-1 justify-between p-3 items-center'>
+    <div className='flex gap-1 justify-between w-[90%] max-w-2xl items-center'>
         <div className='flex items-center gap-2'>
             <div className='relative w-12 h-12'>
                 <Link href={`/profile`}>
@@ -44,7 +44,7 @@ export default function ServiceProfileSection({serviceProfileRedux,serviceRedux}
             </div>
         </div>
 
-        <div className='bg-conduit text-background p-2 mx-3 h-9 text-nowrap flex items-center rounded-md sm:rounded-full text-xs'>
+        <div className='bg-conduit text-background hover:bg-slate-800 cursor-pointer  p-2 mx-3 h-9 text-nowrap flex items-center rounded-md sm:rounded-full text-xs'>
             Get in Touch
         </div>
     

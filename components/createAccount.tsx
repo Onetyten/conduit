@@ -12,6 +12,7 @@ import CloseSlide from './serviceComponents/closeSlide';
 import CreateUser from './createProfile/createUser';
 import axios from 'axios';
 import Image from 'next/image';
+import { toast } from 'react-toastify';
 
  
 
@@ -32,6 +33,41 @@ export default function CreateAccount() {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [ profilePicUrl,setProfilePicUrl] = useState("https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png")
     const [slideIndex,setSlideIndex] = useState(0)
+
+
+    async function CreateAccount(e:React.FormEvent<HTMLFormElement>){
+
+        e.preventDefault();
+        setUploadingProfile(true)
+        const userData = new FormData()
+        userData.append('firstName',firstname)
+        userData.append('lastName',lastname)
+        userData.append('email',email)
+        userData.append('password',password)
+        userData.append('state',state)
+        userData.append('district',district)
+        userData.append('country',country)
+        if (profileImage) userData.append('profileImage',profileImage)
+
+        console.log(userData)
+
+        try {
+            const response = await axios.post(`/api/createNewProfile`,userData)
+            if (response.status != 200) return
+            console.log(response)
+            setSlideIndex(slideIndex+1)
+            setUploadingProfile(false)
+            toast.success("Account created successfully, signin")
+
+        }
+        catch (error) {
+             console.log(error)
+             toast("A error occured while creating your profile")
+             setUploadingProfile(false)
+
+        }
+        
+    } 
 
 
     useEffect(()=>{
@@ -78,7 +114,7 @@ export default function CreateAccount() {
                     <CloseSlide/>
                     
                     <div className='h-full w-full flex justify-center items-center'>
-                        <div className='h-full w-full'>
+                        <form onSubmit={CreateAccount} className='h-full w-full'>
 
                             {/* first carousel item */}
                             {
@@ -98,19 +134,7 @@ export default function CreateAccount() {
                                 ):
                                 slideIndex==4?
                                 (
-                                    <CreateUser 
-                                        setSlideIndex ={setSlideIndex}
-                                        slideIndex={slideIndex}
-                                        email = {email}
-                                        firstname = {firstname}
-                                        lastname = {lastname} 
-                                        password = {password}
-                                        district = {district}
-                                        country = {country}
-                                        state = {state}
-                                        setUploadingProfile = {setUploadingProfile}
-                                        profileImage = {profileImage}
-                                    />
+                                    <CreateUser setSlideIndex ={setSlideIndex} slideIndex={slideIndex} />
                                 )
                                 :
                                 (
@@ -124,7 +148,7 @@ export default function CreateAccount() {
 
 
 
-                        </div>
+                        </form>
                     </div>
 
                     {uploadingProfile&&(

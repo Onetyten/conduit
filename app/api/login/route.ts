@@ -27,7 +27,7 @@ export async function POST(request: Request) {
         }
        
         const {password:_, ...userWithoutPassword} = user.toObject();
-        return NextResponse.json({ message: 'Profile retrieved successfully', success: true, user: userWithoutPassword });
+        return NextResponse.json({ message: 'Profile retrieved successfully', success: true, user: userWithoutPassword },{status:200});
     } catch (error) {
         console.error("Error during login:", error);
         return NextResponse.json({ message: "Internal server error", success: false }, { status: 500 });

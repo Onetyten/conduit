@@ -27,7 +27,7 @@ const NavbarAuth = () => {
       </div>
 
       
-      <div className=' flex justify-end sm:justify-center items-center'>
+      <div className=' flex justify-end font-raleway sm:justify-center items-center'>
         {
           userReduxData?
             (
@@ -37,7 +37,7 @@ const NavbarAuth = () => {
                       Create a service
                     </Link>
                     <form action={()=>{dispatch(clearUser())}} className='hover:text-conduit cursor-pointer text-foreground py-1 px-2 sm:px-5 sm:py-2 rounded-full'>
-                      <button type='submit'>
+                      <button type='submit' className='cursor-pointer'>
                         Log out
                       </button>
                     </form>
