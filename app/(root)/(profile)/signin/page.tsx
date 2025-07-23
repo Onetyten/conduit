@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 
-"use client"
+'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Logo from '@/public/Images/Logo.png'
@@ -10,6 +10,8 @@ import {setUser} from '@/state/userInfo/userSlice'
 import { useRouter } from 'next/navigation'
 import { RootState } from '@/store'
 import { signUpTrue } from '@/state/showSignUp/showSignUp'
+import { toast } from 'react-toastify'
+import axios from 'axios'
 
 export default function page() {
   const router = useRouter()
@@ -18,34 +20,41 @@ export default function page() {
   const userReduxdata = useSelector((state:RootState)=>state.user.user)
   const dispatch = useDispatch()
 
-
-
-  const Submit = async () => {
+  async function SignInUser(e:React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     try {
-      const response  = await fetch(`/api/login`,{
-        method:'POST',
-        headers:{
-          'Content-Type':'application/json'
-        },
-        body:JSON.stringify({password,email})
-      })
-
-      const userData = await response.json()
-      if (!response.ok)
-        {
-          
-          alert(userData.message)
-          throw new Error(`Failed to fetch user ${email}`)
-        }
+      const response  = await axios.post(`/api/login`,{password,email})
+      const userData = await response.data
+      console.log(userData)
+      if (!(response.status == 200))
+      {
+        return toast.error(userData.message)
+      }
       dispatch(setUser(userData.user))
+      toast.success("Signin successful")
       console.log("redux data",userReduxdata)
       router.push('/');
     }
 
-    catch (error) {
-      console.log(error)
+    catch (error)
+    {
+      if (axios.isAxiosError(error)){
+        if (error.response){
+          toast.error(error.response.data.message)
+          console.log(error.response.data.message)
+        }
+        
+      }
+      else
+      {
+        toast.error("Unexpected error")
+      }
+      
+
     }
   }
+
+
 
   function SignIn(){
     dispatch(signUpTrue())
@@ -59,16 +68,15 @@ export default function page() {
                 <Image src={Logo} alt='logo' className='w-5 object-contain'/>
                 <p className='font-rowdies text-conduit font-bold text-2xl'>
                   Conduit .
-                </p>
-               
+                </p>  
         </div>
         <div className='lg:w-5xl w-full flex justify-center gap-3 lg:p-20 items-center'>
           <div className='flex lg:w-[50%] w-full gap-6 flex-col'>
-            <h1 className='lg:text-2xl text-lg  font-semibold '>Welcome back to Conduit 👋</h1>
-            <form action={()=>{Submit()}} className='flex gap-6 flex-col items-center'>
-                <input type='email' value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='name@email.com' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
-                <input type='password'  value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='......................................' className='h-12 rounded-sm placeholder:text-gray-500  p-3 px-5 w-full border-[1px]' />
-                <button className='w-full bg-foreground text-background lg:p-4 p-3 lg:text-sm text-xs hover:bg-conduit lg:rounded-full rounded-lg  mt-6 lg:mt-0' type='submit'>Log in </button>
+            <h1 className='lg:text-2xl text-lg  font-semibold '>Welcome back to Conduit</h1>
+            <form onSubmit={SignInUser} className='flex gap-6 flex-col items-center'>
+                <input type='email' tabIndex={1} required value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='name@email.com' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
+                <input type='password' tabIndex={2} required  value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='......................................' className='h-12 rounded-sm placeholder:text-gray-500  p-3 px-5 w-full border-[1px]' />
+                <button className='w-full bg-foreground text-background lg:p-4 p-3 lg:text-sm text-xs hover:bg-conduit cursor-pointer lg:rounded-full rounded-lg  mt-6 lg:mt-0' type='submit'>Log in </button>
             </form>
             
           </div>
@@ -83,7 +91,7 @@ export default function page() {
                 >
                   New to Conduit?
                 </p>
-                <button onClick={SignIn} className='lg:p-2 p-1.5 border-[1px] border-foreground lg:rounded-xl rounded-md'>
+                <button onClick={SignIn} className='lg:p-2 p-1.5 border-[1px] border-foreground lg:rounded-xl cursor-pointer rounded-md'>
                   Sign up
                 </button>
         </div>

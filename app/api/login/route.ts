@@ -17,7 +17,7 @@ export async function POST(request: Request) {
         const user = await Profile.findOne({ email: email.toLowerCase() });
 
         if (!user) {
-            return NextResponse.json({ message: "Invalid credentials", success: false }, { status: 401 });
+            return NextResponse.json({ message: "Account does not exist, create account", success: false }, { status: 401 });
         }
         
         const passwordMatch = await bcrypt.compare(password, user.password);

@@ -12,6 +12,7 @@ import ServiceProfileSection from './serviceComponents/ServiceProfileSection'
 import LikeComponent from './serviceComponents/likeComponent'
 import ServiceProfileDetails from './serviceComponents/serviceProfileDetails'
 import ReviewService from './serviceComponents/reviewService'
+import { toast } from 'react-toastify'
 
 
 
@@ -35,7 +36,7 @@ async function LikePost() {
 
     if (!profileDataRedux) {
         console.log("User is not logged in")
-        alert("Log in to like services")
+        toast.warn("Log in to like services")
         return
     }
 

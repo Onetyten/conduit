@@ -8,7 +8,7 @@ export default function CloseSlide() {
     useLockBodyScroll()
     const dispatch = useDispatch()
   return (
-    <button onClick={()=>{dispatch(signUpFalse())}} className='text-2xl absolute top-4 left-4 bg-softblue hover:bg-gray-200 p-2 text-conduit rounded-full'>
+    <button onClick={()=>{dispatch(signUpFalse())}} className='text-2xl cursor-pointer absolute top-4 left-4 bg-softblue hover:bg-gray-200 p-2 text-conduit rounded-full'>
         <MdClose/>
     </button>
 

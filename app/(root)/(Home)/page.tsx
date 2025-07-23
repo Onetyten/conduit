@@ -1,11 +1,11 @@
-"use client"
+
 import SectionCarousel from "@/components/sectionCarousel";
 import IntroSection from "@/components/introSection";
 import SearchForm from "@/components/searchForm"
 import Posts from "@/components/posts";
 import ServiceSlider from "@/components/serviceSlider";
 import CreateAccount from "@/components/createAccount";
-import { ToastContainer } from "react-toastify"
+
 
 export default function Home() {
 
@@ -23,14 +23,6 @@ export default function Home() {
       </div>
       <ServiceSlider/>
       <CreateAccount/>
-      <ToastContainer 
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={true}
-        newestOnTop={true}
-        closeOnClick={false}
-        />
-
       
       
     </div>

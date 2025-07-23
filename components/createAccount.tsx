@@ -49,19 +49,15 @@ export default function CreateAccount() {
         userData.append('country',country)
         if (profileImage) userData.append('profileImage',profileImage)
 
-        console.log(userData)
-
         try {
             const response = await axios.post(`/api/createNewProfile`,userData)
             if (response.status != 200) return
-            console.log(response)
             setSlideIndex(slideIndex+1)
             setUploadingProfile(false)
             toast.success("Account created successfully, signin")
 
         }
-        catch (error) {
-             console.log(error)
+        catch {
              toast("A error occured while creating your profile")
              setUploadingProfile(false)
 
@@ -74,7 +70,6 @@ export default function CreateAccount() {
         async function getLocationalData(){
             
             try {
-                console.log("Locational data redux",LocationalRedux)
                 if (LocationalRedux && LocationalRedux?.city && LocationalRedux.country_name && LocationalRedux.district){
                     setDistrict(LocationalRedux.district)
                     setCountry(LocationalRedux.country_name)
@@ -84,7 +79,6 @@ export default function CreateAccount() {
                 else{
                     const response =await axios.get(`https://api.ipgeolocation.io/ipgeo?apiKey=${process.env.NEXT_PUBLIC_IP_GEOLOCATION_API_KEY}`)
                     if (response.status != 200 ) return
-                    console.log("API locational data",response.data)
                     dispatch(setLocation(response.data))
                     setDistrict(response.data.district)
                     setCountry(response.data.country_name)
