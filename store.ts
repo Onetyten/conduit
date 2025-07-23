@@ -6,6 +6,7 @@ import servicePostReducer from '@/state/viewedService/viewedService'
 import serviceProfileReducer from '@/state/serviceProfile/serviceProfile'
 import likeHeartReducer from '@/state/likedHeart/likedHeart'
 import showSignUpReducer from '@/state/showSignUp/showSignUp'
+import filterTagReducer from '@/state/filterTagSlice/filterTagSlice'
 import locationalDataSlice from '@/state/locationalData/locationalDataSlice'
 import storage from 'redux-persist/lib/storage'
 import {persistReducer,persistStore} from 'redux-persist'
@@ -16,11 +17,12 @@ const persistConfig = {
     key:'root',
     version:1,
     storage,
-    blacklist: ['heartState','showSignUp']
+    blacklist: ['heartState','showSignUp','tagFilter']
 }
 
 const reducer = combineReducers({
     user:userReducer,
+    tagFilter:filterTagReducer,
     showService:showServiceReducer,
     newservice:newServiceReducer,
     service:servicePostReducer,

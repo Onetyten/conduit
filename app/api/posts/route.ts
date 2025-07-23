@@ -8,11 +8,23 @@ export async function GET(request:Request) {
     const {searchParams} = new URL(request.url)
     const page = Number(searchParams.get('page')) || 1
     const limit = Number(searchParams.get('limit')) || DEFAULT_LIMIT
+    const tags = searchParams.get('tags')
+
+    type filterType = {
+        tags?:{$in:string[]}
+    }
+
+    const filter:filterType={}
+
+    if (typeof(tags) == "string" && tags.trim().length>0){
+        filter.tags = {$in:[tags.trim()]}
+    }
+
     const skip = (page-1)*limit
     try {
         await mongoConnect()
-        const totalPosts = await Service.countDocuments()
-        const posts  = await Service.find({}).skip(skip).limit(limit).sort({createdAt:-1}).exec()
+        const totalPosts = await Service.countDocuments(filter)
+        const posts  = await Service.find(filter).skip(skip).limit(limit).sort({createdAt:-1}).exec()
         const totalPages = Math.ceil(totalPosts/limit)
         const hasMore = totalPages>page
         return NextResponse.json({ message:"Posts retrieved Successfully",posts,currentPage:page,totalPages,hasMore},{status:200})

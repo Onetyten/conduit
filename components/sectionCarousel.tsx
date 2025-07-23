@@ -1,29 +1,14 @@
-
-import Link from 'next/link';
-import React from 'react'
+'use client'
+import { setTagFilter } from '@/state/filterTagSlice/filterTagSlice';
+import { RootState } from '@/store';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 
 // const carouseldata = ['Featured','Up & Coming','Salon','Personal Trainer','Plumber','Cleaner','Electrician','Carpenter','Landscaper','Tutor','Chef','Photographer','Massage Therapist','Mechanic','Painter','Handyman','Event Planner','Graphic Designer','Web Developer','Moving Services'
 //   ];
 
-async function fetchTags() {
-  try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ''}/api/getTags`, {
-      cache: 'no-store' 
-    });
 
-    const tagData = await res.json();
-
-    if (!tagData.success) {
-      console.log(tagData.message);
-      return [];
-    }
-
-    return tagData.data;
-  } catch (error) {
-    console.error("Error fetching tags:", error);
-    return [];
-  }
-}
 
 
 interface tagtype{
@@ -33,22 +18,46 @@ interface tagtype{
 }
 
 
-const SectionCarousel = async () => {
-  const tagList = await fetchTags()
+const SectionCarousel = () => {
 
-  if (!tagList){
-      return(
-        <p>Tags</p>
-      )
+  const dispatch = useDispatch()
+  const tagRedux = useSelector((state:RootState)=>state.tagFilter.tagFilter)
+  const [tagList,setTagList] = useState([{count:0,tag:'All services'}])
+
+
+  async function fetchTags() {
+    try {
+      const response = await axios.get('/api/getTags')
+      const tagData = response.data;
+      if (!tagData.success) {
+        console.log(tagData.message);
+        return [];
+      }
+      setTagList(prevList=>[...prevList,...tagData.data]);
     }
+    catch (error) {
+      console.error("Error fetching tags:", error);
+      return [];
+    }
+  }
+
+  useEffect(()=>{
+    fetchTags()
+  },[])
+
+  function setTag(item:string) {
+    console.log(item)
+    dispatch(setTagFilter(item))
+  }
+
   return (
     
-    <div className='flex w-full overflow-x-scroll pt-5 pb-3 text-xs sm:text-sm text-gray-400 gap-2 relative hide-scrollbar flex-nowrap'>
+    <div className='flex w-full overflow-x-scroll pt-5 pb-3 text-xs sm:text-sm text-gray-400 gap-2 relative flex-nowrap'>
         {tagList.map((item:tagtype,index:number)=>{
             return(
-                <Link key={index} href="/" className={` ${index==0?'pl-0 rounded-l-none':''} p-2 px-5 rounded-full hover:bg-gray-200 hover:text-foreground transition-all`}>
+                <div key={index} onClick={()=>{setTag(item.tag)}} className={` ${index==0?'pl-0 rounded-l-none':''} ${item.tag == tagRedux?"bg-gray-200":""} p-2 px-5 rounded-full cursor-pointer hover:bg-gray-200 hover:text-foreground transition-all`}>
                     <p className='w-full whitespace-nowrap'>{item.tag}</p>
-                </Link>
+                </div>
             )
         })}
 

@@ -13,6 +13,8 @@ import { clearServiceProfile, setServiceProfile } from '@/state/serviceProfile/s
 import { updateService } from '@/state/updatedService/updatedService'
 import { serviceInterface } from '@/lib/types';
 import Link from 'next/link';
+import Digital from 'react-activity/dist/Digital'
+import "react-activity/dist/Digital.css";
 
 
 
@@ -22,12 +24,17 @@ const Posts = () => {
     const [serviceIndex,setserviceIndex] = useState(0)
     const [loading,setLoading] = useState(false)
     const [hasMore,setHasMore] = useState(true)
+    const [isSearching,setIsSearching] = useState(false)
     const limit = 20 
 
     const dispatch = useDispatch()
     const serviceRedux = useSelector((state:RootState)=> state.service.service)
     const newServiceRedux = useSelector((state:RootState)=> state.newservice.newservice)
     const profileDataRedux = useSelector((state:RootState)=> state.user.user)
+    const tagRedux = useSelector((state:RootState)=>state.tagFilter.tagFilter)
+    const prevTagRef = useRef(tagRedux)
+
+    
     // const serviceProfileRedux = useSelector((state:RootState)=> state.serviceProfile.serviceProfile)
 
     const observer = useRef<IntersectionObserver|null>(null)
@@ -65,19 +72,29 @@ const Posts = () => {
               }
         },[serviceRedux,dispatch]
       )
-
-
-
       useEffect(()=>{
         getProfile()
       },[getProfile])
 
+      useEffect(()=>{
+        const prevTag = prevTagRef.current
+        if (prevTag !== "All services" && tagRedux === "All services" ){
+            setPost([])
+            setPage(1)
+        }
+        prevTagRef.current = tagRedux
+      },[tagRedux])
 
 
     const fetchPost = useCallback(async (limit:number,Currentpage:number)=>{
         setLoading(true)
-        try {
-            const Response = await fetch(`/api/posts?page=${Currentpage}&limit=${limit}`)
+        try {                
+            let url = `/api/posts?page=${Currentpage}&limit=${limit}`;
+
+            if (tagRedux && tagRedux !== "" && tagRedux !== "All services") {
+                url += `&tags=${encodeURIComponent(tagRedux)}`;
+            }
+            const Response = await fetch(url)
             if (!Response.ok){
                 throw new Error("Failed to get response")
             }
@@ -98,11 +115,37 @@ const Posts = () => {
             setLoading(false)
         }
 
-    },[])
+    },[tagRedux])
 
+
+
+
+    useEffect(()=>{
+        async function loadTagPosts(){
+            try {
+                setIsSearching(true)
+                if (tagRedux && tagRedux !== "" && tagRedux !== "All services"){
+                const newPost  = await fetchPost(50,1)
+                setPost(newPost)
+                setPage(2)
+                setHasMore(true)
+                }
+            }
+            catch (error) {
+                console.log(error)
+            }
+            finally{
+                setIsSearching(false)
+            }
+            
+        }
+        loadTagPosts()
+
+    },[fetchPost, tagRedux])
 
     const loadMorePost  = useCallback(async()=>{
-        if (!hasMore || loading) return
+        if ( !hasMore || loading || (tagRedux && tagRedux !== "" && tagRedux !== "All services")) return;
+
         const newPost  = await fetchPost(limit,page)
         if (newPost && newPost.length>0){
             setPost((prevPosts) => [...prevPosts, ...newPost])
@@ -117,7 +160,7 @@ const Posts = () => {
         
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[loading,fetchPost,limit,hasMore])
+    },[loading,fetchPost,hasMore,tagRedux,page])
 
 
     // This is the algorithm that is supposed to update views and likes on the frontend but the current implementation right now is stupid
@@ -233,12 +276,11 @@ const Posts = () => {
 
     if (triggerRef.current){
         newObserver.observe(triggerRef.current)
-        observer.current = newObserver
+        
     }
-
-    return()=>{
-        if (observer.current) observer.current.disconnect()
-    }
+    observer.current = newObserver
+    return()=>observer.current?.disconnect()
+    
         
     },[loading,loadMorePost])
 
@@ -249,65 +291,78 @@ const Posts = () => {
     
   return (
     <div className='flex flex-col justify-center w-full py-5'>
-        <div className='text-xs py-6 gap-6 justify-start grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full'>
-            {post.length>0?(
-                post.map((item ,index)=>{
-                    return(
-                        <div key={index} className='flex gap-3 w-full flex-col col-span-1'>
-                            <div className="relative cursor-pointer h-80 sm:h-72">
-                                <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg hidden sm:block" fill onClick={()=>{getService (item,index);showModal()}}/>
-                                <Link  href="/serviceDetails" onClick={()=>{getService (item,index)}}>
-                                    <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg block sm:hidden" fill/>
-                                </Link>
-                                
-                                
-                                <motion.div  initial={{height:"100%", opacity:1}} animate={{height:0,opacity:0.5}} transition={{ duration: 0.5 }} className="div top-0 left-0 absolute w-full h-0 bg-gray-400">
+        {isSearching&&
+        (<div className='w-full py-5 mt-10 flex flex-col justify-center items-center text-base text-gray-400'> 
+            <p >
+                Getting search result for {tagRedux} 
+            </p>
+            <div className='p-2'>
+                <Digital size={30} color="#373f51" />
+            </div>
+        </div>)}
 
-                                </motion.div>
-                                
-                            </div>
-                                                            
-                            <div className='flex items-center justify-between '>
-                                <div className='flex gap-2 items-center'>
+        {!isSearching&&(
+            <div className='text-xs py-6 gap-6 justify-start grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full'>
+                {post.length>0?(
+                    post.map((item ,index)=>{
+                        return(
+                            <div key={index} className='flex gap-3 w-full flex-col col-span-1'>
+                                <div className="relative cursor-pointer h-80 sm:h-72">
+                                    <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg hidden sm:block" fill onClick={()=>{getService (item,index);showModal()}}/>
                                     <Link  href="/serviceDetails" onClick={()=>{getService (item,index)}}>
-                                        <Image src={item.galleryImages[0]} alt='post  cover image' className='object-cover cursor-pointer aspect-square rounded-3xl' width={25} height={100}/> 
+                                        <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg block sm:hidden" fill/>
                                     </Link>
                                     
-                                    <p>
-                                        {item.title?.length<20?item.title:`${item.title.slice(0,18)}...`}
-                                    </p>
-                                </div>
-                                <div className='flex gap-3 text-sm items-center'>
-                                    <div className='flex gap-1 items-center cursor-pointer'>
-                                        < MdOutlineRemoveRedEye/>
-                                        <p className='text-xs'>{item.views}</p>
-                                    </div>
+                                    
+                                    <motion.div  initial={{height:"100%", opacity:1}} animate={{height:0,opacity:0.5}} transition={{ duration: 0.5 }} className="div top-0 left-0 absolute w-full h-0 bg-gray-400">
 
-                                    <div className='flex gap-1 items-center cursor-pointer'>
-                                        <CiHeart/>
-                                        <p className='text-xs'>{item.likes}</p>
-                                    </div>
-
+                                    </motion.div>
+                                    
                                 </div>
+                                                                
+                                <div className='flex items-center justify-between '>
+                                    <div className='flex gap-2 items-center'>
+                                        <Link  href="/serviceDetails" onClick={()=>{getService (item,index)}}>
+                                            <Image src={item.galleryImages[0]} alt='post  cover image' className='object-cover cursor-pointer aspect-square rounded-3xl' width={25} height={100}/> 
+                                        </Link>
+                                        
+                                        <p>
+                                            {item.title?.length<20?item.title:`${item.title.slice(0,18)}...`}
+                                        </p>
+                                    </div>
+                                    <div className='flex gap-3 text-sm items-center'>
+                                        <div className='flex gap-1 items-center cursor-pointer'>
+                                            < MdOutlineRemoveRedEye/>
+                                            <p className='text-xs'>{item.views}</p>
+                                        </div>
+
+                                        <div className='flex gap-1 items-center cursor-pointer'>
+                                            <CiHeart/>
+                                            <p className='text-xs'>{item.likes}</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
                             </div>
-                            
+                        )
+                    })):
+                    (
+                        <div className=' text-sm text-gray-400 mt-4'>
+                            {!loading&&(<p>
+                                No Services available at the moment
+                            </p>)}
                         </div>
                     )
-                })):
-                (
-                    <div className=' text-sm text-gray-400 mt-4'>
-                        {!loading&&(<p>
-                            No Services available at the moment
-                        </p>)}
-                    </div>
-                )
-            }
-            <div ref = {triggerRef} className='w-3 h-3'>
+                }
+                <div ref = {triggerRef} className='w-3 h-3'>
+
+                </div>
 
             </div>
+        )}
 
-        </div>
-        {loading&&(<div className='w-full py-5 flex justify-center items-center text-base text-gray-400'>
+        {!isSearching&&loading&&(<div className='w-full py-5 flex justify-center items-center text-base text-gray-400'>
                 <p>Loading services</p> 
         </div>)}
     </div>
