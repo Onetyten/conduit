@@ -1,4 +1,4 @@
-import axios from 'axios';
+
 import Link from 'next/link';
 import React from 'react'
 
@@ -6,15 +6,25 @@ import React from 'react'
 //   ];
 
 async function fetchTags() {
-  const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'
-  const tagResponse = await axios.get(`${baseUrl}/api/getTags`)
-  const tagData = tagResponse.data
-  if (tagData.success== false){
-      console.log(tagData.message)
-      return
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ''}/api/getTags`, {
+      cache: 'no-store' 
+    });
+
+    const tagData = await res.json();
+
+    if (!tagData.success) {
+      console.log(tagData.message);
+      return [];
+    }
+
+    return tagData.data;
+  } catch (error) {
+    console.error("Error fetching tags:", error);
+    return [];
   }
-  return tagData.data
 }
+
 
 interface tagtype{
   count:number
@@ -25,7 +35,14 @@ interface tagtype{
 
 const SectionCarousel = async () => {
   const tagList = await fetchTags()
+
+  if (!tagList){
+      return(
+        <p>Tags</p>
+      )
+    }
   return (
+    
     <div className='flex w-full overflow-x-scroll pt-5 pb-3 text-xs sm:text-sm text-gray-400 gap-2 relative hide-scrollbar flex-nowrap'>
         {tagList.map((item:tagtype,index:number)=>{
             return(
