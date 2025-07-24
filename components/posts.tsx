@@ -31,8 +31,8 @@ const Posts = () => {
     const serviceRedux = useSelector((state:RootState)=> state.service.service)
     const newServiceRedux = useSelector((state:RootState)=> state.newservice.newservice)
     const profileDataRedux = useSelector((state:RootState)=> state.user.user)
-    const tagRedux = useSelector((state:RootState)=>state.tagFilter.tagFilter)
-    const prevTagRef = useRef(tagRedux)
+    const keywordRedux = useSelector((state:RootState)=>state.keyword.keyword)
+    const prevKeywordRef = useRef(keywordRedux)
 
     
     // const serviceProfileRedux = useSelector((state:RootState)=> state.serviceProfile.serviceProfile)
@@ -77,13 +77,13 @@ const Posts = () => {
       },[getProfile])
 
       useEffect(()=>{
-        const prevTag = prevTagRef.current
-        if (prevTag !== "All services" && tagRedux === "All services" ){
+        const prevKeyword = prevKeywordRef.current
+        if (prevKeyword !== "All services" && keywordRedux === "All services" ){
             setPost([])
             setPage(1)
         }
-        prevTagRef.current = tagRedux
-      },[tagRedux])
+        prevKeywordRef.current = keywordRedux
+      },[keywordRedux])
 
 
     const fetchPost = useCallback(async (limit:number,Currentpage:number)=>{
@@ -91,8 +91,8 @@ const Posts = () => {
         try {                
             let url = `/api/posts?page=${Currentpage}&limit=${limit}`;
 
-            if (tagRedux && tagRedux !== "" && tagRedux !== "All services") {
-                url += `&tags=${encodeURIComponent(tagRedux)}`;
+            if (keywordRedux && keywordRedux !== "" && keywordRedux !== "All services") {
+                url += `&q=${encodeURIComponent(keywordRedux)}`;
             }
             const Response = await fetch(url)
             if (!Response.ok){
@@ -115,7 +115,7 @@ const Posts = () => {
             setLoading(false)
         }
 
-    },[tagRedux])
+    },[keywordRedux])
 
 
 
@@ -124,7 +124,7 @@ const Posts = () => {
         async function loadTagPosts(){
             try {
                 setIsSearching(true)
-                if (tagRedux && tagRedux !== "" && tagRedux !== "All services"){
+                if (keywordRedux && keywordRedux !== "" && keywordRedux !== "All services"){
                 const newPost  = await fetchPost(50,1)
                 setPost(newPost)
                 setPage(2)
@@ -141,10 +141,10 @@ const Posts = () => {
         }
         loadTagPosts()
 
-    },[fetchPost, tagRedux])
+    },[fetchPost, keywordRedux])
 
     const loadMorePost  = useCallback(async()=>{
-        if ( !hasMore || loading || (tagRedux && tagRedux !== "" && tagRedux !== "All services")) return;
+        if ( !hasMore || loading || (keywordRedux && keywordRedux !== "" && keywordRedux !== "All services")) return;
 
         const newPost  = await fetchPost(limit,page)
         if (newPost && newPost.length>0){
@@ -160,7 +160,7 @@ const Posts = () => {
         
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[loading,fetchPost,hasMore,tagRedux,page])
+    },[loading,fetchPost,hasMore,keywordRedux,page])
 
 
     // This is the algorithm that is supposed to update views and likes on the frontend but the current implementation right now is stupid
@@ -294,7 +294,7 @@ const Posts = () => {
         {isSearching&&
         (<div className='w-full py-5 mt-10 flex flex-col justify-center items-center text-base text-gray-400'> 
             <p >
-                Getting search result for {tagRedux} 
+                Getting search result for {keywordRedux} 
             </p>
             <div className='p-2'>
                 <Digital size={30} color="#373f51" />
@@ -348,8 +348,8 @@ const Posts = () => {
                         )
                     })):
                     (
-                        <div className=' text-sm text-gray-400 mt-4'>
-                            {!loading&&(<p>
+                        <div className=' text-sm text-gray-400 text-center flex-col col-span-full justify-center items-center w-full flex mt-4'>
+                            {!loading&&(<p className='text-center'>
                                 No Services available at the moment
                             </p>)}
                         </div>
