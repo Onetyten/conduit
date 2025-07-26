@@ -151,7 +151,27 @@
   }
 }
 
+.carousel-scroll::-webkit-scrollbar{
+  background: transparent;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-scroll::-webkit-scrollbar-button{
+  display: none;
+}
+
+.carousel-scroll::-webkit-scrollbar-thumb{
+  background-color: #373f51;
+  border-radius: 5px;
+}
+.carousel-scroll::-webkit-scrollbar-track{
+  background: transparent;
+}
 
 
-
-
+.carousel-scroll {
+  scrollbar-width:6px;
+  scrollbar-color: #373f51 transparent;
+}

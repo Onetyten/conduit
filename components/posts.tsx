@@ -348,11 +348,14 @@ const Posts = () => {
                         )
                     })):
                     (
-                        <div className=' text-sm text-gray-400 text-center flex-col col-span-full justify-center items-center w-full flex mt-4'>
-                            {!loading&&(<p className='text-center'>
+                         !loading && (<div className=' text-sm text-gray-400 text-center gap-6 flex-col col-span-full justify-center items-center w-full flex mt-4'>
+                            <p className='text-center'>
                                 No Services available at the moment
-                            </p>)}
-                        </div>
+                            </p>
+                            <div className='relative'>
+                                <Image src='/icons/NoServices.webp' alt='No service image' className='object-contain' width={250} height={250}/>
+                            </div>
+                        </div>)
                     )
                 }
                 <div ref = {triggerRef} className='w-3 h-3'>
@@ -362,8 +365,11 @@ const Posts = () => {
             </div>
         )}
 
-        {!isSearching&&loading&&(<div className='w-full py-5 flex justify-center items-center text-base text-gray-400'>
+        {!isSearching&&loading&&(<div className='w-full py-5 mt-10 flex flex-col justify-center items-center text-base text-gray-400'>
                 <p>Loading services</p> 
+                <div className='p-2'>
+                <Digital size={30} color="#373f51" />
+            </div>
         </div>)}
     </div>
   )

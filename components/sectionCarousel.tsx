@@ -52,10 +52,10 @@ const SectionCarousel = () => {
 
   return (
     
-    <div className='flex w-full overflow-x-scroll pt-5 pb-3 text-xs sm:text-sm text-gray-400 gap-2 relative flex-nowrap'>
+    <div className='flex w-full overflow-x-scroll pt-5 pb-3 carousel-scroll mb-2 text-xs sm:text-sm text-gray-400 gap-2 relative flex-nowrap'>
         {tagList.map((item:tagtype,index:number)=>{
             return(
-                <div key={index} onClick={()=>{setTag(item.tag)}} className={` ${index==0?'pl-0 rounded-l-none':''} ${item.tag == keywordRedux?"bg-gray-200":""} p-2 px-5 rounded-full cursor-pointer hover:bg-gray-200 hover:text-foreground transition-all`}>
+                <div key={index} onClick={()=>{setTag(item.tag)}} className={`${item.tag == keywordRedux?"bg-gray-200":""} p-2 px-5 rounded-full cursor-pointer hover:bg-gray-200 hover:text-foreground transition-all`}>
                     <p className='w-full whitespace-nowrap'>{item.tag}</p>
                 </div>
             )
