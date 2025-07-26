@@ -37,7 +37,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
       </div>
 
       <div className='flex flex-col items-center justify-center w-[90%] max-w-2xl           text-justify'>
-          <p className='font-semibold'>Description</p>
+          {/* <p className='font-semibold'>Description</p> */}
           <p className=' text-xs sm:text-sm '>
               {serviceRedux?.description} 
           </p>
