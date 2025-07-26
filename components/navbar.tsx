@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className='py-3 flex justify-between w-full text-sm '>
       <div className='flex gap-1 items-center '>
         <Image src={Logo} alt='logo' className='w-5 object-contain'/>
-        <p className='font-rowdies text-conduit font-bold text-2xl'>
+        <p className='raleway-text text-conduit font-bold text-2xl'>
           Conduit .
         </p>
       </div>

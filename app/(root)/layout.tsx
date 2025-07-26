@@ -11,7 +11,7 @@ export default function layout({children}:{children:React.ReactNode})
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <main className='font-inter'>
+        <main className='raleway-text '>
             {children}
             <ToastContainer 
               position="top-right"

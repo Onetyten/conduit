@@ -21,13 +21,13 @@ const NavbarAuth = () => {
     <div className='py-3 flex justify-between w-full text-sm '>
       <div className='flex gap-1 items-center '>
         <Image src={Logo} alt='logo' className='w-5 object-contain'/>
-        <p className='font-rowdies text-conduit font-bold text-xl sm:text-2xl'>
+        <p className='raleway-text text-conduit font-bold text-xl sm:text-2xl'>
           Conduit .
         </p>
       </div>
 
       
-      <div className=' flex justify-end font-raleway sm:justify-center items-center'>
+      <div className=' flex justify-end raleway-text sm:justify-center items-center'>
         {
           userReduxData?
             (

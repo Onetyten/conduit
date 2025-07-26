@@ -66,7 +66,7 @@ export default function page() {
       <div className='flex lg:p-6 w-[90%] lg:w-auto p-3 flex-col bg-white lg:rounded-4xl rounded-md '>
         <div className='flex gap-1 lg:p-2 mb-5 lg:mb-0  items-center '>
                 <Image src={Logo} alt='logo' className='w-5 object-contain'/>
-                <p className='font-rowdies text-conduit font-bold text-2xl'>
+                <p className='raleway-text text-conduit font-bold text-2xl'>
                   Conduit .
                 </p>  
         </div>
