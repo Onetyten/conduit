@@ -1,0 +1,122 @@
+[
+        {
+            "name": "home services",
+            "iconUrl": "https://img.icons8.com/?size=100&id=36966&format=png&color=000000",
+            "_id": "6890d3fbf949b4db49171499",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.289Z",
+            "updatedAt": "2025-08-04T15:38:35.289Z"
+        },
+        {
+            "name": "handyman & repair",
+            "iconUrl": "https://img.icons8.com/?size=100&id=19287&format=png&color=000000",
+            "_id": "6890d3fbf949b4db4917149a",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.289Z",
+            "updatedAt": "2025-08-04T15:38:35.289Z"
+        },
+        {
+            "name": "beauty & wellness",
+            "iconUrl": "https://img.icons8.com/?size=100&id=18167&format=png&color=000000",
+            "_id": "6890d3fbf949b4db4917149b",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.289Z",
+            "updatedAt": "2025-08-04T15:38:35.289Z"
+        },
+        {
+            "name": "tutoring & education",
+            "iconUrl": "https://img.icons8.com/?size=100&id=114461&format=png&color=000000",
+            "_id": "6890d3fbf949b4db4917149c",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.289Z",
+            "updatedAt": "2025-08-04T15:38:35.289Z"
+        },
+        {
+            "name": "freelance & professional",
+            "iconUrl": "https://img.icons8.com/?size=100&id=19800&format=png&color=000000",
+            "_id": "6890d3fbf949b4db4917149d",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.290Z",
+            "updatedAt": "2025-08-04T15:38:35.290Z"
+        },
+        {
+            "name": "pet services",
+            "iconUrl": "https://img.icons8.com/?size=100&id=GzyPUsSOh1UV&format=png&color=000000",
+            "_id": "6890d3fbf949b4db4917149e",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.290Z",
+            "updatedAt": "2025-08-04T15:38:35.290Z"
+        },
+        {
+            "name": "events & entertainment",
+            "iconUrl": "https://img.icons8.com/?size=100&id=haXCqQUbXGmb&format=png&color=000000",
+            "_id": "6890d3fbf949b4db4917149f",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.290Z",
+            "updatedAt": "2025-08-04T15:38:35.290Z"
+        },
+        {
+            "name": "automotive",
+            "iconUrl": "https://img.icons8.com/?size=100&id=32726&format=png&color=000000",
+            "_id": "6890d3fbf949b4db491714a0",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.290Z",
+            "updatedAt": "2025-08-04T15:38:35.290Z"
+        },
+        {
+            "name": "cleaning",
+            "iconUrl": "https://img.icons8.com/?size=100&id=13278&format=png&color=000000",
+            "_id": "6890d3fbf949b4db491714a1",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.290Z",
+            "updatedAt": "2025-08-04T15:38:35.290Z"
+        },
+        {
+            "name": "landscaping & gardening",
+            "iconUrl": "https://img.icons8.com/?size=100&id=16526&format=png&color=000000",
+            "_id": "6890d3fbf949b4db491714a2",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.290Z",
+            "updatedAt": "2025-08-04T15:38:35.290Z"
+        },
+        {
+            "name": "moving & delivery",
+            "iconUrl": "https://img.icons8.com/?size=100&id=hdEGQ3p5dYnh&format=png&color=000000",
+            "_id": "6890d3fbf949b4db491714a3",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.290Z",
+            "updatedAt": "2025-08-04T15:38:35.290Z"
+        },
+        {
+            "name": "software development",
+            "iconUrl": "https://img.icons8.com/?size=100&id=028ilFq60D3M&format=png&color=000000",
+            "_id": "6890d3fbf949b4db491714a4",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.290Z",
+            "updatedAt": "2025-08-04T15:38:35.290Z"
+        },
+        {
+            "name": "graphic design",
+            "iconUrl": "https://img.icons8.com/?size=100&id=12778&format=png&color=000000",
+            "_id": "6890d3fbf949b4db491714a5",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.290Z",
+            "updatedAt": "2025-08-04T15:38:35.290Z"
+        },
+        {
+            "name": "cooking & baking",
+            "iconUrl": "https://img.icons8.com/?size=100&id=8CGaaoHntXL3&format=png&color=000000",
+            "_id": "6890d3fbf949b4db491714a6",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.290Z",
+            "updatedAt": "2025-08-04T15:38:35.290Z"
+        },
+        {
+            "name": "other",
+            "iconUrl": "https://img.icons8.com/?size=100&id=13746&format=png&color=000000",
+            "_id": "6890d3fbf949b4db491714a7",
+            "__v": 0,
+            "createdAt": "2025-08-04T15:38:35.291Z",
+            "updatedAt": "2025-08-04T15:38:35.291Z"
+        }
+    ]

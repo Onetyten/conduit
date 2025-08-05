@@ -1,7 +1,7 @@
     interface PostInterface {
     _id: string;
     title: string;
-    profileId: string;
+    serviceProviderId: string;
     galleryImages: string[];
     description: string;
     amountEarned: number;
@@ -23,19 +23,19 @@
   interface serviceInterface {
     _id: string
     title: string
-    profileId: string
+    serviceProviderId: string
     viewedId: string[]
     likedId: string[]
     galleryImages: string[]
     description: string
     amountEarned: number
     price: number
-    avalableOn: string[]
+    availableOn: string[]
     likes: number
     views: number
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     reviews: any[]
-    avalability: boolean
+    availability: boolean
     deliverables: string[]
     tags: string[]
     createdAt: string

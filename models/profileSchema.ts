@@ -13,11 +13,6 @@ const profileSchema  = new mongoose.Schema({
     bio:{type:String},
     isTalent:{type:Boolean,default:false},
     skills:[{type:String}],
-    serviceCategories: [{ type: String }],
-    hourlyRate:{type:Number},
-    portfolio:{type:String},
-    companyName: { type: String },
-    companyDescription: { type: String },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
     location:{

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "home services",
+    "iconUrl": "https://img.icons8.com/?size=100&id=36966&format=png&color=000000"
+  },
+  {
+    "name": "handyman & repair",
+    "iconUrl": "https://img.icons8.com/?size=100&id=19287&format=png&color=000000"
+  },
+  {
+    "name": "beauty & wellness",
+    "iconUrl": "https://img.icons8.com/?size=100&id=18167&format=png&color=000000"
+  },
+  {
+    "name": "tutoring & education",
+    "iconUrl": "https://img.icons8.com/?size=100&id=114461&format=png&color=000000"
+  },
+  {
+    "name": "freelance & professional",
+    "iconUrl": "https://img.icons8.com/?size=100&id=19800&format=png&color=000000"
+  },
+  {
+    "name": "pet services",
+    "iconUrl": "https://img.icons8.com/?size=100&id=GzyPUsSOh1UV&format=png&color=000000"
+  },
+  {
+    "name": "events & entertainment",
+    "iconUrl": "https://img.icons8.com/?size=100&id=haXCqQUbXGmb&format=png&color=000000"
+  },
+  {
+    "name": "automotive",
+    "iconUrl": "https://img.icons8.com/?size=100&id=32726&format=png&color=000000"
+  },
+  {
+    "name": "cleaning",
+    "iconUrl": "https://img.icons8.com/?size=100&id=13278&format=png&color=000000"
+  },
+  {
+    "name": "landscaping & gardening",
+    "iconUrl": "https://img.icons8.com/?size=100&id=16526&format=png&color=000000"
+  },
+  {
+    "name": "moving & delivery",
+    "iconUrl": "https://img.icons8.com/?size=100&id=hdEGQ3p5dYnh&format=png&color=000000"
+  },
+  {
+    "name": "software development",
+    "iconUrl": "https://img.icons8.com/?size=100&id=028ilFq60D3M&format=png&color=000000"
+  },
+  {
+    "name": "graphic design",
+    "iconUrl": "https://img.icons8.com/?size=100&id=12778&format=png&color=000000"
+  },
+  {
+    "name": "cooking & baking",
+    "iconUrl": "https://img.icons8.com/?size=100&id=8CGaaoHntXL3&format=png&color=000000"
+  }
+  ,{
+    "name":"other",
+    "iconUrl": "https://img.icons8.com/?size=100&id=13746&format=png&color=000000"
+  }
+]

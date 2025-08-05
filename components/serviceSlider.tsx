@@ -83,8 +83,8 @@ async function LikePost() {
                     <ServiceModalComponent />
                     <ServiceProfileSection serviceProfileRedux ={serviceProfileRedux} serviceRedux={serviceRedux}/>
                     <LikeComponent LikePost={LikePost}/>
-                    <ServiceProfileDetails  serviceProfileRedux ={serviceProfileRedux} serviceRedux={serviceRedux}/>
-                    <ReviewService  serviceRedux={serviceRedux} />                
+                    {/* <ServiceProfileDetails  serviceProfileRedux ={serviceProfileRedux} serviceRedux={serviceRedux}/> */}
+                    {/* <ReviewService  serviceRedux={serviceRedux} />                 */}
                 </div>
 
                 

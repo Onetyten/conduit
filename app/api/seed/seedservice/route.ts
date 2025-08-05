@@ -2,9 +2,9 @@ import mongoConnect from "@/lib/utils/connectDB";
 import Service from "@/models/serviceSchema";
 import fs from 'fs';
 import { NextResponse } from "next/server";
-import Profile from "@/models/profileSchema"; // Assuming you have a Profile model
+import Profile from "@/models/profileSchema";
 
-export async function GET() {
+export async function POST() {
   try {
     await mongoConnect();
     await Service.deleteMany();
@@ -16,20 +16,36 @@ export async function GET() {
     }
 
     const createdServices = [];
+
     for (let i = 0; i < services.length; i++) {
       if (i < profiles.length) {
+        const serviceProviderProfile = profiles[i];
+        
+        // Filter out the current service provider to create a pool of potential reviewers
+        const availableReviewers = profiles.filter(
+          (profile) => profile._id.toString() !== serviceProviderProfile._id.toString()
+        );
+
+        let newReviews = [];
+
+        // Check if the service has reviews and there are other profiles to act as reviewers
+        if (services[i].reviews && services[i].reviews.length > 0 && availableReviewers.length > 0) {
+          newReviews = services[i].reviews.map((review) => {
+            const randomReviewer = availableReviewers[Math.floor(Math.random() * availableReviewers.length)];
+            return { ...review, userId: randomReviewer._id };
+          });
+        }
+        
         const serviceData = {
           ...services[i],
-          profileId: profiles[i]._id,
-          viewedId:[],
-          likedId:[],
+          serviceProviderId: serviceProviderProfile._id,
+          reviews: newReviews,
           _id: undefined,
         };
+        
         const newService = await Service.create(serviceData);
         createdServices.push(newService);
         console.log(`Created service ${i}:`, newService);
-
-
       } else {
         console.warn(`Warning: Skipping service at index ${i} because no corresponding profile found.`);
         break;

@@ -1,35 +1,26 @@
 "use client"
 import Image from 'next/image'
 import React, {useCallback, useEffect, useRef, useState } from 'react'
-import { CiHeart } from "react-icons/ci";
 import { RootState } from '@/store';
-import { MdOutlineRemoveRedEye } from "react-icons/md";
-import {motion} from 'framer-motion'
 import { useDispatch ,useSelector} from 'react-redux';
-import { serviceTrue } from '@/state/showServiceSlice/showServiceSlice';
 import { likeHeart,unlikeHeart } from '@/state/likedHeart/likedHeart';
-import { setService ,} from '@/state/viewedService/viewedService';
 import { clearServiceProfile, setServiceProfile } from '@/state/serviceProfile/serviceProfile';
-import { updateService } from '@/state/updatedService/updatedService'
 import { serviceInterface } from '@/lib/types';
-import Link from 'next/link';
 import Digital from 'react-activity/dist/Digital'
 import "react-activity/dist/Digital.css";
+import PostItem from './postItem';
 
 
 
 const Posts = () => {
     const [post,setPost] = useState<serviceInterface[]>([])
     const [page,setPage] = useState(1)
-    const [serviceIndex,setserviceIndex] = useState(0)
     const [loading,setLoading] = useState(false)
     const [hasMore,setHasMore] = useState(true)
     const [isSearching,setIsSearching] = useState(false)
     const limit = 20 
-
     const dispatch = useDispatch()
     const serviceRedux = useSelector((state:RootState)=> state.service.service)
-    const newServiceRedux = useSelector((state:RootState)=> state.newservice.newservice)
     const profileDataRedux = useSelector((state:RootState)=> state.user.user)
     const keywordRedux = useSelector((state:RootState)=>state.keyword.keyword)
     const prevKeywordRef = useRef(keywordRedux)
@@ -44,8 +35,8 @@ const Posts = () => {
       const getProfile = useCallback(
         async()=>{
             
-            if (!serviceRedux || !serviceRedux.profileId) {
-                console.warn("serviceRedux or profileId is missing, cannot make the API call.")
+            if (!serviceRedux || !serviceRedux.serviceProviderId) {
+                console.warn("serviceRedux or serviceProviderId is missing, cannot make the API call.")
                 return
               }
               dispatch(clearServiceProfile())
@@ -55,7 +46,7 @@ const Posts = () => {
                     headers:{
                       'Content-Type':'application/json'
                     },
-                    body:JSON.stringify({user_id:serviceRedux?.profileId})
+                    body:JSON.stringify({user_id:serviceRedux?.serviceProviderId})
                   })
     
                 if (!response.ok){
@@ -158,91 +149,12 @@ const Posts = () => {
             setHasMore(false) 
         }
         
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[loading,fetchPost,hasMore,keywordRedux,page])
 
 
     // This is the algorithm that is supposed to update views and likes on the frontend but the current implementation right now is stupid
     // get to it later
     // it should be relatively easy 
-    useEffect(() => {
-        if (!newServiceRedux) return
-        if (post.length <= 0) return
-        // setPost(prev => {
-        //     const newPosts = [...prev];
-        //     newPosts[serviceIndex] = newServiceRedux;
-        //     return newPosts;
-        // });
-    }, [newServiceRedux, serviceIndex,post.length]);
-
-
-    const showModal =()=>{
-        dispatch(serviceTrue())
-    }
-    const getService = async (item:serviceInterface,index:number)=>{
-        if (!profileDataRedux) console.log("User profile is not logged in")
-        setserviceIndex(index)
-
-        dispatch(setService(item))
-        
-
-
-        // set the like and unlike state base on whether the liked id array of te services contains the id of the user profile
-        // this means that like and unlike stste will be set based on if the user has liked the post in the service redux 
-        if (serviceRedux && profileDataRedux) {
-            if (serviceRedux.likedId.includes(profileDataRedux._id)) {
-              dispatch(likeHeart())
-            } else {
-              dispatch(unlikeHeart())
-            }
-        }
-
-        // set the show service redux
-        // console.log("Service Redux", serviceRedux,"\nprofileDataRedux",profileDataRedux,"\nserviceProfileRedux",serviceProfileRedux)
-        
-
-
-
-        // fetch from the update views api and update the views on the backend
-        if (profileDataRedux){
-            if (item._id && typeof item._id === 'string' && item._id.length>0){
-                const response = await fetch(`/api/update_views`,{
-                    method:"PATCH",
-                    headers:{
-                        'Content-Type': 'application/json'
-                    },
-                    body:JSON.stringify({id:item._id,user_id:profileDataRedux._id})
-                })
-
-
-
-                // log out the error if the response is not okay meaning the views did not get updated on the backend for some reason
-                if (!response.ok){
-                    const errorBody  = await response.json() 
-                    console.log(errorBody)
-                }
-
-                // set the service redux to the updated post data sent from the backend
-                else
-                {
-                    const viewMessage = await response.json()
-                    console.log(viewMessage.post)
-                    dispatch(setService(viewMessage.post))
-                    dispatch(updateService(viewMessage.post))
-                    console.log(viewMessage)
-                }
-                
-
-            }
-            //response if item or item id is null
-            else{
-                console.log("no itemid",item)
-            }
-
-        }
-
-        }
     
     // set the like and unlike state base on whether the liked id array of te services contains the id of the user profile
     // this means that like and unlike stste will be set based on if the user has liked the post in the service redux
@@ -306,45 +218,7 @@ const Posts = () => {
                 {post.length>0?(
                     post.map((item ,index)=>{
                         return(
-                            <div key={index} className='flex gap-3 w-full flex-col col-span-1'>
-                                <div className="relative cursor-pointer h-80 sm:h-72">
-                                    <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg hidden sm:block" fill onClick={()=>{getService (item,index);showModal()}}/>
-                                    <Link  href="/serviceDetails" onClick={()=>{getService (item,index)}}>
-                                        <Image src={item.galleryImages[0]} alt="post cover image" className="object-cover rounded-lg block sm:hidden" fill/>
-                                    </Link>
-                                    
-                                    
-                                    <motion.div  initial={{height:"100%", opacity:1}} animate={{height:0,opacity:0.5}} transition={{ duration: 0.5 }} className="div top-0 left-0 absolute w-full h-0 bg-gray-400">
-
-                                    </motion.div>
-                                    
-                                </div>
-                                                                
-                                <div className='flex items-center justify-between '>
-                                    <div className='flex gap-2 items-center'>
-                                        <Link  href="/serviceDetails" onClick={()=>{getService (item,index)}}>
-                                            <Image src={item.galleryImages[0]} alt='post  cover image' className='object-cover cursor-pointer aspect-square rounded-3xl' width={25} height={100}/> 
-                                        </Link>
-                                        
-                                        <p>
-                                            {item.title?.length<20?item.title:`${item.title.slice(0,18)}...`}
-                                        </p>
-                                    </div>
-                                    <div className='flex gap-3 text-sm items-center'>
-                                        <div className='flex gap-1 items-center cursor-pointer'>
-                                            < MdOutlineRemoveRedEye/>
-                                            <p className='text-xs'>{item.views}</p>
-                                        </div>
-
-                                        <div className='flex gap-1 items-center cursor-pointer'>
-                                            <CiHeart/>
-                                            <p className='text-xs'>{item.likes}</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                
-                            </div>
+                            <PostItem key={index} index={index} post={item} />
                         )
                     })):
                     (

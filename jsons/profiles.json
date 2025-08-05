@@ -1,0 +1,2230 @@
+[
+  {
+    "firstName": "Ada",
+    "lastName": "Okeke",
+    "password": "hashed_password_1",
+    "email": "ada.okeke@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/beautiful-african-american-woman-smiling-260nw-402466177.jpg",
+    "bio": "Professional cleaner with a passion for transforming homes using eco-friendly solutions.",
+    "isTalent": true,
+    "skills": ["deep cleaning", "home cleaning", "eco-friendly cleaning", "professional cleaning"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+
+  {
+    "firstName": "Chidi",
+    "lastName": "Adewale",
+    "password": "hashed_password_2",
+    "email": "chidi.adewale@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/close-up-upset-american-black-person_23-2148749582.jpg",
+    "bio": "Skilled plumber specializing in emergency repairs and preventive maintenance.",
+    "isTalent": true,
+    "skills": ["plumbing", "pipe repair", "drain cleaning", "repairs"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tunde",
+    "lastName": "Ogunleye",
+    "password": "hashed_password_3",
+    "email": "tunde.ogunleye@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Expert landscaper creating stunning, low-maintenance gardens tailored to your vision.",
+    "isTalent": true,
+    "skills": ["landscaping", "garden care", "lawn maintenance", "outdoor design"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Rebecca",
+    "lastName": "Adeyemi",
+    "password": "hashed_password_4",
+    "email": "rebecca.adeyemi@example.com",
+    "profilePicture":  "https://media.istockphoto.com/id/1300159342/photo/portrait-of-afro-business-woman-outdoors-on-the-street.jpg?s=612x612&w=is&k=20&c=ebJzJsyIlD57ohmETipR3WcM27ajuprJMVJDnICGHFA=",
+    "bio": "Professional hair stylist crafting stunning braids and weaves with a focus on hair health.",
+    "isTalent": true,
+    "skills": ["hair styling", "braiding", "weaving", "natural hair"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chinedu",
+    "lastName": "Okonkwo",
+    "password": "hashed_password_5",
+    "email": "chinedu.okonkwo@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Certified therapist offering rejuvenating deep tissue massages for stress relief.",
+    "isTalent": true,
+    "skills": ["massage", "deep tissue", "wellness", "relaxation"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Temitope",
+    "lastName": "Kayode",
+    "password": "hashed_password_6",
+    "email": "temitope.kayode@example.com",
+    "profilePicture": "https://media.istockphoto.com/id/664734742/photo/smiling-young-black-woman-leaning-against-wall.jpg?s=612x612&w=is&k=20&c=BI5h9YNCiCqnFoNAZUZjZpY9FmSP7dsv8nfTloVvbvI=",
+    "bio": "Experienced yoga instructor guiding beginners to wellness through online classes.",
+    "isTalent": true,
+    "skills": ["yoga", "beginner yoga", "wellness", "meditation"],
+    "location": {
+      "district": "Ile-Ife",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Olumide",
+    "lastName": "Akinwale",
+    "password": "hashed_password_7",
+    "email": "olumide.akinwale@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2015/01/09/11/23/formula-594149_960_720.jpg",
+    "bio": "Expert physics tutor helping high school students excel with tailored lessons.",
+    "isTalent": true,
+    "skills": ["tutoring", "physics", "education", "high school"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Funmilayo",
+    "lastName": "Ojo",
+    "password": "hashed_password_8",
+    "email": "funmilayo.ojo@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Native Yorùbá speaker teaching conversational and cultural skills online.",
+    "isTalent": true,
+    "skills": ["language", "yoruba", "education", "cultural lessons"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Segun",
+    "lastName": "Adebayo",
+    "password": "hashed_password_9",
+    "email": "segun.adebayo@example.com",
+    "profilePicture":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSThtP1TO2_ebYuOoTgcTHhKEeSa1NCKKiThw&s",
+    "bio": "Passionate piano instructor teaching beginners to play with confidence.",
+    "isTalent": true,
+    "skills": ["piano", "music lessons", "beginner music", "education"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Kehinde",
+    "lastName": "Olawale",
+    "password": "hashed_password_10",
+    "email": "kehinde.olawale@example.com",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi73nKp8DtzF8YhUk4MbqkmhVg-WR1Q4BT5oGtLn6CKsFb_hJW2YnsOW9wtgtr3cjIL6o&usqp=CAU",
+    "bio": "Expert in assembling IKEA furniture with precision and efficiency.",
+    "isTalent": true,
+    "skills": ["furniture assembly", "handyman", "home services"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Bola",
+    "lastName": "Akinyemi",
+    "password": "hashed_password_11",
+    "email": "bola.akinyemi@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Skilled handyman specializing in drywall patching and home repairs.",
+    "isTalent": true,
+    "skills": ["drywall repair", "handyman", "home repair", "wall patching"],
+    "location": {
+      "district": "Shagamu",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Femi",
+    "lastName": "Adeleke",
+    "password": "hashed_password_12",
+    "email": "femi.adeleke@example.com",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvcDl6JAHuKMPYdtgBbnl10Sjq27ybBM_3mkA-lEU1UrNJeHb-czFisiijwf8iyyStkk8&usqp=CAU",
+    "bio": "Licensed electrician providing safe and precise light fixture installations.",
+    "isTalent": true,
+    "skills": ["electrical", "light installation", "handyman", "home improvement"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ngozi",
+    "lastName": "Eze",
+    "password": "hashed_password_13",
+    "email": "ngozi.eze@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/indoor-shot-serious-dark-skinned-260nw-1120731431.jpg",
+    "bio": "Expert resume writer crafting ATS-friendly documents to boost your career.",
+    "isTalent": true,
+    "skills": ["resume writing", "career services", "job application"],
+    "location": {
+      "district": "Ikeja",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Kola",
+    "lastName": "Adeniyi",
+    "password": "hashed_password_14",
+    "email": "kola.adeniyi@example.com",
+    "profilePicture":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8ytCWd8wXB0_9hPLQlB1qi_IeupU9ABDRw&s",
+    "bio": "Professional photographer capturing unforgettable moments at events.",
+    "isTalent": true,
+    "skills": ["photography", "event photography", "wedding", "portrait"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Aisha",
+    "lastName": "Bello",
+    "password": "hashed_password_15",
+    "email": "aisha.bello@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/young-african-american-woman-wearing-260nw-1538320421.jpg",
+    "bio": "Creative designer crafting unique logos to elevate your brand identity.",
+    "isTalent": true,
+    "skills": ["logo design", "branding", "graphic design"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Taiwo",
+    "lastName": "Ogunlade",
+    "password": "hashed_password_16",
+    "email": "taiwo.ogunlade@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2016/07/14/17/16/living-room-1517166_960_720.jpg",
+    "bio": "Expert in assembling flat-pack furniture for a seamless home setup.",
+    "isTalent": true,
+    "skills": ["furniture assembly", "handyman", "home services"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Yemi",
+    "lastName": "Fasuyi",
+    "password": "hashed_password_17",
+    "email": "yemi.fasuyi@example.com",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrz6RCZtlvXB27MYnveTmQ9zyLhnKjhzjlg&s",
+    "bio": "Professional painter transforming homes with vibrant, durable finishes.",
+    "isTalent": true,
+    "skills": ["painting", "home improvement", "interior design", "exterior painting"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Sola",
+    "lastName": "Akinola",
+    "password": "hashed_password_18",
+    "email": "sola.akinola@example.com",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAb1r5jl0fbcSTY0XUJL6_r1V-Gzn3Nh4Yw&s",
+    "bio": "Skilled carpenter restoring decks and fences with quality craftsmanship.",
+    "isTalent": true,
+    "skills": ["deck repair", "fence repair", "carpentry", "home improvement"],
+    "location": {
+      "district": "Shagamu",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Dunmi",
+    "lastName": "Olatunde",
+    "password": "hashed_password_19",
+    "email": "dunmi.olatunde@example.com",
+    "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpC0q7Co7pMyoQLBq16DE7lEZz3PCpxcMLHZSd2yocudyUf3iiI3nvyrxV8tP-zV-MK-s&usqp=CAU",
+    "bio": "Talented makeup artist creating flawless bridal looks for special days.",
+    "isTalent": true,
+    "skills": ["bridal makeup", "beauty", "makeup artistry", "wedding"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tayo",
+    "lastName": "Olowu",
+    "password": "hashed_password_20",
+    "email": "tayo.olowu@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2016/11/22/19/15/hand-1850120_960_720.jpg",
+    "bio": "Professional DJ bringing energy and curated music to events.",
+    "isTalent": true,
+    "skills": ["dj services", "event entertainment", "music", "party"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chinwe",
+    "lastName": "Nnamani",
+    "password": "hashed_password_21",
+    "email": "chinwe.nnamani@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2014/08/26/21/27/service-428538_960_720.jpg",
+    "bio": "Tech expert providing fast and reliable computer repair services.",
+    "isTalent": true,
+    "skills": ["computer repair", "tech support", "troubleshooting", "IT services"],
+    "location": {
+      "district": "Ikeja",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Lolu",
+    "lastName": "Ajayi",
+    "password": "hashed_password_22",
+    "email": "lolu.ajayi@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2014/09/28/19/49/fitness-465203_960_720.jpg",
+    "bio": "Certified personal trainer designing custom fitness plans for all goals.",
+    "isTalent": true,
+    "skills": ["personal training", "fitness", "wellness", "exercise"],
+    "location": {
+      "district": "Sagamu",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Maya",
+    "lastName": "Okafor",
+    "password": "hashed_password_23",
+    "email": "maya.okafor@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2020/12/11/03/05/woman-5821792_960_720.jpg",
+    "bio": "Pet lover providing reliable and caring dog walking services.",
+    "isTalent": true,
+    "skills": ["dog walking", "pet care", "animal services"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Musa",
+    "lastName": "Ahmed",
+    "password": "hashed_password_24",
+    "email": "musa.ahmed@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2025/05/02/15/58/flower-girl-9574211_960_720.jpg",
+    "bio": "Professional photographer capturing the magic of weddings with stunning visuals.",
+    "isTalent": true,
+    "skills": ["wedding photography", "event photography", "portrait", "photo editing"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Esther",
+    "lastName": "Adedayo",
+    "password": "hashed_password_25",
+    "email": "esther.adedayo@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2017/09/07/10/07/english-2724442_960_720.jpg",
+    "bio": "Experienced tutor helping students master English through personalized lessons.",
+    "isTalent": true,
+    "skills": ["english tutoring", "language", "education"],
+    "location": {
+      "district": "Ile-Ife",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ifeanyi",
+    "lastName": "Chukwu",
+    "password": "hashed_password_26",
+    "email": "ifeanyi.chukwu@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2022/07/12/14/03/old-man-7317434_960_720.jpg",
+    "bio": "Expert in carpet cleaning using advanced steam technology for spotless results.",
+    "isTalent": true,
+    "skills": ["carpet cleaning", "home cleaning", "steam cleaning", "hygiene"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Amaka",
+    "lastName": "Onyeama",
+    "password": "hashed_password_27",
+    "email": "amaka.onyeama@example.com",
+    "profilePicture": "https://lh5.googleusercontent.com/p/AF1QipN2PKYqHOq6BQG5bK1Nl5YGNTMBV0ylJmlMpFP_=s1024",
+    "bio": "Skilled hair stylist creating stunning braids and weaves in a cozy salon.",
+    "isTalent": true,
+    "skills": ["hair braiding", "weaving", "beauty", "hair styling"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Bimbo",
+    "lastName": "Afolabi",
+    "password": "hashed_password_28",
+    "email": "bimbo.afolabi@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_960_720.jpg",
+    "bio": "Expert event planner creating seamless corporate events with precision.",
+    "isTalent": true,
+    "skills": ["event planning", "corporate events", "logistics", "catering"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Aramide",
+    "lastName": "Shobowale",
+    "password": "hashed_password_29",
+    "email": "aramide.shobowale@example.com",
+    "profilePicture": "https://cdn.pixabay.com/photo/2017/07/06/03/00/electrical-2476782_960_720.jpg",
+    "bio": "Skilled electrician fixing outlets and installing fixtures with safety first.",
+    "isTalent": true,
+    "skills": ["electrical", "repairs", "handyman"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+    {
+    "firstName": "Tunde",
+    "lastName": "Adeyemi",
+    "password": "hashed_password_01",
+    "email": "tunde.adeyemi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Professional dog groomer dedicated to keeping your pets happy and healthy.",
+    "isTalent": true,
+    "skills": ["dog grooming", "pet care", "bathing", "nail trimming"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chris",
+    "lastName": "Okafor",
+    "password": "hashed_password_02",
+    "email": "chris.okafor@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Experienced HVAC technician specializing in AC installation and repair.",
+    "isTalent": true,
+    "skills": ["AC installation", "AC repair", "HVAC", "gas refilling"],
+    "location": {
+      "district": "Ikeja",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Bamidele",
+    "lastName": "Ogunleye",
+    "password": "hashed_password_03",
+    "email": "bamidele.ogunleye@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Expert in pest control and fumigation, ensuring pest-free environments.",
+    "isTalent": true,
+    "skills": ["pest control", "fumigation", "termite treatment", "hygiene"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Funke",
+    "lastName": "Adesina",
+    "password": "hashed_password_04",
+    "email": "funke.adesina@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Skilled nail technician offering luxurious manicure and pedicure services.",
+    "isTalent": true,
+    "skills": ["manicure", "pedicure", "gel nails", "nail care"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chinwe",
+    "lastName": "Okonkwo",
+    "password": "hashed_password_05",
+    "email": "chinwe.okonkwo@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Mobile makeup artist creating stunning looks for weddings and events.",
+    "isTalent": true,
+    "skills": ["event makeup", "makeup artistry", "lashes", "beauty"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Emeka",
+    "lastName": "Olawale",
+    "password": "hashed_password_06",
+    "email": "emeka.olawale@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Experienced science tutor helping students excel in WAEC and NECO exams.",
+    "isTalent": true,
+    "skills": ["tutoring", "science", "exam prep", "online teaching"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Yemi",
+    "lastName": "Folarin",
+    "password": "hashed_password_07",
+    "email": "yemi.folarin@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Music production instructor passionate about teaching Ableton and FL Studio.",
+    "isTalent": true,
+    "skills": ["music production", "mixing", "software training", "online teaching"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Segun",
+    "lastName": "Akinyemi",
+    "password": "hashed_password_08",
+    "email": "segun.akinyemi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Certified technician specializing in professional CCTV installations.",
+    "isTalent": true,
+    "skills": ["CCTV installation", "security systems", "remote viewing setup"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Kemi",
+    "lastName": "Olatunji",
+    "password": "hashed_password_09",
+    "email": "kemi.olatunji@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Mobile phone repair expert fixing screens and batteries with precision.",
+    "isTalent": true,
+    "skills": ["phone repair", "screen replacement", "troubleshooting", "tech"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Femi",
+    "lastName": "Balogun",
+    "password": "hashed_password_10",
+    "email": "femi.balogun@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Web designer creating responsive and user-friendly websites for businesses.",
+    "isTalent": true,
+    "skills": ["web design", "SEO optimization", "hosting setup", "freelance"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ngozi",
+    "lastName": "Eze",
+    "password": "hashed_password_11",
+    "email": "ngozi.eze@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Dedicated pet sitter providing loving care for cats and dogs in Lekki.",
+    "isTalent": true,
+    "skills": ["pet sitting", "dog walking", "pet care", "feeding"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chidi",
+    "lastName": "Okeke",
+    "password": "hashed_password_12",
+    "email": "chidi.okeke@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Content writer crafting SEO-optimized articles for blogs and websites.",
+    "isTalent": true,
+    "skills": ["content writing", "SEO", "blog writing", "copywriting"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tayo",
+    "lastName": "Ogunbiyi",
+    "password": "hashed_password_13",
+    "email": "tayo.ogunbiyi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Expert in car detailing, making vehicles shine inside and out.",
+    "isTalent": true,
+    "skills": ["car detailing", "exterior wash", "interior vacuum", "polishing"],
+    "location": {
+      "district": "Shagamu",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Akin",
+    "lastName": "Olowu",
+    "password": "hashed_password_14",
+    "email": "akin.olowu@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Skilled handyman specializing in drywall and plaster repairs.",
+    "isTalent": true,
+    "skills": ["drywall repair", "plastering", "home improvement"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Sola",
+    "lastName": "Adedayo",
+    "password": "hashed_password_15",
+    "email": "sola.adedayo@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Professional barber offering stylish men's haircuts and grooming.",
+    "isTalent": true,
+    "skills": ["haircut", "beard trim", "men's grooming", "barber"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Wale",
+    "lastName": "Ajayi",
+    "password": "hashed_password_16",
+    "email": "wale.ajayi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Experienced tiler providing high-quality floor and wall installations.",
+    "isTalent": true,
+    "skills": ["tiling", "flooring", "grouting", "home improvement"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Lekan",
+    "lastName": "Odeyemi",
+    "password": "hashed_password_17",
+    "email": "lekan.odeyemi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Furniture repair specialist restoring tables, chairs, and cabinets.",
+    "isTalent": true,
+    "skills": ["furniture repair", "refinishing", "woodwork", "handyman"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chinedu",
+    "lastName": "Okoro",
+    "password": "hashed_password_18",
+    "email": "chinedu.okoro@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Appliance repair expert fixing deep freezers and refrigerators.",
+    "isTalent": true,
+    "skills": ["refrigerator repair", "freezer repair", "troubleshooting"],
+    "location": {
+      "district": "Ikeja",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Amaka",
+    "lastName": "Nwachukwu",
+    "password": "hashed_password_19",
+    "email": "amaka.nwachukwu@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Creative writing coach helping aspiring writers develop their craft.",
+    "isTalent": true,
+    "skills": ["writing coaching", "fiction writing", "non-fiction", "tutoring"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Beatrice",
+    "lastName": "Ojo",
+    "password": "hashed_password_20",
+    "email": "beatrice.ojo@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Professional hairstylist creating stunning looks for special events.",
+    "isTalent": true,
+    "skills": ["hairstyling", "updos", "braids", "hair extensions"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ifeanyi",
+    "lastName": "Ogunjobi",
+    "password": "hashed_password_21",
+    "email": "ifeanyi.ogunjobi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Plumbing expert ensuring reliable maintenance and repairs in Ibadan.",
+    "isTalent": true,
+    "skills": ["plumbing", "maintenance", "pipe inspection", "repairs"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Aisha",
+    "lastName": "Bello",
+    "password": "hashed_password_22",
+    "email": "aisha.bello@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Mobile pet groomer providing stress-free care for cats and dogs.",
+    "isTalent": true,
+    "skills": ["pet grooming", "bathing", "nail trimming", "brushing"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chukwuma",
+    "lastName": "Ezeh",
+    "password": "hashed_password_23",
+    "email": "chukwuma.ezeh@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Mathematics tutor helping students excel in advanced topics.",
+    "isTalent": true,
+    "skills": ["math tutoring", "calculus", "linear algebra", "exam prep"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tola",
+    "lastName": "Akinwale",
+    "password": "hashed_password_24",
+    "email": "tola.akinwale@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Certified electrician providing safe wiring installations and repairs.",
+    "isTalent": true,
+    "skills": ["electrical wiring", "lighting installation", "repairs"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Bisi",
+    "lastName": "Adeniyi",
+    "password": "hashed_password_25",
+    "email": "bisi.adeniyi@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Social media manager boosting businesses with engaging content.",
+    "isTalent": true,
+    "skills": ["social media management", "content creation", "engagement"],
+    "location": {
+      "district": "Ile-Ife",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Funmi",
+    "lastName": "Oladipo",
+    "password": "hashed_password_26",
+    "email": "funmi.oladipo@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Catering specialist delivering exquisite meals for weddings and events.",
+    "isTalent": true,
+    "skills": ["catering", "event planning", "menu design", "wait staff"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tomi",
+    "lastName": "Adebayo",
+    "password": "hashed_password_27",
+    "email": "tomi.adebayo@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Expert hairstylist creating stunning braids and styles in Ibadan.",
+    "isTalent": true,
+    "skills": ["hair braiding", "box braids", "cornrows", "twists"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Deji",
+    "lastName": "Ogunlade",
+    "password": "hashed_password_28",
+    "email": "deji.ogunlade@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "SEO expert helping businesses rank higher with optimized websites.",
+    "isTalent": true,
+    "skills": ["SEO optimization", "keyword research", "link building"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tobi",
+    "lastName": "Afolayan",
+    "password": "hashed_password_29",
+    "email": "tobi.afolayan@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Dog trainer improving pet behavior with positive techniques.",
+    "isTalent": true,
+    "skills": ["dog training", "obedience training", "behavior correction"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tunde",
+    "lastName": "Adeyemi",
+    "password": "hashed_password_01",
+    "email": "tunde.adeyemi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Skilled handyman providing top-notch repair services in Ibadan.",
+    "isTalent": true,
+    "skills": ["plumbing", "electrical repairs", "general maintenance"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Funmi",
+    "lastName": "Olawale",
+    "password": "hashed_password_02",
+    "email": "funmi.olawale@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Experienced wedding planner creating unforgettable events in Lagos.",
+    "isTalent": true,
+    "skills": ["wedding planning", "vendor coordination", "event management"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chidi",
+    "lastName": "Okeke",
+    "password": "hashed_password_03",
+    "email": "chidi.okeke@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Expert technician specializing in oven and microwave repairs in Lekki.",
+    "isTalent": true,
+    "skills": ["appliance repair", "diagnostics", "electrical troubleshooting"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Aisha",
+    "lastName": "Bello",
+    "password": "hashed_password_04",
+    "email": "aisha.bello@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Creative wedding decorator transforming venues in Ibadan.",
+    "isTalent": true,
+    "skills": ["floral design", "venue decoration", "event styling"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Emeka",
+    "lastName": "Nwachukwu",
+    "password": "hashed_password_05",
+    "email": "emeka.nwachukwu@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Certified physiotherapist helping athletes recover in Lagos.",
+    "isTalent": true,
+    "skills": ["physiotherapy", "sports rehabilitation", "injury recovery"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tolu",
+    "lastName": "Akinyemi",
+    "password": "hashed_password_06",
+    "email": "tolu.akinyemi@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Relaxation expert offering mobile spa services in Abeokuta.",
+    "isTalent": true,
+    "skills": ["massage therapy", "facials", "spa treatments"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Segun",
+    "lastName": "Ojo",
+    "password": "hashed_password_07",
+    "email": "segun.ojo@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Dedicated tutor helping students excel in Math and English in Osogbo.",
+    "isTalent": true,
+    "skills": ["tutoring", "exam preparation", "mathematics"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Kemi",
+    "lastName": "Adesina",
+    "password": "hashed_password_08",
+    "email": "kemi.adesina@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Passionate photographer teaching beginners in Ibadan.",
+    "isTalent": true,
+    "skills": ["photography", "camera training", "photo editing"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Yemi",
+    "lastName": "Ogundipe",
+    "password": "hashed_password_09",
+    "email": "yemi.ogundipe@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Creative interior designer transforming spaces in Lagos.",
+    "isTalent": true,
+    "skills": ["interior design", "space planning", "decor consultation"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Bayo",
+    "lastName": "Adekunle",
+    "password": "hashed_password_10",
+    "email": "bayo.adekunle@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Professional painter enhancing homes in Abeokuta.",
+    "isTalent": true,
+    "skills": ["painting", "wall preparation", "home renovation"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Shade",
+    "lastName": "Ogunleye",
+    "password": "hashed_password_11",
+    "email": "shade.ogunleye@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Expert hair stylist offering relaxing and texturizing in Osogbo.",
+    "isTalent": true,
+    "skills": ["hair relaxing", "texturizing", "hair care"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ifeanyi",
+    "lastName": "Okonkwo",
+    "password": "hashed_password_12",
+    "email": "ifeanyi.okonkwo@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Caring veterinarian providing mobile pet care in Lagos.",
+    "isTalent": true,
+    "skills": ["veterinary care", "pet health", "vaccinations"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Temi",
+    "lastName": "Akinola",
+    "password": "hashed_password_13",
+    "email": "temi.akinola@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Creative video editor crafting engaging content from Ibadan.",
+    "isTalent": true,
+    "skills": ["video editing", "color grading", "sound design"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Uche",
+    "lastName": "Eze",
+    "password": "hashed_password_14",
+    "email": "uche.eze@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Expert in home security system installations in Lagos.",
+    "isTalent": true,
+    "skills": ["security systems", "alarm installation", "smart locks"],
+    "location": {
+      "district": "Ikeja",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Bola",
+    "lastName": "Ajayi",
+    "password": "hashed_password_15",
+    "email": "bola.ajayi@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Fun and engaging kids’ party entertainer in Osogbo.",
+    "isTalent": true,
+    "skills": ["face painting", "balloon twisting", "party games"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chioma",
+    "lastName": "Nnamdi",
+    "password": "hashed_password_16",
+    "email": "chioma.nnamdi@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Skilled stylist offering women’s haircuts in Ibadan.",
+    "isTalent": true,
+    "skills": ["haircut", "styling", "hair care"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Femi",
+    "lastName": "Olatunde",
+    "password": "hashed_password_17",
+    "email": "femi.olatunde@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Experienced economics tutor for university students in Osogbo.",
+    "isTalent": true,
+    "skills": ["economics tutoring", "data analysis", "exam prep"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Lanre",
+    "lastName": "Adebayo",
+    "password": "hashed_password_18",
+    "email": "lanre.adebayo@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Professional landscaper creating beautiful gardens in Lekki.",
+    "isTalent": true,
+    "skills": ["landscaping", "garden design", "lawn maintenance"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Seyi",
+    "lastName": "Akinwale",
+    "password": "hashed_password_19",
+    "email": "seyi.akinwale@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Expert technician for generator repairs in Ibadan.",
+    "isTalent": true,
+    "skills": ["generator repair", "mechanical maintenance", "diagnostics"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Amaka",
+    "lastName": "Okoro",
+    "password": "hashed_password_20",
+    "email": "amaka.okoro@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Professional eyelash technician enhancing beauty in Lagos.",
+    "isTalent": true,
+    "skills": ["eyelash extensions", "beauty treatments", "makeup"],
+    "location": {
+      "district": "Ikeja",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tayo",
+    "lastName": "Ogunbiyi",
+    "password": "hashed_password_21",
+    "email": "tayo.ogunbiyi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Skilled barber offering men’s grooming services in Abeokuta.",
+    "isTalent": true,
+    "skills": ["haircuts", "beard trimming", "grooming"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Lola",
+    "lastName": "Adetunji",
+    "password": "hashed_password_22",
+    "email": "lola.adetunji@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Creative graphic designer crafting stunning visuals in Ibadan.",
+    "isTalent": true,
+    "skills": ["graphic design", "logo creation", "branding"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Wale",
+    "lastName": "Ogunrinde",
+    "password": "hashed_password_23",
+    "email": "wale.ogunrinde@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Passionate art teacher inspiring creativity in Osogbo.",
+    "isTalent": true,
+    "skills": ["fine arts", "painting", "drawing instruction"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Gbenga",
+    "lastName": "Olowu",
+    "password": "hashed_password_24",
+    "email": "gbenga.olowu@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Expert in interlocking stone installation in Ibadan.",
+    "isTalent": true,
+    "skills": ["paving", "landscaping", "construction"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ngozi",
+    "lastName": "Chukwu",
+    "password": "hashed_password_25",
+    "email": "ngozi.chukwu@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Versatile voice-over artist delivering impactful recordings from Lagos.",
+    "isTalent": true,
+    "skills": ["voice-over", "audio recording", "narration"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Kola",
+    "lastName": "Adeniyi",
+    "password": "hashed_password_26",
+    "email": "kola.adeniyi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Expert in borehole drilling and water system repairs in Abeokuta.",
+    "isTalent": true,
+    "skills": ["borehole drilling", "pump installation", "water systems"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chidi",
+    "lastName": "Okeke",
+    "password": "hashed_password_0",
+    "email": "chidi.okeke@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Skilled personal chef specializing in custom menus for dinner parties and events.",
+    "isTalent": true,
+    "skills": ["cooking", "catering", "menu planning", "event dining"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Funke",
+    "lastName": "Adeyemi",
+    "password": "hashed_password_1",
+    "email": "funke.adeyemi@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Professional makeup artist creating stunning looks for photoshoots.",
+    "isTalent": true,
+    "skills": ["makeup application", "hair styling", "photoshoot preparation"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tunde",
+    "lastName": "Ogunleye",
+    "password": "hashed_password_2",
+    "email": "tunde.ogunleye@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Experienced pet photographer capturing the charm of your furry friends.",
+    "isTalent": true,
+    "skills": ["pet photography", "photo editing", "animal handling"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Kemi",
+    "lastName": "Adewale",
+    "password": "hashed_password_3",
+    "email": "kemi.adewale@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Web developer crafting user-friendly e-commerce websites.",
+    "isTalent": true,
+    "skills": ["web development", "e-commerce", "Shopify", "WooCommerce"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Emeka",
+    "lastName": "Nwachukwu",
+    "password": "hashed_password_4",
+    "email": "emeka.nwachukwu@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Dedicated landscaper ensuring lush and vibrant lawns.",
+    "isTalent": true,
+    "skills": ["lawn care", "gardening", "weeding", "fertilizing"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ngozi",
+    "lastName": "Eze",
+    "password": "hashed_password_5",
+    "email": "ngozi.eze@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Expert in deep cleaning for spotless homes and offices.",
+    "isTalent": true,
+    "skills": ["deep cleaning", "appliance sanitization", "dusting"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Akin",
+    "lastName": "Olabode",
+    "password": "hashed_password_6",
+    "email": "akin.olabode@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Skilled technician for window repairs and installations.",
+    "isTalent": true,
+    "skills": ["window repair", "glass replacement", "installation"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Shade",
+    "lastName": "Afolayan",
+    "password": "hashed_password_7",
+    "email": "shade.afolayan@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Natural hair stylist creating vibrant braids and twists.",
+    "isTalent": true,
+    "skills": ["natural hair styling", "braids", "hair treatments"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Segun",
+    "lastName": "Adesina",
+    "password": "hashed_password_8",
+    "email": "segun.adesina@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Certified fitness trainer leading high-energy boot camps.",
+    "isTalent": true,
+    "skills": ["fitness training", "group workouts", "diet planning"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Yemi",
+    "lastName": "Ogunbiyi",
+    "password": "hashed_password_9",
+    "email": "yemi.ogunbiyi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Professional resume writer crafting standout job applications.",
+    "isTalent": true,
+    "skills": ["resume writing", "CV design", "cover letter writing"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tolu",
+    "lastName": "Akinyemi",
+    "password": "hashed_password_10",
+    "email": "tolu.akinyemi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Expert in gate fabrication and repair for secure properties.",
+    "isTalent": true,
+    "skills": ["gate fabrication", "metalwork", "repair"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Amaka",
+    "lastName": "Igwe",
+    "password": "hashed_password_11",
+    "email": "amaka.igwe@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Specialist in exotic pet care, ensuring their health and happiness.",
+    "isTalent": true,
+    "skills": ["exotic pet care", "animal health", "enclosure maintenance"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Femi",
+    "lastName": "Balogun",
+    "password": "hashed_password_12",
+    "email": "femi.balogun@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Physics tutor simplifying complex concepts for high school students.",
+    "isTalent": true,
+    "skills": ["physics tutoring", "exam preparation", "WAEC coaching"],
+    "location": {
+      "district": "Ile-Ife",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Bisi",
+    "lastName": "Olatunde",
+    "password": "hashed_password_13",
+    "email": "bisi.olatunde@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Creative designer crafting memorable logos and brand identities.",
+    "isTalent": true,
+    "skills": ["logo design", "branding", "graphic design"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Deji",
+    "lastName": "Afolabi",
+    "password": "hashed_password_14",
+    "email": "deji.afolabi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Expert in furniture restoration and polishing for timeless pieces.",
+    "isTalent": true,
+    "skills": ["furniture restoration", "polishing", "woodwork"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Lola",
+    "lastName": "Adeshina",
+    "password": "hashed_password_15",
+    "email": "lola.adeshina@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Professional photographer delivering polished corporate headshots.",
+    "isTalent": true,
+    "skills": ["corporate photography", "headshots", "photo editing"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tayo",
+    "lastName": "Ojo",
+    "password": "hashed_password_16",
+    "email": "tayo.ojo@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Certified massage therapist offering relaxing mobile sessions.",
+    "isTalent": true,
+    "skills": ["massage therapy", "Swedish massage", "deep tissue"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chinwe",
+    "lastName": "Okonkwo",
+    "password": "hashed_password_17",
+    "email": "chinwe.okonkwo@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Pest control specialist eliminating termites with eco-friendly methods.",
+    "isTalent": true,
+    "skills": ["pest control", "termite treatment", "inspection"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Sola",
+    "lastName": "Adebayo",
+    "password": "hashed_password_18",
+    "email": "sola.adebayo@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Academic coach helping students excel with tailored strategies.",
+    "isTalent": true,
+    "skills": ["academic coaching", "time management", "study skills"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Uche",
+    "lastName": "Ibeh",
+    "password": "hashed_password_19",
+    "email": "uche.ibeh@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Versatile handyman for all your small home repair needs.",
+    "isTalent": true,
+    "skills": ["handyman services", "mounting", "minor repairs"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Bimpe",
+    "lastName": "Oladipo",
+    "password": "hashed_password_20",
+    "email": "bimpe.oladipo@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Professional painter transforming interiors with vibrant finishes.",
+    "isTalent": true,
+    "skills": ["interior painting", "wall preparation", "touch-ups"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Aisha",
+    "lastName": "Yusuf",
+    "password": "hashed_password_21",
+    "email": "aisha.yusuf@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Certified yoga instructor fostering balance and wellness.",
+    "isTalent": true,
+    "skills": ["yoga instruction", "group classes", "private lessons"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chukwu",
+    "lastName": "Obi",
+    "password": "hashed_password_22",
+    "email": "chukwu.obi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Skilled ghostwriter crafting compelling books and speeches.",
+    "isTalent": true,
+    "skills": ["ghostwriting", "content creation", "speech writing"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Kelechi",
+    "lastName": "Okoro",
+    "password": "hashed_password_23",
+    "email": "kelechi.okoro@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Reliable plumber for emergency repairs and maintenance.",
+    "isTalent": true,
+    "skills": ["plumbing", "leak repair", "drainage unblocking"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Titilayo",
+    "lastName": "Ogunmola",
+    "password": "hashed_password_24",
+    "email": "titilayo.ogunmola@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Kid-friendly hairstylist creating fun and stylish looks for children.",
+    "isTalent": true,
+    "skills": ["children's hairstyling", "braids", "haircuts"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Bayo",
+    "lastName": "Adekunle",
+    "password": "hashed_password_25",
+    "email": "bayo.adekunle@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Experienced trainer delivering impactful corporate workshops.",
+    "isTalent": true,
+    "skills": ["corporate training", "team building", "leadership development"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ifeoma",
+    "lastName": "Chukwuma",
+    "password": "hashed_password_26",
+    "email": "ifeoma.chukwuma@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Expert in septic tank cleaning for efficient waste management.",
+    "isTalent": true,
+    "skills": ["septic tank cleaning", "plumbing maintenance", "waste disposal"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tunde",
+    "lastName": "Ogunleye",
+    "password": "hashed_password_0",
+    "email": "tunde.ogunleye@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Skilled technician specializing in CCTV repair and maintenance for secure properties.",
+    "isTalent": true,
+    "skills": ["CCTV repair", "system maintenance", "troubleshooting", "security systems"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ifeoma",
+    "lastName": "Chukwuma",
+    "password": "hashed_password_1",
+    "email": "ifeoma.chukwuma@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Experienced IELTS tutor helping students achieve high scores through tailored coaching.",
+    "isTalent": true,
+    "skills": ["IELTS preparation", "exam coaching", "language skills", "mock tests"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Obi",
+    "lastName": "Nwafor",
+    "password": "hashed_password_2",
+    "email": "obi.nwafor@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Social media expert managing targeted ad campaigns for business growth.",
+    "isTalent": true,
+    "skills": ["social media advertising", "campaign management", "analytics", "content creation"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ada",
+    "lastName": "Okonkwo",
+    "password": "hashed_password_3",
+    "email": "ada.okonkwo@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Passionate dog walker ensuring your pet’s happiness and health.",
+    "isTalent": true,
+    "skills": ["dog walking", "pet care", "exercise planning"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Morenike",
+    "lastName": "Ajayi",
+    "password": "hashed_password_4",
+    "email": "morenike.ajayi@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Makeup artist creating flawless looks for photoshoots.",
+    "isTalent": true,
+    "skills": ["makeup application", "photoshoot preparation", "touch-ups"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Nnamdi",
+    "lastName": "Ezeh",
+    "password": "hashed_password_5",
+    "email": "nnamdi.ezeh@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Skilled carpenter installing stylish and functional kitchen cabinets.",
+    "isTalent": true,
+    "skills": ["cabinet installation", "carpentry", "measurement"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Temi",
+    "lastName": "Ogunleye",
+    "password": "hashed_password_6",
+    "email": "temi.ogunleye@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Plumbing expert maintaining systems to prevent leaks and clogs.",
+    "isTalent": true,
+    "skills": ["plumbing maintenance", "system checks", "minor repairs"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chike",
+    "lastName": "Okoli",
+    "password": "hashed_password_7",
+    "email": "chike.okoli@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Pest control specialist providing thorough fumigation services.",
+    "isTalent": true,
+    "skills": ["pest control", "fumigation", "inspection", "extermination"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Omolara",
+    "lastName": "Akinwale",
+    "password": "hashed_password_8",
+    "email": "omolara.akinwale@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Nail technician offering relaxing manicure and pedicure services.",
+    "isTalent": true,
+    "skills": ["manicure", "pedicure", "gel polish", "nail care"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ikechukwu",
+    "lastName": "Ndu",
+    "password": "hashed_password_9",
+    "email": "ikechukwu.ndu@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "IELTS tutor helping students excel in their exams.",
+    "isTalent": true,
+    "skills": ["IELTS preparation", "exam coaching", "language skills", "mock tests"],
+    "location": {
+      "district": "Ile-Ife",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Obi",
+    "lastName": "Nwafor",
+    "password": "hashed_password_10",
+    "email": "obi.nwafor@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Social media expert managing targeted ad campaigns for business growth.",
+    "isTalent": true,
+    "skills": ["social media advertising", "campaign management", "analytics", "content creation"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ada",
+    "lastName": "Okonkwo",
+    "password": "hashed_password_11",
+    "email": "ada.okonkwo@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Passionate dog walker ensuring your pet’s happiness and health.",
+    "isTalent": true,
+    "skills": ["dog walking", "pet care", "exercise planning"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Nnamdi",
+    "lastName": "Ezeh",
+    "password": "hashed_password_12",
+    "email": "nnamdi.ezeh@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Skilled carpenter installing stylish and functional kitchen cabinets.",
+    "isTalent": true,
+    "skills": ["cabinet installation", "carpentry", "measurement"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Temi",
+    "lastName": "Ogunleye",
+    "password": "hashed_password_13",
+    "email": "temi.ogunleye@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Plumbing expert maintaining systems to prevent leaks and clogs.",
+    "isTalent": true,
+    "skills": ["plumbing maintenance", "system checks", "minor repairs"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chinedu",
+    "lastName": "Okoye",
+    "password": "hashed_password_14",
+    "email": "chinedu.okoye@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Mechanic providing fast and reliable emergency car repairs.",
+    "isTalent": true,
+    "skills": ["car repair", "tire change", "engine diagnosis", "emergency repair"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Esther",
+    "lastName": "Akinola",
+    "password": "hashed_password_15",
+    "email": "esther.akinola@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Certified nutritionist offering personalized meal planning.",
+    "isTalent": true,
+    "skills": ["nutritional consulting", "meal planning", "wellness coaching", "dietary advice"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Olumide",
+    "lastName": "Adeniyi",
+    "password": "hashed_password_16",
+    "email": "olumide.adeniyi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Native French speaker teaching engaging language lessons.",
+    "isTalent": true,
+    "skills": ["French tutoring", "language lessons", "conversation practice"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Yetunde",
+    "lastName": "Olowu",
+    "password": "hashed_password_17",
+    "email": "yetunde.olowu@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Content writer crafting SEO-optimized website and blog content.",
+    "isTalent": true,
+    "skills": ["content writing", "SEO", "blog writing", "website copy"],
+    "location": {
+      "district": "Ile-Ife",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Bola",
+    "lastName": "Adeleke",
+    "password": "hashed_password_18",
+    "email": "bola.adeleke@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Skilled upholsterer restoring and re-covering furniture.",
+    "isTalent": true,
+    "skills": ["upholstery repair", "re-covering", "furniture restoration"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Tobi",
+    "lastName": "Ogunlade",
+    "password": "hashed_password_19",
+    "email": "tobi.ogunlade@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Professional musician teaching beginner-friendly guitar lessons.",
+    "isTalent": true,
+    "skills": ["guitar lessons", "music theory", "instrument tutoring"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Aminat",
+    "lastName": "Sule",
+    "password": "hashed_password_20",
+    "email": "aminat.sule@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Designer creating captivating presentations for corporate needs.",
+    "isTalent": true,
+    "skills": ["presentation design", "infographics", "graphic design"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Idris",
+    "lastName": "Lawal",
+    "password": "hashed_password_21",
+    "email": "idris.lawal@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Security expert installing advanced home safety systems.",
+    "isTalent": true,
+    "skills": ["security system installation", "CCTV setup", "alarm systems"],
+    "location": {
+      "district": "Osogbo",
+      "state": "Osun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ronke",
+    "lastName": "Ogunwale",
+    "password": "hashed_password_22",
+    "email": "ronke.ogunwale@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Expert cleaner restoring mattresses and upholstery to freshness.",
+    "isTalent": true,
+    "skills": ["mattress cleaning", "upholstery cleaning", "steam cleaning", "odor removal"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Chijioke",
+    "lastName": "Okpara",
+    "password": "hashed_password_23",
+    "email": "chijioke.okpara@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Physics tutor helping university students master complex topics.",
+    "isTalent": true,
+    "skills": ["physics tutoring", "university-level teaching", "problem solving"],
+    "location": {
+      "district": "Ibadan",
+      "state": "Oyo State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Wale",
+    "lastName": "Akinyemi",
+    "password": "hashed_password_24",
+    "email": "wale.akinyemi@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Technician skilled in air conditioner repair and maintenance.",
+    "isTalent": true,
+    "skills": ["AC repair", "servicing", "diagnostics"],
+    "location": {
+      "district": "Abeokuta",
+      "state": "Ogun State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Ezinne",
+    "lastName": "Okafor",
+    "password": "hashed_password_25",
+    "email": "ezinne.okafor@example.com",
+    "profilePicture": "https://www.shutterstock.com/image-photo/cheerful-darkskinned-girl-smiling-broadly-600nw-635442125.jpg",
+    "bio": "Aquarium specialist ensuring clean and healthy fish tanks.",
+    "isTalent": true,
+    "skills": ["fish tank cleaning", "water quality testing", "aquarium maintenance"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Dapo",
+    "lastName": "Ogunrinde",
+    "password": "hashed_password_26",
+    "email": "dapo.ogunrinde@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Social media manager growing brands with engaging content.",
+    "isTalent": true,
+    "skills": ["social media management", "content creation", "analytics", "posting"],
+    "location": {
+      "district": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  },
+  {
+    "firstName": "Yinka",
+    "lastName": "Adetunji",
+    "password": "hashed_password_27",
+    "email": "yinka.adetunji@example.com",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072179.jpg",
+    "bio": "Technician specializing in professional TV mounting and installation.",
+    "isTalent": true,
+    "skills": ["TV mounting", "wire management", "installation"],
+    "location": {
+      "district": "Ikeja",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "totalSpent": 0
+  }
+      
+  
+  
+]

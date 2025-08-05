@@ -55,7 +55,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
       <div className='flex flex-col items-center justify-center gap-6 w-[90%] max-w-2xl           text-center'>
           <p className='font-semibold'>Available On</p>
           <div className='flex justify-center flex-wrap gap-2 text-xs'>
-              {serviceRedux?.avalableOn.map((item, index) => (
+              {serviceRedux?.availableOn.map((item, index) => (
                   <span key={index} className='p-1.5 px-4 hover:bg-blue-100 bg-softblue rounded-md'>{item}</span>
               ))}
           </div>
@@ -71,7 +71,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
                 </Link>
                 
             
-                <div className={`${serviceRedux?.avalability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
+                <div className={`${serviceRedux?.availability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
                 </div>
             </div>
             {serviceProfileRedux?
