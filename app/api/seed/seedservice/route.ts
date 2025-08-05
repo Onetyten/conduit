@@ -3,6 +3,7 @@ import Service from "@/models/serviceSchema";
 import fs from 'fs';
 import { NextResponse } from "next/server";
 import Profile from "@/models/profileSchema";
+import { ReviewType } from "@/lib/types";
 
 export async function POST() {
   try {
@@ -30,7 +31,7 @@ export async function POST() {
 
         // Check if the service has reviews and there are other profiles to act as reviewers
         if (services[i].reviews && services[i].reviews.length > 0 && availableReviewers.length > 0) {
-          newReviews = services[i].reviews.map((review) => {
+          newReviews = services[i].reviews.map((review:ReviewType) => {
             const randomReviewer = availableReviewers[Math.floor(Math.random() * availableReviewers.length)];
             return { ...review, userId: randomReviewer._id };
           });

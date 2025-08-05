@@ -1,3 +1,5 @@
+import { Types } from "mongoose";
+
     interface PostInterface {
     _id: string;
     title: string;
@@ -19,6 +21,11 @@
 
   }
 
+  export interface ReviewType{
+  userId: string | Types.ObjectId;
+  review: string;
+  rating: number;
+}
 
   interface serviceInterface {
     _id: string
