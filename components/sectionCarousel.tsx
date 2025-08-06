@@ -2,27 +2,23 @@
 import { setkeyWord } from '@/state/keywordSlice/keywordSlice';
 import { RootState } from '@/store';
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-
-// const carouseldata = ['Featured','Up & Coming','Salon','Personal Trainer','Plumber','Cleaner','Electrician','Carpenter','Landscaper','Tutor','Chef','Photographer','Massage Therapist','Mechanic','Painter','Handyman','Event Planner','Graphic Designer','Web Developer','Moving Services'
-//   ];
-
-
-
-
 interface tagtype{
   count:number
   tag:string
 
 }
 
-
 const SectionCarousel = () => {
-
   const dispatch = useDispatch()
   const keywordRedux = useSelector((state:RootState)=>state.keyword.keyword)
   const [tagList,setTagList] = useState([{count:0,tag:'All services'}])
+
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const [isDragging,setIsDragging] = useState(false)
+  const [mouseXPos,setMouseXpos] = useState(0)
+  const [scrollPos,setScrollPos] = useState(0)
 
 
   async function fetchTags() {
@@ -41,6 +37,28 @@ const SectionCarousel = () => {
     }
   }
 
+  function HandleCanDrag(e:React.MouseEvent){
+    setIsDragging(true)
+    if (scrollContainerRef.current){
+      setMouseXpos(e.pageX-scrollContainerRef.current.offsetLeft)
+      setScrollPos(scrollContainerRef.current.scrollLeft)
+    }
+  }
+
+  function HandleStopDrag(){
+    setIsDragging(false)
+  }
+    function HandleMouseMove(e:React.MouseEvent){
+      if (!isDragging) return
+      e.preventDefault()
+      if (scrollContainerRef.current){
+        const x = e.pageX - scrollContainerRef.current.offsetLeft
+        const walk = (x-mouseXPos) * 1.5
+        scrollContainerRef.current.scrollLeft = scrollPos-walk
+      }
+
+  }
+
   useEffect(()=>{
     fetchTags()
   },[])
@@ -50,9 +68,11 @@ const SectionCarousel = () => {
     dispatch(setkeyWord(item))
   }
 
+
   return (
     
-    <div className='flex w-full overflow-x-scroll pt-5 pb-3 carousel-scroll mb-2 text-xs sm:text-sm text-gray-400 gap-2 relative flex-nowrap'>
+    <div ref={scrollContainerRef} onMouseDown={HandleCanDrag} onMouseUp={HandleStopDrag} onMouseLeave={HandleStopDrag} onMouseMove={HandleMouseMove}
+    className='flex w-full overflow-x-scroll cursor-grab hide-scrollbar pt-5 pb-3 mb-2 text-xs sm:text-sm text-gray-400 gap-2 relative flex-nowrap'>
         {tagList.map((item:tagtype,index:number)=>{
             return(
                 <div key={index} onClick={()=>{setTag(item.tag)}} className={`${item.tag == keywordRedux?"bg-gray-200":""} p-2 px-5 rounded-full cursor-pointer hover:bg-gray-200 hover:text-foreground transition-all`}>

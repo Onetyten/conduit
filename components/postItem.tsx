@@ -33,6 +33,7 @@ export default function PostItem(props:propTypes) {
         if (!isMobile) {
             showModal();
         }
+        
         if (!profileDataRedux) console.log("User profile is not logged in")
         dispatch(setService(post))
         if (serviceRedux && profileDataRedux) {
@@ -110,12 +111,12 @@ export default function PostItem(props:propTypes) {
             <div className='flex gap-3 text-sm items-center'>
                 <div className='flex gap-1 items-center cursor-pointer'>
                     < MdOutlineRemoveRedEye/>
-                    <p className='text-xs'>{post.views}</p>
+                    <p className='text-xs'>{post.viewedId.length}</p>
                 </div>
 
                 <div className='flex gap-1 items-center cursor-pointer'>
                     <CiHeart/>
-                    <p className='text-xs'>{post.likes}</p>
+                    <p className='text-xs'>{post.likedId.length}</p>
                 </div>
 
             </div>

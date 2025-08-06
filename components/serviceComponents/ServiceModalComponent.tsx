@@ -6,14 +6,21 @@ import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
 import { useDispatch} from 'react-redux'
 import {useLockBodyScroll} from '@uidotdev/usehooks'
 import Link from 'next/link'
+import { setToProfile } from '@/state/profileIsMe/profileIsMeSlice';
 
 export default function ServiceModalComponent() {
     useLockBodyScroll()
     const dispatch  = useDispatch()
 
+    function handleClose(){
+        dispatch(setToProfile())
+        dispatch(serviceFalse())
+        
+    }
+
   return (
         <div className='w-full flex justify-between  items-center p-3'>
-            <IoCloseSharp className='text-2xl cursor-pointer ' onClick={()=>{dispatch(serviceFalse())}}/>
+            <IoCloseSharp className='text-2xl cursor-pointer ' onClick={handleClose}/>
             
             <div className='flex gap-2 items-center text-xs sm:text-sm text-conduit'>
                 <Link href="/serviceDetails">

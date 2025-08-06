@@ -1,6 +1,6 @@
 import { Types } from "mongoose";
 
-    interface PostInterface {
+export interface PostInterface {
     _id: string;
     title: string;
     serviceProviderId: string;
@@ -27,7 +27,19 @@ import { Types } from "mongoose";
   rating: number;
 }
 
-  interface serviceInterface {
+  export interface LocationType{
+    street: string
+    city:string
+    state:string
+    zipcode:string
+    country:string
+    location:{
+      type:string
+      coordinates:number
+    }
+}
+
+  export interface serviceInterface {
     _id: string
     title: string
     serviceProviderId: string
@@ -35,23 +47,23 @@ import { Types } from "mongoose";
     likedId: string[]
     galleryImages: string[]
     description: string
+    status:string
     amountEarned: number
     price: number
     availableOn: string[]
-    likes: number
-    views: number
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    reviews: any[]
+    reviews: ReviewType[]
+    averageRating:number
     availability: boolean
     deliverables: string[]
     tags: string[]
+    category:string
     createdAt: string
-    address: string
+    address: LocationType
     deliveryMethod: string[]
     __v: number
   }
 
-  interface profileInterface {
+  export interface profileInterface {
     _id: string
     firstName: string
     lastName: string
@@ -60,23 +72,15 @@ import { Types } from "mongoose";
     bio: string
     isTalent: boolean
     skills: string[]
-    serviceCategories: string[]
-    hourlyRate: number
-    portfolio?: string
-    companyName?: string
-    companyDescription?: string
     createdAt: string
     updatedAt: string
     totalSpent: number
     __v: number
     location: {
-      city: string
+      district: string
       state: string
       country: string
 
     }
   }
   
-
-  
-  export type {PostInterface,serviceInterface,profileInterface}

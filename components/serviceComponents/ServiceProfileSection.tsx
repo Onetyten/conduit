@@ -2,6 +2,8 @@ import React from 'react'
 import { Avatar,AvatarFallback,AvatarImage } from '@/components/ui/avatar';
 import { profileInterface,serviceInterface} from '@/lib/types';
 import Link from 'next/link';
+import { useDispatch } from 'react-redux';
+import { setToService } from '@/state/profileIsMe/profileIsMeSlice';
 
 interface serviceInterfaceProp{
     serviceProfileRedux:profileInterface|null
@@ -9,11 +11,12 @@ interface serviceInterfaceProp{
 }
 
 export default function ServiceProfileSection({serviceProfileRedux,serviceRedux}:serviceInterfaceProp) {
+    const dispatch = useDispatch()
   return (
     <div className='flex gap-1 justify-between w-[90%] max-w-2xl items-center'>
         <div className='flex items-center gap-2'>
             <div className='relative w-12 h-12'>
-                <Link href={`/profile`}>
+                <Link href={`/profile`} onClick={()=>{dispatch(setToService())}}>
                     <Avatar className='w-full h-full'>
                         <AvatarImage src={serviceProfileRedux?.profilePicture}/>
                         <AvatarFallback>PIC</AvatarFallback>
@@ -21,7 +24,7 @@ export default function ServiceProfileSection({serviceProfileRedux,serviceRedux}
                 </Link>
                
             
-                <div className={`${serviceRedux?.avalability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
+                <div className={`${serviceRedux?.availability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
                 </div>
             </div>
             <div className='flex  flex-col text-xs sm:text-sm gap-2 font-semibold'>
@@ -33,7 +36,7 @@ export default function ServiceProfileSection({serviceProfileRedux,serviceRedux}
                     <div className='w-40 h-4 bg-gray-100 rounded-md'></div >}
 
                     {serviceProfileRedux?
-                    <p className='font-light text-xs text-conduit'>{serviceProfileRedux?.location?.city || serviceProfileRedux?.location?.country}</p >
+                    <p className='font-light text-xs text-conduit'>{serviceProfileRedux?.location?.district || serviceProfileRedux?.location?.country}</p >
                     :
                     <div className='w-40 h-4 bg-gray-100 rounded-md'></div >}
                 </div>

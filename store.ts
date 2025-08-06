@@ -8,6 +8,7 @@ import likeHeartReducer from '@/state/likedHeart/likedHeart'
 import showSignUpReducer from '@/state/showSignUp/showSignUp'
 import keywordReducer from '@/state/keywordSlice/keywordSlice'
 import locationalDataSlice from '@/state/locationalData/locationalDataSlice'
+import profileIsMeReducer from '@/state/profileIsMe/profileIsMeSlice'
 import storage from 'redux-persist/lib/storage'
 import {persistReducer,persistStore} from 'redux-persist'
 import { combineReducers } from '@reduxjs/toolkit'
@@ -17,8 +18,8 @@ const persistConfig = {
     key:'root',
     version:1,
     storage,
-    // blacklist: ['heartState','showSignUp','keyword']
-    whitelist:[]
+    blacklist: ['heartState','showSignUp','keyword']
+    // whitelist:[]
 }
 
 const reducer = combineReducers({
@@ -30,7 +31,8 @@ const reducer = combineReducers({
     serviceProfile:serviceProfileReducer,
     heartState: likeHeartReducer,
     showSignUp:showSignUpReducer,
-    locationalData:locationalDataSlice
+    locationalData:locationalDataSlice,
+    profileIsMe:profileIsMeReducer
 })
 
 const persistedReducer = persistReducer(persistConfig,reducer)

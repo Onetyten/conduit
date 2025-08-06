@@ -150,11 +150,6 @@ const Posts = () => {
         }
         
     },[loading,fetchPost,hasMore,keywordRedux,page])
-
-
-    // This is the algorithm that is supposed to update views and likes on the frontend but the current implementation right now is stupid
-    // get to it later
-    // it should be relatively easy 
     
     // set the like and unlike state base on whether the liked id array of te services contains the id of the user profile
     // this means that like and unlike stste will be set based on if the user has liked the post in the service redux
