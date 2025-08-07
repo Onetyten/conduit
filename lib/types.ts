@@ -26,6 +26,11 @@ export interface PostInterface {
   review: string;
   rating: number;
 }
+  export interface PriceType{
+  amount: number;
+  currency: string;
+  }
+
 
   export interface LocationType{
     street: string
@@ -49,7 +54,7 @@ export interface PostInterface {
     description: string
     status:string
     amountEarned: number
-    price: number
+    price: PriceType
     availableOn: string[]
     reviews: ReviewType[]
     averageRating:number
@@ -68,6 +73,7 @@ export interface PostInterface {
     firstName: string
     lastName: string
     email: string
+    password?:string
     profilePicture: string
     bio: string
     isTalent: boolean

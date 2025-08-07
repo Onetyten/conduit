@@ -10,6 +10,7 @@ import { clearUser } from '@/state/userInfo/userSlice'
 import {signUpTrue} from '@/state/showSignUp/showSignUp'
 import { RootState } from '@/store'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { setToProfile } from '@/state/profileIsMe/profileIsMeSlice'
 
 
 
@@ -33,7 +34,7 @@ const NavbarAuth = () => {
             (
               <div className='flex items-center  gap-2 font-semibold relative'>
                 <div className='sm:flex items-center  gap-2 hidden'>
-                     <Link href="/business/create" className='bg-foreground  cursor-pointer hover:bg-conduit text-background py-1 px-2 sm:px-5 sm:py-2 rounded-full' >
+                     <Link href="/" className='bg-foreground  cursor-pointer hover:bg-conduit text-background py-1 px-2 sm:px-5 sm:py-2 rounded-full' >
                       Create a service
                     </Link>
                     <form action={()=>{dispatch(clearUser())}} className='hover:text-conduit cursor-pointer text-foreground py-1 px-2 sm:px-5 sm:py-2 rounded-full'>
@@ -41,7 +42,7 @@ const NavbarAuth = () => {
                         Log out
                       </button>
                     </form>
-                    <Link href={`/profile`}>
+                    <Link href={`/profile`} onClick={()=>{dispatch(setToProfile())}}>
                       <Avatar>
                           <AvatarImage src ={userReduxData?.profilePicture}/>
                           <AvatarFallback>{`${userReduxData?.lastName.slice(0,1)}${userReduxData?.firstName.slice(0,1)}`}</AvatarFallback>
@@ -51,7 +52,7 @@ const NavbarAuth = () => {
                 </div>
 
                 <div className='text-xl sm:hidden cursor-pointer flex items-center gap-4 '>
-                  <Link href={`/profile`}>
+                  <Link href={`/profile`} >
                       <Avatar>
                           <AvatarImage src ={userReduxData?.profilePicture}/>
                           <AvatarFallback>{`${userReduxData?.lastName.slice(0,1)}${userReduxData?.firstName.slice(0,1)}`}</AvatarFallback>
@@ -63,7 +64,7 @@ const NavbarAuth = () => {
                   {showHamburger&&(
                     <div className='absolute text-sm flex justify-center items-center flex-col rounded-md cursor-pointer w-44 right-0 top-10 bg-conduit/20 backdrop-blur-xs text-foreground overflow-hidden z-10 shadow-md'>
 
-                      <Link href="/business/create" className='hover:bg-background w-full h-full text-center p-3' >
+                      <Link href="/" className='hover:bg-background w-full h-full text-center p-3' >
                         Create a service
                       </Link>
 

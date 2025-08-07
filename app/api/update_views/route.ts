@@ -18,10 +18,7 @@ export async function PATCH(request:Request) {
         const post = await Service.findById(id)
         if (!post) {
             return NextResponse.json({ message: 'Missing post' }, { status: 404 });
-          }      
-        if(!post.views === undefined || post.views === null ){
-            post.views = 1
-        }
+          }
 
         else{
             if (!post.viewedId){
@@ -34,10 +31,7 @@ export async function PATCH(request:Request) {
                 }
                 else{
                     post.viewedId.push(user_id);
-                    post.views =post.views+1
-                   
-                }
-                
+                } 
             }
             
         }

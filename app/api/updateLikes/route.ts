@@ -8,8 +8,8 @@ export async function PATCH(request:Request) {
 
     try {
         if(!id){
-                    return NextResponse.json({message:'missing id'},{status:404})
-                }
+            return NextResponse.json({message:'missing service provider id'},{status:404})
+        }
         if(!user_id){
             return NextResponse.json({message:'missing user id'},{status:404})
         }
@@ -19,27 +19,21 @@ export async function PATCH(request:Request) {
         if (!post){
             return NextResponse.json({message:'service not found'},{status:404})
         }
-        if(!post.likes  === undefined || post.likes === null ){
-            post.likes = 1
+
+        // if (!post.likedId){
+        //     return NextResponse.json({message:'the liked id field is not on the database'},{status:404})
+        // }
+        if (post.likedId.includes(user_id)){
+            const userIndex = post.likedId.indexOf(user_id)
+            post.likedId.splice(userIndex,1)
+            await post.save()
+            return NextResponse.json({message:`user has unliked this post`,post:post,value:post.likedId,liked:false},{status:200})
         }
         else{
-            if (!post.likedId){
-                return NextResponse.json({message:'the liked id field is not on the database'},{status:404})
-            }
-            if (post.likedId.includes(user_id)){
-                const userIndex = post.likedId.indexOf(user_id)
-                post.likedId.splice(userIndex,1)
-                post.likes -= 1
-                post.save()
-                return NextResponse.json({message:`user has unliked this post`,post:post,value:post.likedId},{status:200})
-            }
-            else{
-                post.likes+= 1
-                post.likedId.push(user_id)
-                post.save()
-                return NextResponse.json({message:`user has liked this post`,post:post,value:post.likedId},{status:200})
+            post.likedId.push(user_id)
+            await post.save()
+            return NextResponse.json({message:`user has liked this post`,post:post,value:post.likedId,liked:true},{status:200})
 
-            }
         }
 
     }

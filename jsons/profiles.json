@@ -193,10 +193,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Ngozi",
+    "firstName": "Zainab",
     "lastName": "Eze",
     "password": "hashed_password_13",
-    "email": "ngozi.eze@example.com",
+    "email": "zainab.eze@example.com",
     "profilePicture": "https://www.shutterstock.com/image-photo/indoor-shot-serious-dark-skinned-260nw-1120731431.jpg",
     "bio": "Expert resume writer crafting ATS-friendly documents to boost your career.",
     "isTalent": true,
@@ -209,10 +209,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Kola",
+    "firstName": "Kolade",
     "lastName": "Adeniyi",
     "password": "hashed_password_14",
-    "email": "kola.adeniyi@example.com",
+    "email": "kolade.adeniyi@example.com",
     "profilePicture":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8ytCWd8wXB0_9hPLQlB1qi_IeupU9ABDRw&s",
     "bio": "Professional photographer capturing unforgettable moments at events.",
     "isTalent": true,
@@ -465,10 +465,10 @@
     "totalSpent": 0
   },
     {
-    "firstName": "Tunde",
+    "firstName": "Olaoluwa",
     "lastName": "Adeyemi",
     "password": "hashed_password_01",
-    "email": "tunde.adeyemi@example.com",
+    "email": "olaoluwa.adeyemi@example.com",
     "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7vzSsTD_Z1AvVSp6HCiHdf_HHo2bocbSFwmebu7IoRLzHwyG5jC6yPAQ0hZJG9O8OYRE&usqp=CAU",
     "bio": "Professional dog groomer dedicated to keeping your pets happy and healthy.",
     "isTalent": true,
@@ -625,10 +625,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Ngozi",
+    "firstName": "Orion",
     "lastName": "Eze",
     "password": "hashed_password_11",
-    "email": "ngozi.eze@example.com",
+    "email": "orion.eze@example.com",
     "profilePicture": "https://img.freepik.com/premium-photo/portrait-selfie-smile-happy-black-woman-taking-pictures-remember-memory-social-media-profile-picture-face-beauty-female-from-south-africa-talking-photo-outdoors-nature-park_590464-141249.jpg",
     "bio": "Dedicated pet sitter providing loving care for cats and dogs in Lekki.",
     "isTalent": true,
@@ -641,10 +641,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Chidi",
+    "firstName": "Chisom",
     "lastName": "Okeke",
     "password": "hashed_password_12",
-    "email": "chidi.okeke@example.com",
+    "email": "chisom.okeke@example.com",
     "profilePicture": "https://static.vecteezy.com/system/resources/thumbnails/032/686/034/small/a-black-student-with-an-accomplished-expression-posing-against-a-white-background-free-photo.jpg",
     "bio": "Content writer crafting SEO-optimized articles for blogs and websites.",
     "isTalent": true,
@@ -801,10 +801,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Aisha",
+    "firstName": "Aina",
     "lastName": "Bello",
     "password": "hashed_password_22",
-    "email": "aisha.bello@example.com",
+    "email": "aina.bello@example.com",
     "profilePicture": "https://media.istockphoto.com/id/1152601942/photo/young-woman-wearing-spectacles.jpg?s=612x612&w=0&k=20&c=OfkBdNDbrK6ABYtFpVVLJLKloTHMJ1lmnHnW9VKaC3o=",
     "bio": "Mobile pet groomer providing stress-free care for cats and dogs.",
     "isTalent": true,
@@ -961,10 +961,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Chidi",
+    "firstName": "Obinna",
     "lastName": "Okeke",
     "password": "hashed_password_03",
-    "email": "chidi.okeke@example.com",
+    "email": "obinna.okeke@example.com",
     "profilePicture": "https://www.shutterstock.com/image-photo/headshot-portrait-smiling-african-american-600nw-1437938327.jpg",
     "bio": "Expert technician specializing in oven and microwave repairs in Lekki.",
     "isTalent": true,
@@ -977,10 +977,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Aisha",
+    "firstName": "Abebi",
     "lastName": "Bello",
     "password": "hashed_password_04",
-    "email": "aisha.bello@example.com",
+    "email": "abebeibello@example.com",
     "profilePicture": "https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsYWNrJTIwd29tYW4lMjBwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
     "bio": "Creative wedding decorator transforming venues in Ibadan.",
     "isTalent": true,
@@ -1249,10 +1249,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Tayo",
+    "firstName": "Lekan",
     "lastName": "Ogunbiyi",
     "password": "hashed_password_21",
-    "email": "tayo.ogunbiyi@example.com",
+    "email": "lekan2ogunbiyi@example.com",
     "profilePicture": "https://media.istockphoto.com/id/1175266114/photo/every-day-is-a-new-start.jpg?s=612x612&w=0&k=20&c=Xe6QMcj2TprrzrjqVLft9C_aiiDnsDh6hi3p0zH6gvU=",
     "bio": "Skilled barber offering men’s grooming services in Abeokuta.",
     "isTalent": true,
@@ -1377,10 +1377,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Tunde",
+    "firstName": "Chinua",
     "lastName": "Ogunleye",
     "password": "hashed_password_2",
-    "email": "tunde.ogunleye@example.com",
+    "email": "chinuaogunleye@example.com",
     "profilePicture": "https://img.freepik.com/free-photo/stylish-african-american-man_23-2148914569.jpg",
     "bio": "Experienced pet photographer capturing the charm of your furry friends.",
     "isTalent": true,
@@ -1409,10 +1409,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Emeka",
+    "firstName": "Chiron",
     "lastName": "Nwachukwu",
     "password": "hashed_password_4",
-    "email": "emeka.nwachukwu@example.com",
+    "email": "chironnwachukwu@example.com",
     "profilePicture": "https://img.freepik.com/free-photo/portrait-handsome-teenager-posing_23-2148505401.jpg?w=360",
     "bio": "Dedicated landscaper ensuring lush and vibrant lawns.",
     "isTalent": true,
@@ -1425,10 +1425,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Ngozi",
+    "firstName": "Amara",
     "lastName": "Eze",
     "password": "hashed_password_5",
-    "email": "ngozi.eze@example.com",
+    "email": "amaraeze@example.com",
     "profilePicture": "https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D",
     "bio": "Expert in deep cleaning for spotless homes and offices.",
     "isTalent": true,
@@ -1505,10 +1505,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Tolu",
+    "firstName": "Kehinde",
     "lastName": "Akinyemi",
     "password": "hashed_password_10",
-    "email": "tolu.akinyemi@example.com",
+    "email": "kehindeakinyemi@example.com",
     "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_vIMQjpJ9H015LXEQ5bldqoIj_liho_eESQ&s",
     "bio": "Expert in gate fabrication and repair for secure properties.",
     "isTalent": true,
@@ -1537,10 +1537,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Femi",
+    "firstName": "Ademola",
     "lastName": "Balogun",
     "password": "hashed_password_12",
-    "email": "femi.balogun@example.com",
+    "email": "ademolabalogun@example.com",
     "profilePicture": "https://www.davidson.edu/sites/default/files/styles/720x559_hero_slide/public/2025-04/belk-scholars_0037.jpg?h=e85ed99b&itok=DeYOwGiB",
     "bio": "Physics tutor simplifying complex concepts for high school students.",
     "isTalent": true,
@@ -1617,10 +1617,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Chinwe",
+    "firstName": "Chidera",
     "lastName": "Okonkwo",
     "password": "hashed_password_17",
-    "email": "chinwe.okonkwo@example.com",
+    "email": "chidera.okonkwo@example.com",
     "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpecnImevAFZFqC0Mav2DDYvS36ebsaXA0Iv4tCONpKqjHyuQ-ZQ09Bx6UL6Z_ZndxpmI&usqp=CAU",
     "bio": "Pest control specialist eliminating termites with eco-friendly methods.",
     "isTalent": true,
@@ -1745,10 +1745,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Bayo",
+    "firstName": "Aminu",
     "lastName": "Adekunle",
     "password": "hashed_password_25",
-    "email": "bayo.adekunle@example.com",
+    "email": "aminu adekunle@example.com",
     "profilePicture": "https://i.pinimg.com/736x/80/7a/ef/807aef18be6667eb80e0426e13eb8ee4.jpg",
     "bio": "Experienced trainer delivering impactful corporate workshops.",
     "isTalent": true,
@@ -1761,10 +1761,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Ifeoma",
+    "firstName": "Adanna",
     "lastName": "Chukwuma",
     "password": "hashed_password_26",
-    "email": "ifeoma.chukwuma@example.com",
+    "email": "adannachukwuma@example.com",
     "profilePicture": "https://media.istockphoto.com/id/1208585311/photo/face-of-a-serious-african-american-woman.jpg?s=612x612&w=0&k=20&c=HM7--H_KcRwrwjdypWPz2qgpFSJFFkXlmvje9fs4IJs=",
     "bio": "Expert in septic tank cleaning for efficient waste management.",
     "isTalent": true,
@@ -1777,10 +1777,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Tunde",
+    "firstName": "Obiora",
     "lastName": "Ogunleye",
     "password": "hashed_password_0",
-    "email": "tunde.ogunleye@example.com",
+    "email": "obioraogunleye@example.com",
     "profilePicture": "https://www.essence.com/wp-content/uploads/2017/11/1511189728/Latino%20McDowell.jpeg",
     "bio": "Skilled technician specializing in CCTV repair and maintenance for secure properties.",
     "isTalent": true,
@@ -1809,10 +1809,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Obi",
+    "firstName": "Obinna",
     "lastName": "Nwafor",
     "password": "hashed_password_2",
-    "email": "obi.nwafor@example.com",
+    "email": "obinnanwafor@example.com",
     "profilePicture": "https://www.essence.com/wp-content/uploads/2017/11/1511189728/Correll%20Standfield.jpeg",
     "bio": "Social media expert managing targeted ad campaigns for business growth.",
     "isTalent": true,
@@ -1825,10 +1825,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Ada",
+    "firstName": "Adaeze",
     "lastName": "Okonkwo",
     "password": "hashed_password_3",
-    "email": "ada.okonkwo@example.com",
+    "email": "adaezeokonkwo@example.com",
     "profilePicture": "https://media.istockphoto.com/id/1180232485/photo/ha-ha-so-funny-portrait-of-funky-crazy-emotion-cheerful-expression-student-girl-have-walk.jpg?s=612x612&w=0&k=20&c=kjcBW1RBCu77VpXPQ9BE8VBzlufhFzD6K9xxNckNvbM=",
     "bio": "Passionate dog walker ensuring your pet’s happiness and health.",
     "isTalent": true,
@@ -1858,9 +1858,9 @@
   },
   {
     "firstName": "Nnamdi",
-    "lastName": "Ezeh",
+    "lastName": "Amina",
     "password": "hashed_password_5",
-    "email": "nnamdi.ezeh@example.com",
+    "email": "nnamdiamina@example.com",
     "profilePicture": "https://i.pinimg.com/474x/23/4a/7d/234a7d5ff157f4d89a5f1c33789e2b66.jpg",
     "bio": "Skilled carpenter installing stylish and functional kitchen cabinets.",
     "isTalent": true,
@@ -1873,10 +1873,10 @@
     "totalSpent": 0
   },
   {
-    "firstName": "Temi",
+    "firstName": "Temitayo",
     "lastName": "Ogunleye",
     "password": "hashed_password_6",
-    "email": "temi.ogunleye@example.com",
+    "email": "temitayo.ogunleye@example.com",
     "profilePicture": "https://st2.depositphotos.com/13194036/42440/i/450/depositphotos_424400430-stock-photo-profile-african-american-young-woman.jpg",
     "bio": "Plumbing expert maintaining systems to prevent leaks and clogs.",
     "isTalent": true,

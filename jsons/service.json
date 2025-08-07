@@ -2595,13 +2595,7 @@
     "Thursday",
     "Saturday"
   ],
-  "reviews": [
-    {
-      "userId": "65b91b5c46e3d5a2d0b50e101",
-      "review": "My dog is usually scared of baths, but this service was amazing. She was calm and happy.",
-      "rating": 5
-    }
-  ],
+  "reviews": [],
   "averageRating": 5,
   "availability": true,
   "deliverables": [
@@ -2698,13 +2692,7 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e104",
-        "review": "Excellent work. The new wiring is perfect and all outlets work.",
-        "rating": 5
-      }
-    ],
+    "reviews": [],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -2803,7 +2791,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e107",
+        "userId": "65b91b5c46e3d5a2d0b50e17",
         "review": "The food was delicious and the service was impeccable. Highly recommend!",
         "rating": 5
       }
@@ -2961,7 +2949,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e111",
+        "userId": "65b91b5c46e3d5a2d0b50e11",
         "review": "My puppy is so much more well-behaved after the classes. The trainer was excellent!",
         "rating": 5
       }
@@ -3167,7 +3155,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e116",
+        "userId": "65b91b5c46e3d5a2d0b50e11",
         "review": "The decorations were breathtaking! They completely transformed the venue.",
         "rating": 5
       }
@@ -3411,7 +3399,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e122",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "Provided fantastic ideas that were both stylish and functional. Very pleased!",
         "rating": 5
       }
@@ -3564,7 +3552,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e126",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "So convenient and the vet was excellent with my dog. Highly recommend!",
         "rating": 5
       }
@@ -3717,7 +3705,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e130",
+        "userId": "65b91b5c46e3d5a2d0b50e13",
         "review": "The kids had a blast! The entertainer was fantastic and kept them engaged the whole time.",
         "rating": 5
       }
@@ -3871,7 +3859,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e134",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "My garden has never looked better! The team was professional and the result is stunning.",
         "rating": 5
       }
@@ -4029,7 +4017,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e138",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "Best haircut I've had in a long time. The attention to detail is excellent.",
         "rating": 5
       }
@@ -4281,7 +4269,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e144",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "The borehole project was completed on time and the water quality is excellent. Great job!",
         "rating": 5
       }
@@ -4436,7 +4424,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e149",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "The photos of my cat are absolutely amazing! The photographer was so patient.",
         "rating": 5
       }
@@ -4590,7 +4578,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e153",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "My apartment has never been so clean! The team was very efficient and detail-oriented.",
         "rating": 5
       }
@@ -4696,7 +4684,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e156",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "My natural hair has never been healthier. The stylist was very knowledgeable and gentle.",
         "rating": 5
       }
@@ -4896,7 +4884,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e161",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "My chameleon has never been happier! The caretaker is very knowledgeable.",
         "rating": 5
       }
@@ -5094,7 +5082,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e166",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "The photos were excellent and the team was a pleasure to work with. We'll be using these for a long time.",
         "rating": 5
       }
@@ -5343,7 +5331,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e172",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "The painters were very fast and the work was excellent. I'm very happy with the result.",
         "rating": 5
       }
@@ -5498,7 +5486,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e176",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "Lifesavers! My pipe burst at 2 am and they were here within the hour. Fixed it right away.",
         "rating": 5
       }
@@ -5562,7 +5550,7 @@
       "children",
       "beauty"
     ],
-    "category": "6890d3fbf949b4db4917149b",
+    "category": "6890d3fbf949b4db4917149f",
     "address": {
       "street": "16 MKO Abiola Way",
       "district": "Ibadan",
@@ -5743,7 +5731,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e182",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "Passed my IELTS exam on the first try thanks to the fantastic tutoring. Highly recommended!",
         "rating": 5
       }
@@ -5848,7 +5836,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e185",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "My dog loves his daily walks with the team. They are always on time and very attentive.",
         "rating": 5
       }
@@ -6049,7 +6037,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e192",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "Had a terrible ant problem and they took care of it completely. The service was excellent.",
         "rating": 5
       }
@@ -6254,7 +6242,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e185",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "My dog loves his daily walks with the team. They are always on time and very attentive.",
         "rating": 5
       }
@@ -6403,7 +6391,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e196",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "My car broke down on the highway and they came to my rescue quickly. Very professional.",
         "rating": 5
       }
@@ -6605,7 +6593,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e203",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "My old sofa looks brand new! The work is flawless and the fabric is beautiful.",
         "rating": 5
       }
@@ -6752,7 +6740,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e207",
+        "userId": "65b91b5c46e3d5a2d0b50207",
         "review": "Very professional and the security system works perfectly. Feel much safer now.",
         "rating": 5
       }
@@ -6807,7 +6795,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e211",
+        "userId": "65b91b5c46e3d5a2d0b50e21",
         "review": "My mattress feels brand new! The stains are completely gone. Excellent service.",
         "rating": 5
       }
@@ -6956,7 +6944,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e217",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "My fish tank has never looked so good! The water is crystal clear and my fish seem happier.",
         "rating": 5
       }
@@ -7060,7 +7048,7 @@
     ],
     "reviews": [
       {
-        "userId": "65b91b5c46e3d5a2d0b50e262",
+        "userId": "6890d3fbf949b4db4917149f",
         "review": "The TV was mounted perfectly, and the technician was very careful and tidy.",
         "rating": 5
       }

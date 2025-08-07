@@ -4,7 +4,6 @@ import showServiceReducer from '@/state/showServiceSlice/showServiceSlice'
 import newServiceReducer from '@/state/updatedService/updatedService'
 import servicePostReducer from '@/state/viewedService/viewedService'
 import serviceProfileReducer from '@/state/serviceProfile/serviceProfile'
-import likeHeartReducer from '@/state/likedHeart/likedHeart'
 import showSignUpReducer from '@/state/showSignUp/showSignUp'
 import keywordReducer from '@/state/keywordSlice/keywordSlice'
 import locationalDataSlice from '@/state/locationalData/locationalDataSlice'
@@ -18,7 +17,7 @@ const persistConfig = {
     key:'root',
     version:1,
     storage,
-    blacklist: ['heartState','showSignUp','keyword']
+    blacklist: ['showSignUp','keyword']
     // whitelist:[]
 }
 
@@ -29,7 +28,6 @@ const reducer = combineReducers({
     newservice:newServiceReducer,
     service:servicePostReducer,
     serviceProfile:serviceProfileReducer,
-    heartState: likeHeartReducer,
     showSignUp:showSignUpReducer,
     locationalData:locationalDataSlice,
     profileIsMe:profileIsMeReducer

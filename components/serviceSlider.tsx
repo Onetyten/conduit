@@ -1,19 +1,16 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { RootState } from '@/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
-import { likeHeart,unlikeHeart } from '@/state/likedHeart/likedHeart';
-import { setService } from '@/state/viewedService/viewedService'
-import { updateService } from '@/state/updatedService/updatedService'
 import ServiceModalComponent from './serviceComponents/ServiceModalComponent'
 import ServiceProfileSection from './serviceComponents/ServiceProfileSection'
 import LikeComponent from './serviceComponents/likeComponent'
 import ServiceProfileDetails from './serviceComponents/serviceProfileDetails'
 import ReviewService from './serviceComponents/reviewService'
-import { toast } from 'react-toastify'
+import useLikePost from '@/hooks/useLikedPost'
 
 
 
@@ -22,56 +19,13 @@ import { toast } from 'react-toastify'
 const ServiceSlider = () => {
     const dispatch  = useDispatch()
     const showReduxModal = useSelector((state:RootState)=> state.showService.showService)
-    const serviceRedux = useSelector((state:RootState)=> state.service.service)
+    const service = useSelector((state:RootState)=> state.service.service)
     const serviceProfileRedux = useSelector((state:RootState)=> state.serviceProfile.serviceProfile)
-    const profileDataRedux = useSelector((state:RootState)=> state.user.user)
-    const likedHeartRedux  = useSelector((state:RootState)=>state.heartState.heartState)
+    const {LikePost,postLiked} = useLikePost()
 
-
-
-async function LikePost() {
-    if (!serviceRedux) {
-        console.error("Missing service")
-        return
-    }
-
-    if (!profileDataRedux) {
-        console.log("User is not logged in")
-        toast.warn("Log in to like services")
-        return
-    }
-
-    const likeResponse = await fetch(`/api/updateLikes`,{
-        method:'PATCH',
-        headers:{
-            'Content-Type': 'application/json'
-        },
-        body:JSON.stringify({id:serviceRedux._id,user_id:profileDataRedux._id})
-    })
-
-    if (!likeResponse.ok){
-        throw new Error("invalid response")
-    }
-    else{
-        const likeMessage = await likeResponse.json()
-        console.log(likeMessage.post)
-
-        dispatch(setService(likeMessage.post))
-        dispatch(updateService(likeMessage.post))
-        if (likedHeartRedux == true){
-            dispatch(unlikeHeart())
-        }
-        else{
-            dispatch(likeHeart())
-        }
-       
-    }
-
-
-
-    
-    
-}
+    useEffect(()=>{
+        console.log(service)
+    },[])
 
   return (
     <div>
@@ -82,10 +36,10 @@ async function LikePost() {
                 </div>
                 <div className='md:w-[65%] lg:w-[50%] sm:w-[80%] w-full h-full bg-white flex flex-col items-center gap-6 overflow-scroll hide-scrollbar '>
                     <ServiceModalComponent />
-                    <ServiceProfileSection serviceProfileRedux ={serviceProfileRedux} serviceRedux={serviceRedux}/>
-                    <LikeComponent LikePost={LikePost}/>
-                    {/* <ServiceProfileDetails  serviceProfileRedux ={serviceProfileRedux} serviceRedux={serviceRedux}/> */}
-                    {/* <ReviewService  serviceRedux={serviceRedux} />                 */}
+                    <ServiceProfileSection serviceProfileRedux ={serviceProfileRedux} serviceRedux={service}/>
+                    <LikeComponent LikePost={LikePost} postLiked = {postLiked} />
+                    <ServiceProfileDetails  serviceProfileRedux ={serviceProfileRedux} serviceRedux={service}/>
+                    <ReviewService  serviceRedux={service} />                
                 </div>
 
                 

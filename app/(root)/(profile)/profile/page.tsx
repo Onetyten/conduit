@@ -26,17 +26,20 @@ const page = () => {
     const profileIsMe = useSelector((state:RootState)=>state.profileIsMe.profileIsMe)
     const [profileData,setProfileData]  = useState<profileDataType>(null)
 
-
+    const [profileIsService,setProfileIsService] = useState( false)
     
     useEffect(()=>{
-      if (profileIsMe){
+      if (userProfile?._id === serviceProfile?._id){
+        setProfileIsService(true)
+      }
+      if (profileIsMe || profileIsService){
         setProfileData(userProfile)
       }
       else
       {
         setProfileData(serviceProfile)
       }
-    },[profileIsMe, serviceProfile, userProfile])
+    },[profileIsMe, profileIsService, serviceProfile, userProfile])
     
     const creationDate = profileData?.createdAt ? new Date(profileData.createdAt) : null;
     const formattedCreationDate = creationDate && !isNaN(creationDate.getTime()) ? format(creationDate, "MMM d, yyyy") : "Unknown Date";
@@ -76,6 +79,7 @@ const page = () => {
             </p>
             
           </div>
+
           {profileData?.skills && profileData?.skills.length > 0 && (
             <div className='sm:text-sm text-xs gap-2 flex flex-col'>
               <p className='font-semibold'>Skills </p>
@@ -98,22 +102,22 @@ const page = () => {
           
           <p className=''>{`${profileData?.isTalent?'Talent':'Client'} since ${formattedCreationDate}`}</p>
 
-          {!profileIsMe?(
+          {!profileIsMe && !profileIsService?(
             <div className='flex gap-2 '>
-              <div className='text-xs bg-black text-center p-3 px-5 my-5 hover:bg-conduit text-white rounded-md'>
+              <div className='text-xs bg-black text-center cursor-pointer p-3 px-5 my-5 hover:bg-conduit text-white rounded-md'>
                 Contact
               </div>
-               <div className='text-xs bg-black text-center p-3 px-5 my-5 hover:bg-conduit text-white rounded-md'>
+               <div className='text-xs bg-black text-center cursor-pointer p-3 px-5 my-5 hover:bg-conduit text-white rounded-md'>
                 View Services
               </div>
             </div>
           )
           :
-          (<div>
-              <div className='text-sm bg-red-500 text-center p-3 my-5 hover:bg-red-600 text-white rounded-lg' onClick={signOut}>
+          (<div className='flex gap-2 '>
+              <div className='text-sm bg-black text-center p-3 px-5 my-5 cursor-pointer hover:bg-conduit text-white rounded-lg' onClick={signOut}>
                 Sign out
-              </div> 
-              <div className='text-sm bg-red-500 text-center p-3 my-5 hover:bg-red-600 text-white rounded-lg' onClick={signOut}>
+              </div>  
+              <div className='text-sm bg-red-500 text-center p-3 px-5 my-5 cursor-pointer hover:bg-red-600 text-white rounded-lg' onClick={signOut}>
                 Delete Account
               </div> 
           </div>

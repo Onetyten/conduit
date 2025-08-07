@@ -6,14 +6,12 @@ import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
 import { useDispatch} from 'react-redux'
 import {useLockBodyScroll} from '@uidotdev/usehooks'
 import Link from 'next/link'
-import { setToProfile } from '@/state/profileIsMe/profileIsMeSlice';
 
 export default function ServiceModalComponent() {
     useLockBodyScroll()
     const dispatch  = useDispatch()
 
     function handleClose(){
-        dispatch(setToProfile())
         dispatch(serviceFalse())
         
     }

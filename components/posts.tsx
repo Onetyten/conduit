@@ -3,7 +3,6 @@ import Image from 'next/image'
 import React, {useCallback, useEffect, useRef, useState } from 'react'
 import { RootState } from '@/store';
 import { useDispatch ,useSelector} from 'react-redux';
-import { likeHeart,unlikeHeart } from '@/state/likedHeart/likedHeart';
 import { clearServiceProfile, setServiceProfile } from '@/state/serviceProfile/serviceProfile';
 import { serviceInterface } from '@/lib/types';
 import Digital from 'react-activity/dist/Digital'
@@ -21,7 +20,6 @@ const Posts = () => {
     const limit = 20 
     const dispatch = useDispatch()
     const serviceRedux = useSelector((state:RootState)=> state.service.service)
-    const profileDataRedux = useSelector((state:RootState)=> state.user.user)
     const keywordRedux = useSelector((state:RootState)=>state.keyword.keyword)
     const prevKeywordRef = useRef(keywordRedux)
 
@@ -150,20 +148,6 @@ const Posts = () => {
         }
         
     },[loading,fetchPost,hasMore,keywordRedux,page])
-    
-    // set the like and unlike state base on whether the liked id array of te services contains the id of the user profile
-    // this means that like and unlike stste will be set based on if the user has liked the post in the service redux
-    // this  is useeffect is added as a fail safe due to the asynchronous nature of redux 
-    useEffect(() => {
-        if (serviceRedux && profileDataRedux) {
-            if (serviceRedux.likedId.includes(profileDataRedux._id)) {
-                dispatch(likeHeart());
-            } else {
-                dispatch(unlikeHeart());
-            }
-        }
-    }, [serviceRedux, profileDataRedux, dispatch]);
-
 
     useEffect(()=>{
         if (loading) return
@@ -213,7 +197,11 @@ const Posts = () => {
                 {post.length>0?(
                     post.map((item ,index)=>{
                         return(
-                            <PostItem key={index} index={index} post={item} />
+                            <PostItem key={item._id} index={index} post={item} refreshPost = {(updatedPost)=>{
+                               setPost((prevPosts) =>
+                                prevPosts.map((p) => (p._id === updatedPost._id ? updatedPost : p))
+                                );
+                            }} />
                         )
                     })):
                     (

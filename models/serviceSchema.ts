@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 const serviceSchema = new mongoose.Schema({
     title:{type:String},
-    serviceProviderId: {type:mongoose.Schema.Types.ObjectId, ref: "User", required: true},
-    viewedId: [{ type: mongoose.Schema.Types.ObjectId, ref: "User", default: [] }],
-    likedId: [{ type: mongoose.Schema.Types.ObjectId, ref: "User", default: [] }],
+    serviceProviderId: {type:mongoose.Schema.Types.ObjectId, ref: "Profile", required: true},
+    viewedId: [{ type: mongoose.Schema.Types.ObjectId, ref: "Profile", default: [] }],
+    likedId: [{ type: mongoose.Schema.Types.ObjectId, ref: "Profile", default: [] }],
     galleryImages: [{type: String}],
     description:{type:String},
     status: {type:String,enums:['draft','published','archived'],default:'draft'},
@@ -11,11 +11,10 @@ const serviceSchema = new mongoose.Schema({
     price :{amount:Number,currency:String},
     availableOn :[{type:String}],
     reviews: [{
-        userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+        userId: { type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true },
         review: { type: String, required: true },
         createdAt: { type: Date, default: Date.now },
-        rating:{type:Number, min:1,max:5},
-        default:[]
+        rating:{type:Number, min:1,max:5}
     }],
     averageRating: { type: Number, min: 1, max: 5, default: 0 },
     availability: {type:Boolean},

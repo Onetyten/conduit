@@ -14,27 +14,27 @@ interface serviceInterfaceProp{
 export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux }: serviceInterfaceProp) {
   return (
     <div className='flex justify-center w-full flex-col items-center gap-6'>
-        <div className='flex items-center justify-center mt-5 w-[90%] max-w-2xl          '>
-          {serviceProfileRedux?
-          <div className='gap-3 flex flex-wrap justify-center text-xs'>
-          {serviceProfileRedux?.skills.map((item, index) => (
-                  <span key={index} className='p-1.5 px-4 hover:bg-blue-100 cursor-pointer bg-softblue rounded-md'>{item}</span>
-              ))}
-          </div>
-          :
-          <div className='w-sm h-6 bg-gray-100 rounded-md'></div >}
-      </div>
-      <div className='flex items-center justify-center w-[90%] max-w-2xl          '>
-          <p className='text-xl text-center sm:text-2xl font-bold'>
-          {serviceRedux?.title} 
-          </p>
-      </div>
-      <div className='flex items-center justify-center relative w-[90%] max-w-2xl           h-96 '>
-          {serviceProfileRedux && serviceRedux?.galleryImages[0]?
-              <Image src={serviceRedux?.galleryImages[0]} fill alt='profilepic' className=' aspect-video object-cover' />
-              :
-              <div className='w-[1000px] h-[400px] bg-gray-100'></div >}     
-      </div>
+    <div className='flex items-center justify-center mt-5 w-[90%] max-w-2xl          '>
+        {serviceProfileRedux?
+        <div className='gap-3 flex flex-wrap justify-center text-xs'>
+        {serviceProfileRedux?.skills.map((item, index) => (
+                <span key={index} className='p-1.5 px-4 hover:bg-blue-100 cursor-pointer bg-softblue rounded-md'>{item}</span>
+            ))}
+        </div>
+        :
+        <div className='w-sm h-6 bg-gray-100 rounded-md'></div >}
+    </div>
+    <div className='flex items-center justify-center w-[90%] max-w-2xl          '>
+        <p className='text-xl text-center sm:text-2xl font-bold'>
+        {serviceRedux?.title} 
+        </p>
+    </div>
+    <div className='flex items-center justify-center relative w-[90%] max-w-2xl h-96 '>
+        {serviceProfileRedux && serviceRedux?.galleryImages[0]?
+            <Image src={serviceRedux?.galleryImages[0]} fill alt='profilepic' className=' aspect-video object-cover' />
+            :
+            <div className='w-[1000px] h-[400px] bg-gray-100'></div >}     
+     </div>
 
       <div className='flex flex-col items-center justify-center w-[90%] max-w-2xl           text-justify'>
           {/* <p className='font-semibold'>Description</p> */}
@@ -43,7 +43,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
           </p>
       </div>
 
-      <div className='flex flex-col gap-6 items-center justify-center w-[90%] max-w-2xl           text-center'>
+      <div className='flex flex-col gap-6 items-center justify-center w-[90%] max-w-2xl text-center'>
           <p className='font-semibold'>Deliverables</p>
           <div className='flex gap-2 text-xs'>
               {serviceRedux?.deliverables.map((item, index) => (
@@ -91,12 +91,13 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
 
 
             <div className='flex gap-2 w-full font-semibold justify-center text-xs'>
-                Hourly rate : {serviceRedux?.price} USD
+                Hourly rate : {serviceRedux?.price.amount} {serviceRedux?.price.currency}               
             </div>
 
-            <div className='flex gap-2 w-full font-semibold justify-center text-xs'>
+            <div className='flex gap-2 w-full justify-center text-xs'>
                 Delivery method : {serviceRedux?.deliveryMethod[0]}
             </div>
+            
             <div className='bg-conduit text-background p-2 px-4 h-9 flex items-center rounded-md hover:bg-slate-800 cursor-pointer  sm:rounded-full text-xs'>
                 Book Service
             </div>

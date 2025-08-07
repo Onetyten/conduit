@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+'use client'
+import React,{useEffect, useState} from 'react'
 import { CiHeart } from "react-icons/ci";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import {motion} from 'framer-motion'
@@ -9,13 +10,13 @@ import { serviceTrue } from '@/state/showServiceSlice/showServiceSlice';
 import { serviceInterface } from '@/lib/types';
 import { RootState } from '@/store';
 import { setService } from '@/state/viewedService/viewedService';
-import { likeHeart,unlikeHeart } from '@/state/likedHeart/likedHeart';
 import { updateService } from '@/state/updatedService/updatedService';
 import {isMobile} from 'react-device-detect'
 
 interface propTypes{
     index:number,
     post:serviceInterface
+    refreshPost: (updatedPost: serviceInterface) => void
 }
 
 export default function PostItem(props:propTypes) {
@@ -23,7 +24,14 @@ export default function PostItem(props:propTypes) {
     const profileDataRedux = useSelector((state:RootState)=> state.user.user)
     const serviceRedux = useSelector((state:RootState)=> state.service.service)
     const [imageLoaded,setImageLoaded] = useState(false)
-    const {post,index} = props
+    const {post,index,refreshPost} = props
+
+    useEffect(()=>{
+        if (serviceRedux){
+           refreshPost(serviceRedux); 
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[ serviceRedux])
 
     const showModal =()=>{
         dispatch(serviceTrue())
@@ -36,13 +44,6 @@ export default function PostItem(props:propTypes) {
         
         if (!profileDataRedux) console.log("User profile is not logged in")
         dispatch(setService(post))
-        if (serviceRedux && profileDataRedux) {
-            if (serviceRedux.likedId.includes(profileDataRedux._id)) {
-                dispatch(likeHeart())
-            } else {
-                dispatch(unlikeHeart())
-            }
-        }
         // fetch from the update views api and update the views on the backend
         if (profileDataRedux){
             if (post._id && typeof post._id === 'string' && post._id.length>0){
@@ -58,19 +59,16 @@ export default function PostItem(props:propTypes) {
                     const errorBody  = await response.json() 
                     console.log(errorBody)
                 }
+               
                 // set the service redux to the updated post data sent from the backend
                 else
-                {
+                {   
                     const viewMessage = await response.json()
-                    console.log(viewMessage.post)
                     dispatch(setService(viewMessage.post))
                     dispatch(updateService(viewMessage.post))
-                    console.log(viewMessage)
+                    refreshPost(viewMessage.post);
+
                 }
-            }
-            //response if post or post id is null
-            else{
-                console.log("no itemid",post)
             }
 
         }
