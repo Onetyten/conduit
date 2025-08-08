@@ -27,7 +27,7 @@ async function getProfile(id:string):Promise<profileInterface> {
 
 
 export default async function page ({params}:ProfilePageProps){
-    const {id} = await params
+    const {id} = params
     const profileData = await getProfile(id)
     const creationDate = profileData?.createdAt ? new Date(profileData.createdAt) : null
     const formattedCreationDate = creationDate && !isNaN(creationDate.getTime()) ? format(creationDate, "MMM d, yyyy") : "Unknown Date";
