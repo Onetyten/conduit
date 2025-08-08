@@ -23,9 +23,6 @@ const ServiceSlider = () => {
     const serviceProfileRedux = useSelector((state:RootState)=> state.serviceProfile.serviceProfile)
     const {LikePost,postLiked} = useLikePost()
 
-    useEffect(()=>{
-        console.log(service)
-    },[])
 
   return (
     <div>

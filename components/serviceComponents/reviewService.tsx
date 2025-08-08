@@ -1,5 +1,6 @@
 import React from 'react'
 import {serviceInterface} from '@/lib/types';
+import ReviewItem from '../reviewItem';
 
 interface serviceInterfaceProp{
     serviceRedux:serviceInterface|null
@@ -21,19 +22,16 @@ export default function ReviewService({serviceRedux}:serviceInterfaceProp) {
 
         <div className='flex gap-2 text-xs my-6 w-full text-center'>
             {serviceRedux && serviceRedux.reviews.length>0?
-            <div className='flex items-start p-1.5 px-4 gap-4'>
-                <div className='w-8 h-8 rounded-full bg-conduit'>
-
+                <div>
+                    {serviceRedux.reviews.map((item, index)=>{
+                    return(
+                        <div key={index} className='flex flex-col gap-4'>
+                            <ReviewItem item={item}/>
+                        </div>
+                        )
+                    })}
                 </div>
-                <div className='flex flex-col items-start gap-3'>
-                    {serviceRedux?.reviews.map((item, index) => (
-                    <span key={index} className=''>{item.review}</span>
-                    ))}
-                    <div>
-                        Rating
-                    </div>
-                </div>
-            </div>:
+            :
             <p className='text-gray-400 text-center w-full text-xs sm:text-sm my-3'>
                 No reviews available yet
             </p>
