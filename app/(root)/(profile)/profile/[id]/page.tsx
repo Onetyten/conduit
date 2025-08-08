@@ -5,9 +5,9 @@ import BackButton from '@/components/BackButton'
 import {profileInterface}  from '@/lib/types'
 import ProfileActions from '@/components/profileActions'
 
-interface ProfilePageProps {
-  params: { id: string }
-}
+// interface ProfilePageProps {
+//    params: Promise<{ id: string }>
+// }
 
 async function getProfile(id:string):Promise<profileInterface> {
   
@@ -26,8 +26,12 @@ async function getProfile(id:string):Promise<profileInterface> {
 }
 
 
-export default async function page ({params}:ProfilePageProps){
-    const {id} = params
+export default async function page({
+    params,
+  }: {
+    params: Promise<{ id: string }>
+  }) {
+  const { id } = await params
     const profileData = await getProfile(id)
     const creationDate = profileData?.createdAt ? new Date(profileData.createdAt) : null
     const formattedCreationDate = creationDate && !isNaN(creationDate.getTime()) ? format(creationDate, "MMM d, yyyy") : "Unknown Date";
