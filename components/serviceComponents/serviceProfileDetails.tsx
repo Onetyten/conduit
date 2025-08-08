@@ -91,7 +91,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
 
 
             <div className='flex gap-2 w-full font-semibold justify-center text-xs'>
-                Hourly rate : {serviceRedux?.price.amount} {serviceRedux?.price.currency}               
+                Hourly rate : {serviceRedux?.price?.amount ?? 'N/A'} {serviceRedux?.price?.currency ?? ""}               
             </div>
 
             <div className='flex gap-2 w-full justify-center text-xs'>
