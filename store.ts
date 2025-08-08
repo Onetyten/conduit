@@ -7,7 +7,6 @@ import serviceProfileReducer from '@/state/serviceProfile/serviceProfile'
 import showSignUpReducer from '@/state/showSignUp/showSignUp'
 import keywordReducer from '@/state/keywordSlice/keywordSlice'
 import locationalDataSlice from '@/state/locationalData/locationalDataSlice'
-import profileIsMeReducer from '@/state/profileIsMe/profileIsMeSlice'
 import storage from 'redux-persist/lib/storage'
 import {persistReducer,persistStore} from 'redux-persist'
 import { combineReducers } from '@reduxjs/toolkit'
@@ -29,8 +28,7 @@ const reducer = combineReducers({
     service:servicePostReducer,
     serviceProfile:serviceProfileReducer,
     showSignUp:showSignUpReducer,
-    locationalData:locationalDataSlice,
-    profileIsMe:profileIsMeReducer
+    locationalData:locationalDataSlice
 })
 
 const persistedReducer = persistReducer(persistConfig,reducer)

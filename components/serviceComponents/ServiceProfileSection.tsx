@@ -2,8 +2,6 @@ import React from 'react'
 import { Avatar,AvatarFallback,AvatarImage } from '@/components/ui/avatar';
 import { profileInterface,serviceInterface} from '@/lib/types';
 import Link from 'next/link';
-import { useDispatch } from 'react-redux';
-import { setToService } from '@/state/profileIsMe/profileIsMeSlice';
 
 interface serviceInterfaceProp{
     serviceProfileRedux:profileInterface|null
@@ -11,7 +9,6 @@ interface serviceInterfaceProp{
 }
 
 export default function ServiceProfileSection({serviceProfileRedux,serviceRedux}:serviceInterfaceProp) {
-    const dispatch = useDispatch()
   return (
     <div className='flex gap-1 justify-between w-[90%] max-w-2xl items-center'>
         <div className='flex items-center gap-2'>

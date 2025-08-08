@@ -1,6 +1,8 @@
+'use'
 import React from 'react'
 import {serviceInterface} from '@/lib/types';
 import ReviewItem from '../reviewItem';
+import ReviewInput from '../reviewInput';
 
 interface serviceInterfaceProp{
     serviceRedux:serviceInterface|null
@@ -8,17 +10,15 @@ interface serviceInterfaceProp{
 
 
 export default function ReviewService({serviceRedux}:serviceInterfaceProp) {
-  return (
     
-    <div className='flex flex-col items-center justify-center gap-4 mb-9 w-[90%] max-w-2xl text-center'>
-        <p className='font-semibold w-full text-center '>Reviews</p>
-
-
-        <form action="" className='w-full flex justify-between gap-2 items-center'>
-            <input type="text" placeholder='Leave a review'className='text-sm border-conduit border-[1px] p-2 px-6 w-full rounded-full' />
-            <button className='bg-conduit hover:bg-slate-800 cursor-pointer text-background px-6 p-2 h-9 rounded-md sm:rounded-full  text-xs '>Send</button>
-        </form>
-
+  return (
+    <div className='flex flex-col items-cent
+    er relative justify-center gap-4 mb-9 w-[90%] max-w-2xl text-center'>
+        <p className='font-semibold w-full text-center '>
+            Reviews {serviceRedux?.reviews?.length && serviceRedux.reviews.length > 0 ? `(${serviceRedux.reviews.length})` : ''}
+        </p>
+        
+        <ReviewInput />
 
         <div className='flex gap-2 text-xs my-6 w-full text-center'>
             {serviceRedux && serviceRedux.reviews.length>0?
@@ -36,6 +36,10 @@ export default function ReviewService({serviceRedux}:serviceInterfaceProp) {
                 No reviews available yet
             </p>
             }
+        </div>
+
+        <div className='w-screen h-screen bg-conduit fixed'>
+
         </div>
 
 

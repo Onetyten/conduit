@@ -3,8 +3,8 @@ import ServiceProfileSection from '@/components/serviceComponents/ServiceProfile
 import React from 'react'
 import {RootState} from '@/store'
 import {useSelector} from 'react-redux'
-// import ServiceProfileDetails from '@/components/serviceComponents/serviceProfileDetails'
-// import ReviewService from '@/components/serviceComponents/reviewService'
+import ServiceProfileDetails from '@/components/serviceComponents/serviceProfileDetails'
+import ReviewService from '@/components/serviceComponents/reviewService'
 import LikeComponent from '@/components/serviceComponents/likeComponent'
 import BackButton from '@/components/BackButton'
 import useLikePost from '@/hooks/useLikedPost'
@@ -21,11 +21,10 @@ export default function Page() {
         <div className='w-full mb-20'>
             <BackButton/>
         </div>
-        
         <ServiceProfileSection serviceProfileRedux={serviceProfileRedux} serviceRedux={service} />
         <LikeComponent LikePost={LikePost} postLiked = {postLiked}/>
-        {/* <ServiceProfileDetails  serviceProfileRedux ={serviceProfileRedux} serviceRedux={serviceRedux}/>
-        <ReviewService  serviceRedux={serviceRedux} /> */}
+        <ServiceProfileDetails  serviceProfileRedux ={serviceProfileRedux} serviceRedux={service}/>
+        <ReviewService  serviceRedux={service} />
     </div>
     
   )

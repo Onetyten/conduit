@@ -10,7 +10,6 @@ import { clearUser } from '@/state/userInfo/userSlice'
 import {signUpTrue} from '@/state/showSignUp/showSignUp'
 import { RootState } from '@/store'
 import { GiHamburgerMenu } from "react-icons/gi";
-import { setToProfile } from '@/state/profileIsMe/profileIsMeSlice'
 
 
 

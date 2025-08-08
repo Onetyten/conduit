@@ -5,10 +5,9 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Logo from '@/public/Images/Logo.png'
 import SigninPic from '@/public/Images/SigninPic.png'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import {setUser} from '@/state/userInfo/userSlice'
 import { useRouter } from 'next/navigation'
-import { RootState } from '@/store'
 import { signUpTrue } from '@/state/showSignUp/showSignUp'
 import { toast } from 'react-toastify'
 import axios from 'axios'
@@ -17,7 +16,7 @@ export default function page() {
   const router = useRouter()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const userReduxdata = useSelector((state:RootState)=>state.user.user)
+  // const userReduxdata = useSelector((state:RootState)=>state.user.user)
   const dispatch = useDispatch()
 
   async function SignInUser(e:React.FormEvent<HTMLFormElement>) {
