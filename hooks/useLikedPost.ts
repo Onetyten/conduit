@@ -31,7 +31,6 @@ import { toast } from 'react-toastify'
         }
 
         if (!userProfile) {
-            console.log("User is not logged in")
             toast.warn("Log in to like services")
             return
         }

@@ -25,14 +25,12 @@ export default function page() {
     try {
       const response  = await axios.post(`/api/login`,{password,email})
       const userData = await response.data
-      console.log(userData)
       if (!(response.status == 200))
       {
         return toast.error(userData.message)
       }
       dispatch(setUser(userData.user))
       toast.success("Signin successful")
-      console.log("redux data",userReduxdata)
       router.push('/');
     }
 
@@ -41,7 +39,6 @@ export default function page() {
       if (axios.isAxiosError(error)){
         if (error.response){
           toast.error(error.response.data.message)
-          console.log(error.response.data.message)
         }
         
       }

@@ -8,6 +8,7 @@ import { FaRegStar } from "react-icons/fa6";
 import { useInView } from 'framer-motion';
 import useGetProfile from '@/hooks/useGetProfile';
 import Image from 'next/image';
+import Link from 'next/link';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Rating = RatingBase as unknown as React.FC<any>;
 
@@ -30,17 +31,16 @@ export default function ReviewItem(props:propTypes) {
         }
     }, [fetchProfile, isInView]);
 
-    useEffect(() => {
-        if (profileData) {
-            console.log("Profile loaded:", profileData);
-        }
-    }, [profileData]);
-
-
     return (
     <div className='flex items-start p-1.5 px-4 gap-2'>     
         <div className=' rounded-full w-8 h-8 relative bg-conduit/50 overflow-hidden' ref = {profileref}>
-                <Image src={profileData?.profilePicture ?? "/icons/profile.png"} fill alt={profileData?.firstName || "AO"} className='capitalize object-cover'/>  
+            {profileData?._id && profileData.profilePicture && (
+                <Link href={`/profile/${profileData?._id}`}>
+                    <Image src={profileData?.profilePicture ?? "/icons/profile.png"} fill alt={profileData?.firstName || "AO"} className='capitalize object-cover'/>  
+                </Link>
+            )}
+            
+                
         </div>
 
         <div className='flex flex-col items-start gap-2'>

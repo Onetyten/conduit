@@ -63,7 +63,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
       <div className='w-full bg-gray-200  py-6 gap-6 flex justify-center items-center flex-col'>
         <div className='flex flex-col gap-6 w-[90%] max-w-2xl           justify-center items-center'>
             <div className='relative w-12 h-12'>
-                <Link href={`/profile`}>
+                <Link href={`/profile/${serviceProfileRedux?._id}`}>
                     <Avatar className='w-full h-full'>
                         <AvatarImage src={serviceProfileRedux?.profilePicture}/>
                         <AvatarFallback>PIC</AvatarFallback>

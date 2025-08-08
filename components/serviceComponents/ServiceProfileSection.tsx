@@ -16,7 +16,7 @@ export default function ServiceProfileSection({serviceProfileRedux,serviceRedux}
     <div className='flex gap-1 justify-between w-[90%] max-w-2xl items-center'>
         <div className='flex items-center gap-2'>
             <div className='relative w-12 h-12'>
-                <Link href={`/profile`} onClick={()=>{dispatch(setToService())}}>
+                <Link href={`/profile/${serviceProfileRedux?._id}`} >
                     <Avatar className='w-full h-full'>
                         <AvatarImage src={serviceProfileRedux?.profilePicture}/>
                         <AvatarFallback>PIC</AvatarFallback>

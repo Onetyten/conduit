@@ -42,7 +42,7 @@ const NavbarAuth = () => {
                         Log out
                       </button>
                     </form>
-                    <Link href={`/profile`} onClick={()=>{dispatch(setToProfile())}}>
+                    <Link href={`/profile/${userReduxData._id}`}>
                       <Avatar>
                           <AvatarImage src ={userReduxData?.profilePicture}/>
                           <AvatarFallback>{`${userReduxData?.lastName.slice(0,1)}${userReduxData?.firstName.slice(0,1)}`}</AvatarFallback>
@@ -52,7 +52,7 @@ const NavbarAuth = () => {
                 </div>
 
                 <div className='text-xl sm:hidden cursor-pointer flex items-center gap-4 '>
-                  <Link href={`/profile`} >
+                  <Link href={`/profile/${userReduxData._id}`} >
                       <Avatar>
                           <AvatarImage src ={userReduxData?.profilePicture}/>
                           <AvatarFallback>{`${userReduxData?.lastName.slice(0,1)}${userReduxData?.firstName.slice(0,1)}`}</AvatarFallback>

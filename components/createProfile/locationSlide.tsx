@@ -20,7 +20,6 @@ export default function LocationSlide(props:propTypes) {
     const {setSlideIndex,country,setCountry,state,setState,district,setDistrict,slideIndex} = props
 
     function Next() {
-        console.log(country,state,district)
         setSlideIndex(slideIndex+1)
         
     }

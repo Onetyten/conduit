@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { MdArrowBack } from 'react-icons/md'
 import { useRouter } from 'next/navigation'

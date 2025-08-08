@@ -64,7 +64,6 @@ const SectionCarousel = () => {
   },[])
 
   function setTag(item:string) {
-    console.log(item)
     dispatch(setkeyWord(item))
   }
 
