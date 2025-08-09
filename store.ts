@@ -16,7 +16,7 @@ const persistConfig = {
     key:'root',
     version:1,
     storage,
-    blacklist: ['showSignUp','keyword']
+    whitelist: ['user']
     // whitelist:[]
 }
 

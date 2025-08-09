@@ -64,8 +64,6 @@ export default function CreateAccount() {
         }
         
     } 
-
-
     useEffect(()=>{
         async function getLocationalData(){
             
@@ -136,12 +134,6 @@ export default function CreateAccount() {
 
                                 )
                             }
-
-
-
-
-
-
                         </form>
                     </div>
 

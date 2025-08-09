@@ -14,7 +14,8 @@ interface serviceInterfaceProp{
 export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux }: serviceInterfaceProp) {
   return (
     <div className='flex justify-center w-full flex-col items-center gap-6'>
-    <div className='flex items-center justify-center mt-5 w-[90%] max-w-2xl          '>
+    {/* remove service profiles skills */}
+    {/* <div className='flex items-center justify-center mt-5 w-[90%] max-w-2xl          '>
         {serviceProfileRedux?
         <div className='gap-3 flex flex-wrap justify-center text-xs'>
         {serviceProfileRedux?.skills.map((item, index) => (
@@ -23,7 +24,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
         </div>
         :
         <div className='w-sm h-6 bg-gray-100 rounded-md'></div >}
-    </div>
+    </div> */}
     <div className='flex items-center justify-center w-[90%] max-w-2xl          '>
         <p className='text-xl text-center sm:text-2xl font-bold'>
         {serviceRedux?.title} 

@@ -5,9 +5,6 @@ import BackButton from '@/components/BackButton'
 import {profileInterface}  from '@/lib/types'
 import ProfileActions from '@/components/profileActions'
 
-// interface ProfilePageProps {
-//    params: Promise<{ id: string }>
-// }
 
 async function getProfile(id:string):Promise<profileInterface> {
   
@@ -35,9 +32,6 @@ export default async function page({
     const profileData = await getProfile(id)
     const creationDate = profileData?.createdAt ? new Date(profileData.createdAt) : null
     const formattedCreationDate = creationDate && !isNaN(creationDate.getTime()) ? format(creationDate, "MMM d, yyyy") : "Unknown Date";
-    
-
-
 
   return (
     <div className='w-full min-h-screen flex flex-col sm:flex-row  relative'>
@@ -69,8 +63,6 @@ export default async function page({
              
             </div>
           )}
-
-
 
           <p className='text-sm py-3'>{`${profileData?.bio?profileData?.bio:'No bio'}`}</p>
 

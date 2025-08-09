@@ -21,7 +21,6 @@ const IntroSection = () => {
                     </button>
                 </form>
             </div>
-
         </div>
 
         <div className='w-full sm:w-md'>
