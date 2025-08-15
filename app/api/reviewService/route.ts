@@ -8,15 +8,7 @@ export async function PATCH(request: Request) {
     await mongoConnect();
 
     try {
-        if (!id) {
-            return NextResponse.json({ message: "Missing service id" }, { status: 404 });
-        }
-        if (!user_id) {
-            return NextResponse.json({ message: "Missing user id" }, { status: 404 });
-        }
-        if (!reviewText || rating === undefined) {
-            return NextResponse.json({ message: "Review text and rating are required" }, { status: 400 });
-        }
+        
         const post = await Service.findById(id);
         if (!post) {
             return NextResponse.json({ message: "Service not found" }, { status: 404 });

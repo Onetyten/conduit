@@ -1,5 +1,5 @@
 "use client"
-import Image from 'next/image'
+// import Image from 'next/image'
 import React, {useEffect} from 'react'
 import Digital from 'react-activity/dist/Digital'
 import "react-activity/dist/Digital.css";
@@ -13,7 +13,6 @@ const Posts = () => {
     useEffect(()=>{
         getProfile()
     },[getProfile])
-
 
   return (
     <div className='flex flex-col justify-center w-full py-5'>
