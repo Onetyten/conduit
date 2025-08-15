@@ -18,13 +18,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e32",
-        "review": "My house has never been cleaner! Very professional and efficient team.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -79,7 +72,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -104,7 +96,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.384926609390841, 3.8743571001557355
+          7.384926609390841,
+          3.8743571001557355
         ]
       }
     },
@@ -130,7 +123,6 @@
       "Tuesday",
       "Thursday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -154,7 +146,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.137884103855751, 3.339156643395479
+          7.137884103855751,
+          3.339156643395479
         ]
       }
     },
@@ -181,13 +174,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e36",
-        "review": "My stylist was amazing. My braids look beautiful and neat!",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -211,7 +197,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.541328812361257, 4.563077545630702
+          7.541328812361257,
+          4.563077545630702
         ]
       }
     },
@@ -238,7 +225,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -261,7 +247,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.438728791118452, 3.423984894725628
+          6.438728791118452,
+          3.423984894725628
         ]
       }
     },
@@ -272,7 +259,9 @@
   {
     "title": "TeeKay Yoga Session",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e38",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2023/08/19/19/12/leaves-8201050_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2023/08/19/19/12/leaves-8201050_960_720.jpg"
+    ],
     "description": "Embark on your wellness journey with our beginner-friendly online yoga classes! Our experienced instructors guide you through fundamental poses, breathing techniques, and mindfulness practices from the comfort of your home. Each one-hour session is designed to build strength, flexibility, and inner calm, perfect for newcomers to yoga. Join our supportive virtual community and start feeling refreshed and balanced today!",
     "status": "published",
     "amountEarned": 0,
@@ -285,7 +274,6 @@
       "Thursday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -307,7 +295,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.657167682279309, 4.741111942040769
+          7.657167682279309,
+          4.741111942040769
         ]
       }
     },
@@ -318,7 +307,9 @@
   {
     "title": "Thrivetop High School Physics Tutoring",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e39",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2015/01/09/11/23/formula-594149_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2015/01/09/11/23/formula-594149_960_720.jpg"
+    ],
     "description": "Boost your physics grades with our personalized one-on-one tutoring sessions! Our expert tutor simplifies complex topics like mechanics, electridistrict, and thermodynamics, tailoring lessons to your learning style. Each one-hour session includes clear explanations, practice problems, and exam strategies to build confidence and mastery. Available in-person or online, we’re committed to helping high school students excel in physics!",
     "status": "published",
     "amountEarned": 0,
@@ -331,7 +322,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -354,7 +344,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.389642939353627, 3.9938628667999443
+          7.389642939353627,
+          3.9938628667999443
         ]
       }
     },
@@ -363,10 +354,12 @@
       "online"
     ]
   },
- {
+  {
     "title": "Heritage Beginner's Yorùbá Lessons",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e40",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2022/02/14/15/54/instrument-7013388_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2022/02/14/15/54/instrument-7013388_960_720.jpg"
+    ],
     "description": "Learn to speak Yorùbá fluently with our engaging online lessons! As native speakers, we teach conversational skills, basic grammar, and cultural nuances in fun, interactive sessions. Perfect for all ages, our one-hour lessons include tailored learning materials to help you master greetings, daily phrases, and more. Start your journey to fluency with our supportive and professional approach!",
     "status": "published",
     "amountEarned": 0,
@@ -379,7 +372,6 @@
       "Thursday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -402,7 +394,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.417066650669364, 3.8498405220927703
+          7.417066650669364,
+          3.8498405220927703
         ]
       }
     },
@@ -413,7 +406,9 @@
   {
     "title": "Tenstrings Piano Lessons",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e41",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2016/09/08/21/09/piano-1655558_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2016/09/08/21/09/piano-1655558_960_720.jpg"
+    ],
     "description": "Discover the joy of playing the piano with our beginner-friendly lessons! Our experienced instructors teach basic music theory, scales, and simple melodies in a supportive environment. Each 45-minute in-person session is designed to build your skills and confidence, with provided music sheets to practice at home. Perfect for all ages, start your musical journey with us today!",
     "status": "published",
     "amountEarned": 0,
@@ -424,13 +419,6 @@
     "availableOn": [
       "Monday",
       "Wednesday"
-    ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e42",
-        "review": "Patient and talented teacher. I'm already playing simple melodies!",
-        "rating": 4
-      }
     ],
     "averageRating": 4,
     "availability": true,
@@ -454,7 +442,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         6.649102566132656, 3.3259042557259693
+          6.649102566132656,
+          3.3259042557259693
         ]
       }
     },
@@ -480,7 +469,6 @@
       "Tuesday",
       "Wednesday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -501,7 +489,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.603013535180984, 3.506795493007342
+          6.603013535180984,
+          3.506795493007342
         ]
       }
     },
@@ -512,7 +501,9 @@
   {
     "title": "Hilltop Drywall Patching",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e44",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2024/11/07/18/48/sofa-9181557_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2024/11/07/18/48/sofa-9181557_960_720.jpg"
+    ],
     "description": "Restore your walls to perfection with our professional drywall patching service! We expertly repair small holes, cracks, and dents, ensuring a seamless finish. Our process includes precise patching, sanding, and priming for a smooth, paint-ready surface. With attention to detail and quality materials, we make your walls look as good as new!",
     "status": "published",
     "amountEarned": 0,
@@ -525,7 +516,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -549,7 +539,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.84192359372305, 3.6314676615776103
+          6.84192359372305,
+          3.6314676615776103
         ]
       }
     },
@@ -575,7 +566,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -598,7 +588,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.398438859756058, 3.909065223565778
+          7.398438859756058,
+          3.909065223565778
         ]
       }
     },
@@ -609,7 +600,9 @@
   {
     "title": "Focus Professional Resume Writing",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e46",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2021/09/15/15/49/resume-6627200_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2021/09/15/15/49/resume-6627200_960_720.jpg"
+    ],
     "description": "Land your dream job with our professional resume and cover letter writing service! Our expert writers craft tailored, ATS-friendly resumes that highlight your skills, experience, and achievements. We work closely with you to create compelling documents that stand out to employers, with personalized cover letters to match. Boost your career prospects with our online service today!",
     "status": "published",
     "amountEarned": 0,
@@ -624,7 +617,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -646,7 +638,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.603704468789942, 3.48597021743933
+          6.603704468789942,
+          3.48597021743933
         ]
       }
     },
@@ -672,7 +665,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -695,7 +687,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.150704892728353, 3.346654674407361
+          7.150704892728353,
+          3.346654674407361
         ]
       }
     },
@@ -723,7 +716,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -745,7 +737,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.805669544499064, 4.509205143626317
+          7.805669544499064,
+          4.509205143626317
         ]
       }
     },
@@ -771,7 +764,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -792,7 +784,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.393027343534086, 3.9054570740551116
+          7.393027343534086,
+          3.9054570740551116
         ]
       }
     },
@@ -820,13 +813,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e51",
-        "review": "The team was very neat and professional. My walls look brand new!",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -850,7 +836,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.617905593099042, 3.5673182961503884
+          6.617905593099042,
+          3.5673182961503884
         ]
       }
     },
@@ -875,7 +862,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -898,7 +884,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.617905593099042, 3.5673182961503884
+          6.617905593099042,
+          3.5673182961503884
         ]
       }
     },
@@ -925,18 +912,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e54",
-        "review": "The makeup was flawless and lasted all day! Highly recommend.",
-        "rating": 5
-      },
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e55",
-        "review": "So happy with my look for my engagement. Very talented artist.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -959,7 +934,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -984,7 +960,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1008,7 +983,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -1019,7 +995,9 @@
   {
     "title": "Lovelace Computer Repair and Troubleshooting",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e57",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2014/08/26/21/27/service-428538_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2014/08/26/21/27/service-428538_960_720.jpg"
+    ],
     "description": "Get your laptop or desktop back in top shape with our expert computer repair services! We diagnose and fix hardware issues, troubleshoot software problems, and remove viruses with precision. Offering both remote and on-site support, our skilled technicians ensure fast, reliable solutions to keep your devices running smoothly. Trust us for all your tech needs!",
     "status": "published",
     "amountEarned": 0,
@@ -1033,18 +1011,6 @@
       "Wednesday",
       "Thursday",
       "Friday"
-    ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e58",
-        "review": "My laptop was fixed in no time. Fast and very knowledgeable!",
-        "rating": 5
-      },
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e59",
-        "review": "Great service, my PC is running smoothly again.",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -1069,7 +1035,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -1097,7 +1064,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1120,7 +1086,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.226214258434507, 3.3409060452453425
+          7.226214258434507,
+          3.3409060452453425
         ]
       }
     },
@@ -1146,7 +1113,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1168,7 +1134,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -1194,13 +1161,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e64",
-        "review": "The photos are absolutely stunning. The best wedding photographer we could have asked for!",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -1224,7 +1184,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -1235,7 +1196,9 @@
   {
     "title": "English Language Tutoring",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e65",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/09/07/10/07/english-2724442_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/09/07/10/07/english-2724442_960_720.jpg"
+    ],
     "description": "Master English with our personalized online tutoring sessions! Our experienced tutors help you improve grammar, writing, and speaking skills through engaging, one-hour lessons tailored to your level. We provide constructive feedback on your writing and practical exercises to boost confidence in communication. Perfect for students and professionals, start your journey to fluency today!",
     "status": "published",
     "amountEarned": 0,
@@ -1250,7 +1213,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1273,7 +1235,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.811110641197875, 4.510849051664038
+          7.811110641197875,
+          4.510849051664038
         ]
       }
     },
@@ -1298,7 +1261,6 @@
       "Tuesday",
       "Thursday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1321,7 +1283,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -1348,7 +1311,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1371,7 +1333,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.814298679352532, 4.583794178499826
+          7.814298679352532,
+          4.583794178499826
         ]
       }
     },
@@ -1382,7 +1345,9 @@
   {
     "title": "Conoil Corporate Event Planning",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e68",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_960_720.jpg"
+    ],
     "description": "Plan your next corporate event with ease using our expert event management services! From seminars to team-building retreats, we handle venue selection, catering, and logistics with precision. Our team ensures every detail aligns with your vision, creating seamless, professional events that impress. Let us bring your corporate gathering to life with our comprehensive planning expertise!",
     "status": "published",
     "amountEarned": 0,
@@ -1397,7 +1362,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1421,7 +1385,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -1432,7 +1397,9 @@
   {
     "title": "Arasi Basic Electrical Repair",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e69",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/07/06/03/00/electrical-2476782_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/07/06/03/00/electrical-2476782_960_720.jpg"
+    ],
     "description": "Keep your home powered with our reliable electrical repair services! Our skilled electricians fix faulty outlets, light switches, and install new fixtures with precision and safety. We use industry-standard tools to ensure long-lasting repairs for both residential and small commercial spaces. Trust us to handle your electrical needs with professionalism and care!",
     "status": "published",
     "amountEarned": 0,
@@ -1445,7 +1412,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1468,7 +1434,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.128898826576642, 3.3621788435925546
+          7.128898826576642,
+          3.3621788435925546
         ]
       }
     },
@@ -1495,7 +1462,6 @@
       "Thursday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1519,7 +1485,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -1547,13 +1514,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e72",
-        "review": "Fast and effective service. My AC is working perfectly now!",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -1577,7 +1537,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -1603,7 +1564,6 @@
       "Thursday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1626,7 +1586,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -1653,7 +1614,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1677,7 +1637,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.065058757000366, 3.462683926041585
+          7.065058757000366,
+          3.462683926041585
         ]
       }
     },
@@ -1704,18 +1665,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e76",
-        "review": "Fantastic job! My makeup was beautiful and lasted all night.",
-        "rating": 5
-      },
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e77",
-        "review": "Very talented and professional. I felt so confident!",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -1738,7 +1687,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -1749,7 +1699,9 @@
   {
     "title": "O-Level/WAEC Science Subject Tutoring",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e78",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2013/11/24/11/10/laboratory-217041_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2013/11/24/11/10/laboratory-217041_960_720.jpg"
+    ],
     "description": "Tutoring for WAEC and NECO in Chemistry, Physics, and Biology. Online sessions focused on passing exams with excellent grades. Book now for professional and reliable service!",
     "status": "published",
     "amountEarned": 0,
@@ -1764,7 +1716,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1787,7 +1738,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.85447721275252, 4.495954620991437
+          7.85447721275252,
+          4.495954620991437
         ]
       }
     },
@@ -1798,7 +1750,9 @@
   {
     "title": "Music Production Lessons",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e79",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2016/11/29/12/39/recording-studio-1869560_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2016/11/29/12/39/recording-studio-1869560_960_720.jpg"
+    ],
     "description": "Learn the basics of music production using Ableton Live and FL Studio. From beat making to mixing and mastering. Online sessions available. Book now for professional and reliable service!",
     "status": "published",
     "amountEarned": 0,
@@ -1810,13 +1764,6 @@
       "Tuesday",
       "Thursday",
       "Saturday"
-    ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e80",
-        "review": "Great intro to music production. The instructor was very patient and helpful.",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -1840,7 +1787,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -1866,13 +1814,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e82",
-        "review": "The installation was very neat and professional. I feel much safer now.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -1894,7 +1835,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -1922,7 +1864,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1946,7 +1887,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -1974,7 +1916,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -1998,7 +1939,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.85447721275252, 4.495954620991437
+          7.85447721275252,
+          4.495954620991437
         ]
       }
     },
@@ -2028,13 +1970,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e86",
-        "review": "Trustworthy and great with my dog. I came home to a happy pet!",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -2058,7 +1993,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -2069,7 +2005,9 @@
   {
     "title": "Professional Content Writing",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e87",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822_960_720.jpg"
+    ],
     "description": "High-quality content writing for blogs, websites, and marketing materials. Well-researched and SEO-optimized articles. Book now for professional and reliable service!",
     "status": "published",
     "amountEarned": 0,
@@ -2084,7 +2022,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -2108,7 +2045,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -2135,13 +2073,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e89",
-        "review": "My car looks brand new! Excellent service and attention to detail.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -2165,7 +2096,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.235600247395504, 3.4396211655762277
+          7.235600247395504,
+          3.4396211655762277
         ]
       }
     },
@@ -2191,7 +2123,6 @@
       "Thursday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -2215,7 +2146,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -2244,7 +2176,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -2266,7 +2197,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.811110641197875, 4.510849051664038
+          7.811110641197875,
+          4.510849051664038
         ]
       }
     },
@@ -2294,13 +2226,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e93",
-        "review": "The tiling was perfectly done. Very neat and professional.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -2324,7 +2249,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -2350,7 +2276,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -2372,7 +2297,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.262331880433297, 3.4723945620269987
+          7.262331880433297,
+          3.4723945620269987
         ]
       }
     },
@@ -2383,7 +2309,9 @@
   {
     "title": "Deep Freezer & Refrigerator Repair",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e95",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2015/09/21/14/23/supermarket-949912_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2015/09/21/14/23/supermarket-949912_960_720.jpg"
+    ],
     "description": "Specialized repair services for deep freezers and refrigerators. We diagnose and fix cooling issues, leaks, and electrical faults. Based in Lagos. Book now for professional and reliable service!",
     "status": "published",
     "amountEarned": 0,
@@ -2397,13 +2325,6 @@
       "Wednesday",
       "Thursday",
       "Friday"
-    ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e96",
-        "review": "My freezer stopped working and he fixed it in less than an hour. Very professional.",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -2428,7 +2349,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -2439,7 +2361,9 @@
   {
     "title": "Creative Writing Coaching",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e97",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg"
+    ],
     "description": "Personalized coaching for aspiring writers. Learn to develop plot, characters, and style for fiction and non-fiction. Online sessions. Book now for professional and reliable service!",
     "status": "published",
     "amountEarned": 0,
@@ -2452,7 +2376,6 @@
       "Thursday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -2474,7 +2397,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -2500,7 +2424,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -2524,7 +2447,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -2535,7 +2459,9 @@
   {
     "title": "Plumbing Maintenance Check-up",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e99",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2016/02/29/11/41/bathroom-1228427_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2016/02/29/11/41/bathroom-1228427_960_720.jpg"
+    ],
     "description": "Ensure your plumbing system runs smoothly with our comprehensive maintenance check-up service. We provide thorough inspections of pipes, faucets, toilets, and drainage systems to identify and prevent potential leaks, blockages, or other issues before they become costly repairs. Our experienced technicians will perform minor repairs on the spot and offer expert advice on maintaining your plumbing system. Serving residential and commercial properties in Ibadan with a commitment to quality and reliability. Book now for a professional and dependable service to keep your home or business in top condition!",
     "status": "draft",
     "amountEarned": 0,
@@ -2547,7 +2473,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": false,
     "deliverables": [
@@ -2569,7 +2494,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -2577,59 +2503,61 @@
       "onsite"
     ]
   },
-{
-  "title": "Pet Grooming at Home",
-  "serviceProviderId": "65b91b5c46e3d5a2d0b50e100",
-  "galleryImages": [
-    "https://cdn.pixabay.com/photo/2022/01/09/19/53/nail-clipping-6926862_960_720.jpg"
-  ],
-  "description": "Experience the ultimate convenience with our mobile pet grooming service, designed to keep your furry friends looking and feeling their best without the stress of a trip to the groomer. We bring our professional grooming expertise directly to your doorstep in Osogbo, providing a calm and comfortable environment for your pets. Our services include thorough bathing to ensure a clean and shiny coat, gentle brushing to remove tangles and loose fur, and precise nail trimming to keep your pet comfortable and healthy. We use pet-safe products and tailor each session to your pet’s specific needs, ensuring a stress-free and enjoyable experience. Perfect for cats and dogs of all breeds and sizes. Book now for a professional, reliable, and compassionate grooming service that prioritizes your pet’s well-being!",
-  "status": "published",
-  "amountEarned": 0,
-  "price": {
-    "amount": 12000,
-    "currency": "NGN"
+  {
+    "title": "Pet Grooming at Home",
+    "serviceProviderId": "65b91b5c46e3d5a2d0b50e100",
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2022/01/09/19/53/nail-clipping-6926862_960_720.jpg"
+    ],
+    "description": "Experience the ultimate convenience with our mobile pet grooming service, designed to keep your furry friends looking and feeling their best without the stress of a trip to the groomer. We bring our professional grooming expertise directly to your doorstep in Osogbo, providing a calm and comfortable environment for your pets. Our services include thorough bathing to ensure a clean and shiny coat, gentle brushing to remove tangles and loose fur, and precise nail trimming to keep your pet comfortable and healthy. We use pet-safe products and tailor each session to your pet’s specific needs, ensuring a stress-free and enjoyable experience. Perfect for cats and dogs of all breeds and sizes. Book now for a professional, reliable, and compassionate grooming service that prioritizes your pet’s well-being!",
+    "status": "published",
+    "amountEarned": 0,
+    "price": {
+      "amount": 12000,
+      "currency": "NGN"
+    },
+    "availableOn": [
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "averageRating": 5,
+    "availability": true,
+    "deliverables": [
+      "Bathing",
+      "Brushing",
+      "Nail trim"
+    ],
+    "tags": [
+      "pet services",
+      "grooming",
+      "mobile"
+    ],
+    "category": "6890d3fbf949b4db4917149b",
+    "address": {
+      "street": "17 Ogo-Oluwa St",
+      "district": "Osogbo",
+      "state": "Osun State",
+      "zipcode": "230212",
+      "country": "Nigeria",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          7.85447721275252,
+          4.495954620991437
+        ]
+      }
+    },
+    "deliveryMethod": [
+      "onsite"
+    ]
   },
-  "availableOn": [
-    "Tuesday",
-    "Thursday",
-    "Saturday"
-  ],
-  "reviews": [],
-  "averageRating": 5,
-  "availability": true,
-  "deliverables": [
-    "Bathing",
-    "Brushing",
-    "Nail trim"
-  ],
-  "tags": [
-    "pet services",
-    "grooming",
-    "mobile"
-  ],
-  "category": "6890d3fbf949b4db4917149b",
-  "address": {
-    "street": "17 Ogo-Oluwa St",
-    "district": "Osogbo",
-    "state": "Osun State",
-    "zipcode": "230212",
-    "country": "Nigeria",
-    "location": {
-      "type": "Point",
-      "coordinates": [
-       7.85447721275252, 4.495954620991437
-      ]
-    }
-  },
-  "deliveryMethod": [
-    "onsite"
-  ]
-},
-   {
+  {
     "title": "Advanced Mathematics Tutoring",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e102",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2014/07/06/13/55/calculator-385506_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2014/07/06/13/55/calculator-385506_960_720.jpg"
+    ],
     "description": "Master advanced mathematics with our expert tutoring tailored for A-Level and university students. Our online sessions cover complex topics such as calculus, linear algebra, differential equations, and more, ensuring you build a strong foundation for academic success. We provide personalized 1-on-1 instruction, focusing on your specific needs, whether you're preparing for exams or seeking to deepen your understanding of challenging concepts. Each session includes detailed explanations, practical problem-solving techniques, and customized study materials to enhance your learning experience. Book now for professional, reliable, and engaging tutoring from the comfort of your home, designed to help you excel in your mathematical journey!",
     "status": "published",
     "amountEarned": 0,
@@ -2643,7 +2571,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -2666,7 +2593,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -2692,7 +2620,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -2714,7 +2641,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -2725,7 +2653,9 @@
   {
     "title": "Social Media Management",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e105",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2019/04/20/04/51/social-media-4140959_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2019/04/20/04/51/social-media-4140959_960_720.jpg"
+    ],
     "description": "Boost your small business’s online presence with our professional social media management services. We take the hassle out of digital marketing by creating engaging content, curating a tailored content calendar, and managing daily posts across platforms like Instagram, Twitter, and Facebook. Our team focuses on increasing audience engagement, growing your follower base, and strengthening your brand identity through strategic and visually appealing content. Based in Ile-Ife, we offer fully online services, working closely with you to align with your business goals. Book now for a professional, reliable, and results-driven approach to elevate your social media game!",
     "status": "published",
     "amountEarned": 0,
@@ -2740,7 +2670,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -2764,7 +2693,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.811110641197875, 4.510849051664038
+          7.811110641197875,
+          4.510849051664038
         ]
       }
     },
@@ -2772,7 +2702,7 @@
       "online"
     ]
   },
-   {
+  {
     "title": "Wedding Catering Services",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e106",
     "galleryImages": [
@@ -2788,13 +2718,6 @@
     "availableOn": [
       "Saturday",
       "Sunday"
-    ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e17",
-        "review": "The food was delicious and the service was impeccable. Highly recommend!",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -2819,7 +2742,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -2847,7 +2771,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -2872,7 +2795,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -2883,7 +2807,9 @@
   {
     "title": "Website SEO Optimization",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e109",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2016/11/20/09/06/laptop-1842297_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2016/11/20/09/06/laptop-1842297_960_720.jpg"
+    ],
     "description": "Boost your website’s visibility and attract more customers with our expert SEO optimization services, delivered entirely online from Osogbo. We conduct a comprehensive SEO audit to identify areas for improvement, followed by strategic implementation of on-page and off-page techniques. Our services include in-depth keyword research to target your audience effectively, content optimization to enhance user experience, and link-building strategies to increase your site’s authority. Whether you’re a small business or a growing enterprise, we tailor our approach to meet your goals, helping you rank higher on search engines like Google. Book now for a professional, reliable, and results-driven service to elevate your online presence!",
     "status": "published",
     "amountEarned": 0,
@@ -2898,7 +2824,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -2922,7 +2847,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.85447721275252, 4.495954620991437
+          7.85447721275252,
+          4.495954620991437
         ]
       }
     },
@@ -2947,13 +2873,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e11",
-        "review": "My puppy is so much more well-behaved after the classes. The trainer was excellent!",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -2975,7 +2894,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.221400407560613, 3.3438110177672034
+          7.221400407560613,
+          3.3438110177672034
         ]
       }
     },
@@ -2986,7 +2906,9 @@
   {
     "title": "Handyman Services (General Repairs)",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e112",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_960_720.jpg"
+    ],
     "description": "Keep your home in top shape with our versatile handyman services in Ibadan, covering a wide range of general repairs. From fixing leaky faucets and faulty electrical outlets to hanging pictures and assembling furniture, our skilled technicians handle it all with precision and care. We prioritize quality workmanship, ensuring every repair is completed to the highest standards while maintaining a clean and tidy workspace. Serving Ibadan and its environs, we offer flexible scheduling to suit your busy lifestyle. Book now for a professional, reliable, and efficient service that addresses all your home maintenance needs!",
     "status": "published",
     "amountEarned": 0,
@@ -3001,7 +2923,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3025,7 +2946,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -3053,7 +2975,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3076,7 +2997,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -3104,7 +3026,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3127,7 +3048,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -3153,13 +3075,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e11",
-        "review": "The decorations were breathtaking! They completely transformed the venue.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -3182,7 +3097,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -3193,7 +3109,9 @@
   {
     "title": "Physiotherapy for Sports Injuries",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e117",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2023/08/27/00/09/cycling-8215973_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2023/08/27/00/09/cycling-8215973_960_720.jpg"
+    ],
     "description": "Recover faster and stronger from sports-related injuries with our specialized physiotherapy services in Lagos. Our certified physiotherapists provide personalized assessments and create tailored rehabilitation plans to address injuries such as sprains, strains, and tendonitis. We combine hands-on therapy with targeted exercises to restore mobility, reduce pain, and prevent future injuries. Whether you’re a professional athlete or a weekend warrior, our goal is to help you return to your active lifestyle with confidence. Book now for a professional, reliable, and compassionate service designed to support your recovery journey!",
     "status": "published",
     "amountEarned": 0,
@@ -3206,7 +3124,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3229,7 +3146,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -3255,7 +3173,6 @@
       "Thursday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3277,7 +3194,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.217329498009096, 3.271537517491342
+          7.217329498009096,
+          3.271537517491342
         ]
       }
     },
@@ -3288,7 +3206,9 @@
   {
     "title": "JSSCE/WAEC Tutoring (Math & English)",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e119",
-    "galleryImages": ["https://www.myschoolgist.com/wp-content/uploads/2023/02/West-African-Examinations-Council-WAEC-Result.jpg"],
+    "galleryImages": [
+      "https://www.myschoolgist.com/wp-content/uploads/2023/02/West-African-Examinations-Council-WAEC-Result.jpg"
+    ],
     "description": "Excel in Mathematics and English with our dedicated tutoring for Junior and Senior Secondary School students preparing for JSSCE and WAEC exams. Our online classes offer personalized 1-on-1 instruction, focusing on key concepts, exam techniques, and extensive practice with past questions. Based in Osogbo, our experienced tutors provide clear explanations and tailored study plans to address each student’s unique needs, ensuring confidence and success in internal and external exams. Book now for a professional, reliable, and engaging tutoring experience that helps you achieve excellent grades!",
     "status": "draft",
     "amountEarned": 0,
@@ -3303,7 +3223,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": false,
     "deliverables": [
@@ -3326,7 +3245,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.735153754337265, 4.606315903875621
+          7.735153754337265,
+          4.606315903875621
         ]
       }
     },
@@ -3337,7 +3257,9 @@
   {
     "title": "Photography Lessons for Beginners",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e120",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2019/12/08/21/32/bokeh-4682289_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2019/12/08/21/32/bokeh-4682289_960_720.jpg"
+    ],
     "description": "Discover the art of photography with our beginner-friendly lessons in Ibadan, designed to help you master your camera and capture stunning images. Our hands-on sessions cover essential skills, including camera settings, composition, lighting techniques, and basic photo editing. Bring your own camera and learn from experienced instructors who provide personalized guidance to spark your creativity. Each 2-hour lesson includes practical exercises to build your confidence behind the lens. Perfect for hobbyists or aspiring photographers, book now for a professional, reliable, and inspiring learning experience that unlocks your photographic potential!",
     "status": "published",
     "amountEarned": 0,
@@ -3348,7 +3270,6 @@
     "availableOn": [
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3371,7 +3292,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -3397,13 +3319,6 @@
       "Tuesday",
       "Wednesday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "Provided fantastic ideas that were both stylish and functional. Very pleased!",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -3427,7 +3342,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -3455,7 +3371,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3478,7 +3393,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.168121505920235, 3.34269233978406
+          7.168121505920235,
+          3.34269233978406
         ]
       }
     },
@@ -3486,7 +3402,7 @@
       "onsite"
     ]
   },
-    {
+  {
     "title": "Hair Relaxing and Texturizing",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e124",
     "galleryImages": [
@@ -3504,7 +3420,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3527,7 +3442,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.811110641197875, 4.510849051664038
+          7.811110641197875,
+          4.510849051664038
         ]
       }
     },
@@ -3538,7 +3454,9 @@
   {
     "title": "Mobile Veterinary Services",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e125",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2020/03/31/16/18/cat-4988408_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2020/03/31/16/18/cat-4988408_960_720.jpg"
+    ],
     "description": "Keep your pets healthy and happy with our convenient mobile veterinary services in Lagos. Our licensed veterinarians bring comprehensive care to your doorstep, offering routine check-ups, vaccinations, and minor treatments in a stress-free environment for your animals. We prioritize your pet’s comfort, providing personalized consultations and expert advice to address their specific health needs. From dogs and cats to other small pets, we ensure compassionate and professional care. Book now for a reliable, professional, and caring veterinary service that makes pet healthcare effortless!",
     "status": "published",
     "amountEarned": 0,
@@ -3549,13 +3467,6 @@
     "availableOn": [
       "Tuesday",
       "Thursday"
-    ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "So convenient and the vet was excellent with my dog. Highly recommend!",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -3580,7 +3491,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -3591,7 +3503,9 @@
   {
     "title": "Freelance Video Editing",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e127",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2016/01/15/12/02/editing-1141505_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2016/01/15/12/02/editing-1141505_960_720.jpg"
+    ],
     "description": "Transform your raw footage into polished, professional videos with our freelance video editing services, offered online from Ibadan. We specialize in editing for YouTube, social media, corporate videos, and more, delivering high-quality results that align with your vision. Our services include precise video editing, seamless color grading, and impactful sound design to enhance the overall viewing experience. We work closely with you to ensure every detail meets your expectations, whether it’s a vlog, promotional video, or event highlight. Book now for a professional, reliable, and creative editing service that brings your content to life!",
     "status": "published",
     "amountEarned": 0,
@@ -3606,7 +3520,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3630,7 +3543,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -3656,7 +3570,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3678,7 +3591,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -3703,13 +3617,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e13",
-        "review": "The kids had a blast! The entertainer was fantastic and kept them engaged the whole time.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -3732,7 +3639,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.811110641197875, 4.510849051664038
+          7.811110641197875,
+          4.510849051664038
         ]
       }
     },
@@ -3760,7 +3668,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3784,7 +3691,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -3795,7 +3703,9 @@
   {
     "title": "Tutor for University-Level Economics",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e132",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241_960_720.jpg"
+    ],
     "description": "Excel in your university economics courses with our expert online tutoring services, based in Osogbo. We offer personalized 1-on-1 sessions covering microeconomics, macroeconomics, econometrics, and more, tailored to your academic needs. Our experienced tutors provide clear explanations, practical examples, and assignment assistance to help you master complex concepts and succeed in exams. Whether you’re struggling with economic theories or need help with data analysis, we’re here to support your academic journey. Book now for a professional, reliable, and engaging tutoring experience that boosts your confidence and grades!",
     "status": "published",
     "amountEarned": 0,
@@ -3808,7 +3718,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3831,7 +3740,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.713799733593957, 4.597566456607327
+          7.713799733593957,
+          4.597566456607327
         ]
       }
     },
@@ -3857,13 +3767,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "My garden has never looked better! The team was professional and the result is stunning.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -3887,7 +3790,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -3898,7 +3802,9 @@
   {
     "title": "Generator Repair and Servicing",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e135",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2022/04/01/12/00/welding-7104637_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2022/04/01/12/00/welding-7104637_960_720.jpg"
+    ],
     "description": "Keep your power supply uninterrupted with our expert generator repair and servicing in Ibadan. We specialize in maintaining and repairing all types of generators, from small home units to large commercial systems, addressing engine, electrical, and mechanical issues. Our skilled technicians provide thorough diagnostics, routine servicing, and high-quality repairs to ensure your generator runs efficiently and reliably. Serving both residential and business clients, we offer prompt and professional solutions to keep your power on. Book now for a dependable service that restores your generator’s performance!",
     "status": "published",
     "amountEarned": 0,
@@ -3913,7 +3819,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3936,7 +3841,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -3962,7 +3868,6 @@
       "Thursday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -3986,7 +3891,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -4015,13 +3921,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "Best haircut I've had in a long time. The attention to detail is excellent.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -4044,7 +3943,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.130732956946002, 3.3629457662687843
+          7.130732956946002,
+          3.3629457662687843
         ]
       }
     },
@@ -4052,10 +3952,12 @@
       "onsite"
     ]
   },
-   {
+  {
     "title": "Graphic Design Services",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e139",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2016/11/18/12/55/office-1834294_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2016/11/18/12/55/office-1834294_960_720.jpg"
+    ],
     "description": "Elevate your brand’s visual identity with our professional graphic design services, offered online from Ibadan. We create stunning logos, eye-catching flyers, professional business cards, and engaging social media graphics tailored to your business needs. Our creative team works closely with you to understand your vision, ensuring designs that are both aesthetically pleasing and strategically effective. Whether you’re launching a new brand or refreshing your marketing materials, we deliver high-quality, custom designs with a fast turnaround. Book now for a professional, reliable, and innovative service that makes your brand stand out!",
     "status": "published",
     "amountEarned": 0,
@@ -4070,7 +3972,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -4094,7 +3995,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.435460638701722, 3.8578937006303784
+          7.435460638701722,
+          3.8578937006303784
         ]
       }
     },
@@ -4119,7 +4021,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": false,
     "deliverables": [
@@ -4141,7 +4042,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.7144419755200575, 4.534862084517882
+          7.7144419755200575,
+          4.534862084517882
         ]
       }
     },
@@ -4168,7 +4070,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -4190,8 +4091,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          
-          7.435460638701722, 3.8578937006303784
+          7.435460638701722,
+          3.8578937006303784
         ]
       }
     },
@@ -4202,7 +4103,9 @@
   {
     "title": "Voice-over Artist",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e142",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2022/06/21/21/15/audio-7276511_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2022/06/21/21/15/audio-7276511_960_720.jpg"
+    ],
     "description": "Bring your projects to life with our professional voice-over services, delivered online from Lagos. Our clear, confident, and versatile voice is perfect for commercials, narrations, audiobooks, IVR systems, and more. We provide high-quality recordings with professional audio editing to ensure a polished final product, tailored to your specific needs. With a fast turnaround and attention to detail, we guarantee a seamless experience from script to delivery. Book now for a professional, reliable, and impactful voice-over service that elevates your content!",
     "status": "published",
     "amountEarned": 0,
@@ -4217,7 +4120,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -4239,7 +4141,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -4267,13 +4170,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "The borehole project was completed on time and the water quality is excellent. Great job!",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -4296,7 +4192,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.198343465561449, 3.353548135468796
+          7.198343465561449,
+          3.353548135468796
         ]
       }
     },
@@ -4321,7 +4218,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -4345,7 +4241,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -4373,7 +4270,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -4397,7 +4293,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.435460638701722, 3.8578937006303784
+          7.435460638701722,
+          3.8578937006303784
         ]
       }
     },
@@ -4422,13 +4319,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "The photos of my cat are absolutely amazing! The photographer was so patient.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -4451,7 +4341,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -4462,7 +4353,9 @@
   {
     "title": "Web Development for E-commerce",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e150",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2020/04/30/15/34/code-5113374_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2020/04/30/15/34/code-5113374_960_720.jpg"
+    ],
     "description": "Launch your online store with our custom e-commerce web development services, offered online from Osogbo. We build user-friendly, secure, and responsive websites using platforms like Shopify and WooCommerce, tailored to your business needs. Our services include seamless payment gateway setup, intuitive navigation, and optimized designs to enhance customer experience and drive sales. From small startups to established businesses, we deliver professional solutions with ongoing support to ensure your store thrives. Book now for a reliable, professional, and high-quality service that powers your e-commerce success!",
     "status": "draft",
     "amountEarned": 0,
@@ -4477,7 +4370,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": false,
     "deliverables": [
@@ -4500,7 +4392,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.819916918876428, 4.472481766030967
+          7.819916918876428,
+          4.472481766030967
         ]
       }
     },
@@ -4526,7 +4419,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -4549,7 +4441,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.435460638701722, 3.8578937006303784
+          7.435460638701722,
+          3.8578937006303784
         ]
       }
     },
@@ -4576,13 +4469,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "My apartment has never been so clean! The team was very efficient and detail-oriented.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -4605,7 +4491,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -4616,7 +4503,9 @@
   {
     "title": "Window Repair and Installation",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e154",
-    "galleryImages": ["https://www.windowglassrepairstoronto.ca/userfiles/images/inner/window-replacement-best.webp"],
+    "galleryImages": [
+      "https://www.windowglassrepairstoronto.ca/userfiles/images/inner/window-replacement-best.webp"
+    ],
     "description": "Restore and enhance your property with our professional window repair and installation services in Ibadan. We expertly handle broken glass, faulty hinges, and leaking frames, providing durable repairs and high-quality window installations for homes and offices. Our skilled technicians ensure precise craftsmanship and use premium materials to improve energy efficiency and aesthetics. Whether you need a single window fixed or a full installation, we deliver tailored solutions with minimal disruption. Book now for a professional, reliable, and efficient service that strengthens your property!",
     "status": "published",
     "amountEarned": 0,
@@ -4631,7 +4520,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -4654,7 +4542,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.435460638701722, 3.8578937006303784
+          7.435460638701722,
+          3.8578937006303784
         ]
       }
     },
@@ -4682,13 +4571,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "My natural hair has never been healthier. The stylist was very knowledgeable and gentle.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -4711,7 +4593,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.839820929689106, 4.492411062586527
+          7.839820929689106,
+          4.492411062586527
         ]
       }
     },
@@ -4737,7 +4620,6 @@
       "Thursday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -4760,7 +4642,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.564775947579463, 3.275440364401154
+          6.564775947579463,
+          3.275440364401154
         ]
       }
     },
@@ -4771,7 +4654,9 @@
   {
     "title": "Professional Resume Writing",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e158",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2018/04/07/08/28/notepad-3297994_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2018/04/07/08/28/notepad-3297994_960_720.jpg"
+    ],
     "description": "Stand out in the job market with our professional resume and CV writing services, offered online from Lagos. Our expert writers craft tailored resumes, CVs, and cover letters that highlight your skills, experience, and achievements to make a lasting impression on employers. We work closely with you to understand your career goals and create documents optimized for your industry, ensuring clarity and impact. Whether you’re applying for your first job or a senior position, book now for a professional, reliable, and personalized service that boosts your chances of landing your dream job!",
     "status": "published",
     "amountEarned": 0,
@@ -4784,7 +4669,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -4808,7 +4692,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -4836,7 +4721,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": false,
     "deliverables": [
@@ -4858,7 +4742,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.270996518028646, 3.411715757122829
+          7.270996518028646,
+          3.411715757122829
         ]
       }
     },
@@ -4869,7 +4754,9 @@
   {
     "title": "Exotic Pet Care",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e160",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2016/11/01/23/41/massage-1790063_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2016/11/01/23/41/massage-1790063_960_720.jpg"
+    ],
     "description": "Ensure the well-being of your exotic pets with our specialized care services in Lagos. We provide expert care for reptiles, birds, small mammals, and other unique pets, offering tailored feeding, enclosure cleaning, and health checks. Our knowledgeable team understands the specific needs of exotic animals, ensuring they thrive in a safe and comfortable environment. Whether you need regular care or assistance while you’re away, book now for a professional, reliable, and compassionate service that keeps your exotic pets healthy and happy!",
     "status": "published",
     "amountEarned": 0,
@@ -4881,13 +4768,6 @@
       "Monday",
       "Wednesday",
       "Friday"
-    ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "My chameleon has never been happier! The caretaker is very knowledgeable.",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -4911,7 +4791,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -4919,10 +4800,12 @@
       "onsite"
     ]
   },
-   {
+  {
     "title": "Physics Tutoring (High School)",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e162",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2019/12/21/20/44/math-work-4711302_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2019/12/21/20/44/math-work-4711302_960_720.jpg"
+    ],
     "description": "Master high school Physics with our expert online tutoring services, based in Ile-Ife. Tailored for WAEC and NECO preparation, we focus on simplifying challenging concepts and honing problem-solving skills. Our experienced tutors provide personalized 1-hour sessions, offering clear explanations, practical examples, and targeted exam prep to boost your confidence and grades. Whether you’re struggling with mechanics, electridistrict, or waves, we ensure you grasp key topics effectively. Book now for a professional, reliable, and engaging tutoring experience that sets you up for academic success!",
     "status": "published",
     "amountEarned": 0,
@@ -4935,7 +4818,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -4957,7 +4839,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.811110641197875, 4.510849051664038
+          7.811110641197875,
+          4.510849051664038
         ]
       }
     },
@@ -4968,7 +4851,9 @@
   {
     "title": "Logo Design and Branding",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e163",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2016/03/26/23/23/starbucks-1281880_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2016/03/26/23/23/starbucks-1281880_960_720.jpg"
+    ],
     "description": "Build a powerful brand identity with our professional logo design and branding services, offered online from Osogbo. We create memorable logos, comprehensive brand guides, and high-quality final files tailored for startups and established businesses. Our creative team collaborates with you to craft visually stunning and strategic designs that resonate with your audience. From initial concepts to polished deliverables, we ensure your brand stands out in a competitive market. Book now for a professional, reliable, and innovative service that elevates your business’s visual presence!",
     "status": "published",
     "amountEarned": 0,
@@ -4983,7 +4868,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5007,7 +4891,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.7468739229690975, 4.545879907003882
+          7.7468739229690975,
+          4.545879907003882
         ]
       }
     },
@@ -5032,7 +4917,6 @@
       "Tuesday",
       "Thursday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": false,
     "deliverables": [
@@ -5054,7 +4938,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.435460638701722, 3.8578937006303784
+          7.435460638701722,
+          3.8578937006303784
         ]
       }
     },
@@ -5080,13 +4965,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "The photos were excellent and the team was a pleasure to work with. We'll be using these for a long time.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -5110,7 +4988,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -5121,7 +5000,9 @@
   {
     "title": "Massage Therapy at Home",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e167",
-    "galleryImages": ["https://florida-academy.edu/wp-content/uploads/2019/11/MassageTherapyFAQs-FloridaAcademy.jpeg"],
+    "galleryImages": [
+      "https://florida-academy.edu/wp-content/uploads/2019/11/MassageTherapyFAQs-FloridaAcademy.jpeg"
+    ],
     "description": "Relax and rejuvenate with our mobile massage therapy services in Abeokuta, brought directly to your home. Our certified therapists offer Swedish, deep tissue, and hot stone massages, tailored to relieve stress and ease muscle tension. Each 60-minute session is designed for your comfort, using high-quality oils and techniques to promote relaxation and wellness. Perfect for busy schedules or a special treat, we ensure a professional and soothing experience. Book now for a reliable, professional, and therapeutic service that brings calm to your doorstep!",
     "status": "published",
     "amountEarned": 0,
@@ -5133,7 +5014,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5155,7 +5035,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.2009193666965485, 3.2219722900168457
+          7.2009193666965485,
+          3.2219722900168457
         ]
       }
     },
@@ -5183,7 +5064,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5206,7 +5086,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -5217,7 +5098,9 @@
   {
     "title": "Academic Coaching for Students",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e169",
-    "galleryImages": ["https://www.aimacademy.online/wp-content/uploads/2024/01/Academic-Coaching-6.png"],
+    "galleryImages": [
+      "https://www.aimacademy.online/wp-content/uploads/2024/01/Academic-Coaching-6.png"
+    ],
     "description": "Empower your academic journey with our personalized online academic coaching, based in Osogbo. We help students improve study habits, master time management, and develop effective test-taking strategies to achieve overall academic success. Our experienced coaches provide 1-on-1 sessions, setting clear goals and offering practical tools tailored to your needs. Whether you’re aiming to boost grades or build confidence, our service supports students at all levels. Book now for a professional, reliable, and transformative coaching experience that drives academic excellence!",
     "status": "draft",
     "amountEarned": 0,
@@ -5230,7 +5113,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": false,
     "deliverables": [
@@ -5253,7 +5135,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.710749071129952, 4.538102620543175
+          7.710749071129952,
+          4.538102620543175
         ]
       }
     },
@@ -5264,7 +5147,9 @@
   {
     "title": "General Handyman Services",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e170",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/02/21/20/47/gauge-2087425_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/02/21/20/47/gauge-2087425_960_720.jpg"
+    ],
     "description": "Tackle small home projects with our reliable general handyman services in Ibadan. From mounting shelves and changing light fixtures to handling minor repairs, our skilled technicians provide efficient and professional solutions for your household needs. We prioritize precision and quality, ensuring every job is completed with care and minimal disruption. Whether it’s a quick fix or a series of tasks, we deliver tailored services to keep your home in top shape. Book now for a professional, dependable, and versatile handyman service!",
     "status": "published",
     "amountEarned": 0,
@@ -5279,7 +5164,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5301,7 +5185,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.435460638701722, 3.8578937006303784
+          7.435460638701722,
+          3.8578937006303784
         ]
       }
     },
@@ -5329,13 +5214,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "The painters were very fast and the work was excellent. I'm very happy with the result.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -5358,7 +5236,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -5385,7 +5264,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5407,7 +5285,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.435460638701722, 3.8578937006303784
+          7.435460638701722,
+          3.8578937006303784
         ]
       }
     },
@@ -5418,7 +5297,9 @@
   {
     "title": "Ghostwriting Services",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e174",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2015/10/02/15/00/diary-968592_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2015/10/02/15/00/diary-968592_960_720.jpg"
+    ],
     "description": "Bring your ideas to life with our professional ghostwriting services, offered online from Lagos. We craft compelling books, articles, and speeches, capturing your unique voice and vision with precision and creativity. Our experienced writers work closely with you to ensure every piece reflects your goals, whether it’s a novel, blog post, or keynote address. With a focus on quality and confidentiality, we deliver polished content ready for publication. Book now for a professional, reliable, and seamless writing service that transforms your concepts into powerful narratives!",
     "status": "published",
     "amountEarned": 0,
@@ -5433,7 +5314,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5456,7 +5336,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -5467,7 +5348,9 @@
   {
     "title": "Emergency Plumbing Services",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e175",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2015/05/31/11/24/tap-791172_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2015/05/31/11/24/tap-791172_960_720.jpg"
+    ],
     "description": "Resolve plumbing crises quickly with our 24/7 emergency plumbing services in Abeokuta. Our skilled technicians respond promptly to handle burst pipes, major leaks, and drainage blockages, preventing further damage to your property. We use advanced tools and techniques to deliver fast, effective repairs, ensuring your plumbing system is restored to full functionality. Available day or night, we prioritize your safety and convenience. Book now for a professional, reliable, and rapid service that tackles plumbing emergencies with expertise!",
     "status": "published",
     "amountEarned": 0,
@@ -5483,13 +5366,6 @@
       "Friday",
       "Saturday",
       "Sunday"
-    ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "Lifesavers! My pipe burst at 2 am and they were here within the hour. Fixed it right away.",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -5513,7 +5389,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.213257201870428, 3.2094280596013256
+          7.213257201870428,
+          3.2094280596013256
         ]
       }
     },
@@ -5537,7 +5414,6 @@
     "availableOn": [
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5560,7 +5436,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.380855653617214, 3.9181578409223015
+          7.380855653617214,
+          3.9181578409223015
         ]
       }
     },
@@ -5571,7 +5448,9 @@
   {
     "title": "Corporate Training & Workshops",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e178",
-    "galleryImages": ["https://www.remoikngltd.com/wp-content/uploads/2023/01/BlackOwnedBusinessMeeting_Lead.jpg"],
+    "galleryImages": [
+      "https://www.remoikngltd.com/wp-content/uploads/2023/01/BlackOwnedBusinessMeeting_Lead.jpg"
+    ],
     "description": "Boost your team’s performance with our customized corporate training and workshops, offered online from Ibadan. We design interactive sessions on team building, leadership, and professional development, tailored to your organization’s goals. Our expert trainers provide comprehensive workshop materials and actionable strategies to foster growth and collaboration. Whether you’re enhancing skills or strengthening team dynamics, our programs are engaging and results-driven. Book now for a professional, reliable, and impactful training service that empowers your team to succeed!",
     "status": "draft",
     "amountEarned": 0,
@@ -5584,7 +5463,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": false,
     "deliverables": [
@@ -5606,7 +5484,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.361547944485252, 3.972632487797871
+          7.361547944485252,
+          3.972632487797871
         ]
       }
     },
@@ -5634,7 +5513,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5657,7 +5535,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -5668,7 +5547,9 @@
   {
     "title": "CCTV Repair and Maintenance",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e180",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2018/10/20/23/53/camera-3762055_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2018/10/20/23/53/camera-3762055_960_720.jpg"
+    ],
     "description": "Keep your security systems operational with our CCTV repair and maintenance services in Abeokuta. Our skilled technicians troubleshoot and fix issues with cameras, wiring, and recording systems, ensuring your CCTV setup runs smoothly. We also provide routine maintenance to prevent downtime and optimize performance. Whether for your home or business, we deliver fast and effective solutions to enhance your security. Book now for a professional, reliable, and thorough service that keeps your surveillance system in top condition!",
     "status": "published",
     "amountEarned": 0,
@@ -5681,7 +5562,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5703,7 +5583,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.91135183869619, 3.2280415824099955
+          6.91135183869619,
+          3.2280415824099955
         ]
       }
     },
@@ -5714,7 +5595,9 @@
   {
     "title": "IELTS Exam Preparation",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e181",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2014/09/10/15/17/book-440878_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2014/09/10/15/17/book-440878_960_720.jpg"
+    ],
     "description": "Achieve your target IELTS score with our comprehensive online preparation courses, based in Osogbo. Our expert tutors focus on all four modules—listening, reading, writing, and speaking—offering tailored practice sessions and mock tests to build your skills and confidence. We provide personalized feedback and strategies to tackle challenging sections, ensuring you’re fully prepared for exam day. Whether you’re aiming for academic or general training, book now for a professional, reliable, and results-driven service that helps you succeed!",
     "status": "published",
     "amountEarned": 0,
@@ -5728,13 +5611,6 @@
       "Wednesday",
       "Thursday",
       "Friday"
-    ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "Passed my IELTS exam on the first try thanks to the fantastic tutoring. Highly recommended!",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -5757,7 +5633,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.703684294685532, 4.465676640377849
+          7.703684294685532,
+          4.465676640377849
         ]
       }
     },
@@ -5768,7 +5645,9 @@
   {
     "title": "Social Media Ads Management",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e183",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2021/08/19/08/06/social-media-6557345_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2021/08/19/08/06/social-media-6557345_960_720.jpg"
+    ],
     "description": "Maximize your business’s reach with our expert social media ads management services, offered online from Lagos. We create and optimize targeted ad campaigns on platforms like Facebook, Instagram, and Twitter, ensuring you reach the right audience for the best return on investment. Our services include campaign setup, performance monitoring, and data-driven adjustments to boost engagement and conversions. Whether you’re a small business or a large brand, we deliver strategic and measurable results. Book now for a professional, reliable, and growth-focused service!",
     "status": "published",
     "amountEarned": 0,
@@ -5783,7 +5662,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5806,7 +5684,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -5834,13 +5713,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "My dog loves his daily walks with the team. They are always on time and very attentive.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -5862,7 +5734,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.395495190623221, 4.008967550633313
+          7.395495190623221,
+          4.008967550633313
         ]
       }
     },
@@ -5890,7 +5763,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5912,7 +5784,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.811110641197875, 4.510849051664038
+          7.811110641197875,
+          4.510849051664038
         ]
       }
     },
@@ -5938,7 +5811,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -5962,7 +5834,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -5973,7 +5846,9 @@
   {
     "title": "Plumbing Maintenance",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e188",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/07/04/14/30/drainage-pipes-2471293_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/07/04/14/30/drainage-pipes-2471293_960_720.jpg"
+    ],
     "description": "Keep your plumbing system in top condition with our routine maintenance services in Ibadan. Our skilled technicians perform thorough checks on pipes, fixtures, and water pressure, addressing potential issues like leaks and clogs before they escalate. We provide minor repairs and expert advice to ensure your system runs smoothly and efficiently. Ideal for homes and businesses, our service minimizes disruptions and extends the life of your plumbing. Book now for a professional, reliable, and preventative service that keeps your plumbing hassle-free!",
     "status": "draft",
     "amountEarned": 0,
@@ -5985,7 +5860,6 @@
       "Tuesday",
       "Thursday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": false,
     "deliverables": [
@@ -6007,7 +5881,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -6015,7 +5890,6 @@
       "onsite"
     ]
   },
-
   {
     "title": "Pest Fumigation and Extermination",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e191",
@@ -6034,13 +5908,6 @@
       "Wednesday",
       "Friday",
       "Saturday"
-    ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "Had a terrible ant problem and they took care of it completely. The service was excellent.",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -6063,7 +5930,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -6091,7 +5959,6 @@
       "Friday",
       "Saturday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6114,7 +5981,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.245323959552292, 3.8215132905563123
+          7.245323959552292,
+          3.8215132905563123
         ]
       }
     },
@@ -6125,7 +5993,9 @@
   {
     "title": "IELTS Exam Preparation",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e194",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/06/19/03/18/iphone-2418042_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/06/19/03/18/iphone-2418042_960_720.jpg"
+    ],
     "description": "Excel in your IELTS exam with our comprehensive online preparation courses, based in Ile-Ife. Our expert tutors provide targeted training for listening, reading, writing, and speaking, with practice sessions and mock tests designed to boost your skills and confidence. We offer personalized feedback to address your weaknesses and ensure you’re ready for exam day, whether for academic or general training. Our structured approach maximizes your potential for a high score. Book now for a professional, reliable, and effective service that drives your IELTS success!",
     "status": "published",
     "amountEarned": 0,
@@ -6140,7 +6010,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6163,7 +6032,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.811110641197875, 4.510849051664038
+          7.811110641197875,
+          4.510849051664038
         ]
       }
     },
@@ -6171,10 +6041,12 @@
       "online"
     ]
   },
-    {
+  {
     "title": "Social Media Ads Management",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e183",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2015/05/31/11/30/marketing-791202_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2015/05/31/11/30/marketing-791202_960_720.jpg"
+    ],
     "description": "Elevate your business with our expert social media advertising campaign management. We specialize in creating and optimizing targeted ad campaigns across platforms like Facebook, Instagram, and LinkedIn to maximize your reach and return on investment. Our team conducts in-depth audience research, crafts compelling ad content, and monitors performance metrics to ensure optimal results. This online service includes regular performance reports and strategic adjustments to keep your campaigns effective. Book now for professional, reliable, and results-driven service tailored to your business goals!",
     "status": "published",
     "amountEarned": 0,
@@ -6189,7 +6061,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6212,7 +6083,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -6240,13 +6112,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "My dog loves his daily walks with the team. They are always on time and very attentive.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -6268,7 +6133,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.283964789074922, 3.63090490956142
+          7.283964789074922,
+          3.63090490956142
         ]
       }
     },
@@ -6294,7 +6160,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6316,7 +6181,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -6327,7 +6193,9 @@
   {
     "title": "Plumbing Maintenance",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e188",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2015/08/23/01/57/bathtub-902361_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2015/08/23/01/57/bathtub-902361_960_720.jpg"
+    ],
     "description": "Ensure your plumbing system runs smoothly with our comprehensive maintenance services in Ibadan. We perform thorough inspections of pipes, fixtures, and water pressure to identify and prevent potential issues like leaks and clogs. Our experienced technicians use advanced tools to diagnose problems and provide minor repairs on the spot. This service is designed to extend the lifespan of your plumbing system and avoid costly emergencies. Serving Ibadan, book now for professional, reliable maintenance that keeps your home or office in top condition!",
     "status": "draft",
     "amountEarned": 0,
@@ -6339,7 +6207,6 @@
       "Tuesday",
       "Thursday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": false,
     "deliverables": [
@@ -6361,7 +6228,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.334007074716681, 3.9751068066544795
+          7.334007074716681,
+          3.9751068066544795
         ]
       }
     },
@@ -6372,7 +6240,9 @@
   {
     "title": "Emergency Car Repair",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e195",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2014/06/04/16/36/man-362150_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2014/06/04/16/36/man-362150_960_720.jpg"
+    ],
     "description": "Get back on the road quickly with our on-site emergency car repair services in Ogun State. Our skilled mechanics handle common issues like battery failures, flat tires, and engine faults with speed and precision. We arrive equipped with professional tools and diagnostic equipment to address your car’s needs on the spot. Available 24/7, our service minimizes downtime and ensures your vehicle is safe to drive. Book now for reliable, professional repairs that get you moving again in no time!",
     "status": "published",
     "amountEarned": 0,
@@ -6388,13 +6258,6 @@
       "Friday",
       "Saturday",
       "Sunday"
-    ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "My car broke down on the highway and they came to my rescue quickly. Very professional.",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -6419,7 +6282,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.91135183869619, 3.2280415824099955
+          6.91135183869619,
+          3.2280415824099955
         ]
       }
     },
@@ -6427,11 +6291,12 @@
       "onsite"
     ]
   },
-
   {
     "title": "Nutritional Consulting",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e198",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2020/10/05/21/30/hamburger-5630800_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2020/10/05/21/30/hamburger-5630800_960_720.jpg"
+    ],
     "description": "Achieve your health goals with our personalized nutritional consulting services, available online or in-person in Lagos. Our certified nutritionists create customized meal plans based on your lifestyle, dietary preferences, and wellness objectives, whether for weight loss, muscle gain, or overall health. We provide ongoing support, including regular check-ins and adjustments to your plan, plus practical tips for sustainable eating habits. Book now for professional, reliable guidance to transform your nutrition and enhance your well-being!",
     "status": "published",
     "amountEarned": 0,
@@ -6444,7 +6309,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6468,7 +6332,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -6476,11 +6341,12 @@
       "both"
     ]
   },
-
   {
     "title": "French Language Lessons",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e200",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/09/15/21/53/asia-2753733_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/09/15/21/53/asia-2753733_960_720.jpg"
+    ],
     "description": "Master French with our engaging online lessons for beginners and intermediate learners in Osogbo. Taught by a native speaker, our lessons cover grammar, vocabulary, pronunciation, and conversational skills to help you communicate confidently. We provide interactive sessions, tailored exercises, and access to exclusive learning materials to accelerate your progress. Whether for travel, work, or personal growth, our flexible scheduling ensures a stress-free learning experience. Book now for professional, reliable French lessons that make learning fun and effective!",
     "status": "published",
     "amountEarned": 0,
@@ -6492,7 +6358,6 @@
       "Tuesday",
       "Thursday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6515,7 +6380,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.791182841883273, 4.5125023859433515
+          7.791182841883273,
+          4.5125023859433515
         ]
       }
     },
@@ -6526,7 +6392,9 @@
   {
     "title": "Content Writing for Websites",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e201",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/08/10/08/52/blogging-2620148_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/08/10/08/52/blogging-2620148_960_720.jpg"
+    ],
     "description": "Boost your online presence with our professional content writing services for websites and blogs. Based in Ile-Ife, our team crafts engaging, SEO-optimized content tailored to your brand’s voice and goals. We create compelling blog posts, website copy, and product descriptions that attract and retain your target audience. Our process includes keyword research, content planning, and revisions to ensure high-quality output. This online service is perfect for businesses looking to stand out. Book now for reliable, creative, and results-driven content!",
     "status": "published",
     "amountEarned": 0,
@@ -6541,7 +6409,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6565,7 +6432,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.811110641197875, 4.510849051664038
+          7.811110641197875,
+          4.510849051664038
         ]
       }
     },
@@ -6591,13 +6459,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "My old sofa looks brand new! The work is flawless and the fabric is beautiful.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -6619,7 +6480,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -6630,7 +6492,9 @@
   {
     "title": "Guitar Lessons for Beginners",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e204",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2015/05/07/11/02/guitar-756326_960_720.jpg"
+    ],
     "description": "Start your musical journey with our beginner-friendly guitar lessons in Abeokuta. Taught by a professional musician, our one-on-one sessions cover chords, scales, strumming techniques, and basic songs to build your confidence. We provide a supportive learning environment with tailored lesson plans and practice materials to help you progress quickly. Whether you dream of playing your favorite songs or exploring music theory, book now for professional, reliable lessons that make learning guitar fun and rewarding!",
     "status": "published",
     "amountEarned": 0,
@@ -6642,7 +6506,6 @@
       "Saturday",
       "Sunday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6664,7 +6527,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.93478096748211, 3.174294293646324
+          6.93478096748211,
+          3.174294293646324
         ]
       }
     },
@@ -6675,7 +6539,9 @@
   {
     "title": "Professional Presentation Design",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e205",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2022/01/18/21/22/laptop-6948268_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2022/01/18/21/22/laptop-6948268_960_720.jpg"
+    ],
     "description": "Impress your audience with our professional presentation design services, offered online from Lagos. We create visually stunning and engaging presentations for corporate meetings, pitches, webinars, and more, using tools like PowerPoint, Keynote, and Canva. Our designs incorporate custom graphics, infographics, and seamless layouts to convey your message effectively. We work closely with you to align with your brand and objectives, delivering polished slides on time. Book now for reliable, creative presentation designs that captivate and persuade!",
     "status": "published",
     "amountEarned": 0,
@@ -6690,7 +6556,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6712,7 +6577,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -6738,13 +6604,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50207",
-        "review": "Very professional and the security system works perfectly. Feel much safer now.",
-        "rating": 5
-      }
-    ],
     "averageRating": 5,
     "availability": true,
     "deliverables": [
@@ -6766,7 +6625,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-         7.811110641197875, 4.510849051664038
+          7.811110641197875,
+          4.510849051664038
         ]
       }
     },
@@ -6774,7 +6634,6 @@
       "onsite"
     ]
   },
-
   {
     "title": "Mattress and Upholstery Cleaning",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e210",
@@ -6792,13 +6651,6 @@
       "Monday",
       "Wednesday",
       "Friday"
-    ],
-    "reviews": [
-      {
-        "userId": "65b91b5c46e3d5a2d0b50e21",
-        "review": "My mattress feels brand new! The stains are completely gone. Excellent service.",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -6821,7 +6673,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -6832,7 +6685,9 @@
   {
     "title": "Physics Tutoring (University Level)",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e214",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/07/20/03/53/homework-2521144_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/07/20/03/53/homework-2521144_960_720.jpg"
+    ],
     "description": "Excel in your university physics studies with our advanced online tutoring services in Ibadan. Our experienced tutors cover complex topics like mechanics, thermodynamics, and quantum physics, offering personalized lessons tailored to your curriculum and learning pace. We provide clear explanations, problem-solving strategies, and practice materials to boost your understanding and confidence. Perfect for students seeking to master challenging concepts, book now for professional, reliable tutoring that helps you succeed academically!",
     "status": "published",
     "amountEarned": 0,
@@ -6845,7 +6700,6 @@
       "Wednesday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6868,7 +6722,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          7.488320369881529, 3.9916640475526783
+          7.488320369881529,
+          3.9916640475526783
         ]
       }
     },
@@ -6896,7 +6751,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -6919,7 +6773,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.969036586646343, 3.168344409281342
+          6.969036586646343,
+          3.168344409281342
         ]
       }
     },
@@ -6930,7 +6785,9 @@
   {
     "title": "Fish Tank Cleaning",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e216",
-    "galleryImages": ["https://cdn.britannica.com/29/121829-050-911F77EC/freshwater-aquarium.jpg"],
+    "galleryImages": [
+      "https://cdn.britannica.com/29/121829-050-911F77EC/freshwater-aquarium.jpg"
+    ],
     "description": "Maintain a healthy and beautiful aquarium with our professional fish tank cleaning services in Lagos. Our experts provide thorough cleaning, including filter maintenance, water changes, and algae removal, using pet-safe products to ensure a safe environment for your aquatic pets. We also check water quality and offer advice on tank care. Perfect for busy aquarium owners, our service keeps your fish thriving. Book now for reliable, professional cleaning that enhances your tank’s clarity and health!",
     "status": "published",
     "amountEarned": 0,
@@ -6941,13 +6798,6 @@
     "availableOn": [
       "Tuesday",
       "Thursday"
-    ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "My fish tank has never looked so good! The water is crystal clear and my fish seem happier.",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -6970,7 +6820,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -6981,7 +6832,9 @@
   {
     "title": "Social Media Management",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e218",
-    "galleryImages": ["https://cdn.pixabay.com/photo/2017/08/10/03/00/youtube-2617510_960_720.jpg"],
+    "galleryImages": [
+      "https://cdn.pixabay.com/photo/2017/08/10/03/00/youtube-2617510_960_720.jpg"
+    ],
     "description": "Grow your brand’s online presence with our full-service social media management, offered online from Lagos. We handle content creation, post scheduling, and audience engagement across platforms like Instagram, Twitter, and LinkedIn to build your brand’s visibility. Our team develops a tailored content calendar, creates visually appealing posts, and monitors analytics to optimize performance. We also respond to comments and messages to foster community growth. Book now for professional, reliable management that drives results for your business!",
     "status": "published",
     "amountEarned": 0,
@@ -6996,7 +6849,6 @@
       "Thursday",
       "Friday"
     ],
-    "reviews": [],
     "averageRating": 1,
     "availability": true,
     "deliverables": [
@@ -7019,7 +6871,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.558439725445424, 3.35955463237922
+          6.558439725445424,
+          3.35955463237922
         ]
       }
     },
@@ -7027,7 +6880,6 @@
       "online"
     ]
   },
-  
   {
     "title": "TV Mounting and Installation",
     "serviceProviderId": "65b91b5c46e3d5a2d0b50e261",
@@ -7045,13 +6897,6 @@
       "Monday",
       "Wednesday",
       "Friday"
-    ],
-    "reviews": [
-      {
-        "userId": "6890d3fbf949b4db4917149f",
-        "review": "The TV was mounted perfectly, and the technician was very careful and tidy.",
-        "rating": 5
-      }
     ],
     "averageRating": 5,
     "availability": true,
@@ -7074,7 +6919,8 @@
       "location": {
         "type": "Point",
         "coordinates": [
-          6.618318518082611, 3.2568373695818162
+          6.618318518082611,
+          3.2568373695818162
         ]
       }
     },

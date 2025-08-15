@@ -10,12 +10,6 @@ const serviceSchema = new mongoose.Schema({
     amountEarned :{type:Number},
     price :{amount:Number,currency:String},
     availableOn :[{type:String}],
-    reviews: [{
-        userId: { type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true },
-        review: { type: String, required: true },
-        createdAt: { type: Date, default: Date.now },
-        rating:{type:Number, min:1,max:5}
-    }],
     averageRating: { type: Number, min: 1, max: 5, default: 0 },
     availability: {type:Boolean},
     deliverables: [{type: String}],

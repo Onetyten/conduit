@@ -22,9 +22,13 @@ export interface PostInterface {
   }
 
   export interface ReviewType{
+  _id:string
   userId: string | Types.ObjectId;
+  serviceId: string | Types.ObjectId;
   review: string;
   rating: number;
+
+
 }
   export interface PriceType{
   amount: number;
@@ -56,7 +60,6 @@ export interface PostInterface {
     amountEarned: number
     price: PriceType
     availableOn: string[]
-    reviews: ReviewType[]
     averageRating:number
     availability: boolean
     deliverables: string[]
