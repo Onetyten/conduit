@@ -31,6 +31,8 @@ export async function GET(request:Request) {
                         {$limit:limit},
                         {$project:{
                             _id:1,
+                            userId:1,
+                            serviceId:1,
                             review:1,
                             rating:1,
                             createdAt:1,
@@ -44,14 +46,10 @@ export async function GET(request:Request) {
         ])
         const total = result[0]?.metadata[0]?.total || 0
         const fetchedReview = result[0]?.data || []
-
-        if (!fetchedReview || fetchedReview.length==0){
-            return NextResponse.json({message:"No reviews found"},{status:404})
-        }
         return NextResponse.json({message:"reviews fetched successfully",data:fetchedReview,pagination:{total,totalpage:Math.ceil(total/limit)}},{status:200})
     }
         
     catch (error) {
-        return NextResponse.json({message:`Error fetching reviews ${error instanceof Error?error.message:': error unknown'}`})
+        return NextResponse.json({message:`Error fetching reviews ${error instanceof Error?error.message:': error unknown'}`},{status:500})
     }  
 }

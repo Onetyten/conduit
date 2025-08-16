@@ -27,6 +27,11 @@ export interface PostInterface {
   serviceId: string | Types.ObjectId;
   review: string;
   rating: number;
+  userProfile?:{
+    firstName:string,
+    lastName:string,
+    profilePicture:string
+  }
 
 
 }

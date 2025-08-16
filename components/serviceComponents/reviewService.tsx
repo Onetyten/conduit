@@ -1,44 +1,82 @@
-'use'
-import React from 'react'
-import {serviceInterface} from '@/lib/types';
+'use client'
+import React, { useEffect, useRef, useState } from 'react'
 import ReviewItem from '../reviewItem';
 import ReviewInput from '../reviewInput';
+import useFetchReviews from '@/hooks/useFetchReviews';
+import { useInView } from 'framer-motion';
+import { ReviewType } from '@/lib/types';
 
-interface serviceInterfaceProp{
-    serviceRedux:serviceInterface|null
+interface propType{
+    serviceId:string
 }
 
+export default function ReviewService(props:propType) {
+    const {serviceId} = props
+    const [reviewList,setReviewList] = useState<ReviewType[]>([])
+    const [page,setPage] = useState(1)
+    const {getReviews,totalPage,totalReviews,setTotalReviews} = useFetchReviews(serviceId,page)
+    const reviewTrigger = useRef(null)
+    const triggerIsInView = useInView(reviewTrigger)
+    const [hasMore,setHasMore] = useState(true)
 
-export default function ReviewService({serviceRedux}:serviceInterfaceProp) {
-    
+
+    useEffect(()=>{
+        (async()=>{
+            if (triggerIsInView && hasMore ){
+                const data = await getReviews()
+                if(data.length>0){
+                    setReviewList(prev => [...prev, ...data]);
+                    if (page + 1 > totalPage) {
+                        setHasMore(false);
+                    }
+                    else{
+                      setPage(prev => prev+1)  
+                    } 
+                }
+                else{
+                    setHasMore(false)
+                }
+            }
+
+        })()
+    },[serviceId, triggerIsInView, totalPage, hasMore, getReviews, page])
+
   return (
     <div className='flex flex-col items-cent
-    er relative justify-center gap-4 mb-9 w-[90%] max-w-2xl text-center'>
+    er relative justify-center gap-6 mb-9 w-[90%] max-w-2xl text-center'>
+        
         <p className='font-semibold w-full text-center '>
-            Reviews {serviceRedux?.reviews?.length && serviceRedux.reviews.length > 0 ? `(${serviceRedux.reviews.length})` : ''}
+            Reviews ({totalReviews})
         </p>
         
-        <ReviewInput />
+        <ReviewInput setReviewList={setReviewList} setTotalReviews={setTotalReviews} />
 
-        <div className='flex gap-2 text-xs my-6 w-full text-center'>
-            {serviceRedux && serviceRedux.reviews.length>0?
+        <div className='flex gap-2 text-xs w-full text-center'>
+            {reviewList && reviewList.length>0?
                 <div>
-                    {serviceRedux.reviews.map((item, index)=>{
+                    {reviewList.map((item, index)=>{
                     return(
                         <div key={index} className='flex flex-col gap-4'>
-                            <ReviewItem item={item}/>
+                            <ReviewItem item={item} />
                         </div>
                         )
                     })}
                 </div>
             :
-            <p className='text-gray-400 text-center w-full text-xs sm:text-sm my-3'>
-                No reviews available yet
-            </p>
+            <div className='w-full'>
+                {hasMore?
+                <p className='text-gray-400 text-center w-full text-xs sm:text-sm'>
+                    Loading reviews
+                </p>:        
+                <p className='text-gray-400 text-center w-full text-xs sm:text-sm'>
+                    No reviews available for this service
+                </p>}
+            </div>
+
             }
         </div>
 
-        <div className='w-screen h-screen bg-conduit fixed'>
+        <div ref={reviewTrigger} className='flex w-full h-2 mb-3'>
 
         </div>
 

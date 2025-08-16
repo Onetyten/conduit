@@ -75,7 +75,7 @@ const SectionCarousel = () => {
         {tagList.map((item:tagtype,index:number)=>{
             return(
                 <div key={index} onClick={()=>{setTag(item.tag)}} className={`${item.tag == keywordRedux?"bg-gray-200":""} p-2 px-5 rounded-full cursor-pointer hover:bg-gray-200 hover:text-foreground transition-all`}>
-                    <p className='w-full whitespace-nowrap'>{item.tag}</p>
+                    <p className='w-full whitespace-nowrap select-none'>{item.tag}</p>
                 </div>
             )
         })}

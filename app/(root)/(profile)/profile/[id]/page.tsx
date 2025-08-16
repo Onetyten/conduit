@@ -46,7 +46,7 @@ export default async function page({
         <div className='flex flex-col p-10 gap-5 text-xs '>
           <p className='text-3xl font-semibold'>{`${profileData?.lastName || "John"} ${profileData?.firstName || "Doe"}`}</p>
           <div className='sm:text-sm text-xs flex gap-3'>
-            <p className='p-1.5 px-4 hover:bg-softblue/50 bg-softblue rounded-md'>
+            <p className='p-1.5 px-4 hover:bg-softblue/50 bg-softblue select-none rounded-md'>
               {profileData?.isTalent?'Talent':'Client'}
             </p>
             
@@ -57,7 +57,7 @@ export default async function page({
               <p className='font-semibold'>Skills </p>
               <div className='flex flex-wrap gap-3'> 
                 {profileData?.skills.map((item, index:number) => (
-                  <span key={index} className='p-1.5 px-4 hover:bg-softblue/50 capitalize bg-softblue rounded-md'>{item}</span>
+                  <span key={index} className='p-1.5 px-4 hover:bg-softblue/50 select-none capitalize bg-softblue rounded-md'>{item}</span>
                 ))}
               </div>
              

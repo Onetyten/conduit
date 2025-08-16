@@ -30,12 +30,7 @@ export default function useGetProfile(id:string){
         } 
         catch (error) {
             console.error(error)
-            if (error instanceof Error){
-                setError(error.message || "something ")
-            }
-            else{
-                setError("something ")
-            }  
+            setError(error instanceof Error?error.message:"something went wrong ")
         }
         finally{
             setLoading(false)

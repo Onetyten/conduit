@@ -24,7 +24,9 @@ export default function Page() {
         <ServiceProfileSection serviceProfileRedux={serviceProfileRedux} serviceRedux={service} />
         <LikeComponent LikePost={LikePost} postLiked = {postLiked}/>
         <ServiceProfileDetails  serviceProfileRedux ={serviceProfileRedux} serviceRedux={service}/>
-        {/* <ReviewService  serviceRedux={service} /> */}
+        {service?._id&&(
+          <ReviewService serviceId={service._id} /> 
+        )} 
     </div>
     
   )
