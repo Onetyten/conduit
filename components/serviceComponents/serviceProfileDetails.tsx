@@ -14,17 +14,6 @@ interface serviceInterfaceProp{
 export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux }: serviceInterfaceProp) {
   return (
     <div className='flex justify-center w-full flex-col items-center gap-6'>
-    {/* remove service profiles skills */}
-    {/* <div className='flex items-center justify-center mt-5 w-[90%] max-w-2xl          '>
-        {serviceProfileRedux?
-        <div className='gap-3 flex flex-wrap justify-center text-xs'>
-        {serviceProfileRedux?.skills.map((item, index) => (
-                <span key={index} className='p-1.5 px-4 hover:bg-blue-100 cursor-pointer bg-softblue rounded-md'>{item}</span>
-            ))}
-        </div>
-        :
-        <div className='w-sm h-6 bg-gray-100 rounded-md'></div >}
-    </div> */}
     <div className='flex items-center justify-center w-[90%] max-w-2xl          '>
         <p className='text-xl text-center sm:text-2xl font-bold'>
         {serviceRedux?.title} 
@@ -48,7 +37,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
           <p className='font-semibold'>Deliverables</p>
           <div className='flex gap-2 text-xs'>
               {serviceRedux?.deliverables.map((item, index) => (
-                  <span key={index} className='p-1.5 px-4 hover:bg-blue-100 bg-softblue rounded-md'>{item}</span>
+                  <span key={index} className='p-1.5 px-4 hover:bg-blue-100 select-none bg-softblue rounded-md'>{item}</span>
               ))}
           </div>
       </div>
@@ -57,7 +46,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
           <p className='font-semibold'>Available On</p>
           <div className='flex justify-center flex-wrap gap-2 text-xs'>
               {serviceRedux?.availableOn.map((item, index) => (
-                  <span key={index} className='p-1.5 px-4 hover:bg-blue-100 bg-softblue rounded-md'>{item}</span>
+                  <span key={index} className='p-1.5 px-4 hover:bg-blue-100 select-none bg-softblue rounded-md'>{item}</span>
               ))}
           </div>
       </div>
@@ -99,7 +88,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
                 Delivery method : {serviceRedux?.deliveryMethod[0]}
             </div>
             
-            <div className='hover:bg-conduit text-background p-2 px-4 h-9 flex items-center rounded-md bg-black cursor-pointer  sm:rounded-full text-xs'>
+            <div className='hover:bg-conduit text-background select-none p-2 px-4 h-9 flex items-center rounded-md bg-black cursor-pointer  sm:rounded-full text-xs'>
                 Book Service
             </div>
             <div className='text-xs flex w-full justify-center gap-6 '>

@@ -1,9 +1,11 @@
 import React from 'react'
 import NavigationButton from '../NavigationButton'
+import { NewUserType } from '@/lib/types'
 
 interface propTypes{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
     slideIndex:number
+    newUser:NewUserType
 }
 
 
@@ -11,10 +13,17 @@ interface propTypes{
 
 
 export default function CreateUser(props:propTypes) {
-    const {setSlideIndex,slideIndex} = props
+    const {setSlideIndex,slideIndex,newUser} = props
 
     function Prev() {
-        setSlideIndex(slideIndex-1)
+        if (newUser.isTalent){
+            setSlideIndex(slideIndex-1)
+        }
+        else{
+            setSlideIndex(slideIndex-3)
+        }
+
+        console.log("is talent",newUser.isTalent)
     }
 
     

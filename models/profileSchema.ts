@@ -13,6 +13,13 @@ const profileSchema  = new mongoose.Schema({
     bio:{type:String},
     isTalent:{type:Boolean,default:false},
     skills:[{type:String}],
+    socialLinks:{
+        facebook:{type:String,default:""},
+        instagram:{type:String,default:""},
+        twitter_x:{type:String,default:""},
+        linkedin:{type:String,default:""},
+        other:{type:String,default:""}
+    },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
     location:{

@@ -13,6 +13,13 @@ import CreateUser from './createProfile/createUser';
 import axios from 'axios';
 import Image from 'next/image';
 import { toast } from 'react-toastify';
+import AccountSelectSlide from './createProfile/accountSelectSlide(';
+import SkillSlide from './createProfile/skillSlide';
+import LinkSlide from './createProfile/linkSlide';
+
+
+
+
 
  
 
@@ -20,47 +27,63 @@ export default function CreateAccount() {
     const dispatch = useDispatch()
     const LocationalRedux = useSelector((state:RootState)=>state.locationalData.data)
     const showSignUpRedux = useSelector((state:RootState)=>state.showSignUp.showSignUp)
-    const [email, setEmail] = useState("")
-    const [firstname, setFirstname] = useState("")
-    const [lastname, setLastname] = useState("")
-    const [password,setPassword]= useState("")
-    const [passwordCheck,setPasswordCheck] = useState('')
-    const [district,setDistrict]= useState("")
-    const [country,setCountry]= useState("")
-    const [state,setState]= useState("")
+    const [newUser,setNewUser] = useState({
+        email:'',
+        firstname: "",
+        lastname: "",
+        password: "",
+        passwordCheck: "",
+        location:{
+            district: "",
+            state: "",
+            country: "",
+        },
+        socialLinks:{
+            facebook: "",
+            instagram: "",
+            twitter_x: "",
+            linkedin: "",
+            other: "",
+        },
+        isTalent: false,
+        bio: "",
+        skills:[] as string[],
+        profileImage: null as File | null,
+        profilePicUrl:"https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png"
+    })
     const [uploadingProfile,setUploadingProfile] = useState(false)
-    const [profileImage,setProfileImage] = useState<File | null>(null)
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [ profilePicUrl,setProfilePicUrl] = useState("https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png")
     const [slideIndex,setSlideIndex] = useState(0)
 
 
     async function CreateAccount(e:React.FormEvent<HTMLFormElement>){
 
         e.preventDefault();
+        // console.log(newUser)
         setUploadingProfile(true)
         const userData = new FormData()
-        userData.append('firstName',firstname)
-        userData.append('lastName',lastname)
-        userData.append('email',email)
-        userData.append('password',password)
-        userData.append('state',state)
-        userData.append('district',district)
-        userData.append('country',country)
-        if (profileImage) userData.append('profileImage',profileImage)
+        userData.append('firstName',newUser.firstname)
+        userData.append('lastName',newUser.lastname)
+        userData.append('email',newUser.email)
+        userData.append('isTalent',newUser.isTalent.toString())
+        userData.append('bio',newUser.bio)
+        userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
+        userData.append('location',JSON.stringify(newUser.location))
+        userData.append('skills',JSON.stringify(newUser.skills))
+        userData.append('password',newUser.password)
 
+        if (newUser.profileImage) userData.append('profileImage',newUser.profileImage)
         try {
             const response = await axios.post(`/api/createNewProfile`,userData)
             if (response.status != 200) return
             setSlideIndex(slideIndex+1)
             setUploadingProfile(false)
             toast.success("Account created successfully, signin")
-
         }
         catch {
-             toast("A error occured while creating your profile")
-             setUploadingProfile(false)
-
+            toast("A error occured while creating your profile")
+        }
+        finally{
+            setUploadingProfile(false)
         }
         
     } 
@@ -69,18 +92,14 @@ export default function CreateAccount() {
             
             try {
                 if (LocationalRedux && LocationalRedux?.city && LocationalRedux.country_name && LocationalRedux.district){
-                    setDistrict(LocationalRedux.district)
-                    setCountry(LocationalRedux.country_name)
-                    setState(LocationalRedux.state_prov)
+                    setNewUser(prev=>({...prev, district:LocationalRedux.district, country:LocationalRedux.country_name, state:LocationalRedux.state_prov  }))
                     return 
                 }
                 else{
                     const response =await axios.get(`https://api.ipgeolocation.io/ipgeo?apiKey=${process.env.NEXT_PUBLIC_IP_GEOLOCATION_API_KEY}`)
                     if (response.status != 200 ) return
                     dispatch(setLocation(response.data))
-                    setDistrict(response.data.district)
-                    setCountry(response.data.country_name)
-                    setState(response.data.state_prov)
+                    setNewUser(prev=>({...prev, district:response.data.district, country:response.data.country_name, state:response.data.state_prov  }))
                 }
 
             } 
@@ -90,11 +109,8 @@ export default function CreateAccount() {
             
         }
         getLocationalData()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[])
+    },[LocationalRedux, dispatch])
    
-
-
 
   return (
     <div>
@@ -111,27 +127,38 @@ export default function CreateAccount() {
                             {/* first carousel item */}
                             {
                                 slideIndex==0?
-                                (<WelcomeSlide email={email} setEmail={setEmail} setSlideIndex={setSlideIndex} firstname={firstname} setFirstname={setFirstname} lastname={lastname} setLastname={setLastname} slideIndex={slideIndex} />):
+                                (<WelcomeSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>):
                                 slideIndex==1?
                                 (   
-                                    <PasswordSlide password = {password} setPassword={setPassword} setSlideIndex={setSlideIndex} slideIndex={slideIndex} passwordCheck={passwordCheck} setPasswordCheck={setPasswordCheck}/>  
+                                    <PasswordSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>  
                                 ):
                                 slideIndex==2?
                                 (
-                                    <PictureSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} profilePicUrl = {profilePicUrl} setProfileImage = {setProfileImage}/>
+                                    <PictureSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
                                 ):
                                 slideIndex==3?
                                 (
-                                    <LocationSlide district={district} setDistrict={setDistrict} country={country} setCountry = {setCountry} state={state} setState = {setState} setSlideIndex={setSlideIndex} slideIndex={slideIndex}/>
+                                    <LocationSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
                                 ):
                                 slideIndex==4?
                                 (
-                                    <CreateUser setSlideIndex ={setSlideIndex} slideIndex={slideIndex} />
+                                    <AccountSelectSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
+                                ):
+                                slideIndex==5?
+                                (
+                                    <SkillSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
+                                ):
+                                slideIndex==6?
+                                (
+                                    <LinkSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex}  newUser={newUser} setNewUser={setNewUser} />
+                                ):
+                                slideIndex==7?
+                                (
+                                    <CreateUser setSlideIndex ={setSlideIndex} slideIndex={slideIndex} newUser={newUser} />
                                 )
                                 :
                                 (
-                                    <FinishSlide firstname = {firstname} />
-
+                                    <FinishSlide newUser={newUser} />
                                 )
                             }
                         </form>

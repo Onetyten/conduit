@@ -6,15 +6,29 @@ import {v2 as cloudinary} from 'cloudinary'
 
 
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function safeParse<T = any>(value: FormDataEntryValue | null, fallback: T): T {
+  if (typeof value === "string") {
+    try {
+      return JSON.parse(value) as T;
+    } catch {
+      return fallback;
+    }
+  }
+  return fallback;
+}
+
 export async function POST(request:Request){
     const userData = await request.formData()
     const firstName = userData.get('firstName') as string | null
     const lastName = userData.get('lastName') as string | null
     const email = userData.get('email') as string | null
+    const isTalent = userData.get('isTalent') === "true"
+    const bio = userData.get('bio') as string | null
+    const socialLinks = safeParse(userData.get("socialLinks"), {})
+    const location = safeParse(userData.get("location"), {})
+    const skills = safeParse<string[]>(userData.get("skills"), [])
     const password = userData.get('password') as string | null
-    const state = userData.get('state') as string | null
-    const district = userData.get('district') as string | null
-    const country = userData.get('country') as string | null
     const profileImage = userData.get('profileImage') as File | null
 
 
@@ -62,21 +76,7 @@ export async function POST(request:Request){
 
         }
 
-        const newProfile  = await new Profile({
-            "firstName": firstName,
-            "lastName": lastName,
-            "email": email.toLowerCase(),
-            "password": hashedPassword,
-            "profilePicture": profileImageURL,
-            "isTalent": false,
-            "location": {
-                "district": district,
-                "state": state,
-                "country": country
-            },
-            "totalSpent": 0
-
-            })
+        const newProfile  = await new Profile({ firstName, lastName, bio, socialLinks, skills, isTalent, location, "email": email.toLowerCase(), "password": hashedPassword, "profilePicture": profileImageURL})
 
         const createdProfile = await newProfile.save()
         return NextResponse.json({message:"User created successfully",data:createdProfile},{status:200})

@@ -81,9 +81,16 @@ export interface PostInterface {
     firstName: string
     lastName: string
     email: string
-    password?:string
+    password:string
     profilePicture: string
     bio: string
+    socialLinks?:{
+      facebook:string,
+      instagram:string,
+      twitter_x:string,
+      linkedin:string,
+      other:string
+    },
     isTalent: boolean
     skills: string[]
     createdAt: string
@@ -97,4 +104,28 @@ export interface PostInterface {
 
     }
   }
-  
+  export interface NewUserType {
+    email: string
+    firstname: string
+    lastname: string
+    password: string
+    passwordCheck: string
+    isTalent: boolean
+    location:{
+        district:string,
+        state:string,
+        country:string,
+    },
+    socialLinks:{
+      facebook:string,
+      instagram:string,
+      twitter_x:string,
+      linkedin:string,
+      other:string
+    },
+    skills: string[]
+    bio: string
+    profileImage: File | null
+    profilePicUrl:string
+  }
+

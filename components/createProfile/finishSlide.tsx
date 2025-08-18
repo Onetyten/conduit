@@ -2,9 +2,10 @@ import React from 'react'
 import {signUpFalse} from '@/state/showSignUp/showSignUp'
 import { useDispatch } from 'react-redux';
 import { useRouter } from 'next/navigation';
+import { NewUserType } from '@/lib/types';
 
 interface propTypes{
-    firstname :string
+    newUser : NewUserType
 }
 
 
@@ -13,7 +14,7 @@ interface propTypes{
 export default function FinishSlide(props:propTypes) {
     const router = useRouter()
     const dispatch = useDispatch()
-    const {firstname} = props
+    const {newUser} = props
 
 
 
@@ -29,7 +30,7 @@ export default function FinishSlide(props:propTypes) {
         <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
             <p className='lg:text-2xl text-lg  font-semibold '>All Done </p>
             <p>You have successfully created a conduit profile</p>
-            <p>Welcome {firstname}</p>
+            <p>Welcome {newUser.firstname}</p>
 
 
             <div className='flex gap-6'>
