@@ -18,10 +18,20 @@ const IntroSection = () => {
             <div className='sm:text-sm text-xs flex gap-3'>
 
                 <div className='hover:text-background  hover:bg-foreground cursor-pointer text-foreground border-[1px] border-foreground transition-all  w-fit px-5 py-2 rounded-full'>
-                    {userReduxData?.isTalent?(
-                      <Link href="/" className='cursor-pointer' >
-                        Get Hired
-                      </Link>
+                    {userReduxData?(
+                        <div>
+                          {userReduxData?.isTalent?
+                            (
+                            <Link href="/" className='cursor-pointer' >
+                                Get Hired
+                            </Link>
+                            ):(
+                            <button onClick={()=>{dispatch(signUpTrue())}} className='cursor-pointer' >
+                                Get Hired
+                            </button>
+                            )}  
+                        </div>
+                    
                     ):(
                     <button onClick={()=>{dispatch(signUpTrue())}} className='cursor-pointer' >
                       Get Hired
