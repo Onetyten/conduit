@@ -23,7 +23,7 @@ export default function useFetchServices(){
     const fetchPost = useCallback(async (limit:number,Currentpage:number)=>{
         setLoading(true)
         try {                
-            let url = `/api/posts?page=${Currentpage}&limit=${limit}`;
+            let url = `/api/service/posts?page=${Currentpage}&limit=${limit}`;
 
             if (keywordRedux && keywordRedux !== "" && keywordRedux !== "All services") {
                 url += `&q=${encodeURIComponent(keywordRedux)}`;

@@ -14,7 +14,7 @@ const HeaderSlide = () => {
 
     async function fetchRandomProfiles (){
         try {
-            const response = await fetch(`/api/fetchProfilesInHead?limit=${limit}`)
+            const response = await fetch(`/api/profile/fetchProfilesInHead?limit=${limit}`)
             if (!response.ok){
                 return console.log("Failed to fetch header profile")
             }

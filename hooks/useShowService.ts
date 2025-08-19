@@ -36,7 +36,7 @@ export default function useShowService(post:serviceInterface, refreshPost:(updat
         // fetch from the update views api and update the views on the backend
         if (profileDataRedux){
             if (post._id && typeof post._id === 'string' && post._id.length>0){
-                const response = await fetch(`/api/update_views`,{
+                const response = await fetch(`/api/service/update_views`,{
                     method:"PATCH",
                     headers:{
                         'Content-Type': 'application/json'

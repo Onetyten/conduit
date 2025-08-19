@@ -36,7 +36,7 @@ import { toast } from 'react-toastify'
         }
         try {
             setPostLiked(!postLiked)
-            const likeResponse = await fetch(`/api/updateLikes`,{
+            const likeResponse = await fetch(`/api/service/updateLikes`,{
             method:'PATCH',
             headers:{
                 'Content-Type': 'application/json'

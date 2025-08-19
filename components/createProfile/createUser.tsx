@@ -3,6 +3,9 @@ import NavigationButton from '../NavigationButton'
 import { NewUserType } from '@/lib/types'
 import {toast} from 'react-toastify'
 import axios from 'axios'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@/store'
+import { setUser } from '@/state/userInfo/userSlice'
 
 interface propTypes{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
@@ -19,28 +22,29 @@ interface propTypes{
 
 
 export default function CreateUser(props:propTypes) {
-    
+    const dispatch=useDispatch()
+    const profile = useSelector((state:RootState)=>state.user.user)
     const {setSlideIndex,slideIndex,newUser,setUploadingProfile,isUser} = props
     
     async function UpdateAccount(){
-        // console.log(newUser)
         setUploadingProfile(true)
-        // const userData = new FormData()
-        // userData.append('firstName',newUser.firstname)
-        // userData.append('lastName',newUser.lastname)
-        // userData.append('email',newUser.email)
-        // userData.append('isTalent',newUser.isTalent.toString())
-        // userData.append('bio',newUser.bio)
-        // userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
-        // userData.append('location',JSON.stringify(newUser.location))
-        // userData.append('skills',JSON.stringify(newUser.skills))
-        // userData.append('password',newUser.password)
-        // if (newUser.profileImage) userData.append('profileImage',newUser.profileImage)
+        const userData = new FormData()
+        if (!profile){
+            return toast.error('This action not authorized, user not logged in ')
+        }
+        userData.append('_id',profile._id) 
+        userData.append('isTalent',"true")
+        userData.append('bio',newUser.bio)
+        userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
+        userData.append('skills',JSON.stringify(newUser.skills))
         try {
-            // const response = await axios.post(`/api/createNewProfile`,userData)
-            // if (response.status != 200) return
-            // setSlideIndex(slideIndex+1)
-            // setUploadingProfile(false)
+            const response = await axios.patch(`/api/profile/updateProfile`,userData)
+            if (response.status != 200) return
+            const updatedUser = response.data.data
+            console.log(updatedUser)
+            dispatch(setUser(updatedUser))
+            setSlideIndex(slideIndex+1)
+            setUploadingProfile(false)
             toast.success("Account Updated successfully")
         }
         catch {
@@ -68,7 +72,7 @@ export default function CreateUser(props:propTypes) {
 
         if (newUser.profileImage) userData.append('profileImage',newUser.profileImage)
         try {
-            const response = await axios.post(`/api/createNewProfile`,userData)
+            const response = await axios.post(`/api/profile/createNewProfile`,userData)
             if (response.status != 200) return
             setSlideIndex(slideIndex+1)
             setUploadingProfile(false)

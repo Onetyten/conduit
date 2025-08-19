@@ -135,7 +135,7 @@ export default function CreateAccount() {
                                 )
                                 :
                                 (
-                                    <FinishSlide newUser={newUser} />
+                                    <FinishSlide newUser={newUser} isUser={isUser} />
                                 )
                             }
                         </div>
@@ -145,7 +145,7 @@ export default function CreateAccount() {
                         <div className='w-full h-full top-0 left-0 absolute flex justify-center items-center bg-softblue/80 rounded-3xl'>
                             <div className='flex flex-col pt-32 gap-6 w-full h-full justify-center items-center'>
                                     <Image src={'/icons/loading.gif'} alt='loading gif' width={50} height={50} />
-                                    <p>Creating Profile</p>
+                                    <p>{isUser?"Updating profile":"Creating profile"}</p>
                             </div>
 
                         </div>

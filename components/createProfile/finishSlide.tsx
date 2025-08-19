@@ -6,6 +6,7 @@ import { NewUserType } from '@/lib/types';
 
 interface propTypes{
     newUser : NewUserType
+    isUser:boolean
 }
 
 
@@ -14,7 +15,7 @@ interface propTypes{
 export default function FinishSlide(props:propTypes) {
     const router = useRouter()
     const dispatch = useDispatch()
-    const {newUser} = props
+    const {newUser,isUser} = props
 
 
 
@@ -28,15 +29,20 @@ export default function FinishSlide(props:propTypes) {
   return (
     <div className='h-full w-full px-[10%]'>
         <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
-            <p className='lg:text-2xl text-lg  font-semibold '>All Done </p>
-            <p>You have successfully created a conduit profile</p>
-            <p>Welcome {newUser.firstname}</p>
+            <p className='lg:text-2xl text-lg  font-semibold '> {isUser?"Congratulations":"All done"} </p>
+            <p>{isUser?"You are now a service provider on conduit":"You have successfully created a conduit profile"}</p>
 
+            {!isUser&&
+                <p>Welcome {newUser.firstname}</p>
+            }
 
             <div className='flex gap-6'>
-                <button  onClick={Continue}  className='rounded-lg bg-foreground text-background hover:bg-conduit p-2 px-8'>
-                    Sign in
-                </button>
+                {!isUser&&
+                    <button  onClick={Continue}  className='rounded-lg bg-foreground text-background hover:bg-conduit p-2 px-8'>
+                        Sign in
+                    </button>
+                }
+
             </div>
             
             

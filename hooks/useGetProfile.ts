@@ -14,7 +14,7 @@ export default function useGetProfile(id:string){
         try 
         {
             setLoading(true)
-            const response  = await fetch(`/api/getserviceprofile`,{
+            const response  = await fetch(`/api/service/getserviceprofile`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'

@@ -8,7 +8,7 @@ import ProfileActions from '@/components/profileActions'
 
 async function getProfile(id:string):Promise<profileInterface> {
   
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/getserviceprofile`,{
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/service/getserviceprofile`,{
   method:'POST',
   cache:'no-store',
   headers:{
@@ -69,6 +69,7 @@ export default async function page({
 
 
           <p className=''>{`${profileData?.email || "john_Doe@gmail.com"}`}</p>
+          
           <p>{`${profileData?.location?.district?profileData?.location?.district:''} ${profileData?.location?.state?profileData?.location?.state:''}, ${profileData?.location?.country?profileData.location?.country:''}`}</p>
           
           <p className=''>{`${profileData?.isTalent?'Talent':'Client'} since ${formattedCreationDate}`}</p>
