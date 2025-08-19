@@ -12,13 +12,14 @@ interface propTypes{
     setNewUser:React.Dispatch<React.SetStateAction<NewUserType>>
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
     slideIndex:number
+    isUser:boolean
 }
 
 
 
 
 export default function SkillSlide(props:propTypes) {
-    const {setSlideIndex,slideIndex,newUser,setNewUser} = props
+    const {setSlideIndex,slideIndex,newUser,setNewUser,isUser} = props
     const [newSkill,setNewSkill] = useState('')
 
     function Next() {
@@ -98,15 +99,11 @@ export default function SkillSlide(props:propTypes) {
 
             
             <div className='flex gap-6'>
-                <NavigationButton direction={0} Click={Prev}/>
+                {!isUser&&<NavigationButton direction={0} Click={Prev}/>}
+                
                 <NavigationButton direction={1} Click={Next}/>
             </div>
 
-            <div>
-                <p className='text-gray-500'>
-                    (Optional)
-                </p>
-            </div>
             
             
         </div>  

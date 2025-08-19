@@ -33,10 +33,10 @@ export default function LinkSlide(props:propTypes) {
         const { socialLinks } = newUser;
         // Regex patterns for each platform
         const regexPatterns: Record<string, RegExp> = {
-            facebook: /^https?:\/\/(www\.)?facebook\.com\/[A-Za-z0-9_.-]+\/?$/,
-            instagram: /^https?:\/\/(www\.)?instagram\.com\/[A-Za-z0-9_.-]+\/?$/,
-            linkedin: /^https?:\/\/(www\.)?linkedin\.com\/in\/[A-Za-z0-9_-]+\/?$/,
-            twitter_x: /^https?:\/\/(www\.)?(twitter\.com|x\.com)\/[A-Za-z0-9_]+\/?$/,
+            facebook: /^https?:\/\/(www\.)?facebook\.com\/.+\/?/,
+            instagram: /^https?:\/\/(www\.)?instagram\.com\/.+\/?/,
+            linkedin: /^https?:\/\/(www\.)?linkedin\.com\/in\/.+\/?/,
+            twitter_x: /^https?:\/\/(www\.)?(twitter\.com|x\.com)\/.+\/?/,
             other: /^https?:\/\/[^\s$.?#].[^\s]*$/ 
         };
 

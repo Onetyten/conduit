@@ -64,7 +64,8 @@ export default async function page({
             </div>
           )}
 
-          <p className='text-sm py-3'>{`${profileData?.bio?profileData?.bio:'No bio'}`}</p>
+          {profileData?.bio&&<p className='text-sm py-3'>{profileData?.bio}</p>}
+          
 
 
           <p className=''>{`${profileData?.email || "john_Doe@gmail.com"}`}</p>

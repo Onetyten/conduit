@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import NavbarAuth from '@/components/navbarauth'
+import NavbarAuth from '@/components/navbar'
 
 export default function layout({children}:{children:React.ReactNode})
 {  

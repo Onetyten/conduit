@@ -12,21 +12,16 @@ import CloseSlide from './serviceComponents/closeSlide';
 import CreateUser from './createProfile/createUser';
 import axios from 'axios';
 import Image from 'next/image';
-import { toast } from 'react-toastify';
 import AccountSelectSlide from './createProfile/accountSelectSlide(';
 import SkillSlide from './createProfile/skillSlide';
 import LinkSlide from './createProfile/linkSlide';
-
-
-
-
-
  
 
 export default function CreateAccount() {
     const dispatch = useDispatch()
     const LocationalRedux = useSelector((state:RootState)=>state.locationalData.data)
     const showSignUpRedux = useSelector((state:RootState)=>state.showSignUp.showSignUp)
+    const profile = useSelector((state:RootState)=>state.user.user)
     const [newUser,setNewUser] = useState({
         email:'',
         firstname: "",
@@ -53,40 +48,22 @@ export default function CreateAccount() {
     })
     const [uploadingProfile,setUploadingProfile] = useState(false)
     const [slideIndex,setSlideIndex] = useState(0)
+    const [isUser,setIsUser] = useState(false)
+
+    //set the slideIndex to 5 by default if user already has an
+    useEffect(()=>{
+        if (profile && profile.isTalent==false){
+        setIsUser(true)
+        setSlideIndex(5)
+    }
+    },[profile])
 
 
-    async function CreateAccount(e:React.FormEvent<HTMLFormElement>){
 
-        e.preventDefault();
-        // console.log(newUser)
-        setUploadingProfile(true)
-        const userData = new FormData()
-        userData.append('firstName',newUser.firstname)
-        userData.append('lastName',newUser.lastname)
-        userData.append('email',newUser.email)
-        userData.append('isTalent',newUser.isTalent.toString())
-        userData.append('bio',newUser.bio)
-        userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
-        userData.append('location',JSON.stringify(newUser.location))
-        userData.append('skills',JSON.stringify(newUser.skills))
-        userData.append('password',newUser.password)
 
-        if (newUser.profileImage) userData.append('profileImage',newUser.profileImage)
-        try {
-            const response = await axios.post(`/api/createNewProfile`,userData)
-            if (response.status != 200) return
-            setSlideIndex(slideIndex+1)
-            setUploadingProfile(false)
-            toast.success("Account created successfully, signin")
-        }
-        catch {
-            toast("A error occured while creating your profile")
-        }
-        finally{
-            setUploadingProfile(false)
-        }
-        
-    } 
+
+
+
     useEffect(()=>{
         async function getLocationalData(){
             
@@ -122,7 +99,7 @@ export default function CreateAccount() {
                     <CloseSlide/>
                     
                     <div className='h-full w-full flex justify-center items-center'>
-                        <form onSubmit={CreateAccount} className='h-full w-full'>
+                        <div className='h-full w-full'>
 
                             {/* first carousel item */}
                             {
@@ -146,7 +123,7 @@ export default function CreateAccount() {
                                 ):
                                 slideIndex==5?
                                 (
-                                    <SkillSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
+                                    <SkillSlide setSlideIndex={setSlideIndex} isUser={isUser} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
                                 ):
                                 slideIndex==6?
                                 (
@@ -154,14 +131,14 @@ export default function CreateAccount() {
                                 ):
                                 slideIndex==7?
                                 (
-                                    <CreateUser setSlideIndex ={setSlideIndex} slideIndex={slideIndex} newUser={newUser} />
+                                    <CreateUser isUser={isUser} setSlideIndex ={setSlideIndex} setUploadingProfile={setUploadingProfile} slideIndex={slideIndex} newUser={newUser} />
                                 )
                                 :
                                 (
                                     <FinishSlide newUser={newUser} />
                                 )
                             }
-                        </form>
+                        </div>
                     </div>
 
                     {uploadingProfile&&(
