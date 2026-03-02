@@ -47,6 +47,7 @@
   --color-softblue: var(--softblue);
   --color-conduit: var(--conduitblue);
   --font-sans: var(--font-geist-sans);
+  --font-orbitron: var(--font-orbitron);
   --font-mono: var(--font-geist-mono);
 
   --color-sidebar-ring:var(--sidebar-ring);

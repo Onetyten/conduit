@@ -20,8 +20,8 @@ const NavbarAuth = () => {
   return (
     <div className='py-3 flex justify-between w-full text-sm '>
       <div className='flex gap-1 items-center '>
-        <Image src={Logo} alt='logo' className='w-5 object-contain'/>
-        <p className='raleway-text text-conduit font-bold text-xl sm:text-2xl'>
+        <Image src={Logo} alt='logo' className='w-6 object-contain'/>
+        <p className='font-orbitron font-black text-conduit text-xl sm:text-2xl'>
           Conduit .
         </p>
       </div>

@@ -71,10 +71,10 @@ const SectionCarousel = () => {
   return (
     
     <div ref={scrollContainerRef} onMouseDown={HandleCanDrag} onMouseUp={HandleStopDrag} onMouseLeave={HandleStopDrag} onMouseMove={HandleMouseMove}
-    className='flex w-full overflow-x-scroll cursor-grab hide-scrollbar capitalize pt-5 pb-3 mb-2 text-xs sm:text-sm text-gray-400 gap-2 relative flex-nowrap'>
+    className='flex w-full overflow-x-scroll cursor-grab hide-scrollbar capitalize pt-5 pb-3 mb-2 text-sm sm:text-base text-gray-400 gap-2 relative flex-nowrap'>
         {tagList.map((item:tagtype,index:number)=>{
             return(
-                <div key={index} onClick={()=>{setTag(item.tag)}} className={`${item.tag == keywordRedux?"bg-gray-200":""} p-2 px-5 rounded-full cursor-pointer hover:bg-gray-200 hover:text-foreground transition-all`}>
+                <div key={index} onClick={()=>{setTag(item.tag)}} className={`${item.tag == keywordRedux?"bg-gray-200 font-medium":""} p-2 px-5 rounded-full cursor-pointer hover:bg-gray-200 transition-all`}>
                     <p className='w-full whitespace-nowrap select-none'>{item.tag}</p>
                 </div>
             )

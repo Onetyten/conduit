@@ -42,9 +42,6 @@ const Posts = () => {
                             <p className='text-center'>
                                 No Services available at the moment
                             </p>
-                            {/* <div className='relative'>
-                                <Image src='/icons/NoServices.webp' alt='No service image' className='object-contain' width={250} height={250}/>
-                            </div> */}
                         </div>)
                     )
                 }

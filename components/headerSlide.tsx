@@ -40,7 +40,7 @@ const HeaderSlide = () => {
 
 
   return (
-    <div className='min-w-44 h-44 aspect-square py-4 flex cursor-pointer rounded-2xl overflow-hidden flex-col justify-between p-2 items-center bg-background  shadow-md'>
+    <div className='w-64 h-44 aspect-square py-4 flex cursor-pointer rounded-2xl overflow-hidden flex-col justify-between p-2 items-center bg-background  shadow-md'>
         <div className=' size-16 relative bg-gray-200 rounded-full overflow-hidden flex justify-center items-center'>
             {headerProfiles[index]?.profilePicture&&(
                 <Link href={`/profile/${headerProfiles[index]._id}`}>
@@ -50,7 +50,7 @@ const HeaderSlide = () => {
             )}
         </div>
         <p className='text-sm font-semibold'>{headerProfiles[index]?.firstName || "John"}</p>
-        <p className='text-sm text-center w-full bg-gray-100 border-gray-200 py-1 capitalize px-3 border-[1px]'>{headerProfiles[index]?.skills[0].slice(0,32)||"Talent"}</p>
+        <p className='text-sm text-center w-full bg-gray-100 border-gray-200 py-1 capitalize px-3 border'>{headerProfiles[index]?.skills[0].slice(0,32)||"Talent"}</p>
 
     </div>
   )

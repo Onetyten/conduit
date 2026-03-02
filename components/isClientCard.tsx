@@ -24,7 +24,7 @@ export default function IsClientCard(props:propTypes) {
             setIndexCount(3)
 
         }}
-        className={`overflow-hidden hover:scale-105 duration-200 rounded-md w-72 h-56 flex-col bg-background  ${!newUser.isTalent?'shadow-sm shadow-softblue border-4':'border-[1px]'} shadow-softblue flex`}>
+        className={`overflow-hidden hover:scale-105 duration-200 rounded-md w-72 h-56 flex-col bg-background  ${!newUser.isTalent?'shadow-sm shadow-softblue border-4':'border'} shadow-softblue flex`}>
         {/* background */}
         <div className='w-full relative bg-gradient-to-tl overflow-hidden z-10 bg-softblue/10 h-full flex justify-center items-center'>
                 {/* floating blobs */}
@@ -33,7 +33,7 @@ export default function IsClientCard(props:propTypes) {
 
                     </motion.div>
                     <motion.div animate={{ x: [0, -300, 0],  y: [0, 30, 0]}}transition = {{duration:5,repeat:Infinity, repeatType:"loop", ease:'easeInOut' }} className='bg-blue-100/50 -z-20 w-40 h-40 absolute top-0 -right-10 rounded-full'>
-
+                    
                     </motion.div>
 
                     <motion.div animate={{ x: [0, -40, 0],  y: [0, -80, 0]}}transition = {{duration:8,repeat:Infinity, repeatType:"loop", ease:'easeInOut' }} className='bg-lime-100/80 -z-20 w-40 h-40 absolute -bottom-4 right-8 rounded-full'>

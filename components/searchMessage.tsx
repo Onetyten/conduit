@@ -8,7 +8,7 @@ export default function SearchMessage() {
 
   return (
     <div>
-        <p className=" text-xs sm:text-sm text-gray-400">
+        <p className=" text-sm sm:text-base text-gray-400">
             Search result for {keywordRedux.toLowerCase()}
          </p>
     </div>
