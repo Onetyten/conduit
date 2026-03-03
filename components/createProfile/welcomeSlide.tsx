@@ -2,6 +2,7 @@
 import React,{useState} from 'react'
 import NavigationButton from '../NavigationButton'
 import { NewUserType } from '@/lib/types'
+import { countryCodes } from '@/data/countryCodes'
 
 
 interface propTypes{
@@ -18,24 +19,19 @@ export default function WelcomeSlide(props:propTypes) {
     const [showEmailErr,setShowEmailErr] = useState(false)
     const [showFirstNameErr,setShowFirstNameErr] = useState(false)
     const [showLastNameErr,setShowLastNameErr] = useState(false)
+    const [showPhoneErr, setShowPhoneErr] = useState(false)
 
     function Next() {
          setShowEmailErr(false)
          setShowFirstNameErr(false)
          setShowLastNameErr(false)
+         setShowPhoneErr(false)
 
-        if (newUser.email.trim().length<1){
-            setShowEmailErr(true)
-            return
-        }
-        if (newUser.firstname.trim().length<1){
-            setShowFirstNameErr(true)
-            return
-        }
-        if (newUser.lastname.trim().length<1){
-            setShowLastNameErr(true)
-            return
-        }
+        if (newUser.email.trim().length<1){ setShowEmailErr(true); return}
+        if (newUser.firstname.trim().length<1){; setShowFirstNameErr(true); return}
+        if (newUser.lastname.trim().length<1){ setShowLastNameErr(true); return}
+        if (newUser.phoneNumber.num.trim().length < 1) { setShowPhoneErr(true); return }
+
         
         if (newUser.email.trim().length>0 && newUser.firstname.trim().length>0&&newUser.lastname.trim().length>0){
             setSlideIndex(slideIndex+1)
@@ -64,8 +60,6 @@ export default function WelcomeSlide(props:propTypes) {
                 <p className={`text-xs ${showFirstNameErr?"opacity-100":"opacity-0"} duration-300 text-red-600`}>
                     First name is required
                 </p>
-                
-                
             </div>
             
             <div className='flex flex-col gap-1 w-full'>
@@ -76,6 +70,34 @@ export default function WelcomeSlide(props:propTypes) {
                 </p>
         
                 
+            </div>
+
+            <div className='flex flex-col gap-1 w-full'>
+                <div className='flex h-12 gap-3 w-full  rounded-sm overflow-hidden'>
+                
+                    <select value={newUser.phoneNumber.code} onChange={(e) => setNewUser(prev => ({ ...prev, phoneNumber: { ...prev.phoneNumber, code: e.target.value } }))} className='h-full border border-conduit/40 rounded-sm px-2 outline-none cursor-pointer'>
+                        {[...countryCodes].sort((a, b) => a.country === 'Nigeria' ? -1 : b.country === 'Nigeria' ? 1 : 0).map((country) => (
+                                <option key={country.iso} value={`+${country.code}`}>
+                                    {country.iso} +{country.code}
+                                </option>
+                            ))
+                        }
+                    </select>
+
+                
+                    <input type='tel' required value={newUser.phoneNumber.num}
+                        onChange={(e) => {
+                            const val = e.target.value.replace(/\D/g, '')
+                            setNewUser(prev => ({ ...prev, phoneNumber: { ...prev.phoneNumber, num: val } }))
+                        }}
+                        placeholder='Phone number'
+                        className='flex-1 h-full placeholder:text-gray-500 p-3 border border-conduit/40 rounded-sm lg:px-5 outline-none'
+                    />
+                </div>
+
+                <p className={`text-xs ${showPhoneErr ? "opacity-100" : "opacity-0"} duration-300 text-red-600`}>
+                    Phone number is required
+                </p>
             </div>
             
             <div className='flex mt-6 gap-6'>

@@ -116,6 +116,10 @@ export interface PostInterface {
         state:string,
         country:string,
     },
+    phoneNumber: {
+        code: string;
+        num: string;
+    },
     socialLinks:{
       facebook:string,
       instagram:string,

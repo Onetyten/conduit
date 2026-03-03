@@ -35,6 +35,7 @@ export default function CreateUser(props:propTypes) {
         userData.append('_id',profile._id) 
         userData.append('isTalent',"true")
         userData.append('bio',newUser.bio)
+        userData.append('phoneNumber', JSON.stringify(newUser.phoneNumber))
         userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
         userData.append('skills',JSON.stringify(newUser.skills))
         try {
@@ -65,6 +66,7 @@ export default function CreateUser(props:propTypes) {
         userData.append('email',newUser.email)
         userData.append('isTalent',newUser.isTalent.toString())
         userData.append('bio',newUser.bio)
+        userData.append('phoneNumber', JSON.stringify(newUser.phoneNumber))
         userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
         userData.append('location',JSON.stringify(newUser.location))
         userData.append('skills',JSON.stringify(newUser.skills))

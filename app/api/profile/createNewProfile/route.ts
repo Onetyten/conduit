@@ -3,6 +3,7 @@ import Profile from "@/models/profileSchema";
 import { NextResponse } from "next/server";
 import bcrypt from 'bcrypt'
 import {v2 as cloudinary} from 'cloudinary'
+import { DEFAULT_PROFILE_IMAGE } from "@/lib/constants";
 
 
 
@@ -18,11 +19,17 @@ function safeParse<T = any>(value: FormDataEntryValue | null, fallback: T): T {
   return fallback;
 }
 
+interface phoneNumberType{
+    code:string,
+    num:string,
+}
+
 export async function POST(request:Request){
     const userData = await request.formData()
     const firstName = userData.get('firstName') as string | null
     const lastName = userData.get('lastName') as string | null
     const email = userData.get('email') as string | null
+    const phoneNumber = safeParse<phoneNumberType>(userData.get('phoneNumber'), { code: '', num: '' })
     const isTalent = userData.get('isTalent') === "true"
     const bio = userData.get('bio') as string | null
     const socialLinks = safeParse(userData.get("socialLinks"), {})
@@ -33,7 +40,7 @@ export async function POST(request:Request){
 
 
     // set cloudinary config
-    cloudinary.config({
+    const cloudinaryConfig = cloudinary.config({
         cloud_name:process.env.CLOUDINARY_CLOUD_NAME,
         api_key:process.env.CLOUDINARY_API_KEY,
         api_secret:process.env.CLOUDINARY_API_SECRET
@@ -51,12 +58,15 @@ export async function POST(request:Request){
         }
         const salt = await bcrypt.genSalt(10)
         const hashedPassword = await bcrypt.hash(password,salt)
-        let profileImageURL = 'https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png'
+        let profileImageURL = DEFAULT_PROFILE_IMAGE
 
         if (profileImage){
+            if (!cloudinaryConfig.cloud_name || !cloudinaryConfig.api_key || !cloudinaryConfig.api_secret) return
             if (!(profileImage instanceof Blob)){
-                return NextResponse.json({message:"Invalid image format"},{status:400})
+                console.log("Invalid image format") 
+                return 
             }
+
             const arrayBuffer = await profileImage.arrayBuffer()
             const buffer = Buffer.from(arrayBuffer)
 
@@ -73,10 +83,9 @@ export async function POST(request:Request){
             })
 
             profileImageURL = uploadResult.secure_url
-
         }
 
-        const newProfile  = await new Profile({ firstName, lastName, bio, socialLinks, skills, isTalent, location, "email": email.toLowerCase(), "password": hashedPassword, "profilePicture": profileImageURL})
+        const newProfile  = await new Profile({ firstName, lastName, bio, socialLinks, skills, isTalent, location, email: email.toLowerCase(), password: hashedPassword,phoneNumber, "profilePicture": profileImageURL})
 
         const createdProfile = await newProfile.save()
         return NextResponse.json({message:"User created successfully",data:createdProfile},{status:200})
@@ -87,4 +96,3 @@ export async function POST(request:Request){
         return NextResponse.json({ message: 'Failed to create profile due to an internal server error' }, { status: 500 })
     }
 }
-

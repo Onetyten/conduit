@@ -13,15 +13,17 @@ interface propTypes{
     newUser:NewUserType
     setNewUser:React.Dispatch<React.SetStateAction<NewUserType>>
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
-    slideIndex:number
+    slideIndex:number,
+    PreviewImage:string | null,
+    setPreviewImage:React.Dispatch<React.SetStateAction<string | null>>
 }
 
 
 export default function PictureSlide(props:propTypes) {
-    const {setSlideIndex,slideIndex,newUser,setNewUser} = props
+    const {setSlideIndex,slideIndex,newUser,setNewUser,PreviewImage,setPreviewImage} = props
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [imageSaved,setImageSaved] = useState(false)
-    const [PreviewImage,setPreviewImage] = useState<string | null>(null)
+
 
 
     function Next() {

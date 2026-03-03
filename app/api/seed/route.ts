@@ -5,7 +5,13 @@ import { NextResponse } from "next/server";
 import Profile from "@/models/profileSchema";
 import bcrypt from 'bcrypt'
 
-
+const generatePhoneNumber = ()=>{
+  const prefixes = ['80','81','70','71','90','91']
+  const prefix = prefixes[Math.random()*prefixes.length]
+  const remaining = Math.floor(Math.random()*100000000).toString().padStart(8,'5')
+  const phone = prefix+remaining
+  return phone
+}
 
 export async function POST() {
   try {
@@ -15,6 +21,7 @@ export async function POST() {
 
     const profiles = await JSON.parse(fs.readFileSync('jsons/profiles.json','utf-8'))
     const services = JSON.parse(fs.readFileSync('jsons/service.json', 'utf-8'));
+    
 
     if (!profiles || !services || profiles.length==0 || services.length == 0){
       console.log("Invalid JSON input")
@@ -25,14 +32,17 @@ export async function POST() {
     const createdProfiles =[]
 
     for (let i = 0; i < services.length; i++) {
-      //create profile
+      
       const profile = profiles[i]
       const salt = await bcrypt.genSalt(10)
       const hashedPassword = await bcrypt.hash(profile.password,salt)
-      const newProfile = await Profile.create({...profile,password:hashedPassword})
+      const phoneNumber= {
+            code:"+234",
+            num:generatePhoneNumber(),
+      }
+      const newProfile = await Profile.create({ ...profile ,phoneNumber,password:hashedPassword})
       createdProfiles.push(newProfile);
 
-      //create corresponding service using profile id
       const serviceData = { ...services[i], serviceProviderId: newProfile._id};
       const newService = await Service.create(serviceData);
       createdServices.push(newService);

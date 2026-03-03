@@ -1,4 +1,3 @@
-import { number } from "framer-motion";
 import mongoose from "mongoose";
 const profileSchema  = new mongoose.Schema({
     firstName:{type:String,required:true},
@@ -22,6 +21,7 @@ const profileSchema  = new mongoose.Schema({
     },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
+    lastSeen: { type: Date, default: Date.now },
     location:{
         district:{type:String},
         state:{type:String},

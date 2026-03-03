@@ -69,7 +69,7 @@ export default function SkillSlide(props:propTypes) {
 
             <div className='flex flex-col relative gap-2 w-full'>
                 <p className='text-sm font-semibold'>
-                    Skills
+                    Services
                 </p>
                 <div className='w-full h-12 relative '>
                   <input onChange={(e)=>{setNewSkill(e.target.value)}} value={newSkill} type='text' className='h-full placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border border-conduit/40' />  
@@ -77,7 +77,7 @@ export default function SkillSlide(props:propTypes) {
                 </div>
                  
                  <p className='absolute -bottom-5 right-0'>
-                    {newUser.skills.length}/5 skill
+                    {newUser.skills.length}/5 services
                  </p>
 
                  <div className='w-full flex flex-wrap gap-2  '>

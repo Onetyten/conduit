@@ -15,12 +15,14 @@ import Image from 'next/image';
 import AccountSelectSlide from './createProfile/accountSelectSlide(';
 import SkillSlide from './createProfile/skillSlide';
 import LinkSlide from './createProfile/linkSlide';
+import { signUpFalse } from '@/state/showSignUp/showSignUp';
  
 
 export default function CreateAccount() {
     const dispatch = useDispatch()
     const LocationalRedux = useSelector((state:RootState)=>state.locationalData.data)
     const showSignUpRedux = useSelector((state:RootState)=>state.showSignUp.showSignUp)
+    const [PreviewImage,setPreviewImage] = useState<string | null>(null)
     const profile = useSelector((state:RootState)=>state.user.user)
     const [newUser,setNewUser] = useState({
         email:'',
@@ -32,6 +34,10 @@ export default function CreateAccount() {
             district: "",
             state: "",
             country: "",
+        },
+        phoneNumber:{
+            code:"+234",
+            num:"",
         },
         socialLinks:{
             facebook: "",
@@ -92,9 +98,9 @@ export default function CreateAccount() {
   return (
     <div>
         {showSignUpRedux&&(
-            <div className=' pointer-events-none bg-slate-500/50  h-screen w-full flex-col sm:flex-row  right-0 bottom-0 fixed flex justify-center items-center'>
+            <div onClick={()=>{dispatch(signUpFalse())}} className=' pointer-events-auto bg-slate-500/50 z-50 h-screen w-full flex-col sm:flex-row  right-0 bottom-0 fixed flex justify-center items-center'>
 
-                <div className='bg-white h-[85%] sm:h-3/4 relative rounded-3xl w-[90%] sm:w-2/3 z-50 pointer-events-auto shadow-md'>
+                <div onClick={(e)=>e.stopPropagation()} className='bg-white h-[85%] sm:h-3/4 relative rounded-3xl w-[90%] sm:w-2/3 z-50 pointer-events-auto shadow-md'>
                     
                     <CloseSlide/>
                     
@@ -111,7 +117,7 @@ export default function CreateAccount() {
                                 ):
                                 slideIndex==2?
                                 (
-                                    <PictureSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
+                                    <PictureSlide PreviewImage={PreviewImage} setPreviewImage={setPreviewImage} setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
                                 ):
                                 slideIndex==3?
                                 (
