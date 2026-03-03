@@ -27,9 +27,9 @@ const IntroSection = () => {
 
     const userReduxData = useSelector((state:RootState)=>state.user.user)
   return (
-    <div className='flex w-full sm:w-4xl max-x-full flex-col gap-2 justify-center items-center py-10 px-2'>
+    <div className='flex w-full primary sm:w-4xl max-x-full flex-col gap-2 justify-center items-center py-10 px-2'>
 
-        <div className='bg-gray-200 text-xs flex items-center  gap-2 font-bold uppercase p-1.5 rounded-md '>
+        <div className='bg-softblue text-xs flex items-center  gap-2 font-bold uppercase p-1.5 rounded-md '>
             <span onClick={()=>setUserHiring(true)} className={`p-3.5 rounded-md ${userHiring?"bg-white":""} cursor-pointer`}>Hire</span>
             <span onClick={()=>setUserHiring(false)} className={` p-3.5 ${userHiring?"":"bg-white"} rounded-md cursor-pointer`}>Get Hired</span>
         </div>
@@ -49,7 +49,7 @@ const IntroSection = () => {
                 {userHiring?(
                     <form onSubmit={Search} className='h-full w-full '>
                         <motion.div key="search" layoutId='hire-switch' className='relative w-full text-base'>
-                            <input name='query' autoComplete='off' value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)} placeholder='Discover skilled professionals...' className='w-full border  border-gray-400 rounded-full h-13 px-12'/>
+                            <input name='query' autoComplete='off' value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)} placeholder='Discover skilled professionals...' className='w-full border-2  border-gray-400 rounded-full h-13 px-12'/>
 
                             <button type='submit' className='absolute left-4 top-1/2 -translate-y-1/2'>
                                 <IoSearchOutline className='font-light text-xl '/>

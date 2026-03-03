@@ -28,7 +28,7 @@ const SearchForm = () => {
         className='h-full w-full '>
         <div className='relative w-full text-'>
 
-          <input name='query' autoComplete='off' value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)} placeholder='Discover skilled professionals...' className='w-full border focus:select-none border-gray-400 rounded-full h-13 px-12'/>
+          <input name='query' autoComplete='off' value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)} placeholder='Discover skilled professionals...' className='w-full border-4 focus:select-none border-gray-400 rounded-full h-13 px-12'/>
 
           <button type='submit' className='absolute left-4 top-1/2 -translate-y-1/2'>
             <FaSearch className='font-light text-xl '/>
