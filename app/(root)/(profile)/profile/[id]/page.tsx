@@ -45,6 +45,8 @@ export default async function page({ params}: { params: Promise<{ id: string }> 
               <p className='text-3xl text-wrap gap break-all hyphens-auto w-full font-semibold'>{`${profileData?.lastName || "John"} ${profileData?.firstName || "Doe"}`}</p>
               <p className='break-all hyphens-auto'>{`${profileData?.email || "john_Doe@gmail.com"}`}</p>
               <p className='break-all hyphens-auto'>{`${profileData?.location?.district?profileData?.location?.district:''} ${profileData?.location?.state?profileData?.location?.state:''}, ${profileData?.location?.country?profileData.location?.country:''}`}</p>
+
+              <p className='text-xs font-normal'>{`${profileData?.isTalent?'Talent':'Client'} since ${formattedCreationDate}`}</p>
             </div>
             
           </div>
@@ -65,16 +67,15 @@ export default async function page({ params}: { params: Promise<{ id: string }> 
 
           
           
-
-
           
-          
-          
-          <p className='text-xs'>{`${profileData?.isTalent?'Talent':'Client'} since ${formattedCreationDate}`}</p>
 
 
 
 
+        </div>
+
+        <div className='w-full'>
+          <ProfileActions currentId={id}/>
         </div>
          
       </div>
@@ -84,7 +85,7 @@ export default async function page({ params}: { params: Promise<{ id: string }> 
           
 
 
-          <ProfileActions currentId={id}/>
+          
 
 
 
