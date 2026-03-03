@@ -23,56 +23,67 @@ async function getProfile(id:string):Promise<profileInterface> {
 }
 
 
-export default async function page({
-    params,
-  }: {
-    params: Promise<{ id: string }>
-  }) {
+export default async function page({ params}: { params: Promise<{ id: string }> }) {
   const { id } = await params
-    const profileData = await getProfile(id)
-    const creationDate = profileData?.createdAt ? new Date(profileData.createdAt) : null
-    const formattedCreationDate = creationDate && !isNaN(creationDate.getTime()) ? format(creationDate, "MMM d, yyyy") : "Unknown Date";
+  const profileData = await getProfile(id)
+  const creationDate = profileData?.createdAt ? new Date(profileData.createdAt) : null
+  const formattedCreationDate = creationDate && !isNaN(creationDate.getTime()) ? format(creationDate, "MMM d, yyyy") : "Unknown Date";
 
   return (
     <div className='w-full min-h-screen flex flex-col sm:flex-row  relative'>
       <BackButton/>
-      <div className='bg-softblue sm:pt-0 pt-16 flex-1 p-5 flex justify-center items-center'>
-         <Avatar className='sm:w-56 sm:h-56 w-32 h-32 object-cover'>
-            <AvatarImage src ={profileData?.profilePicture}/>
-            <AvatarFallback>{`${profileData?.lastName?.slice(0,1) || ""}${profileData?.firstName?.slice(0,1)||""}`}</AvatarFallback>
-          </Avatar>
-      </div>
-      <div className='flex-1 flex flex-col p-5 justify-center items-center gap-5'>
-        <div className='flex flex-col p-10 gap-5 text-xs '>
-          <p className='text-3xl font-semibold'>{`${profileData?.lastName || "John"} ${profileData?.firstName || "Doe"}`}</p>
-          <div className='sm:text-sm text-xs flex gap-3'>
-            <p className='p-1.5 px-4 hover:bg-softblue/50 bg-softblue select-none rounded-md'>
-              {profileData?.isTalent?'Talent':'Client'}
-            </p>
+
+      <div className='bg-softblue overflow-y-scroll w-96 max-w-full flex-col p-5 flex justify-between items-center'>
+        <div className='flex flex-col w-full mt-16 gap-3'>
+          <div className='w-full flex gap-2 '>
+            <Avatar className='size-32 aspect-square object-cover'>
+              <AvatarImage src ={profileData?.profilePicture}/>
+              <AvatarFallback>{`${profileData?.lastName?.slice(0,1) || ""}${profileData?.firstName?.slice(0,1)||""}`}</AvatarFallback>
+            </Avatar>
+
+            <div className='flex-1 flex text-sm font-medium flex-col gap-2'>
+              <p className='text-3xl text-wrap gap break-all hyphens-auto w-full font-semibold'>{`${profileData?.lastName || "John"} ${profileData?.firstName || "Doe"}`}</p>
+              <p className='break-all hyphens-auto'>{`${profileData?.email || "john_Doe@gmail.com"}`}</p>
+              <p className='break-all hyphens-auto'>{`${profileData?.location?.district?profileData?.location?.district:''} ${profileData?.location?.state?profileData?.location?.state:''}, ${profileData?.location?.country?profileData.location?.country:''}`}</p>
+            </div>
             
           </div>
+          
+          {profileData?.bio&&<p className='text-base'>{profileData?.bio}</p>}
 
           {profileData?.skills && profileData?.skills.length > 0 && (
-            <div className='sm:text-sm text-xs gap-2 flex flex-col'>
-              <p className='font-semibold'>Skills </p>
+            <div className='text-sm w-full flex items-center gap-3'>
+              <p className='font-semibold'>Skills</p>
               <div className='flex flex-wrap gap-3'> 
                 {profileData?.skills.map((item, index:number) => (
-                  <span key={index} className='p-1.5 px-4 hover:bg-softblue/50 select-none capitalize bg-softblue rounded-md'>{item}</span>
+                  <span key={index} className='p-1.5 hover:bg-muted/40 select-none capitalize bg-muted/50 rounded-md'>{item}</span>
                 ))}
               </div>
              
             </div>
           )}
 
-          {profileData?.bio&&<p className='text-sm py-3'>{profileData?.bio}</p>}
+          
           
 
 
-          <p className=''>{`${profileData?.email || "john_Doe@gmail.com"}`}</p>
           
-          <p>{`${profileData?.location?.district?profileData?.location?.district:''} ${profileData?.location?.state?profileData?.location?.state:''}, ${profileData?.location?.country?profileData.location?.country:''}`}</p>
           
-          <p className=''>{`${profileData?.isTalent?'Talent':'Client'} since ${formattedCreationDate}`}</p>
+          
+          <p className='text-xs'>{`${profileData?.isTalent?'Talent':'Client'} since ${formattedCreationDate}`}</p>
+
+
+
+
+        </div>
+         
+      </div>
+
+      <div className='flex-1 flex flex-col p-5 justify-center items-center gap-5'>
+        <div className='flex flex-col p-10 gap-5 text-xs '>
+          
+
+
           <ProfileActions currentId={id}/>
 
 

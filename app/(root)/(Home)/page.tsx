@@ -1,9 +1,8 @@
-
+'use client'
 import SectionCarousel from "@/components/sectionCarousel";
 import IntroSection from "@/components/introSection";
 import Posts from "@/components/posts";
 import ServiceSlider from "@/components/serviceSlider";
-import CreateAccount from "@/components/createAccount";
 import SearchMessage from "@/components/searchMessage";
 
 
@@ -20,7 +19,7 @@ export default function Home() {
           <Posts/>
       </div>
       <ServiceSlider/>
-      <CreateAccount/>
+      
       
       
     </div>

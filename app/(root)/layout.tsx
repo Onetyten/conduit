@@ -4,6 +4,7 @@ import {Provider} from 'react-redux'
 import { store,persistor } from '@/store'
 import { PersistGate } from 'redux-persist/integration/react'
 import { ToastContainer } from 'react-toastify'
+import CreateAccount from '@/components/createAccount'
 
 export default function layout({children}:{children:React.ReactNode})
 {
@@ -11,7 +12,7 @@ export default function layout({children}:{children:React.ReactNode})
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <main className='raleway-text '>
+        <main className='raleway-text  relative'>
             {children}
             <ToastContainer 
               position="top-right"
@@ -21,6 +22,7 @@ export default function layout({children}:{children:React.ReactNode})
               closeOnClick={false}
               rtl={false}
               />
+              <CreateAccount/>
 
         </main>
       </PersistGate>

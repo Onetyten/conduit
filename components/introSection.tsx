@@ -7,9 +7,11 @@ import {motion,AnimatePresence} from 'framer-motion'
 import { signUpTrue } from '@/state/showSignUp/showSignUp'
 import { setkeyWord } from '@/state/keywordSlice/keywordSlice'
 import { IoSearchOutline } from "react-icons/io5";
+import { useRouter } from 'next/navigation'
 
 const IntroSection = () => {
     const dispatch = useDispatch()
+    const router = useRouter()
     const [searchQuery,setSearchQuery]= useState("")
 
     function Search(e: React.FormEvent<HTMLFormElement>) {
@@ -72,7 +74,10 @@ const IntroSection = () => {
                         animate={{width:"auto"}}
                         exit={{width:"100%",opacity:0}}
                         transition={{ease:"linear",duration:0.25 }}
-                        onClick={()=>{if (!userReduxData) dispatch(signUpTrue()) }}
+                        onClick={()=>{
+                            if (!userReduxData) dispatch(signUpTrue())
+                            else {console.log("id: ",userReduxData._id);router.push(`/profile/${userReduxData._id}`)}
+                        }}
                         className='bg-conduit cursor-pointer shadow-conduit/40 hover:shadow-conduit/30 px-8 rounded-full shadow-lg text-base hover:shadow-xl  font-semibold text-white w-fit text-nowrap flex justify-center items-center h-full'
                     >
                         { userReduxData?"My services":"Join the system"} 

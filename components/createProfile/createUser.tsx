@@ -78,7 +78,7 @@ export default function CreateUser(props:propTypes) {
             if (response.status != 200) return
             setSlideIndex(slideIndex+1)
             setUploadingProfile(false)
-            toast.success("Account created successfully, signin")
+            toast.success("Account created successfully, signin") 
         }
         catch {
             toast("A error occured while creating your profile")
