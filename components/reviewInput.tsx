@@ -27,7 +27,7 @@ export default function ReviewInput(props:propType) {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (!profile?._id) return toast.warn("User must be logged in to provide a review.");
+        if (!profile?._id) return toast.warn("log in to provide a review.");
         if (!service?._id) return
         if (!reviewText.trim() || rating === 0) {
             toast.warn("Please provide both a rating and a review.");
@@ -91,7 +91,7 @@ export default function ReviewInput(props:propType) {
                 <input type="text" placeholder='Leave a review' className='text-sm border-conduit border-[1px] p-2 px-6 w-full rounded-full' value={reviewText}
                     onChange={(e) => setReviewText(e.target.value)}
                 />
-                <button type="submit" className='bg-black hover:bg-conduit cursor-pointer text-background px-6 p-2 h-9 rounded-md sm:rounded-full text-xs'>
+                <button type="submit" className='bg-black hover:bg-conduit cursor-pointer text-background px-6 p-2 h-9 rounded-md sm:rounded-full text-sm'>
                     Send
                 </button>  
             </div>

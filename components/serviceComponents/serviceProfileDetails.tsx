@@ -15,7 +15,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
   return (
     <div className='flex justify-center w-full flex-col items-center gap-6'>
     <div className='flex items-center justify-center w-[90%] max-w-2xl          '>
-        <p className='text-xl text-center sm:text-2xl font-bold'>
+        <p className='text-2xl text-center sm:text-3xl font-bold'>
         {serviceRedux?.title} 
         </p>
     </div>
@@ -23,34 +23,34 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
         {serviceProfileRedux && serviceRedux?.galleryImages[0]?
             <Image src={serviceRedux?.galleryImages[0]} fill alt='profilepic' className=' aspect-video object-cover' />
             :
-            <div className='w-[1000px] h-[400px] bg-gray-100'></div >}     
+            <div className='w-250 h-100 bg-gray-100'></div >}     
      </div>
 
       <div className='flex flex-col items-center justify-center w-[90%] max-w-2xl           text-justify'>
           {/* <p className='font-semibold'>Description</p> */}
-          <p className=' text-xs sm:text-sm '>
+          <p className='text-base '>
               {serviceRedux?.description} 
           </p>
       </div>
 
       <div className='flex flex-col gap-6 items-center justify-center w-[90%] max-w-2xl text-center'>
-          <p className='font-semibold'>Deliverables</p>
-          <div className='flex gap-2 text-xs'>
+          <p className='font-semibold text-base'>Deliverables</p>
+          <div className='flex gap-2 text-sm'>
               {serviceRedux?.deliverables.map((item, index) => (
                   <span key={index} className='p-1.5 px-4 hover:bg-blue-100 select-none bg-softblue rounded-md'>{item}</span>
               ))}
           </div>
       </div>
 
-      <div className='flex flex-col items-center justify-center gap-6 w-[90%] max-w-2xl           text-center'>
+      <div className='flex flex-col text-base items-center justify-center gap-6 w-[90%] max-w-2xl           text-center'>
           <p className='font-semibold'>Available On</p>
-          <div className='flex justify-center flex-wrap gap-2 text-xs'>
+          <div className='flex justify-center flex-wrap gap-2 text-sm'>
               {serviceRedux?.availableOn.map((item, index) => (
                   <span key={index} className='p-1.5 px-4 hover:bg-blue-100 select-none bg-softblue rounded-md'>{item}</span>
               ))}
           </div>
       </div>
-      <div className='w-full bg-gray-200  py-6 gap-6 flex justify-center items-center flex-col'>
+      <div className='w-full bg-softblue  py-6 gap-6 flex justify-center items-center flex-col'>
         <div className='flex flex-col gap-6 w-[90%] max-w-2xl           justify-center items-center'>
             <div className='relative w-12 h-12'>
                 <Link href={`/profile/${serviceProfileRedux?._id}`}>
@@ -65,10 +65,10 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
                 </div>
             </div>
             {serviceProfileRedux?
-            <p className='text-xs text-foreground'>{serviceProfileRedux?.firstName} {serviceProfileRedux?.lastName}</p >
+            <p className='text-base text-foreground'>{serviceProfileRedux?.firstName} {serviceProfileRedux?.lastName}</p >
             :
             <div className='w-40 h-4 bg-gray-100 rounded-md'></div >}
-            <div className='flex gap-2 w-full justify-center text-xs'>
+            <div className='flex gap-2 w-full justify-center text-sm'>
                 {serviceRedux?.tags.map((item,index)=>{
                     return(
                         <span key={index}>
@@ -80,18 +80,18 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
             </div>
 
 
-            <div className='flex gap-2 w-full font-semibold justify-center text-xs'>
+            <div className='flex gap-2 w-full font-semibold justify-center text-sm'>
                 Hourly rate : {serviceRedux?.price?.amount ?? 'N/A'} {serviceRedux?.price?.currency ?? ""}               
             </div>
 
-            <div className='flex gap-2 w-full justify-center text-xs'>
+            <div className='flex gap-2 w-full justify-center text-sm'>
                 Delivery method : {serviceRedux?.deliveryMethod[0]}
             </div>
             
-            <div className='hover:bg-conduit text-background select-none p-2 px-4 h-9 flex items-center rounded-md bg-black cursor-pointer  sm:rounded-full text-xs'>
+            <div className='hover:bg-conduit text-background select-none p-2 px-4 h-9 flex items-center rounded-md bg-black cursor-pointer text-sm'>
                 Book Service
             </div>
-            <div className='text-xs flex w-full justify-center gap-6 '>
+            <div className='text-sm flex w-full justify-center gap-6 '>
                 <span>
                     {serviceRedux?.amountEarned} USD   earned
                 </span>

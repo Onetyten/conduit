@@ -1,18 +1,18 @@
+import { number } from "framer-motion";
 import mongoose from "mongoose";
 const profileSchema  = new mongoose.Schema({
     firstName:{type:String,required:true},
     lastName:{type:String, required:true },
     password:{type:String,required:true},
-    email:{type:String,
-        unique:true,
-        required:true,
-        trim:true,
-        lowercase:true
-    },
+    email:{type:String,unique:true, required:true, trim:true, lowercase:true},
     profilePicture:{type:String, default:'https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png'},
     bio:{type:String},
     isTalent:{type:Boolean,default:false},
     skills:[{type:String}],
+    phoneNumber:{
+        code:{type:String,required:true},
+        num:{type:String,required:true},
+    },
     socialLinks:{
         facebook:{type:String,default:""},
         instagram:{type:String,default:""},

@@ -26,7 +26,7 @@ export default function IsClientCard(props:propTypes) {
         }}
         className={`overflow-hidden hover:scale-105 duration-200 rounded-md w-72 h-56 flex-col bg-background  ${!newUser.isTalent?'shadow-sm shadow-softblue border-4':'border'} shadow-softblue flex`}>
         {/* background */}
-        <div className='w-full relative bg-gradient-to-tl overflow-hidden z-10 bg-softblue/10 h-full flex justify-center items-center'>
+        <div className='w-full relative bg-linear-to-tl overflow-hidden z-10 bg-softblue/10 h-full flex justify-center items-center'>
                 {/* floating blobs */}
                 <div className='absolute w-full h-full'>
                     <motion.div   animate={{ x: [0, 300, 0],  y: [0, 80, 0]}}transition = {{duration:10,repeat:Infinity, repeatType:"loop", ease:'easeInOut' }} className='bg-green-100/70 -z-20 w-40 h-40 absolute top-0 -left-10 rounded-full'>
@@ -72,7 +72,7 @@ export default function IsClientCard(props:propTypes) {
 
 
 
-                    <div className='-bottom-4 -right-7 absolute bg-background border-[1px] rounded-full px-4 text-xs p-2 hidden lg:block'>
+                    <div className='-bottom-4 -right-7 absolute bg-background border rounded-full px-4 text-xs p-2 hidden lg:block'>
                         <p>
                             Find services
                         </p>

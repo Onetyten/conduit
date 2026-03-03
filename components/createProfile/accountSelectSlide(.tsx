@@ -27,12 +27,11 @@ export default function AccountSelectSlide(props:propTypes) {
     function Prev() {
         setSlideIndex(slideIndex-indexCount)
     }
-
     
   return (
     <div className='h-full w-full px-6 sm:px-[20%] text-xs'>
         <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
-            <p className='lg:text-2xl text-lg  font-semibold '>Which best describes you</p>
+            <p className='lg:text-2xl text-xl  font-semibold '>Which best describes you</p>
             
             <div className='w-full flex items-center gap-3 justify-center'>
                 <IsTalentCard indexCount = {indexCount} setIndexCount = {setIndexCount} newUser={newUser} setNewUser={setNewUser} />

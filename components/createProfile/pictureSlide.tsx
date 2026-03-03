@@ -57,9 +57,9 @@ export default function PictureSlide(props:propTypes) {
 
 
   return (
-    <div className='h-full w-full sm:px-[10%] px-6 text-xs'>
+    <div className='h-full w-full sm:px-[10%] px-6 text-base'>
         <div className='flex flex-col justify-center items-center w-full h-full gap-6'>
-            <p className='lg:text-2xl text-lg  font-semibold text-center '>Add a profile picture</p>
+            <p className='lg:text-2xl text-xl  font-semibold text-center '>Add a profile picture</p>
             <div className='relative w-20 h-20 rounded-full overflow-hidden'>
                 <Image src={PreviewImage || newUser.profilePicUrl} alt='previewImage' className='object-cover w-full h-full aspect-square' fill/>
             </div>
@@ -93,7 +93,7 @@ export default function PictureSlide(props:propTypes) {
                 <div className='absolute -z-10 w-full h-full backdrop-blur-xl'>
 
                 </div>
-                <p className='text-sm md:text-lg '>
+                <p className='text-base md:text-lg '>
                    Click to upload image 
                 </p>
                     
@@ -105,7 +105,7 @@ export default function PictureSlide(props:propTypes) {
                 <NavigationButton direction={1} Click={Next}/>
             </div>
             <div>
-                <p className='text-gray-500'>
+                <p className='text-muted text-sm'>
                     (Optional)
                 </p>
             </div>

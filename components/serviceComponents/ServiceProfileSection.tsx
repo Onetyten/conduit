@@ -24,16 +24,16 @@ export default function ServiceProfileSection({serviceProfileRedux,serviceRedux}
                 <div className={`${serviceRedux?.availability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
                 </div>
             </div>
-            <div className='flex  flex-col text-xs sm:text-sm gap-2 font-semibold'>
+            <div className='flex  flex-col text-xs sm:text-base gap-2 font-semibold'>
                 <p>{serviceRedux?.title}</p >
                 <div className='flex gap-3'>
                     {serviceProfileRedux?
-                    <p className='font-light text-xs text-conduit'>{serviceProfileRedux?.firstName} {serviceProfileRedux?.lastName}</p >
+                    <p className='font-light text-xs sm:text-sm text-conduit'>{serviceProfileRedux?.firstName} {serviceProfileRedux?.lastName}</p >
                     :
                     <div className='w-40 h-4 bg-gray-100 rounded-md'></div >}
 
                     {serviceProfileRedux?
-                    <p className='font-light text-xs text-conduit'>{serviceProfileRedux?.location?.district || serviceProfileRedux?.location?.country}</p >
+                    <p className='font-light text-xs sm:text-sm text-conduit'>{serviceProfileRedux?.location?.district || serviceProfileRedux?.location?.country}</p >
                     :
                     <div className='w-40 h-4 bg-gray-100 rounded-md'></div >}
                 </div>
@@ -44,7 +44,7 @@ export default function ServiceProfileSection({serviceProfileRedux,serviceRedux}
             </div>
         </div>
 
-        <div className='bg-conduit text-background hover:bg-slate-800 cursor-pointer  p-2 mx-3 h-9 text-nowrap flex items-center rounded-md sm:rounded-full text-xs'>
+        <div className='bg-conduit text-background hover:bg-slate-800 cursor-pointer  p-2 mx-3 h-9 text-nowrap flex items-center rounded-md text-xs sm:text-sm'>
             Get in Touch
         </div>
     

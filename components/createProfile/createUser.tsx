@@ -118,9 +118,9 @@ export default function CreateUser(props:propTypes) {
     
   return (
     <div className='h-full w-full px-[10%]'>
-        <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
-            <p className='lg:text-2xl text-lg  font-semibold '>{isUser?"Start earning with Conduit ":"Create your conduit profile"}</p>
-            <button onClick={AccountAction} className='text-sm sm:text-base rounded-lg bg-foreground text-background hover:bg-conduit p-2 px-8'>
+        <div className='flex flex-col justify-center text-center items-center w-full h-full gap-8'>
+            <p className='lg:text-2xl text-xl  font-semibold '>{isUser?"Start earning with Conduit ":"Create your conduit profile"}</p>
+            <button onClick={AccountAction} className='text-base rounded-lg bg-foreground text-background hover:bg-conduit p-2 px-8'>
                     {isUser?"Offer services":"Create profile"}
             </button>
             <div className='flex gap-6'>

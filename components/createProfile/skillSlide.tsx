@@ -52,16 +52,16 @@ export default function SkillSlide(props:propTypes) {
 
 
   return (
-    <div className='h-full w-full px-6 md:px-[20%] text-xs'>
-        <div className='flex flex-col justify-center items-center w-full h-full gap-8 sm:gap-4 md:gap-6'>
-            <p className='lg:text-2xl text-lg  font-semibold '>Who are you</p>
+    <div className='h-full w-full px-6 md:px-[20%] text-base'>
+        <div className='flex flex-col justify-center items-center w-full h-full gap-4'>
+            <p className='lg:text-2xl text-xl  font-semibold '>Who are you</p>
 
 
             <div className='flex flex-col gap-2 w-full'>
                 <p className='text-sm font-semibold'>
                     Bio
                 </p>
-                <textarea onChange={(e)=>{setNewUser(prev=>({...prev, bio:e.target.value }))}} value={newUser.bio} className='border-[1px] p-2 rounded-md min-h-16 h-12 max-h-16  md:h-28 md:max-h-28'/>
+                <textarea onChange={(e)=>{setNewUser(prev=>({...prev, bio:e.target.value }))}} value={newUser.bio} className='border border-conduit/40 p-2 rounded-md min-h-16 h-12 max-h-16  md:h-28 md:max-h-28'/>
 
               
             </div>
@@ -72,7 +72,7 @@ export default function SkillSlide(props:propTypes) {
                     Skills
                 </p>
                 <div className='w-full h-12 relative '>
-                  <input onChange={(e)=>{setNewSkill(e.target.value)}} value={newSkill} type='text' className='h-full placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />  
+                  <input onChange={(e)=>{setNewSkill(e.target.value)}} value={newSkill} type='text' className='h-full placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border border-conduit/40' />  
                   <CiCirclePlus size={30} onClick={AddSkill} className='absolute cursor-pointer right-2 top-1/2 -translate-y-1/2' />
                 </div>
                  
@@ -83,7 +83,7 @@ export default function SkillSlide(props:propTypes) {
                  <div className='w-full flex flex-wrap gap-2  '>
                     {newUser.skills.map((item,index)=>{
                         return(
-                        <div key={index} className='p-1 px-3 flex items-center gap-1 rounded-full bg-softblue'>
+                        <div key={index} className='p-1 px-3 text-sm flex items-center gap-1 rounded-full bg-softblue'>
                             <p>
                                 {item}
                             </p>
@@ -98,7 +98,7 @@ export default function SkillSlide(props:propTypes) {
 
 
             
-            <div className='flex gap-6'>
+            <div className='flex gap-6 mt-6'>
                 {!isUser&&<NavigationButton direction={0} Click={Prev}/>}
                 
                 <NavigationButton direction={1} Click={Next}/>

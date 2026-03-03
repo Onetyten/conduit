@@ -25,13 +25,14 @@ export default function PasswordSlide(props:propTypes) {
     const [showPasswordCheck,setShowPasswordCheck] = useState(false)
 
     function Next() {
+        setShowPasswordEmpty(false)
+        setShowPasswordMatchErr(false)
+        
         if (newUser.password.length<1){
             setShowPasswordEmpty(true)
-            toast.error("The password field is empty",{autoClose:1000})
         }
         if (newUser.password!=newUser.passwordCheck){
             setShowPasswordMatchErr(true)
-             toast.error("Passwords do not match",{autoClose:1000})
         }
         if(newUser.password.length>1 &&newUser.password==newUser.passwordCheck){
             setSlideIndex(slideIndex+1)
@@ -42,45 +43,45 @@ export default function PasswordSlide(props:propTypes) {
         setSlideIndex(slideIndex-1)
     }
   return (
-    <div className='h-full w-full px-6 sm:px-[20%] text-xs'>
-        <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
-            <p className='lg:text-2xl text-lg  font-semibold '>Secure Your Account</p>
+    <div className='h-full w-full px-6 sm:px-[20%] text-base'>
+        <div className='flex flex-col justify-center items-center w-full h-full gap-2'>
+            <p className='lg:text-2xl text-xl  font-semibold '>Secure Your Account</p>
 
            
 
-            <div className='flex flex-col gap-2 w-full'>
+            <div className='flex flex-col gap-1 w-full'>
                 <div className='relative w-full h-full flex justify-center items-center'>
-                    <input required type ={`${showPassword?'text':'password'}`} value={newUser.password}  onChange={(e)=>{setNewUser(prev=>({...prev, password:e.target.value }))}}placeholder='Password' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' /> 
+                    <input required type ={`${showPassword?'text':'password'}`} value={newUser.password}  onChange={(e)=>{setNewUser(prev=>({...prev, password:e.target.value }))}}placeholder='Password' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border border-conduit/40' /> 
                     {showPassword?(<FaEyeSlash className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPassword(false)}}/>):(<FaEye className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPassword(true)}}/>)}
 
                 </div>
-              {showPasswordEmpty&&(
-                <p className='text-xs text-red-600'>
+              
+                <p className={`text-xs ${showPasswordEmpty?"opacity-100":"opacity-0"} duration-300 text-red-600`}>
                     The password field is empty
                 </p>
-              )}
+        
               
             </div>
 
 
-            <div className='flex flex-col gap-2 w-full'>
+            <div className='flex flex-col gap-1 w-full'>
                 <div className='relative w-full h-full flex justify-center items-center'>
                     <input required type={`${showPasswordCheck?'text':'password'}`} value={newUser.passwordCheck}
-                     onChange={(e)=>{setNewUser(prev=>({...prev, passwordCheck:e.target.value }))}} placeholder='Confirm Password'className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />   
+                     onChange={(e)=>{setNewUser(prev=>({...prev, passwordCheck:e.target.value }))}} placeholder='Confirm Password'className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border border-conduit/40' />   
                     {showPasswordCheck?(<FaEyeSlash className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPasswordCheck(false)}}/>):(<FaEye className='text-conduit text-xl absolute right-6 cursor-pointer ' onClick={()=>{setShowPasswordCheck(true)}}/>)} 
                 </div>
 
-              {showPasswordMatchErr&&(
-                <p className='text-xs text-red-600'>
+              
+                <p className={`text-xs ${showPasswordMatchErr?"opacity-100":"opacity-0"} duration-300 text-red-600`}>
                     Passwords do not match
                 </p>
-              )}
+              
               
             </div>
 
             
 
-            <div className='flex gap-6'>
+            <div className='flex gap-6 mt-6'>
                 <NavigationButton direction={0} Click={Prev}/>
                 <NavigationButton direction={1} Click={Next}/>
             </div>

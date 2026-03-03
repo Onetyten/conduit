@@ -94,7 +94,7 @@ export default function CreateAccount() {
         {showSignUpRedux&&(
             <div className=' pointer-events-none bg-slate-500/50  h-screen w-full flex-col sm:flex-row  right-0 bottom-0 fixed flex justify-center items-center'>
 
-                <div className='bg-white h-[85%] sm:h-3/4 relative rounded-3xl w-[90%] sm:w-2/3 z-20 pointer-events-auto shadow-md'>
+                <div className='bg-white h-[85%] sm:h-3/4 relative rounded-3xl w-[90%] sm:w-2/3 z-50 pointer-events-auto shadow-md'>
                     
                     <CloseSlide/>
                     

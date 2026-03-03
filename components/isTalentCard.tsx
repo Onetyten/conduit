@@ -21,10 +21,10 @@ export default function IsTalentCard(props:propTypes) {
             setIndexCount(1)
 
         }} 
-        className={`overflow-hidden hover:scale-105 duration-200 rounded-md w-72 h-56 flex-col bg-background  ${newUser.isTalent?'shadow-sm shadow-softblue border-4':'border-[1px]'} shadow-softblue flex`}>
+        className={`overflow-hidden hover:scale-105 duration-200 rounded-md w-72 h-56 flex-col bg-background  ${newUser.isTalent?'shadow-sm shadow-softblue border-4':'border'} shadow-softblue flex`}>
 
         {/* background */}
-        <div className='w-full relative bg-gradient-to-tl overflow-hidden z-10 bg-softblue/10 h-full flex justify-center items-center'>
+        <div className='w-full relative bg-linear-to-tl overflow-hidden z-10 bg-softblue/10 h-full flex justify-center items-center'>
                 {/* floating blobs */}
                 <div className='absolute w-full h-full'>
                     <motion.div  animate={{ x: [0, 300, 0],  y: [0, 80, 0]}}transition = {{duration:10,repeat:Infinity, repeatType:"loop", ease:'easeInOut' }} className='bg-blue-100/70 -z-20 w-32 h-32 absolute top-0 -left-10 rounded-full'>
@@ -50,7 +50,7 @@ export default function IsTalentCard(props:propTypes) {
                     <div className='w-10 h-10 relative overflow-hidden bg-green-200 rounded-full'>
                         <Image src="https://www.shutterstock.com/image-photo/face-serious-black-man-creative-600nw-2313569245.jpg" fill alt='profile' className='object-cover' />
                     </div> 
-                    <div className='-bottom-4 -right-7 absolute bg-background border-[1px] rounded-full px-4 text-xs p-2 hidden lg:block'>
+                    <div className='-bottom-4 -right-7 absolute bg-background border rounded-full px-4 text-xs p-2 hidden lg:block'>
                         <p>
                             Work with me
                         </p>

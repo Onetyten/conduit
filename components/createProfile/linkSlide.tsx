@@ -62,14 +62,14 @@ export default function LinkSlide(props:propTypes) {
         setSlideIndex(slideIndex-1)
     }
   return (
-    <div className='h-full w-full px-6 sm:px-[20%] text-xs'>
+    <div className='h-full w-full px-6 sm:px-[20%] text-base'>
         <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
-            <p className='lg:text-2xl text-lg  font-semibold text-center '>Add Social Links</p>
+            <p className='lg:text-2xl text-xl  font-semibold text-center '>Add Social Links</p>
 
             <div className='flex w-full justify-between items-center gap-1'>
                 {links.map((item,index)=>{
                     return(
-                        <div onClick={()=>{setLinkIndex(index)}} key={index} className={`flex-1 sm:px-1 flex justify-center ${linkIndex==index?"bg-black text-white ":""}  items-center border-[1px] border-black h-11 rounded-md`}>
+                        <div onClick={()=>{setLinkIndex(index)}} key={index} className={`flex-1 sm:px-1 flex justify-center ${linkIndex==index?"bg-black text-white ":""}  items-center border border-black h-11 rounded-md`}>
                             {item.icon}
                         </div>
                     )
@@ -77,13 +77,13 @@ export default function LinkSlide(props:propTypes) {
             </div>
 
 
-            <div className='w-full flex relative justify-center items-center gap-2 text-sm font-semibold'>
+            <div className='w-full flex relative justify-center items-center gap-2 text-base font-semibold'>
                 {/* <p className='absolute left-5 '>
                     {links[linkIndex].name}
                 </p> */}
                 <input type="text" value={newUser.socialLinks[links[linkIndex].key as keyof typeof newUser.socialLinks]} 
                 onChange={(e) => setNewUser((prev) => ({...prev, socialLinks: { ...prev.socialLinks, [links[linkIndex].key]: e.target.value,}}))}
-                placeholder={`Enter your ${links[linkIndex].name} link`} className="h-full placeholder:text-gray-500 font-normal rounded-sm p-3 w-full border-[1px]" />
+                placeholder={`Enter your ${links[linkIndex].name} link`} className="h-full placeholder:text-gray-500 font-normal rounded-sm p-3 w-full border border-conduit/40" />
             </div>
 
             

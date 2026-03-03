@@ -19,7 +19,6 @@ export default function page() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading,setLoading] = useState(false)
-  // const userReduxdata = useSelector((state:RootState)=>state.user.user)
   const dispatch = useDispatch()
 
   async function SignInUser(e:React.FormEvent<HTMLFormElement>) {
@@ -66,22 +65,22 @@ export default function page() {
   }
 
   return (
-    <div className='w-full h-screen border-2 flex bg-softblue justify-center text-xs lg:text-sm items-center'>
+    <div className='w-full h-dvh border-2 flex bg-softblue justify-center text-xs lg:text-sm items-center'>
       <div className='flex lg:p-6 w-[90%] lg:w-auto p-3 py-6 flex-col bg-white lg:rounded-4xl rounded-md '>
         <div className='flex gap-1 lg:p-2 mb-5 lg:mb-0  items-center '>
                 <Image src={Logo} alt='logo' className='w-3 lg:w-5 object-contain'/>
-                <p className='raleway-text text-conduit font-bold text-md lg:text-2xl '>
-                  Conduit .
+                <p className='font-orbitron text-conduit font-bold text-lg lg:text-2xl '>
+                  CONDUIT .
                 </p>  
         </div>
-        <div className='lg:w-5xl w-full flex justify-center gap-3 lg:p-20 items-center'>
-          <div className='flex lg:w-[50%] w-full gap-6 flex-col'>
-            <h1 className='lg:text-2xl text-lg  font-semibold '>Welcome back to Conduit</h1>
-            <form onSubmit={SignInUser} className='flex gap-6 flex-col items-center'>
-                <input type='email' tabIndex={1} required value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='name@email.com' className='h-12 placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border-[1px]' />
-                <input type='password' tabIndex={2} required  value={password} onChange={(e)=>{setPassword(e.target.value)}}placeholder='......................................' className='h-12 rounded-sm placeholder:text-gray-500  p-3 px-5 w-full border-[1px]' />
-                <div className='w-full relative'>
-                    <button className={`w-full ${loading?'bg-gray-300':'bg-foreground hover:bg-conduit '} text-background lg:p-4 p-3 lg:text-sm text-xs  cursor-pointer lg:rounded-full rounded-lg`} type='submit'>Log in </button>
+        <div className='lg:w-5xl w-full lg:text-base text-sm  flex justify-center gap-3 lg:p-20 items-center'>
+          <div className='flex lg:w-[50%] w-full gap-3 sm:gap-6 flex-col'>
+            <h1 className='lg:text-2xl text-xl  font-semibold '>Welcome back</h1>
+            <form onSubmit={SignInUser} className='flex gap-2 sm:gap-3 flex-col items-center'>
+                <input type='email' tabIndex={1} required value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='name@email.com' className='h-12 placeholder:text-muted rounded-sm p-3 lg:px-5 w-full border border-conduit/40' />
+                <input type='password' tabIndex={2} required  value={password} onChange={(e)=>{setPassword(e.target.value)}}placeholder='......................................' className='h-12 rounded-sm placeholder:text-muted border-conduit/40  p-3 px-5 w-full border' />
+                <div className='w-full mt-8 relative'>
+                    <button className={`w-full ${loading?'bg-softblue':'bg-foreground hover:bg-conduit '} text-background lg:p-4 p-3 text-base cursor-pointer lg:rounded-full rounded-lg`} type='submit'>Log in </button>
 
 
                     {loading&&(
@@ -103,16 +102,13 @@ export default function page() {
             <Image src={SigninPic} alt='An image of the globe'/>
           </div>
         </div>
-        <div className='flex gap-2 p-2 lg:mt-0 mt-8  w-full justify-center items-center lg:text-sm text-xs '>
-
-                <p 
-                // onClick={()=>{ console.log("redux data",userReduxdata)}}
-                >
-                  New to Conduit?
-                </p>
-                <button onClick={SignIn} className='lg:p-2 p-1.5 border-[1px] border-foreground lg:rounded-xl cursor-pointer rounded-md'>
-                  Sign up
-                </button>
+        <div className='flex gap-2 lg:text-base text-sm p-2 lg:mt-0 mt-8  w-full justify-center items-center'>
+            <p>
+              New to Conduit?
+            </p>
+            <button onClick={SignIn} className='lg:p-2 p-1.5 border border-foreground lg:rounded-xl cursor-pointer rounded-md'>
+              Sign up
+            </button>
         </div>
       </div>
     </div>
