@@ -1,18 +1,14 @@
 "use client"
-// import Image from 'next/image'
-import React, {useEffect} from 'react'
+
+import React from 'react'
 import Digital from 'react-activity/dist/Digital'
 import "react-activity/dist/Digital.css";
 import PostItem from './postItem';
 import useFetchServices from '@/hooks/useFetchServices';
-import useGetPostProfile from '@/hooks/useGetPostProfile';
+
 
 const Posts = () => {
     const {keywordRedux,triggerRef,isSearching,post,loading,setPost} = useFetchServices()
-    const {getProfile} = useGetPostProfile() 
-    useEffect(()=>{
-        getProfile()
-    },[getProfile])
 
   return (
     <div className='flex flex-col justify-center w-full py-5'>

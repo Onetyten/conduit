@@ -2,7 +2,7 @@
 import SectionCarousel from "@/components/sectionCarousel";
 import IntroSection from "@/components/introSection";
 import Posts from "@/components/posts";
-import ServiceSlider from "@/components/serviceSlider";
+// import ServiceSlider from "@/components/serviceSlider";
 import SearchMessage from "@/components/searchMessage";
 
 
@@ -18,9 +18,6 @@ export default function Home() {
           <SearchMessage/>
           <Posts/>
       </div>
-      <ServiceSlider/>
-      
-      
       
     </div>
   );

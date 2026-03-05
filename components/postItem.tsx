@@ -15,7 +15,6 @@ interface propTypes{
     refreshPost: (updatedPost: serviceInterface) => void
 }
 
-
 export default function PostItem(props:propTypes) {
     const [imageLoaded,setImageLoaded] = useState(false)
     const {post,index,refreshPost} = props
@@ -42,21 +41,21 @@ export default function PostItem(props:propTypes) {
         <div className='flex items-center justify-between '>
             <div className='flex gap-2 text-sm items-center'>
                 <Link  href="/serviceDetails" onClick={getService}>
-                    <Image src={post.galleryImages[0]} alt={`${post.title.slice(0,2)}`} className='object-cover uppercase cursor-pointer aspect-square rounded-3xl' width={25} height={25}/> 
+                    <Image src={post.galleryImages?.[0] || "/Images/Stock image/NoImage.jpg"} alt={`${post.title?.slice(0,2)}`} className='object-cover uppercase cursor-pointer aspect-square rounded-3xl' width={25} height={25}/> 
                 </Link>
                 <p>
-                    {post.title?.length<20?post.title:`${post.title.slice(0,18)}...`}
+                    {post.title?.length<20?post.title:`${post.title?.slice(0,18)}...`}
                 </p>
             </div>
             <div className='flex gap-3 text-base items-center'>
                 <div className='flex gap-1 items-center cursor-pointer'>
                     < MdOutlineRemoveRedEye className='text-base'/>
-                    <p>{post.viewedId.length}</p>
+                    <p>{post.viewedId?.length}</p>
                 </div>
 
                 <div className='flex gap-1 items-center cursor-pointer'>
                     <CiHeart/>
-                    <p>{post.likedId.length}</p>
+                    <p>{post.likedId?.length}</p>
                 </div>
 
             </div>

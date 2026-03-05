@@ -1,19 +1,25 @@
 "use client"
 import ServiceProfileSection from '@/components/serviceComponents/ServiceProfileSection'
-import React from 'react'
+import React, { useEffect } from 'react'
 import {RootState} from '@/store'
-import {useSelector} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import ServiceProfileDetails from '@/components/serviceComponents/serviceProfileDetails'
 import ReviewService from '@/components/serviceComponents/reviewService'
 import LikeComponent from '@/components/serviceComponents/likeComponent'
 import BackButton from '@/components/BackButton'
 import useLikePost from '@/hooks/useLikedPost'
+import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
 
 export default function Page() {
     
     const service = useSelector((state:RootState)=> state.service.service)
     const serviceProfileRedux = useSelector((state:RootState)=> state.serviceProfile.serviceProfile)
     const {LikePost,postLiked} = useLikePost()
+    const dispatch  = useDispatch()
+    useEffect(()=>{
+      dispatch(serviceFalse())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
 
     
   return (

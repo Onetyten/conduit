@@ -8,7 +8,6 @@ import {isMobile} from 'react-device-detect'
 import { useDispatch, useSelector } from 'react-redux'
 
 
-
 export default function useShowService(post:serviceInterface, refreshPost:(updatedPost: serviceInterface) => void){
     const dispatch = useDispatch()
     const profileDataRedux = useSelector((state:RootState)=> state.user.user)
@@ -30,10 +29,9 @@ export default function useShowService(post:serviceInterface, refreshPost:(updat
         if (!isMobile) {
             showModal();
         } 
-    
-        if (!profileDataRedux) console.log("User profile is not logged in")
+
         dispatch(setService(post))
-        // fetch from the update views api and update the views on the backend
+
         if (profileDataRedux){
             if (post._id && typeof post._id === 'string' && post._id.length>0){
                 const response = await fetch(`/api/service/update_views`,{
@@ -43,14 +41,7 @@ export default function useShowService(post:serviceInterface, refreshPost:(updat
                     },
                     body:JSON.stringify({id:post._id,user_id:profileDataRedux._id})
                 })
-                // log out the error if the response is not okay meaning the views did not get updated on the backend for some reason
-                if (!response.ok){
-                    const errorBody  = await response.json() 
-                    console.log(errorBody)
-                }
-                
-                // set the service redux to the updated post data sent from the backend
-                else
+                if (response.ok)
                 {   
                     const viewMessage = await response.json()
                     dispatch(setService(viewMessage.post))

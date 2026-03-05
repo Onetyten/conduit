@@ -52,7 +52,6 @@ export interface PostInterface {
       coordinates:number
     }
 }
-
   export interface serviceInterface {
     _id: string
     title: string
@@ -132,4 +131,3 @@ export interface PostInterface {
     profileImage: File | null
     profilePicUrl:string
   }
-

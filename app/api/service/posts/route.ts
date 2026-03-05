@@ -14,9 +14,8 @@ export async function GET(request:Request) {
     const filter:any ={}
 
     if (typeof(keyword) == "string" && keyword.trim().length>0){
-        // split all the search terms into words separated by whitespace
         const words = keyword.trim().split(/\s+/)
-        // make it case insensitive and set the filter
+
         filter.$or = words.flatMap((word)=>[
             {title:{$regex:word, $options:"i"}},
             {tags:{$regex:word, $options:"i"}}

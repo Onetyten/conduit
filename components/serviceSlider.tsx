@@ -11,6 +11,7 @@ import LikeComponent from './serviceComponents/likeComponent'
 import ServiceProfileDetails from './serviceComponents/serviceProfileDetails'
 import ReviewService from './serviceComponents/reviewService'
 import useLikePost from '@/hooks/useLikedPost'
+import useGetPostProfile from '@/hooks/useGetPostProfile'
 
 
 
@@ -22,6 +23,11 @@ const ServiceSlider = () => {
     const service = useSelector((state:RootState)=> state.service.service)
     const serviceProfileRedux = useSelector((state:RootState)=> state.serviceProfile.serviceProfile)
     const {LikePost,postLiked} = useLikePost()
+
+    const {getProfile} = useGetPostProfile() 
+    useEffect(()=>{
+        getProfile()
+    },[getProfile])
 
 
   return (

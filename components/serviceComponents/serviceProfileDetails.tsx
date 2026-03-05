@@ -1,14 +1,14 @@
 import React from 'react'
 import Image from 'next/image';
-import { Avatar,AvatarFallback,AvatarImage } from '@/components/ui/avatar';
+import { Avatar,AvatarImage } from '@/components/ui/avatar';
 import { profileInterface,serviceInterface} from '@/lib/types';
 import Link from 'next/link';
+import { DEFAULT_PROFILE_IMAGE } from '@/lib/constants';
 
 interface serviceInterfaceProp{
     serviceProfileRedux:profileInterface|null
     serviceRedux:serviceInterface|null
 }
-
 
 
 export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux }: serviceInterfaceProp) {
@@ -55,8 +55,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
             <div className='relative w-12 h-12'>
                 <Link href={`/profile/${serviceProfileRedux?._id}`}>
                     <Avatar className='w-full h-full'>
-                        <AvatarImage src={serviceProfileRedux?.profilePicture}/>
-                        <AvatarFallback>PIC</AvatarFallback>
+                        <AvatarImage src={serviceProfileRedux?.profilePicture || DEFAULT_PROFILE_IMAGE}/>
                     </Avatar>
                 </Link>
                 

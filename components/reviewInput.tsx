@@ -66,10 +66,6 @@ export default function ReviewInput(props:propType) {
                     return [newReview, ...prev]
                 }
             })
-
-
-
-            toast.success(data.message || "Review submitted successfully");
             setRating(0);
             setReviewText(''); 
         } 
@@ -77,7 +73,6 @@ export default function ReviewInput(props:propType) {
             toast.error("Error submitting review");
             console.error(error);
         }
-
     };
 
     return (
@@ -88,7 +83,7 @@ export default function ReviewInput(props:propType) {
                 fullSymbol={<FaStar className="text-yellow-500" size={20} />} 
             />
             <div className='flex gap-2 w-full'>
-                <input type="text" placeholder='Leave a review' className='text-sm border-conduit border-[1px] p-2 px-6 w-full rounded-full' value={reviewText}
+                <input type="text" placeholder='Leave a review' className='text-sm border-conduit border p-2 px-6 w-full rounded-full' value={reviewText}
                     onChange={(e) => setReviewText(e.target.value)}
                 />
                 <button type="submit" className='bg-black hover:bg-conduit cursor-pointer text-background px-6 p-2 h-9 rounded-md sm:rounded-full text-sm'>
