@@ -29,7 +29,7 @@ export default async function page({ params}: { params: Promise<{ id: string }> 
   const formattedCreationDate = creationDate && !isNaN(creationDate.getTime()) ? format(creationDate, "MMM d, yyyy") : "Unknown Date";
 
   return (
-    <div className='w-full min-h-screen flex gap-10 px-[10%] flex-col relative'>
+    <div className='w-full min-h-screen pb-10 flex gap-10 px-[10%] flex-col relative'>
 
         <div className='flex flex-col w-full mt-16 gap-4'>
           <div className='w-full flex gap-2 justify-between'>

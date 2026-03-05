@@ -9,9 +9,9 @@ interface propType{
 export default function Layout({children}:propType) {
 
   return (
-    <div className='w-full flex min-h-screen'>
+    <div className='w-full flex h-screen overflow-hidden'>
         <Sidebar/>
-        <div className='w-full shadow-xl min-h-screen'>
+        <div className='w-full overflow-y-scroll shadow-xl min-h-screen'>
           {children}
         </div>  
     </div>
