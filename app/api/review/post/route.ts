@@ -33,10 +33,10 @@ export async function POST(request:Request){
         if (!service){
             return NextResponse.json({ message: "This service does not exist or have been deleted" }, { status: 400 });
         }
-        const ReviewData = {userId,serviceId,review,rating}
+        const ReviewData = {userId,service:serviceId,review,rating}
 
         let savedReview 
-        const existingReview = await Review.findOne({ userId, serviceId });
+        const existingReview = await Review.findOne({ userId, service:serviceId });
         if (existingReview) {
             savedReview = await Review.findByIdAndUpdate( existingReview._id,{review,rating},{new:true})
         }

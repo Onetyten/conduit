@@ -9,8 +9,8 @@ export default function useGetPostProfile(){
 
     const getProfile = useCallback(
     async()=>{  
-        if (!serviceRedux || !serviceRedux.serviceProviderId) {
-            console.warn("serviceRedux or serviceProviderId is missing, cannot make the API call.")
+        if (!serviceRedux || !serviceRedux.serviceProvider) {
+            console.warn("serviceRedux or serviceProvider is missing, cannot make the API call.")
             return
             }
             dispatch(clearServiceProfile())
@@ -20,7 +20,7 @@ export default function useGetPostProfile(){
                 headers:{
                     'Content-Type':'application/json'
                 },
-                body:JSON.stringify({user_id:serviceRedux?.serviceProviderId})
+                body:JSON.stringify({user_id:serviceRedux?.serviceProvider})
                 })
 
             if (!response.ok){

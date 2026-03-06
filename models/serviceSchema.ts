@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const serviceSchema = new mongoose.Schema({
     title:{type:String},
-    serviceProviderId: {type:mongoose.Schema.Types.ObjectId, ref: "Profile", required: true},
+    serviceProvider: {type:mongoose.Schema.Types.ObjectId, ref: "Profile", required: true},
     viewedId: [{ type: mongoose.Schema.Types.ObjectId, ref: "Profile", default: [] }],
     likedId: [{ type: mongoose.Schema.Types.ObjectId, ref: "Profile", default: [] }],
     galleryImages: [{type: String}],

@@ -16,8 +16,8 @@ export async function GET(request:Request){
         if (!profileId || !mongoose.isValidObjectId(profileId)){
             return NextResponse.json({message:"No id provided, invalid input"},{status:400})
         }
-        const totalServices = await Service.countDocuments({serviceProviderId:profileId})
-        const services = await Service.find({serviceProviderId:profileId}).skip(skip).limit(limit).sort({createdAt:-1}).exec()
+        const totalServices = await Service.countDocuments({serviceProvider:profileId})
+        const services = await Service.find({serviceProvider:profileId}).skip(skip).limit(limit).sort({createdAt:-1}).exec()
         const totalPages = Math.ceil(totalServices/limit)
         const hasMore = totalPages>page
 

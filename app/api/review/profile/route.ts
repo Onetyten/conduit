@@ -5,7 +5,7 @@ import mongoose from "mongoose"
 
 
 
-export default async function GET(request:Request){
+export async function GET(request:Request){
     const {searchParams} = new URL(request.url)
     const page = Math.max(Number(searchParams.get("page"))||1,1)
     const limit = Math.min(Number(searchParams.get("limit"))||10,100)
@@ -22,7 +22,8 @@ export default async function GET(request:Request){
         }
         const totalReviews = await Review.countDocuments({userId:id})
         // if (source==="in"){
-        const reviews = await Review.find({userId:id}).limit(limit).skip(skip).sort({createdAt:-1}).exec() 
+        const reviews = await Review.find({userId:id}).limit(limit).skip(skip).sort({createdAt:-1}).populate({path:'service',select:'title galleryImages',populate:{path:'serviceProvider',select:'firstName lastName'}}).exec()
+        
         const totalPages = Math.ceil(totalReviews/limit)
         const hasMore = totalPages>page
         // }

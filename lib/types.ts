@@ -3,7 +3,7 @@ import { Types } from "mongoose";
 export interface PostInterface {
     _id: string;
     title: string;
-    serviceProviderId: string;
+    serviceProvider: string;
     galleryImages: string[];
     description: string;
     amountEarned: number;
@@ -55,7 +55,7 @@ export interface PostInterface {
   export interface serviceInterface {
     _id: string
     title: string
-    serviceProviderId: string
+    serviceProvider: string
     viewedId: string[]
     likedId: string[]
     galleryImages: string[]

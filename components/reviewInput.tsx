@@ -42,10 +42,7 @@ export default function ReviewInput(props:propType) {
                 body: JSON.stringify({userId: profile._id, serviceId:service._id, review: reviewText, rating}),
             });
             const data = await response.json();
-            if (!response.ok) {
-                toast.error(data.message || "Failed to submit review");
-                return;
-            }
+            if (!response.ok) return
             const userReviewProfile = {
                 firstName:profile.firstName,
                 lastName:profile.lastName,
@@ -70,7 +67,6 @@ export default function ReviewInput(props:propType) {
             setReviewText(''); 
         } 
         catch (error) {
-            toast.error("Error submitting review");
             console.error(error);
         }
     };
