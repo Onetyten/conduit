@@ -26,7 +26,7 @@ export default function PostItem(props:propTypes) {
   return (
     <div key={index} className='flex gap-3 w-full flex-col col-span-1'>
         <div className="relative cursor-pointer h-80 sm:h-72">
-            {isMobile ? (<Link href="/serviceDetails" onClick={getService}>
+            {isMobile ? (<Link href="/service" onClick={getService}>
                 <PostImage post={post} refreshPost={refreshPost} setImageLoaded={setImageLoaded}/>
             </Link>) 
             :
@@ -40,7 +40,7 @@ export default function PostItem(props:propTypes) {
                                         
         <div className='flex items-center justify-between '>
             <div className='flex gap-2 text-sm items-center'>
-                <Link  href="/serviceDetails" onClick={getService}>
+                <Link  href="/service" onClick={getService}>
                     <Image src={post.galleryImages?.[0] || "/Images/Stock image/NoImage.jpg"} alt={`${post.title?.slice(0,2)}`} className='object-cover uppercase cursor-pointer aspect-square rounded-3xl' width={25} height={25}/> 
                 </Link>
                 <p>

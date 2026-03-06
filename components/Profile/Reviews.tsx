@@ -8,7 +8,7 @@ interface propType{
     setServiceList:React.Dispatch<React.SetStateAction<serviceInterface[]>>
 }
 
-export default function Services({serviceList,setServiceList}:propType) {
+export default function Reviews({serviceList,setServiceList}:propType) {
     
   return (
     <div className='w-full font-semibold text-muted h-full flex justify-center items-center min-h-[50dvh]'>

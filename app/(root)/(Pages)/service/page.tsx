@@ -11,7 +11,6 @@ import useLikePost from '@/hooks/useLikedPost'
 import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
 
 export default function Page() {
-    
     const service = useSelector((state:RootState)=> state.service.service)
     const serviceProfileRedux = useSelector((state:RootState)=> state.serviceProfile.serviceProfile)
     const {LikePost,postLiked} = useLikePost()

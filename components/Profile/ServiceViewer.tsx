@@ -8,6 +8,7 @@ import Services from './Services';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice';
+import Reviews from './Reviews';
 
 
 interface propType{
@@ -23,10 +24,11 @@ export default function ServiceViewer({profile}:propType) {
   const serviceLimit = 10
   const dispatch = useDispatch()
 
+  
   useEffect(()=>{
     dispatch(serviceFalse())
   },[])
-      
+  
   async function fetchServices() {
       try {
         const response = await axios.get(`/api/service/getServicesByProfileId?page=${servicepage}&limit=${serviceLimit}&id=${profile._id}`)
@@ -41,8 +43,6 @@ export default function ServiceViewer({profile}:propType) {
   useEffect(()=>{
       fetchServices()
   },[])
-
-
 
   const socialLinks = [
     { name: 'facebook', icon: FaFacebook, url: profile.socialLinks?.facebook},
@@ -85,9 +85,7 @@ export default function ServiceViewer({profile}:propType) {
         {currentpageIndex===0?(
           <Services serviceList={serviceList} setServiceList={setServiceList}/>
         ):(
-          <div className='w-full text-3xl font-semibold text-muted h-full flex justify-center items-center min-h-[50dvh]'>
-            No Reviews Found
-          </div>
+          <Reviews />
         )}
 
       </div>

@@ -21,7 +21,7 @@ export default function ServiceModalComponent() {
             <IoCloseSharp className='text-2xl cursor-pointer ' onClick={handleClose}/>
             
             <div className='flex gap-2 items-center text-xs sm:text-sm text-conduit'>
-                <Link href="/serviceDetails">
+                <Link href="/service">
                     <p>Open service on new page </p>
                 </Link>
                 

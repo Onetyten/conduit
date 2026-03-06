@@ -100,7 +100,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
                 </span>
 
                 <span>
-                    {serviceRedux?.viewedId.length} likes
+                    {serviceRedux?.likedId.length} likes
                 </span>
             
             </div>
