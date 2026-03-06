@@ -1,30 +1,80 @@
 'use client'
 import React from 'react'
 import { SentReviewData } from '@/lib/types/profileReview'
+import Image from 'next/image'
+import { FaStar } from "react-icons/fa6";
 
 interface propType{
     reviewsSent:SentReviewData[]
+    reviewView:"sent" | "received"
+    setReviewView:React.Dispatch<React.SetStateAction<"sent" | "received">>
 }
 
-export default function Reviews({reviewsSent}:propType) {
+
+const NoReview = ()=>{
+    return(
+        <div className='text-3xl w-full flex justify-center font-semibold text-muted'>
+            No Reviews Available
+        </div>
+    )
+}
+
+export default function Reviews({reviewsSent,reviewView,setReviewView}:propType) {
+    
     
   return (
-    <div className='w-full font-semibold text-muted h-full flex justify-center items-center min-h-[50dvh]'>
-        {reviewsSent.length>0?(
-            <div className='text-xs py-6 gap-6 justify-start grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 w-full'>
-                {reviewsSent.map((item ,index)=>{
-                    return(
-                       <p key={index}>
-                            {item.review}
-                       </p>
-                    )
-                })}
-            </div>
-            ):(
-            <div className='text-3xl font-semibold text-muted'>
-                No Reviews Available
-            </div>
-            )}
+    <div className='w-full font-semibold overflow-scroll text-conduit h-full flex justify-start flex-col py-6 items-center gap-6 min-h-[50dvh]'>
+
+        <div className='bg-softblue text-xs flex items-center  gap-2 font-bold uppercase p-1.5 rounded-md '>
+            <span onClick={()=>setReviewView("received")} className={` p-3.5 ${reviewView==="received"?"bg-white":""} rounded-md cursor-pointer`}>Received</span>
+            <span onClick={()=>setReviewView("sent")} className={`p-3.5 rounded-md ${reviewView==="sent"?"bg-white":""} cursor-pointer`}>Sent</span>
+        </div>
+
+         <div className='text-xs w-xl bg-softblue py-6 gap-6 justify-start flex rounded-md p-6 '>
+        {reviewView==="sent"?(
+            reviewsSent.length>0?(
+                    reviewsSent.map((item ,index)=>{
+                        return(
+                            <div key={index} className='w-full rounded-md p-6 text-base flex-1 gap-3 flex bg-white shadow-md items-start'>
+                                <Image src={item.service.galleryImages[0]} alt='' width={48} height={48} className='aspect-square cursor-pointer rounded-full'/>
+
+                                <div className='flex flex-col gap-1'>
+                                    <p className='text-lg hover:underline cursor-pointer' >
+                                        {item.service.title} by <span className='text-muted'> {item.service.serviceProvider.firstName} {item.service.serviceProvider.lastName} </span>
+                                    </p>
+                                    <p className='mb-2'>
+                                        {item.review}
+                                    </p>
+                                    <div className='flex justify-between text-sm'>
+                                        <div className='flex'>
+                                            {Array.from({length:5}).map((item,index)=><FaStar key={index} className='text-yellow-500' />)}
+                                        </div>
+
+                                        <p className='text-muted'>
+                                            By you
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                
+                ):(
+                <NoReview/>
+            )
+        ):reviewView==="received"?(
+            reviewsSent.length>0?(
+                <div className='text-lg py-6 flex justify-center gap-6 w-full'>
+                    Received Reviews
+                </div>
+                ):(
+                <NoReview/>
+
+            )
+        ):(
+            <NoReview/>
+        )}
+        </div>
 
     </div>
   )

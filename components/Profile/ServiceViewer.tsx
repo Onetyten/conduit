@@ -20,15 +20,16 @@ export default function ServiceViewer({profile}:propType) {
   const pages = ['services','reviews']
   const [currentpageIndex,setCurrentpageIndex] = useState(0)
   const dispatch = useDispatch()
+  const [loading,setLoading] = useState(true)
   const {serviceList,setServiceList} = useFetchProfileServices(profile)
-  const {reviewsSent} = useFetchProfileReviews(profile)
+  const [reviewView,setReviewView] = useState<"sent" | "received">("received")
+  const {reviewsSent} = useFetchProfileReviews(profile,loading,setLoading,reviewView)
 
   
   useEffect(()=>{
     dispatch(serviceFalse())
   },[])
   
-
 
   const socialLinks = [
     { name: 'facebook', icon: FaFacebook, url: profile.socialLinks?.facebook},
@@ -37,6 +38,7 @@ export default function ServiceViewer({profile}:propType) {
     { name: 'linkedin', icon: FaLinkedin, url: profile.socialLinks?.linkedin},
     { name: 'other', icon: FaLink, url: profile.socialLinks?.other }
   ];
+
   const existingSocialLinks = socialLinks.filter(link => link.url);
 
   return (
@@ -71,7 +73,7 @@ export default function ServiceViewer({profile}:propType) {
         {currentpageIndex===0?(
           <Services serviceList={serviceList} setServiceList={setServiceList}/>
         ):(
-          <Reviews reviewsSent={reviewsSent} />
+          <Reviews reviewsSent={reviewsSent} reviewView={reviewView} setReviewView={setReviewView} />
         )}
 
       </div>
