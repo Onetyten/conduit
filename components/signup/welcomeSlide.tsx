@@ -1,6 +1,6 @@
 "use client"
 import React,{useState} from 'react'
-import NavigationButton from '../NavigationButton'
+import NavigationButton from './NavigationButton'
 import { NewUserType } from '@/lib/types'
 import { countryCodes } from '@/data/countryCodes'
 

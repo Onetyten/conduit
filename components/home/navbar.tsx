@@ -4,7 +4,7 @@ import Logo from '@/public/Images/Logo.png'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Avatar, AvatarFallback,AvatarImage} from './ui/avatar'
+import { Avatar, AvatarFallback,AvatarImage} from '../ui/avatar'
 import { useSelector,useDispatch} from 'react-redux'
 import { clearUser } from '@/state/userInfo/userSlice'
 import {signUpTrue} from '@/state/showSignUp/showSignUp'

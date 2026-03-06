@@ -1,6 +1,6 @@
 'use client'
 import React,{useState} from 'react'
-import NavigationButton from '../NavigationButton'
+import NavigationButton from './NavigationButton'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
 import { NewUserType } from '@/lib/types'

@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import NavigationButton from '../NavigationButton'
+import NavigationButton from './NavigationButton'
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill,RiTwitterXFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";

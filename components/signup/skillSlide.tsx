@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import NavigationButton from '../NavigationButton'
+import NavigationButton from './NavigationButton'
 import { IoCloseOutline } from "react-icons/io5";
 import { NewUserType } from '@/lib/types'
 import { toast } from 'react-toastify';

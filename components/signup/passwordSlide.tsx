@@ -1,6 +1,6 @@
 'use client'
 import React,{useState} from 'react'
-import NavigationButton from '../NavigationButton'
+import NavigationButton from './NavigationButton'
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
 import { toast } from 'react-toastify';

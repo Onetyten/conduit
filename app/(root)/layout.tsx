@@ -4,8 +4,8 @@ import {Provider} from 'react-redux'
 import { store,persistor } from '@/store'
 import { PersistGate } from 'redux-persist/integration/react'
 import { ToastContainer } from 'react-toastify'
-import CreateAccount from '@/components/createAccount'
-import ServiceSlider from '@/components/serviceSlider'
+import CreateAccount from '@/components/signup/createAccount'
+import ServiceSlider from '@/components/service/serviceSlider'
 
 export default function Layout({children}:{children:React.ReactNode}){
 

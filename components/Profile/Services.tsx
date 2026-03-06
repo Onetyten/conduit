@@ -1,7 +1,7 @@
 'use client'
 import { serviceInterface } from '@/lib/types'
 import React from 'react'
-import PostItem from '../postItem'
+import PostItem from '../home/posts/postItem'
 
 interface propType{
     serviceList:serviceInterface[]

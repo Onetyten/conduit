@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import NavigationButton from '../NavigationButton'
+import NavigationButton from './NavigationButton'
 import { NewUserType } from '@/lib/types'
 
 

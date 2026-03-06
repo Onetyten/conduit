@@ -1,9 +1,9 @@
 'use client'
-import SectionCarousel from "@/components/sectionCarousel";
-import IntroSection from "@/components/introSection";
-import Posts from "@/components/posts";
+import SectionCarousel from "@/components/home/sectionCarousel";
+import IntroSection from "@/components/home/introSection";
+import Posts from "@/components/home/posts/posts";
 // import ServiceSlider from "@/components/serviceSlider";
-import SearchMessage from "@/components/searchMessage";
+import SearchMessage from "@/components/home/searchMessage";
 
 
 export default function Home() {

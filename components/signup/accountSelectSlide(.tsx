@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from 'react'
-import NavigationButton from '../NavigationButton'
-import IsTalentCard from '../isTalentCard'
-import IsClientCard from '../isClientCard'
+import NavigationButton from './NavigationButton'
+import IsTalentCard from './isTalentCard'
+import IsClientCard from './isClientCard'
 import { NewUserType } from '@/lib/types'
 
 

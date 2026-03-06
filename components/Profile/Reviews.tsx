@@ -1,8 +1,12 @@
 'use client'
-import React from 'react'
+import React, { useRef } from 'react'
+import RatingBase from 'react-rating'
 import { SentReviewData } from '@/lib/types/profileReview'
 import Image from 'next/image'
-import { FaStar } from "react-icons/fa6";
+import { FaRegStar, FaStar } from "react-icons/fa6";
+import NoReview from './NoReview'
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const Rating = RatingBase as unknown as React.FC<any>;
 
 interface propType{
     reviewsSent:SentReviewData[]
@@ -11,26 +15,26 @@ interface propType{
 }
 
 
-const NoReview = ()=>{
-    return(
-        <div className='text-3xl w-full flex justify-center font-semibold text-muted'>
-            No Reviews Available
-        </div>
-    )
-}
+
 
 export default function Reviews({reviewsSent,reviewView,setReviewView}:propType) {
+    const triggerRef = useRef<HTMLDivElement|null>(null)
     
+
+
+
     
   return (
-    <div className='w-full font-semibold overflow-scroll text-conduit h-full flex justify-start flex-col py-6 items-center gap-6 min-h-[50dvh]'>
+    <div className='w-full font-semibold overflow-scroll text-conduit h-full flex justify-start flex-col py-6 items-center gap-6'>
 
-        <div className='bg-softblue text-xs flex items-center  gap-2 font-bold uppercase p-1.5 rounded-md '>
-            <span onClick={()=>setReviewView("received")} className={` p-3.5 ${reviewView==="received"?"bg-white":""} rounded-md cursor-pointer`}>Received</span>
-            <span onClick={()=>setReviewView("sent")} className={`p-3.5 rounded-md ${reviewView==="sent"?"bg-white":""} cursor-pointer`}>Sent</span>
+        <div className='w-full flex justify-center items-center'>
+            <div className='bg-softblue text-xs flex items-center  gap-2 font-bold uppercase p-1.5 rounded-md '>
+                <span onClick={()=>setReviewView("received")} className={` p-3.5 select-none ${reviewView==="received"?"bg-white":""} rounded-md cursor-pointer`}>Received</span>
+                <span onClick={()=>setReviewView("sent")} className={`p-3.5 select-none rounded-md ${reviewView==="sent"?"bg-white":""} cursor-pointer`}>Sent</span>
+            </div>
         </div>
-
-         <div className='text-xs w-xl bg-softblue py-6 gap-6 justify-start flex rounded-md p-6 '>
+        
+        <div className='text-xs flex-col w-xl relative bg-softblue py-6 gap-6 justify-start flex rounded-md p-6 '>
         {reviewView==="sent"?(
             reviewsSent.length>0?(
                     reviewsSent.map((item ,index)=>{
@@ -46,9 +50,10 @@ export default function Reviews({reviewsSent,reviewView,setReviewView}:propType)
                                         {item.review}
                                     </p>
                                     <div className='flex justify-between text-sm'>
-                                        <div className='flex'>
-                                            {Array.from({length:5}).map((item,index)=><FaStar key={index} className='text-yellow-500' />)}
-                                        </div>
+                                        <Rating readonly initialRating={item.rating}
+                                                        emptySymbol={<FaRegStar className="text-gray-300" size={20} />} 
+                                                        fullSymbol={<FaStar className="text-yellow-500" size={20} />} 
+                                                    />
 
                                         <p className='text-muted'>
                                             By you
@@ -74,6 +79,7 @@ export default function Reviews({reviewsSent,reviewView,setReviewView}:propType)
         ):(
             <NoReview/>
         )}
+            <div ref = {triggerRef} className='w-3 absolute bottom-0 left-1/2 h-3'></div>
         </div>
 
     </div>

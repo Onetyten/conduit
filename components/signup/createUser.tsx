@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationButton from '../NavigationButton'
+import NavigationButton from './NavigationButton'
 import { NewUserType } from '@/lib/types'
 import {toast} from 'react-toastify'
 import axios from 'axios'

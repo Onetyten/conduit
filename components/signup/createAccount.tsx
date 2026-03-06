@@ -1,20 +1,20 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import WelcomeSlide from './createProfile/welcomeSlide';
-import PasswordSlide from './createProfile/passwordSlide';
-import PictureSlide from './createProfile/pictureSlide';
-import LocationSlide from './createProfile/locationSlide';
-import FinishSlide from '@/components/createProfile/finishSlide';
+import WelcomeSlide from './welcomeSlide';
+import PasswordSlide from './passwordSlide';
+import PictureSlide from './pictureSlide';
+import LocationSlide from './locationSlide';
+import FinishSlide from '@/components/signup/finishSlide';
 import { useDispatch,useSelector } from 'react-redux';
 import { setLocation } from '@/state/locationalData/locationalDataSlice';
 import { RootState } from '@/store'
-import CloseSlide from './serviceComponents/closeSlide';
-import CreateUser from './createProfile/createUser';
+import CloseSlide from '../service/closeSlide';
+import CreateUser from './createUser';
 import axios from 'axios';
 import Image from 'next/image';
-import AccountSelectSlide from './createProfile/accountSelectSlide(';
-import SkillSlide from './createProfile/skillSlide';
-import LinkSlide from './createProfile/linkSlide';
+import AccountSelectSlide from './accountSelectSlide(';
+import SkillSlide from './skillSlide';
+import LinkSlide from './linkSlide';
 import { signUpFalse } from '@/state/showSignUp/showSignUp';
  
 

@@ -1,10 +1,10 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
-import ReviewItem from '../reviewItem';
-import ReviewInput from '../reviewInput';
+import ReviewInput from './reviewInput';
 import useFetchReviews from '@/hooks/useFetchReviews';
 import { useInView } from 'framer-motion';
 import { ReviewType } from '@/lib/types';
+import ReviewItem from './reviewItem';
 
 interface propType{
     serviceId:string

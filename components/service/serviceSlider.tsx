@@ -1,17 +1,16 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 
 import React, { useEffect } from 'react'
 import { RootState } from '@/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
-import ServiceModalComponent from './serviceComponents/ServiceModalComponent'
-import ServiceProfileSection from './serviceComponents/ServiceProfileSection'
-import LikeComponent from './serviceComponents/likeComponent'
-import ServiceProfileDetails from './serviceComponents/serviceProfileDetails'
-import ReviewService from './serviceComponents/reviewService'
+import ServiceModalComponent from './ServiceModalComponent'
+import ServiceProfileSection from './ServiceProfileSection'
+import LikeComponent from './likeComponent'
+import ServiceProfileDetails from './serviceProfileDetails'
 import useLikePost from '@/hooks/useLikedPost'
 import useGetPostProfile from '@/hooks/useGetPostProfile'
+import ReviewService from './review/reviewService'
 
 
 
