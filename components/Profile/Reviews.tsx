@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react'
+import React, { RefObject, useEffect, useRef} from 'react'
 import RatingBase from 'react-rating'
 import { SentReviewData } from '@/lib/types/profileReview'
 import Image from 'next/image'
@@ -12,17 +12,12 @@ interface propType{
     reviewsSent:SentReviewData[]
     reviewView:"sent" | "received"
     setReviewView:React.Dispatch<React.SetStateAction<"sent" | "received">>
+    triggerRef: (node: HTMLDivElement | null) => void
+    loading:boolean
 }
 
 
-
-
-export default function Reviews({reviewsSent,reviewView,setReviewView}:propType) {
-    const triggerRef = useRef<HTMLDivElement|null>(null)
-    
-
-
-
+export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef,loading}:propType) {    
     
   return (
     <div className='w-full font-semibold overflow-scroll text-conduit h-full flex justify-start flex-col py-6 items-center gap-6'>
@@ -50,10 +45,7 @@ export default function Reviews({reviewsSent,reviewView,setReviewView}:propType)
                                         {item.review}
                                     </p>
                                     <div className='flex justify-between text-sm'>
-                                        <Rating readonly initialRating={item.rating}
-                                                        emptySymbol={<FaRegStar className="text-gray-300" size={20} />} 
-                                                        fullSymbol={<FaStar className="text-yellow-500" size={20} />} 
-                                                    />
+                                        <Rating readonly initialRating={item.rating} emptySymbol={<FaRegStar className="text-gray-300" size={20} />} fullSymbol={<FaStar className="text-yellow-500" size={20} />}/>
 
                                         <p className='text-muted'>
                                             By you
@@ -65,7 +57,7 @@ export default function Reviews({reviewsSent,reviewView,setReviewView}:propType)
                     })
                 
                 ):(
-                <NoReview/>
+                <NoReview loading={loading}/>
             )
         ):reviewView==="received"?(
             reviewsSent.length>0?(
@@ -73,13 +65,15 @@ export default function Reviews({reviewsSent,reviewView,setReviewView}:propType)
                     Received Reviews
                 </div>
                 ):(
-                <NoReview/>
+                <NoReview loading={loading}/>
 
             )
         ):(
-            <NoReview/>
+            <NoReview loading={loading}/>
         )}
+
             <div ref = {triggerRef} className='w-3 absolute bottom-0 left-1/2 h-3'></div>
+
         </div>
 
     </div>

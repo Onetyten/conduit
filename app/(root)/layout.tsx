@@ -6,6 +6,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 import { ToastContainer } from 'react-toastify'
 import CreateAccount from '@/components/signup/createAccount'
 import ServiceSlider from '@/components/service/serviceSlider'
+import "react-activity/dist/library.css";
 
 export default function Layout({children}:{children:React.ReactNode}){
 

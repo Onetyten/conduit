@@ -12,7 +12,8 @@ import { signUpTrue } from '@/state/showSignUp/showSignUp'
 import { toast } from 'react-toastify'
 import axios from 'axios'
 import { Squares } from "react-activity";
-import "react-activity/dist/library.css";
+
+
 
 export default function page() {
   const router = useRouter()

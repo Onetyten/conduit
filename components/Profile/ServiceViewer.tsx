@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 import { profileInterface } from '@/lib/types'
 import React, { useEffect, useState } from 'react'
@@ -20,10 +21,10 @@ export default function ServiceViewer({profile}:propType) {
   const pages = ['services','reviews']
   const [currentpageIndex,setCurrentpageIndex] = useState(0)
   const dispatch = useDispatch()
-  const [loading,setLoading] = useState(true)
+
   const {serviceList,setServiceList} = useFetchProfileServices(profile)
   const [reviewView,setReviewView] = useState<"sent" | "received">("received")
-  const {reviewsSent} = useFetchProfileReviews(profile,loading,setLoading,reviewView)
+  const {reviewsSent,triggerRef,loading:reviewLoading} = useFetchProfileReviews(profile,reviewView)
 
   
   useEffect(()=>{
@@ -73,7 +74,7 @@ export default function ServiceViewer({profile}:propType) {
         {currentpageIndex===0?(
           <Services serviceList={serviceList} setServiceList={setServiceList}/>
         ):(
-          <Reviews reviewsSent={reviewsSent} reviewView={reviewView} setReviewView={setReviewView} />
+          <Reviews loading={reviewLoading} triggerRef={triggerRef} reviewsSent={reviewsSent} reviewView={reviewView} setReviewView={setReviewView} />
         )}
 
       </div>

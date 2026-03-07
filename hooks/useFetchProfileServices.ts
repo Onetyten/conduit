@@ -7,13 +7,18 @@ import { useEffect, useState } from "react"
 export default function useFetchProfileServices(profile:profileInterface){
 
     const [serviceList,setServiceList] = useState<serviceInterface[]>([])
-    const [servicepage,setServicePage] = useState(1)
-    const serviceLimit = 10
-        
+    const [page,setPage] = useState(1)
+    const limit = 10
+
   async function fetchServices() {
       try {
-        const response = await axios.get(`/api/service/getServicesByProfileId?page=${servicepage}&limit=${serviceLimit}&id=${profile._id}`)
-        setServiceList(prev=>[...prev,...response.data.data])
+        const response = await axios.get(`/api/service/getServicesByProfileId?page=${page}&limit=${limit}&id=${profile._id}`)
+        if (page===1){
+            setServiceList(response.data.data)
+        }
+        else{
+            setServiceList(prev=>[...prev,...response.data.data])
+        }
       }
       catch (error) {
           console.log(error)
