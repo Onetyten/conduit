@@ -4,11 +4,11 @@ import React, { useEffect } from 'react'
 import {RootState} from '@/store'
 import {useDispatch, useSelector} from 'react-redux'
 import ServiceProfileDetails from '@/components/service/serviceProfileDetails'
-import ReviewService from '@/components/service/reviewService'
 import LikeComponent from '@/components/service/likeComponent'
 import BackButton from '@/components/BackButton'
 import useLikePost from '@/hooks/useLikedPost'
 import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
+import ReviewService from '@/components/service/review/reviewService'
 
 export default function Page() {
     const service = useSelector((state:RootState)=> state.service.service)

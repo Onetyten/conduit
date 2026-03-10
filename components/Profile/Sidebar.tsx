@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { RootState } from '@/store'
 import { useSelector } from 'react-redux'
 import Logo from '@/public/Images/Logo.png'
+import Link from 'next/link'
 
 export default function Sidebar() {
     const userData = useSelector((state:RootState)=>state.user.user)
@@ -15,12 +16,12 @@ export default function Sidebar() {
       <div className='bg-softblue/30 overflow-y-scroll w-96 max-w-full flex-col p-5 flex justify-between items-center'>
         <div className='flex flex-col gap-3 items-start w-full'>
           <div className='flex items-center w-full justify-between '>
-            <div className='flex gap-1 items-center '>
+            <Link href={"/"} className='flex gap-1 items-center '>
               <Image src={Logo} alt='logo' className='w-4 object-contain'/>
               <p className='font-orbitron font-black text-conduit text-xl'>
                 Conduit .
               </p>
-            </div>
+            </Link>
             <BsLayoutSidebarInsetReverse className='text-2xl text-conduit' />
           </div>
           

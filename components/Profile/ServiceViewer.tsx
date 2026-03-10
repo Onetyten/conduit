@@ -24,7 +24,7 @@ export default function ServiceViewer({profile}:propType) {
 
   const {serviceList,setServiceList} = useFetchProfileServices(profile)
   const [reviewView,setReviewView] = useState<"sent" | "received">("received")
-  const {reviewsSent,triggerRef,loading:reviewLoading} = useFetchProfileReviews(profile,reviewView)
+  const {reviewsSent,reviewsReceived,triggerRef,loading:reviewLoading} = useFetchProfileReviews(profile,reviewView)
 
   
   useEffect(()=>{
@@ -74,7 +74,7 @@ export default function ServiceViewer({profile}:propType) {
         {currentpageIndex===0?(
           <Services serviceList={serviceList} setServiceList={setServiceList}/>
         ):(
-          <Reviews loading={reviewLoading} triggerRef={triggerRef} reviewsSent={reviewsSent} reviewView={reviewView} setReviewView={setReviewView} />
+          <Reviews profile={profile} reviewsReceived={reviewsReceived} loading={reviewLoading} triggerRef={triggerRef} reviewsSent={reviewsSent} reviewView={reviewView} setReviewView={setReviewView} />
         )}
 
       </div>

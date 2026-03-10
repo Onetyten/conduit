@@ -1,14 +1,17 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { profileInterface } from "@/lib/types"
-import { SentReviewData } from "@/lib/types/profileReview"
+import { receivedReviewData, SentReviewData } from "@/lib/types/profileReview"
 import axios from "axios"
 import { useCallback, useRef, useState } from "react"
 
 
 export default function useFetchProfileReviews(profile:profileInterface,reviewView: "sent" | "received"){
     const [reviewsSent,setReviewsSent] = useState<SentReviewData[]>([])
+    const [reviewsReceived,setReviewsReceived] = useState<receivedReviewData[]>([])
     const [sentPage,setSentPage] = useState(1)
+    const [receivedPage,setReceivedPage] = useState(1)
     const [hasMoreSentReviews,setHasMoreSent] = useState(true)
+    const [hasMoreReceivedReviews,setHasMoreReceived] = useState(true)
     const [loading,setLoading] = useState(true)
 
     const limit = 10
@@ -37,6 +40,8 @@ export default function useFetchProfileReviews(profile:profileInterface,reviewVi
                         return
                     }
                     else if (reviewView=="received"){
+                         if (!hasMoreReceivedReviews) return
+                        fetchReceivedReviews()
                         console.log("Fetch service reviews ")
                         return
                     }
@@ -53,7 +58,7 @@ export default function useFetchProfileReviews(profile:profileInterface,reviewVi
     async function fetchSentReviews() {
         try {
             setLoading(true)
-            const response = await axios.get(`/api/review/profile?page=${sentPage}&limit=${limit}&id=${profile._id}`)
+            const response = await axios.get(`/api/review/profile?page=${sentPage}&limit=${limit}&id=${profile._id}&type=sent`)
             const newReviews = response.data.data
             const page = response.data.currentPage
             console.log(response.data)
@@ -76,7 +81,34 @@ export default function useFetchProfileReviews(profile:profileInterface,reviewVi
         }
     }
 
+    async function fetchReceivedReviews() {
+        try {
+            setLoading(true)
+            const response = await axios.get(`/api/review/profile?page=${sentPage}&limit=${limit}&id=${profile._id}&type="received"`)
+            console.log(response.data)
+            const newReviews = response.data.data
+            const page = response.data.currentPage
+            console.log(response.data)
+            if (receivedPage===1){
+                setReviewsReceived(newReviews)
+            }
+            else{
+                setReviewsReceived(prev=>[...prev,...newReviews])
+            }
+            setHasMoreReceived(response.data.hasMore)
+            if (response.data.hasMore===true){
+                setReceivedPage(page+1)
+            }
+        }
+        catch (error) {
+            console.log(error)
+        }
+        finally{
+            setLoading(false)
+        }
+    }
 
 
-  return {reviewsSent,triggerRef,loading}
+
+  return {reviewsSent,reviewsReceived,triggerRef,loading}
 }
