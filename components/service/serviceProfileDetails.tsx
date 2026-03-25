@@ -6,12 +6,11 @@ import Link from 'next/link';
 import { DEFAULT_PROFILE_IMAGE } from '@/lib/constants';
 
 interface serviceInterfaceProp{
-    serviceProfileRedux:profileInterface|null
     serviceRedux:serviceInterface|null
 }
 
 
-export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux }: serviceInterfaceProp) {
+export default function ServiceProfileDetails({ serviceRedux }: serviceInterfaceProp) {
   return (
     <div className='flex justify-center w-full flex-col items-center gap-6'>
     <div className='flex items-center justify-center w-[90%] max-w-2xl          '>
@@ -20,7 +19,7 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
         </p>
     </div>
     <div className='flex items-center justify-center relative w-[90%] max-w-2xl h-96 '>
-        {serviceProfileRedux && serviceRedux?.galleryImages[0]?
+        {serviceRedux?.serviceProvider && serviceRedux?.galleryImages[0]?
             <Image src={serviceRedux?.galleryImages[0]} fill alt='profilepic' className=' aspect-video object-cover' />
             :
             <div className='w-250 h-100 bg-gray-100'></div >}     
@@ -53,9 +52,9 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
       <div className='w-full bg-softblue  py-6 gap-6 flex justify-center items-center flex-col'>
         <div className='flex flex-col gap-6 w-[90%] max-w-2xl           justify-center items-center'>
             <div className='relative w-12 h-12'>
-                <Link href={`/profile/${serviceProfileRedux?._id}`}>
+                <Link href={`/profile/${serviceRedux?.serviceProvider?._id}`}>
                     <Avatar className='w-full h-full'>
-                        <AvatarImage src={serviceProfileRedux?.profilePicture || DEFAULT_PROFILE_IMAGE}/>
+                        <AvatarImage src={serviceRedux?.serviceProvider?.profilePicture || DEFAULT_PROFILE_IMAGE}/>
                     </Avatar>
                 </Link>
                 
@@ -63,8 +62,8 @@ export default function ServiceProfileDetails({ serviceRedux,serviceProfileRedux
                 <div className={`${serviceRedux?.availability?'bg-lime-500 ':'bg-red-500'}absolute bottom-0 right-0 w-4 h-4 border-[3px] rounded-full border-white z-10`}>
                 </div>
             </div>
-            {serviceProfileRedux?
-            <p className='text-base text-foreground'>{serviceProfileRedux?.firstName} {serviceProfileRedux?.lastName}</p >
+            {serviceRedux?.serviceProvider?
+            <p className='text-base text-foreground'>{serviceRedux?.serviceProvider?.firstName} {serviceRedux?.serviceProvider?.lastName}</p >
             :
             <div className='w-40 h-4 bg-gray-100 rounded-md'></div >}
             <div className='flex gap-2 w-full justify-center text-sm'>

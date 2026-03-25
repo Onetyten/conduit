@@ -27,7 +27,6 @@ export default function Page() {
       const response = await axios.get(`/api/service/getServiceById?id=${id}&userId=${user?._id}`)
       if (response.statusText!== "OK") return
       setService(response.data.service)
-      setServiceProvider(response.data.profile)
       setPostLiked(response.data.postLiked)
     }
 
@@ -45,9 +44,9 @@ export default function Page() {
         <div className='w-full mb-12'>
             <BackButton/>
         </div>
-        <ServiceProfileSection serviceProfileRedux={serviceProvider} serviceRedux={service} />
+        <ServiceProfileSection serviceRedux={service} />
         <LikeComponent LikePost={LikePost} postLiked = {postLiked}/>
-        <ServiceProfileDetails  serviceProfileRedux ={serviceProvider} serviceRedux={service}/>
+        <ServiceProfileDetails serviceRedux={service}/>
         {service?._id&&(
           <ReviewService serviceId={service._id} /> 
         )} 

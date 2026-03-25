@@ -3,7 +3,6 @@ import userReducer from '@/state/userInfo/userSlice'
 import showServiceReducer from '@/state/showServiceSlice/showServiceSlice'
 import newServiceReducer from '@/state/updatedService/updatedService'
 import servicePostReducer from '@/state/viewedService/viewedService'
-import serviceProfileReducer from '@/state/serviceProfile/serviceProfile'
 import showSignUpReducer from '@/state/showSignUp/showSignUp'
 import keywordReducer from '@/state/keywordSlice/keywordSlice'
 import locationalDataSlice from '@/state/locationalData/locationalDataSlice'
@@ -26,7 +25,6 @@ const reducer = combineReducers({
     showService:showServiceReducer,
     newservice:newServiceReducer,
     service:servicePostReducer,
-    serviceProfile:serviceProfileReducer,
     showSignUp:showSignUpReducer,
     locationalData:locationalDataSlice
 })

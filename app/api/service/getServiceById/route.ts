@@ -14,22 +14,19 @@ export async function GET(request: Request) {
     
     try {
         await mongoConnect()
-        const service  = await Service.findById(id)
+        const service  = await Service.findById(id).populate("serviceProvider")
 
         if(!service){
             return NextResponse.json({message:"No service using this ID, somethings wrong" },{status:404})
         }
-        const profile = await Profile.findById(service.serviceProvider)
-        const postLiked = service.likedId.includes(userId)
 
-        if(!profile){
-            return NextResponse.json({message:"Service provider missing" },{status:404})
-        }
+        const postLiked = service.likedId.includes(userId)
+        
         if (userId && mongoose.isValidObjectId(userId)){
             await updateViews(id,userId)
         }
         
-        return NextResponse.json({message:"User retrieved successfully",postLiked,service,profile},{status:200})
+        return NextResponse.json({message:"User retrieved successfully",postLiked,service},{status:200})
     }
 
     catch (error) {

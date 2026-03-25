@@ -1,25 +1,6 @@
 import { Types } from "mongoose";
 
-export interface PostInterface {
-    _id: string;
-    title: string;
-    serviceProvider: string;
-    galleryImages: string[];
-    description: string;
-    amountEarned: number;
-    price: number;
-    avalableOn: string[];
-    likes: number;
-    views: number;
-    reviews: string[]; 
-    avalability: boolean;
-    deliverables: string[];
-    tags: string[];
-    createdAt: string;
-    address: string;
-    deliveryMethod: string[];
 
-  }
 
   export interface ReviewType{
   _id:string
@@ -55,7 +36,7 @@ export interface PostInterface {
   export interface serviceInterface {
     _id: string
     title: string
-    serviceProvider: string
+    serviceProvider?: profileInterface
     viewedId: string[]
     likedId: string[]
     galleryImages: string[]
@@ -75,6 +56,26 @@ export interface PostInterface {
     __v: number
   }
 
+  // export interface PostInterface {
+  //   _id: string;
+  //   title: string;
+  //   serviceProvider: string;
+  //   galleryImages: string[];
+  //   description: string;
+  //   amountEarned: number;
+  //   price: number;
+  //   avalableOn: string[];
+  //   likes: number;
+  //   views: number;
+  //   reviews: string[]; 
+  //   avalability: boolean;
+  //   deliverables: string[];
+  //   tags: string[];
+  //   createdAt: string;
+  //   address: string;
+  //   deliveryMethod: string[];
+
+  // }
   export interface profileInterface {
     _id: string
     firstName: string
