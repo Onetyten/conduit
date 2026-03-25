@@ -4,15 +4,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setService } from '@/state/viewedService/viewedService'
 import { updateService } from '@/state/updatedService/updatedService'
 import { toast } from 'react-toastify'
+import { serviceInterface } from '@/lib/types'
 
 
 
 
 
 
- function useLikePost(){
+ function useLikePost(service:serviceInterface|null){
     const dispatch  = useDispatch()
-    const service = useSelector((state:RootState)=> state.service.service)
     const userProfile = useSelector((state:RootState)=> state.user.user)
     const [postLiked, setPostLiked] = useState(false)
 
@@ -23,6 +23,7 @@ import { toast } from 'react-toastify'
         setPostLiked(false)
     }
     }, [service, userProfile])
+
 
     async function LikePost() {
         if (!service) {

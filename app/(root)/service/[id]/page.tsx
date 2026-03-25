@@ -1,6 +1,6 @@
 "use client"
 import ServiceProfileSection from '@/components/service/ServiceProfileSection'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import {RootState} from '@/store'
 import {useDispatch, useSelector} from 'react-redux'
 import ServiceProfileDetails from '@/components/service/serviceProfileDetails'
@@ -9,16 +9,35 @@ import BackButton from '@/components/BackButton'
 import useLikePost from '@/hooks/useLikedPost'
 import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
 import ReviewService from '@/components/service/review/reviewService'
+import axios from 'axios'
+import { useParams } from 'next/navigation'
+import { profileInterface, serviceInterface } from '@/lib/types'
 
 export default function Page() {
-    const service = useSelector((state:RootState)=> state.service.service)
-    const serviceProfileRedux = useSelector((state:RootState)=> state.serviceProfile.serviceProfile)
-    const {LikePost,postLiked} = useLikePost()
+    const params = useParams()
+    const id = params.id
+    const [service,setService] = useState<serviceInterface | null>(null) 
+    const [serviceProvider,setServiceProvider] = useState<profileInterface | null>(null) 
+    const [postLiked,setPostLiked] = useState(false)
+    const {LikePost} = useLikePost(service)
     const dispatch  = useDispatch()
+    const user = useSelector((state:RootState)=>state.user.user)
+
+    async function fetchService(){
+      const response = await axios.get(`/api/service/getServiceById?id=${id}&userId=${user?._id}`)
+      if (response.statusText!== "OK") return
+      setService(response.data.service)
+      setServiceProvider(response.data.profile)
+      setPostLiked(response.data.postLiked)
+    }
+
     useEffect(()=>{
       dispatch(serviceFalse())
+      fetchService()
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
+
+    
 
     
   return (
@@ -26,9 +45,9 @@ export default function Page() {
         <div className='w-full mb-12'>
             <BackButton/>
         </div>
-        <ServiceProfileSection serviceProfileRedux={serviceProfileRedux} serviceRedux={service} />
+        <ServiceProfileSection serviceProfileRedux={serviceProvider} serviceRedux={service} />
         <LikeComponent LikePost={LikePost} postLiked = {postLiked}/>
-        <ServiceProfileDetails  serviceProfileRedux ={serviceProfileRedux} serviceRedux={service}/>
+        <ServiceProfileDetails  serviceProfileRedux ={serviceProvider} serviceRedux={service}/>
         {service?._id&&(
           <ReviewService serviceId={service._id} /> 
         )} 

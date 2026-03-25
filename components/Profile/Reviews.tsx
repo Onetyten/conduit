@@ -9,6 +9,7 @@ import { DEFAULT_PROFILE_IMAGE } from '@/lib/constants'
 import { profileInterface } from '@/lib/types'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
+import Link from 'next/link'
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Rating = RatingBase as unknown as React.FC<any>;
 
@@ -44,9 +45,10 @@ export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef
                                 <Image src={item.service?.galleryImages?.[0] || DEFAULT_PROFILE_IMAGE} alt='' width={48} height={48} className='aspect-square cursor-pointer rounded-full'/>
 
                                 <div className='flex flex-col gap-1'>
-                                    <p className='text-lg hover:underline cursor-pointer' >
+
+                                    <Link href={`/service/${item.service._id}`} className='text-lg hover:underline cursor-pointer' >
                                         {item.service.title} by <span className='text-muted'> {item.service.serviceProvider?.firstName} {item.service.serviceProvider?.lastName} </span>
-                                    </p>
+                                    </Link>
                                     <p className='mb-2'>
                                         {item.review}
                                     </p>

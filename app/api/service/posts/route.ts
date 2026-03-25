@@ -27,7 +27,7 @@ export async function GET(request:Request) {
     try {
         await mongoConnect()
         const totalPosts = await Service.countDocuments(filter)
-        const posts  = await Service.find(filter).skip(skip).limit(limit).sort({createdAt:-1}).exec()
+        const posts  = await Service.find(filter).skip(skip).limit(limit).sort({createdAt:-1}).populate('serviceProvider').exec()
         const totalPages = Math.ceil(totalPosts/limit)
         const hasMore = totalPages>page
         return NextResponse.json({ message:"Posts retrieved Successfully",posts,currentPage:page,totalPages,hasMore},{status:200})

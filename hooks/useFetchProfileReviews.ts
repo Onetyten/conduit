@@ -36,13 +36,13 @@ export default function useFetchProfileReviews(profile:profileInterface,reviewVi
                     if (reviewView=="sent"){
                         if (!hasMoreSentReviews) return
                         fetchSentReviews()
-                        console.log("fetching sent reviews")
+                        
                         return
                     }
                     else if (reviewView=="received"){
                          if (!hasMoreReceivedReviews) return
                         fetchReceivedReviews()
-                        console.log("Fetch service reviews ")
+                        
                         return
                     }
                     setLoading(false)
@@ -61,7 +61,7 @@ export default function useFetchProfileReviews(profile:profileInterface,reviewVi
             const response = await axios.get(`/api/review/profile?page=${sentPage}&limit=${limit}&id=${profile._id}&type=sent`)
             const newReviews = response.data.data
             const page = response.data.currentPage
-            console.log(response.data)
+            
             if (sentPage===1){
                 setReviewsSent(newReviews)
             }
@@ -74,7 +74,7 @@ export default function useFetchProfileReviews(profile:profileInterface,reviewVi
             }
         }
         catch (error) {
-            console.log(error)
+            
         }
         finally{
             setLoading(false)
@@ -85,10 +85,10 @@ export default function useFetchProfileReviews(profile:profileInterface,reviewVi
         try {
             setLoading(true)
             const response = await axios.get(`/api/review/profile?page=${sentPage}&limit=${limit}&id=${profile._id}&type="received"`)
-            console.log(response.data)
+            
             const newReviews = response.data.data
             const page = response.data.currentPage
-            console.log(response.data)
+            
             if (receivedPage===1){
                 setReviewsReceived(newReviews)
             }
@@ -101,7 +101,7 @@ export default function useFetchProfileReviews(profile:profileInterface,reviewVi
             }
         }
         catch (error) {
-            console.log(error)
+            
         }
         finally{
             setLoading(false)

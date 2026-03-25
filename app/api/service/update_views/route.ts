@@ -39,7 +39,6 @@ export async function PATCH(request:Request) {
         return NextResponse.json({message:`{service views updated successfully ${post.views} \n viewersID: ${post.viewedId}}`,post:post},{status:200})
 
         
-        
     }
     catch (error) {
 

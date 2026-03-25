@@ -6,8 +6,13 @@ import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
 import { useDispatch} from 'react-redux'
 import {useLockBodyScroll} from '@uidotdev/usehooks'
 import Link from 'next/link'
+import { serviceInterface } from '@/lib/types';
 
-export default function ServiceModalComponent() {
+interface propType{
+    service:serviceInterface | null
+}
+
+export default function ServiceModalComponent({service}:propType) {
     useLockBodyScroll()
     const dispatch  = useDispatch()
 
@@ -21,7 +26,7 @@ export default function ServiceModalComponent() {
             <IoCloseSharp className='text-2xl cursor-pointer ' onClick={handleClose}/>
             
             <div className='flex gap-2 items-center text-xs sm:text-sm text-conduit'>
-                <Link href="/service">
+                <Link href={`/service/${service?._id}`}>
                     <p>Open service on new page </p>
                 </Link>
                 
