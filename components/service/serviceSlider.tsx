@@ -14,12 +14,11 @@ import ReviewService from './review/reviewService'
 
 
 
-
 const ServiceSlider = () => {
-    const dispatch  = useDispatch()
-    const showReduxModal = useSelector((state:RootState)=> state.showService.showService)
-    const service = useSelector((state:RootState)=> state.service.service)
-    const {LikePost,postLiked} = useLikePost(service)
+  const dispatch  = useDispatch()
+  const showReduxModal = useSelector((state:RootState)=> state.showService.showService)
+  const service = useSelector((state:RootState)=> state.service.service)
+  const {LikePost,postLiked} = useLikePost(service)
 
 
   return (

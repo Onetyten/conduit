@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Logo from '@/public/Images/Logo.png'
 import SigninPic from '@/public/Images/SigninPic.png'
 import { useDispatch} from 'react-redux';
-import {setUser} from '@/state/userInfo/userSlice'
+import {setUser, userState} from '@/state/userInfo/userSlice'
 import { useRouter } from 'next/navigation'
 import { signUpTrue } from '@/state/showSignUp/showSignUp'
 import { toast } from 'react-toastify'
@@ -33,7 +33,8 @@ export default function page() {
       {
         return toast.error(userData.message)
       }
-      dispatch(setUser(userData.user))
+      const payload:userState = {user:userData.user,token:userData.token}
+      dispatch(setUser(payload))
       toast.success("Signin successful")
       router.push('/');
     }

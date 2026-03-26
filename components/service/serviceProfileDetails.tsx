@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import { Avatar,AvatarImage } from '@/components/ui/avatar';
-import { profileInterface,serviceInterface} from '@/lib/types';
+import { serviceInterface} from '@/lib/types';
 import Link from 'next/link';
 import { DEFAULT_PROFILE_IMAGE } from '@/lib/constants';
 

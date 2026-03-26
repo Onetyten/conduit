@@ -36,7 +36,7 @@ import { Types } from "mongoose";
   export interface serviceInterface {
     _id: string
     title: string
-    serviceProvider?: profileInterface
+    serviceProvider: profileInterface
     viewedId: string[]
     likedId: string[]
     galleryImages: string[]
@@ -56,26 +56,7 @@ import { Types } from "mongoose";
     __v: number
   }
 
-  // export interface PostInterface {
-  //   _id: string;
-  //   title: string;
-  //   serviceProvider: string;
-  //   galleryImages: string[];
-  //   description: string;
-  //   amountEarned: number;
-  //   price: number;
-  //   avalableOn: string[];
-  //   likes: number;
-  //   views: number;
-  //   reviews: string[]; 
-  //   avalability: boolean;
-  //   deliverables: string[];
-  //   tags: string[];
-  //   createdAt: string;
-  //   address: string;
-  //   deliveryMethod: string[];
 
-  // }
   export interface profileInterface {
     _id: string
     firstName: string

@@ -15,7 +15,7 @@ export async function PATCH(request:Request) {
             return NextResponse.json({message:'missing user id'},{status:404})
         }
         
-        const post = await Service.findById(id)
+        const post = await Service.findById(id).populate("serviceProvider")
         if (!post) {
             return NextResponse.json({ message: 'Missing post' }, { status: 404 });
           }
@@ -27,23 +27,20 @@ export async function PATCH(request:Request) {
 
             else{
                 if (post.viewedId.includes(user_id)){
-                    return NextResponse.json({message:`{user has viewed this service before`},{status:409})
+                    console.log("user has viewed this service before")
+                
                 }
                 else{
                     post.viewedId.push(user_id);
                 } 
             }
-            
         }
         await post.save()
         return NextResponse.json({message:`{service views updated successfully ${post.views} \n viewersID: ${post.viewedId}}`,post:post},{status:200})
-
-        
     }
-    catch (error) {
 
+    catch (error) {
         return NextResponse.json({error:`{internal server error ${error}}`}, {status:500})
-        
     }
 
     

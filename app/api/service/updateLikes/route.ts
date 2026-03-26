@@ -14,7 +14,7 @@ export async function PATCH(request:Request) {
             return NextResponse.json({message:'missing user id'},{status:404})
         }
                 
-        const post = await Service.findById(id)
+        const post = await Service.findById(id).populate("serviceProvider")
 
         if (!post){
             return NextResponse.json({message:'service not found'},{status:404})

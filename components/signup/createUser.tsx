@@ -5,7 +5,7 @@ import {toast} from 'react-toastify'
 import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@/store'
-import { setUser } from '@/state/userInfo/userSlice'
+import { setUser, userState } from '@/state/userInfo/userSlice'
 
 interface propTypes{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
@@ -41,9 +41,9 @@ export default function CreateUser(props:propTypes) {
         try {
             const response = await axios.patch(`/api/profile/updateProfile`,userData)
             if (response.status != 200) return
-            const updatedUser = response.data.data
-            console.log(updatedUser)
-            dispatch(setUser(updatedUser))
+            const updatedUser = response.data
+            const payload:userState = {user:updatedUser.user,token:updatedUser.token}
+            dispatch(setUser(payload))
             setSlideIndex(slideIndex+1)
             setUploadingProfile(false)
             toast.success("Account Updated successfully")

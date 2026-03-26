@@ -1,6 +1,7 @@
 import mongoConnect from "@/lib/utils/connectDB";
 import Profile from "@/models/profileSchema";
 import { NextResponse } from "next/server";
+import jwt from "jsonwebtoken"
 
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -28,6 +29,11 @@ export async function PATCH(request:Request){
     const location = safeParse(userData.get("location"), {})
     const skills = safeParse<string[]>(userData.get("skills"), [])
     const password = userData.get('password') as string | null
+
+    const jwtSecret = process.env.JWT_SECRET
+    if (!jwtSecret){
+        return NextResponse.json({ message: "Internal server error", success: false }, { status: 500 });
+    }
     
     try {
         const user = await Profile.findById(_id)  
@@ -60,7 +66,12 @@ export async function PATCH(request:Request){
         const savedUser = await user.save()
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const { password: _, ...safeUser } = savedUser.toObject();
-        return NextResponse.json({message:'Profile edited successfully',data:safeUser},{status:200})
+
+        const payload = {
+            id:user._id
+        }
+        const token = await jwt.sign(payload,jwtSecret)
+        return NextResponse.json({message:'Profile edited successfully',user:safeUser,token},{status:200})
 
 
 

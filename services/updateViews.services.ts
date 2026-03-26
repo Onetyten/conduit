@@ -9,6 +9,9 @@ export async function updateViews(service_id:string,user_id:string){
         if (post.viewedId.includes(user_id)) return 
         else{
             post.viewedId.push(user_id);
-            await post.save()
-        } 
+            const newPost = await post.save()
+            console.log()
+
+
+        }
 }

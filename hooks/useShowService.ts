@@ -10,7 +10,6 @@ import { useDispatch, useSelector } from 'react-redux'
 
 export default function useShowService(post:serviceInterface, refreshPost:(updatedPost: serviceInterface) => void){
     const dispatch = useDispatch()
-    const profileDataRedux = useSelector((state:RootState)=> state.user.user)
     const serviceRedux = useSelector((state:RootState)=> state.service.service)
     
 
@@ -29,20 +28,19 @@ export default function useShowService(post:serviceInterface, refreshPost:(updat
         if (!isMobile) {
             showModal();
         } 
-
         dispatch(setService(post))
 
-        if (profileDataRedux){
+        if (serviceRedux?.serviceProvider){
             if (post._id && typeof post._id === 'string' && post._id.length>0){
                 const response = await fetch(`/api/service/update_views`,{
                     method:"PATCH",
                     headers:{
                         'Content-Type': 'application/json'
                     },
-                    body:JSON.stringify({id:post._id,user_id:profileDataRedux._id})
+                    body:JSON.stringify({id:post._id,user_id:serviceRedux?.serviceProvider._id})
                 })
                 if (response.ok)
-                {   
+                {
                     const viewMessage = await response.json()
                     dispatch(setService(viewMessage.post))
                     dispatch(updateService(viewMessage.post))

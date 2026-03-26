@@ -32,6 +32,16 @@ const serviceSchema = new mongoose.Schema({
 })
 
 
+serviceSchema.pre('findOneAndDelete', async function(next){
+    const serviceId = this.getQuery()._id
+    const Review = mongoose.model("Reviews")
+    const reviews = await Review.find({service:serviceId})
+    for (const review of reviews ){
+        await Review.findByIdAndDelete(review._id)
+    }
+    next()
+})
+
 
 const Service = mongoose.models.Services || mongoose.model("Services",serviceSchema)
 export default Service

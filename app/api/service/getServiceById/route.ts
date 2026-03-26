@@ -1,5 +1,4 @@
 import mongoConnect from "@/lib/utils/connectDB"
-import Profile from "@/models/profileSchema"
 import Service from "@/models/serviceSchema"
 import { updateViews } from "@/services/updateViews.services"
 import { NextResponse } from "next/server"
@@ -15,11 +14,9 @@ export async function GET(request: Request) {
     try {
         await mongoConnect()
         const service  = await Service.findById(id).populate("serviceProvider")
-
         if(!service){
             return NextResponse.json({message:"No service using this ID, somethings wrong" },{status:404})
         }
-
         const postLiked = service.likedId.includes(userId)
         
         if (userId && mongoose.isValidObjectId(userId)){

@@ -31,5 +31,23 @@ const profileSchema  = new mongoose.Schema({
     
 
 })
+
+profileSchema.pre('findOneAndDelete', async function (next){
+    const profileId = this.getQuery()._id
+    const Service = mongoose.model("Services")
+    const Review = mongoose.model("Reviews")
+    const services  = await Service.find({serviceProvider:profileId})
+    for (const service of services){
+        await Service.findByIdAndDelete(service._id)
+    }
+    const reviews = await Review.find({userId:profileId})
+    for (const review of reviews){
+        await Review.findByIdAndDelete(review._id)
+    }
+    next()
+})
+
+
+
 const Profile = mongoose.models.Profile || mongoose.model('Profile',profileSchema)
 export default Profile

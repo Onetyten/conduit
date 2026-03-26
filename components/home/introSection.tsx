@@ -32,8 +32,8 @@ const IntroSection = () => {
     <div className='flex w-full primary sm:w-4xl max-x-full flex-col gap-2 justify-center items-center py-10 px-2'>
 
         <div className='bg-softblue text-xs flex items-center  gap-2 font-bold uppercase p-1.5 rounded-md '>
-            <span onClick={()=>setUserHiring(true)} className={`p-3.5 rounded-md ${userHiring?"bg-white":""} cursor-pointer`}>Hire</span>
-            <span onClick={()=>setUserHiring(false)} className={` p-3.5 ${userHiring?"":"bg-white"} rounded-md cursor-pointer`}>Get Hired</span>
+            <span onClick={()=>setUserHiring(true)} className={`p-3.5 rounded-md ${userHiring?"bg-white":""} select-none cursor-pointer`}>Hire</span>
+            <span onClick={()=>setUserHiring(false)} className={` p-3.5 ${userHiring?"":"bg-white"} rounded-md select-none cursor-pointer`}>Get Hired</span>
         </div>
 
     

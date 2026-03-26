@@ -3,12 +3,17 @@ import mongoConnect from "@/lib/utils/connectDB";
 import Profile from "@/models/profileSchema";
 import { NextResponse } from "next/server";
 import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken'
 
 
 export async function POST(request: Request) {
+    const jwtSecret = process.env.JWT_SECRET
+    if (!jwtSecret){
+        return NextResponse.json({ message: "Internal server error", success: false }, { status: 500 });
+    }
     try {
         const { email, password } = await request.json();
-
+        
         if (!email || !password) {
             return NextResponse.json({ message: "Email and password are required" }, { status: 400 });
         }
@@ -19,7 +24,12 @@ export async function POST(request: Request) {
         if (!user) {
             return NextResponse.json({ message: "Account does not exist, create account", success: false }, { status: 401 });
         }
-        
+
+        const payload = {
+            id:user._id
+        }
+        const token = await jwt.sign(payload,jwtSecret)
+
         const passwordMatch = await bcrypt.compare(password, user.password);
 
         if (!passwordMatch) {
@@ -27,7 +37,7 @@ export async function POST(request: Request) {
         }
        
         const {password:_, ...userWithoutPassword} = user.toObject();
-        return NextResponse.json({ message: 'Profile retrieved successfully', success: true, user: userWithoutPassword },{status:200});
+        return NextResponse.json({ message: 'Profile retrieved successfully', success: true, user: userWithoutPassword, token },{status:200});
     } catch (error) {
         console.error("Error during login:", error);
         return NextResponse.json({ message: "Internal server error", success: false }, { status: 500 });

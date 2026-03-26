@@ -27,7 +27,7 @@ export default function ServiceProfileSection({serviceRedux}:serviceInterfacePro
                 <p>{serviceRedux?.title}</p >
                 <div className='flex gap-3'>
                     {serviceRedux?.serviceProvider?
-                    <p className='font-light text-xs sm:text-sm text-conduit'>{serviceRedux?.serviceProvider?.firstName} {serviceRedux?.serviceProvider?.lastName}</p >
+                    <p className='font-light text-xs sm:text-sm text-conduit'>{serviceRedux.serviceProvider.firstName} {serviceRedux?.serviceProvider?.lastName}</p >
                     :
                     <div className='w-40 h-4 bg-gray-100 rounded-md'></div >}
 
