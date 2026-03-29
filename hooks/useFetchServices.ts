@@ -1,3 +1,4 @@
+import apiClient from "@/lib/api"
 import { serviceInterface } from "@/lib/types"
 import { RootState } from "@/store"
 import { useCallback, useEffect, useRef, useState } from "react"
@@ -19,7 +20,7 @@ export default function useFetchServices(){
     
     
 
-    //fetch post usecallback
+
     const fetchPost = useCallback(async (limit:number,Currentpage:number)=>{
         setLoading(true)
         try {                
@@ -28,7 +29,7 @@ export default function useFetchServices(){
             if (keywordRedux && keywordRedux !== "" && keywordRedux !== "All services") {
                 url += `&q=${encodeURIComponent(keywordRedux)}`;
             }
-            const Response = await fetch(url)
+            const Response = await apiClient.get(url)
             if (!Response.ok){
                 throw new Error("Failed to get response")
             }
@@ -52,7 +53,7 @@ export default function useFetchServices(){
     },
     [keywordRedux])
 
-    // The callback that fetch posts conditionally to prevent fetchpoats from getting too cluttered
+
     const loadMorePost  = useCallback(async()=>{
         if ( !hasMore || loading || (keywordRedux && keywordRedux !== "" && keywordRedux !== "All services")) return;
 

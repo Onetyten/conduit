@@ -5,6 +5,7 @@ import { setService } from '@/state/viewedService/viewedService'
 import { updateService } from '@/state/updatedService/updatedService'
 import { toast } from 'react-toastify'
 import { serviceInterface } from '@/lib/types'
+import apiClient from '@/lib/api'
 
 
 
@@ -37,7 +38,7 @@ import { serviceInterface } from '@/lib/types'
         }
         try {
             setPostLiked(!postLiked)
-            const likeResponse = await fetch(`/api/service/updateLikes`,{
+            const likeResponse = await apiClient(`/api/service/updateLikes`,{
             method:'PATCH',
             headers:{
                 'Content-Type': 'application/json'

@@ -1,3 +1,4 @@
+import apiClient from "@/lib/api";
 import { useCallback, useState } from "react";
 
 
@@ -13,7 +14,7 @@ export default function useFetchReviews(id:string,page:number){
         try{
             setLoading(true)
             const params = new URLSearchParams({ id,page:String(page),limit:String(limit) })
-            const response = await fetch(`/api/review/fetchbyservice/?${params}`)
+            const response = await apiClient.get(`/api/review/fetchbyservice/?${params}`)
             if (!response.ok){
                 throw new Error(`invalid response`)
             }
