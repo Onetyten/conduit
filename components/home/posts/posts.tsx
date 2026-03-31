@@ -8,8 +8,8 @@ import useFetchServices from '@/hooks/useFetchServices';
 
 
 const Posts = () => {
-    const {keywordRedux,triggerRef,isSearching,post,loading,setPost} = useFetchServices()
-
+    const {keywordRedux,triggerRef,isSearching,post,loading} = useFetchServices()
+    
   return (
     <div className='flex flex-col justify-center w-full py-5'>
         {isSearching&&
@@ -26,11 +26,7 @@ const Posts = () => {
                 {post.length>0?(
                     post.map((item ,index)=>{
                         return(
-                            <PostItem key={item._id} index={index} post={item} refreshPost = {(updatedPost)=>{
-                               setPost((prevPosts) =>
-                                prevPosts.map((p) => (p._id === updatedPost._id ? updatedPost : p))
-                                );
-                            }} />
+                            <PostItem key={item._id} index={index} post={item} />
                         )
                     })):
                     (

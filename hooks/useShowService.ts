@@ -1,5 +1,6 @@
 import api from '@/lib/api'
 import { serviceInterface } from '@/lib/types'
+import { updatePostList } from '@/state/postListSlice'
 import { serviceTrue } from '@/state/showServiceSlice'
 import { setService, updateService } from '@/state/viewedService'
 import { RootState } from '@/store'
@@ -8,17 +9,9 @@ import {isMobile} from 'react-device-detect'
 import { useDispatch, useSelector } from 'react-redux'
 
 
-export default function useShowService(post:serviceInterface, refreshPost:(updatedPost: serviceInterface) => void){
+export default function useShowService(post:serviceInterface){
     const dispatch = useDispatch()
     const serviceRedux = useSelector((state:RootState)=> state.service.service)
-    
-
-    useEffect(()=>{
-        if (serviceRedux){
-            refreshPost(serviceRedux); 
-        }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[ serviceRedux])
 
     const showModal =()=>{
         dispatch(serviceTrue())
@@ -37,8 +30,10 @@ export default function useShowService(post:serviceInterface, refreshPost:(updat
                 if (response.status===200)
                 {
                     const viewData = await response.data
+                    if (!viewData.viewCount || !viewData.serviceId) return
                     console.log("Service viewed", viewData)
-                    dispatch(updateService({viewCount:viewData.viewCount??serviceRedux?.viewCount}))
+                    dispatch(updateService({viewCount:viewData.viewCount}))
+                    dispatch(updatePostList({id:viewData.serviceId,update:{viewCount:viewData.viewCount}}))
                     // dispatch(setService(viewMessage.post))
                     // refreshPost(viewMessage.post);
                 }

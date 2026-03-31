@@ -5,6 +5,7 @@ import servicePostReducer from '@/state/viewedService'
 import showSignUpReducer from '@/state/showSignUp'
 import keywordReducer from '@/state/keywordSlice'
 import locationalDataSlice from '@/state/locationalDataSlice'
+import postListReducer from "@/state/postListSlice"
 import storage from 'redux-persist/lib/storage'
 import {persistReducer,persistStore} from 'redux-persist'
 import { combineReducers } from '@reduxjs/toolkit'
@@ -15,11 +16,11 @@ const persistConfig = {
     version:1,
     storage,
     whitelist: ['user']
-    // whitelist:[]
 }
 
 const reducer = combineReducers({
     user:userReducer,
+    posts:postListReducer,
     keyword:keywordReducer,
     showService:showServiceReducer,
     service:servicePostReducer,

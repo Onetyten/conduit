@@ -12,13 +12,12 @@ import PostImage from './PostImage';
 interface propTypes{
     index:number,
     post:serviceInterface
-    refreshPost: (updatedPost: serviceInterface) => void
 }
 
 export default function PostItem(props:propTypes) {
     const [imageLoaded,setImageLoaded] = useState(false)
-    const {post,index,refreshPost} = props
-    const {isMobile,getService} = useShowService(post,refreshPost)
+    const {post,index} = props
+    const {isMobile,getService} = useShowService(post)
     
 
 
@@ -27,10 +26,10 @@ export default function PostItem(props:propTypes) {
     <div key={index} className='flex gap-3 w-full flex-col col-span-1'>
         <div className="relative cursor-pointer h-80 sm:h-72">
             {isMobile ? (<Link href={`/service/${post._id}`} onClick={getService}>
-                <PostImage post={post} refreshPost={refreshPost} setImageLoaded={setImageLoaded}/>
+                <PostImage post={post} setImageLoaded={setImageLoaded}/>
             </Link>) 
             :
-            (<PostImage post={post} refreshPost={refreshPost} setImageLoaded={setImageLoaded}/>)}
+            (<PostImage post={post} setImageLoaded={setImageLoaded}/>)}
 
             <motion.div  initial={{height:"100%", opacity:1}} animate={imageLoaded?{height:0,opacity:0.5}:{ height: "100%", opacity: 1 }} transition={{ duration: 0.5 }} className="div top-0 left-0 z-20 absolute w-full h-0 bg-gray-400">
             </motion.div>

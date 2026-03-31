@@ -8,15 +8,14 @@ import { CiHeart } from 'react-icons/ci';
 
 interface propTypes{
     post:serviceInterface
-    refreshPost: (updatedPost: serviceInterface) => void
     setImageLoaded:React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export default function PostImage(props:propTypes) {
     const maxDescLength = 256
-    const {post,refreshPost,setImageLoaded} = props
+    const {post,setImageLoaded} = props
     const [showImageDetails,setShowImageDetails] = useState(false)
-    const {getService} = useShowService(post,refreshPost)
+    const {getService} = useShowService(post)
 
     function pointerEntered(){
         setShowImageDetails(true)

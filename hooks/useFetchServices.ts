@@ -1,9 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 
 import api from "@/lib/api"
-import { serviceInterface } from "@/lib/types"
+import { addPosts, clearPosts, setPosts } from "@/state/postListSlice"
 import { RootState } from "@/store"
 import { useCallback, useEffect, useRef, useState } from "react"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 
 
 
@@ -14,10 +15,12 @@ export default function useFetchServices(){
     const prevKeywordRef = useRef(keywordRedux)    
     const [isSearching,setIsSearching] = useState(false)
     const [loading,setLoading] = useState(false)
-    const [post,setPost] = useState<serviceInterface[]>([])
+    const post = useSelector((state:RootState)=>state.posts.posts)
     const [page,setPage] = useState(1)
     const [hasMore,setHasMore] = useState(true)
     const limit = 20 
+
+    const dispatch = useDispatch()
     
     
 
@@ -57,7 +60,7 @@ export default function useFetchServices(){
 
         const newPost  = await fetchPost(limit,page)
         if (newPost && newPost.length>0){
-            setPost((prevPosts) => [...prevPosts, ...newPost])
+            dispatch(addPosts(newPost))
             setPage((prevPage)=>prevPage+1)
             if (newPost.length<limit){
                 setHasMore(false)
@@ -106,7 +109,7 @@ export default function useFetchServices(){
                 setIsSearching(true)
                 if (keywordRedux && keywordRedux !== "" && keywordRedux !== "All services"){
                 const newPost  = await fetchPost(50,1)
-                setPost(newPost)
+                dispatch(setPosts(newPost))
                 setPage(2)
                 setHasMore(true)
                 }
@@ -120,7 +123,6 @@ export default function useFetchServices(){
             
         }
         loadTagPosts()
-
     },[fetchPost, keywordRedux])
 
 
@@ -128,12 +130,12 @@ export default function useFetchServices(){
         const prevKeyword = prevKeywordRef.current
 
         if (prevKeyword !== "All services" && keywordRedux === "All services" ){
-            setPost([])
+            dispatch(clearPosts())
             setPage(1)
         }
         prevKeywordRef.current = keywordRedux
         
         },[keywordRedux])
 
-    return {keywordRedux,triggerRef,isSearching,post,loading,setPost}
+    return {keywordRedux,triggerRef,isSearching,post,loading}
 }
