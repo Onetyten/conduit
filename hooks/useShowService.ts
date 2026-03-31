@@ -1,4 +1,3 @@
-import apiClient from '@/lib/api'
 import { serviceInterface } from '@/lib/types'
 import { serviceTrue } from '@/state/showServiceSlice/showServiceSlice'
 import { updateService } from '@/state/updatedService/updatedService'
@@ -33,8 +32,13 @@ export default function useShowService(post:serviceInterface, refreshPost:(updat
 
         if (serviceRedux?.serviceProvider){
             if (post._id && typeof post._id === 'string' && post._id.length>0){
-                const response = await apiClient.patch(`/api/service/update_views`,{id:post._id,user_id:serviceRedux?.serviceProvider._id})
-                
+                const response = await fetch(`/api/service/update_views`,{
+                    method:"PATCH",
+                    headers:{
+                        'Content-Type': 'application/json'
+                    },
+                    body:JSON.stringify({id:post._id,user_id:serviceRedux?.serviceProvider._id})
+                })
                 if (response.ok)
                 {
                     const viewMessage = await response.json()

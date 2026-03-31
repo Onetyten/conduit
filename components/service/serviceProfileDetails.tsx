@@ -95,11 +95,11 @@ export default function ServiceProfileDetails({ serviceRedux }: serviceInterface
                 </span>
 
                 <span>
-                    {serviceRedux?.viewedId.length} views
+                    {serviceRedux?.viewCount} views
                 </span>
 
                 <span>
-                    {serviceRedux?.likedId.length} likes
+                    {serviceRedux?.likeCount} likes
                 </span>
             
             </div>

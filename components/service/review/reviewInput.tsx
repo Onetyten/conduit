@@ -7,7 +7,8 @@ import { toast } from 'react-toastify'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
 import { ReviewType } from '@/lib/types'
-import apiClient from '@/lib/api'
+import axios from 'axios'
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Rating = RatingBase as unknown as React.FC<any>;
 
@@ -35,9 +36,8 @@ export default function ReviewInput(props:propType) {
             return;
         }
         try {
-            const response = await apiClient.post('/api/review/post',{userId: profile._id, serviceId:service._id, review: reviewText, rating});
-            const data = await response.json();
-            if (!response.ok) return
+            const response = await axios.post('/api/review/post',{userId: profile._id, serviceId:service._id, review: reviewText, rating});
+            const data = await response.data;
             const userReviewProfile = {
                 firstName:profile.firstName,
                 lastName:profile.lastName,

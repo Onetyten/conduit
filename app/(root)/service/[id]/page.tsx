@@ -11,15 +11,13 @@ import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
 import ReviewService from '@/components/service/review/reviewService'
 import axios from 'axios'
 import { useParams } from 'next/navigation'
-import { profileInterface, serviceInterface } from '@/lib/types'
+import { serviceInterface } from '@/lib/types'
 
 export default function Page() {
     const params = useParams()
     const id = params.id
     const [service,setService] = useState<serviceInterface | null>(null) 
-    const [serviceProvider,setServiceProvider] = useState<profileInterface | null>(null) 
-    const [postLiked,setPostLiked] = useState(false)
-    const {LikePost} = useLikePost(service)
+    const {LikePost,postLiked} = useLikePost(service)
     const dispatch  = useDispatch()
     const user = useSelector((state:RootState)=>state.user.user)
 
@@ -27,7 +25,6 @@ export default function Page() {
       const response = await axios.get(`/api/service/getServiceById?id=${id}&userId=${user?._id}`)
       if (response.statusText!== "OK") return
       setService(response.data.service)
-      setPostLiked(response.data.postLiked)
     }
 
     useEffect(()=>{

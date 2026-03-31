@@ -1,10 +1,11 @@
 'use client'
+import dynamic from "next/dynamic";
 import SectionCarousel from "@/components/home/sectionCarousel";
 import IntroSection from "@/components/home/introSection";
-import Posts from "@/components/home/posts/posts";
 // import ServiceSlider from "@/components/serviceSlider";
 import SearchMessage from "@/components/home/searchMessage";
 
+const Posts = dynamic(()=> import ("@/components/home/posts/posts"),{ssr:false})
 
 export default function Home() {
   

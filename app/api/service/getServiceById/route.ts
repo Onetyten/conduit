@@ -13,17 +13,37 @@ export async function GET(request: Request) {
     
     try {
         await mongoConnect()
-        const service  = await Service.findById(id).populate("serviceProvider")
+        const [service]  = await Service.aggregate([
+            { $match : {_id:id} },
+            { $addFields: {
+                likeCount:{$size:'$likedId'},
+                viewCount:{$size:'$viewedId'},
+                isLiked:userId?{$in:[new mongoose.Types.ObjectId(userId),'$viewedId']}:false,
+                isViewed:userId?{$in:[new mongoose.Types.ObjectId(userId),'$likedId']}:false
+            }},
+            { $lookup : {
+                from:"profiles",
+                localField:"serviceProvider",
+                foreignField:"_id",
+                as:"serviceProvider"
+            }},
+            { $unwind: {path:"$serviceProvider"}},
+            {$project:{
+                likedId:0,
+                viewedId:0
+            }}
+        ])
+
         if(!service){
             return NextResponse.json({message:"No service using this ID, somethings wrong" },{status:404})
         }
-        const postLiked = service.likedId.includes(userId)
+        
         
         if (userId && mongoose.isValidObjectId(userId)){
             await updateViews(id,userId)
         }
         
-        return NextResponse.json({message:"User retrieved successfully",postLiked,service},{status:200})
+        return NextResponse.json({message:"User retrieved successfully",service},{status:200})
     }
 
     catch (error) {

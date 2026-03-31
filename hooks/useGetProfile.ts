@@ -1,4 +1,3 @@
-import apiClient from "@/lib/api";
 import { profileInterface } from "@/lib/types";
 import {useCallback,useState} from "react"
 
@@ -15,7 +14,14 @@ export default function useGetProfile(id:string){
         try 
         {
             setLoading(true)
-            const response  = await apiClient.post(`/api/service/getserviceprofile`,{user_id:id})
+       
+            const response  = await fetch(`/api/service/getserviceprofile`,{
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body:JSON.stringify({user_id:id})
+            })
 
             if (!response.ok){
                 throw new Error("invalid response")

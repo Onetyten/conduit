@@ -1,4 +1,5 @@
-import apiClient from "@/lib/api"
+
+import api from "@/lib/api"
 import { serviceInterface } from "@/lib/types"
 import { RootState } from "@/store"
 import { useCallback, useEffect, useRef, useState } from "react"
@@ -29,11 +30,8 @@ export default function useFetchServices(){
             if (keywordRedux && keywordRedux !== "" && keywordRedux !== "All services") {
                 url += `&q=${encodeURIComponent(keywordRedux)}`;
             }
-            const Response = await apiClient.get(url)
-            if (!Response.ok){
-                throw new Error("Failed to get response")
-            }
-            const PostResponse = await Response.json()
+            const Response = await api.get(url)
+            const PostResponse = await Response.data
             const postData  = PostResponse?.posts
             if (postData!=null && postData.length>0){
                 return postData

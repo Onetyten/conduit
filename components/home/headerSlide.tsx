@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { profileInterface } from '@/lib/types';
 import Link from 'next/link';
-import apiClient from '@/lib/api';
+import axios from 'axios';
 
 
 
@@ -15,12 +15,8 @@ const HeaderSlide = () => {
 
     async function fetchRandomProfiles (){
         try {
-            const response = await apiClient.get(`/api/profile/fetchProfilesInHead?limit=${limit}`)
-
-            if (!response.ok){
-                return console.log("Failed to fetch header profile")
-            }
-            const profiles = await response.json()
+            const response = await axios.get(`/api/profile/fetchProfilesInHead?limit=${limit}`)
+            const profiles = await response.data
             setHeaderProfiles(profiles.data)
         } 
         catch (error) {

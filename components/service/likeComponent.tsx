@@ -4,7 +4,7 @@ import { IoMdHeart } from "react-icons/io";
 
 interface LikeComponentProps {
     LikePost: () => Promise<void>;
-    postLiked:boolean
+    postLiked:boolean | null
   }
 
 export default function LikeComponent(props:LikeComponentProps) {

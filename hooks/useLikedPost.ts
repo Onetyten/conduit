@@ -5,7 +5,6 @@ import { setService } from '@/state/viewedService/viewedService'
 import { updateService } from '@/state/updatedService/updatedService'
 import { toast } from 'react-toastify'
 import { serviceInterface } from '@/lib/types'
-import apiClient from '@/lib/api'
 
 
 
@@ -15,14 +14,15 @@ import apiClient from '@/lib/api'
  function useLikePost(service:serviceInterface|null){
     const dispatch  = useDispatch()
     const userProfile = useSelector((state:RootState)=> state.user.user)
-    const [postLiked, setPostLiked] = useState(false)
+    const [postLiked, setPostLiked] = useState(service?.isLiked || false)
 
     useEffect(() => {
-    if (userProfile && service?.likedId.includes(userProfile._id)) {
+    // if (userProfile && service?.likedId.includes(userProfile._id)) {
+    //     setPostLiked(true)
+    // } else {
+    //     setPostLiked(false)
+    // }
         setPostLiked(true)
-    } else {
-        setPostLiked(false)
-    }
     }, [service, userProfile])
 
 
@@ -38,12 +38,12 @@ import apiClient from '@/lib/api'
         }
         try {
             setPostLiked(!postLiked)
-            const likeResponse = await apiClient(`/api/service/updateLikes`,{
-            method:'PATCH',
-            headers:{
-                'Content-Type': 'application/json'
-            },
-            body:JSON.stringify({id:service._id,user_id:userProfile._id})
+            const likeResponse = await fetch(`/api/service/updateLikes`,{
+                method:'PATCH',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body:JSON.stringify({id:service._id,user_id:userProfile._id})
             })
             if (!likeResponse.ok){
                 setPostLiked(!postLiked)

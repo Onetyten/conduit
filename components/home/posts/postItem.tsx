@@ -50,12 +50,12 @@ export default function PostItem(props:propTypes) {
             <div className='flex gap-3 text-base items-center'>
                 <div className='flex gap-1 items-center cursor-pointer'>
                     < MdOutlineRemoveRedEye className='text-base'/>
-                    <p>{post.viewedId?.length}</p>
+                    <p>{post.viewCount}</p>
                 </div>
 
                 <div className='flex gap-1 items-center cursor-pointer'>
                     <CiHeart/>
-                    <p>{post.likedId?.length}</p>
+                    <p>{post.likeCount}</p>
                 </div>
 
             </div>

@@ -1,3 +1,4 @@
+import getUserFromRequest from "@/lib/getUserFromRequest";
 import mongoConnect from "@/lib/utils/connectDB";
 import Service from "@/models/serviceSchema";
 import mongoose from "mongoose";
@@ -13,11 +14,35 @@ export async function GET(request:Request){
     const skip = (page-1)*limit
     
     try {
+        const userId = getUserFromRequest(request)
         if (!profileId || !mongoose.isValidObjectId(profileId)){
             return NextResponse.json({message:"No id provided, invalid input"},{status:400})
         }
         const totalServices = await Service.countDocuments({serviceProvider:profileId})
-        const services = await Service.find({serviceProvider:profileId}).populate("serviceProvider").skip(skip).limit(limit).sort({createdAt:-1}).exec()
+
+        const services  = await Service.aggregate([
+            { $match : {serviceProvider:profileId} },
+            { $addFields: {
+                likeCount:{$size:'$likedId'},
+                viewCount:{$size:'$viewedId'},
+                isLiked:userId?{$in:[new mongoose.Types.ObjectId(userId),'$viewedId']}:false,
+                isViewed:userId?{$in:[new mongoose.Types.ObjectId(userId),'$likedId']}:false
+            }},
+            { $lookup : {
+                from:"profiles",
+                localField:"serviceProvider",
+                foreignField:"_id",
+                as:"serviceProvider"
+            }},
+            { $unwind: {path:"$serviceProvider"}},
+            {$project:{
+                likedId:0,
+                viewedId:0
+            }},
+            {$skip:skip},
+            {$limit:limit}
+        ])
+
         const totalPages = Math.ceil(totalServices/limit)
         const hasMore = totalPages>page
 
