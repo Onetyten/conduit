@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import api from "@/lib/api"
 import { profileInterface, serviceInterface } from "@/lib/types"
-import axios from "axios"
 import { useEffect, useState } from "react"
 
 
@@ -12,7 +12,7 @@ export default function useFetchProfileServices(profile:profileInterface){
 
   async function fetchServices() {
       try {
-        const response = await axios.get(`/api/service/getServicesByProfileId?page=${page}&limit=${limit}&id=${profile._id}`)
+        const response = await api.get(`/api/service/getServicesByProfileId?page=${page}&limit=${limit}&id=${profile._id}`)
         if (page===1){
             setServiceList(response.data.data)
         }

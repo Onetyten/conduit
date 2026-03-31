@@ -18,7 +18,7 @@ const ServiceSlider = () => {
   const dispatch  = useDispatch()
   const showReduxModal = useSelector((state:RootState)=> state.showService.showService)
   const service = useSelector((state:RootState)=> state.service.service)
-  const {LikePost,postLiked} = useLikePost(service)
+  const {LikePost} = useLikePost(service)
 
 
   return (
@@ -31,7 +31,7 @@ const ServiceSlider = () => {
                 <div className='md:w-[65%] lg:w-[50%] sm:w-[80%] w-full h-full bg-white flex flex-col items-center gap-6 overflow-scroll hide-scrollbar '>
                     <ServiceModalComponent service={service} />
                     <ServiceProfileSection serviceRedux={service}/>
-                    <LikeComponent LikePost={LikePost} postLiked = {postLiked} />
+                    <LikeComponent LikePost={LikePost} />
                     <ServiceProfileDetails serviceRedux={service}/>
                     {service?._id&&(
                       <ReviewService serviceId={service._id} /> 

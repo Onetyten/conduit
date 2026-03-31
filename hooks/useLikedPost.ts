@@ -1,7 +1,7 @@
 import {useEffect,useState} from 'react'
 import { RootState } from '@/store'
 import { useDispatch, useSelector } from 'react-redux'
-import { setService } from '@/state/viewedService'
+import { setService, updateService } from '@/state/viewedService'
 import { toast } from 'react-toastify'
 import { serviceInterface } from '@/lib/types'
 
@@ -13,17 +13,6 @@ import { serviceInterface } from '@/lib/types'
  function useLikePost(service:serviceInterface|null){
     const dispatch  = useDispatch()
     const userProfile = useSelector((state:RootState)=> state.user.user)
-    const [postLiked, setPostLiked] = useState(service?.isLiked || false)
-
-    useEffect(() => {
-    // if (userProfile && service?.likedId.includes(userProfile._id)) {
-    //     setPostLiked(true)
-    // } else {
-    //     setPostLiked(false)
-    // }
-        setPostLiked(true)
-    }, [service, userProfile])
-
 
     async function LikePost() {
         if (!service) {
@@ -35,8 +24,10 @@ import { serviceInterface } from '@/lib/types'
             toast.warn("Log in to like services")
             return
         }
+
         try {
-            setPostLiked(!postLiked)
+            dispatch(updateService({postLiked:!postLiked}))
+
             const likeResponse = await fetch(`/api/service/updateLikes`,{
                 method:'PATCH',
                 headers:{
@@ -45,7 +36,7 @@ import { serviceInterface } from '@/lib/types'
                 body:JSON.stringify({id:service._id,user_id:userProfile._id})
             })
             if (!likeResponse.ok){
-                setPostLiked(!postLiked)
+                // setPostLiked(!postLiked)
                 throw new Error("invalid response")
             }
             const likeMessage = await likeResponse.json()
@@ -57,6 +48,6 @@ import { serviceInterface } from '@/lib/types'
             toast.error("Could not like post")
         }
     }
-    return {LikePost,postLiked}
+    return {LikePost}
 }
 export default useLikePost
