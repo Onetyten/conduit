@@ -3,7 +3,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@/store'
 import { useRouter } from 'next/navigation'
-import { clearUser } from '@/state/userInfo/userSlice'
+import { clearUser } from '@/state/userSlice'
 
 
 

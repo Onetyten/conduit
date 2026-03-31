@@ -1,42 +1,28 @@
-import Service from "@/models/serviceSchema";
 import mongoConnect from "@/lib/utils/connectDB";
 import { NextResponse } from "next/server";
+import getUserFromRequest from "@/lib/getUserFromRequest";
+import { updateViews } from "@/services/updateViews.services";
 
 
 export async function PATCH(request:Request) {
-    const {id,user_id} = await request.json()
+    const {id} = await request.json()
     await mongoConnect()
 
     try {
+        const userId = getUserFromRequest(request)
         if(!id){
             return NextResponse.json({message:'missing id'},{status:404})
         }
-        if(!user_id){
-            return NextResponse.json({message:'missing user id'},{status:404})
+        if(!userId){
+            return NextResponse.json({message:'user not logged in '},{status:404})
         }
-        
-        const post = await Service.findById(id).populate("serviceProvider")
-        if (!post) {
-            return NextResponse.json({ message: 'Missing post' }, { status: 404 });
-          }
-
-        else{
-            if (!post.viewedId){
-                return NextResponse.json({message:'the viewed id field is not on the database'},{status:404})
-            }
-
-            else{
-                if (post.viewedId.includes(user_id)){
-                    console.log("user has viewed this service before")
-                
-                }
-                else{
-                    post.viewedId.push(user_id);
-                } 
-            }
+        const viewCount = await updateViews(id,userId)
+        if (viewCount === null || viewCount === undefined){
+            return NextResponse.json({ message: "Failed to update views", error: "Invalid input" },
+            { status: 404 })
         }
-        await post.save()
-        return NextResponse.json({message:`{service views updated successfully ${post.views} \n viewersID: ${post.viewedId}}`,post:post},{status:200})
+
+        return NextResponse.json({message:`views updated successfully. Total views: ${viewCount}`,viewCount, serviceId:id},{status:200})
     }
 
     catch (error) {

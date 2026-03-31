@@ -4,8 +4,8 @@ import HeaderSlide from './headerSlide'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@/store'
 import {motion,AnimatePresence} from 'framer-motion'
-import { signUpTrue } from '@/state/showSignUp/showSignUp'
-import { setkeyWord } from '@/state/keywordSlice/keywordSlice'
+import { signUpTrue } from '@/state/showSignUp'
+import { setkeyWord } from '@/state/keywordSlice'
 import { IoSearchOutline } from "react-icons/io5";
 import { useRouter } from 'next/navigation'
 

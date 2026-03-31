@@ -37,10 +37,10 @@ import { Types } from "mongoose";
     _id: string
     title: string
     serviceProvider: profileInterface
-    likeCount?:number,
-    viewCount?:number,
-    isLiked?:boolean,
-    isViewed?:boolean,
+    likeCount:number,
+    viewCount:number,
+    isLiked:boolean,
+    isViewed:boolean,
     galleryImages: string[]
     description: string
     status:string

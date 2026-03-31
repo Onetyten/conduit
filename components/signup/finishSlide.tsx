@@ -1,5 +1,5 @@
 import React from 'react'
-import {signUpFalse} from '@/state/showSignUp/showSignUp'
+import {signUpFalse} from '@/state/showSignUp'
 import { useDispatch } from 'react-redux';
 import { useRouter } from 'next/navigation';
 import { NewUserType } from '@/lib/types';

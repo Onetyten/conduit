@@ -1,5 +1,5 @@
 'use client'
-import { setkeyWord } from '@/state/keywordSlice/keywordSlice';
+import { setkeyWord } from '@/state/keywordSlice';
 import { RootState } from '@/store';
 import axios from 'axios';
 import React, { useEffect, useState,useRef } from 'react'

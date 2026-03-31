@@ -1,14 +1,15 @@
 import Service from "@/models/serviceSchema";
 
-export async function updateViews(service_id:string,user_id:string){
-        if(!service_id || !user_id) return
-        const post = await Service.findById(service_id)
-        if (!post) return
-        if (!post.viewedId) post.viewedId = []
-        if (post.viewedId.includes(user_id)) return 
-        else{
-            post.viewedId.push(user_id);
-            const newPost = await post.save()
-            console.log()
-        }
+
+export async function updateViews(service_id:string,user_id:string):Promise<number | null>{
+        if(!service_id || !user_id) return null
+
+        try {
+          const viewedPost = await Service.findByIdAndUpdate(service_id,{$addToSet:{viewedId:user_id}},{new:true})
+            if (!viewedPost) return null
+            return viewedPost.viewedId.length  
+        } catch (error) {
+            console.log("error while updating views",error)
+            return null
+        }  
 }

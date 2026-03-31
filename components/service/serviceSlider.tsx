@@ -3,7 +3,7 @@
 import React from 'react'
 import { RootState } from '@/store'
 import { useDispatch, useSelector } from 'react-redux'
-import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
+import { serviceFalse } from '@/state/showServiceSlice'
 import ServiceModalComponent from './ServiceModalComponent'
 import ServiceProfileSection from './ServiceProfileSection'
 import LikeComponent from './likeComponent'

@@ -17,11 +17,16 @@ const serviceSlice = createSlice({
     setService: (state, action: PayloadAction<serviceInterface>) => {
       state.service = action.payload
     },
+    updateService:(state,action: PayloadAction<Partial<serviceInterface>>)=>{
+      if (state.service){
+        Object.assign(state.service,action.payload)
+      }
+    },
     clearService: (state) => {
       state.service = null
     }
   }
 })
 
-export const { setService, clearService } = serviceSlice.actions
+export const { setService, clearService,updateService } = serviceSlice.actions
 export default serviceSlice.reducer

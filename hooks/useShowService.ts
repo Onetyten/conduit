@@ -1,7 +1,7 @@
+import api from '@/lib/api'
 import { serviceInterface } from '@/lib/types'
-import { serviceTrue } from '@/state/showServiceSlice/showServiceSlice'
-import { updateService } from '@/state/updatedService/updatedService'
-import { setService } from '@/state/viewedService/viewedService'
+import { serviceTrue } from '@/state/showServiceSlice'
+import { setService, updateService } from '@/state/viewedService'
 import { RootState } from '@/store'
 import { useEffect } from 'react'
 import {isMobile} from 'react-device-detect'
@@ -29,27 +29,22 @@ export default function useShowService(post:serviceInterface, refreshPost:(updat
             showModal();
         } 
         dispatch(setService(post))
+        dispatch(updateService({viewCount:(serviceRedux?.viewCount??0)+1}))
 
         if (serviceRedux?.serviceProvider){
             if (post._id && typeof post._id === 'string' && post._id.length>0){
-                const response = await fetch(`/api/service/update_views`,{
-                    method:"PATCH",
-                    headers:{
-                        'Content-Type': 'application/json'
-                    },
-                    body:JSON.stringify({id:post._id,user_id:serviceRedux?.serviceProvider._id})
-                })
-                if (response.ok)
+                const response = await api.patch(`/api/service/update_views`,{id:post._id})
+                if (response.status===200)
                 {
-                    const viewMessage = await response.json()
-                    dispatch(setService(viewMessage.post))
-                    dispatch(updateService(viewMessage.post))
-                    refreshPost(viewMessage.post);
+                    const viewData = await response.data
+                    console.log("Service viewed", viewData)
+                    dispatch(updateService({viewCount:viewData.viewCount??serviceRedux?.viewCount}))
+                    // dispatch(setService(viewMessage.post))
+                    // refreshPost(viewMessage.post);
                 }
             }
         }
     }
-
 
     return {isMobile,getService}
 }

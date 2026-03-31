@@ -6,9 +6,9 @@ import Image from 'next/image'
 import Logo from '@/public/Images/Logo.png'
 import SigninPic from '@/public/Images/SigninPic.png'
 import { useDispatch} from 'react-redux';
-import {setUser, userState} from '@/state/userInfo/userSlice'
+import {setUser, userState} from '@/state/userSlice'
 import { useRouter } from 'next/navigation'
-import { signUpTrue } from '@/state/showSignUp/showSignUp'
+import { signUpTrue } from '@/state/showSignUp'
 import { toast } from 'react-toastify'
 import axios from 'axios'
 import { Squares } from "react-activity";

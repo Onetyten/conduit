@@ -1,8 +1,7 @@
 import {useEffect,useState} from 'react'
 import { RootState } from '@/store'
 import { useDispatch, useSelector } from 'react-redux'
-import { setService } from '@/state/viewedService/viewedService'
-import { updateService } from '@/state/updatedService/updatedService'
+import { setService } from '@/state/viewedService'
 import { toast } from 'react-toastify'
 import { serviceInterface } from '@/lib/types'
 
@@ -51,7 +50,6 @@ import { serviceInterface } from '@/lib/types'
             }
             const likeMessage = await likeResponse.json()
             dispatch(setService(likeMessage.post))
-            dispatch(updateService(likeMessage.post))
 
         } 
         catch (error) {

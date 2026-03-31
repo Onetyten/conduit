@@ -1,11 +1,10 @@
 import {configureStore} from '@reduxjs/toolkit'
-import userReducer from '@/state/userInfo/userSlice'
-import showServiceReducer from '@/state/showServiceSlice/showServiceSlice'
-import newServiceReducer from '@/state/updatedService/updatedService'
-import servicePostReducer from '@/state/viewedService/viewedService'
-import showSignUpReducer from '@/state/showSignUp/showSignUp'
-import keywordReducer from '@/state/keywordSlice/keywordSlice'
-import locationalDataSlice from '@/state/locationalData/locationalDataSlice'
+import userReducer from '@/state/userSlice'
+import showServiceReducer from '@/state/showServiceSlice'
+import servicePostReducer from '@/state/viewedService'
+import showSignUpReducer from '@/state/showSignUp'
+import keywordReducer from '@/state/keywordSlice'
+import locationalDataSlice from '@/state/locationalDataSlice'
 import storage from 'redux-persist/lib/storage'
 import {persistReducer,persistStore} from 'redux-persist'
 import { combineReducers } from '@reduxjs/toolkit'
@@ -23,7 +22,6 @@ const reducer = combineReducers({
     user:userReducer,
     keyword:keywordReducer,
     showService:showServiceReducer,
-    newservice:newServiceReducer,
     service:servicePostReducer,
     showSignUp:showSignUpReducer,
     locationalData:locationalDataSlice

@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import {FaSearch} from 'react-icons/fa'
 import { useDispatch } from 'react-redux'
-import { setkeyWord } from '@/state/keywordSlice/keywordSlice'
+import { setkeyWord } from '@/state/keywordSlice'
 
 
 

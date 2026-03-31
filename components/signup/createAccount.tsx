@@ -6,7 +6,7 @@ import PictureSlide from './pictureSlide';
 import LocationSlide from './locationSlide';
 import FinishSlide from '@/components/signup/finishSlide';
 import { useDispatch,useSelector } from 'react-redux';
-import { setLocation } from '@/state/locationalData/locationalDataSlice';
+import { setLocation } from '@/state/locationalDataSlice';
 import { RootState } from '@/store'
 import CloseSlide from '../service/closeSlide';
 import CreateUser from './createUser';
@@ -15,7 +15,7 @@ import Image from 'next/image';
 import AccountSelectSlide from './accountSelectSlide(';
 import SkillSlide from './skillSlide';
 import LinkSlide from './linkSlide';
-import { signUpFalse } from '@/state/showSignUp/showSignUp';
+import { signUpFalse } from '@/state/showSignUp';
  
 
 export default function CreateAccount() {

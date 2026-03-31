@@ -5,7 +5,7 @@ import {toast} from 'react-toastify'
 import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@/store'
-import { setUser, userState } from '@/state/userInfo/userSlice'
+import { setUser, userState } from '@/state/userSlice'
 
 interface propTypes{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>

@@ -7,7 +7,7 @@ import { FaFacebook,FaInstagram,FaLinkedin,FaLink } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Services from './Services';
 import { useDispatch } from 'react-redux';
-import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice';
+import { serviceFalse } from '@/state/showServiceSlice';
 import Reviews from './Reviews';
 import useFetchProfileReviews from '@/hooks/useFetchProfileReviews';
 import useFetchProfileServices from '@/hooks/useFetchProfileServices';

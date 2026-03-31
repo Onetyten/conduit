@@ -6,8 +6,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Avatar, AvatarFallback,AvatarImage} from '../ui/avatar'
 import { useSelector,useDispatch} from 'react-redux'
-import { clearUser } from '@/state/userInfo/userSlice'
-import {signUpTrue} from '@/state/showSignUp/showSignUp'
+import { clearUser } from '@/state/userSlice'
+import {signUpTrue} from '@/state/showSignUp'
 import { RootState } from '@/store'
 import { GiHamburgerMenu } from "react-icons/gi";
 

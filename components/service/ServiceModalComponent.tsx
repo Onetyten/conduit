@@ -2,7 +2,7 @@
 import React from 'react'
 import { IoCloseSharp } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
-import { serviceFalse } from '@/state/showServiceSlice/showServiceSlice'
+import { serviceFalse } from '@/state/showServiceSlice'
 import { useDispatch} from 'react-redux'
 import {useLockBodyScroll} from '@uidotdev/usehooks'
 import Link from 'next/link'
