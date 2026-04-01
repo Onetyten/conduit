@@ -1,40 +1,44 @@
+import getUserFromRequest from "@/lib/getUserFromRequest";
 import mongoConnect from "@/lib/utils/connectDB";
 import Service from "@/models/serviceSchema";
 import { NextResponse } from "next/server";
 
 export async function PATCH(request:Request) {
-    const {id,user_id} = await request.json()
+    const {id} = await request.json()
     await mongoConnect()
 
     try {
+        const userId = getUserFromRequest(request)
         if(!id){
             return NextResponse.json({message:'missing service provider id'},{status:404})
         }
-        if(!user_id){
+        if(!userId){
             return NextResponse.json({message:'missing user id'},{status:404})
         }
-                
-        const post = await Service.findById(id).populate("serviceProvider")
 
+        const post = await Service.findByIdAndUpdate(id,
+            [
+                {
+                    $set:{
+                        likedId:{
+                            $cond:{
+                                if : {$in:[userId,"$likedId"]},
+                                then: {$setDifference : ["$likedId",[userId]]},
+                                else: {$concatArrays : ["$likedId",[userId]] }
+                            }
+                        }
+                    }
+                }
+            ], {new:true}
+        )
         if (!post){
             return NextResponse.json({message:'service not found'},{status:404})
         }
 
-        // if (!post.likedId){
-        //     return NextResponse.json({message:'the liked id field is not on the database'},{status:404})
-        // }
-        if (post.likedId.includes(user_id)){
-            const userIndex = post.likedId.indexOf(user_id)
-            post.likedId.splice(userIndex,1)
-            await post.save()
-            return NextResponse.json({message:`user has unliked this post`,post:post,value:post.likedId,liked:false},{status:200})
-        }
-        else{
-            post.likedId.push(user_id)
-            await post.save()
-            return NextResponse.json({message:`user has liked this post`,post:post,value:post.likedId,liked:true},{status:200})
+        const postLiked = post.likedId.includes(userId)
+        const likeCount = post.likedId.length
 
-        }
+        return NextResponse.json({message:`user has ${postLiked?"liked":"unliked"} this post`,likeCount,postLiked,serviceId:id},{status:200})
 
     }
     

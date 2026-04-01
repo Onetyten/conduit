@@ -6,20 +6,20 @@ import {useDispatch, useSelector} from 'react-redux'
 import ServiceProfileDetails from '@/components/service/serviceProfileDetails'
 import LikeComponent from '@/components/service/likeComponent'
 import BackButton from '@/components/BackButton'
-import useLikePost from '@/hooks/useLikedPost'
 import { serviceFalse } from '@/state/showServiceSlice'
 import ReviewService from '@/components/service/review/reviewService'
 import axios from 'axios'
 import { useParams } from 'next/navigation'
 import { serviceInterface } from '@/lib/types'
+import { toast } from 'react-toastify'
 
 export default function Page() {
     const params = useParams()
     const id = params.id
     const [service,setService] = useState<serviceInterface | null>(null) 
-    const {LikePost,postLiked} = useLikePost(service)
     const dispatch  = useDispatch()
     const user = useSelector((state:RootState)=>state.user.user)
+    const [isLiking,setIsLiking] = useState(false)
 
     async function fetchService(){
       const response = await axios.get(`/api/service/getServiceById?id=${id}&userId=${user?._id}`)
@@ -33,6 +33,57 @@ export default function Page() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
+
+    const LikePost = async () => {
+        if (!service) return
+
+        if (!user) {
+            toast.warn("Log in to like services")
+            return
+        }
+
+        if (isLiking) return
+        const originalService = { ...service }
+
+        // Calculate new values
+        const newIsLiked = !service.isLiked
+        const newLikeCount = service.isLiked ? service.likeCount - 1 : service.likeCount + 1
+
+        try {
+            setService({...service, isLiked: newIsLiked, likeCount: newLikeCount
+            })
+
+            // Make API call
+            const likeResponse = await api.patch(`/api/service/updateLikes`, { 
+                id: service._id 
+            })
+
+            // Sync with server response if needed
+            if (likeResponse.data.likeCount !== newLikeCount || 
+                likeResponse.data.isLiked !== newIsLiked) {
+                setService({
+                    ...service,
+                    isLiked: likeResponse.data.isLiked,
+                    likeCount: likeResponse.data.likeCount
+                })
+            }
+
+            console.log("Like updated:", likeResponse.data)
+
+        } catch (error) {
+            console.error("Error updating likes:", error)
+            
+            // Rollback to original state on error
+            setService(originalService)
+            
+            toast.error("Failed to update like. Please try again.")
+        } finally {
+            setIsLiking(false)
+        }
+    }
+
+    
+
     
 
     
@@ -42,7 +93,7 @@ export default function Page() {
             <BackButton/>
         </div>
         <ServiceProfileSection serviceRedux={service} />
-        <LikeComponent LikePost={LikePost} postLiked = {postLiked}/>
+        <LikeComponent LikePost={LikePost} postLiked = {service?.isLiked??false}/>
         <ServiceProfileDetails serviceRedux={service}/>
         {service?._id&&(
           <ReviewService serviceId={service._id} /> 

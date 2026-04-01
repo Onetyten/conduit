@@ -22,20 +22,24 @@ export default function useShowService(post:serviceInterface){
             showModal();
         } 
         dispatch(setService(post))
-        dispatch(updateService({viewCount:(serviceRedux?.viewCount??0)+1}))
+
+        if (!post.isViewed){
+            dispatch(updateService({viewCount:(serviceRedux?.viewCount??0)+1}))
  
-        if (serviceRedux?.serviceProvider && user?._id && token){
-            if (post._id && typeof post._id === 'string' && post._id.length>0){
-                const response = await api.patch(`/api/service/update_views`,{id:post._id})
-                if (response.status===200)
-                {
-                    const viewData = await response.data
-                    if (!viewData.viewCount || !viewData.serviceId) return
-                    dispatch(updateService({viewCount:viewData.viewCount}))
-                    dispatch(updatePostList({id:viewData.serviceId,update:{viewCount:viewData.viewCount}}))
+            if (serviceRedux?.serviceProvider && user?._id && token){
+                if (post._id && typeof post._id === 'string' && post._id.length>0){
+                    const response = await api.patch(`/api/service/update_views`,{id:post._id})
+                    if (response.status===200)
+                    {
+                        const viewData = await response.data
+                        if (!viewData.viewCount || !viewData.serviceId) return
+                        dispatch(updateService({viewCount:viewData.viewCount,isViewed:true}))
+                        dispatch(updatePostList({id:viewData.serviceId,update:{viewCount:viewData.viewCount,isViewed:true}}))
+                    }
                 }
             }
         }
+        
     }
 
     return {isMobile,getService}

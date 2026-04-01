@@ -52,7 +52,6 @@ export async function GET(request:Request) {
             {$limit:limit}
         ])
         const totalPages = Math.ceil(totalPosts/limit)
-        console.log(posts[0])
         const hasMore = totalPages>page
         return NextResponse.json({ message:"Posts retrieved Successfully",posts,currentPage:page,totalPages,hasMore},{status:200})
 
