@@ -22,7 +22,6 @@ export default function useFetchProfileServices(profile:profileInterface){
             }
             return
         }
-        console.log(node)
 
         if (observer.current){
             observer.current.disconnect()

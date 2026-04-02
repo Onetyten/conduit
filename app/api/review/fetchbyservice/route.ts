@@ -16,13 +16,14 @@ export async function GET(request:Request) {
         if (!serviceId|| !mongoose.isValidObjectId(serviceId)){
             return NextResponse.json({message:"No service id provided, invalid input"},{status:400})
         }
+        // const review = await Review.find({})
         const result = await Review.aggregate([
-            {$match:{serviceId:new mongoose.Types.ObjectId(serviceId)}},
+            {$match:{service:new mongoose.Types.ObjectId(serviceId)}},
             {$lookup:{from:"profiles",foreignField:"_id",localField:"userId",as:"userProfile"}},
             {$match:{userProfile:{$ne:[]}}},
             {$facet:{
                     metadata:[
-                        {$count:"total"}
+                        {$group:{_id:null, averageRating:{$avg:"$rating"},total:{$sum:1}}},
                     ],
                     data:[
                         {$unwind:{path:"$userProfile",preserveNullAndEmptyArrays:false}},
@@ -44,9 +45,13 @@ export async function GET(request:Request) {
                 }}
 
         ])
-        const total = result[0]?.metadata[0]?.total || 0
-        const fetchedReview = result[0]?.data || []
-        return NextResponse.json({message:"reviews fetched successfully",data:fetchedReview,pagination:{total,totalpage:Math.ceil(total/limit)}},{status:200})
+
+        const {metadata,data} = result[0]
+
+        const total = metadata[0]?.total || 0
+        console.log(metadata)
+        
+        return NextResponse.json({message:"reviews fetched successfully",data,averageRating:metadata[0]?.averageRating||0,pagination:{total ,totalpage:Math.ceil(total/limit)}},{status:200})
     }
         
     catch (error) {

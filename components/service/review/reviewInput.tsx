@@ -2,12 +2,13 @@
 import React, { useState } from 'react'
 import RatingBase from 'react-rating'
 import { FaStar } from "react-icons/fa"
-import { FaRegStar } from "react-icons/fa6"
+import { FaPaperPlane, FaRegStar } from "react-icons/fa6"
 import { toast } from 'react-toastify'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
 import { ReviewType } from '@/lib/types'
 import axios from 'axios'
+import { AnimatePresence,motion } from 'framer-motion'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Rating = RatingBase as unknown as React.FC<any>;
@@ -35,6 +36,7 @@ export default function ReviewInput(props:propType) {
             toast.warn("Please provide both a rating and a review.");
             return;
         }
+
         try {
             const response = await axios.post('/api/review/post',{userId: profile._id, serviceId:service._id, review: reviewText, rating});
             const data = await response.data;
@@ -67,19 +69,33 @@ export default function ReviewInput(props:propType) {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='w-full flex flex-col gap-3 items-center'>
+        <form onSubmit={handleSubmit} className='w-full relative flex flex-col gap-3 items-center'>
             
-            <Rating initialRating={rating} onChange={(value: number) => setRating(value)}
-                emptySymbol={<FaRegStar className="text-gray-300" size={20} />} 
-                fullSymbol={<FaStar className="text-yellow-500" size={20} />} 
-            />
-            <div className='flex gap-2 w-full'>
-                <input type="text" placeholder='Leave a review' className='text-sm border-conduit border p-2 px-6 w-full rounded-full' value={reviewText}
+            
+            <div className='flex gap-2 relative items-center overflow-hidden border border-muted h-20 justify-between rounded-lg  w-full'>
+
+                <textarea placeholder='Leave a review' className='text-sm resize-none pl-3 overflow-y-auto focus:outline-0 border-conduit p-2 w-full h-20' value={reviewText}
                     onChange={(e) => setReviewText(e.target.value)}
                 />
-                <button type="submit" className='bg-black hover:bg-conduit cursor-pointer text-background px-6 p-2 h-9 rounded-md sm:rounded-full text-sm'>
-                    Send
-                </button>  
+
+                <div className='shrink-0 absolute bottom-1 left-3'>
+                    <Rating 
+                        initialRating={rating} 
+                        onChange={(value: number) => setRating(value)} 
+                        emptySymbol={<FaRegStar className="text-gray-300" size={20} />}  
+                        fullSymbol={<FaStar className="text-yellow-500" size={20} />} 
+                    />
+                </div>
+
+                    <AnimatePresence>
+                    {reviewText.trim() && rating > 0 && (
+                        <motion.button  type="submit" initial={{ width: 0, opacity: 0 }} animate={{ width: 60, opacity: 1 }} exit={{ width: 0, opacity: 0 }} transition={{ type: "spring", stiffness: 500, damping: 30,duration: 0.2 }} className='w-15 flex justify-center items-center h-full right-0 bg-muted cursor-pointer text-background text-sm absolute top-0'
+                        >
+                            <FaPaperPlane className="text-white" size={20}/>
+                        </motion.button>
+                    )}
+                </AnimatePresence>
+                
             </div>
         </form>
     )

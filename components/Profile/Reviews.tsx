@@ -25,24 +25,30 @@ interface propType{
 
 export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef,reviewsReceived,loading,profile}:propType) {    
     const user = useSelector((state:RootState)=>state.user.user)
+    const isOwnProfile = profile._id===user?._id
+    // const showReceivedReview = !isOwnProfile || reviewView==="received"
     
   return (
-    <div className='w-full font-semibold overflow-scroll text-conduit h-full flex justify-start flex-col py-6 items-center gap-6'>
+    <div className='w-full font-semibold overflow-scroll text-conduit h-full flex justify-start mt-4 flex-col py-6 items-center gap-6'>
 
-        <div className='w-full flex justify-center items-center'>
-            <div className='bg-softblue text-xs flex items-center  gap-2 font-bold uppercase p-1.5 rounded-md '>
-                <span onClick={()=>setReviewView("received")} className={` p-3.5 select-none ${reviewView==="received"?"bg-white":""} rounded-md cursor-pointer`}>Received</span>
-                <span onClick={()=>setReviewView("sent")} className={`p-3.5 select-none rounded-md ${reviewView==="sent"?"bg-white":""} cursor-pointer`}>Sent</span>
+        {isOwnProfile && (
+            <div className='w-full flex justify-center items-center'>
+                <div className='bg-softblue text-xs flex items-center  gap-2 font-bold uppercase p-1.5 rounded-md '>
+                    <span onClick={()=>setReviewView("received")} className={` p-3.5 select-none ${reviewView==="received"?"bg-white":""} rounded-md cursor-pointer`}>Received</span>
+                    <span onClick={()=>setReviewView("sent")} className={`p-3.5 select-none rounded-md ${reviewView==="sent"?"bg-white":""} cursor-pointer`}>Sent</span>
+                </div>
             </div>
-        </div>
+        )}
         
         <div className='text-xs flex-col w-xl relative bg-softblue py-6 gap-6 justify-start flex rounded-md p-6 '>
-        {reviewView==="sent"?(
+        {reviewView==="sent" && isOwnProfile ?(
             reviewsSent.length>0?(
                     reviewsSent.map((item ,index)=>{
                         return(
                             <div key={index} className='w-full rounded-md p-6 text-base flex-1 gap-3 flex bg-white shadow-md items-start'>
-                                <Image src={item.service?.galleryImages?.[0] || DEFAULT_PROFILE_IMAGE} alt='' width={48} height={48} className='aspect-square cursor-pointer rounded-full'/>
+                                <Link href={`/service/${item.service._id}`} className='cursor-pointer' >
+                                    <Image src={item.service?.galleryImages?.[0] || DEFAULT_PROFILE_IMAGE} alt='' width={48} height={48} className='aspect-square cursor-pointer rounded-full'/>
+                                </Link>
 
                                 <div className='flex flex-col gap-1'>
 
@@ -66,7 +72,7 @@ export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef
                 ):(
                 <NoReview loading={loading}/>
             )
-        ):reviewView==="received"?(
+        ):(
             reviewsReceived.length>0?(
                 reviewsReceived.map((item ,index)=>{
                         return(
@@ -95,8 +101,6 @@ export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef
                 <NoReview loading={loading}/>
 
             )
-        ):(
-            <NoReview loading={loading}/>
         )}
 
             <div ref = {triggerRef} className='w-3 absolute bottom-0 left-1/2 h-3'></div>

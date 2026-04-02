@@ -34,7 +34,7 @@ export default function Services({serviceList,loading,triggerRef}:propType) {
                 
                 )}
         </div>
-        <div ref={triggerRef} className='bg-blue-500 size-4'>
+        <div ref={triggerRef} className='size-4'>
 
         </div>
     </div>
