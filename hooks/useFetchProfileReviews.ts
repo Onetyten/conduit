@@ -73,9 +73,6 @@ export default function useFetchProfileReviews(profile:profileInterface,reviewVi
                 setSentPage(page+1)
             }
         }
-        catch (error) {
-            
-        }
         finally{
             setLoading(false)
         }
@@ -99,9 +96,6 @@ export default function useFetchProfileReviews(profile:profileInterface,reviewVi
             if (response.data.hasMore===true){
                 setReceivedPage(page+1)
             }
-        }
-        catch (error) {
-            
         }
         finally{
             setLoading(false)

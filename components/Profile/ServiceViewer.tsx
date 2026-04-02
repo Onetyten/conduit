@@ -22,7 +22,7 @@ export default function ServiceViewer({profile}:propType) {
   const [currentpageIndex,setCurrentpageIndex] = useState(0)
   const dispatch = useDispatch()
 
-  const {serviceList,setServiceList} = useFetchProfileServices(profile)
+  const {serviceList,setServiceList,loading:serviceLoading,triggerRef:serviceTriggerRef} = useFetchProfileServices(profile)
   const [reviewView,setReviewView] = useState<"sent" | "received">("received")
   const {reviewsSent,reviewsReceived,triggerRef,loading:reviewLoading} = useFetchProfileReviews(profile,reviewView)
 
@@ -72,7 +72,7 @@ export default function ServiceViewer({profile}:propType) {
 
       <div className='h-full'>
         {currentpageIndex===0?(
-          <Services serviceList={serviceList} setServiceList={setServiceList}/>
+          <Services loading={serviceLoading} triggerRef={serviceTriggerRef} serviceList={serviceList} setServiceList={setServiceList}/>
         ):(
           <Reviews profile={profile} reviewsReceived={reviewsReceived} loading={reviewLoading} triggerRef={triggerRef} reviewsSent={reviewsSent} reviewView={reviewView} setReviewView={setReviewView} />
         )}

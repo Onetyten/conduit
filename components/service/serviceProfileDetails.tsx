@@ -95,11 +95,11 @@ export default function ServiceProfileDetails({ serviceRedux }: serviceInterface
                 </span>
 
                 <span>
-                    {serviceRedux?.viewCount} views
+                    {Math.max(0, serviceRedux?.viewCount ?? 0)} views
                 </span>
 
                 <span>
-                    {serviceRedux?.likeCount} likes
+                    {Math.max(0, serviceRedux?.likeCount ?? 0)} {serviceRedux?.likeCount === 1 ? 'like' : 'likes'}
                 </span>
             
             </div>

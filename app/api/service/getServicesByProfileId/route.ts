@@ -21,12 +21,12 @@ export async function GET(request:Request){
         const totalServices = await Service.countDocuments({serviceProvider:profileId})
 
         const services  = await Service.aggregate([
-            { $match : {serviceProvider:profileId} },
+            { $match : {serviceProvider: new mongoose.Types.ObjectId(profileId) } },
             { $addFields: {
                 likeCount:{$size:'$likedId'},
                 viewCount:{$size:'$viewedId'},
-                isLiked:userId?{$in:[new mongoose.Types.ObjectId(userId),'$viewedId']}:false,
-                isViewed:userId?{$in:[new mongoose.Types.ObjectId(userId),'$likedId']}:false
+                isLiked:userId?{$in:[new mongoose.Types.ObjectId(userId),'$likedId']}:false,
+                isViewed:userId?{$in:[new mongoose.Types.ObjectId(userId),'$viewedId']}:false
             }},
             { $lookup : {
                 from:"profiles",

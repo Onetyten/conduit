@@ -6,7 +6,7 @@ interface LikeComponentProps {
     LikePost: () => Promise<void>;
     postLiked:boolean | null
   }
-
+  
 export default function LikeComponent(props:LikeComponentProps) {
     const {LikePost,postLiked} = props
 

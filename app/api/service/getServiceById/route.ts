@@ -3,23 +3,24 @@ import Service from "@/models/serviceSchema"
 import { updateViews } from "@/services/updateViews.services"
 import { NextResponse } from "next/server"
 import mongoose from "mongoose"
+import getUserFromRequest from "@/lib/getUserFromRequest"
 
 export async function GET(request: Request) {
     const {searchParams} = new URL(request.url)
     const id = searchParams.get("id")
-    const userId = searchParams.get("userId")
+    const userId = getUserFromRequest(request)
 
     if (!id || !mongoose.isValidObjectId(id)) return NextResponse.json({message:"The id parameter is missing"},{status:400})
     
     try {
         await mongoConnect()
         const [service]  = await Service.aggregate([
-            { $match : {_id:id} },
+            { $match : {_id:new mongoose.Types.ObjectId(id)} },
             { $addFields: {
                 likeCount:{$size:'$likedId'},
                 viewCount:{$size:'$viewedId'},
-                isLiked:userId?{$in:[new mongoose.Types.ObjectId(userId),'$viewedId']}:false,
-                isViewed:userId?{$in:[new mongoose.Types.ObjectId(userId),'$likedId']}:false
+                isLiked:userId?{$in:[new mongoose.Types.ObjectId(userId),'$likedId']}:false,
+                isViewed:userId?{$in:[new mongoose.Types.ObjectId(userId),'$viewedId']}:false
             }},
             { $lookup : {
                 from:"profiles",
@@ -33,7 +34,6 @@ export async function GET(request: Request) {
                 viewedId:0
             }}
         ])
-
         if(!service){
             return NextResponse.json({message:"No service using this ID, somethings wrong" },{status:404})
         }
