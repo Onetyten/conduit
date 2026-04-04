@@ -72,7 +72,7 @@ export default function ReviewInput(props:propType) {
         <form onSubmit={handleSubmit} className='w-full relative flex flex-col gap-3 items-center'>
             
             
-            <div className='flex gap-2 relative items-center overflow-hidden border border-muted h-20 justify-between rounded-lg  w-full'>
+            <div className='flex gap-2 relative items-center overflow-hidden border border-conduit h-20 justify-between rounded-lg  w-full'>
 
                 <textarea placeholder='Leave a review' className='text-sm resize-none pl-3 overflow-y-auto focus:outline-0 border-conduit p-2 w-full h-20' value={reviewText}
                     onChange={(e) => setReviewText(e.target.value)}
@@ -89,7 +89,7 @@ export default function ReviewInput(props:propType) {
 
                     <AnimatePresence>
                     {reviewText.trim() && rating > 0 && (
-                        <motion.button  type="submit" initial={{ width: 0, opacity: 0 }} animate={{ width: 60, opacity: 1 }} exit={{ width: 0, opacity: 0 }} transition={{ type: "spring", stiffness: 500, damping: 30,duration: 0.2 }} className='w-15 flex justify-center items-center h-full right-0 bg-muted cursor-pointer text-background text-sm absolute top-0'
+                        <motion.button  type="submit" initial={{ width: 0, opacity: 0 }} animate={{ width: 60, opacity: 1 }} exit={{ width: 0, opacity: 0 }} transition={{ type: "spring", stiffness: 500, damping: 30,duration: 0.2 }} className='w-15 flex justify-center items-center h-full right-0 bg-conduit cursor-pointer text-background text-sm absolute top-0'
                         >
                             <FaPaperPlane className="text-white" size={20}/>
                         </motion.button>

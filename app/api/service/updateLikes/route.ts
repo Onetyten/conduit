@@ -1,6 +1,7 @@
 import getUserFromRequest from "@/lib/getUserFromRequest";
 import mongoConnect from "@/lib/utils/connectDB";
 import Service from "@/models/serviceSchema";
+import mongoose from "mongoose";
 import { NextResponse } from "next/server";
 
 export async function PATCH(request:Request) {
@@ -22,9 +23,9 @@ export async function PATCH(request:Request) {
                     $set:{
                         likedId:{
                             $cond:{
-                                if : {$in:[userId,"$likedId"]},
-                                then: {$setDifference : ["$likedId",[userId]]},
-                                else: {$concatArrays : ["$likedId",[userId]] }
+                                if : {$in:[new mongoose.Types.ObjectId(userId),"$likedId"]},
+                                then: {$setDifference : ["$likedId",[new mongoose.Types.ObjectId(userId)]]},
+                                else: {$concatArrays : ["$likedId",[new mongoose.Types.ObjectId(userId)]] }
                             }
                         }
                     }

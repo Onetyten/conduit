@@ -23,17 +23,19 @@ export async function GET(request:Request) {
         ])
     }
 
+
     const skip = (page-1)*limit
     try {
         await mongoConnect()
         const totalPosts = await Service.countDocuments(filter)
+        
         const posts = await Service.aggregate([
             { $match: filter },
             { $addFields: {
                 likeCount:{$size:'$likedId'},
                 viewCount:{$size:'$viewedId'},
                 isLiked:userId?{$in:[new mongoose.Types.ObjectId(userId),'$likedId']}:false,
-                isViewed:userId?{$in:[new mongoose.Types.ObjectId(userId),'$viewedId']}:false
+                isViewed:userId?{ $in: [new mongoose.Types.ObjectId(userId),'$viewedId']}:false
             }},
             {$lookup:{
                 from:"profiles",
@@ -51,6 +53,7 @@ export async function GET(request:Request) {
             {$skip:skip},
             {$limit:limit}
         ])
+
         const totalPages = Math.ceil(totalPosts/limit)
         const hasMore = totalPages>page
         return NextResponse.json({ message:"Posts retrieved Successfully",posts,currentPage:page,totalPages,hasMore},{status:200})
