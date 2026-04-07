@@ -3,6 +3,8 @@ import { serviceInterface } from '@/lib/types'
 import React from 'react'
 import PostItem from '../home/posts/postItem'
 import { Digital } from 'react-activity'
+import { Button } from '../ui/button'
+import { Plus } from 'lucide-react'
 
 interface propType{
     serviceList:serviceInterface[]
@@ -19,7 +21,7 @@ export default function Services({serviceList,loading,triggerRef}:propType) {
                 <div className='text-xs py-6 gap-6 justify-start grid grid-cols-1 md:grid-cols-2 w-full'>
                     {serviceList.map((item ,index)=>{
                         return(
-                            <PostItem key={index} index={index} post={item}/>
+                            <PostItem key={index} index={index} openLink post={item}/>
                         )
                     })}
                 </div>
@@ -34,6 +36,10 @@ export default function Services({serviceList,loading,triggerRef}:propType) {
                 
                 )}
         </div>
+        <Button className='bg-foreground cursor-pointer hover:bg-conduit flex justify-center items-center text-background p-7 min-w-48 rounded-full' >
+            <Plus className='text-2xl' size={40}/>
+            Create a service
+        </Button>
         <div ref={triggerRef} className='size-4'>
 
         </div>

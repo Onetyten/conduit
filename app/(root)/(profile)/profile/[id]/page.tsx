@@ -9,7 +9,7 @@ async function getProfile(id:string):Promise<profileInterface> {
   
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/service/getserviceprofile`,{
     method:'POST',
-    cache:'no-store',
+    next:{revalidate:600},
     headers:{
         'Content-Type':'application/json'
     },

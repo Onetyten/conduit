@@ -66,20 +66,10 @@ export default function ServiceProfileDetails({ serviceRedux }: serviceInterface
             <p className='text-base text-foreground'>{serviceRedux?.serviceProvider?.firstName} {serviceRedux?.serviceProvider?.lastName}</p >
             :
             <div className='w-40 h-4 bg-gray-100 rounded-md'></div >}
-            <div className='flex gap-2 w-full justify-center text-sm'>
-                {serviceRedux?.tags.map((item,index)=>{
-                    return(
-                        <span key={index}>
-                              {item} {index!=serviceRedux.tags.length-1?"|":""}
-                        </span>
-                    )
-
-                })}
-            </div>
 
 
-            <div className='flex gap-2 w-full font-semibold justify-center text-sm'>
-                Hourly rate : {serviceRedux?.price?.amount ?? 'N/A'} {serviceRedux?.price?.currency ?? ""}               
+            <div className='flex gap-2 w-full  items-center justify-center text-base'>
+                <span className='text-xl font-bold'>{serviceRedux?.price?.amount ?? 'N/A'} {serviceRedux?.price?.currency ?? ""}</span><span>per Hr</span>                
             </div>
 
             <div className='flex gap-2 w-full justify-center text-sm'>

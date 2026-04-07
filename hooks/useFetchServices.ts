@@ -84,7 +84,6 @@ export default function useFetchServices(){
         const newObserver = new IntersectionObserver((entries)=>{
             const entry = entries[0]
             if (entry.isIntersecting){
-                console.log('Trigger element in view, loading more...')
                 loadMorePost()
             }        
     },observerOptions)

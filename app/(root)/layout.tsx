@@ -5,7 +5,6 @@ import { store,persistor } from '@/store'
 import { PersistGate } from 'redux-persist/integration/react'
 import { ToastContainer } from 'react-toastify'
 import CreateAccount from '@/components/signup/createAccount'
-import ServiceSlider from '@/components/service/serviceSlider'
 import "react-activity/dist/library.css";
 
 export default function Layout({children}:{children:React.ReactNode}){
@@ -16,16 +15,8 @@ export default function Layout({children}:{children:React.ReactNode}){
       <PersistGate persistor={persistor}>
         <main className='raleway-text  relative'>
             {children}
-            <ToastContainer 
-              position="top-right"
-              autoClose={2000}
-              hideProgressBar={true}
-              newestOnTop={true}
-              closeOnClick={false}
-              rtl={false}
-              />
-              <CreateAccount/>
-              <ServiceSlider/>
+            <ToastContainer  position="top-right" autoClose={2000} hideProgressBar={true} newestOnTop={true} closeOnClick={true} rtl={false} />
+            <CreateAccount/>   
 
         </main>
       </PersistGate>

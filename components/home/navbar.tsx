@@ -10,6 +10,8 @@ import { clearUser } from '@/state/userSlice'
 import {signUpTrue} from '@/state/showSignUp'
 import { RootState } from '@/store'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { serviceFalse } from '@/state/showServiceSlice'
+import { useRouter } from 'next/navigation'
 
 
 
@@ -17,6 +19,7 @@ const NavbarAuth = () => {
   const userReduxData = useSelector((state:RootState)=>state.user.user)
   const [showHamburger,setShowHamburger] = useState(false)
   const dispatch = useDispatch()
+  const router = useRouter()
   return (
     <div className='py-3 flex justify-between w-full text-sm '>
       <div className='flex gap-1 items-center '>
@@ -48,22 +51,26 @@ const NavbarAuth = () => {
                         Log out
                       </button>
                     </form>
-                    <Link href={`/profile/${userReduxData._id}`}>
-                      <Avatar>
-                          <AvatarImage src ={userReduxData?.profilePicture}/>
-                          <AvatarFallback>{`${userReduxData?.lastName.slice(0,1)}${userReduxData?.firstName.slice(0,1)}`}</AvatarFallback>
-                      </Avatar>
+                    <div onMouseEnter={()=>router.prefetch(`/profile/${userReduxData._id}`)}>
+                      <Link onClick={()=>dispatch(serviceFalse())} href={`/profile/${userReduxData._id}`}>
+                        <Avatar>
+                            <AvatarImage src ={userReduxData?.profilePicture}/>
+                            <AvatarFallback>{`${userReduxData?.lastName.slice(0,1)}${userReduxData?.firstName.slice(0,1)}`}</AvatarFallback>
+                        </Avatar>
+                      </Link>
+                    </div>
                     
-                    </Link>
                 </div>
 
                 <div className='text-xl sm:hidden cursor-pointer flex items-center gap-4 '>
-                  <Link href={`/profile/${userReduxData._id}`} >
-                      <Avatar>
-                          <AvatarImage src ={userReduxData?.profilePicture}/>
-                          <AvatarFallback>{`${userReduxData?.lastName.slice(0,1)}${userReduxData?.firstName.slice(0,1)}`}</AvatarFallback>
-                      </Avatar>
-                  </Link>
+                  <div onMouseEnter={()=>router.prefetch(`/profile/${userReduxData._id}`)}>
+                    <Link href={`/profile/${userReduxData._id}`} >
+                        <Avatar>
+                            <AvatarImage src ={userReduxData?.profilePicture}/>
+                            <AvatarFallback>{`${userReduxData?.lastName.slice(0,1)}${userReduxData?.firstName.slice(0,1)}`}</AvatarFallback>
+                        </Avatar>
+                    </Link>
+                  </div>
 
 
                   <GiHamburgerMenu onClick={()=>{setShowHamburger(!showHamburger)}}/>
