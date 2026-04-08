@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { profileInterface } from '@/lib/types';
 import Link from 'next/link';
 import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 
 
@@ -12,6 +13,7 @@ const HeaderSlide = () => {
     const [index, setIndex] = useState(0);
     const [headerProfiles,setHeaderProfiles] = useState<profileInterface[]>([])
     const limit = 10
+    const router = useRouter()
 
     async function fetchRandomProfiles (){
         
@@ -36,12 +38,11 @@ const HeaderSlide = () => {
 
   return (
     <div className='w-full sm:w-64 h-44 aspect-square py-2 flex cursor-pointer rounded-2xl overflow-hidden flex-col justify-center gap-2.5 p-2 items-center bg-background  shadow-md'>
-        <div className=' size-16 relative bg-gray-200 rounded-full overflow-hidden flex justify-center items-center'>
+        <div onMouseEnter={()=>router.prefetch(`/profile/${headerProfiles[index]._id}`)}  className=' size-16 relative bg-gray-200 rounded-full overflow-hidden flex justify-center items-center'>
             {headerProfiles[index]?.profilePicture&&(
                 <Link href={`/profile/${headerProfiles[index]._id}`}>
                     <Image src={headerProfiles[index]?.profilePicture} fill alt={`${headerProfiles[index]?.firstName.slice(0,2)}`} className='uppercase text-center align-middle object-cover text-xs rounded-full aspect-square'/>
-                </Link>
-                    
+                </Link>      
             )}
         </div>
         <p className='text-sm font-semibold'>{headerProfiles[index]?.firstName || "John"}</p>

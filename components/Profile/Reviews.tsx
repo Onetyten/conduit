@@ -10,6 +10,7 @@ import { profileInterface } from '@/lib/types'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Rating = RatingBase as unknown as React.FC<any>;
 
@@ -26,7 +27,7 @@ interface propType{
 export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef,reviewsReceived,loading,profile}:propType) {    
     const user = useSelector((state:RootState)=>state.user.user)
     const isOwnProfile = profile._id===user?._id
-    // const showReceivedReview = !isOwnProfile || reviewView==="received"
+    const router = useRouter()
     
   return (
     <div className='w-full font-semibold overflow-scroll text-conduit h-full flex justify-start mt-4 flex-col py-6 items-center gap-6'>
@@ -45,7 +46,7 @@ export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef
             reviewsSent.length>0?(
                     reviewsSent.map((item ,index)=>{
                         return(
-                            <div key={index} className='w-full rounded-md p-6 text-base flex-1 gap-3 flex bg-white shadow-md items-start'>
+                            <div onMouseEnter={()=>router.prefetch(`/service/${item.service._id}`)} key={index} className='w-full rounded-md p-6 text-base flex-1 gap-3 flex bg-white shadow-md items-start'>
                                 <Link href={`/service/${item.service._id}`} className='cursor-pointer' >
                                     <Image src={item.service?.galleryImages?.[0] || DEFAULT_PROFILE_IMAGE} alt='' width={48} height={48} className='aspect-square cursor-pointer rounded-full'/>
                                 </Link>

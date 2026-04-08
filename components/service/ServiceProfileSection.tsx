@@ -1,19 +1,22 @@
+"use client"
 import React from 'react'
 import { Avatar,AvatarImage } from '@/components/ui/avatar';
 import { serviceInterface} from '@/lib/types';
 import Link from 'next/link';
 import { DEFAULT_PROFILE_IMAGE } from '@/lib/constants';
+import { useRouter } from 'next/navigation';
 
 interface serviceInterfaceProp{
     serviceRedux:serviceInterface|null
 }
 
 export default function ServiceProfileSection({serviceRedux}:serviceInterfaceProp) {
+    const router = useRouter()
   return (
 
     <div className='flex gap-1 justify-between w-[90%] max-w-[98%] items-center'>
         <div className='flex items-center gap-2'>
-            <div className='relative w-12 min-w-12 aspect-square h-12'>
+            <div onMouseEnter={()=>router.prefetch(`/profile/${serviceRedux?.serviceProvider?._id}`)} className='relative w-12 min-w-12 aspect-square h-12'>
                 <Link href={`/profile/${serviceRedux?.serviceProvider?._id}`} >
                     <Avatar className='w-full h-full'>
                         <AvatarImage src={serviceRedux?.serviceProvider?.profilePicture || DEFAULT_PROFILE_IMAGE}/>

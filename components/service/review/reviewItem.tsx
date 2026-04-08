@@ -7,6 +7,7 @@ import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa6";
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Rating = RatingBase as unknown as React.FC<any>;
 
@@ -18,10 +19,11 @@ interface propTypes {
 
 export default function ReviewItem(props:propTypes) {
     const {item} = props 
+    const router = useRouter()
 
 
     return (
-    <div className='flex items-start p-1.5 px-4 gap-2'>     
+    <div onMouseEnter={()=>router.prefetch(`/profile/${item.userId}`)} className='flex items-start p-1.5 px-4 gap-2'>     
         <div className=' rounded-full w-8 h-8 relative bg-conduit/50 overflow-hidden'>
                 <Link href={`/profile/${item.userId}`} className='w-full h-full'>
                     <Image src={item.userProfile?.profilePicture ?? "/icons/profile.png"} fill alt={item.userProfile?.firstName.slice(0,2) || "AO"} className='capitalize object-cover w-full h-full'/>  

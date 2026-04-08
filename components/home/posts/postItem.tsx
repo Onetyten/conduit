@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { serviceInterface } from '@/lib/types';
 import useShowService from '@/hooks/useShowService';
 import PostImage from './PostImage';
+import { useRouter } from 'next/navigation';
 
 interface propTypes{
     index:number,
@@ -19,15 +20,15 @@ export default function PostItem(props:propTypes) {
     const [imageLoaded,setImageLoaded] = useState(false)
     const {post,index,openLink} = props
     const {isMobile,getService} = useShowService(post)
-
+    const router = useRouter()
 
 
   return (
     <div key={index} className='flex gap-3 w-full flex-col col-span-1'>
-        <div className="relative cursor-pointer h-80 sm:h-72">
+        <div onMouseEnter={()=>router.prefetch(`/service/${post._id}`)} className="relative cursor-pointer h-80 sm:h-72">
             {isMobile || openLink ? (
                 <Link href={`/service/${post._id}`}>
-                <PostImage post={post} openLink setImageLoaded={setImageLoaded} />
+                    <PostImage post={post} openLink setImageLoaded={setImageLoaded} />
                 </Link>
             ) : (
                 <div className='w-full h-full'  onClick={getService}>
@@ -44,7 +45,7 @@ export default function PostItem(props:propTypes) {
         </div>
                                         
         <div className='flex items-center justify-between '>
-            <div className='flex gap-2 text-sm items-center'>
+            <div onMouseEnter={()=>router.prefetch(`/service/${post._id}`)}  className='flex gap-2 text-sm items-center'>
                 <Link  href={`/service/${post._id}`} onClick={()=>{
                     if (openLink || isMobile) return;
                         getService();

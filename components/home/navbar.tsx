@@ -107,9 +107,12 @@ const NavbarAuth = () => {
                   Sign up
                 </button>
 
-                <Link href="/signin"  className='hover:text-conduit cursor-pointer text-foreground py-1 px-2 sm:px-5 sm:py-2rounded-full' >
-                  Sign In
-                </Link>
+                <div className='hover:text-conduit cursor-pointer text-foreground py-1 px-2 sm:px-5 sm:py-2 rounded-full' onMouseEnter={()=>router.prefetch(`/signin`)}>
+                  <Link href="/signin">
+                    Sign In
+                  </Link> 
+                </div>
+                
 
               </div>
             )
