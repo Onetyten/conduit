@@ -12,6 +12,7 @@ import { RootState } from '@/store'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { serviceFalse } from '@/state/showServiceSlice'
 import { useRouter } from 'next/navigation'
+import OutsideClickHandler from "react-outside-click-handler"
 
 
 
@@ -72,22 +73,26 @@ const NavbarAuth = () => {
                     </Link>
                   </div>
 
+                  <OutsideClickHandler onOutsideClick={()=>{setShowHamburger(!showHamburger)}}>
+                    <GiHamburgerMenu onClick={()=>{setShowHamburger(!showHamburger)}}/>
+                    {showHamburger&&(
+                      
+                      <div className='absolute text-sm flex justify-center items-center flex-col rounded-md cursor-pointer w-44 right-0 top-10 bg-conduit/20 backdrop-blur-xs text-foreground overflow-hidden z-10 shadow-md'>
 
-                  <GiHamburgerMenu onClick={()=>{setShowHamburger(!showHamburger)}}/>
-                  {showHamburger&&(
-                    <div className='absolute text-sm flex justify-center items-center flex-col rounded-md cursor-pointer w-44 right-0 top-10 bg-conduit/20 backdrop-blur-xs text-foreground overflow-hidden z-10 shadow-md'>
+                        <Link  href="/" className='hover:bg-background w-full h-full text-center p-3' >
+                          Create a service
+                        </Link>
 
-                      <Link  href="/" className='hover:bg-background w-full h-full text-center p-3' >
-                        Create a service
-                      </Link>
-
-                      <form action={()=>{dispatch(clearUser())}} className='hover:bg-softblue w-full h-full text-center p-3'>
-                        <button type='submit'>
-                          Log out
-                        </button>
-                      </form>
-                    </div>
-                  )}
+                        <form action={()=>{dispatch(clearUser())}} className='hover:bg-softblue w-full h-full text-center p-3'>
+                          <button type='submit'>
+                            Log out
+                          </button>
+                        </form>
+                      </div>
+                      
+                      
+                    )}
+                  </OutsideClickHandler>
 
                 </div>
                 
