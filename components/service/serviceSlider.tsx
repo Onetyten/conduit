@@ -26,7 +26,6 @@ const ServiceSlider = () => {
 
   async function LikePost() {
     if (!service) {
-        console.error("Missing service")
         return
     }
   

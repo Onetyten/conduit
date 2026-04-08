@@ -76,7 +76,7 @@ export default function ServiceProfileDetails({ serviceRedux }: serviceInterface
                 Delivery method : {serviceRedux?.deliveryMethod[0]}
             </div>
             
-            <div className='hover:bg-conduit text-background select-none p-2 px-4 h-9 flex items-center rounded-md bg-black cursor-pointer text-sm'>
+            <div className='hover:bg-black text-background select-none p-4 px-8 flex items-center rounded-md bg-conduit cursor-pointer text-sm'>
                 Book Service
             </div>
             <div className='text-sm flex w-full justify-center gap-6 '>

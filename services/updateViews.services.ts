@@ -8,8 +8,7 @@ export async function updateViews(service_id:string,user_id:string):Promise<numb
           const viewedPost = await Service.findByIdAndUpdate(service_id,{$addToSet:{viewedId:user_id}},{new:true})
             if (!viewedPost) return null
             return viewedPost.viewedId.length  
-        } catch (error) {
-            console.log("error while updating views",error)
+        } catch {
             return null
         }  
 }

@@ -18,14 +18,12 @@ export default function useFetchReviews(id:string,page:number){
             const response = await api.get(`/api/review/fetchbyservice/?${params}`)
 
             const data = await response.data
-            console.log(data)
             setAverage(data.averageRating)
             setTotalPage(data.pagination.totalpage || 0)
             setTotalReviews(data.pagination.total || 0)
             return data.data
         }
         catch (error) {
-            console.error(error)
             setError(error instanceof Error?error.message:"something went wrong ")
             return []
         }

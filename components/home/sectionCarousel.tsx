@@ -26,13 +26,11 @@ const SectionCarousel = () => {
       const response = await axios.get('/api/getTags')
       const tagData = response.data;
       if (!tagData.success) {
-        console.log(tagData.message);
         return [];
       }
       setTagList(prevList=>[...prevList,...tagData.data]);
     }
-    catch (error) {
-      console.error("Error fetching tags:", error);
+    catch {
       return [];
     }
   }
@@ -71,7 +69,7 @@ const SectionCarousel = () => {
   return (
     
     <div ref={scrollContainerRef} onMouseDown={HandleCanDrag} onMouseUp={HandleStopDrag} onMouseLeave={HandleStopDrag} onMouseMove={HandleMouseMove}
-    className='flex w-full overflow-x-scroll cursor-grab hide-scrollbar capitalize pt-5 pb-3 mb-2 text-sm sm:text-base text-muted gap-2 relative flex-nowrap'>
+    className='flex w-full max-w-full overflow-x-scroll cursor-grab hide-scrollbar capitalize pt-5 pb-3 mb-2 text-sm sm:text-base text-muted gap-2 relative flex-nowrap'>
         {tagList.map((item:tagtype,index:number)=>{
             return(
                 <div key={index} onClick={()=>{setTag(item.tag)}} className={`${item.tag == keywordRedux?"bg-softblue text-conduit font-medium":""} p-2 px-5 rounded-full cursor-pointer hover:bg-softblue/80 transition-all`}>

@@ -73,7 +73,7 @@ const NavbarAuth = () => {
                     </Link>
                   </div>
 
-                  <OutsideClickHandler onOutsideClick={()=>{setShowHamburger(!showHamburger)}}>
+                  <OutsideClickHandler onOutsideClick={()=>{setShowHamburger(false)}}>
                     <GiHamburgerMenu onClick={()=>{setShowHamburger(!showHamburger)}}/>
                     {showHamburger&&(
                       

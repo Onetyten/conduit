@@ -14,14 +14,11 @@ const HeaderSlide = () => {
     const limit = 10
 
     async function fetchRandomProfiles (){
-        try {
-            const response = await axios.get(`/api/profile/fetchProfilesInHead?limit=${limit}`)
-            const profiles = await response.data
-            setHeaderProfiles(profiles.data)
-        } 
-        catch (error) {
-            console.error(error)
-        }        
+        
+        const response = await axios.get(`/api/profile/fetchProfilesInHead?limit=${limit}`)
+        const profiles = await response.data
+        setHeaderProfiles(profiles.data)
+         
     }
     useEffect(()=>{
         fetchRandomProfiles()

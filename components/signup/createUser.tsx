@@ -58,7 +58,6 @@ export default function CreateUser(props:propTypes) {
     } 
 
     async function CreateAccount(){
-        // console.log(newUser)
         setUploadingProfile(true)
         const userData = new FormData()
         userData.append('firstName',newUser.firstname)
@@ -114,7 +113,7 @@ export default function CreateUser(props:propTypes) {
             setSlideIndex(slideIndex-3)
         }
 
-        console.log("is talent",newUser.isTalent)
+
     }
 
     

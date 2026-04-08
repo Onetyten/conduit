@@ -57,9 +57,7 @@ export default function useFetchProfileServices(profile:profileInterface){
             setPage(page+1)
         }
       }
-      catch (error) {
-          console.log(error)
-      }
+
       finally{
         setLoading(false)
       }

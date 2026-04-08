@@ -30,7 +30,6 @@ export default function useGetProfile(id:string){
             setProfileData(data.user)
         } 
         catch (error) {
-            console.error(error)
             setError(error instanceof Error?error.message:"something went wrong ")
         }
         finally{

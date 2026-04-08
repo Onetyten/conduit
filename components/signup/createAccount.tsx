@@ -71,23 +71,16 @@ export default function CreateAccount() {
 
 
     useEffect(()=>{
-        async function getLocationalData(){
-            
-            try {
-                if (LocationalRedux && LocationalRedux?.city && LocationalRedux.country_name && LocationalRedux.district){
-                    setNewUser(prev=>({...prev, district:LocationalRedux.district, country:LocationalRedux.country_name, state:LocationalRedux.state_prov  }))
-                    return 
-                }
-                else{
-                    const response =await axios.get(`https://api.ipgeolocation.io/ipgeo?apiKey=${process.env.NEXT_PUBLIC_IP_GEOLOCATION_API_KEY}`)
-                    if (response.status != 200 ) return
-                    dispatch(setLocation(response.data))
-                    setNewUser(prev=>({...prev, district:response.data.district, country:response.data.country_name, state:response.data.state_prov  }))
-                }
-
-            } 
-            catch (error) {
-                console.log(error)
+        async function getLocationalData(){        
+            if (LocationalRedux && LocationalRedux?.city && LocationalRedux.country_name && LocationalRedux.district){
+                setNewUser(prev=>({...prev, district:LocationalRedux.district, country:LocationalRedux.country_name, state:LocationalRedux.state_prov  }))
+                return 
+            }
+            else{
+                const response =await axios.get(`https://api.ipgeolocation.io/ipgeo?apiKey=${process.env.NEXT_PUBLIC_IP_GEOLOCATION_API_KEY}`)
+                if (response.status != 200 ) return
+                dispatch(setLocation(response.data))
+                setNewUser(prev=>({...prev, district:response.data.district, country:response.data.country_name, state:response.data.state_prov  }))
             }
             
         }

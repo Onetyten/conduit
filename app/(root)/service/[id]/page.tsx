@@ -52,7 +52,6 @@ export default function Page() {
             setService({...service, isLiked: newIsLiked, likeCount: newLikeCount
             })
             const likeResponse = await api.patch(`/api/service/updateLikes`, { id: service._id  })
-            console.log(likeResponse.data)
         
             if (likeResponse.data.likeCount !== newLikeCount || likeResponse.data.isLiked !== newIsLiked) {
                 setService({...service,likeCount: likeResponse.data.likeCount, isLiked:likeResponse.data.postLiked})

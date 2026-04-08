@@ -44,9 +44,6 @@ export default function useFetchServices(){
             }
             
         }
-        catch (error) {
-            console.error("error fetching posts",error)
-        }
         finally{
             setLoading(false)
         }
@@ -112,9 +109,6 @@ export default function useFetchServices(){
                 setPage(2)
                 setHasMore(true)
                 }
-            }
-            catch (error) {
-                console.log(error)
             }
             finally{
                 setIsSearching(false)

@@ -37,7 +37,7 @@ export default function ReviewInput(props:propType) {
             return;
         }
 
-        try {
+        // try {
             const response = await axios.post('/api/review/post',{userId: profile._id, serviceId:service._id, review: reviewText, rating});
             const data = await response.data;
             const userReviewProfile = {
@@ -62,10 +62,10 @@ export default function ReviewInput(props:propType) {
             })
             setRating(0);
             setReviewText(''); 
-        } 
-        catch (error) {
-            console.error(error);
-        }
+        // } 
+        // catch (error) {
+        //     // console.error(error);
+        // }
     };
 
     return (
