@@ -49,7 +49,6 @@ export async function GET(request:Request) {
         const {metadata,data} = result[0]
 
         const total = metadata[0]?.total || 0
-        console.log(metadata)
         
         return NextResponse.json({message:"reviews fetched successfully",data,averageRating:metadata[0]?.averageRating||0,pagination:{total ,totalpage:Math.ceil(total/limit)}},{status:200})
     }

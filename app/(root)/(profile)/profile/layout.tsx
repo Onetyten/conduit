@@ -1,6 +1,6 @@
 'use client'
 import Sidebar from '@/components/Profile/Sidebar';
-import React from 'react'
+import React, { useState } from 'react'
 
 interface propType{
     children:React.ReactNode
@@ -9,7 +9,7 @@ interface propType{
 export default function Layout({children}:propType) {
 
   return (
-    <div className='w-full flex h-screen overflow-hidden'>
+    <div className='w-full flex h-screen relative overflow-hidden'>
         <Sidebar/>
         <div className='w-full overflow-y-scroll shadow-xl min-h-screen'>
           {children}

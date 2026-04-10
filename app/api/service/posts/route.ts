@@ -11,11 +11,11 @@ export async function GET(request:Request) {
     const page = Number(searchParams.get('page')) || 1
     const limit = Number(searchParams.get('limit')) || DEFAULT_LIMIT
     const keyword = searchParams.get('q')
-    const userId = getUserFromRequest(request)
+    const userId = await getUserFromRequest(request)
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const filter:any ={}
 
-    if (typeof keyword === "string" && keyword.trim.length>0 ){
+    if (typeof keyword === "string" && keyword.trim().length>0 ){
         const words  = keyword.trim().split(/\s+/)
         filter.$or = words.flatMap((word)=>[
             { title:{$regex:word, $options:'i'}},
@@ -56,7 +56,7 @@ export async function GET(request:Request) {
 
         const totalPages = Math.ceil(totalPosts/limit)
         const hasMore = totalPages>page
-        return NextResponse.json({ message:"Posts retrieved Successfully",posts,currentPage:page,totalPages,hasMore},{status:200})
+        return NextResponse.json({ message:"Posts retrieved Successfully",posts,currentPage:page,totalPages,hasMore,totalPosts},{status:200})
 
 
     }

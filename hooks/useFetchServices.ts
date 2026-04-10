@@ -1,11 +1,19 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import api from "@/lib/api"
+import { serviceInterface } from "@/lib/types"
 import { addPosts, clearPosts, setPosts } from "@/state/postListSlice"
 import { RootState } from "@/store"
 import { useCallback, useEffect, useRef, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
+interface postResponseType{
+    message:string;
+    posts: serviceInterface[];
+    currentPage: number;
+    totalPages: number;
+    hasMore: boolean
+}
 
 
 export default function useFetchServices(){
@@ -13,19 +21,14 @@ export default function useFetchServices(){
     const triggerRef = useRef(null)
     const observer = useRef<IntersectionObserver|null>(null)
     const prevKeywordRef = useRef(keywordRedux)    
-    const [isSearching,setIsSearching] = useState(false)
     const [loading,setLoading] = useState(false)
     const post = useSelector((state:RootState)=>state.posts.posts)
     const [page,setPage] = useState(1)
     const [hasMore,setHasMore] = useState(true)
-    const limit = 20 
-
+    const limit = 20
     const dispatch = useDispatch()
-    
-    
 
-
-    const fetchPost = useCallback(async (limit:number,Currentpage:number)=>{
+    const fetchPost = useCallback(async (limit:number,Currentpage:number):Promise<postResponseType|null>=>{
         setLoading(true)
         try {                
             let url = `/api/service/posts?page=${Currentpage}&limit=${limit}`;
@@ -34,15 +37,16 @@ export default function useFetchServices(){
                 url += `&q=${encodeURIComponent(keywordRedux)}`;
             }
             const Response = await api.get(url)
-            const PostResponse = await Response.data
+            const PostResponse = Response.data
+   
             const postData  = PostResponse?.posts
             if (postData!=null && postData.length>0){
-                return postData
+                return PostResponse
             }
-            else{
-                return []
-            }
-            
+            return null
+        }
+        catch{
+            return null
         }
         finally{
             setLoading(false)
@@ -53,21 +57,27 @@ export default function useFetchServices(){
 
 
     const loadMorePost  = useCallback(async()=>{
-        if ( !hasMore || loading || (keywordRedux && keywordRedux !== "" && keywordRedux !== "All services")) return;
-
+        if ( !hasMore || loading || !keywordRedux) return;        
         const newPost  = await fetchPost(limit,page)
-        if (newPost && newPost.length>0){
-            dispatch(addPosts(newPost))
-            setPage((prevPage)=>prevPage+1)
-            if (newPost.length<limit){
-                setHasMore(false)
+        const posts = newPost?.posts
+
+        if (posts && posts.length>0){
+            if (page===1){
+                dispatch(setPosts(posts))
             }
+            else{
+                dispatch(addPosts(posts))
+            }
+    
+            setPage((prevPage)=>prevPage+1)
+            setHasMore(newPost.hasMore)
         }
         else{
             setHasMore(false) 
         }
         
     },[loading,fetchPost,hasMore,keywordRedux,page])
+
 
     // call the load more post callback when/if the trigger element is in view
     useEffect(()=>{
@@ -97,38 +107,16 @@ export default function useFetchServices(){
     },[loading,loadMorePost])
 
 
-
-    // Load tag posts when the keyword changes
-    useEffect(()=>{
-        async function loadTagPosts(){
-            try {
-                setIsSearching(true)
-                if (keywordRedux && keywordRedux !== "" && keywordRedux !== "All services"){
-                const newPost  = await fetchPost(50,1)
-                dispatch(setPosts(newPost))
-                setPage(2)
-                setHasMore(true)
-                }
-            }
-            finally{
-                setIsSearching(false)
-            }
-            
-        }
-        loadTagPosts()
-    },[fetchPost, keywordRedux])
-
-
     useEffect(()=>{
         const prevKeyword = prevKeywordRef.current
-
-        if (prevKeyword !== "All services" && keywordRedux === "All services" ){
+        if (prevKeyword !== keywordRedux ){
             dispatch(clearPosts())
             setPage(1)
+            setHasMore(true)
         }
         prevKeywordRef.current = keywordRedux
         
         },[keywordRedux])
 
-    return {keywordRedux,triggerRef,isSearching,post,loading}
+    return {keywordRedux,triggerRef,post,loading}
 }

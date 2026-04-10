@@ -30,7 +30,7 @@ export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef
     const router = useRouter()
     
   return (
-    <div className='w-full font-semibold overflow-scroll text-conduit h-full flex justify-start mt-4 flex-col py-6 items-center gap-6'>
+    <div className='w-full font-semibold overflow-y-scroll text-conduit h-full flex justify-start mt-4 flex-col py-6 items-center gap-6'>
 
         {isOwnProfile && (
             <div className='w-full flex justify-center items-center'>
@@ -41,29 +41,30 @@ export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef
             </div>
         )}
         
-        <div className='text-xs flex-col w-xl relative bg-softblue py-6 gap-6 justify-start flex rounded-md p-6 '>
+        <div className='text-xs flex-col sm:w-xl max-w-full relative bg-softblue gap-6 justify-start flex rounded-md p-3 sm:p-6 '>
         {reviewView==="sent" && isOwnProfile ?(
             reviewsSent.length>0?(
                     reviewsSent.map((item ,index)=>{
                         return(
-                            <div onMouseEnter={()=>router.prefetch(`/service/${item.service._id}`)} key={index} className='w-full rounded-md p-6 text-base flex-1 gap-3 flex bg-white shadow-md items-start'>
-                                <Link href={`/service/${item.service._id}`} className='cursor-pointer' >
-                                    <Image src={item.service?.galleryImages?.[0] || DEFAULT_PROFILE_IMAGE} alt='' width={48} height={48} className='aspect-square cursor-pointer rounded-full'/>
+                            <div onMouseEnter={()=>router.prefetch(`/service/${item.service._id}`)} key={index} className='w-full rounded-md text-base flex-1 gap-3 p-3 sm:p-6 flex bg-white shadow-md items-start'>
+
+                                <Link href={`/service/${item.service._id}`} className='cursor-pointer relative size-10 aspect-square sm:size-18' >
+                                    <Image src={item.service?.galleryImages?.[0] || DEFAULT_PROFILE_IMAGE} alt='' fill className='aspect-square cursor-pointer rounded-full'/>
                                 </Link>
 
                                 <div className='flex flex-col gap-1'>
 
-                                    <Link href={`/service/${item.service._id}`} className='text-lg hover:underline cursor-pointer' >
+                                    <Link href={`/service/${item.service._id}`} className='text-base sm:text-lg hover:underline cursor-pointer' >
                                         {item.service.title} by <span className='text-muted'> {item.service.serviceProvider?.firstName} {item.service.serviceProvider?.lastName} </span>
                                     </Link>
-                                    <p className='mb-2'>
+                                    <p className='mb-2 font-medium'>
                                         {item.review}
                                     </p>
-                                    <div className='flex justify-between text-sm'>
+                                    <div className='flex flex-col sm:flex-row gap-1 justify-between w-full text-sm'>
                                         <Rating readonly initialRating={item.rating} emptySymbol={<FaRegStar className="text-gray-300" size={20} />} fullSymbol={<FaStar className="text-yellow-500" size={20} />}/>
 
                                         <p className='text-muted'>
-                                            By {item.userId === user?._id?"you":`${profile.firstName} ${profile.lastName}`}
+                                            Reviewed by {item.userId === user?._id?"you":`${profile.firstName} ${profile.lastName}`}
                                         </p>
                                     </div>
                                 </div>
@@ -77,21 +78,26 @@ export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef
             reviewsReceived.length>0?(
                 reviewsReceived.map((item ,index)=>{
                         return(
-                            <div key={index} className='w-full rounded-md p-6 text-base flex-1 gap-3 flex bg-white shadow-md items-start'>
-                                <Image src={item.reviewer.profilePicture || DEFAULT_PROFILE_IMAGE} alt='' width={48} height={48} className='aspect-square cursor-pointer rounded-full'/>
+                            <div key={index} className='w-full rounded-md p-3 sm:p-6 text-base flex-1 gap-3 flex bg-white shadow-md items-start'>
+                                <Link href={`/profile/${item.reviewer._id}`} className='cursor-pointer relative size-10 aspect-square sm:size-18'>
+                                    <Image src={item.reviewer.profilePicture || DEFAULT_PROFILE_IMAGE} alt='' fill className='aspect-square cursor-pointer rounded-full'/>
+                                </Link>
 
                                 <div className='flex flex-col gap-1'>
-                                    <p className='text-lg hover:underline cursor-pointer' >
-                                        {item.service.title} by <span className='text-muted'> {profile.firstName} {profile.lastName} </span>
-                                    </p>
-                                    <p className='mb-2'>
+                                    <Link href={`/service/${item.service._id}`} className='text-base sm:text-lg hover:underline cursor-pointer' >
+                                        <p className='text-lg hover:underline cursor-pointer' >
+                                            {item.service.title} by <span className='text-muted'> {profile.firstName} {profile.lastName} </span>
+                                        </p>
+                                    </Link>
+                                    
+                                    <p className='mb-2 font-medium'>
                                         {item.review}
                                     </p>
-                                    <div className='flex justify-between text-sm'>
+                                    <div className='flex  flex-col sm:flex-row gap-1 justify-between text-sm'>
                                         <Rating readonly initialRating={item.rating} emptySymbol={<FaRegStar className="text-gray-300" size={20} />} fullSymbol={<FaStar className="text-yellow-500" size={20} />}/>
 
                                         <p className='text-muted'>
-                                            reviewed by {item.reviewer?.firstName} {item.reviewer?.lastName}
+                                            Reviewed by {item.reviewer?.firstName} {item.reviewer?.lastName}
                                         </p>
                                     </div>
                                 </div>

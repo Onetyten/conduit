@@ -50,7 +50,7 @@ export default function ServiceViewer({profile}:propType) {
         </div>
 
         <div className='flex gap-4'>
-          <div className='flex text-sm items-center capitalize gap-2'>
+          <div className='sm:flex hidden text-sm items-center capitalize gap-2'>
             <CiLocationOn className='text-lg'/>
             <p>{profile.location.state}, {profile.location.country}</p>
           </div>

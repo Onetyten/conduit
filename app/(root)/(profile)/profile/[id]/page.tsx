@@ -3,6 +3,7 @@ import { Avatar,AvatarFallback,AvatarImage } from '@/components/ui/avatar'
 import { format } from 'date-fns'
 import {profileInterface}  from '@/lib/types'
 import ServiceViewer from '@/components/Profile/ServiceViewer'
+import { CiLocationOn } from 'react-icons/ci'
 
 
 async function getProfile(id:string):Promise<profileInterface> {
@@ -29,23 +30,23 @@ export default async function page({ params}: { params: Promise<{ id: string }> 
   const formattedCreationDate = creationDate && !isNaN(creationDate.getTime()) ? format(creationDate, "MMM d, yyyy") : "Unknown Date";
 
   return (
-    <div className='w-full min-h-screen pb-10 flex gap-10 px-[10%] flex-col relative'>
+    <div className='w-full min-h-screen mt-6 sm:mt-0 pb-10 flex gap-10 px-6 sm:px-[10%] flex-col relative'>
 
         <div className='flex flex-col w-full mt-16 gap-4'>
-          <div className='w-full flex gap-2 justify-between'>
+          <div className='w-full flex flex-col md:flex-row gap-2 justify-between'>
             <div className='w-full flex gap-2 items-center '>
-              <Avatar className='size-24 aspect-square object-cover'>
+              <Avatar className='size-20 sm:size-24 aspect-square object-cover'>
                 <AvatarImage src ={profileData?.profilePicture}/>
                 <AvatarFallback>{`${profileData?.lastName?.slice(0,1) || ""}${profileData?.firstName?.slice(0,1)||""}`}</AvatarFallback>
               </Avatar>
 
               <div className='flex-1 flex text-sm font-medium flex-col gap-2'>
-                <p className='text-4xl text-wrap gap break-all hyphens-auto w-full font-semibold'>{`${profileData?.lastName|| "John"} ${profileData?.firstName || "Doe"}`}</p>
+                <p className='text-2xl sm:text-4xl text-wrap gap break-normal hyphens-auto w-full font-semibold'>{`${profileData?.lastName|| "John"} ${profileData?.firstName || "Doe"}`}</p>
                 <p className='break-all hyphens-auto'>{`${profileData?.email || "john_Doe@gmail.com"}`}</p>
               </div>
               
             </div>
-            <div className=' h-12 flex items-center px-8 text-white font-medium rounded-full cursor-pointer hover:bg-black transition-colors duration-200 text-nowrap p-0 bg-conduit'>
+            <div className='h-12 mt-4 md:mt-0 flex items-center px-8 text-white font-medium rounded-xl justify-center  md:rounded-full cursor-pointer hover:bg-black transition-colors duration-200 text-nowrap p-0 bg-conduit'>
               Get in touch
             </div>
           </div>
@@ -62,7 +63,9 @@ export default async function page({ params}: { params: Promise<{ id: string }> 
              
             </div>
           )}
+
           <p className='text-xs font-normal'>{`${profileData?.isTalent?'Talent':'Client'} since ${formattedCreationDate}`}</p>
+          <p className='text-xs sm:hidden block'>{profileData.location.state}, {profileData.location.country}</p>
 
         </div>
 
