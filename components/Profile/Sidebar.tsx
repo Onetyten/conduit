@@ -7,13 +7,14 @@ import { RootState } from '@/store'
 import { useSelector } from 'react-redux'
 import Logo from '@/public/Images/Logo.png'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { Banknote, CircleUser, House, MessageSquareMore, Wallet } from 'lucide-react'
+import { usePathname, useRouter } from 'next/navigation'
+import { Banknote, CircleUser, House, LogOut, MessageSquareMore, Wallet } from 'lucide-react'
 
 export default function Sidebar() {
     const userData = useSelector((state:RootState)=>state.user.user)
     const [showSideBar,setShowSidebar] = useState(false)
     const router = useRouter()
+    const currentPath = usePathname()
     const linkData = [
       {name:"Home",href:`/profile/${userData?._id}`,icon:House},
       {name:"Account",href:"/profile/account",icon:CircleUser},
@@ -24,11 +25,11 @@ export default function Sidebar() {
     if (!userData) return
 
   return (
-    <div onClick={()=>setShowSidebar(false)} className={`w-full absolute sm:relative z-40  ${showSideBar?"bg-conduit/50 pointer-events-auto w-full sm:w-64 md:w-80 lg:w-96 backdrop-blur-lg max-w-full lg:max-w-96 md:max-w-80 flex sm:max-w-64 h-full":"pointer-events-none sm:pointer-events-auto w-auto sm:w-16 sm:max-w-16 h-18 sm:h-full sm:bg-conduit/50"}`}>
+    <div onClick={()=>setShowSidebar(false)} className={`w-full absolute sm:relative z-40  ${showSideBar?"bg-conduit/50 h-full pointer-events-auto w-full sm:w-64 md:w-80 lg:w-96 backdrop-blur-lg max-w-full lg:max-w-96 md:max-w-80 flex sm:max-w-64 ":"pointer-events-none sm:pointer-events-auto w-auto sm:w-16 sm:max-w-16 h-18 sm:h-full  sm:bg-conduit/50"}`}>
 
       <div onClick={(e)=>e.stopPropagation()} className={` overflow-y-scroll ${showSideBar?" w-[80%] sm:w-96 p-5 bg-softblue flex-col ":"sm:p-5 flex-row sm:flex-col items-center sm:items-start px-4"} shadow-lg bg-softblue h-full transition-transform duration-200 max-w-full flex-col flex justify-between`}>
 
-        <div className={`flex flex-col gap-3 ${showSideBar?"items-start":"items-center"} h-full w-full`}>
+        <div className={`flex flex-col gap-3 ${showSideBar?"items-start h-full ":"items-center sm:h-full"}  w-full`}>
 
           <div onMouseEnter={()=>router.prefetch(`/`)} className={`flex items-center pointer-events-auto w-full justify-between ${showSideBar?"flex-row":"sm:flex-col-reverse"}`}>
            
@@ -61,13 +62,13 @@ export default function Sidebar() {
             
           </div>
 
-          <div className='w-full flex-1 flex flex-col justify-between h-full'>
+          <div className={`w-full flex-1 ${showSideBar?"flex":"sm:flex hidden"}  flex-col justify-between h-full`}>
             <div className='gap-1 mt-12 flex flex-col'>
               {linkData.map((item,index)=>{
                 return(
-                  <Link href={item.href} key={index} className='flex gap-2 text-conduit w-full hover:bg-conduit/10 hover:shadow-md transition-colors duration-100 p-5 rounded-xl'>
-                    <item.icon/>
-                    {item.name}
+                  <Link href={item.href} key={index} className={`flex gap-2 text-conduit w-full transition-colors duration-100 ${showSideBar?`sm:p-5 ${currentPath===item.href?"sm:bg-white text-muted sm:text-conduit":""} my-5 sm:my-0 sm:hover:bg-conduit/10 sm:hover:shadow-md`:`my-5 hover:text-muted ${currentPath===item.href?"text-muted":""} `} rounded-xl`}>
+                    <item.icon/> 
+                    {showSideBar && item.name }
 
                   </Link>
                 )
@@ -75,9 +76,9 @@ export default function Sidebar() {
 
             </div>
 
-            <div className='font-semibold'>
-
-              Sign out
+            <div className={`font-bold flex gap-2 cursor-pointer hover:font-extrabold transition-all duration-300 text-red-500 my-8`}>
+              <LogOut/>
+              {showSideBar && "Sign out" }
             </div>
           </div>
 

@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ArrowLeft, Home, Unplug } from 'lucide-react'
+import { ArrowLeft, Unplug } from 'lucide-react'
 import Image from 'next/image'
 import Logo from '@/public/Images/Logo.png'
 import geometric from '@/public/Images/Geometric.png'
