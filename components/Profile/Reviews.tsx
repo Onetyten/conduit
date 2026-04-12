@@ -41,26 +41,26 @@ export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef
             </div>
         )}
         
-        <div className='text-xs flex-col sm:w-xl max-w-full relative bg-softblue gap-6 justify-start flex rounded-md p-3 sm:p-6 '>
+        <div className='text-xs flex-col md:w-xl max-w-full relative bg-softblue gap-6 justify-start flex rounded-md p-3 md:p-6 '>
         {reviewView==="sent" && isOwnProfile ?(
             reviewsSent.length>0?(
                     reviewsSent.map((item ,index)=>{
                         return(
-                            <div onMouseEnter={()=>router.prefetch(`/service/${item.service._id}`)} key={index} className='w-full rounded-md text-base flex-1 gap-3 p-3 sm:p-6 flex bg-white shadow-md items-start'>
+                            <div onMouseEnter={()=>router.prefetch(`/service/${item.service._id}`)} key={index} className='w-full rounded-md text-base flex-1 gap-3 p-3 md:p-6 flex bg-white shadow-md items-start'>
 
-                                <Link href={`/service/${item.service._id}`} className='cursor-pointer relative size-10 aspect-square sm:size-18' >
+                                <Link href={`/service/${item.service._id}`} className='cursor-pointer relative size-10 aspect-square md:size-18' >
                                     <Image src={item.service?.galleryImages?.[0] || DEFAULT_PROFILE_IMAGE} alt='' fill className='aspect-square cursor-pointer rounded-full'/>
                                 </Link>
 
                                 <div className='flex flex-col gap-1'>
 
-                                    <Link href={`/service/${item.service._id}`} className='text-base sm:text-lg hover:underline cursor-pointer' >
+                                    <Link href={`/service/${item.service._id}`} className='text-base md:text-lg hover:underline cursor-pointer' >
                                         {item.service.title} by <span className='text-muted'> {item.service.serviceProvider?.firstName} {item.service.serviceProvider?.lastName} </span>
                                     </Link>
                                     <p className='mb-2 font-medium'>
                                         {item.review}
                                     </p>
-                                    <div className='flex flex-col sm:flex-row gap-1 justify-between w-full text-sm'>
+                                    <div className='flex flex-col md:flex-row gap-1 justify-between w-full text-sm'>
                                         <Rating readonly initialRating={item.rating} emptySymbol={<FaRegStar className="text-gray-300" size={20} />} fullSymbol={<FaStar className="text-yellow-500" size={20} />}/>
 
                                         <p className='text-muted'>
@@ -78,13 +78,13 @@ export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef
             reviewsReceived.length>0?(
                 reviewsReceived.map((item ,index)=>{
                         return(
-                            <div key={index} className='w-full rounded-md p-3 sm:p-6 text-base flex-1 gap-3 flex bg-white shadow-md items-start'>
-                                <Link href={`/profile/${item.reviewer._id}`} className='cursor-pointer relative size-10 aspect-square sm:size-18'>
+                            <div key={index} className='w-full rounded-md p-3 md:p-6 text-base flex-1 gap-3 flex bg-white shadow-md items-start'>
+                                <Link href={`/profile/${item.reviewer._id}`} className='cursor-pointer relative size-10 aspect-square md:size-18'>
                                     <Image src={item.reviewer.profilePicture || DEFAULT_PROFILE_IMAGE} alt='' fill className='aspect-square cursor-pointer rounded-full'/>
                                 </Link>
 
                                 <div className='flex flex-col gap-1'>
-                                    <Link href={`/service/${item.service._id}`} className='text-base sm:text-lg hover:underline cursor-pointer' >
+                                    <Link href={`/service/${item.service._id}`} className='text-base md:text-lg hover:underline cursor-pointer' >
                                         <p className='text-lg hover:underline cursor-pointer' >
                                             {item.service.title} by <span className='text-muted'> {profile.firstName} {profile.lastName} </span>
                                         </p>
@@ -93,7 +93,7 @@ export default function Reviews({reviewsSent,reviewView,setReviewView,triggerRef
                                     <p className='mb-2 font-medium'>
                                         {item.review}
                                     </p>
-                                    <div className='flex  flex-col sm:flex-row gap-1 justify-between text-sm'>
+                                    <div className='flex  flex-col md:flex-row gap-1 justify-between text-sm'>
                                         <Rating readonly initialRating={item.rating} emptySymbol={<FaRegStar className="text-gray-300" size={20} />} fullSymbol={<FaStar className="text-yellow-500" size={20} />}/>
 
                                         <p className='text-muted'>

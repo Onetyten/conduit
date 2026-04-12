@@ -6,7 +6,7 @@ interface propType{
 
 const NoReview = ({loading}:propType)=>{
     return(
-        <div className='text-2xl w-full flex justify-center font-semibold text-muted'>
+        <div className=' text-xl md:text-2xl px-6 md:px-0 w-full flex justify-center font-semibold text-muted'>
             {loading?(
                 <Digital size={30} color="#373f51" />
             ):(

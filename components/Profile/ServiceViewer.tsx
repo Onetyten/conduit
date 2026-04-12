@@ -50,7 +50,7 @@ export default function ServiceViewer({profile}:propType) {
         </div>
 
         <div className='flex gap-4'>
-          <div className='sm:flex hidden text-sm items-center capitalize gap-2'>
+          <div className='md:flex hidden text-sm items-center capitalize gap-2'>
             <CiLocationOn className='text-lg'/>
             <p>{profile.location.state}, {profile.location.country}</p>
           </div>
@@ -72,7 +72,7 @@ export default function ServiceViewer({profile}:propType) {
 
       <div className='h-full'>
         {currentpageIndex===0?(
-          <Services loading={serviceLoading} triggerRef={serviceTriggerRef} serviceList={serviceList} setServiceList={setServiceList}/>
+          <Services profile={profile} loading={serviceLoading} triggerRef={serviceTriggerRef} serviceList={serviceList} setServiceList={setServiceList}/>
         ):(
           <Reviews profile={profile} reviewsReceived={reviewsReceived} loading={reviewLoading} triggerRef={triggerRef} reviewsSent={reviewsSent} reviewView={reviewView} setReviewView={setReviewView} />
         )}

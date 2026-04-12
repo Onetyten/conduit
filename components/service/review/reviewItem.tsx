@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa6";
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Rating = RatingBase as unknown as React.FC<any>;
 

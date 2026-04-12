@@ -1,19 +1,24 @@
 'use client'
-import { serviceInterface } from '@/lib/types'
+import { profileInterface, serviceInterface } from '@/lib/types'
 import React from 'react'
 import PostItem from '../home/posts/postItem'
 import { Digital } from 'react-activity'
 import { Button } from '../ui/button'
 import { Plus } from 'lucide-react'
+import { useSelector } from 'react-redux'
+import { RootState } from '@/store'
 
 interface propType{
     serviceList:serviceInterface[]
     setServiceList:React.Dispatch<React.SetStateAction<serviceInterface[]>>
     triggerRef: (node: HTMLDivElement | null) => void
     loading:boolean
+    profile: profileInterface
 }
 
-export default function Services({serviceList,loading,triggerRef}:propType) {
+export default function Services({serviceList,loading,triggerRef,profile}:propType) {
+    const user = useSelector((state:RootState)=>state.user.user)
+    const isOwnProfile = profile._id===user?._id
   return (
     <div className='w-full flex flex-col gap-4 items-center'>
         <div className='w-full font-semibold text-muted h-full flex justify-center items-center min-h-[20dvh]'>
@@ -36,10 +41,12 @@ export default function Services({serviceList,loading,triggerRef}:propType) {
                 
                 )}
         </div>
-        <Button className='bg-foreground cursor-pointer hover:bg-conduit flex justify-center items-center text-background p-7 min-w-48 rounded-full' >
-            <Plus className='text-2xl' size={40}/>
-            Create a service
-        </Button>
+        {isOwnProfile && 
+            <Button className='bg-foreground cursor-pointer hover:bg-conduit flex justify-center items-center text-background p-7 min-w-48 rounded-full' >
+                <Plus className='text-2xl' size={40}/>
+                Create a service
+            </Button>
+        }
         <div ref={triggerRef} className='size-4'>
 
         </div>
