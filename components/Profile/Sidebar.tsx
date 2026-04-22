@@ -4,15 +4,17 @@ import React, { useState } from 'react'
 import { BsLayoutSidebarInset, BsLayoutSidebarInsetReverse } from 'react-icons/bs'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { RootState } from '@/store'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import Logo from '@/public/Images/Logo.png'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { Banknote, CircleUser, House, LogOut, MessageSquareMore, Wallet } from 'lucide-react'
+import { clearUser } from '@/state/userSlice'
 
 export default function Sidebar() {
     const userData = useSelector((state:RootState)=>state.user.user)
     const [showSideBar,setShowSidebar] = useState(false)
+    const dispatch = useDispatch()
     const router = useRouter()
     const currentPath = usePathname()
     const linkData = [
@@ -76,10 +78,14 @@ export default function Sidebar() {
 
             </div>
 
-            <div className={`font-bold flex gap-2 cursor-pointer hover:font-extrabold transition-all duration-300 text-red-500 my-8`}>
+            <button onClick={()=>{
+              router.replace("/")
+              dispatch(clearUser())
+            }} 
+            className={`font-bold flex gap-2 cursor-pointer hover:font-extrabold transition-all duration-300 text-red-500 my-8`}>
               <LogOut/>
               {showSideBar && "Sign out" }
-            </div>
+            </button>
           </div>
 
 

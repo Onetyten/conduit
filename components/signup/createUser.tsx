@@ -57,12 +57,13 @@ export default function CreateUser(props:propTypes) {
         
     } 
 
+    
     async function CreateAccount(){
         setUploadingProfile(true)
         const userData = new FormData()
         userData.append('firstName',newUser.firstname)
         userData.append('lastName',newUser.lastname)
-        userData.append('email',newUser.email)
+        userData.append('email',newUser.email.toLocaleLowerCase())
         userData.append('isTalent',newUser.isTalent.toString())
         userData.append('bio',newUser.bio)
         userData.append('phoneNumber', JSON.stringify(newUser.phoneNumber))

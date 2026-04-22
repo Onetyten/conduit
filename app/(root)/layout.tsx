@@ -16,7 +16,7 @@ export default function Layout({children}:{children:React.ReactNode}){
         <main className='raleway-text  relative'>
             {children}
             <ToastContainer  position="top-right" autoClose={2000} hideProgressBar={true} newestOnTop={true} closeOnClick={true} rtl={false} />
-            <CreateAccount/>   
+            <CreateAccount/>
 
         </main>
       </PersistGate>

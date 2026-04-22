@@ -1,8 +1,9 @@
 import React from 'react'
 import { Avatar,AvatarFallback,AvatarImage } from '@/components/ui/avatar'
-import { format } from 'date-fns'
 import {profileInterface}  from '@/lib/types'
 import ServiceViewer from '@/components/Profile/ServiceViewer'
+import ProfileBio from '@/components/Profile/profileBio'
+import Card from '@/components/Profile/Card'
 
 
 async function getProfile(id:string):Promise<profileInterface|null> {
@@ -25,10 +26,6 @@ async function getProfile(id:string):Promise<profileInterface|null> {
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const profileData = await getProfile(id)
-  const creationDate = profileData?.createdAt ? new Date(profileData.createdAt) : null
-  const formattedCreationDate = creationDate && !isNaN(creationDate.getTime()) 
-    ? format(creationDate, "MMM d, yyyy") 
-    : "Unknown Date"
 
   if (!profileData) {
     return (
@@ -43,7 +40,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
   return (
     <div className='w-full min-h-screen mt-6 sm:mt-0 pb-10 flex gap-10 px-6 sm:px-[10%] flex-col relative'>
 
-        <div className='flex flex-col w-full mt-16 gap-4'>
+        <Card className='flex flex-col w-full mt-16 gap-4'>
           <div className='w-full flex flex-col md:flex-row gap-2 justify-between'>
             <div className='w-full flex gap-2 items-center '>
               <Avatar className='size-20 sm:size-24 aspect-square object-cover'>
@@ -62,23 +59,12 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
             </div>
           </div>
           
-          {profileData?.bio&&<p className='text-lg font-medium text-conduit'>{profileData?.bio}</p>}
+         <ProfileBio profile={profileData}/>
 
-          {profileData?.skills && profileData?.skills.length > 0 && (
-            <div className='text-sm w-full flex  items-start gap-3'>
-              <div className='flex flex-wrap gap-3'> 
-                {profileData?.skills.map((item, index:number) => (
-                  <span key={index} className='p-1.5 hover:bg-softblue/40 select-none capitalize bg-softblue rounded-md'>{item}</span>
-                ))}
-              </div>
-             
-            </div>
-          )}
 
-          <p className='text-xs font-normal'>{`${profileData?.isTalent?'Talent':'Client'} since ${formattedCreationDate}`}</p>
-          <p className='text-xs md:hidden block'>{profileData.location.state}, {profileData.location.country}</p>
+         
 
-        </div>
+        </Card>
 
         <ServiceViewer profile ={profileData}/>
 

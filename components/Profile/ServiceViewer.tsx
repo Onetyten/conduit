@@ -44,7 +44,7 @@ export default function ServiceViewer({profile}:propType) {
 
   return (
     <div className='w-full flex flex-col'>
-      <div className='w-full pb-2 border-b border-muted flex justify-between'>
+      <div className='w-full pb-2 border-b-2 border-muted/20 flex justify-between'>
         <div className='flex text-xl capitalize font-semibold gap-6'>
           {pages.map((page,index)=><div className={`${index===currentpageIndex?"text-conduit":"text-muted"} cursor-pointer`} onClick={()=>setCurrentpageIndex(index)} key={index}>{page}</div>)}
         </div>
