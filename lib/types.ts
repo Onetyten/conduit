@@ -87,6 +87,28 @@ import { Types } from "mongoose";
 
     }
   }
+
+  export interface becomeTalentType{
+    location: {
+      district: string;
+      state: string;
+      country: string;
+    };
+    phoneNumber: {
+      code: string;
+      num: string;
+    };
+    socialLinks: {
+      facebook: string;
+      instagram: string;
+      twitter_x: string;
+      linkedin: string;
+      other: string;
+    };
+    isTalent: boolean;
+    bio: string;
+    skills: string[];
+  }
   export interface NewUserType {
     email: string
     firstname: string

@@ -11,19 +11,20 @@ import { RootState } from '@/store'
 import CloseSlide from '../service/closeSlide';
 import CreateUser from './createUser';
 import axios from 'axios';
-import Image from 'next/image';
 import AccountSelectSlide from './accountSelectSlide(';
 import SkillSlide from './skillSlide';
 import LinkSlide from './linkSlide';
 import { signUpFalse } from '@/state/showSignUp';
- 
+import { Digital } from 'react-activity';
+import { toast } from 'react-toastify';
+
 
 export default function CreateAccount() {
     const dispatch = useDispatch()
+    const profile = useSelector((state:RootState)=>state.user.user)
     const LocationalRedux = useSelector((state:RootState)=>state.locationalData.data)
     const showSignUpRedux = useSelector((state:RootState)=>state.showSignUp.showSignUp)
     const [PreviewImage,setPreviewImage] = useState<string | null>(null)
-    const profile = useSelector((state:RootState)=>state.user.user)
     const [newUser,setNewUser] = useState({
         email:'',
         firstname: "",
@@ -54,15 +55,42 @@ export default function CreateAccount() {
     })
     const [uploadingProfile,setUploadingProfile] = useState(false)
     const [slideIndex,setSlideIndex] = useState(0)
-    const [isUser,setIsUser] = useState(false)
 
-    //set the slideIndex to 5 by default if user already has an
-    useEffect(()=>{
-        if (profile && profile.isTalent==false){
-        setIsUser(true)
-        setSlideIndex(5)
-    }
-    },[profile])
+    async function CreateAccount(){
+        if (profile){ 
+            toast("Multiple account creation is not permitted")
+            return
+        }
+        setUploadingProfile(true)
+        const userData = new FormData()
+        userData.append('firstName',newUser.firstname)
+        userData.append('lastName',newUser.lastname)
+        userData.append('email',newUser.email.toLocaleLowerCase())
+        userData.append('isTalent',newUser.isTalent.toString())
+        userData.append('bio',newUser.bio)
+        userData.append('phoneNumber', JSON.stringify(newUser.phoneNumber))
+        userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
+        userData.append('location',JSON.stringify(newUser.location))
+        userData.append('skills',JSON.stringify(newUser.skills))
+        userData.append('password',newUser.password)
+
+        if (newUser.profileImage) userData.append('profileImage',newUser.profileImage)
+        try {
+            const response = await axios.post(`/api/profile/createNewProfile`,userData)
+            if (response.status != 200) return
+            setSlideIndex(slideIndex+1)
+            setUploadingProfile(false)
+            toast.success("Account created successfully, signin") 
+        }
+        catch {
+            toast("A error occured while creating your profile")
+        }
+        finally{
+            setUploadingProfile(false)
+        }
+        
+    } 
+
 
 
 
@@ -91,7 +119,7 @@ export default function CreateAccount() {
   return (
     <div>
         {showSignUpRedux&&(
-            <div onClick={()=>{dispatch(signUpFalse())}} className=' pointer-events-auto bg-slate-500/50 z-50 h-screen w-full flex-col sm:flex-row  right-0 bottom-0 fixed flex justify-center items-center'>
+            <div onClick={()=>{dispatch(signUpFalse())}} className=' pointer-events-auto bg-slate-500/50 z-50 h-screen w-full flex-col sm:flex-row  right-0 bottom-0 fixed flex justify-center shadow-md items-center'>
 
                 <div onClick={(e)=>e.stopPropagation()} className='bg-white h-[85%] sm:h-3/4 relative rounded-3xl w-[90%] sm:w-2/3 z-50 pointer-events-auto shadow-md'>
                     
@@ -100,7 +128,6 @@ export default function CreateAccount() {
                     <div className='h-full w-full flex justify-center items-center'>
                         <div className='h-full w-full'>
 
-                            {/* first carousel item */}
                             {
                                 slideIndex==0?
                                 (<WelcomeSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>):
@@ -112,17 +139,18 @@ export default function CreateAccount() {
                                 (
                                     <PictureSlide PreviewImage={PreviewImage} setPreviewImage={setPreviewImage} setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
                                 ):
+                                
                                 slideIndex==3?
-                                (
-                                    <LocationSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
-                                ):
-                                slideIndex==4?
                                 (
                                     <AccountSelectSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
                                 ):
+                                slideIndex==4?
+                                (
+                                    <LocationSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
+                                ):
                                 slideIndex==5?
                                 (
-                                    <SkillSlide setSlideIndex={setSlideIndex} isUser={isUser} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
+                                    <SkillSlide setSlideIndex={setSlideIndex} slideIndex={slideIndex} newUser={newUser} setNewUser={setNewUser}/>
                                 ):
                                 slideIndex==6?
                                 (
@@ -130,21 +158,20 @@ export default function CreateAccount() {
                                 ):
                                 slideIndex==7?
                                 (
-                                    <CreateUser isUser={isUser} setSlideIndex ={setSlideIndex} setUploadingProfile={setUploadingProfile} slideIndex={slideIndex} newUser={newUser} />
+                                    <CreateUser setSlideIndex ={setSlideIndex} submit={CreateAccount} slideIndex={slideIndex} newUser={newUser} />
                                 )
                                 :
                                 (
-                                    <FinishSlide newUser={newUser} isUser={isUser} />
+                                    <FinishSlide newUser={newUser} />
                                 )
                             }
                         </div>
                     </div>
 
                     {uploadingProfile&&(
-                        <div className='w-full h-full top-0 left-0 absolute flex justify-center items-center bg-softblue/80 rounded-3xl'>
+                        <div className='w-full h-full top-0 left-0 absolute flex justify-center items-center bg-softblue/80 backdrop-blur-sm rounded-3xl'>
                             <div className='flex flex-col pt-32 gap-6 w-full h-full justify-center items-center'>
-                                    <Image src={'/icons/loading.gif'} alt='loading gif' width={50} height={50} />
-                                    <p>{isUser?"Updating profile":"Creating profile"}</p>
+                                <Digital size={30} color="#373f51" />
                             </div>
 
                         </div>

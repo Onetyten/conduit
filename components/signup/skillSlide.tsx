@@ -2,34 +2,36 @@
 import React, { useState } from 'react'
 import NavigationButton from './NavigationButton'
 import { IoCloseOutline } from "react-icons/io5";
-import { NewUserType } from '@/lib/types'
+import { becomeTalentType, NewUserType } from '@/lib/types'
 import { toast } from 'react-toastify';
 import { CiCirclePlus } from "react-icons/ci";
+import { countryCodes } from '@/data/countryCodes';
 
 
-interface propTypes{
-    newUser:NewUserType
-    setNewUser:React.Dispatch<React.SetStateAction<NewUserType>>
+interface propTypes<T extends NewUserType | becomeTalentType>{
+    newUser:T
+    setNewUser:React.Dispatch<React.SetStateAction<T>>
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
     slideIndex:number
-    isUser:boolean
 }
 
 
 
-
-export default function SkillSlide(props:propTypes) {
-    const {setSlideIndex,slideIndex,newUser,setNewUser,isUser} = props
+export default function SkillSlide<T extends NewUserType | becomeTalentType>(props:propTypes<T>) {
+    const {setSlideIndex,slideIndex,newUser,setNewUser} = props
     const [newSkill,setNewSkill] = useState('')
+    const isNewUser = "firstname" in newUser
 
     function Next() {
-        if(newUser.bio.trim().length<20) return toast.warn("Please provide a bio with at least 20 characters.")
+        if(newUser.bio.trim().length<8) return toast.warn("Please provide a bio with at least 20 characters.")
+        if (!isNewUser){
+
+            if (newUser.phoneNumber.num.trim().length < 1) return toast.warn("Phone number is required")
+        }
+
         if(newUser.skills.length==0) return toast.warn("Please add at least one skill to continue.")
-        setSlideIndex(slideIndex+1)
-        
-    }
-    function Prev() {
-        setSlideIndex(slideIndex-1)
+
+        setSlideIndex(slideIndex+1)   
     }
 
     function AddSkill(){
@@ -40,9 +42,15 @@ export default function SkillSlide(props:propTypes) {
         if (newUser.skills.length>=5) return toast.warn("Skill limit exceeded.")
         if (newUser.skills.includes(newSkill))
         return toast.warn("This skill has already been added.")
-
         setNewUser(prev => ({...prev, skills : [...(prev.skills || []) ,newSkill ]   }))
         setNewSkill('')
+    }
+
+
+
+
+    function Prev() {
+        setSlideIndex(slideIndex-1)
     }
 
     function RemoveSkill(index:number){
@@ -50,12 +58,10 @@ export default function SkillSlide(props:propTypes) {
     }
 
 
-
   return (
-    <div className='h-full w-full px-6 md:px-[20%] text-base'>
+    <div className={`h-full w-full ${isNewUser?"px-6 sm:px-[20%]":""} text-base`}>
         <div className='flex flex-col justify-center items-center w-full h-full gap-4'>
-            <p className='lg:text-2xl text-xl  font-semibold '>Who are you</p>
-
+            {isNewUser && <p className='lg:text-2xl text-xl  font-semibold '>Who are you</p> }
 
             <div className='flex flex-col gap-2 w-full'>
                 <p className='text-sm font-semibold'>
@@ -66,17 +72,52 @@ export default function SkillSlide(props:propTypes) {
               
             </div>
 
+            {!isNewUser && (
+            <div className='flex flex-col gap-1 w-full'>
+                <div className='flex h-12 gap-3 w-full  rounded-sm overflow-hidden'>
+                
+                    <select value={newUser.phoneNumber.code} onChange={(e) => setNewUser(prev => ({ ...prev, phoneNumber: { ...prev.phoneNumber, code: e.target.value } }))} className='h-full border border-conduit/40 rounded-sm px-2 outline-none cursor-pointer'>
+                        {[...countryCodes].sort((a, b) => a.country === 'Nigeria' ? -1 : b.country === 'Nigeria' ? 1 : 0).map((country) => (
+                                <option key={country.iso} value={`+${country.code}`}>
+                                    {country.iso} +{country.code}
+                                </option>
+                            ))
+                        }
+                    </select>
 
-            <div className='flex flex-col relative gap-2 w-full'>
+                
+                    <input type='tel' required value={newUser.phoneNumber.num}
+                        onChange={(e) => {
+                            const val = e.target.value.replace(/\D/g, '')
+                            setNewUser(prev => ({ ...prev, phoneNumber: { ...prev.phoneNumber, num: val } }))
+                        }}
+                        placeholder='Phone number'
+                        className='flex-1 h-full placeholder:text-gray-500 p-3 border border-conduit/40 rounded-sm lg:px-5 outline-none'
+                    />
+                </div>
+            </div>
+            )}
+
+
+            <div  className='flex flex-col relative gap-2 w-full'>
                 <p className='text-sm font-semibold'>
                     Services
                 </p>
-                <div className='w-full h-12 relative '>
+                <form
+                    onSubmit={(e)=>{
+                        e.preventDefault()
+                        AddSkill()
+                    }
+                }
+                className='w-full h-12 relative '>
                   <input onChange={(e)=>{setNewSkill(e.target.value)}} value={newSkill} type='text' className='h-full placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border border-conduit/40' />  
-                  <CiCirclePlus size={30} onClick={AddSkill} className='absolute cursor-pointer right-2 top-1/2 -translate-y-1/2' />
-                </div>
+                  <button type='submit'>
+                    <CiCirclePlus size={30} className='absolute cursor-pointer right-2 top-1/2 -translate-y-1/2' />
+                  </button>
+                  
+                </form>
                  
-                 <p className='absolute -bottom-5 right-0'>
+                 <p className='absolute -bottom-5 text-sm right-0'>
                     {newUser.skills.length}/5 services
                  </p>
 
@@ -95,12 +136,9 @@ export default function SkillSlide(props:propTypes) {
                  </div>
             </div>
 
-
-
             
-            <div className='flex gap-6 mt-6'>
-                {!isUser&&<NavigationButton direction={0} Click={Prev}/>}
-                
+            <div className='flex gap-2 w-full mt-6'>
+                {isNewUser &&  <NavigationButton direction={0} Click={Prev}/> }
                 <NavigationButton direction={1} Click={Next}/>
             </div>
 

@@ -15,6 +15,37 @@ import ChangePasswordModal from '@/components/Profile/account/ChangePasswordModa
 import EditProfileModal from '@/components/Profile/account/EditProfileModal'
 
 
+    // async function UpdateAccount(){
+    //     setUploadingProfile(true)
+    //     const userData = new FormData()
+    //     if (!profile){
+    //         return toast.error('This action not authorized, user not logged in ')
+    //     }
+    //     userData.append('_id',profile._id) 
+    //     userData.append('isTalent',"true")
+    //     userData.append('bio',newUser.bio)
+    //     userData.append('phoneNumber', JSON.stringify(newUser.phoneNumber))
+    //     userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
+    //     userData.append('skills',JSON.stringify(newUser.skills))
+    //     try {
+    //         const response = await axios.patch(`/api/profile/updateProfile`,userData)
+    //         if (response.status != 200) return
+    //         const updatedUser = response.data
+    //         const payload:userState = {user:updatedUser.user,token:updatedUser.token}
+    //         dispatch(setUser(payload))
+    //         setSlideIndex(slideIndex+1)
+    //         setUploadingProfile(false)
+    //         toast.success("Account Updated successfully")
+    //     }
+    //     catch {
+    //         toast("A error occured while updating your profile")
+    //     }
+    //     finally{
+    //         setUploadingProfile(false)
+    //     }
+        
+    // } 
+
 
 export default function Page() {
   const userData = useSelector((state: RootState) => state.user.user) as profileInterface | null
@@ -80,7 +111,7 @@ export default function Page() {
         </div>
       </Card>
 
-      {userData.isTalent && (
+      {!userData.isTalent && (
         <Card className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex flex-col gap-1">
             <p className="font-semibold flex items-center gap-2"><Briefcase size={16} className="text-conduit" /> Become a Service Provider</p>

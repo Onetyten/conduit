@@ -4,21 +4,21 @@ import NavigationButton from './NavigationButton'
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill,RiTwitterXFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
-import { NewUserType } from '@/lib/types';
+import { becomeTalentType, NewUserType } from '@/lib/types';
 import { FiUser } from "react-icons/fi";
 import { toast } from 'react-toastify';
 
 
 
-interface propTypes{
+interface propTypes<T extends NewUserType | becomeTalentType>{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
     slideIndex:number
-    newUser:NewUserType 
-    setNewUser:React.Dispatch<React.SetStateAction<NewUserType>>
+    newUser:T
+    setNewUser:React.Dispatch<React.SetStateAction<T>>
 }
 
 
-export default function LinkSlide(props:propTypes) {
+export default function LinkSlide<T extends NewUserType | becomeTalentType>(props:propTypes<T>) {
     const {setSlideIndex,slideIndex,newUser,setNewUser} = props
     const [linkIndex,setLinkIndex] = useState(0)
     const links = [
@@ -29,9 +29,11 @@ export default function LinkSlide(props:propTypes) {
         { name: "Other", key: "other", icon: <FiUser size={20} /> },
     ];
 
+    const isNewUser = "firstname" in newUser
+
     function Next() {
         const { socialLinks } = newUser;
-        // Regex patterns for each platform
+
         const regexPatterns: Record<string, RegExp> = {
             facebook: /^https?:\/\/(www\.)?facebook\.com\/.+\/?/,
             instagram: /^https?:\/\/(www\.)?instagram\.com\/.+\/?/,
@@ -45,7 +47,6 @@ export default function LinkSlide(props:propTypes) {
             return toast.warn("Please add at least one social link to continue.");
         }
 
-        // Validate provided links
         for (const key in socialLinks) {
             const value = socialLinks[key as keyof typeof socialLinks];
             if (value.trim() !== "") {
@@ -61,10 +62,11 @@ export default function LinkSlide(props:propTypes) {
     function Prev() {
         setSlideIndex(slideIndex-1)
     }
+
   return (
-    <div className='h-full w-full px-6 sm:px-[20%] text-base'>
-        <div className='flex flex-col justify-center items-center w-full h-full gap-8'>
-            <p className='lg:text-2xl text-xl  font-semibold text-center '>Add Social Links</p>
+    <div className={`h-full w-full ${isNewUser?"px-6 sm:px-[20%]":""} text-base`}>
+        <div className={`flex flex-col justify-center items-center w-full h-full ${isNewUser?"gap-8":"gap-5"} `}>
+            {isNewUser && <p className='lg:text-2xl text-xl  font-semibold text-center '>Add Social Links</p>}
 
             <div className='flex w-full justify-between items-center gap-1'>
                 {links.map((item,index)=>{
@@ -78,16 +80,14 @@ export default function LinkSlide(props:propTypes) {
 
 
             <div className='w-full flex relative justify-center items-center gap-2 text-base font-semibold'>
-                {/* <p className='absolute left-5 '>
-                    {links[linkIndex].name}
-                </p> */}
+   
                 <input type="text" value={newUser.socialLinks[links[linkIndex].key as keyof typeof newUser.socialLinks]} 
                 onChange={(e) => setNewUser((prev) => ({...prev, socialLinks: { ...prev.socialLinks, [links[linkIndex].key]: e.target.value,}}))}
                 placeholder={`Enter your ${links[linkIndex].name} link`} className="h-full placeholder:text-gray-500 font-normal rounded-sm p-3 w-full border border-conduit/40" />
             </div>
 
             
-            <div className='flex gap-6'>
+            <div className='flex gap-2 w-full'>
                 <NavigationButton direction={0} Click={Prev}/>
                 <NavigationButton direction={1} Click={Next}/>
             </div>

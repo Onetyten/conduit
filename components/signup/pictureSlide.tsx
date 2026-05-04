@@ -106,11 +106,6 @@ export default function PictureSlide(props:propTypes) {
                 <NavigationButton direction={0} Click={Prev}/>
                 <NavigationButton direction={1} Click={Next}/>
             </div>
-            <div>
-                <p className='text-muted text-sm'>
-                    (Optional)
-                </p>
-            </div>
             
         </div>  
     </div>

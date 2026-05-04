@@ -1,18 +1,13 @@
 import React from 'react'
 import NavigationButton from './NavigationButton'
-import { NewUserType } from '@/lib/types'
-import {toast} from 'react-toastify'
-import axios from 'axios'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootState } from '@/store'
-import { setUser, userState } from '@/state/userSlice'
+import { becomeTalentType, NewUserType } from '@/lib/types'
+import { ArrowLeft } from 'lucide-react'
 
-interface propTypes{
+interface propTypes<T extends NewUserType | becomeTalentType>{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
-    setUploadingProfile:React.Dispatch<React.SetStateAction<boolean>>
     slideIndex:number
-    newUser:NewUserType
-    isUser:boolean
+    newUser:T
+    submit:()=>Promise<void>
 }
 
 
@@ -21,92 +16,11 @@ interface propTypes{
 
 
 
-export default function CreateUser(props:propTypes) {
-    const dispatch=useDispatch()
-    const profile = useSelector((state:RootState)=>state.user.user)
-    const {setSlideIndex,slideIndex,newUser,setUploadingProfile,isUser} = props
-    
-    async function UpdateAccount(){
-        setUploadingProfile(true)
-        const userData = new FormData()
-        if (!profile){
-            return toast.error('This action not authorized, user not logged in ')
-        }
-        userData.append('_id',profile._id) 
-        userData.append('isTalent',"true")
-        userData.append('bio',newUser.bio)
-        userData.append('phoneNumber', JSON.stringify(newUser.phoneNumber))
-        userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
-        userData.append('skills',JSON.stringify(newUser.skills))
-        try {
-            const response = await axios.patch(`/api/profile/updateProfile`,userData)
-            if (response.status != 200) return
-            const updatedUser = response.data
-            const payload:userState = {user:updatedUser.user,token:updatedUser.token}
-            dispatch(setUser(payload))
-            setSlideIndex(slideIndex+1)
-            setUploadingProfile(false)
-            toast.success("Account Updated successfully")
-        }
-        catch {
-            toast("A error occured while updating your profile")
-        }
-        finally{
-            setUploadingProfile(false)
-        }
-        
-    } 
+export default function CreateUser<T extends NewUserType | becomeTalentType>(props:propTypes<T>) {
+    const {setSlideIndex,slideIndex,newUser,submit} = props
 
-    
-    async function CreateAccount(){
-        setUploadingProfile(true)
-        const userData = new FormData()
-        userData.append('firstName',newUser.firstname)
-        userData.append('lastName',newUser.lastname)
-        userData.append('email',newUser.email.toLocaleLowerCase())
-        userData.append('isTalent',newUser.isTalent.toString())
-        userData.append('bio',newUser.bio)
-        userData.append('phoneNumber', JSON.stringify(newUser.phoneNumber))
-        userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
-        userData.append('location',JSON.stringify(newUser.location))
-        userData.append('skills',JSON.stringify(newUser.skills))
-        userData.append('password',newUser.password)
-
-        if (newUser.profileImage) userData.append('profileImage',newUser.profileImage)
-        try {
-            const response = await axios.post(`/api/profile/createNewProfile`,userData)
-            if (response.status != 200) return
-            setSlideIndex(slideIndex+1)
-            setUploadingProfile(false)
-            toast.success("Account created successfully, signin") 
-        }
-        catch {
-            toast("A error occured while creating your profile")
-        }
-        finally{
-            setUploadingProfile(false)
-        }
-        
-    } 
-
-    async function AccountAction(){
-        if (isUser)
-        {
-            UpdateAccount()
-        }
-        else
-        {
-            CreateAccount()
-        }
-    } 
-
-
-
-
+    const isNewUser = "firstname" in newUser
     function Prev() {
-        if (isUser){
-            return setSlideIndex(slideIndex-1)
-        }
         if (newUser.isTalent){
             setSlideIndex(slideIndex-1)
         }
@@ -114,23 +28,51 @@ export default function CreateUser(props:propTypes) {
             setSlideIndex(slideIndex-3)
         }
 
-
     }
 
     
   return (
-    <div className='h-full w-full px-[10%]'>
-        <div className='flex flex-col justify-center text-center items-center w-full h-full gap-8'>
-            <p className='lg:text-2xl text-xl  font-semibold '>{isUser?"Start earning with Conduit ":"Create your conduit profile"}</p>
-            <button onClick={AccountAction} className='text-base rounded-lg bg-foreground text-background hover:bg-conduit p-2 px-8'>
-                    {isUser?"Offer services":"Create profile"}
+    <div className='h-full w-full flex flex-col items-center justify-center relative overflow-hidden '>
+ 
+ 
+      <div className={`h-full w-full flex flex-col items-center justify-center relative overflow-hidden ${isNewUser?"px-6 sm:px-[15%]":"px-6"}`}>
+
+            <div className={`absolute ${isNewUser?"bottom-6 left-6 w-8 h-8":" bottom-2 left-2 w-4 h-4"} border-b-2 border-l-2 border-conduit/30 rounded-bl-sm`} />
+            <div className={`absolute ${isNewUser?"bottom-6 right-6 w-8 h-8":" bottom-2 right-2 w-4 h-4"} border-b-2 border-r-2 border-conduit/30 rounded-br-sm`} />
+            <div className={`absolute top-6 right-6 w-8 h-8 ${isNewUser?"flex":"hidden"} border-t-2 border-r-2 border-conduit/30 rounded-tr-sm`} />
+        
+            {isNewUser && <h2 className='text-2xl lg:text-3xl font-bold text-center leading-snug mb-2' >
+                    Just one tap away
+            </h2>}
+        
+            <p className='text-muted text-center max-w-xs leading-relaxed mb-8' >
+                Your profile is ready to go live. Hit create and join the network.
+            </p>
+        
+            <button
+                onClick={submit}
+                className='group relative overflow-hidden h-12 px-12 rounded-xl bg-conduit text-white font-semibold text-sm tracking-wide disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200 hover:shadow-xl hover:scale-[1.03] active:scale-[0.97]'
+            >
+                <span className='absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/15 to-transparent' />
+                <span className='relative flex items-center gap-2'>
+                    Create Profile
+                    <ArrowLeft/>
+                </span>
             </button>
-            <div className='flex gap-6'>
-                <NavigationButton direction={0} Click={Prev}/>
+        
+            <div
+                className='mt-16 w-9/12'
+                style={{
+                opacity: 1,
+                transition: 'opacity 0.4s ease 0.52s',
+                }}
+            >
+                <NavigationButton direction={0} Click={Prev} />
             </div>
-            
-            
-        </div>  
+      </div>
+ 
     </div>
   )
 }
+
+

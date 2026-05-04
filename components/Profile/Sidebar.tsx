@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Logo from '@/public/Images/Logo.png'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { Banknote, CircleUser, House, LogOut, MessageSquareMore, Wallet } from 'lucide-react'
+import { CircleUser, House, LogOut, MessageSquareMore, Wallet } from 'lucide-react'
 import { clearUser } from '@/state/userSlice'
 
 export default function Sidebar() {
@@ -22,7 +22,6 @@ export default function Sidebar() {
       {name:"Account",href:"/profile/account",icon:CircleUser},
       {name:"Messages",href:"/profile/messages",icon:MessageSquareMore,},
       {name:"Wallet",href:"/profile/wallet",icon:Wallet},
-      {name:"Payments",href:"/profile/payments",icon:Banknote},
     ]
     if (!userData) return
 

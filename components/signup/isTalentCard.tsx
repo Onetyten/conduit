@@ -13,12 +13,11 @@ interface propTypes{
 
 
 export default function IsTalentCard(props:propTypes) {
-    const {newUser,setNewUser,setIndexCount} = props
+    const {newUser,setNewUser} = props
 
   return (
     <div onClick={()=>{
             setNewUser(prev=>({...prev, isTalent:true }))
-            setIndexCount(1)
 
         }} 
         className={`overflow-hidden hover:scale-105 duration-200 rounded-md w-72 h-56 flex-col bg-background  ${newUser.isTalent?'shadow-sm shadow-softblue border-4':'border'} shadow-softblue flex`}>
