@@ -15,38 +15,6 @@ import ChangePasswordModal from '@/components/Profile/account/ChangePasswordModa
 import EditProfileModal from '@/components/Profile/account/EditProfileModal'
 
 
-    // async function UpdateAccount(){
-    //     setUploadingProfile(true)
-    //     const userData = new FormData()
-    //     if (!profile){
-    //         return toast.error('This action not authorized, user not logged in ')
-    //     }
-    //     userData.append('_id',profile._id) 
-    //     userData.append('isTalent',"true")
-    //     userData.append('bio',newUser.bio)
-    //     userData.append('phoneNumber', JSON.stringify(newUser.phoneNumber))
-    //     userData.append('socialLinks',JSON.stringify(newUser.socialLinks))
-    //     userData.append('skills',JSON.stringify(newUser.skills))
-    //     try {
-    //         const response = await axios.patch(`/api/profile/updateProfile`,userData)
-    //         if (response.status != 200) return
-    //         const updatedUser = response.data
-    //         const payload:userState = {user:updatedUser.user,token:updatedUser.token}
-    //         dispatch(setUser(payload))
-    //         setSlideIndex(slideIndex+1)
-    //         setUploadingProfile(false)
-    //         toast.success("Account Updated successfully")
-    //     }
-    //     catch {
-    //         toast("A error occured while updating your profile")
-    //     }
-    //     finally{
-    //         setUploadingProfile(false)
-    //     }
-        
-    // } 
-
-
 export default function Page() {
   const userData = useSelector((state: RootState) => state.user.user) as profileInterface | null
   const dispatch = useDispatch()
@@ -71,8 +39,8 @@ export default function Page() {
             <p className="text-2xl sm:text-3xl font-semibold break-all hyphens-auto">{fullName}</p>
 
             {userData.isTalent && (
-              <span className="mt-1 inline-flex items-center gap-1 px-5 py-1.5 capitalize rounded-full bg-softblue text-conduit text-xs font-semibold border border-conduit/20 w-fit">
-                <Briefcase size={15} /> Service Provider
+              <span className="mt-1 inline-flex items-center gap-1 px-5 py-1.5 capitalize rounded-md bg-softblue text-conduit text-sm font-semibold w-fit">
+                Service Provider
               </span>
             )}
           </div>
@@ -101,7 +69,8 @@ export default function Page() {
               <p className="text-xs font-medium text-muted/70 uppercase tracking-wide">Skills</p>
               <div className="flex flex-wrap gap-2">
                 {userData.skills.map((skill, i) => (
-                  <span key={i} className="px-3 py-1 rounded-full bg-conduit/10 text-conduit text-xs font-medium border border-conduit/20">
+           
+                  <span key={i} className="p-1.5 hover:bg-softblue/40 select-none capitalize bg-softblue rounded-md px-3 text-conduit text-sm font-medium">
                     {skill}
                   </span>
                 ))}
@@ -152,7 +121,7 @@ export default function Page() {
         </div>
       </Card>
 
-      {modal === 'edit' && <EditProfileModal user={userData} onClose={() => setModal(null)} />}
+      {modal === 'edit' && <EditProfileModal onClose={() => setModal(null)} />}
       {modal === 'provider' && <BecomeProviderModal onClose={() => setModal(null)} />}
       {modal === 'password' && <ChangePasswordModal onClose={() => setModal(null)} />}
       {modal === 'delete' && <DeleteAccountModal onClose={() => setModal(null)} />}

@@ -1,7 +1,6 @@
 import React from 'react'
 import NavigationButton from './NavigationButton'
 import { becomeTalentType, NewUserType } from '@/lib/types'
-import { ArrowLeft } from 'lucide-react'
 
 interface propTypes<T extends NewUserType | becomeTalentType>{
     setSlideIndex: React.Dispatch<React.SetStateAction<number>>
@@ -9,11 +8,6 @@ interface propTypes<T extends NewUserType | becomeTalentType>{
     newUser:T
     submit:()=>Promise<void>
 }
-
-
-
-
-
 
 
 export default function CreateUser<T extends NewUserType | becomeTalentType>(props:propTypes<T>) {
@@ -46,7 +40,7 @@ export default function CreateUser<T extends NewUserType | becomeTalentType>(pro
             </h2>}
         
             <p className='text-muted text-center max-w-xs leading-relaxed mb-8' >
-                Your profile is ready to go live. Hit create and join the network.
+                {isNewUser?"Your profile is ready to go live. Hit create and join the network.":"Your profile is ready to be updated"}
             </p>
         
             <button
@@ -55,8 +49,7 @@ export default function CreateUser<T extends NewUserType | becomeTalentType>(pro
             >
                 <span className='absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/15 to-transparent' />
                 <span className='relative flex items-center gap-2'>
-                    Create Profile
-                    <ArrowLeft/>
+                    {isNewUser?"Create Profile":"Become a provider"}
                 </span>
             </button>
         

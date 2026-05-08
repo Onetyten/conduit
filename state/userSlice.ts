@@ -22,6 +22,10 @@ const userSlice = createSlice({
             state.user = action.payload.user
             state.token = action.payload.token
         },
+        updateUser:(state,action:PayloadAction<profileInterface>)=>{
+            state.user = action.payload
+        },
+        
         clearUser :(state)=>{
             state.user = null
             state.token = null
@@ -29,5 +33,5 @@ const userSlice = createSlice({
     }
 })
 
-export const {setUser,clearUser} = userSlice.actions
+export const {setUser,clearUser,updateUser} = userSlice.actions
 export default userSlice.reducer

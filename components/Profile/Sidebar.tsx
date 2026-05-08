@@ -28,7 +28,7 @@ export default function Sidebar() {
   return (
     <div onClick={()=>setShowSidebar(false)} className={`w-full absolute sm:relative z-40  ${showSideBar?"bg-conduit/50 h-full pointer-events-auto w-full sm:w-64 md:w-80 lg:w-96 backdrop-blur-lg max-w-full lg:max-w-96 md:max-w-80 flex sm:max-w-64 ":"pointer-events-none sm:pointer-events-auto w-auto sm:w-16 sm:max-w-16 h-18 sm:h-full  sm:bg-conduit/50"}`}>
 
-      <div onClick={(e)=>e.stopPropagation()} className={` overflow-y-scroll ${showSideBar?" w-[80%] sm:w-96 p-5 bg-softblue flex-col ":"sm:p-5 flex-row sm:flex-col items-center sm:items-start px-4"} shadow-lg bg-softblue h-full transition-transform duration-200 max-w-full flex-col flex justify-between`}>
+      <div onClick={(e)=>e.stopPropagation()} className={` overflow-y-scroll hide-scrollbar ${showSideBar?" w-[80%] sm:w-96 p-5 bg-softblue flex-col ":"sm:p-5 flex-row sm:flex-col items-center sm:items-start px-4"} shadow-lg bg-softblue h-full transition-transform duration-200 max-w-full flex-col flex justify-between`}>
 
         <div className={`flex flex-col gap-3 ${showSideBar?"items-start h-full ":"items-center sm:h-full"}  w-full`}>
 
@@ -68,7 +68,7 @@ export default function Sidebar() {
               {linkData.map((item,index)=>{
                 return(
                   <Link href={item.href} key={index} className={`flex gap-2 text-conduit w-full transition-colors duration-100 ${showSideBar?`sm:p-5 ${currentPath===item.href?"sm:bg-white text-muted sm:text-conduit":""} my-5 sm:my-0 sm:hover:bg-conduit/10 sm:hover:shadow-md`:`my-5 hover:text-muted ${currentPath===item.href?"text-muted":""} `} rounded-xl`}>
-                    <item.icon/> 
+                    <item.icon size={30} className='text-xl'/> 
                     {showSideBar && item.name }
 
                   </Link>

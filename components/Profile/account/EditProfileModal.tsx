@@ -1,38 +1,200 @@
+'use client'
 import { profileInterface } from "@/lib/types";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import Field from "./Field";
 import Modal from "./Modal";
-import { Check, MapPin } from "lucide-react";
+import { Check, MapPin, User, Zap } from "lucide-react";
+import { RootState } from "@/store";
+import { useSelector } from "react-redux";
+import { countryCodes } from "@/data/countryCodes";
+import { CiCirclePlus } from "react-icons/ci";
+import { IoCloseOutline } from "react-icons/io5";
 
-export default function EditProfileModal({ user, onClose }: { user: profileInterface; onClose: () => void }) {
-  const [form, setForm] = useState({
-    firstName: user.firstName,
-    lastName: user.lastName,
-    country: user.location?.country ?? '',
-    state: user.location?.state ?? '',
-    district: user.location?.district ?? '',
-  })
+export default function EditProfileModal({ onClose }: { onClose: () => void }) {
+  const profile = useSelector((state: RootState) => state.user.user) as profileInterface | null
+
+  const [form, setForm] = useState<Partial<profileInterface>>({})
+  const [newSkill,setNewSkill] = useState('')
+  
 
   function handleSave() {
+    console.log(form)
     toast.success('Profile updated!')
-    onClose()
+    // onClose()
   }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function change(path:string,value:any){
+    setForm((prev)=> {
+      if (!path.includes('.')){
+        return {...prev, [path]:value}
+      }
+      const [parent,child] = path.split('.');
+      
+      return{
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ...prev, [parent]:{...(prev[parent as keyof profileInterface] as any), [child]:value}
+      }
+    })
+  }
+
+  function AddSkill(){
+    if (newSkill.trim().length<3)
+    return toast.warn("Skills must be at least 3 characters long.")
+    if (newSkill.trim().length>20)
+    return toast.warn("Skills must be at most 20 characters long.")
+    const currentSkills = form.skills ?? profile?.skills ?? [];
+    if (currentSkills.length >= 5) return toast.warn("Skill limit exceeded.");
+  
+    if (currentSkills.includes(newSkill.trim())) return toast.warn("This skill has already been added.");
+
+    setForm(prev => ({
+      ...prev, 
+      skills: [...currentSkills, newSkill.trim()] 
+    }));
+  
+    setNewSkill('');
+  }
+
+  function RemoveSkill(index:number){
+    const currentSkills = form.skills ?? profile?.skills ?? [];
+    setForm(prev => ({ ...prev, skills: currentSkills.filter((_, i) => i !== index) }));
+  }
+
   return (
     <Modal title="Edit Profile" onClose={onClose}>
       <div className="flex flex-col gap-4">
         <div className="grid grid-cols-2 gap-3">
-          <Field label="First Name" value={form.firstName} onChange={v => setForm(p => ({ ...p, firstName: v }))} />
-          <Field label="Last Name" value={form.lastName} onChange={v => setForm(p => ({ ...p, lastName: v }))} />
+          {profile?.firstName && <Field label="First Name" value={form.firstName??profile?.firstName??""} onChange={e => change("firstName",e)} />}
+          {profile?.lastName && <Field label="Last Name" value={form.lastName??profile?.lastName??""} onChange={e => change("lastName",e)} />}
+          {profile?.lastName && <Field style ="w-full col-span-2" label="Bio" value={form.bio??profile?.bio??""} onChange={e => change("bio",e)} />}
+            
+          {profile?.phoneNumber.num &&
+            <div className='flex col-span-2 flex-col gap-1 w-full'>
+              <div className='flex gap-3 w-full items-center rounded-sm overflow-hidden'>
+              
+                  <select value={form?.phoneNumber?.code??profile.phoneNumber.code??"+234"} onChange={(e) => change("phoneNumber.code",e)} className='h-11 rounded-xl px-4 border focus:border-conduit/60  border-conduit/30 bg-white/60 placeholder:text-gray-400 transition text-sm'>
+                      {[...countryCodes].sort((a, b) => a.country === 'Nigeria' ? -1 : b.country === 'Nigeria' ? 1 : 0).map((country) => (
+                              <option key={country.iso} value={`+${country.code}`}>
+                                  {country.iso} +{country.code}
+                              </option>
+                          ))
+                      }
+                  </select>
+
+              
+                  <Field type='tel' value={form?.phoneNumber?.num??profile.phoneNumber.num??""}
+                      onChange={(e) => change("phoneNumber.num",e.replace(/\D/g, ''))}
+                      placeholder='Phone number'
+                      style='m-0.5'
+                  />
+              </div>
+            </div>
+            }
         </div>
-        <p className="text-sm font-semibold text-conduit flex items-center gap-1.5 mt-1">
-          <MapPin size={14} /> Location
+
+        <p className="text-sm font-semibold text-conduit flex items-center gap-4 mt-3">
+          <span className="flex gap-1 items-center">
+            <MapPin size={14} /> Location
+          </span>
+          
+          <div className="flex-1 h-0.5 bg-softblue">
+
+          </div>
         </p>
-        <div className="flex flex-col gap-3">
-          <Field label="Country" value={form.country} onChange={v => setForm(p => ({ ...p, country: v }))} placeholder="e.g. Nigeria" />
-          <Field label="State" value={form.state} onChange={v => setForm(p => ({ ...p, state: v }))} placeholder="e.g. Lagos" />
-          <Field label="District" value={form.district} onChange={v => setForm(p => ({ ...p, district: v }))} placeholder="e.g. Ikeja" />
+
+        <div className="flex flex-col gap-3"> 
+          {
+            profile?.location?.country && (
+              <Field label="Country" value={form?.location?.country??profile.location.country??""} onChange={e => change("location.country",e)} />
+          )}
+          {
+            profile?.location?.state && (
+              <Field label="State" value={form?.location?.state??profile.location.state??""} onChange={e => change("location.state",e)} />
+          )}
+          
+          {
+            profile?.location?.district && (
+              <Field label="District" value={form?.location?.district??profile.location.district??""} onChange={e => change("location.district",e)}  />
+            )
+          }
         </div>
+
+        <p className="text-sm font-semibold text-conduit flex items-center gap-4 mt-3">
+          <span className="flex gap-1 items-center">
+            <User size={14} /> Socials
+          </span>
+          
+          <div className="flex-1 h-0.5 bg-softblue">
+
+          </div>
+        </p>
+
+        <div className="flex flex-col gap-3"> 
+
+          <Field label="Facebook" value={form?.socialLinks?.facebook??profile?.socialLinks?.facebook??""} onChange={e => change("socialLinks.facebook",e)} />
+
+          <Field label="Instagram" value={form?.socialLinks?.instagram??profile?.socialLinks?.instagram??""} onChange={e => change("socialLinks.instagram",e)} />
+    
+          <Field label="Twitter" value={form?.socialLinks?.twitter_x??profile?.socialLinks?.twitter_x??""} onChange={e => change("socialLinks.twitter_x",e)} />
+        
+          <Field label="Linkedin" value={form?.socialLinks?.linkedin??profile?.socialLinks?.linkedin??""} onChange={e => change("socialLinks.linkedin",e)} />
+        
+          <Field label="Other" value={form?.socialLinks?.other??profile?.socialLinks?.other??""} onChange={e => change("socialLinks.other",e)} />
+
+        </div>
+
+        {profile && profile.skills?.length >0 && (
+          <div className="flex flex-col gap-4">
+            <p className="text-sm font-semibold text-conduit flex items-center gap-4 mt-3">
+              <span className="flex gap-1 items-center">
+                <Zap size={14} /> Skills
+              </span>
+              
+              <div className="flex-1 h-0.5 bg-softblue">
+
+              </div>
+            </p>
+
+            <div  className='flex flex-col mb-10 relative gap-2 w-full'>
+                <form
+                    onSubmit={(e)=>{
+                        e.preventDefault()
+                        AddSkill()
+                    }
+                }
+                className='w-full h-12 relative '>
+                  <input onChange={(e)=>{setNewSkill(e.target.value)}} value={newSkill} type='text' className='h-full placeholder:text-gray-500 rounded-sm p-3 lg:px-5 w-full border border-conduit/40' />  
+                  <button type='submit'>
+                    <CiCirclePlus size={30} className='absolute cursor-pointer right-2 top-1/2 -translate-y-1/2' />
+                  </button>
+                  
+                </form>
+                  
+                  <p className='absolute -bottom-5 text-sm right-0'>
+                    {(form.skills ?? profile?.skills ?? []).length}/5 services
+                  </p>
+
+                  <div className='w-full flex flex-wrap gap-2  '>
+                    { (form.skills ?? profile?.skills ?? []).map((item,index)=>{
+                        return(
+                        <div key={index} className='p-1 px-3 text-sm flex items-center gap-1 rounded-full bg-softblue'>
+                            <p>
+                                {item}
+                            </p>
+                            <IoCloseOutline size={17} onClick={()=>{RemoveSkill(index)}} className='cursor-pointer' />
+                        </div>
+                        )
+                    })}
+
+                  </div>
+            </div>
+
+          </div>
+        )}
+
+        
         <button
           onClick={handleSave}
           className="mt-2 h-11 w-full bg-conduit text-white rounded-xl font-semibold hover:bg-black transition-colors flex items-center justify-center gap-2"
@@ -44,3 +206,5 @@ export default function EditProfileModal({ user, onClose }: { user: profileInter
   )
 }
 
+    // skills:profile?.skills || [] as string[],
+    

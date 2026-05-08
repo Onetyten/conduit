@@ -64,9 +64,12 @@ import { Types } from "mongoose";
     firstName: string
     lastName: string
     email: string
-    password:string
     profilePicture: string
     bio: string
+    phoneNumber: {
+      code: string;
+      num: string;
+    };
     socialLinks?:{
       facebook:string,
       instagram:string,

@@ -10,7 +10,7 @@ import { RootState } from "@/store"
 import CreateUser from "@/components/signup/createUser"
 import api from "@/lib/api"
 import { isAxiosError } from "axios"
-import { setUser } from "@/state/userSlice"
+import { updateUser } from "@/state/userSlice"
 
 export default function BecomeProviderModal({ onClose }: { onClose: () => void }) {
   const profile = useSelector((state:RootState)=>state.user.user)
@@ -24,8 +24,8 @@ export default function BecomeProviderModal({ onClose }: { onClose: () => void }
           country: profile?.location.country || "",
       },
       phoneNumber:{
-          code:"+234",
-          num:"",
+          code:profile?.phoneNumber.code || "+234",
+          num:profile?.phoneNumber.num||"",
       },
       socialLinks:{
           facebook: profile?.socialLinks?.facebook || "",
@@ -46,7 +46,7 @@ export default function BecomeProviderModal({ onClose }: { onClose: () => void }
       setUploadingProfile(true)
       console.log("become a seller",form)
       const response = await api.patch('/api/profile/edit',{...form, isTalent:true})
-      dispatch(setUser(response.data.user))
+      dispatch(updateUser(response.data.user))
       onClose()
       toast.success("You're now a service provider!")
 
