@@ -6,23 +6,53 @@ import Field from "./Field";
 import Modal from "./Modal";
 import { Check, MapPin, User, Zap } from "lucide-react";
 import { RootState } from "@/store";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { countryCodes } from "@/data/countryCodes";
 import { CiCirclePlus } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
+import api from "@/lib/api";
+import { updateUser } from "@/state/userSlice";
+import { isAxiosError } from "axios";
 
 export default function EditProfileModal({ onClose }: { onClose: () => void }) {
   const profile = useSelector((state: RootState) => state.user.user) as profileInterface | null
-
+  const [loading,setLoading] = useState(false)
+  
   const [form, setForm] = useState<Partial<profileInterface>>({})
   const [newSkill,setNewSkill] = useState('')
+  const dispatch = useDispatch()
   
 
-  function handleSave() {
-    console.log(form)
-    toast.success('Profile updated!')
-    // onClose()
+  async function handleSave() {
+    if (loading) return
+    if (Object.keys(form).length === 0){
+      toast.info("No changes made")
+      return
+    }
+
+    try {
+        setLoading(true)
+        const response = await api.patch('/api/profile/edit',form)
+        dispatch(updateUser(response.data.user))
+        onClose()
+        toast.success('Profile updated!')   
+    }
+
+    catch (error) {
+      if (isAxiosError(error)){
+        toast.warn(`unable to update profile, ${error.response?.data.message}`)
+      } 
+      else{
+        toast.warn("unable to update profile")
+      }
+    }
+    finally{
+      setLoading(false)
+      
+    }
+
   }
+
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function change(path:string,value:any){
@@ -63,7 +93,7 @@ export default function EditProfileModal({ onClose }: { onClose: () => void }) {
   }
 
   return (
-    <Modal title="Edit Profile" onClose={onClose}>
+    <Modal title="Edit Profile" loading={loading} onClose={onClose}>
       <div className="flex flex-col gap-4">
         <div className="grid grid-cols-2 gap-3">
           {profile?.firstName && <Field label="First Name" value={form.firstName??profile?.firstName??""} onChange={e => change("firstName",e)} />}

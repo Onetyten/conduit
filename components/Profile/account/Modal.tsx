@@ -6,11 +6,11 @@ export default function Modal({ title, onClose, children,loading }: { title: str
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-conduit/20 backdrop-blur-sm px-4" onClick={onClose} >
 
-      <div className="bg-background max-h-[90%] overflow-y-scroll w-full max-w-lg rounded-2xl shadow-2xl relative border border-muted/20 overflow-hidden"  onClick={e => e.stopPropagation()} >
+      <div className="bg-background max-h-[90%] relative w-full max-w-lg rounded-2xl shadow-2xl border border-muted/20 overflow-hidden flex flex-col"  onClick={e => e.stopPropagation()} >
         {
           loading && (
-            <div className="absolute flex z-20 justify-center items-center inset-0 bg-softblue/70 backdrop-blur-xs ">
-                <Digital size={30} color="#373f51" />
+            <div className="absolute inset-0 z-50 flex justify-center items-center bg-softblue/70 backdrop-blur-xs rounded-2xl">
+              <Digital size={30} color="#373f51" />
             </div>
           )
         }
@@ -22,7 +22,7 @@ export default function Modal({ title, onClose, children,loading }: { title: str
               </button>
         </div>
 
-        <div className="px-6 py-5">{children}</div>
+        <div className="px-6 flex-1 overflow-y-auto py-5">{children}</div>
       </div>
     </div>
   )

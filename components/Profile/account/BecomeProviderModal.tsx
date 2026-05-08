@@ -44,7 +44,6 @@ export default function BecomeProviderModal({ onClose }: { onClose: () => void }
   async function handleSubmit() {
     try {
       setUploadingProfile(true)
-      console.log("become a seller",form)
       const response = await api.patch('/api/profile/edit',{...form, isTalent:true})
       dispatch(updateUser(response.data.user))
       onClose()

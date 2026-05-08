@@ -24,8 +24,8 @@ export default function Page() {
 
   if (!userData) return null
 
-  const fullName = `${userData.lastName ?? 'John'} ${userData.firstName ?? 'Doe'}`
-  const initials = `${userData.lastName?.slice(0, 1) ?? ''}${userData.firstName?.slice(0, 1) ?? ''}`
+  const fullName = `${userData.firstName ?? 'Doe'} ${userData.lastName ?? 'John'}`
+  const initials = `${userData.firstName?.slice(0, 1) ?? ''}${userData.lastName?.slice(0, 1) ?? ''}`
 
   return (
     <div className="w-full min-h-screen mt-6 sm:mt-0 pb-16 px-6 sm:px-[10%] flex flex-col gap-6 relative">
