@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import Field from '../Field'
 import { toast } from 'react-toastify'
 import Image from 'next/image'
-import { KeyRound } from 'lucide-react'
 
 interface propType{
     oldPassword:string,
@@ -13,7 +12,7 @@ interface propType{
     setState:React.Dispatch<React.SetStateAction<'reset-password'|'verify-otp'|'change-password'>>
 }
 
-export default function ChangePassword(props:propType) {
+export default function ResetPassword(props:propType) {
     const {oldPassword,setOldPassword,setState,loading,setLoading} = props
     const [oldPasswordError,setOldPasswordError] = useState('')
 
@@ -30,13 +29,11 @@ export default function ChangePassword(props:propType) {
   return (
     <div className='flex justify-center items-center flex-col gap-10'> 
         <div className='flex gap-1 items-center'>
-            <Image src={'/icons/password/key.png'} alt='img' width={80} height={80} />
+            {Array.from({length:3}).map((_,i) =>  <Image key={i} src={'/icons/password/asterick.png'} alt='img' width={50} height={50} /> )}
         </div>
         <Field type="password" error={oldPasswordError} value={oldPassword} onChange={(e)=>setOldPassword(e)} label="Current Password" />
-        <Field type="password" error={oldPasswordError} value={oldPassword} onChange={(e)=>setOldPassword(e)} label="Current Password" />
-
           <button onClick={handleStartReset} className="h-11 w-full bg-conduit text-white rounded-xl font-semibold hover:bg-black transition-colors flex items-center justify-center gap-2">
-            <KeyRound size={16} /> Update Password
+          Next
         </button>
     </div> 
   )

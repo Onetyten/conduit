@@ -1,15 +1,18 @@
 'use client'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import Field from '../Field'
 import { toast } from 'react-toastify'
 import { Clock, KeyRound } from 'lucide-react'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
-import Link from 'next/link'
+import { InputOTP,InputOTPGroup,InputOTPSlot } from '@/components/ui/input-otp'
+
+
+
 interface propType{
     oldPassword:string,
     setOldPassword:React.Dispatch<React.SetStateAction<string>>,
+    setResetToken:React.Dispatch<React.SetStateAction<string>>,
     setLoading:React.Dispatch<React.SetStateAction<boolean>>,
     loading:boolean,
     setState:React.Dispatch<React.SetStateAction<'reset-password'|'verify-otp'|'change-password'>>
@@ -17,11 +20,12 @@ interface propType{
 
 
 export default function OTPVerification(props:propType) {
-    const {oldPassword,setOldPassword,setState,loading,setLoading} = props
-    const [oldPasswordError,setOldPasswordError] = useState('')
+    const {oldPassword,setOldPassword,setState,loading,setLoading,setResetToken} = props
     const profile = useSelector((state:RootState)=>state.user.user)
     const [timeLeft, setTimeLeft] = useState(60)
     const [canResend, setCanResend] = useState(false)
+    const [otpValue, setOtpValue] = useState('')
+    const [otpError, setOtpError] = useState('')
 
     useEffect(() => {
         if (timeLeft > 0) {
@@ -34,8 +38,8 @@ export default function OTPVerification(props:propType) {
         }
     }, [timeLeft])
 
+    
 
-    // Format time as MM:SS
     const formatTime = (seconds: number) => {
         const mins = Math.floor(seconds / 60)
         const secs = seconds % 60
@@ -61,8 +65,9 @@ export default function OTPVerification(props:propType) {
 
     function verifyOTP() {
         if (loading) return
+        setResetToken('reset')
         setState('change-password')
-        toast.success('change password')
+        toast.success(`Password changed with OTP: ${otpValue}`)
     }
 
   return (
@@ -79,9 +84,23 @@ export default function OTPVerification(props:propType) {
 
         </div>
         
+        <InputOTP value={otpValue} maxLength={6}
+            onChange={(value) => {
+                const numericValue = value.replace(/\D/g, '')
+                setOtpValue(numericValue)
+            }} >
+            <InputOTPGroup>
+                {Array.from({length:6}).map((_,index)=> <InputOTPSlot key={index} index={index} className="w-14 h-14 text-xl" />)}
+            </InputOTPGroup>
+        </InputOTP>
 
-        {/* <Field type="password" error={oldPasswordError} value={oldPassword} onChange={(e)=>setOldPassword(e)} label="Current Password" /> */}
-        <button onClick={verifyOTP} className="h-11 w-full bg-conduit text-white rounded-xl font-semibold hover:bg-black transition-colors flex items-center justify-center gap-2">
+        {otpError && (
+            <p className='text-red-500 text-sm mt-2 text-center'>
+                {otpError}
+            </p>
+        )}
+    
+        <button disabled={loading || otpValue.length !== 6} onClick={verifyOTP} className="h-11 w-full bg-conduit text-white rounded-xl font-semibold hover:bg-black transition-colors flex disabled:bg-muted items-center justify-center gap-2">
             <KeyRound size={20} /> Verify OTP
         </button>
 
