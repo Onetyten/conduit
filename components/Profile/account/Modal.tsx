@@ -2,9 +2,10 @@
 import { Digital } from "react-activity";
 import { MdClose } from "react-icons/md";
 
-export default function Modal({ title, onClose, children,loading }: { title: string; onClose: () => void; children: React.ReactNode, loading?:boolean }) {
+export default function Modal({ title, onClose, children,loading, stableClick }: { title: string; onClose: () => void; children: React.ReactNode, loading?:boolean,stableClick?:boolean }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-conduit/20 backdrop-blur-sm px-4" onClick={onClose} >
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-conduit/20 backdrop-blur-sm px-4"
+    onClick={()=>{ if (!stableClick) onClose() } } >
 
       <div className="bg-background max-h-[90%] relative w-full max-w-lg rounded-2xl shadow-2xl border border-muted/20 overflow-hidden flex flex-col"  onClick={e => e.stopPropagation()} >
         {

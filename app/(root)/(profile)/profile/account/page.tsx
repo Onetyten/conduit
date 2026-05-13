@@ -11,7 +11,7 @@ import Card from '@/components/Profile/Card'
 import InfoRow from '@/components/Profile/account/InfoRow'
 import BecomeProviderModal from '@/components/Profile/account/BecomeProviderModal'
 import DeleteAccountModal from '@/components/Profile/account/DeleteAccountModal'
-import ChangePasswordModal from '@/components/Profile/account/ChangePasswordModal'
+import ChangePasswordModal from '@/components/Profile/account/change-password/ChangePasswordModal'
 import EditProfileModal from '@/components/Profile/account/EditProfileModal'
 
 

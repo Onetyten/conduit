@@ -67,7 +67,7 @@ export default function BecomeProviderModal({ onClose }: { onClose: () => void }
 
 
   return (
-    <Modal loading={uploadingProfile} title="Become a Service Provider" onClose={onClose}>
+    <Modal stableClick loading={uploadingProfile} title="Become a Service Provider" onClose={onClose}>
       <div className="flex gap-2 mb-5">
         {steps.map((s, i) => (
           <div key={i} className={`flex-1 h-1.5 rounded-full transition-colors ${i == step ? 'bg-conduit' : 'bg-muted/20'}`} />

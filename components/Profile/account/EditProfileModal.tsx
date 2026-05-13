@@ -93,7 +93,7 @@ export default function EditProfileModal({ onClose }: { onClose: () => void }) {
   }
 
   return (
-    <Modal title="Edit Profile" loading={loading} onClose={onClose}>
+    <Modal stableClick title="Edit Profile" loading={loading} onClose={onClose}>
       <div className="flex flex-col gap-4">
         <div className="grid grid-cols-2 gap-3">
           {profile?.firstName && <Field label="First Name" value={form.firstName??profile?.firstName??""} onChange={e => change("firstName",e)} />}

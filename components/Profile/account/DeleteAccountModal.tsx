@@ -17,9 +17,9 @@ export default function DeleteAccountModal({ onClose }: { onClose: () => void })
     dispatch(clearUser())
     router.replace('/')
   }
-
+  
   return (
-    <Modal title="Delete Account" onClose={onClose}>
+    <Modal stableClick title="Delete Account" onClose={onClose}>
       <div className="flex flex-col gap-4">
         <div className="flex items-start gap-3 bg-red-50 border border-red-200 rounded-xl p-4">
           <AlertTriangle size={18} className="text-red-500 mt-0.5 shrink-0" />
