@@ -6,21 +6,24 @@ import { Clock, KeyRound } from 'lucide-react'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
 import { InputOTP,InputOTPGroup,InputOTPSlot } from '@/components/ui/input-otp'
+import api from '@/lib/api'
+import { isAxiosError } from 'axios'
 
 
 
 interface propType{
     oldPassword:string,
-    setOldPassword:React.Dispatch<React.SetStateAction<string>>,
     setResetToken:React.Dispatch<React.SetStateAction<string>>,
     setLoading:React.Dispatch<React.SetStateAction<boolean>>,
     loading:boolean,
-    setState:React.Dispatch<React.SetStateAction<'reset-password'|'verify-otp'|'change-password'>>
+    setState:React.Dispatch<React.SetStateAction<'reset-password'|'verify-otp'|'change-password'>>,
+    setOTPExpiryTime:React.Dispatch<React.SetStateAction<number>>,
+    OTPExpiryTime:number,
 }
 
 
 export default function OTPVerification(props:propType) {
-    const {oldPassword,setOldPassword,setState,loading,setLoading,setResetToken} = props
+    const {oldPassword,setState,loading,setLoading,setResetToken,setOTPExpiryTime,OTPExpiryTime} = props
     const profile = useSelector((state:RootState)=>state.user.user)
     const [timeLeft, setTimeLeft] = useState(60)
     const [canResend, setCanResend] = useState(false)
@@ -38,6 +41,16 @@ export default function OTPVerification(props:propType) {
         }
     }, [timeLeft])
 
+    useEffect(() => {
+        if (OTPExpiryTime<= 0) return
+        const timer = setTimeout(() => {
+            setOTPExpiryTime(OTPExpiryTime - 1)
+        }, 1000)
+        return () => clearTimeout(timer)
+
+    }, [OTPExpiryTime, setOTPExpiryTime])
+    
+
     
 
     const formatTime = (seconds: number) => {
@@ -48,15 +61,24 @@ export default function OTPVerification(props:propType) {
 
     const handleResendOTP = async () => {
         if (!canResend || loading) return
-        
+        setOtpError('')
+        if (!oldPassword || oldPassword.trim().length === 0) return
         setLoading(true)
         try {
+            const response = await api.post('/api/auth/password-reset',{password:oldPassword})
+            if (response.status!==200) return
+            setOTPExpiryTime(Math.floor((new Date(response.data.expiresAt).getTime()- Date.now())/1000))
             setTimeLeft(60)
             setCanResend(false)
             toast.success('Verification code resent successfully!')
         } 
         catch (error) {
-            toast.error('Failed to resend code. Please try again.')
+            if (isAxiosError(error)){
+                setOtpError(error.response?.data.message)
+                return
+            }
+            setOtpError(`couldn't verify your password due to a server error`)
+            return
         }
         finally {
             setLoading(false)
@@ -65,8 +87,8 @@ export default function OTPVerification(props:propType) {
 
     function verifyOTP() {
         if (loading) return
-        setResetToken('reset')
-        setState('change-password')
+        // setResetToken('reset')
+        // setState('change-password')
         toast.success(`Password changed with OTP: ${otpValue}`)
     }
 
@@ -108,7 +130,7 @@ export default function OTPVerification(props:propType) {
             <div  className='flex items-center gap-2'>
                 <Clock size={20} className='text-muted'/>
                 <p>
-                    00:00
+                    {formatTime(OTPExpiryTime)}
                 </p>
             </div>
 

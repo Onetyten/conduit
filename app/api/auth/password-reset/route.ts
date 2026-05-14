@@ -22,9 +22,6 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 
 
 export async function POST(req:Request){
-    const {password} = await req.json()
-    if (!password) return NextResponse.json({message:"Password not provided"},{status:400})
-
     try{
         const {password} = await req.json()
         if (!password) return NextResponse.json({message:"Password not provided"},{status:400})
@@ -42,25 +39,27 @@ export async function POST(req:Request){
 
         const code = generateOTP()
         const expiresAt = new Date(Date.now()+10*60*1000)
-        const OTP = await Token.create({ userId, code, expiresAt})
+        const deleteAt = new Date(expiresAt.getTime()+30*1000)
+        const OTP = await Token.create({ userId, code, expiresAt,deleteAt})
 
         await OTP.save()
 
-        const {error} = await resend.emails.send({
-            from:'noreply@mail.onetyten.click',
-            to:[userExists.email],
-            subject:'Password Reset',
-            react:ResetOTP({firstname:userExists.firstName,code})
-        })
+        // const {error} = await resend.emails.send({
+        //     from:'noreply@mail.onetyten.click',
+        //     to:[userExists.email],
+        //     subject:'Password Reset',
+        //     react:ResetOTP({firstname:userExists.firstName,code})
+        // })
 
-        if (error){
-            return NextResponse.json({message:"Error while sending data",error},{status:500})
-        }
-        return NextResponse.json({message:"Please check you email for the reset code",data: { expiresAt: OTP.expiresAt }},{status:200})        
+        // if (error){
+        //     return NextResponse.json({message:"Error while sending mail",error},{status:500})
+        // }
+        console.log("otp code",code)
+        return NextResponse.json({message:"Please check you email for the reset code",expiresAt },{status:200})        
     }
     catch(error){
         console.error(error)
-        return NextResponse.json({ message: 'Failed to create profile due to an internal server error' }, { status: 500 })
+        return NextResponse.json({ message: 'Internal server error' }, { status: 500 })
     }
 
 }

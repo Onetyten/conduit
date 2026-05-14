@@ -1,6 +1,5 @@
 import { useState } from "react"
 import Modal from "../Modal"
-import { KeyRound } from "lucide-react"
 import OTPVerification from "./OTPVerification"
 import ResetPassword from "./ResetPassword"
 import ChangePassword from "./ChangePassword"
@@ -11,6 +10,7 @@ export default function ChangePasswordModal({ onClose }: { onClose: () => void }
   const [state,setState] = useState<'reset-password'|'verify-otp'|'change-password'>('reset-password')
   const [loading,setLoading] = useState(false)
   const [resetToken,setResetToken] = useState('')
+  const [OTPExpiryTime,setOTPExpiryTime] = useState(0)
   const steps = [
     {
       name:"reset-password",
@@ -37,13 +37,13 @@ export default function ChangePasswordModal({ onClose }: { onClose: () => void }
         ))}
       </div>
       {state ==='verify-otp'?(
-        <OTPVerification setResetToken={setResetToken} setLoading={setLoading} loading={loading} oldPassword={oldPassword}  setOldPassword={setOldPassword} setState={setState}/>
+        <OTPVerification setOTPExpiryTime = {setOTPExpiryTime} OTPExpiryTime={OTPExpiryTime} setResetToken={setResetToken} setLoading={setLoading} loading={loading} oldPassword={oldPassword} setState={setState}/>
 
       ):state ==='change-password' && resetToken?(
 
-        <ChangePassword setLoading={setLoading} loading={loading} oldPassword={oldPassword}  setOldPassword={setOldPassword} setState={setState}/>
+        <ChangePassword setLoading={setLoading} loading={loading} oldPassword={oldPassword} setOldPassword={setOldPassword} setState={setState}/>
       ):(
-        <ResetPassword setLoading={setLoading} loading={loading} oldPassword={oldPassword}  setOldPassword={setOldPassword} setState={setState}/>
+        <ResetPassword setOTPExpiryTime = {setOTPExpiryTime}  setLoading={setLoading} loading={loading} oldPassword={oldPassword}  setOldPassword={setOldPassword} setState={setState}/>
       )}
     </Modal>
   )

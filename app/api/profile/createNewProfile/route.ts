@@ -50,12 +50,11 @@ export async function POST(request:Request){
         if (!firstName || !lastName || !email || !password){
             return NextResponse.json({message:"Missing required user data"},{status:400})
         }
+        
         await mongoConnect() 
         const existingAccount = await Profile.findOne({email})
-        if (existingAccount){
-
-            return NextResponse.json({message:"Email is already taken"},{status:400})
-        }
+        if (existingAccount) return NextResponse.json({message:"Email is already taken"},{status:400})
+        
         const salt = await bcrypt.genSalt(10)
         const hashedPassword = await bcrypt.hash(password,salt)
         let profileImageURL = DEFAULT_PROFILE_IMAGE

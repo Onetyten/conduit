@@ -1,30 +1,49 @@
 'use client'
 import React, { useState } from 'react'
 import Field from '../Field'
-import { toast } from 'react-toastify'
 import Image from 'next/image'
+import api from '@/lib/api'
+import { isAxiosError } from 'axios'
 
 interface propType{
     oldPassword:string,
     setOldPassword:React.Dispatch<React.SetStateAction<string>>,
     setLoading:React.Dispatch<React.SetStateAction<boolean>>,
     loading:boolean,
+    setOTPExpiryTime:React.Dispatch<React.SetStateAction<number>>,
     setState:React.Dispatch<React.SetStateAction<'reset-password'|'verify-otp'|'change-password'>>
 }
 
 export default function ResetPassword(props:propType) {
-    const {oldPassword,setOldPassword,setState,loading,setLoading} = props
+    const {oldPassword,setOldPassword,setState,loading,setLoading,setOTPExpiryTime} = props
     const [oldPasswordError,setOldPasswordError] = useState('')
 
-    function handleStartReset() {
+    async function handleStartReset() {
         if (loading) return
         setOldPasswordError('')
         if (!oldPassword || oldPassword.trim().length === 0){
-        setOldPasswordError('please provide your current password');
-        return;
-        } 
-        setState('verify-otp')
-        toast.success('Please check your email')
+          setOldPasswordError('please provide your current password');
+          return;
+        }
+
+        try {
+          setLoading(true)
+          const response = await api.post('/api/auth/password-reset',{password:oldPassword})
+          if (response.status!==200) return
+          setOTPExpiryTime(Math.floor((new Date(response.data.expiresAt).getTime() - Date.now())/1000))
+          setState('verify-otp')
+        }
+        catch (error) {
+          if (isAxiosError(error)){
+            setOldPasswordError(error.response?.data.message)
+            return
+          }
+          setOldPasswordError(`couldn't verify your password due to a server error`)
+          return
+        }
+        finally{
+          setLoading(false)
+        }
     }
   return (
     <div className='flex justify-center items-center flex-col gap-10'> 
