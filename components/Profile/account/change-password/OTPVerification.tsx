@@ -85,11 +85,30 @@ export default function OTPVerification(props:propType) {
         }
     }
 
-    function verifyOTP() {
+    async function verifyOTP() {
         if (loading) return
-        // setResetToken('reset')
-        // setState('change-password')
-        toast.success(`Password changed with OTP: ${otpValue}`)
+        setOtpError('')
+        if (!otpValue || otpValue.length !== 6){
+          setOtpError('please enter you the code sent to you');
+          return;
+        }
+
+        try {
+            setLoading(true)
+            const response = await api.post('/api/auth/verify-otp',{code:otpValue})
+            if (response.status!==200) return
+            setResetToken(response.data.token)
+            setState('change-password')
+        }
+
+        catch (error) {
+            if (isAxiosError(error)) return setOtpError(error.response?.data.message)
+            return setOtpError(`couldn't verify your code due to a server error`)
+        }
+
+        finally{
+            setLoading(false)
+        }
     }
 
   return (

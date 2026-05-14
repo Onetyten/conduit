@@ -41,7 +41,7 @@ export default function ChangePasswordModal({ onClose }: { onClose: () => void }
 
       ):state ==='change-password' && resetToken?(
 
-        <ChangePassword setLoading={setLoading} loading={loading} oldPassword={oldPassword} setOldPassword={setOldPassword} setState={setState}/>
+        <ChangePassword resetToken={resetToken} setLoading={setLoading} loading={loading} onClose={onClose}/>
       ):(
         <ResetPassword setOTPExpiryTime = {setOTPExpiryTime}  setLoading={setLoading} loading={loading} oldPassword={oldPassword}  setOldPassword={setOldPassword} setState={setState}/>
       )}

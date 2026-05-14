@@ -44,17 +44,24 @@ export async function POST(req:Request){
 
         await OTP.save()
 
-        // const {error} = await resend.emails.send({
-        //     from:'noreply@mail.onetyten.click',
-        //     to:[userExists.email],
-        //     subject:'Password Reset',
-        //     react:ResetOTP({firstname:userExists.firstName,code})
-        // })
+        try{
+            const {error} = await resend.emails.send({
+                from:'noreply@mail.onetyten.click',
+                to:[userExists.email],
+                subject:'Password Reset',
+                react:ResetOTP({firstname:userExists.firstName,code})
+            })
 
-        // if (error){
-        //     return NextResponse.json({message:"Error while sending mail",error},{status:500})
-        // }
-        console.log("otp code",code)
+            if (error){
+                console.error(error)
+                return NextResponse.json({message:"Error while sending mail",error},{status:500})
+            }
+        }
+        catch (resendError) {
+            console.error('Resend threw:', JSON.stringify(resendError, null, 2))
+            return NextResponse.json({message:"Internal server error"},{status:500})
+        }
+
         return NextResponse.json({message:"Please check you email for the reset code",expiresAt },{status:200})        
     }
     catch(error){

@@ -4,32 +4,59 @@ import Field from '../Field'
 import { toast } from 'react-toastify'
 import Image from 'next/image'
 import { KeyRound } from 'lucide-react'
+import axios, { isAxiosError } from 'axios'
+import { setUser, userState } from '@/state/userSlice'
+import { useDispatch } from 'react-redux'
 
 interface propType{
-    oldPassword:string,
-    setOldPassword:React.Dispatch<React.SetStateAction<string>>,
+    resetToken:string,
+    onClose: () => void
     setLoading:React.Dispatch<React.SetStateAction<boolean>>,
     loading:boolean,
-    setState:React.Dispatch<React.SetStateAction<'reset-password'|'verify-otp'|'change-password'>>
 }
 
 export default function ChangePassword(props:propType) {
-    const {oldPassword,setOldPassword,setState,loading,setLoading} = props
+    const {loading,onClose,resetToken,setLoading} = props
     const [error,setError] = useState('')
     const [newPassword,setNewPassword] = useState('')
     const [confirmPassword,setConfirmPassword] = useState('')
+    const dispatch = useDispatch() 
 
 
-    function handleStartReset() {
+    async function handleChangePassword() {
         if (loading) return
         setError('')
-        if (!oldPassword || oldPassword.trim().length === 0){
-            setError('please provide your current password');
-            return;
-        } 
-        setState('verify-otp')
-        toast.success('Please check your email')
+        try {
+            setLoading(true)
+            if (newPassword !== confirmPassword) return setError("your passwords must match")
+            if (!newPassword || newPassword.length<8) return setError("Password must be at least 8 characters")
+            if (newPassword.length>100) return setError('Password cannot exceed 100 characters')
+            if (!resetToken || resetToken.length==0) return setError("User is not verified, please try again")
+            
+            const response = await axios.post('/api/auth/password-change',{password:newPassword},{
+                headers:{
+                    'Authorization':`Bearer ${resetToken}`
+                }
+            })
+            if (response.status!==200) return
+            const userData = await response.data
+            const payload:userState = {user:userData.user,token:userData.token}
+            dispatch(setUser(payload))
+            toast.success("password changed successfully")
+            onClose()
+        }
+
+        catch (error) {
+            if (isAxiosError(error)) return setError(error.response?.data.message)
+            return setError(`couldn't change your password due to a server error`)
+        }
+
+        finally{
+            setLoading(false)
+        }
+        
     }
+
   return (
     <div className='flex justify-center items-center flex-col gap-10'> 
         <div className='flex gap-1 items-center'>
@@ -40,7 +67,7 @@ export default function ChangePassword(props:propType) {
             <Field type="password" value={confirmPassword} onChange={(e)=>setConfirmPassword(e)} label="Confirm password" />
         </div>
 
-        <button onClick={handleStartReset} className="h-11 w-full bg-conduit text-white rounded-xl font-semibold hover:bg-black transition-colors flex items-center justify-center gap-2">
+        <button onClick={handleChangePassword} className="h-11 w-full bg-conduit text-white rounded-xl font-semibold hover:bg-black transition-colors flex items-center justify-center gap-2">
             <KeyRound size={16} /> Update Password
         </button>
     </div> 

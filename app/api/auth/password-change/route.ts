@@ -15,14 +15,6 @@ const passwordValidateSchema = Joi.object({
         'any.required': 'Password is required'
     })
 })
-const tokenValidateSchema = Joi.object({
-    id:Joi.string().required(),
-    userId:Joi.string().required()
-}).messages({
-    'object.base': 'Token is malformed',
-    'any.required': 'Token has been tampered with or is invalid',
-    'string.base': 'Token has been tampered with or is invalid'
-})
 
 
 export async function POST(req:Request){
@@ -41,11 +33,9 @@ export async function POST(req:Request){
         try {
             payload = jwt.verify(token, jwtSecret) as {id:string, userId:string}
         } catch {
-            return NextResponse.json({message:"User is not authorised"},{status:401})
+            return NextResponse.json({message:"Your OTP has expired, please request a new code"},{status:401})
         }
-        
-        const {error:tokenError} = tokenValidateSchema.validate(payload)
-        if (tokenError) return NextResponse.json({message:tokenError.message},{status:403})
+
 
         const user = await Profile.findById(payload.userId)
         if (!user) return NextResponse.json({message:"User does not exist"},{status:404})

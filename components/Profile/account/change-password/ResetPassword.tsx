@@ -50,8 +50,11 @@ export default function ResetPassword(props:propType) {
         <div className='flex gap-1 items-center'>
             {Array.from({length:3}).map((_,i) =>  <Image key={i} src={'/icons/password/asterick.png'} alt='img' width={50} height={50} /> )}
         </div>
+
         <Field type="password" error={oldPasswordError} value={oldPassword} onChange={(e)=>setOldPassword(e)} label="Current Password" />
-          <button onClick={handleStartReset} className="h-11 w-full bg-conduit text-white rounded-xl font-semibold hover:bg-black transition-colors flex items-center justify-center gap-2">
+
+        
+        <button onClick={handleStartReset} className="h-11 w-full bg-conduit text-white rounded-xl font-semibold hover:bg-black transition-colors flex items-center justify-center gap-2">
           Next
         </button>
     </div> 
