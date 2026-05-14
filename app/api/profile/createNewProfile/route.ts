@@ -4,6 +4,7 @@ import { NextResponse } from "next/server";
 import bcrypt from 'bcrypt'
 import {v2 as cloudinary} from 'cloudinary'
 import { DEFAULT_PROFILE_IMAGE } from "@/lib/constants";
+import { newUserValidationSchema } from "@/validation/newUserSchema";
 
 
 
@@ -38,6 +39,21 @@ export async function POST(request:Request){
     const password = userData.get('password') as string | null
     const profileImage = userData.get('profileImage') as File | null
 
+    const form = {
+        firstName: userData.get('firstName'),
+        lastName: userData.get('lastName'),
+        email: userData.get('email'),
+        phoneNumber: userData.get('phoneNumber'),
+        isTalent: userData.get('isTalent'),
+        bio: userData.get('bio'),
+        socialLinks: userData.get('socialLinks'),
+        location: userData.get('location'),
+        skills: userData.get('skills'),
+        password: userData.get('password'),
+        profileImage: userData.get('profileImage')
+    }
+
+
 
     // set cloudinary config
     const cloudinaryConfig = cloudinary.config({
@@ -47,9 +63,12 @@ export async function POST(request:Request){
     })
 
     try {
-        if (!firstName || !lastName || !email || !password){
-            return NextResponse.json({message:"Missing required user data"},{status:400})
+        const {error} = newUserValidationSchema.validate(form)
+        if (error){
+            return NextResponse.json({message:error.message},{status:400})
         }
+        
+        if (!firstName || !lastName || !email || !password) return
         
         await mongoConnect() 
         const existingAccount = await Profile.findOne({email})
