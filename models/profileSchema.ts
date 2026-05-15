@@ -30,6 +30,17 @@ const profileSchema  = new mongoose.Schema({
     totalSpent:{type:Number,default:0},
     
 
+},
+{
+    toJSON:{virtuals:true},
+    toObject:{virtuals:true}
+})
+
+profileSchema.virtual('serviceCount',{
+    ref:'Services',
+    localField:'_id',
+    foreignField:'serviceProvider',
+    count:true
 })
 
 profileSchema.pre('findOneAndDelete', async function (next){

@@ -17,6 +17,7 @@ export default function DeleteAccountModal({ onClose }: { onClose: () => void })
     dispatch(clearUser())
     router.replace('/')
   }
+
   
   return (
     <Modal stableClick title="Delete Account" onClose={onClose}>

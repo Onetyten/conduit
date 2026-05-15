@@ -37,7 +37,7 @@ export async function POST(req:Request){
         }
 
 
-        const user = await Profile.findById(payload.userId)
+        const user = await Profile.findById(payload.userId).populate('serviceCount')
         if (!user) return NextResponse.json({message:"User does not exist"},{status:404})
         const otp = await Token.findOne({_id:payload.id,userId:payload.userId})
         if (!otp) return NextResponse.json({message:"Invalid token"},{status:404})

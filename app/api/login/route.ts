@@ -20,15 +20,16 @@ export async function POST(request: Request) {
         }
 
         await mongoConnect();
-        const user = await Profile.findOne({ email: email.toLowerCase() });
+        const user = await Profile.findOne({ email: email.toLowerCase() }).populate('serviceCount');
 
         if (!user) {
-            return NextResponse.json({ message: "Account does not exist, create account", success: false }, { status: 401 });
+            return NextResponse.json({ message: "User does not have a conduit account, please create a new account", success: false }, { status: 401 });
         }
 
         const payload = {
             id:user._id
         }
+        
         const token = await jwt.sign(payload,jwtSecret)
 
         const passwordMatch = await bcrypt.compare(password, user.password);

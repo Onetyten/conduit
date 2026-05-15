@@ -46,7 +46,7 @@ export async function GET(request:Request){
         const totalPages = Math.ceil(totalServices/limit)
         const hasMore = totalPages>page
 
-        return NextResponse.json({message:"Services retrieved successfully",hasMore,currentPage:page,totalPages,data:services},{status:200})
+        return NextResponse.json({message:"Services retrieved successfully",hasMore,currentPage:page,totalPages,total:totalServices,data:services},{status:200})
 
     }
     catch (error) {

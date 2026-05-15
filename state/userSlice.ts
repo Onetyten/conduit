@@ -22,8 +22,11 @@ const userSlice = createSlice({
             state.user = action.payload.user
             state.token = action.payload.token
         },
-        updateUser:(state,action:PayloadAction<profileInterface>)=>{
-            state.user = action.payload
+
+        updateUser:(state,action:PayloadAction<Partial<profileInterface>>)=>{
+            if (state.user){
+                Object.assign(state.user,action.payload)
+            }
         },
         
         clearUser :(state)=>{

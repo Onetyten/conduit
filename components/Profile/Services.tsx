@@ -7,6 +7,7 @@ import { Button } from '../ui/button'
 import { Plus } from 'lucide-react'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
+import Link from 'next/link'
 
 interface propType{
     serviceList:serviceInterface[]
@@ -42,10 +43,10 @@ export default function Services({serviceList,loading,triggerRef,profile}:propTy
                 )}
         </div>
         {isOwnProfile && 
-            <Button className='bg-foreground cursor-pointer hover:bg-conduit flex justify-center items-center text-background p-7 min-w-48 rounded-full' >
-                <Plus className='text-2xl' size={40}/>
+            <Link href={'/service/new'} className='bg-foreground cursor-pointer hover:bg-conduit flex justify-center items-center text-background gap-2 p-3 px-7 rounded-full text-base' >
+                <Plus size={28}/>
                 Create a service
-            </Button>
+            </Link>
         }
         <div ref={triggerRef} className='size-4'>
 

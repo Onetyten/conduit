@@ -89,6 +89,7 @@ import { Types } from "mongoose";
       country: string
 
     }
+    serviceCount?:number
   }
 
   export interface becomeTalentType{
