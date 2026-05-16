@@ -8,6 +8,8 @@ import { Plus } from 'lucide-react'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import { toast } from 'react-toastify'
 
 interface propType{
     serviceList:serviceInterface[]
@@ -20,6 +22,11 @@ interface propType{
 export default function Services({serviceList,loading,triggerRef,profile}:propType) {
     const user = useSelector((state:RootState)=>state.user.user)
     const isOwnProfile = profile._id===user?._id
+    const router = useRouter()
+    const createService = ()=>{
+        if (user?.serviceCount && user.serviceCount>=20) return toast.warn('A maximum of 20 services is allowed.')
+        router.push('/service/new')
+    }
   return (
     <div className='w-full flex flex-col gap-4 items-center'>
         <div className='w-full font-semibold text-muted h-full flex justify-center items-center min-h-[20dvh]'>
@@ -43,10 +50,10 @@ export default function Services({serviceList,loading,triggerRef,profile}:propTy
                 )}
         </div>
         {isOwnProfile && 
-            <Link href={'/service/new'} className='bg-foreground cursor-pointer hover:bg-conduit flex justify-center items-center text-background gap-2 p-3 px-7 rounded-full text-base' >
+            <button onClick={createService} className='bg-foreground cursor-pointer hover:bg-conduit flex justify-center items-center text-background gap-2 p-3 px-7 rounded-full text-base' >
                 <Plus size={28}/>
                 Create a service
-            </Link>
+            </button>
         }
         <div ref={triggerRef} className='size-4'>
 

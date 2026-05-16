@@ -141,3 +141,27 @@ import { Types } from "mongoose";
     profileImage: File | null
     profilePicUrl:string
   }
+
+  export interface newServiceType{
+    title:string,
+    galleryImages: {file:File,reader:FileReader}[],
+    description:string,
+    status: 'draft'|'published'| 'archived',
+    price :{amount:number,currency:string},
+    availableOn :string[],
+    deliverables: string[],
+    tags: string[],
+    category:string,
+    address: {
+        street: string,
+        city:string,
+        state:string,
+        zipcode:string,
+        country:string,
+        location:{
+          long:string
+          lat:string
+        }
+    },
+    deliveryMethod: 'online'|'onsite'|'both'
+  }
