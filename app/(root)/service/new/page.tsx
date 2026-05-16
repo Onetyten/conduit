@@ -74,7 +74,6 @@ export default function Page() {
       try {
         const reader = await readFileAsURL(file)
         setNewService(prev => ({ ...prev, galleryImages: [...prev.galleryImages, { file, reader }] }));
-        console.log(newService.galleryImages)
       }
       catch {
           toast.warn("Error reading image")
@@ -83,7 +82,7 @@ export default function Page() {
     }
     
     async function publish(){
-      console.log("service",newService)
+      // console.log("service",newService)
     }
       
   
